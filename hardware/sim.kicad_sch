@@ -401,7 +401,7 @@
 				)
 			)
 		)
-		(symbol "Device:D_Zener"
+		(symbol "Device:D_TVS"
 			(pin_numbers hide)
 			(pin_names
 				(offset 1.016) hide)
@@ -416,7 +416,7 @@
 					)
 				)
 			)
-			(property "Value" "D_Zener"
+			(property "Value" "D_TVS"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -442,7 +442,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Zener diode"
+			(property "Description" "Bidirectional transient-voltage-suppression diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -451,7 +451,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "diode"
+			(property "ki_keywords" "diode TVS thyrector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -469,7 +469,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "D_Zener_0_1"
+			(symbol "D_TVS_0_1"
 				(polyline
 					(pts
 						(xy 1.27 0) (xy -1.27 0)
@@ -484,7 +484,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -496,7 +496,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -507,11 +507,11 @@
 					)
 				)
 			)
-			(symbol "D_Zener_1_1"
+			(symbol "D_TVS_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
-					(name "K"
+					(name "A1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -529,7 +529,7 @@
 				(pin passive line
 					(at 3.81 0 180)
 					(length 2.54)
-					(name "A"
+					(name "A2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5441,7 +5441,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Zener")
+		(lib_id "Device:D_TVS")
 		(at 165.1 137.16 90)
 		(mirror x)
 		(unit 1)
@@ -5458,7 +5458,7 @@
 				)
 			)
 		)
-		(property "Value" "CPDUC5V0USP-HF"
+		(property "Value" "CPDQC5V0ESPC-HF"
 			(at 154.94 138.43 90)
 			(effects
 				(font
@@ -5467,7 +5467,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 			(at 165.1 137.16 0)
 			(effects
 				(font
@@ -5485,7 +5485,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 165.1 137.16 0)
 			(effects
 				(font
@@ -5494,7 +5494,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "641-1765-1-ND"
+		(property "Digi-Key Part Number" "641-1895-1-ND"
 			(at 165.1 137.16 0)
 			(effects
 				(font
@@ -5512,7 +5512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CPDUC5V0USP-HF"
+		(property "Manufacturer Part Number" "CPDQC5V0ESPC-HF"
 			(at 165.1 137.16 0)
 			(effects
 				(font
@@ -5957,7 +5957,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Zener")
+		(lib_id "Device:D_TVS")
 		(at 182.88 137.16 90)
 		(mirror x)
 		(unit 1)
@@ -5974,7 +5974,7 @@
 				)
 			)
 		)
-		(property "Value" "CPDUC5V0USP-HF"
+		(property "Value" "CPDQC5V0ESPC-HF"
 			(at 172.72 138.43 90)
 			(effects
 				(font
@@ -5983,7 +5983,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 			(at 182.88 137.16 0)
 			(effects
 				(font
@@ -6001,7 +6001,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 182.88 137.16 0)
 			(effects
 				(font
@@ -6010,7 +6010,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "641-1765-1-ND"
+		(property "Digi-Key Part Number" "641-1895-1-ND"
 			(at 182.88 137.16 0)
 			(effects
 				(font
@@ -6028,7 +6028,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CPDUC5V0USP-HF"
+		(property "Manufacturer Part Number" "CPDQC5V0ESPC-HF"
 			(at 182.88 137.16 0)
 			(effects
 				(font
@@ -6080,7 +6080,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Zener")
+		(lib_id "Device:D_TVS")
 		(at 156.21 137.16 90)
 		(mirror x)
 		(unit 1)
@@ -6097,7 +6097,7 @@
 				)
 			)
 		)
-		(property "Value" "CPDUC5V0USP-HF"
+		(property "Value" "CPDQC5V0ESPC-HF"
 			(at 146.05 138.43 90)
 			(effects
 				(font
@@ -6106,7 +6106,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 			(at 156.21 137.16 0)
 			(effects
 				(font
@@ -6124,7 +6124,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 156.21 137.16 0)
 			(effects
 				(font
@@ -6133,7 +6133,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "641-1765-1-ND"
+		(property "Digi-Key Part Number" "641-1895-1-ND"
 			(at 156.21 137.16 0)
 			(effects
 				(font
@@ -6151,7 +6151,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CPDUC5V0USP-HF"
+		(property "Manufacturer Part Number" "CPDQC5V0ESPC-HF"
 			(at 156.21 137.16 0)
 			(effects
 				(font
@@ -6326,7 +6326,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Zener")
+		(lib_id "Device:D_TVS")
 		(at 173.99 137.16 90)
 		(mirror x)
 		(unit 1)
@@ -6343,7 +6343,7 @@
 				)
 			)
 		)
-		(property "Value" "CPDUC5V0USP-HF"
+		(property "Value" "CPDQC5V0ESPC-HF"
 			(at 163.83 138.43 90)
 			(effects
 				(font
@@ -6352,7 +6352,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 			(at 173.99 137.16 0)
 			(effects
 				(font
@@ -6370,7 +6370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 173.99 137.16 0)
 			(effects
 				(font
@@ -6379,7 +6379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "641-1765-1-ND"
+		(property "Digi-Key Part Number" "641-1895-1-ND"
 			(at 173.99 137.16 0)
 			(effects
 				(font
@@ -6397,7 +6397,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CPDUC5V0USP-HF"
+		(property "Manufacturer Part Number" "CPDQC5V0ESPC-HF"
 			(at 173.99 137.16 0)
 			(effects
 				(font
