@@ -3421,6 +3421,286 @@
 				)
 			)
 		)
+		(symbol "Regulator_Switching:TPS63031DSK"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TPS63031DSK"
+				(at 5.08 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SON:WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm"
+				(at 21.59 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps63031.pdf"
+				(at -7.62 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Buck-Boost Converter, 1.8-5.5V Input Voltage, 1A Switch Current, 3.3V Output Voltage, VSON-10 (DSK0010A)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Buck-Boost fixed 3.3V converter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "WSON*1EP*2.5x2.5mm*P0.5mm*EP1.2x2mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TPS63031DSK_0_1"
+				(rectangle
+					(start -7.62 12.7)
+					(end 7.62 -12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TPS63031DSK_1_1"
+				(pin power_out line
+					(at 10.16 10.16 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -15.24 90)
+					(length 2.54) hide
+					(name "PGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -10.16 0)
+					(length 2.54)
+					(name "L2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -15.24 90)
+					(length 2.54)
+					(name "PGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "L1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 10.16 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "PS/SYNC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "VINA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -15.24 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "S-8240A:S-8240ADQ-M6T1U"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3610,211 +3890,6 @@
 					(at -10.16 0 0)
 					(length 2.54)
 					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "TPS62A0:TPS62A01PDDCR"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -0.254 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TPS62A01PDDCR"
-				(at 0.254 9.144 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-				(at 0 -9.652 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps62a01.pdf?ts=1728224531782&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS62A01%252Fpart-details%252FTPS62A01PDDCR"
-				(at 0 -9.652 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ", High-Efficiency, Synchronous Buck Converters in a SOT-563 and a SOT-23 Package"
-				(at 0 -9.652 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Digi-Key Part Number" "296-TPS62A01PDDCRCT-ND"
-				(at 0 -9.652 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "Texas Instruments"
-				(at 0 -9.398 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer Part Number" "TPS62A01PDDCR"
-				(at 0 -9.652 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Package_TO_SOT_SMD:SOT-23-6*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TPS62A01PDDCR_1_1"
-				(rectangle
-					(start -5.08 7.62)
-					(end 5.08 -7.62)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -7.62 -6.35 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 6.35 180)
-					(length 2.54)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -7.62 6.35 0)
-					(length 2.54)
-					(name "V_{IN}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 -6.35 180)
-					(length 2.54)
-					(name "PG"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "FB"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4031,22 +4106,22 @@
 		(uuid "09fe4643-951e-47b7-a674-d0ffda19f107")
 	)
 	(junction
-		(at 259.08 59.69)
+		(at 219.71 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0e268545-8d1e-46c6-b419-26e708618dde")
-	)
-	(junction
-		(at 269.24 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "14df5a10-f0c1-448b-8854-f9ed040afc1d")
+		(uuid "12ac7fd2-fb6b-48c2-99d1-016ef08c6e1f")
 	)
 	(junction
 		(at 177.8 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16b280d6-e57d-4971-b27a-95e685209cd4")
+	)
+	(junction
+		(at 252.73 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a2ef800-2168-4374-b311-c9e3d418805c")
 	)
 	(junction
 		(at 50.8 158.75)
@@ -4073,6 +4148,12 @@
 		(uuid "29509f7f-f00a-4f72-8ee9-2881c6a2ffda")
 	)
 	(junction
+		(at 242.57 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f85dd14-c6ef-44b5-becd-6d78e4efdcd4")
+	)
+	(junction
 		(at 195.58 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4097,6 +4178,12 @@
 		(uuid "3647701b-2e67-48cf-9fa0-5e1862fb4691")
 	)
 	(junction
+		(at 224.79 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "379cd01a-a079-41e9-a7b2-1ce1bdf50e96")
+	)
+	(junction
 		(at 69.85 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4109,6 +4196,12 @@
 		(uuid "4889f6fa-f418-4faa-8ab6-242d9fcce1a1")
 	)
 	(junction
+		(at 224.79 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "492c5f3f-990c-4f18-adac-8cb90b56ae53")
+	)
+	(junction
 		(at 34.29 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4119,12 +4212,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "512bc0d6-aaa3-4e56-a9d4-a59ef052e38f")
-	)
-	(junction
-		(at 234.95 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "523f90f8-bdf8-42f2-93d7-6e94104589d4")
 	)
 	(junction
 		(at 130.81 113.03)
@@ -4157,16 +4244,16 @@
 		(uuid "683d40c1-dfa5-4b34-9ba6-30796e71146d")
 	)
 	(junction
-		(at 259.08 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "690d01d8-27e4-4706-b118-49697ead5c24")
-	)
-	(junction
 		(at 203.2 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6924cf04-ca22-4c94-af66-5b0693ad0eed")
+	)
+	(junction
+		(at 262.89 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ac3ef7d-eb1c-44b6-a2dc-9df3a8860af1")
 	)
 	(junction
 		(at 69.85 82.55)
@@ -4199,12 +4286,6 @@
 		(uuid "86b73f2c-199e-420a-b9ad-77f69de18c29")
 	)
 	(junction
-		(at 233.68 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "890de3e5-c586-4729-b985-f16d2d0e085a")
-	)
-	(junction
 		(at 34.29 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4215,6 +4296,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8c8d522a-32e7-421b-a30a-2386e471ef4f")
+	)
+	(junction
+		(at 234.95 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8df8776a-bee1-4de1-9629-c09aec1f16c2")
 	)
 	(junction
 		(at 130.81 158.75)
@@ -4241,6 +4328,12 @@
 		(uuid "96ebc64a-17ac-48b0-bd51-d807eeeb24f6")
 	)
 	(junction
+		(at 242.57 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "992ef432-1ba7-4d72-b399-38f2e4272480")
+	)
+	(junction
 		(at 86.36 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4251,12 +4344,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a9207972-4f39-4735-9749-a3dcadc6c29a")
-	)
-	(junction
-		(at 231.14 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b438d033-79ad-4f0f-a75d-dea075d8a3ce")
 	)
 	(junction
 		(at 142.24 82.55)
@@ -4271,28 +4358,10 @@
 		(uuid "baf2b4e1-866f-4d4a-bf5a-760b1f73b026")
 	)
 	(junction
-		(at 227.33 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "be46d2a5-672b-463e-afc6-b3011cf7164b")
-	)
-	(junction
 		(at 107.95 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c18f8cda-5c7a-4145-895f-1e280d2661c5")
-	)
-	(junction
-		(at 231.14 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ccb2cae6-9b62-4b2d-bedc-9154be20cdfe")
-	)
-	(junction
-		(at 259.08 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ce9bd637-9929-4ac8-8648-e230f27df028")
 	)
 	(junction
 		(at 132.08 55.88)
@@ -4319,10 +4388,10 @@
 		(uuid "e428a92f-970a-4149-a9ce-dbd67aeeeeec")
 	)
 	(junction
-		(at 236.22 59.69)
+		(at 250.19 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "eadeb2ef-e57f-436b-9408-4d344bd7ae51")
+		(uuid "ec68024d-8dfc-4db3-8bb3-3987c06bad40")
 	)
 	(junction
 		(at 107.95 158.75)
@@ -4337,10 +4406,22 @@
 		(uuid "f4606831-8d6b-4788-8935-a7e577923ddb")
 	)
 	(junction
+		(at 269.24 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f54a09dc-6278-4932-afe7-0765f404e9db")
+	)
+	(junction
 		(at 114.3 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f5c797c6-15a8-440c-b399-bdb9aa1b77f4")
+	)
+	(junction
+		(at 222.25 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9c0bcee-0318-4a3e-9e79-40b2dedeb734")
 	)
 	(junction
 		(at 62.23 158.75)
@@ -4365,10 +4446,6 @@
 		(uuid "4fbda32e-cc8c-4d98-9a4b-41e5e66fa956")
 	)
 	(no_connect
-		(at 251.46 72.39)
-		(uuid "6f625f07-22a8-4507-817a-44d48e4fd7a4")
-	)
-	(no_connect
 		(at 69.85 140.97)
 		(uuid "95e6793d-bb7e-4a8a-af55-9dedbc5d4f69")
 	)
@@ -4381,16 +4458,6 @@
 			(type default)
 		)
 		(uuid "0422bd56-1f60-46fa-9cad-3bd413835e2d")
-	)
-	(wire
-		(pts
-			(xy 234.95 72.39) (xy 234.95 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "047b3500-b733-4ce6-bf19-0afd968c59c7")
 	)
 	(wire
 		(pts
@@ -4464,33 +4531,13 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 68.58) (xy 251.46 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "105b8505-e9e8-4031-ac68-0242885b320e")
-	)
-	(wire
-		(pts
-			(xy 269.24 59.69) (xy 271.78 59.69)
+			(xy 269.24 55.88) (xy 271.78 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "11444126-2f34-4c2a-81a5-8106847b7f5e")
-	)
-	(wire
-		(pts
-			(xy 231.14 82.55) (xy 234.95 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13d0fa18-f294-4844-a706-8a439d03e654")
 	)
 	(wire
 		(pts
@@ -4514,13 +4561,13 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 59.69) (xy 227.33 55.88)
+			(xy 224.79 55.88) (xy 224.79 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1e435dbb-c095-4be5-b0ac-df69c953dd3f")
+		(uuid "1aa93f0d-c2dd-4f76-aff9-436210cff6b5")
 	)
 	(wire
 		(pts
@@ -4531,6 +4578,16 @@
 			(type default)
 		)
 		(uuid "1fadc6ed-c153-406e-a56b-08e593254179")
+	)
+	(wire
+		(pts
+			(xy 242.57 66.04) (xy 242.57 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21fa6b39-1688-43e0-a165-58550df9482c")
 	)
 	(wire
 		(pts
@@ -4564,16 +4621,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 82.55) (xy 259.08 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d7ec1ae-a3e1-4c42-8a7e-e8ee053d1598")
-	)
-	(wire
-		(pts
 			(xy 69.85 77.47) (xy 69.85 82.55)
 		)
 		(stroke
@@ -4584,7 +4631,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 63.5) (xy 227.33 63.5)
+			(xy 218.44 63.5) (xy 219.71 63.5)
 		)
 		(stroke
 			(width 0)
@@ -4594,13 +4641,13 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 59.69) (xy 227.33 63.5)
+			(xy 262.89 55.88) (xy 269.24 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3285bc21-3476-4b81-80e4-33120cb38daa")
+		(uuid "322e3ee0-e4c9-4d3c-b39d-36a523408c43")
 	)
 	(wire
 		(pts
@@ -4641,16 +4688,6 @@
 			(type default)
 		)
 		(uuid "34c7d3b0-3486-46e2-a146-916edb6daece")
-	)
-	(wire
-		(pts
-			(xy 259.08 82.55) (xy 269.24 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3aff8b43-fd16-4cc5-a3fb-8c3340f3ffcb")
 	)
 	(wire
 		(pts
@@ -4724,16 +4761,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 82.55) (xy 259.08 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f41b4f5-b753-4844-8c9c-d6f141316699")
-	)
-	(wire
-		(pts
 			(xy 62.23 151.13) (xy 54.61 151.13)
 		)
 		(stroke
@@ -4744,7 +4771,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 63.5) (xy 218.44 63.5)
+			(xy 203.2 63.5) (xy 210.82 63.5)
 		)
 		(stroke
 			(width 0)
@@ -4754,13 +4781,13 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 59.69) (xy 236.22 66.04)
+			(xy 224.79 82.55) (xy 234.95 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "56170fa0-724a-46ee-a92e-57cbb149a116")
+		(uuid "5596e445-27f4-4e07-9e23-63a6545852b4")
 	)
 	(wire
 		(pts
@@ -4771,16 +4798,6 @@
 			(type default)
 		)
 		(uuid "572497f2-4879-40b3-8fb5-407d8d3bc15c")
-	)
-	(wire
-		(pts
-			(xy 259.08 59.69) (xy 269.24 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57bc6c7a-23e8-48d2-9dcd-aa058c020f24")
 	)
 	(wire
 		(pts
@@ -4874,7 +4891,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 72.39) (xy 231.14 82.55)
+			(xy 224.79 72.39) (xy 224.79 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4921,16 +4938,6 @@
 			(type default)
 		)
 		(uuid "73a53c6c-aa26-4df7-8ad1-3ee7b6c8d5bc")
-	)
-	(wire
-		(pts
-			(xy 231.14 59.69) (xy 233.68 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75bdf1e8-b971-4550-b9ae-67c032476c39")
 	)
 	(wire
 		(pts
@@ -5004,13 +5011,23 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 82.55) (xy 231.14 82.55)
+			(xy 195.58 82.55) (xy 224.79 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7d979255-57d2-40fd-b3e5-0c6df8bdc9b8")
+	)
+	(wire
+		(pts
+			(xy 222.25 55.88) (xy 224.79 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e863a6c-33a6-44d6-b044-f9353100326e")
 	)
 	(wire
 		(pts
@@ -5021,6 +5038,16 @@
 			(type default)
 		)
 		(uuid "81572c37-4665-4268-b737-a254b9a44037")
+	)
+	(wire
+		(pts
+			(xy 219.71 55.88) (xy 219.71 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8195568d-8c9e-45cc-be3b-50469f31e46b")
 	)
 	(wire
 		(pts
@@ -5074,6 +5101,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 66.04) (xy 234.95 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86e77e19-7f49-4629-8c12-453dbbbc174a")
+	)
+	(wire
+		(pts
 			(xy 107.95 158.75) (xy 120.65 158.75)
 		)
 		(stroke
@@ -5094,13 +5131,13 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 72.39) (xy 236.22 72.39)
+			(xy 242.57 60.96) (xy 242.57 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8de84b63-405f-428b-8933-3591aaf104d8")
+		(uuid "917bf2e6-a857-4383-9772-bd81b9dc3752")
 	)
 	(wire
 		(pts
@@ -5134,6 +5171,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 81.28) (xy 252.73 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cb95933-9e7f-4c6e-870d-1c4d2e256a3d")
+	)
+	(wire
+		(pts
 			(xy 81.28 158.75) (xy 90.17 158.75)
 		)
 		(stroke
@@ -5141,6 +5188,26 @@
 			(type default)
 		)
 		(uuid "9fc58bd8-5fc7-454d-95f2-c835157c2ee3")
+	)
+	(wire
+		(pts
+			(xy 224.79 55.88) (xy 242.57 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5640b39-e49c-49c4-b50d-0479a7068a23")
+	)
+	(wire
+		(pts
+			(xy 234.95 58.42) (xy 242.57 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a64e4665-0461-4fa6-b548-1b8310e55e91")
 	)
 	(wire
 		(pts
@@ -5181,16 +5248,6 @@
 			(type default)
 		)
 		(uuid "a866210c-6e08-4d69-ba63-4a663de13ad9")
-	)
-	(wire
-		(pts
-			(xy 227.33 59.69) (xy 231.14 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "abe77064-c771-4696-b223-5445c5f5bca9")
 	)
 	(wire
 		(pts
@@ -5254,7 +5311,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 55.88) (xy 218.44 55.88)
+			(xy 208.28 55.88) (xy 210.82 55.88)
 		)
 		(stroke
 			(width 0)
@@ -5291,6 +5348,16 @@
 			(type default)
 		)
 		(uuid "b3d73698-86f8-453e-8a00-5b95a7574d2f")
+	)
+	(wire
+		(pts
+			(xy 219.71 55.88) (xy 222.25 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b74e4011-1fe7-473c-a43d-3ac6479fd9f0")
 	)
 	(wire
 		(pts
@@ -5344,13 +5411,13 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 68.58) (xy 259.08 68.58)
+			(xy 242.57 58.42) (xy 242.57 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c80b3822-6444-4516-9270-04d16e077872")
+		(uuid "c561a09c-3bba-4c2f-9e69-a3a7e367f318")
 	)
 	(wire
 		(pts
@@ -5414,16 +5481,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 59.69) (xy 259.08 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3a1f931-1c9e-4ef4-8105-9f97a858b7ce")
-	)
-	(wire
-		(pts
 			(xy 180.34 58.42) (xy 177.8 58.42)
 		)
 		(stroke
@@ -5484,7 +5541,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 59.69) (xy 269.24 64.77)
+			(xy 269.24 55.88) (xy 269.24 64.77)
 		)
 		(stroke
 			(width 0)
@@ -5494,23 +5551,13 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 55.88) (xy 227.33 55.88)
+			(xy 218.44 55.88) (xy 219.71 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d9ec5a8c-2412-4dce-a826-97c5efd38236")
-	)
-	(wire
-		(pts
-			(xy 231.14 64.77) (xy 231.14 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da8491ff-00b0-4c5a-9ab2-c3b6f3be5056")
 	)
 	(wire
 		(pts
@@ -5524,13 +5571,13 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 59.69) (xy 236.22 59.69)
+			(xy 252.73 82.55) (xy 269.24 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dd1539b7-83e2-4e3d-8fa4-5ddcfc780c81")
+		(uuid "de0e54ec-1bd1-47f8-89b0-6b9a45b5ab23")
 	)
 	(wire
 		(pts
@@ -5594,6 +5641,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 55.88) (xy 262.89 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eabdcfde-75d3-445f-a97c-adf649acd04a")
+	)
+	(wire
+		(pts
 			(xy 185.42 63.5) (xy 195.58 63.5)
 		)
 		(stroke
@@ -5604,6 +5661,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 82.55) (xy 250.19 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb6d025c-8a0e-449a-b26f-f0eb25446f58")
+	)
+	(wire
+		(pts
 			(xy 49.53 71.12) (xy 57.15 71.12)
 		)
 		(stroke
@@ -5611,6 +5678,16 @@
 			(type default)
 		)
 		(uuid "ef5ff54f-30d7-4db5-9656-82bdb3b4dfcf")
+	)
+	(wire
+		(pts
+			(xy 242.57 74.93) (xy 242.57 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f24f39ea-b94e-4fd0-815e-f3eb1b90e450")
 	)
 	(wire
 		(pts
@@ -5631,6 +5708,16 @@
 			(type default)
 		)
 		(uuid "f4c697ab-0f19-4c62-84a9-ee5cf41e93e3")
+	)
+	(wire
+		(pts
+			(xy 250.19 82.55) (xy 252.73 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f57076c0-31f5-4a19-889b-4d625487cc51")
 	)
 	(wire
 		(pts
@@ -5671,6 +5758,16 @@
 			(type default)
 		)
 		(uuid "f9e5484e-1f17-4b9e-9842-af5bbbbaebb1")
+	)
+	(wire
+		(pts
+			(xy 250.19 81.28) (xy 250.19 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faee258a-0439-4462-a3d2-9e269ce7e58f")
 	)
 	(wire
 		(pts
@@ -5756,9 +5853,9 @@
 		)
 		(uuid "49a74968-5824-4a5e-8930-901ed9e10979")
 	)
-	(text "Buck-Boost regulator with soft start\n\nTPS62A01PDDCR datasheet:\n8.2.2.1 Setting the output voltage:\n\nR1 = R2 * ((V_{OUT} / V_{FB}) - 1)\n\nWhere V_{FB} = 0.6 V,\nR1 is the higher resistor and\nR2 is the lower resistor.\nR1 = 100 kΩ * ((3.3 V / 0.6 V) - 1) = 450 kΩ\n"
+	(text "Buck-Boost regulator with soft start\n"
 		(exclude_from_sim no)
-		(at 232.156 43.18 0)
+		(at 232.918 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5801,7 +5898,7 @@
 	)
 	(text "Place a jumper\nto show power line status."
 		(exclude_from_sim no)
-		(at 229.87 137.414 0)
+		(at 237.49 142.494 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5812,7 +5909,7 @@
 	)
 	(text "Header for measuring the battery power line."
 		(exclude_from_sim no)
-		(at 229.362 127.254 0)
+		(at 236.982 132.334 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5845,7 +5942,7 @@
 	)
 	(text "Place a jumper/ammeter\nto enable/measure\nthe power line."
 		(exclude_from_sim no)
-		(at 229.362 106.934 0)
+		(at 236.982 112.014 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5856,7 +5953,7 @@
 	)
 	(text "Header for measuring the 3.3V power line."
 		(exclude_from_sim no)
-		(at 229.362 117.094 0)
+		(at 236.982 122.174 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5865,9 +5962,9 @@
 		)
 		(uuid "dab9aeaa-7c59-458f-9996-43159f526cd8")
 	)
-	(text "The regulator is capable of sourcing 1 A of current.\n\nThe MCU drains about 100 mA in a worst case scenario.\nThe modem drains about 500 mA in a worst case scenario.\n\n1 A < (100 mA + 500 mA)"
+	(text "The regulator is capable of sourcing\n700 mA @ 3 V_{IN} and 900 mA @ 5 V_{IN}.\n\nThe MCU drains about 100 mA in a worst case scenario.\nThe modem drains about 500 mA in a worst case scenario.\n\n700 mA ≥ (100 mA + 500 mA)"
 		(exclude_from_sim no)
-		(at 216.916 90.17 0)
+		(at 226.314 91.186 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5888,7 +5985,7 @@
 		(uuid "16a40584-b7d1-4dbd-80ce-208f05633bac")
 	)
 	(label "VOUT_{3V3}"
-		(at 222.25 105.41 180)
+		(at 229.87 110.49 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5899,7 +5996,7 @@
 		(uuid "3eccb530-0a33-4124-b64a-43cc069c0624")
 	)
 	(label "VOUT_{3V3}"
-		(at 271.78 59.69 0)
+		(at 271.78 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5922,7 +6019,7 @@
 	)
 	(hierarchical_label "+3.3V"
 		(shape output)
-		(at 222.25 107.95 180)
+		(at 229.87 113.03 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5958,7 +6055,7 @@
 	)
 	(hierarchical_label "+3.3V"
 		(shape output)
-		(at 222.25 115.57 180)
+		(at 229.87 120.65 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5970,7 +6067,7 @@
 	)
 	(hierarchical_label "V_{BAT}"
 		(shape output)
-		(at 222.25 125.73 180)
+		(at 229.87 130.81 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5994,7 +6091,7 @@
 	)
 	(hierarchical_label "+3.3V"
 		(shape output)
-		(at 222.25 135.89 180)
+		(at 229.87 140.97 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6018,7 +6115,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 227.33 115.57 0)
+		(at 234.95 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6026,7 +6123,7 @@
 		(dnp no)
 		(uuid "00fa0db5-0178-4cb9-9e58-18c9d84b371b")
 		(property "Reference" "J5"
-			(at 225.552 113.284 0)
+			(at 233.172 118.364 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6035,7 +6132,7 @@
 			)
 		)
 		(property "Value" "PRPC001DAAN-RC"
-			(at 229.87 118.11 0)
+			(at 237.49 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6045,7 +6142,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 227.33 115.57 0)
+			(at 234.95 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6054,7 +6151,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 227.33 115.57 0)
+			(at 234.95 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6063,7 +6160,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 227.33 115.57 0)
+			(at 234.95 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6072,7 +6169,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" "S2011EC-01-ND"
-			(at 227.33 115.57 0)
+			(at 234.95 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6081,7 +6178,7 @@
 			)
 		)
 		(property "Manufacturer" "Sullins Connector Solutions"
-			(at 227.33 115.57 0)
+			(at 234.95 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6090,7 +6187,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "PRPC001DAAN-RC"
-			(at 227.33 115.57 0)
+			(at 234.95 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6099,7 +6196,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 227.33 115.57 0)
+			(at 234.95 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6108,7 +6205,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 227.33 115.57 0)
+			(at 234.95 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6117,7 +6214,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 227.33 115.57 0)
+			(at 234.95 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6893,7 +6990,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 227.33 125.73 0)
+		(at 234.95 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6901,7 +6998,7 @@
 		(dnp no)
 		(uuid "3015803f-9f8f-476e-8b34-284fd62b783f")
 		(property "Reference" "J6"
-			(at 225.552 123.444 0)
+			(at 233.172 128.524 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6910,7 +7007,7 @@
 			)
 		)
 		(property "Value" "PRPC001DAAN-RC"
-			(at 229.87 128.27 0)
+			(at 237.49 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6920,7 +7017,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 227.33 125.73 0)
+			(at 234.95 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6929,7 +7026,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 227.33 125.73 0)
+			(at 234.95 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6938,7 +7035,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 227.33 125.73 0)
+			(at 234.95 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6947,7 +7044,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" "S2011EC-01-ND"
-			(at 227.33 125.73 0)
+			(at 234.95 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6956,7 +7053,7 @@
 			)
 		)
 		(property "Manufacturer" "Sullins Connector Solutions"
-			(at 227.33 125.73 0)
+			(at 234.95 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6965,7 +7062,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "PRPC001DAAN-RC"
-			(at 227.33 125.73 0)
+			(at 234.95 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6974,7 +7071,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 227.33 125.73 0)
+			(at 234.95 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6983,7 +7080,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 227.33 125.73 0)
+			(at 234.95 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6992,7 +7089,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 227.33 125.73 0)
+			(at 234.95 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7531,7 +7628,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "46015e0b-cedd-457e-a154-23fec51ddc5b")
-		(property "Reference" "C9"
+		(property "Reference" "C10"
 			(at 271.78 67.31 0)
 			(effects
 				(font
@@ -7639,7 +7736,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
-					(reference "C9")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -7835,8 +7932,132 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 234.95 62.23 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4c9ca5a5-96d1-4f87-a996-73cd576184f0")
+		(property "Reference" "C9"
+			(at 232.41 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1 µF"
+			(at 232.41 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 233.9848 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 234.95 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 234.95 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 234.95 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "885012206071"
+			(at 234.95 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" "732-7989-1-ND"
+			(at 234.95 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 234.95 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 234.95 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 234.95 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3687c0d9-0c33-447d-9757-64a539ff07f8")
+		)
+		(pin "2"
+			(uuid "81b8b6c9-1b97-4272-b107-f76b36251466")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 222.25 118.11 0)
+		(at 229.87 123.19 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7846,7 +8067,7 @@
 		(fields_autoplaced yes)
 		(uuid "4e2b1c46-524e-465b-9af3-944606ef6269")
 		(property "Reference" "#PWR07"
-			(at 222.25 124.46 0)
+			(at 229.87 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7855,7 +8076,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.25 123.19 0)
+			(at 229.87 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7864,7 +8085,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 118.11 0)
+			(at 229.87 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7873,7 +8094,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 118.11 0)
+			(at 229.87 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7882,7 +8103,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 222.25 118.11 0)
+			(at 229.87 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7904,7 +8125,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 233.68 59.69 0)
+		(at 222.25 55.88 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7913,7 +8134,7 @@
 		(dnp no)
 		(uuid "4edf02b1-55cb-4c07-8ad7-86802b2991fb")
 		(property "Reference" "#FLG06"
-			(at 233.68 57.785 0)
+			(at 222.25 53.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7922,7 +8143,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 233.68 56.515 0)
+			(at 222.25 52.705 0)
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -7930,7 +8151,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 59.69 0)
+			(at 222.25 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7939,7 +8160,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 233.68 59.69 0)
+			(at 222.25 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7948,7 +8169,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 233.68 59.69 0)
+			(at 222.25 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8978,7 +9199,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 227.33 105.41 0)
+		(at 234.95 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8986,7 +9207,7 @@
 		(dnp no)
 		(uuid "72bd22e3-e1ec-4c33-844a-aee9b7be2709")
 		(property "Reference" "J4"
-			(at 226.06 103.124 0)
+			(at 233.68 108.204 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8995,7 +9216,7 @@
 			)
 		)
 		(property "Value" "PRPC001DAAN-RC"
-			(at 229.87 107.95 0)
+			(at 237.49 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9005,7 +9226,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 227.33 105.41 0)
+			(at 234.95 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9014,7 +9235,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 227.33 105.41 0)
+			(at 234.95 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9023,7 +9244,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 227.33 105.41 0)
+			(at 234.95 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9032,7 +9253,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" "S2011EC-01-ND"
-			(at 227.33 105.41 0)
+			(at 234.95 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9041,7 +9262,7 @@
 			)
 		)
 		(property "Manufacturer" "Sullins Connector Solutions"
-			(at 227.33 105.41 0)
+			(at 234.95 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9050,7 +9271,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "PRPC001DAAN-RC"
-			(at 227.33 105.41 0)
+			(at 234.95 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9059,7 +9280,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 227.33 105.41 0)
+			(at 234.95 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9068,7 +9289,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 227.33 105.41 0)
+			(at 234.95 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9077,7 +9298,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 227.33 105.41 0)
+			(at 234.95 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9101,141 +9322,8 @@
 		)
 	)
 	(symbol
-		(lib_id "TPS62A0:TPS62A01PDDCR")
-		(at 243.84 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7599bfd7-bbb2-4a12-99d3-fc218e1ec834")
-		(property "Reference" "U4"
-			(at 243.84 57.404 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TPS62A01PDDCR"
-			(at 243.84 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
-			(at 243.84 75.692 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps62a01.pdf?ts=1728224531782&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS62A01%252Fpart-details%252FTPS62A01PDDCR"
-			(at 243.84 75.692 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ", High-Efficiency, Synchronous Buck Converters in a SOT-563 and a SOT-23 Package"
-			(at 243.84 75.692 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "296-TPS62A01PDDCRCT-ND"
-			(at 243.84 75.692 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 243.84 75.438 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "TPS62A01PDDCR"
-			(at 243.84 75.692 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 243.84 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 243.84 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 243.84 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "72bc184f-dba8-441e-b259-6799a1c6ba3e")
-		)
-		(pin "2"
-			(uuid "09b44877-97b3-41e8-9550-8e88c3d024b5")
-		)
-		(pin "6"
-			(uuid "3a7b732e-3dde-4d00-b221-5216c2fee73f")
-		)
-		(pin "5"
-			(uuid "ec91fa43-4473-48c1-8097-628a8b5d5c63")
-		)
-		(pin "3"
-			(uuid "5afbeb8e-b1e3-419f-9342-02f6b8c0a823")
-		)
-		(pin "1"
-			(uuid "ae942104-52b5-47d9-8fc5-c8dca0405111")
-		)
-		(instances
-			(project ""
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 227.33 135.89 0)
+		(at 234.95 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9243,7 +9331,7 @@
 		(dnp no)
 		(uuid "83123605-5b06-47ca-b972-18684ec00c25")
 		(property "Reference" "J7"
-			(at 226.06 133.35 0)
+			(at 233.68 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9252,7 +9340,7 @@
 			)
 		)
 		(property "Value" "PRPC001DAAN-RC"
-			(at 229.87 138.43 0)
+			(at 237.49 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9262,7 +9350,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 227.33 135.89 0)
+			(at 234.95 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9271,7 +9359,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 227.33 135.89 0)
+			(at 234.95 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9280,7 +9368,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 227.33 135.89 0)
+			(at 234.95 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9289,7 +9377,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" "S2011EC-01-ND"
-			(at 227.33 135.89 0)
+			(at 234.95 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9298,7 +9386,7 @@
 			)
 		)
 		(property "Manufacturer" "Sullins Connector Solutions"
-			(at 227.33 135.89 0)
+			(at 234.95 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9307,7 +9395,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "PRPC001DAAN-RC"
-			(at 227.33 135.89 0)
+			(at 234.95 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9316,7 +9404,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 227.33 135.89 0)
+			(at 234.95 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9325,7 +9413,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 227.33 135.89 0)
+			(at 234.95 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9334,7 +9422,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 227.33 135.89 0)
+			(at 234.95 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9352,129 +9440,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
 					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 259.08 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "84d04518-6bb6-4632-b5a4-46ef257312e9")
-		(property "Reference" "R14"
-			(at 260.604 64.008 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "453 kΩ"
-			(at 260.604 65.786 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 257.302 64.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 259.08 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 259.08 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Rohm Semiconductor"
-			(at 259.08 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "SDR03EZPF4533"
-			(at 259.08 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "846-SDR03EZPF4533CT-ND"
-			(at 259.08 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 259.08 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 259.08 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 259.08 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8027fea9-fb15-4094-bd87-37d0016ac5c2")
-		)
-		(pin "2"
-			(uuid "d3d0dcc3-c6de-4f0b-9dd7-93b510755aaf")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
-					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -9795,7 +9760,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 222.25 128.27 0)
+		(at 229.87 133.35 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9805,7 +9770,7 @@
 		(fields_autoplaced yes)
 		(uuid "923f404c-5cb2-4948-9ba7-c3290a39685c")
 		(property "Reference" "#PWR08"
-			(at 222.25 134.62 0)
+			(at 229.87 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9814,7 +9779,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.25 133.35 0)
+			(at 229.87 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9823,7 +9788,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 128.27 0)
+			(at 229.87 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9832,7 +9797,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 128.27 0)
+			(at 229.87 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9841,7 +9806,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 222.25 128.27 0)
+			(at 229.87 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10258,41 +10223,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 255.27 59.69 90)
+		(lib_id "Device:C")
+		(at 224.79 68.58 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9ef831f8-782b-4a50-aa0a-a6f9c7616fbc")
-		(property "Reference" "L1"
-			(at 255.27 56.134 90)
+		(uuid "9c860c13-3771-4928-864a-27f1c9923bb2")
+		(property "Reference" "C8"
+			(at 222.25 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "1 µH"
-			(at 255.27 57.658 90)
+		(property "Value" "10 µF"
+			(at 222.25 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder"
-			(at 255.27 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.murata.com/~/media/webrenewal/products/inductor/chip/tokoproducts/wirewoundmetalalloychiptype/m_dfe252012f.ashx"
-			(at 255.27 59.69 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 223.8248 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10300,8 +10259,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
-			(at 255.27 59.69 0)
+		(property "Datasheet" "~"
+			(at 224.79 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10309,8 +10268,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "490-13053-1-ND"
-			(at 255.27 59.69 90)
+		(property "Description" ""
+			(at 224.79 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10318,8 +10277,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 255.27 59.69 90)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 224.79 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10327,8 +10286,17 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "DFE252012F-1R0M=P2"
-			(at 255.27 59.69 90)
+		(property "Manufacturer Part Number" "885012106006"
+			(at 224.79 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" "732-7903-1-ND"
+			(at 224.79 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10337,7 +10305,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 255.27 59.69 0)
+			(at 224.79 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10346,7 +10314,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 255.27 59.69 0)
+			(at 224.79 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10355,7 +10323,101 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 255.27 59.69 0)
+			(at 224.79 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7892aca-b2f0-440c-a9e0-7715a5a383da")
+		)
+		(pin "2"
+			(uuid "7f509885-82a2-4a22-9c6d-bd5145da905d")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 242.57 71.12 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9ef831f8-782b-4a50-aa0a-a6f9c7616fbc")
+		(property "Reference" "L1"
+			(at 240.538 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.5 µH"
+			(at 238.506 72.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Taiyo-Yuden_NR-30xx_HandSoldering"
+			(at 242.57 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/610/NR3015T1R5N_SS.pdf"
+			(at 242.57 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 242.57 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" "587-2617-1-ND"
+			(at 242.57 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Taiyo Yuden"
+			(at 242.57 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "NR3015T1R5N"
+			(at 242.57 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10379,131 +10441,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 259.08 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a4171f70-5f7f-4930-9c7f-246a349b8872")
-		(property "Reference" "R15"
-			(at 260.604 71.628 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100 kΩ"
-			(at 260.604 73.406 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 257.302 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 259.08 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 259.08 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 259.08 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "560112116004"
-			(at 259.08 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "732-560112116004CT-ND"
-			(at 259.08 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 259.08 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 259.08 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 259.08 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "853e3fbb-8ac1-4c33-9fbc-54def358916c")
-		)
-		(pin "2"
-			(uuid "0d6492a3-56e2-4ce2-9dd1-274df8e192a1")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
-					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 222.25 55.88 0)
+		(at 214.63 55.88 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10512,7 +10451,7 @@
 		(dnp no)
 		(uuid "a784635f-2258-438d-b116-5424933bc15f")
 		(property "Reference" "D4"
-			(at 222.25 53.34 0)
+			(at 214.63 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10520,7 +10459,7 @@
 			)
 		)
 		(property "Value" "BAT60AE6327HTSA1"
-			(at 222.5675 52.07 0)
+			(at 214.9475 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10529,7 +10468,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 222.25 55.88 0)
+			(at 214.63 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10538,7 +10477,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.25 55.88 0)
+			(at 214.63 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10547,7 +10486,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 222.25 55.88 0)
+			(at 214.63 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10556,7 +10495,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" "BAT60AE6327HTSA1CT-ND"
-			(at 222.25 55.88 0)
+			(at 214.63 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10565,7 +10504,7 @@
 			)
 		)
 		(property "Manufacturer" "Infineon Technologies"
-			(at 222.25 55.88 0)
+			(at 214.63 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10574,7 +10513,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "BAT60AE6327HTSA1"
-			(at 222.25 55.88 0)
+			(at 214.63 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10583,7 +10522,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 222.25 55.88 0)
+			(at 214.63 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10592,7 +10531,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 222.25 55.88 0)
+			(at 214.63 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10601,7 +10540,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 222.25 55.88 0)
+			(at 214.63 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10626,7 +10565,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 222.25 149.86 0)
+		(at 229.87 154.94 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10635,7 +10574,7 @@
 		(dnp no)
 		(uuid "ac9173c7-fa56-4165-bc6e-7a7704d1cae2")
 		(property "Reference" "R13"
-			(at 223.52 148.59 0)
+			(at 231.14 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10644,7 +10583,7 @@
 			)
 		)
 		(property "Value" "2.2 kΩ"
-			(at 223.52 151.13 0)
+			(at 231.14 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10653,7 +10592,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 224.028 149.86 90)
+			(at 231.648 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10662,7 +10601,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.25 149.86 0)
+			(at 229.87 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10671,7 +10610,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 222.25 149.86 0)
+			(at 229.87 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10680,7 +10619,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" "732-560112116098CT-ND"
-			(at 222.25 149.86 0)
+			(at 229.87 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10689,7 +10628,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 222.25 149.86 0)
+			(at 229.87 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10698,7 +10637,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "560112116098"
-			(at 222.25 149.86 0)
+			(at 229.87 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10707,7 +10646,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 222.25 149.86 0)
+			(at 229.87 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10716,7 +10655,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 222.25 149.86 0)
+			(at 229.87 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10725,7 +10664,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 222.25 149.86 0)
+			(at 229.87 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10873,7 +10812,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 222.25 63.5 0)
+		(at 214.63 63.5 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10882,7 +10821,7 @@
 		(dnp no)
 		(uuid "b49f8b91-49c2-4429-a80d-2b8f875e756a")
 		(property "Reference" "D5"
-			(at 222.25 60.96 0)
+			(at 214.63 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10890,7 +10829,7 @@
 			)
 		)
 		(property "Value" "BAT60AE6327HTSA1"
-			(at 222.5675 59.69 0)
+			(at 214.9475 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10899,7 +10838,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 222.25 63.5 0)
+			(at 214.63 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10908,7 +10847,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.25 63.5 0)
+			(at 214.63 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10917,7 +10856,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 222.25 63.5 0)
+			(at 214.63 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10926,7 +10865,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" "BAT60AE6327HTSA1CT-ND"
-			(at 222.25 63.5 0)
+			(at 214.63 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10935,7 +10874,7 @@
 			)
 		)
 		(property "Manufacturer" "Infineon Technologies"
-			(at 222.25 63.5 0)
+			(at 214.63 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10944,7 +10883,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "BAT60AE6327HTSA1"
-			(at 222.25 63.5 0)
+			(at 214.63 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10953,7 +10892,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 222.25 63.5 0)
+			(at 214.63 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10962,7 +10901,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 222.25 63.5 0)
+			(at 214.63 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10971,7 +10910,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 222.25 63.5 0)
+			(at 214.63 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11247,6 +11186,127 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
 					(reference "FB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Switching:TPS63031DSK")
+		(at 252.73 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c03ab111-0dda-47db-86fb-3b0b234ae450")
+		(property "Reference" "U4"
+			(at 252.73 50.292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS63031DSK"
+			(at 252.73 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm"
+			(at 274.32 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps63031.pdf"
+			(at 245.11 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Buck-Boost Converter, 1.8-5.5V Input Voltage, 1A Switch Current, 3.3V Output Voltage, VSON-10 (DSK0010A)"
+			(at 252.73 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" "296-39461-1-ND"
+			(at 252.73 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 252.73 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "TPS63031DSKR"
+			(at 252.73 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "10"
+			(uuid "43f4f691-6627-41d8-81cf-17fc0e915bc8")
+		)
+		(pin "9"
+			(uuid "5a58f2fa-6120-4a31-8e00-0aeb8208876f")
+		)
+		(pin "3"
+			(uuid "e3eb6062-5444-4bd2-9120-24b06a6d220a")
+		)
+		(pin "11"
+			(uuid "cd089b0f-ded6-41d4-befe-9a8d5059aa43")
+		)
+		(pin "7"
+			(uuid "d637093b-2512-41f3-98b1-30eaf53e7e62")
+		)
+		(pin "5"
+			(uuid "165d1eac-a600-4b88-a34e-f7ae64e3b01c")
+		)
+		(pin "8"
+			(uuid "de7bfa72-2a61-47ab-a5e6-bd06609691fb")
+		)
+		(pin "6"
+			(uuid "b3d8b70e-f3db-4ebf-abf2-99bdffe16676")
+		)
+		(pin "2"
+			(uuid "5c33ba62-ae60-44a8-8c1d-8432d9511773")
+		)
+		(pin "4"
+			(uuid "69e1ba46-4409-4f5e-abcb-35de2dc3e1c5")
+		)
+		(pin "1"
+			(uuid "00885a4b-7ce1-42b7-9efa-d9f23aa2d4e8")
+		)
+		(instances
+			(project ""
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -12595,7 +12655,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 222.25 142.24 90)
+		(at 229.87 147.32 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12603,7 +12663,7 @@
 		(dnp no)
 		(uuid "e59975af-979f-4bdf-859d-540b26aa0ade")
 		(property "Reference" "LED2"
-			(at 226.314 142.24 90)
+			(at 233.934 147.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12611,7 +12671,7 @@
 			)
 		)
 		(property "Value" "150141YS73100"
-			(at 216.535 143.51 90)
+			(at 224.155 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12620,7 +12680,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_PLCC_2835_Handsoldering"
-			(at 222.25 142.24 0)
+			(at 229.87 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12629,7 +12689,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.25 142.24 0)
+			(at 229.87 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12638,7 +12698,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 222.25 142.24 0)
+			(at 229.87 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12647,7 +12707,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 222.25 142.24 90)
+			(at 229.87 147.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12656,7 +12716,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "150141YS73100"
-			(at 222.25 142.24 90)
+			(at 229.87 147.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12665,7 +12725,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" "732-5004-1-ND"
-			(at 222.25 142.24 90)
+			(at 229.87 147.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12674,7 +12734,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 222.25 142.24 0)
+			(at 229.87 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12683,7 +12743,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 222.25 142.24 0)
+			(at 229.87 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12692,7 +12752,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 222.25 142.24 0)
+			(at 229.87 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13028,7 +13088,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 222.25 153.67 0)
+		(at 229.87 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13037,7 +13097,7 @@
 		(fields_autoplaced yes)
 		(uuid "fe3f721f-a2fe-452e-b754-19e30b9ee114")
 		(property "Reference" "#PWR09"
-			(at 222.25 160.02 0)
+			(at 229.87 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13046,7 +13106,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.25 158.75 0)
+			(at 229.87 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13055,7 +13115,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 153.67 0)
+			(at 229.87 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13064,7 +13124,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 153.67 0)
+			(at 229.87 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13073,7 +13133,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 222.25 153.67 0)
+			(at 229.87 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13088,130 +13148,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 231.14 68.58 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fea3c65b-84a1-4429-ba1c-fac79dc17637")
-		(property "Reference" "C8"
-			(at 228.6 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7 µF"
-			(at 228.6 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 230.1748 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 231.14 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 231.14 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 231.14 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "885012107013"
-			(at 231.14 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "732-7623-1-ND"
-			(at 231.14 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 231.14 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 231.14 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 231.14 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "40faffee-a116-4136-9cce-d4900ef40f3d")
-		)
-		(pin "2"
-			(uuid "c47d44f4-2925-44c0-bdb3-6b8192bf1ea0")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
-					(reference "C8")
 					(unit 1)
 				)
 			)
