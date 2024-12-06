@@ -65,6 +65,7 @@
       ],
       "drc_exclusions": [
         "copper_edge_clearance|154260000|129225000|b033293a-131c-44d8-b8d2-c1ce129f3bac|4075519a-8a5f-400f-ab59-9c1b466a01e6",
+        "courtyards_overlap|223555125|79217626|d9dae376-46ab-4328-9a2a-c292d368da5c|a116961b-3165-4615-8218-333121b1d575",
         "lib_footprint_mismatch|109605125|88500000|ecac57a9-76a0-464e-8964-f7a524e69915|00000000-0000-0000-0000-000000000000",
         "lib_footprint_mismatch|149940000|131285000|fd9d527c-d87c-49fe-a348-7ca8d6e9f19b|00000000-0000-0000-0000-000000000000"
       ],
@@ -524,33 +525,33 @@
       {
         "bus_width": 12,
         "clearance": 0.2,
-        "diff_pair_gap": 0.155,
+        "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.3,
+        "diff_pair_width": 0.266,
         "line_style": 0,
-        "microvia_diameter": 0.25,
-        "microvia_drill": 0.25,
-        "name": "90 Ohm",
-        "pcb_color": "rgb(0, 0, 255)",
-        "schematic_color": "rgb(0, 0, 255)",
-        "track_width": 0.3,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "50 Ohm",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.266,
         "via_diameter": 0.45,
         "via_drill": 0.25,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
+        "clearance": 0.155,
+        "diff_pair_gap": 0.155,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.3,
         "line_style": 0,
-        "microvia_diameter": 0.25,
-        "microvia_drill": 0.25,
-        "name": "ANT",
-        "pcb_color": "rgb(48, 255, 0)",
-        "schematic_color": "rgb(39, 255, 0)",
-        "track_width": 0.266,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "90 Ohm",
+        "pcb_color": "rgb(0, 0, 255)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
         "via_diameter": 0.45,
         "via_drill": 0.25,
         "wire_width": 6
@@ -567,8 +568,8 @@
         "pattern": "/*/USB_*"
       },
       {
-        "netclass": "ANT",
-        "pattern": "/Antenna/ANT*"
+        "netclass": "50 Ohm",
+        "pattern": "/*/ANT*"
       }
     ]
   },
