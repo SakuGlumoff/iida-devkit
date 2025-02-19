@@ -1,0 +1,75 @@
+name: Release
+on:
+  push:
+    tags:
+      - 'v*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: release
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          token: ${{ secrets.PAT_TOKEN }}
+      - name: Build docker image
+        # Build the docker image with current user's IDs so that permissions to the workspace are retained.
+        run: docker build -t iida-devkit .devcontainer --build-arg USER_UID=$(id -u) --build-arg USER_GID=$(id -g)
+      - name: Export HW design files
+        run: |
+          docker run -v $PWD:/iida-devkit -w /iida-devkit iida-devkit \
+          /bin/bash -c "\
+            mkdir ./hardware/manufacturing && \
+            kicad-cli sch export pdf --output iida_devkit.pdf ./hardware/iida_devkit.kicad_sch \
+          "
+      - name: Archive HW design files
+        uses: actions/upload-artifact@v4
+        with:
+          name: hw-artifacts
+          path: iida_devkit.pdf
+          if-no-files-found: error
+      - name: Build binaries
+        run: |
+          docker run -v $PWD:/iida-devkit -w /iida-devkit iida-devkit \
+          /bin/bash -c "\
+            cmake -G Ninja -S ./firmware -B ./firmware/build -DCMAKE_TOOLCHAIN_FILE=cmake/arm-none-eabi.cmake -DCMAKE_BUILD_TYPE=Debug && \
+            cmake --build ./firmware/build && \
+            mv ./firmware/build/bootloader/bootloader.hex bootloader.hex
+            mv ./firmware/build/application/application.hex application.hex
+          "
+      - name: Archive binaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: sw-artifacts
+          path: |
+            bootloader.hex
+            application.hex
+          if-no-files-found: error
+  release:
+    needs: [build]
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: hw-artifacts
+          path: artifacts
+      - uses: actions/download-artifact@v4
+        with:
+          name: sw-artifacts
+          path: artifacts
+      - name: Create a release
+        run: |
+          RELEASE_VERSION="$(echo ${GITHUB_REF_NAME} | cut -f1 -d-)"
+          gh release create ${GITHUB_REF_NAME} \
+            --title ${RELEASE_VERSION} \
+            --draft \
+            --generate-notes \
+            --prerelease
+          gh release upload ${GITHUB_REF_NAME} artifacts/* --clobber

@@ -5,7 +5,8 @@ LABEL	org.opencontainers.image.authors="saku.glumoff@gmail.com"
 WORKDIR	/tmp
 
 # Install prerequisites
-RUN	apt-get update -y && \
+RUN	echo "deb http://deb.debian.org/debian bookworm-backports main" >> /etc/apt/sources.list.d/backports.list && \
+	apt-get update -y && \
 	apt-get install -y \
 	python3 \
 	curl wget \
@@ -39,6 +40,10 @@ RUN	wget -qO- https://apt.llvm.org/llvm-snapshot.gpg.key | tee /etc/apt/trusted.
 	apt update -y && \
 	apt install -y clang-format-19 && \
 	ln -sf /usr/bin/clang-format-19 /usr/bin/clang-format
+
+# Install KiCad
+RUN	apt update -y && \
+	apt install -y kicad/bookworm-backports
 
 WORKDIR	/
 
