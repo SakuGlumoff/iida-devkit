@@ -5,89 +5,16 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Debug: BL+App",
-			"cwd": "${workspaceFolder}/firmware",
-			"executable": "${workspaceFolder}/firmware/build/bootloader/bootloader.elf",
-			"loadFiles": [
-				"${workspaceFolder}/firmware/build/bootloader/bootloader.elf",
-				"${workspaceFolder}/firmware/build/application/application_with_header.elf",
-			],
-			"symbolFiles": [
-				"${workspaceFolder}/firmware/build/bootloader/bootloader.elf",
-				"${workspaceFolder}/firmware/build/application/application_with_header.elf",
-			],
-			"request": "launch",
-			"type": "cortex-debug",
-			"device": "stm32l552ce",
-			"runToEntryPoint": "main",
-			"servertype": "jlink",
-			"preLaunchTask": "Build: All",
-			"svdFile": "${workspaceFolder}/firmware/stm32l552.svd",
-			"preLaunchCommands": [
-				"monitor halt",
-				//"monitor flash erase"
-			]
-		},
-		{
 			"name": "Debug: App",
-			"cwd": "${workspaceFolder}/firmware",
-			"executable": "${workspaceFolder}/firmware/build/application/application_with_header.elf",
+			"cwd": "${workspaceFolder}",
+			"executable": "${workspaceFolder}/build/zephyr/zephyr.elf",
 			"request": "launch",
 			"type": "cortex-debug",
 			"device": "stm32l552ce",
 			"runToEntryPoint": "main",
 			"servertype": "jlink",
-			"preLaunchTask": "Build: All",
-			"svdFile": "${workspaceFolder}/firmware/stm32l552.svd",
-			"preLaunchCommands": [
-				"monitor halt",
-				//"monitor flash erase"
-			]
-		},
-		{
-			"name": "Debug: QEMU",
-			"cwd": "${workspaceFolder}/firmware",
-			"executable": "${workspaceFolder}/firmware/build/bootloader/bootloader.elf",
-			"loadFiles": [
-				"${workspaceFolder}/firmware/build/bootloader/bootloader.elf",
-				"${workspaceFolder}/firmware/build/application/application_with_header.elf",
-			],
-			"symbolFiles": [
-				"${workspaceFolder}/firmware/build/bootloader/bootloader.elf",
-				"${workspaceFolder}/firmware/build/application/application_with_header.elf",
-			],
-			"request": "launch",
-			"type": "cortex-debug",
-			"runToEntryPoint": "main",
-			"servertype": "external",
-			"gdbTarget": "localhost:1234",
-			"preLaunchTask": "Build: All",
-			"preLaunchCommands": [
-				"monitor halt",
-				//"monitor flash erase"
-			]
-		},
-		{
-			"name": "Debug: PTSW",
-			"cwd": "${workspaceFolder}/firmware",
-			"executable": "${workspaceFolder}/firmware/build/ptsw/ptsw.elf",
-			"loadFiles": [
-				"${workspaceFolder}/firmware/build/ptsw/ptsw.elf"
-			],
-			"symbolFiles": [
-				"${workspaceFolder}/firmware/build/ptsw/ptsw.elf"
-			],
-			"request": "launch",
-			"type": "cortex-debug",
-			"device": "stm32l552ce",
-			"runToEntryPoint": "main",
-			"servertype": "jlink",
-			"preLaunchTask": "Build: All",
-			"svdFile": "${workspaceFolder}/firmware/stm32l552.svd",
-			"preLaunchCommands": [
-				"monitor halt",
-				//"monitor flash erase"
-			]
-		},
+			"preLaunchTask": "Build: App",
+			"svdFile": "${workspaceFolder}/boards/SakuGlumoff/iida_devkit/iida_devkit.svd"
+		}
 	]
 }

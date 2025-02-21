@@ -1,32 +1,19 @@
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "Zephyr",
             "includePath": [
-                "${env:ARM_GNU_PATH}/arm-none-eabi/include",
-                "${env:ARM_GNU_PATH}/arm-none-eabi/include/c++/13.3.1",
-                "${workspaceFolder}/firmware/application/include",
-                "${workspaceFolder}/firmware/application/FreeRTOSPort",
-                "${workspaceFolder}/firmware/bootloader/include",
-                "${workspaceFolder}/firmware/drivers/include",
-                "${workspaceFolder}/firmware/build/include",
-                "${workspaceFolder}/firmware/include",
-                "${workspaceFolder}/firmware/lib/CMSIS_5/CMSIS/Core/Include",
-                "${workspaceFolder}/firmware/lib/DebugPrint-GCC",
-                "${workspaceFolder}/firmware/lib/etl/include",
-                "${workspaceFolder}/firmware/lib/FreeRTOS-Kernel/include",
-                "${workspaceFolder}/firmware/lib/RTT/Config",
-                "${workspaceFolder}/firmware/lib/RTT/RTT",
-                "${workspaceFolder}/firmware/test/include"
+                "${env:HOME}/zephyr-sdk-0.17.0/arm-zephyr-eabi/include",
+                "${env:HOME}/zephyr-sdk-0.17.0/arm-zephyr-eabi/arm-zephyr-eabi/include",
+                "${env:HOME}/zephyr-sdk-0.17.0/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/12.2.0",
+                "${workspaceFolder}/src/include",
+                "${workspaceFolder}/zephyr/include",
+                "${workspaceFolder}/build/zephyr/include/generated"
             ],
-            "defines": [
-                "SEGGER_RTT_SECTION=\".segger_rtt\"",
-                "SEGGER_RTT_MODE_DEFAULT=SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL"
-            ],
-            "cStandard": "c17",
+            "cStandard": "c99",
             "cppStandard": "c++17",
             "intelliSenseMode": "linux-gcc-arm",
-            "compilerPath": "${env:ARM_GNU_PATH}/bin/arm-none-eabi-gcc"
+            "compilerPath": "${env:HOME}/zephyr-sdk-0.17.0/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
         }
     ],
     "version": 4

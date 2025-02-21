@@ -8,21 +8,13 @@ WORKDIR	/tmp
 RUN	echo "deb http://deb.debian.org/debian bookworm-backports main" >> /etc/apt/sources.list.d/backports.list && \
 	apt-get update -y && \
 	apt-get install -y \
-	python3 \
+	python3 python3-venv \
 	curl wget \
 	unzip gzip xz-utils \
 	git git-lfs \
 	bash-completion \
 	cmake ninja-build \
 	libncurses5 libncursesw5
-
-# Install ARM GNU toolchain
-RUN	wget https://developer.arm.com/-/media/Files/downloads/gnu/13.3.rel1/binrel/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi.tar.xz && \
-	tar -xvf arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi.tar.xz && \
-	rm arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi.tar.xz && \
-	mv arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-eabi /opt/arm-gnu-toolchain
-
-ENV	ARM_GNU_PATH=/opt/arm-gnu-toolchain
 
 # Install J-Link tools
 RUN	curl \
@@ -40,6 +32,14 @@ RUN	wget -qO- https://apt.llvm.org/llvm-snapshot.gpg.key | tee /etc/apt/trusted.
 	apt update -y && \
 	apt install -y clang-format-19 && \
 	ln -sf /usr/bin/clang-format-19 /usr/bin/clang-format
+
+# Install Zephyr dependencies
+RUN	apt-get update -y && \
+	apt-get install -y \
+	git cmake ninja-build gperf \
+	ccache dfu-util device-tree-compiler wget \
+	python3-dev python3-pip python3-setuptools python3-tk python3-wheel xz-utils file \
+	make gcc gcc-multilib g++-multilib libsdl2-dev libmagic1
 
 # Install KiCad
 RUN	apt update -y && \
@@ -60,5 +60,13 @@ RUN	groupadd --gid $USER_GID $USERNAME \
 	&& echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
 	&& chmod 0440 /etc/sudoers.d/$USERNAME
 USER 	$USERNAME
+
+WORKDIR	/home/user
+
+# Install Zephyr toolchain
+RUN	wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.17.0/zephyr-sdk-0.17.0_linux-x86_64_minimal.tar.xz && \
+	tar -xvf zephyr-sdk-0.17.0_linux-x86_64_minimal.tar.xz && \
+	rm zephyr-sdk-0.17.0_linux-x86_64_minimal.tar.xz && \
+	./zephyr-sdk-0.17.0/setup.sh -t arm-zephyr-eabi -h -c
 
 SHELL	["/bin/bash"]

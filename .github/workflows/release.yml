@@ -26,25 +26,28 @@ jobs:
       - name: Archive HW design files
         uses: actions/upload-artifact@v4
         with:
-          name: hw-artifacts
+          name: hardware
           path: iida_devkit.pdf
           if-no-files-found: error
-      - name: Build binaries
+      - name: Build firmware
         run: |
           docker run -v $PWD:/iida-devkit -w /iida-devkit iida-devkit \
           /bin/bash -c "\
-            cmake -G Ninja -S ./firmware -B ./firmware/build -DCMAKE_TOOLCHAIN_FILE=cmake/arm-none-eabi.cmake -DCMAKE_BUILD_TYPE=Debug && \
-            cmake --build ./firmware/build && \
-            mv ./firmware/build/bootloader/bootloader.hex bootloader.hex
-            mv ./firmware/build/application/application.hex application.hex
+            python3 -m venv .venv && source .venv/bin/activate && \
+            pip install west && \
+            west init . && \
+            west update && \
+            pip install -r zephyr/scripts/requirements.txt && \
+            west zephyr-export && \
+            west sdk install -t arm-zephyr-eabi && \
+            west build -b iida_devkit@4.2.1 . -- -DBOARD_ROOT=. && \
+            mv ./build/zephyr/zephyr.hex iida_devkit.hex
           "
-      - name: Archive binaries
+      - name: Archive firmware
         uses: actions/upload-artifact@v4
         with:
-          name: sw-artifacts
-          path: |
-            bootloader.hex
-            application.hex
+          name: firmware
+          path: iida_devkit.hex
           if-no-files-found: error
   release:
     needs: [build]
@@ -58,11 +61,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
-          name: hw-artifacts
+          name: hardware
           path: artifacts
       - uses: actions/download-artifact@v4
         with:
-          name: sw-artifacts
+          name: firmware
           path: artifacts
       - name: Create a release
         run: |

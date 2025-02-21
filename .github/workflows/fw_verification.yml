@@ -1,4 +1,4 @@
-name: FW Verification
+name: Firmware verification
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
   pull_request:
   workflow_dispatch:
 jobs:
-  Codecheck:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,22 +17,23 @@ jobs:
       - name: Build docker image
         # Build the docker image with current user's IDs so that permissions to the workspace are retained.
         run: docker build -t iida-devkit .devcontainer --build-arg USER_UID=$(id -u) --build-arg USER_GID=$(id -g)
-      - name: Codecheck
-        run: |
-          docker run -v $PWD:/iida-devkit -w /iida-devkit iida-devkit \
-          ./firmware/scripts/codechecker.sh
-      - name: Build
+      - name: Build firmware
         run: |
           docker run -v $PWD:/iida-devkit -w /iida-devkit iida-devkit \
           /bin/bash -c "\
-            cmake -G Ninja -S ./firmware -B ./firmware/build -DCMAKE_TOOLCHAIN_FILE=cmake/arm-none-eabi.cmake -DCMAKE_BUILD_TYPE=Debug && \
-            cmake --build ./firmware/build \
+            python3 -m venv .venv && source .venv/bin/activate && \
+            pip install west && \
+            west init . && \
+            west update && \
+            pip install -r zephyr/scripts/requirements.txt && \
+            west zephyr-export && \
+            west sdk install -t arm-zephyr-eabi && \
+            west build -b iida_devkit@4.2.1 . -- -DBOARD_ROOT=. \
           "
-      - name: Archive artifacts
+      - name: Archive firmware
         uses: actions/upload-artifact@v4
         with:
           name: Binaries
           path: |
-            ./firmware/build/bootloader/bootloader.hex
-            ./firmware/build/application/application.hex
+            ./build/zephyr/zephyr.hex
           if-no-files-found: error

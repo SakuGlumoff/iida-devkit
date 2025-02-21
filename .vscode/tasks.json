@@ -2,31 +2,16 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "CMake: Generate",
-			"group": {
-				"kind": "build"
-			},
-			"problemMatcher": "$gcc",
-			"type": "shell",
-			"command": [
-				"cd firmware",
-				"&& cmake -G Ninja -S . -B build -DCMAKE_TOOLCHAIN_FILE=cmake/arm-none-eabi.cmake -DCMAKE_BUILD_TYPE=Debug"
-			]
-		},
-		{
-			"label": "Build: All",
+			"label": "Build: App",
 			"group": {
 				"kind": "build",
 				"isDefault": true
 			},
-			"dependsOn": [
-				"CMake: Generate"
-			],
 			"problemMatcher": "$gcc",
 			"type": "shell",
 			"command": [
-				"cd firmware",
-				"&& cmake --build build"
+				"source ${workspaceFolder}/.venv/bin/activate",
+				"&& west build -b iida_devkit@4.2.1 . -- -DBOARD_ROOT=."
 			]
 		}
 	]
