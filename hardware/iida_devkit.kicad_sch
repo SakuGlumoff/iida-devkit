@@ -479,6 +479,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 105.41) (xy 142.24 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "334c76a9-26c1-4863-9388-d4a01a88174c")
+	)
+	(wire
+		(pts
 			(xy 139.7 191.77) (xy 144.78 191.77)
 		)
 		(stroke
@@ -499,16 +509,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 105.41) (xy 149.86 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "677fd130-86b2-44af-8b80-08bc5fd22c57")
-	)
-	(wire
-		(pts
 			(xy 142.24 102.87) (xy 144.78 102.87)
 		)
 		(stroke
@@ -526,6 +526,16 @@
 			(type default)
 		)
 		(uuid "90257038-183a-4e7e-a0cb-730b68f3f3b4")
+	)
+	(wire
+		(pts
+			(xy 151.13 102.87) (xy 151.13 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97886cfe-4b5b-4a8c-a7de-caf68fa1cf30")
 	)
 	(wire
 		(pts
@@ -628,7 +638,7 @@
 		)
 		(uuid "5571a628-e5ce-4932-aa05-15b27a6c8f99")
 	)
-	(text "This is a project for practicing PCB design and programming.\n\nThe result is a device that is powered either with a battery or with a USB connection.\nThe device can recharge the batteries via the USB connection.\n\nThe device includes:\n  - An example sensor (temperature)\n  - External flash for updating the firmware over the air (FOTA)\n  - A modem module that connects the main microcontroller to the internet with LTE CAT-M1\n  - Option to use either an external antenna or an integrated antenna\n\nA key goal of the project is to ensure it has as little reliance as possible on totalitarian\ncountries like China or Russia.\nComponent sourcing must be done carefully to select manufacturers who can supply parts that are not\nproduced in such countries.\nInstead, democratic countries such as Taiwan and Germany should be preferred.\n\nTo reduce strain on the global environment, manufacturing and sourcing is centered around Europe."
+	(text "This is a project for practicing PCB design and programming.\n\nThe result is a device that is powered either with a battery or with a USB connection.\nThe device can recharge the battery via the USB connection.\n\nThe device includes:\n  - An example sensor (temperature)\n  - External flash for updating the firmware over the air (FOTA)\n  - A modem module that connects the main microcontroller to the internet with LTE CAT-M1\n  - Option to use either an external antenna or an integrated antenna\n\nA key goal of the project is to ensure it has as little reliance as possible on totalitarian\ncountries (e.g., China or Russia) or on hostile countries (e.g., USA).\nComponent sourcing must be done carefully to select manufacturers who can supply parts that are not\nproduced in such countries.\nInstead, democratic countries (e.g., Taiwan and Germany) should be preferred.\n\nTo reduce strain on the global environment, manufacturing and sourcing is centered around Europe."
 		(exclude_from_sim no)
 		(at 14.478 52.07 0)
 		(effects
@@ -855,7 +865,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b88cd83-3afd-4da0-96db-2c7305c3c68f")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR02"
 			(at 149.86 198.12 0)
 			(effects
 				(font
@@ -906,7 +916,72 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "#PWR03")
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 144.78 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5ad314ef-7a86-41e0-8704-cd06b4e653a7")
+		(property "Reference" "#PWR01"
+			(at 144.78 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V_3V3"
+			(at 144.78 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 144.78 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9e56523-8679-419b-991b-716b65ea23ac")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -1017,15 +1092,15 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 149.86 105.41 0)
+		(at 151.13 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "c62b2cda-cf3f-4acc-ad3e-0e047ae36297")
-		(property "Reference" "#PWR02"
-			(at 149.86 109.22 0)
+		(property "Reference" "#PWR03"
+			(at 151.13 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1033,8 +1108,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+VBAT"
-			(at 149.86 101.854 0)
+		(property "Value" "V_BAT"
+			(at 151.13 99.314 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1042,7 +1117,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 105.41 0)
+			(at 151.13 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1051,7 +1126,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 105.41 0)
+			(at 151.13 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1060,7 +1135,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 149.86 105.41 0)
+			(at 151.13 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1074,72 +1149,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 144.78 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e2bef9b4-de08-4778-8b4d-ee860c74cc7d")
-		(property "Reference" "#PWR01"
-			(at 144.78 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 144.78 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 144.78 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b945e47a-a242-44e3-8a2a-ec81ea0947bb")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "#PWR01")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -1595,7 +1605,7 @@
 			)
 			(uuid "53365252-e9cf-4e71-80cc-cef839c4afc1")
 		)
-		(pin "V_{BAT}" output
+		(pin "V_BAT" output
 			(at 142.24 105.41 0)
 			(effects
 				(font
@@ -1605,7 +1615,7 @@
 			)
 			(uuid "146e3cb9-8da1-4795-a6e6-68773fb37a63")
 		)
-		(pin "+3.3V" output
+		(pin "V_3V3" output
 			(at 142.24 102.87 0)
 			(effects
 				(font
