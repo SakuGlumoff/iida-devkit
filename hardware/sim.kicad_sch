@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "4fb765a8-08ad-49f7-9263-a256ce9ac6d1")
 	(paper "A4")
 	(title_block
@@ -12,7 +12,9 @@
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x06"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -79,41 +81,19 @@
 			)
 			(symbol "Conn_01x06_1_1"
 				(rectangle
-					(start -1.27 -7.493)
-					(end 0 -7.747)
+					(start -1.27 6.35)
+					(end 1.27 -8.89)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
+					(start -1.27 5.207)
+					(end 0 4.953)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -134,8 +114,8 @@
 					)
 				)
 				(rectangle
-					(start -1.27 5.207)
-					(end 0 4.953)
+					(start -1.27 0.127)
+					(end 0 -0.127)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -145,14 +125,36 @@
 					)
 				)
 				(rectangle
-					(start -1.27 6.35)
-					(end 1.27 -8.89)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin passive line
@@ -264,9 +266,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -339,7 +344,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -351,7 +356,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -400,11 +405,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:D_TVS"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -472,10 +482,10 @@
 			(symbol "D_TVS_0_1"
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -496,10 +506,10 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -545,6 +555,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "G85D1160022HHR:G85D1160022HHR"
 			(exclude_from_sim no)
@@ -621,9 +632,21 @@
 				)
 			)
 			(symbol "G85D1160022HHR_0_1"
+				(polyline
+					(pts
+						(xy -12.7 -1.27) (xy -12.7 -21.59) (xy 10.414 -21.59) (xy 12.7 -19.05) (xy 12.7 -1.27) (xy -12.7 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(rectangle
-					(start -4.064 -13.97)
-					(end -0.254 -12.7)
+					(start -4.064 -8.89)
+					(end -0.254 -7.62)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -644,8 +667,8 @@
 					)
 				)
 				(rectangle
-					(start -4.064 -8.89)
-					(end -0.254 -7.62)
+					(start -4.064 -13.97)
+					(end -0.254 -12.7)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -654,21 +677,9 @@
 						(type outline)
 					)
 				)
-				(polyline
-					(pts
-						(xy -12.7 -1.27) (xy -12.7 -21.59) (xy 10.414 -21.59) (xy 12.7 -19.05) (xy 12.7 -1.27) (xy -12.7 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(rectangle
-					(start 1.016 -12.7)
-					(end 4.826 -13.97)
+					(start 1.016 -8.89)
+					(end 4.826 -7.62)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -689,8 +700,8 @@
 					)
 				)
 				(rectangle
-					(start 1.016 -8.89)
-					(end 4.826 -7.62)
+					(start 1.016 -12.7)
+					(end 4.826 -13.97)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -829,7 +840,8 @@
 				)
 				(pin passive line
 					(at -15.24 -17.78 0)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "SH"
 						(effects
 							(font
@@ -847,7 +859,8 @@
 				)
 				(pin passive line
 					(at -15.24 -17.78 0)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "SH"
 						(effects
 							(font
@@ -882,12 +895,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -978,7 +996,19 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Debug header for SIM communications"
+		(exclude_from_sim no)
+		(at 80.772 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f65e37ee-a2d0-4749-a7ed-c5cc534a35cd")
 	)
 	(junction
 		(at 187.96 144.78)
@@ -5117,24 +5147,30 @@
 			"CQAAAAAAAAAAAAAAAABA6wNr4AAAAAAAAAAAAAAAAAAAtD7gqQQAAAAAAAAAAAAAAAAAoPUBTyUA"
 			"AAAAAAAAAAAAAAAAAK0PeCoBAAAAAAAAAAAAAAAAAGh9wFMJAAAAAAAAAAAAAAAAAEDrA55KAAAA"
 			"AAAAAAAAAAAAAABaH/BUAgAAAAAAAAAAAAAAAADQ+oCnEgAAAAAAAAAAAAAAAACA1uf/AGqMRwgK"
-			"XAERAAAAAElFTkSuQmCC"
+			"XAERAAAAAElFTkSuQmCCIgPMAQAAJH/EuMUOE/ZoxwEAAAAAAAEAAADAGUsCAAAAAAAAAADAGUsC"
+			"AAAAANAVNAHMAQAAJn/AwjY/jt+QrAUAAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAAEAAADA"
+			"GUsCAAAAAAAAAADAGUsCAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAAEAAADAGUsCAAAAAAAA"
+			"AADAGUsCAAAAANBuHgPMAQAALX9fPvp2Mm2YrwUAAAAAAFDaC9fLAQAALH8HNj00xA+IkgQAAAAA"
+			"AHA/HQPMAQAALX/O+hWOEdw4ywYAAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAAEAAADAGUsC"
+			"AAAAAAAAAADAGUsCAAAAAACuHgPMAQAAMH9LO8lhic0QywQAAAAAANApIgPMAQAAMf9iCgIw3daY"
+			"qgEAAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAAEA"
+			"AADAGUsCAAAAAAAAAADAGUsCAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAACNJQPMAQAANv9e"
+			"C1k/V+iA+gIAAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAAEAAADAGUsCAAAAAAAAAADAGUsC"
+			"AAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAICTGQHMAQAAOv+l1kmSDBIoCwYAAAAAAAEAAADA"
+			"GUsCAAAAAAAAAADAGUsCAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAEAUHgPMAQAAPf84E/4M"
+			"NMEIYgUAAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAA"
+			"AAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAAEAAADAGUsC"
+			"AAAAAAAAAADAGUsCAAAAAKD7IgPMAQAAQ/9R9dSaV6nAeQIAAAAAAAEAAADAGUsCAAAAAAAAAADA"
+			"GUsCAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAOB5"
+			"SAHMAQAAR/+YlRlZzHPAMQMAAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAAEAAADAGUsCAAAA"
+			"AAAAAADAGUsCAAAAAAEAAADAGUsCAAAAAAAAAADAGUsCAAAAAPAGIgPMAQAAS3/gQ5JJkqggmgIA"
+			"AAAAANAiHwPMAQAATH/hx2t1yInAFQQAAAAAALCoIAPMAQAATX/Lwh6Suv3oSAEAAAAAAAEAAADA"
+			"GUsCAAAAAAAAAADAGQ=="
 		)
-	)
-	(text "Debug header for SIM communications"
-		(exclude_from_sim no)
-		(at 80.772 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f65e37ee-a2d0-4749-a7ed-c5cc534a35cd")
 	)
 	(hierarchical_label "VSIM"
 		(shape input)
 		(at 83.82 119.38 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5146,7 +5182,6 @@
 	(hierarchical_label "SIM_RST"
 		(shape input)
 		(at 83.82 121.92 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5158,7 +5193,6 @@
 	(hierarchical_label "SIM_CLK"
 		(shape input)
 		(at 83.82 124.46 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5170,7 +5204,6 @@
 	(hierarchical_label "SIM_IO"
 		(shape bidirectional)
 		(at 83.82 127 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "b12a6e25-97fb-4aba-bc96-af8db389bb9a")
 	(paper "A4")
 	(title_block
@@ -11,9 +11,13 @@
 	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -111,12 +115,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -188,7 +197,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -200,7 +209,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -231,12 +240,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+BATT"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -308,7 +322,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -320,7 +334,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -351,12 +365,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -447,7 +466,30 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "There's no real chassis or a case to mount the PCB,\nso just place the mounting holes at the corners of the PCB."
+		(exclude_from_sim no)
+		(at 116.078 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5571a628-e5ce-4932-aa05-15b27a6c8f99")
+	)
+	(text "This is a project for practicing PCB design and programming.\n\nThe result is a device that is powered either with a battery or with a USB connection.\nThe device can recharge the battery via the USB connection.\n\nThe device includes:\n  - An example sensor (temperature)\n  - External flash for updating the firmware over the air (FOTA)\n  - A modem module that connects the main microcontroller to the internet with LTE CAT-M1\n  - Option to use either an external antenna or an integrated antenna\n\nA key goal of the project is to ensure it has as little reliance as possible on totalitarian\ncountries (e.g., China or Russia) or on hostile countries (e.g., USA).\nComponent sourcing must be done carefully to select manufacturers who can supply parts that are not\nproduced in such countries.\nInstead, democratic countries (e.g., Taiwan and Germany) should be preferred.\n\nTo reduce strain on the global environment, manufacturing and sourcing is centered around Europe."
+		(exclude_from_sim no)
+		(at 14.478 52.07 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "b94eda75-5ba9-4359-bbae-047503216cba")
 	)
 	(junction
 		(at 149.86 191.77)
@@ -627,33 +669,11 @@
 		)
 		(uuid "f3051ff5-3f80-4f12-8f79-1969fdd51329")
 	)
-	(text "There's no real chassis or a case to mount the PCB,\nso just place the mounting holes at the corners of the PCB."
-		(exclude_from_sim no)
-		(at 116.078 181.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5571a628-e5ce-4932-aa05-15b27a6c8f99")
-	)
-	(text "This is a project for practicing PCB design and programming.\n\nThe result is a device that is powered either with a battery or with a USB connection.\nThe device can recharge the battery via the USB connection.\n\nThe device includes:\n  - An example sensor (temperature)\n  - External flash for updating the firmware over the air (FOTA)\n  - A modem module that connects the main microcontroller to the internet with LTE CAT-M1\n  - Option to use either an external antenna or an integrated antenna\n\nA key goal of the project is to ensure it has as little reliance as possible on totalitarian\ncountries (e.g., China or Russia) or on hostile countries (e.g., USA).\nComponent sourcing must be done carefully to select manufacturers who can supply parts that are not\nproduced in such countries.\nInstead, democratic countries (e.g., Taiwan and Germany) should be preferred.\n\nTo reduce strain on the global environment, manufacturing and sourcing is centered around Europe."
-		(exclude_from_sim no)
-		(at 14.478 52.07 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left)
-		)
-		(uuid "b94eda75-5ba9-4359-bbae-047503216cba")
-	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 134.62 189.23 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -756,7 +776,7 @@
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 149.86 189.23 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -991,7 +1011,7 @@
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 139.7 189.23 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -1159,7 +1179,7 @@
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 144.78 189.23 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -1261,6 +1281,10 @@
 	(sheet
 		(at 100.33 123.19)
 		(size 17.78 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1291,43 +1315,43 @@
 		)
 		(pin "SIM_RST" input
 			(at 118.11 128.27 0)
+			(uuid "f32303f7-4bc3-47f1-8df1-84b86affbf7c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f32303f7-4bc3-47f1-8df1-84b86affbf7c")
 		)
 		(pin "VSIM" input
 			(at 118.11 125.73 0)
+			(uuid "fe6520ae-21d4-4e54-ab5c-a77d28208c6e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fe6520ae-21d4-4e54-ab5c-a77d28208c6e")
 		)
 		(pin "SIM_CLK" input
 			(at 118.11 130.81 0)
+			(uuid "98ba439e-18f9-4613-8a18-c982dcaad86f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "98ba439e-18f9-4613-8a18-c982dcaad86f")
 		)
 		(pin "SIM_IO" bidirectional
 			(at 118.11 133.35 0)
+			(uuid "2489ff51-7f55-4b64-a251-1aa8855cf301")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2489ff51-7f55-4b64-a251-1aa8855cf301")
 		)
 		(instances
 			(project "iida_devkit"
@@ -1340,6 +1364,10 @@
 	(sheet
 		(at 124.46 123.19)
 		(size 26.67 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1370,83 +1398,83 @@
 		)
 		(pin "SIM_IO" bidirectional
 			(at 124.46 133.35 180)
+			(uuid "74388d3f-d654-4c91-9ab6-16ccf4ff06ba")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "74388d3f-d654-4c91-9ab6-16ccf4ff06ba")
 		)
 		(pin "VSIM" input
 			(at 124.46 125.73 180)
+			(uuid "0a154582-1c77-4364-9874-ad9886d242bc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0a154582-1c77-4364-9874-ad9886d242bc")
 		)
 		(pin "SIM_RST" input
 			(at 124.46 128.27 180)
+			(uuid "68eb1f09-9723-4835-9a32-989842fb9f33")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "68eb1f09-9723-4835-9a32-989842fb9f33")
 		)
 		(pin "SIM_CLK" input
 			(at 124.46 130.81 180)
+			(uuid "679426f3-330a-44a8-b431-6c083eadeab8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "679426f3-330a-44a8-b431-6c083eadeab8")
 		)
 		(pin "MODEM_RESET" input
 			(at 151.13 130.81 0)
+			(uuid "89892a07-8843-47d4-b72a-b6cfab519eaf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "89892a07-8843-47d4-b72a-b6cfab519eaf")
 		)
 		(pin "MODEM_RX" bidirectional
 			(at 151.13 128.27 0)
+			(uuid "ae0d97c2-51b0-447e-8d13-5413164479c3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ae0d97c2-51b0-447e-8d13-5413164479c3")
 		)
 		(pin "MODEM_TX" bidirectional
 			(at 151.13 125.73 0)
+			(uuid "6d1e3a79-44ba-4120-aac0-f77b22f98bdd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6d1e3a79-44ba-4120-aac0-f77b22f98bdd")
 		)
 		(pin "MODEM_PWR_ENn" input
 			(at 151.13 133.35 0)
+			(uuid "840ad303-7056-4439-9228-150e526815c4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "840ad303-7056-4439-9228-150e526815c4")
 		)
 		(instances
 			(project "iida_devkit"
@@ -1459,6 +1487,10 @@
 	(sheet
 		(at 165.1 102.87)
 		(size 24.13 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1489,63 +1521,63 @@
 		)
 		(pin "MODEM_TX" bidirectional
 			(at 165.1 125.73 180)
+			(uuid "99ecb9fa-4ee6-48e7-ba96-ea8fca62c7df")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "99ecb9fa-4ee6-48e7-ba96-ea8fca62c7df")
 		)
 		(pin "MODEM_RX" bidirectional
 			(at 165.1 128.27 180)
+			(uuid "188d5d6a-7712-4ca6-a733-020c99202f1f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "188d5d6a-7712-4ca6-a733-020c99202f1f")
 		)
 		(pin "MODEM_RESET" output
 			(at 165.1 130.81 180)
+			(uuid "ef086c81-5b96-4c75-871f-f8a74954c38a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ef086c81-5b96-4c75-871f-f8a74954c38a")
 		)
 		(pin "MODEM_PWR_ENn" output
 			(at 165.1 133.35 180)
+			(uuid "f06ee567-2246-426d-b8d7-68cf7891e5fe")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f06ee567-2246-426d-b8d7-68cf7891e5fe")
 		)
 		(pin "USB_DP" bidirectional
 			(at 165.1 110.49 180)
+			(uuid "c0d42e28-dc49-4020-81fd-6a9d8493d29b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c0d42e28-dc49-4020-81fd-6a9d8493d29b")
 		)
 		(pin "USB_DN" bidirectional
 			(at 165.1 113.03 180)
+			(uuid "8abe9ec8-9267-412d-a685-9a985aecbeb1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8abe9ec8-9267-412d-a685-9a985aecbeb1")
 		)
 		(instances
 			(project "iida_devkit"
@@ -1558,6 +1590,10 @@
 	(sheet
 		(at 124.46 101.6)
 		(size 17.78 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -1587,43 +1623,43 @@
 		)
 		(pin "USB_DP" bidirectional
 			(at 142.24 110.49 0)
+			(uuid "9da066d4-8298-4214-9f5f-f7e1cd6623d5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9da066d4-8298-4214-9f5f-f7e1cd6623d5")
 		)
 		(pin "USB_DN" bidirectional
 			(at 142.24 113.03 0)
+			(uuid "53365252-e9cf-4e71-80cc-cef839c4afc1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "53365252-e9cf-4e71-80cc-cef839c4afc1")
 		)
 		(pin "V_BAT" output
 			(at 142.24 105.41 0)
+			(uuid "146e3cb9-8da1-4795-a6e6-68773fb37a63")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "146e3cb9-8da1-4795-a6e6-68773fb37a63")
 		)
 		(pin "V_3V3" output
 			(at 142.24 102.87 0)
+			(uuid "ebbcd371-269c-4b6e-bffa-1932d7c1de5a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ebbcd371-269c-4b6e-bffa-1932d7c1de5a")
 		)
 		(instances
 			(project "iida_devkit"
@@ -1638,4 +1674,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
