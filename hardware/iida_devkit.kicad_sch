@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Iida devkit")
-		(date "2024-12-22")
-		(rev "v4.2.3")
+		(date "2025-05-07")
+		(rev "v5.0.0")
 	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole_Pad"
@@ -242,131 +242,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+BATT"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+BATT"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+BATT\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power battery"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+BATT_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+BATT_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -498,10 +373,22 @@
 		(uuid "062403b7-13ce-4a49-b1b0-dd820d284646")
 	)
 	(junction
+		(at 110.49 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3af56dcd-c728-4093-91dc-1ce72299cf23")
+	)
+	(junction
 		(at 139.7 191.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "939d13a2-cc0b-4354-bde8-a93e85d138b7")
+	)
+	(junction
+		(at 114.3 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0122a6a-5670-445e-a405-681022e6dd49")
 	)
 	(junction
 		(at 144.78 191.77)
@@ -511,23 +398,123 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 125.73) (xy 124.46 125.73)
+			(xy 193.04 128.27) (xy 199.39 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "11789dc7-75c0-40bf-9f05-59d7931a7513")
+		(uuid "0437dc5a-5cbf-448c-9671-e5c55aca3a9d")
 	)
 	(wire
 		(pts
-			(xy 151.13 105.41) (xy 142.24 105.41)
+			(xy 193.04 135.89) (xy 199.39 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "334c76a9-26c1-4863-9388-d4a01a88174c")
+		(uuid "077284f6-62bb-42cf-b119-d75961ffb2db")
+	)
+	(wire
+		(pts
+			(xy 152.4 133.35) (xy 166.37 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1550d9cf-e313-429b-805b-07bcc856cfb0")
+	)
+	(wire
+		(pts
+			(xy 102.87 135.89) (xy 123.19 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20d22b70-3e30-4610-a06c-07f6bb63cf58")
+	)
+	(wire
+		(pts
+			(xy 152.4 130.81) (xy 166.37 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "233f1c55-f229-4c47-a7e5-a866dc2f51cf")
+	)
+	(wire
+		(pts
+			(xy 193.04 133.35) (xy 199.39 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2604e3a3-fd26-4109-9343-e1226dff4631")
+	)
+	(wire
+		(pts
+			(xy 114.3 105.41) (xy 114.3 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "269e2e5b-960e-45dd-bdef-8845cad7d281")
+	)
+	(wire
+		(pts
+			(xy 102.87 116.84) (xy 110.49 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29ee5192-d812-454c-bd92-a7766a130b77")
+	)
+	(wire
+		(pts
+			(xy 193.04 123.19) (xy 199.39 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c92ff13-4d44-4d26-8d61-ddd0073c729c")
+	)
+	(wire
+		(pts
+			(xy 102.87 133.35) (xy 123.19 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f4fcca4-539f-4a3b-9908-fdc5917f0315")
+	)
+	(wire
+		(pts
+			(xy 193.04 109.22) (xy 199.39 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53036605-b59d-4817-b654-09c8d3e47e20")
+	)
+	(wire
+		(pts
+			(xy 193.04 130.81) (xy 199.39 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "555191cc-9998-4017-bf76-e0b2c0c1c4a5")
 	)
 	(wire
 		(pts
@@ -541,43 +528,33 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 125.73) (xy 165.1 125.73)
+			(xy 152.4 128.27) (xy 166.37 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5c118627-09f0-4b18-997c-443007e9c616")
+		(uuid "6ef8a0e2-2534-4477-ba27-382b056f9422")
 	)
 	(wire
 		(pts
-			(xy 142.24 102.87) (xy 144.78 102.87)
+			(xy 114.3 105.41) (xy 123.19 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "79865e9d-1d41-4244-8b59-ab68b1b1f5fd")
+		(uuid "70e7b0a7-2151-4465-8237-8c8c396d4505")
 	)
 	(wire
 		(pts
-			(xy 118.11 128.27) (xy 124.46 128.27)
+			(xy 152.4 125.73) (xy 166.37 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "90257038-183a-4e7e-a0cb-730b68f3f3b4")
-	)
-	(wire
-		(pts
-			(xy 151.13 102.87) (xy 151.13 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97886cfe-4b5b-4a8c-a7de-caf68fa1cf30")
+		(uuid "853988ed-df14-4b93-9200-4fe3af8c89c4")
 	)
 	(wire
 		(pts
@@ -591,33 +568,13 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 130.81) (xy 165.1 130.81)
+			(xy 102.87 107.95) (xy 110.49 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9d4777f2-75b5-40ac-98e7-970a0b3623e9")
-	)
-	(wire
-		(pts
-			(xy 151.13 128.27) (xy 165.1 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a18fbc9d-f2c8-4197-9bd7-50397c0553df")
-	)
-	(wire
-		(pts
-			(xy 142.24 110.49) (xy 165.1 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3ff378e-6f21-49f5-8911-c48f2472159e")
+		(uuid "99d5608f-7804-4785-bdf5-8f4afde0fce4")
 	)
 	(wire
 		(pts
@@ -631,43 +588,83 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 130.81) (xy 124.46 130.81)
+			(xy 110.49 116.84) (xy 110.49 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b8f1798f-c79d-40f0-a85c-4cd3877f6a63")
+		(uuid "bed91706-3bb4-4869-9b2d-f8b3f788d469")
 	)
 	(wire
 		(pts
-			(xy 151.13 133.35) (xy 165.1 133.35)
+			(xy 110.49 107.95) (xy 110.49 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b94e1048-e4a1-456f-a55d-5515960e0860")
+		(uuid "c6969a7a-cc25-4b5d-9c7c-b5cc3c2f8e5f")
 	)
 	(wire
 		(pts
-			(xy 142.24 113.03) (xy 165.1 113.03)
+			(xy 102.87 105.41) (xy 114.3 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e6c44988-192f-4e2e-8cc1-b425cd8f9978")
+		(uuid "cf877adf-639e-45aa-b479-9ce7558174d4")
 	)
 	(wire
 		(pts
-			(xy 118.11 133.35) (xy 124.46 133.35)
+			(xy 102.87 99.06) (xy 114.3 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f3051ff5-3f80-4f12-8f79-1969fdd51329")
+		(uuid "e1f381e3-b66a-4562-844d-a25856336785")
+	)
+	(wire
+		(pts
+			(xy 102.87 130.81) (xy 110.49 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3dc7ee3-aca5-4cd8-a31a-d9f25bcb98ed")
+	)
+	(wire
+		(pts
+			(xy 152.4 135.89) (xy 166.37 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e56d102d-8bd2-4d9b-a997-db5a5af56be4")
+	)
+	(wire
+		(pts
+			(xy 193.04 125.73) (xy 199.39 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f61da318-0f9c-4876-ae27-c10fd52165c3")
+	)
+	(wire
+		(pts
+			(xy 114.3 119.38) (xy 102.87 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb8545ba-8579-4da5-b9f7-9c32234b4169")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
@@ -716,15 +713,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 134.62 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "-"
 			(at 134.62 189.23 0)
 			(effects
 				(font
@@ -819,15 +807,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "-"
 			(at 149.86 189.23 0)
 			(effects
 				(font
@@ -943,71 +922,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 144.78 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5ad314ef-7a86-41e0-8704-cd06b4e653a7")
-		(property "Reference" "#PWR01"
-			(at 144.78 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "V_3V3"
-			(at 144.78 99.314 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 144.78 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f9e56523-8679-419b-991b-716b65ea23ac")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 139.7 189.23 0)
 		(unit 1)
@@ -1062,15 +976,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "-"
-			(at 139.7 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "-"
 			(at 139.7 189.23 0)
 			(effects
@@ -1111,16 +1016,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+BATT")
-		(at 151.13 102.87 0)
+		(lib_id "power:+3.3V")
+		(at 114.3 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c62b2cda-cf3f-4acc-ad3e-0e047ae36297")
-		(property "Reference" "#PWR03"
-			(at 151.13 106.68 0)
+		(uuid "b0a3d814-bb98-439a-bcb4-9fa5713445be")
+		(property "Reference" "#PWR01"
+			(at 114.3 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1128,8 +1033,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "V_BAT"
-			(at 151.13 99.314 0)
+		(property "Value" "V_3V3"
+			(at 114.3 95.504 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1137,7 +1042,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 102.87 0)
+			(at 114.3 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1146,7 +1051,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 102.87 0)
+			(at 114.3 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1154,8 +1059,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 151.13 102.87 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 114.3 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1164,12 +1069,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "70f4ac2c-751f-4bdc-bb43-0d016c29dc2c")
+			(uuid "5eb05636-846f-4dca-b604-f142b2c15c3d")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "#PWR03")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -1230,15 +1135,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "-"
-			(at 144.78 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "-"
 			(at 144.78 189.23 0)
 			(effects
@@ -1279,13 +1175,12 @@
 		)
 	)
 	(sheet
-		(at 100.33 123.19)
-		(size 17.78 12.7)
+		(at 199.39 119.38)
+		(size 17.78 20.32)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -1296,7 +1191,7 @@
 		)
 		(uuid "33580d9f-a609-4568-baaf-9a29cf2dabcd")
 		(property "Sheetname" "SIM"
-			(at 100.33 122.4784 0)
+			(at 199.39 119.126 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1305,7 +1200,7 @@
 			)
 		)
 		(property "Sheetfile" "sim.kicad_sch"
-			(at 100.33 136.4746 0)
+			(at 199.39 139.954 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1313,62 +1208,81 @@
 				(justify left top)
 			)
 		)
-		(pin "SIM_RST" input
-			(at 118.11 128.27 0)
-			(uuid "f32303f7-4bc3-47f1-8df1-84b86affbf7c")
+		(pin "MDM_V_INT" input
+			(at 199.39 123.19 180)
+			(uuid "bf86f2d1-ded2-4ed2-8cca-48ae08bc2493")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
-			)
-		)
-		(pin "VSIM" input
-			(at 118.11 125.73 0)
-			(uuid "fe6520ae-21d4-4e54-ab5c-a77d28208c6e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "SIM_CLK" input
-			(at 118.11 130.81 0)
-			(uuid "98ba439e-18f9-4613-8a18-c982dcaad86f")
+			(at 199.39 130.81 180)
+			(uuid "693f36e5-cc16-4300-9329-d5aa358dafaf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
+			)
+		)
+		(pin "SIM_DET" output
+			(at 199.39 135.89 180)
+			(uuid "1cca0da1-4b7c-494c-a049-37bf150ca457")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(pin "SIM_IO" bidirectional
-			(at 118.11 133.35 0)
-			(uuid "2489ff51-7f55-4b64-a251-1aa8855cf301")
+			(at 199.39 128.27 180)
+			(uuid "08d56c7a-a367-4d67-9e02-4f64ef417bd4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
+			)
+		)
+		(pin "SIM_RST" input
+			(at 199.39 133.35 180)
+			(uuid "a6ba69b9-06a3-4518-84bb-289bc6acf676")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SIM_VCC" input
+			(at 199.39 125.73 180)
+			(uuid "404c4a72-9795-4614-b361-df241580978f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(page "5")
+					(page "7")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 124.46 123.19)
-		(size 26.67 12.7)
+		(at 166.37 106.68)
+		(size 26.67 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -1379,7 +1293,7 @@
 		)
 		(uuid "3723475b-e956-4027-ac40-e47346743900")
 		(property "Sheetname" "Modem"
-			(at 124.46 122.4784 0)
+			(at 166.37 106.426 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1388,7 +1302,7 @@
 			)
 		)
 		(property "Sheetfile" "modem.kicad_sch"
-			(at 124.46 136.4746 0)
+			(at 166.37 139.954 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1396,49 +1310,99 @@
 				(justify left top)
 			)
 		)
+		(pin "ANT" bidirectional
+			(at 193.04 109.22 0)
+			(uuid "b67b0332-d79a-44db-ab3c-27d929a9fc1f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MDM_PWR_EN" input
+			(at 166.37 125.73 180)
+			(uuid "0768c699-96c1-41f7-bb53-e3f9ca0e3a6b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MDM_PWR_ON" input
+			(at 166.37 128.27 180)
+			(uuid "300a9b01-09e7-4c4a-a67b-cfe150bbb506")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MDM_RESET" input
+			(at 166.37 130.81 180)
+			(uuid "b60a62db-d570-48e8-ba02-96ba75cb38bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MDM_RXD" bidirectional
+			(at 166.37 133.35 180)
+			(uuid "fbf36e09-fb98-4ad5-ae7f-d2ba86a4d4ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MDM_TXD" bidirectional
+			(at 166.37 135.89 180)
+			(uuid "23280601-79c6-4031-b885-21c9c7916130")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MDM_V_INT" output
+			(at 193.04 123.19 0)
+			(uuid "9452eb43-34af-4e3b-afe9-e66ed7e5d307")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SIM_CLK" output
+			(at 193.04 130.81 0)
+			(uuid "8db62a61-3330-4be3-9848-2dc8d2793498")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SIM_DET" input
+			(at 193.04 135.89 0)
+			(uuid "dd50aa16-17b3-415a-933e-3a0cd0dfd975")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(pin "SIM_IO" bidirectional
-			(at 124.46 133.35 180)
-			(uuid "74388d3f-d654-4c91-9ab6-16ccf4ff06ba")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VSIM" input
-			(at 124.46 125.73 180)
-			(uuid "0a154582-1c77-4364-9874-ad9886d242bc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SIM_RST" input
-			(at 124.46 128.27 180)
-			(uuid "68eb1f09-9723-4835-9a32-989842fb9f33")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SIM_CLK" input
-			(at 124.46 130.81 180)
-			(uuid "679426f3-330a-44a8-b431-6c083eadeab8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "MODEM_RESET" input
-			(at 151.13 130.81 0)
-			(uuid "89892a07-8843-47d4-b72a-b6cfab519eaf")
+			(at 193.04 128.27 0)
+			(uuid "099f14a8-56b3-4df1-8976-d1947de0e38f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1446,9 +1410,9 @@
 				(justify right)
 			)
 		)
-		(pin "MODEM_RX" bidirectional
-			(at 151.13 128.27 0)
-			(uuid "ae0d97c2-51b0-447e-8d13-5413164479c3")
+		(pin "SIM_RST" output
+			(at 193.04 133.35 0)
+			(uuid "08a0090a-5e4b-4f9b-8a34-1425bfa1aac2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1456,9 +1420,9 @@
 				(justify right)
 			)
 		)
-		(pin "MODEM_TX" bidirectional
-			(at 151.13 125.73 0)
-			(uuid "6d1e3a79-44ba-4120-aac0-f77b22f98bdd")
+		(pin "SIM_VCC" output
+			(at 193.04 125.73 0)
+			(uuid "dd101a31-d6c3-4874-999a-ea6ba2fd5570")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1466,9 +1430,71 @@
 				(justify right)
 			)
 		)
-		(pin "MODEM_PWR_ENn" input
-			(at 151.13 133.35 0)
-			(uuid "840ad303-7056-4439-9228-150e526815c4")
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 85.09 96.52)
+		(size 17.78 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 255 0 1.0000)
+		)
+		(uuid "5e1bb3da-9ec5-412a-a6e9-5701708c7ef6")
+		(property "Sheetname" "Power"
+			(at 85.09 96.266 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 85.09 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "V_3V3" output
+			(at 102.87 99.06 0)
+			(uuid "ceeb2b72-6d4b-4d62-8c65-210aee4412ab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "V_5V0" input
+			(at 102.87 107.95 0)
+			(uuid "922408a0-0dac-46a7-8e0f-d6806cc34aa2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "V_BAT" input
+			(at 102.87 105.41 0)
+			(uuid "e9e25424-d4ff-43bc-b2a3-cda51c0f50c0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1485,13 +1511,12 @@
 		)
 	)
 	(sheet
-		(at 165.1 102.87)
-		(size 24.13 33.02)
+		(at 123.19 96.52)
+		(size 29.21 43.18)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -1502,7 +1527,7 @@
 		)
 		(uuid "6dd8d741-3080-458c-a4f5-a05a3905bb8a")
 		(property "Sheetname" "MCU"
-			(at 165.1 102.1584 0)
+			(at 123.19 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1511,7 +1536,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 165.1 136.4746 0)
+			(at 123.19 140.208 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1519,48 +1544,8 @@
 				(justify left top)
 			)
 		)
-		(pin "MODEM_TX" bidirectional
-			(at 165.1 125.73 180)
-			(uuid "99ecb9fa-4ee6-48e7-ba96-ea8fca62c7df")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "MODEM_RX" bidirectional
-			(at 165.1 128.27 180)
-			(uuid "188d5d6a-7712-4ca6-a733-020c99202f1f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "MODEM_RESET" output
-			(at 165.1 130.81 180)
-			(uuid "ef086c81-5b96-4c75-871f-f8a74954c38a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "MODEM_PWR_ENn" output
-			(at 165.1 133.35 180)
-			(uuid "f06ee567-2246-426d-b8d7-68cf7891e5fe")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "USB_DP" bidirectional
-			(at 165.1 110.49 180)
+			(at 123.19 133.35 180)
 			(uuid "c0d42e28-dc49-4020-81fd-6a9d8493d29b")
 			(effects
 				(font
@@ -1570,13 +1555,135 @@
 			)
 		)
 		(pin "USB_DN" bidirectional
-			(at 165.1 113.03 180)
+			(at 123.19 135.89 180)
 			(uuid "8abe9ec8-9267-412d-a685-9a985aecbeb1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "MDM_PWR_EN" output
+			(at 152.4 125.73 0)
+			(uuid "3685f9eb-fb8a-46bc-a39e-1ce08dea3314")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MDM_PWR_ON" output
+			(at 152.4 128.27 0)
+			(uuid "d80da251-e131-4d59-aaed-172617768a85")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MDM_RESET" output
+			(at 152.4 130.81 0)
+			(uuid "423702ac-29ba-4b6d-ba04-a20f6f2b544a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MDM_RXD" input
+			(at 152.4 133.35 0)
+			(uuid "49c51f4b-d773-4c26-ac52-22802ad2cf86")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MDM_TXD" output
+			(at 152.4 135.89 0)
+			(uuid "4171f7f1-af38-4b6d-b985-c89eba542d27")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "V_BAT" input
+			(at 123.19 105.41 180)
+			(uuid "dfe9f728-f51e-46d0-a950-b72cdd7f8bfc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 85.09 115.57)
+		(size 17.78 6.35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 255 0 1.0000)
+		)
+		(uuid "87c570c0-3d52-431f-af75-588e9bdc1a2a")
+		(property "Sheetname" "Battery"
+			(at 85.09 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "battery.kicad_sch"
+			(at 85.09 122.174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "V_5V0" input
+			(at 102.87 116.84 0)
+			(uuid "c7a2dd6f-e53d-49bf-a454-68606d3330c6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "V_BAT" output
+			(at 102.87 119.38 0)
+			(uuid "9b2f0c14-f677-4a36-b2b7-b863e4c69089")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -1588,8 +1695,8 @@
 		)
 	)
 	(sheet
-		(at 124.46 101.6)
-		(size 17.78 13.97)
+		(at 85.09 127)
+		(size 17.78 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1603,8 +1710,8 @@
 			(color 0 255 0 1.0000)
 		)
 		(uuid "8a51e004-740e-440f-9bfb-b035bcbeb0d2")
-		(property "Sheetname" "Power"
-			(at 124.206 101.092 0)
+		(property "Sheetname" "USB"
+			(at 85.09 126.746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1612,8 +1719,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "power.kicad_sch"
-			(at 124.46 116.078 0)
+		(property "Sheetfile" "usb.kicad_sch"
+			(at 85.09 139.954 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1621,19 +1728,9 @@
 				(justify left top)
 			)
 		)
-		(pin "USB_DP" bidirectional
-			(at 142.24 110.49 0)
-			(uuid "9da066d4-8298-4214-9f5f-f7e1cd6623d5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "USB_DN" bidirectional
-			(at 142.24 113.03 0)
-			(uuid "53365252-e9cf-4e71-80cc-cef839c4afc1")
+			(at 102.87 135.89 0)
+			(uuid "ca4dac7e-1e1e-4be2-a319-70da5317c4b5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1641,9 +1738,9 @@
 				(justify right)
 			)
 		)
-		(pin "V_BAT" output
-			(at 142.24 105.41 0)
-			(uuid "146e3cb9-8da1-4795-a6e6-68773fb37a63")
+		(pin "USB_DP" bidirectional
+			(at 102.87 133.35 0)
+			(uuid "b03d066f-2f5e-4cde-b3e8-b8b654bb7707")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1651,9 +1748,9 @@
 				(justify right)
 			)
 		)
-		(pin "V_3V3" output
-			(at 142.24 102.87 0)
-			(uuid "ebbcd371-269c-4b6e-bffa-1932d7c1de5a")
+		(pin "V_5V0" output
+			(at 102.87 130.81 0)
+			(uuid "e7ef3ea9-596c-4b79-b017-6f6d4db5093a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1665,6 +1762,58 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 199.39 106.68)
+		(size 17.78 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 255 0 1.0000)
+		)
+		(uuid "e6477a2c-b2b5-4454-829c-da955dc53725")
+		(property "Sheetname" "Antenna"
+			(at 199.39 106.426 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "antenna.kicad_sch"
+			(at 199.39 112.268 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ANT" bidirectional
+			(at 199.39 109.22 180)
+			(uuid "1d36ff11-13ef-45f2-b8bf-5224857eb108")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
+					(page "8")
 				)
 			)
 		)

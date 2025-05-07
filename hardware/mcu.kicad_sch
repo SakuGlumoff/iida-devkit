@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Iida devkit")
-		(date "2024-12-22")
-		(rev "v4.2.3")
+		(date "2025-05-07")
+		(rev "v5.0.0")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
@@ -1897,6 +1897,15 @@
 				)
 			)
 			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5495,131 +5504,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+BATT"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+BATT"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+BATT\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power battery"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+BATT_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+BATT_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -5886,7 +5770,7 @@
 	(text_box "Battery sense circuit\n\nV_BAT is at 4.2 V when fully charged.\nThis circuit draws at most\n4.2 V / 2 MΩ = 2.1 µA.\n\nV_BAT_SENSE is 2.1 V when fully charged and 1.75 V when almost empty."
 		(exclude_from_sim no)
 		(at 186.69 15.24 0)
-		(size 27.94 24.13)
+		(size 29.21 24.13)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -5948,8 +5832,8 @@
 	)
 	(text_box "Testing: Remove when functionality verified."
 		(exclude_from_sim no)
-		(at 234.95 15.24 0)
-		(size 48.26 90.17)
+		(at 245.11 15.24 0)
+		(size 38.1 90.17)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -5970,7 +5854,7 @@
 	(text_box "BOOT0 selection\n\nTie LOW  to boot from flash.\nTie HIGH to boot to system bootloader.\nAs the system bootloader is not used,\nBOOT0 should be tied LOW."
 		(exclude_from_sim no)
 		(at 186.69 41.91 0)
-		(size 27.94 21.59)
+		(size 29.21 21.59)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -6016,12 +5900,6 @@
 		(uuid "03b0601e-7dbc-45a8-9749-ebf313610ceb")
 	)
 	(junction
-		(at 69.85 173.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "047e40f2-103f-46a2-a054-11c682a3c5ae")
-	)
-	(junction
 		(at 22.86 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6058,12 +5936,6 @@
 		(uuid "21b20c40-1668-49fa-9e40-68e2d7f8ac0f")
 	)
 	(junction
-		(at 69.85 190.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "248b59c0-7a75-45fc-ba5c-723bd8d4aea2")
-	)
-	(junction
 		(at 123.19 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6076,34 +5948,16 @@
 		(uuid "332f2066-9869-4899-a42b-69dc7f00e410")
 	)
 	(junction
-		(at 261.62 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "36de2c08-864d-4bd1-a995-4adf7a1862ed")
-	)
-	(junction
 		(at 22.86 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d9307b6-a0f8-4693-8953-18fb22d21945")
 	)
 	(junction
-		(at 60.96 176.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3deff5f2-1a5d-4cf1-9f9e-3fea5439faf5")
-	)
-	(junction
 		(at 21.59 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "49031743-abbc-4e15-a64d-d1a11306f0de")
-	)
-	(junction
-		(at 270.51 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4c00d959-5662-44a4-b1e2-d3da1b60f610")
 	)
 	(junction
 		(at 87.63 102.87)
@@ -6130,16 +5984,10 @@
 		(uuid "603622d8-d961-45ba-a317-3df7233aa68c")
 	)
 	(junction
-		(at 261.62 31.75)
+		(at 59.69 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6a28325a-ca7e-49b9-8fa8-9b4aee0d3b46")
-	)
-	(junction
-		(at 270.51 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6aa40001-107a-4ecb-b9ad-fe1c5118fd0b")
+		(uuid "632d3224-14f2-4e54-a078-900cb77c864c")
 	)
 	(junction
 		(at 58.42 113.03)
@@ -6178,22 +6026,10 @@
 		(uuid "77597f37-0440-476e-b9a1-8216cb497ceb")
 	)
 	(junction
-		(at 270.51 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "77f7d0e7-8ce7-40bb-bbd7-e8e92acab89a")
-	)
-	(junction
 		(at 129.54 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7f2c29ad-c911-4cd1-8149-b716b9f66b8f")
-	)
-	(junction
-		(at 78.74 171.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "825e8dc8-292b-49f9-8afa-d355ac630286")
 	)
 	(junction
 		(at 87.63 100.33)
@@ -6208,10 +6044,10 @@
 		(uuid "8b99b3a3-34c7-4515-b55a-077996a1284d")
 	)
 	(junction
-		(at 273.05 101.6)
+		(at 74.93 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "98ed0026-322e-48f8-9c58-4ecf142899af")
+		(uuid "95c4227e-e64b-42ef-8006-ac537b93908d")
 	)
 	(junction
 		(at 35.56 46.99)
@@ -6224,12 +6060,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "995a2462-ce64-4e6e-ac26-542af875d187")
-	)
-	(junction
-		(at 60.96 190.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9c0fbe33-7135-4563-b360-04c88464b965")
 	)
 	(junction
 		(at 81.28 161.29)
@@ -6262,34 +6092,22 @@
 		(uuid "a5ddc50d-99a4-488b-a2f3-2fdc5b6f0fe2")
 	)
 	(junction
-		(at 270.51 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a6eca7ee-7d31-41ee-a304-c1a1f4849993")
-	)
-	(junction
 		(at 179.07 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a794efdd-e595-4cfd-a4d4-671d69c47d25")
 	)
 	(junction
-		(at 273.05 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ac9d4e29-39ad-45f4-946b-647b8e42e351")
-	)
-	(junction
-		(at 261.62 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "acc0e69c-8e5a-46e6-aed0-4f016d4d7804")
-	)
-	(junction
 		(at 179.07 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "adabf3d7-8897-4a77-ab55-1ae477ad3478")
+	)
+	(junction
+		(at 67.31 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b20c0aed-8c5f-4d6f-912f-fc991f280743")
 	)
 	(junction
 		(at 22.86 157.48)
@@ -6352,16 +6170,10 @@
 		(uuid "d01b1235-0006-45a8-937a-ee295f8505c8")
 	)
 	(junction
-		(at 270.51 64.77)
+		(at 21.59 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d1daf4c8-57ca-4953-998b-97d5726da49c")
-	)
-	(junction
-		(at 270.51 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d4683e3f-93af-4c4b-bd55-58368dfa23e0")
+		(uuid "d12d93d4-b255-4f7b-9ae3-93d477087eed")
 	)
 	(junction
 		(at 166.37 113.03)
@@ -6382,28 +6194,28 @@
 		(uuid "e0ce9c56-8b80-4b41-a9f1-15f062fca504")
 	)
 	(junction
+		(at 67.31 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb5cd555-75f7-4448-b51f-f17249073e4e")
+	)
+	(junction
+		(at 59.69 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb7e28e7-ab0a-4f3e-bac2-581bbc72248f")
+	)
+	(junction
 		(at 231.14 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ebdc6283-55c4-4bb8-8069-b4f885cd85a6")
 	)
 	(junction
-		(at 21.59 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ec52bafd-a6cb-4b53-9007-4b9dda1e3c7d")
-	)
-	(junction
 		(at 53.34 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed78f1c4-0f84-4610-b3fc-f65750328cdd")
-	)
-	(junction
-		(at 270.51 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ee6da440-089c-4590-8f10-b3a16362ffc3")
 	)
 	(junction
 		(at 71.12 97.79)
@@ -6424,22 +6236,10 @@
 		(uuid "f77e0516-feab-40c6-ae6a-5f952e936299")
 	)
 	(junction
-		(at 252.73 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f9b305a4-72de-44e1-8bdc-ac921644ff67")
-	)
-	(junction
 		(at 262.89 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fbb590ee-b46b-4544-bd29-8569fbec5458")
-	)
-	(junction
-		(at 261.62 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fc6b605e-595c-407d-a37b-16ce4e78cdce")
 	)
 	(no_connect
 		(at 273.05 34.29)
@@ -6593,16 +6393,6 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 57.15) (xy 261.62 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d8db3c5-da90-44a5-8c57-88ffda2dec97")
-	)
-	(wire
-		(pts
 			(xy 220.98 129.54) (xy 220.98 123.19)
 		)
 		(stroke
@@ -6613,7 +6403,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 182.88) (xy 60.96 176.53)
+			(xy 59.69 182.88) (xy 59.69 176.53)
 		)
 		(stroke
 			(width 0)
@@ -6653,27 +6443,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 31.75) (xy 273.05 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13a0bc54-6bd0-42ce-9545-4aed93e579f0")
-	)
-	(wire
-		(pts
-			(xy 91.44 171.45) (xy 78.74 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13d3ceca-dc3d-4cca-8489-db9868fb834e")
-	)
-	(wire
-		(pts
-			(xy 243.84 78.74) (xy 252.73 78.74)
+			(xy 257.81 78.74) (xy 273.05 78.74)
 		)
 		(stroke
 			(width 0)
@@ -6903,13 +6673,13 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 64.77) (xy 270.51 64.77)
+			(xy 67.31 173.99) (xy 91.44 173.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3b7f6a8f-36d8-4df5-8704-da65b1ca9ce5")
+		(uuid "3ad167c4-d6ea-45d8-b64f-cba3321907fa")
 	)
 	(wire
 		(pts
@@ -6930,16 +6700,6 @@
 			(type default)
 		)
 		(uuid "3cc268a2-2d89-438f-a52d-0a02e9300b2a")
-	)
-	(wire
-		(pts
-			(xy 252.73 78.74) (xy 273.05 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3cd4d44d-b9bd-4e98-bdd7-da00aaf32c67")
 	)
 	(wire
 		(pts
@@ -6990,26 +6750,6 @@
 			(type default)
 		)
 		(uuid "43a78000-3fcf-4dba-9035-741640115c6e")
-	)
-	(wire
-		(pts
-			(xy 261.62 76.2) (xy 261.62 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "456932d2-c9ed-49f7-8d02-970679d12ed3")
-	)
-	(wire
-		(pts
-			(xy 261.62 40.64) (xy 270.51 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4988fb4c-776c-4e11-8645-42705fa04410")
 	)
 	(wire
 		(pts
@@ -7093,7 +6833,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 31.75) (xy 261.62 31.75)
+			(xy 270.51 31.75) (xy 273.05 31.75)
 		)
 		(stroke
 			(width 0)
@@ -7123,16 +6863,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 78.74) (xy 252.73 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58301cd1-7c9e-4087-8d80-6a1857b5c91f")
-	)
-	(wire
-		(pts
 			(xy 73.66 52.07) (xy 88.9 52.07)
 		)
 		(stroke
@@ -7143,7 +6873,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 76.2) (xy 273.05 76.2)
+			(xy 257.81 76.2) (xy 273.05 76.2)
 		)
 		(stroke
 			(width 0)
@@ -7153,7 +6883,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 53.34) (xy 270.51 53.34)
+			(xy 257.81 53.34) (xy 273.05 53.34)
 		)
 		(stroke
 			(width 0)
@@ -7163,7 +6893,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 190.5) (xy 60.96 190.5)
+			(xy 52.07 190.5) (xy 59.69 190.5)
 		)
 		(stroke
 			(width 0)
@@ -7180,26 +6910,6 @@
 			(type default)
 		)
 		(uuid "5d54ac69-c09b-49b9-90b5-4a3610644d1b")
-	)
-	(wire
-		(pts
-			(xy 270.51 53.34) (xy 270.51 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e4acdc2-1643-4bf0-b342-4ab8bda03df3")
-	)
-	(wire
-		(pts
-			(xy 252.73 87.63) (xy 261.62 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f47d6fa-9a5f-4317-92e1-57f3b1c45419")
 	)
 	(wire
 		(pts
@@ -7233,13 +6943,13 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 33.02) (xy 261.62 31.75)
+			(xy 74.93 171.45) (xy 91.44 171.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "62dc7caf-106e-4e3a-91ee-d3aca3f80534")
+		(uuid "62c3d59b-10a8-453b-bfb1-7c90d7ae665e")
 	)
 	(wire
 		(pts
@@ -7253,7 +6963,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 173.99) (xy 69.85 173.99)
+			(xy 43.18 173.99) (xy 67.31 173.99)
 		)
 		(stroke
 			(width 0)
@@ -7303,7 +7013,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 173.99) (xy 69.85 182.88)
+			(xy 67.31 173.99) (xy 67.31 182.88)
 		)
 		(stroke
 			(width 0)
@@ -7373,7 +7083,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 81.28) (xy 273.05 87.63)
+			(xy 273.05 81.28) (xy 273.05 82.55)
 		)
 		(stroke
 			(width 0)
@@ -7393,16 +7103,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 173.99) (xy 69.85 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79b9b4b1-2348-43ca-8bb7-ba107588aea9")
-	)
-	(wire
-		(pts
 			(xy 62.23 62.23) (xy 88.9 62.23)
 		)
 		(stroke
@@ -7413,7 +7113,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 176.53) (xy 60.96 176.53)
+			(xy 43.18 176.53) (xy 59.69 176.53)
 		)
 		(stroke
 			(width 0)
@@ -7430,16 +7130,6 @@
 			(type default)
 		)
 		(uuid "7c06673c-1e1f-4e14-963f-94c8ec176086")
-	)
-	(wire
-		(pts
-			(xy 270.51 29.21) (xy 270.51 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c0de3dc-ca10-45ab-8911-bbc4636ebae7")
 	)
 	(wire
 		(pts
@@ -7573,16 +7263,6 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 87.63) (xy 270.51 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "907c8ced-d19a-4341-86de-8c6df0560934")
-	)
-	(wire
-		(pts
 			(xy 119.38 34.29) (xy 134.62 34.29)
 		)
 		(stroke
@@ -7613,16 +7293,6 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 176.53) (xy 91.44 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "984f166f-def4-48e3-a5f4-29c3453127c9")
-	)
-	(wire
-		(pts
 			(xy 53.34 46.99) (xy 53.34 36.83)
 		)
 		(stroke
@@ -7633,6 +7303,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 176.53) (xy 91.44 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99ae7907-7b41-47fe-a8ce-384c7bd6f0be")
+	)
+	(wire
+		(pts
 			(xy 21.59 54.61) (xy 27.94 54.61)
 		)
 		(stroke
@@ -7640,16 +7320,6 @@
 			(type default)
 		)
 		(uuid "99c10125-c8d2-4425-b78f-f6ddc55c2d04")
-	)
-	(wire
-		(pts
-			(xy 261.62 87.63) (xy 270.51 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99f82fa5-ed42-44fa-8775-5abc16c0332b")
 	)
 	(wire
 		(pts
@@ -7763,13 +7433,13 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 190.5) (xy 78.74 190.5)
+			(xy 59.69 190.5) (xy 67.31 190.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a7115954-6c56-4226-b21d-87ba31e7bea3")
+		(uuid "a63a5046-c6d4-4b1f-899a-0748b97d9131")
 	)
 	(wire
 		(pts
@@ -7813,33 +7483,13 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 101.6) (xy 273.05 101.6)
+			(xy 173.99 19.05) (xy 179.07 19.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af2c5004-7cc7-4566-832f-c64866553c3f")
-	)
-	(wire
-		(pts
-			(xy 261.62 55.88) (xy 273.05 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1614b03-2916-485a-8e72-b4ee9827e8bc")
-	)
-	(wire
-		(pts
-			(xy 243.84 76.2) (xy 261.62 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b16b2c7f-8a24-484c-9677-c112e4b4b6fe")
+		(uuid "aafccfb7-d189-4f39-82ca-8a20eee48840")
 	)
 	(wire
 		(pts
@@ -7923,16 +7573,6 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 53.34) (xy 273.05 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba7f04a1-483c-4745-b305-3b87614db4ec")
-	)
-	(wire
-		(pts
 			(xy 87.63 100.33) (xy 87.63 102.87)
 		)
 		(stroke
@@ -7960,16 +7600,6 @@
 			(type default)
 		)
 		(uuid "be4aab9b-f0b3-4e81-991f-b5a6badbb417")
-	)
-	(wire
-		(pts
-			(xy 270.51 29.21) (xy 273.05 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bea777a5-a2ae-40fe-acd4-55b1ddc47a22")
 	)
 	(wire
 		(pts
@@ -8113,7 +7743,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 101.6) (xy 273.05 96.52)
+			(xy 273.05 97.79) (xy 273.05 96.52)
 		)
 		(stroke
 			(width 0)
@@ -8140,6 +7770,16 @@
 			(type default)
 		)
 		(uuid "d5883197-51b9-44b1-984b-90e6bb8b2a16")
+	)
+	(wire
+		(pts
+			(xy 67.31 190.5) (xy 74.93 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5c1f3c6-2420-4c33-9f22-dd86a9db012c")
 	)
 	(wire
 		(pts
@@ -8203,7 +7843,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 55.88) (xy 261.62 55.88)
+			(xy 257.81 55.88) (xy 273.05 55.88)
 		)
 		(stroke
 			(width 0)
@@ -8223,7 +7863,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 171.45) (xy 78.74 171.45)
+			(xy 43.18 171.45) (xy 74.93 171.45)
 		)
 		(stroke
 			(width 0)
@@ -8243,7 +7883,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 171.45) (xy 78.74 182.88)
+			(xy 74.93 171.45) (xy 74.93 182.88)
 		)
 		(stroke
 			(width 0)
@@ -8313,16 +7953,6 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 73.66) (xy 270.51 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec941c42-2862-4b7b-ae7d-4a2ed0969000")
-	)
-	(wire
-		(pts
 			(xy 119.38 29.21) (xy 134.62 29.21)
 		)
 		(stroke
@@ -8383,23 +8013,13 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 29.21) (xy 270.51 29.21)
+			(xy 270.51 29.21) (xy 273.05 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f6f8a4d5-4cc6-411e-a877-f63a6e8e1a19")
-	)
-	(wire
-		(pts
-			(xy 259.08 93.98) (xy 270.51 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f72d2add-75c4-40b1-a9be-a1dd13bcc9bb")
 	)
 	(wire
 		(pts
@@ -8443,7 +8063,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 93.98) (xy 273.05 93.98)
+			(xy 257.81 93.98) (xy 273.05 93.98)
 		)
 		(stroke
 			(width 0)
@@ -8460,16 +8080,6 @@
 			(type default)
 		)
 		(uuid "fd4310b7-0b0b-45f5-8e06-0a11f3efdd07")
-	)
-	(wire
-		(pts
-			(xy 60.96 190.5) (xy 69.85 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff7b1465-a090-491d-8adb-fba33ad365b1")
 	)
 	(wire
 		(pts
@@ -8522,7 +8132,7 @@
 		(uuid "0f263877-06e0-4010-822a-857eccf1a1a2")
 	)
 	(label "I2C_SCL"
-		(at 243.84 78.74 0)
+		(at 257.81 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8732,7 +8342,7 @@
 		(uuid "7e331fe3-86e2-47c0-b6c9-f005867b8d84")
 	)
 	(label "DBG_UART_TX"
-		(at 247.65 55.88 0)
+		(at 257.81 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8782,7 +8392,7 @@
 		(uuid "97ce199e-b1e2-475a-bb06-7360092c7f53")
 	)
 	(label "I2C_SDA"
-		(at 243.84 76.2 0)
+		(at 257.81 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8802,7 +8412,7 @@
 		(uuid "a5365e94-e99e-47a6-9cf3-a14574dc5706")
 	)
 	(label "DBG_UART_RX"
-		(at 247.65 53.34 0)
+		(at 257.81 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8932,7 +8542,7 @@
 		(uuid "d4e22579-0d7c-4b16-a769-5f1fc0e21de0")
 	)
 	(label "DBG_GPIO"
-		(at 259.08 93.98 0)
+		(at 257.81 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8981,19 +8591,8 @@
 		)
 		(uuid "f4c109c2-375d-441e-ac7e-818123ba2591")
 	)
-	(hierarchical_label "MODEM_RESET"
+	(hierarchical_label "MDM_TXD"
 		(shape output)
-		(at 49.53 67.31 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "289c14f9-6f1b-47c1-ae93-ff78f200b134")
-	)
-	(hierarchical_label "MODEM_TX"
-		(shape bidirectional)
 		(at 49.53 59.69 180)
 		(effects
 			(font
@@ -9001,9 +8600,42 @@
 			)
 			(justify right)
 		)
-		(uuid "46485fbf-8633-4143-aa2e-5da7d67b79df")
+		(uuid "0ea87568-f5e9-4609-9ba7-760c45db1530")
 	)
-	(hierarchical_label "MODEM_PWR_ENn"
+	(hierarchical_label "MDM_RXD"
+		(shape input)
+		(at 49.53 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "44ed2f3c-909e-4c27-87d6-63a3beaf322a")
+	)
+	(hierarchical_label "MDM_RXD"
+		(shape input)
+		(at 270.51 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "551d4a35-65eb-4f0d-beaf-cb8645074241")
+	)
+	(hierarchical_label "V_BAT"
+		(shape input)
+		(at 173.99 19.05 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7c54bfe9-6467-4cb0-865d-7c982806f54d")
+	)
+	(hierarchical_label "MDM_PWR_EN"
 		(shape output)
 		(at 49.53 64.77 180)
 		(effects
@@ -9012,29 +8644,18 @@
 			)
 			(justify right)
 		)
-		(uuid "59401721-d16e-448f-a641-3cb095bda145")
+		(uuid "81035dee-8f8d-4cf8-98d6-b1a1db4e0600")
 	)
-	(hierarchical_label "MODEM_RX"
-		(shape bidirectional)
-		(at 49.53 62.23 180)
+	(hierarchical_label "MDM_TXD"
+		(shape output)
+		(at 270.51 29.21 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "61048d08-6d02-49be-adaf-4637258cb92b")
-	)
-	(hierarchical_label "MODEM_TX"
-		(shape bidirectional)
-		(at 259.08 31.75 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9b35d216-1a6f-4a7e-addc-d0c1ed3ee4b8")
+		(uuid "9d148f92-9506-459b-96b9-2862340cf64d")
 	)
 	(hierarchical_label "USB_DP"
 		(shape bidirectional)
@@ -9047,16 +8668,27 @@
 		)
 		(uuid "a2a5a698-1461-42fa-bf84-d7b36635d0fe")
 	)
-	(hierarchical_label "MODEM_RX"
-		(shape bidirectional)
-		(at 259.08 29.21 180)
+	(hierarchical_label "MDM_PWR_ON"
+		(shape output)
+		(at 49.53 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "c64d05b2-8e59-431f-8a65-13bbe3890ddb")
+		(uuid "bf13fd03-4ee5-4b19-ba70-9028ca2a8528")
+	)
+	(hierarchical_label "MDM_RESET"
+		(shape output)
+		(at 49.53 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "df74b34a-9f19-46ed-be70-588ef7853d1e")
 	)
 	(hierarchical_label "USB_DN"
 		(shape bidirectional)
@@ -9130,15 +8762,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-7005-1-ND"
-			(at 179.07 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Footprint review check" "+"
 			(at 179.07 80.01 0)
 			(effects
@@ -9181,7 +8804,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "03307a00-98a2-4a7e-8daa-0ba45d42e366")
-		(property "Reference" "J8"
+		(property "Reference" "J9"
 			(at 278.13 83.82 0)
 			(effects
 				(font
@@ -9217,15 +8840,6 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 278.13 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "S1011EC-04-ND"
 			(at 278.13 76.2 0)
 			(effects
 				(font
@@ -9276,7 +8890,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "J8")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -9291,7 +8905,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "03581b0f-5b8f-4fc2-a5a7-9bb4e2a45f94")
-		(property "Reference" "C23"
+		(property "Reference" "C24"
 			(at 138.43 104.14 0)
 			(effects
 				(font
@@ -9309,7 +8923,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 136.8552 109.22 0)
 			(effects
 				(font
@@ -9336,7 +8950,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 135.89 105.41 0)
 			(effects
 				(font
@@ -9345,7 +8959,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-7989-1-ND"
+		(property "Footprint review check" ""
 			(at 135.89 105.41 0)
 			(effects
 				(font
@@ -9354,16 +8968,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 135.89 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "885012206071"
+		(property "MPN" ""
 			(at 135.89 105.41 0)
 			(effects
 				(font
@@ -9381,7 +8986,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C23")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -9397,7 +9002,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "080da98b-5f13-4041-8c27-a2a4920f946a")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR043"
 			(at 270.51 27.94 0)
 			(effects
 				(font
@@ -9448,7 +9053,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR030")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -9463,7 +9068,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0820e413-6ce5-4825-b47d-f9778f4bb1e4")
-		(property "Reference" "C22"
+		(property "Reference" "C23"
 			(at 125.73 104.14 0)
 			(effects
 				(font
@@ -9481,7 +9086,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 124.1552 109.22 0)
 			(effects
 				(font
@@ -9508,7 +9113,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" ""
 			(at 123.19 105.41 0)
 			(effects
 				(font
@@ -9517,7 +9122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "1276-1044-1-ND"
+		(property "Footprint review check" ""
 			(at 123.19 105.41 0)
 			(effects
 				(font
@@ -9526,16 +9131,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 123.19 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL10A475KP8NNNC"
+		(property "MPN" ""
 			(at 123.19 105.41 0)
 			(effects
 				(font
@@ -9553,7 +9149,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C22")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -9569,7 +9165,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "0ccb819b-f57b-49dd-9920-e0667e29c7f0")
-		(property "Reference" "R28"
+		(property "Reference" "R31"
 			(at 261.366 141.224 0)
 			(effects
 				(font
@@ -9623,15 +9219,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116005CT-ND"
-			(at 262.89 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Footprint review check" "+"
 			(at 262.89 142.24 0)
 			(effects
@@ -9659,39 +9246,39 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R28")
+					(reference "R31")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 58.42 62.23 90)
+		(lib_id "Device:FerriteBead")
+		(at 152.4 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1794cb26-8f5a-49f8-84e3-6ce46fa04d99")
-		(property "Reference" "R15"
-			(at 53.594 61.214 90)
+		(uuid "0df005f9-e2ab-40d6-bafd-86c466186ac0")
+		(property "Reference" "FB2"
+			(at 152.4 103.632 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "20 Ω"
-			(at 63.754 61.214 90)
+		(property "Value" "BLM18KG121TN1D"
+			(at 152.4 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 58.42 64.008 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 152.4 99.568 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9700,7 +9287,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 62.23 0)
+			(at 152.4 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9708,8 +9295,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 58.42 62.23 0)
+		(property "Description" ""
+			(at 152.4 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9717,17 +9304,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116125CT-ND"
-			(at 58.42 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 58.42 62.23 90)
+		(property "Manufacturer" "Murata Electronics"
+			(at 152.4 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9736,7 +9314,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 58.42 62.23 0)
+			(at 152.4 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9744,8 +9322,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "560112116125"
-			(at 58.42 62.23 0)
+		(property "MPN" "BLM18KG121TN1D"
+			(at 152.4 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9754,15 +9332,120 @@
 			)
 		)
 		(pin "1"
-			(uuid "a672f531-33ac-47cb-b0a2-23f4e8e912ce")
+			(uuid "ab7af0ec-76d3-4bfa-8a31-3d2470f9e972")
 		)
 		(pin "2"
-			(uuid "4e878ebc-b4a1-4c35-8000-a0a406ae387c")
+			(uuid "60fe449d-39d0-4dbb-a9ec-91c21760fbe8")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R15")
+					(reference "FB2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 138.43 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1263399b-e29a-4279-8590-ee5385aa78ba")
+		(property "Reference" "R22"
+			(at 135.636 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0 Ω"
+			(at 141.224 30.734 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 138.43 33.528 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 138.43 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" ""
+			(at 138.43 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 138.43 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0402"
+			(at 138.43 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1b8fdd4f-a767-4490-8acd-2dff653bd1e4")
+		)
+		(pin "1"
+			(uuid "0b0c476b-2dda-4a35-97c5-657009079c54")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -9777,7 +9460,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "1885a485-2c2a-4b45-b3ce-82a6bf7440e1")
-		(property "Reference" "J7"
+		(property "Reference" "J8"
 			(at 276.86 60.96 0)
 			(effects
 				(font
@@ -9815,15 +9498,6 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 278.13 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "S1011EC-06-ND"
 			(at 278.13 50.8 0)
 			(effects
 				(font
@@ -9880,7 +9554,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "J7")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -9950,15 +9624,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "1265-AT25SF081B-SSHD-B-ND"
-			(at 34.29 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Footprint review check" "+"
 			(at 34.29 144.78 0)
 			(effects
@@ -10020,7 +9685,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1dac348b-bfdb-46b3-8343-74f46e899aec")
-		(property "Reference" "C21"
+		(property "Reference" "C22"
 			(at 81.28 104.14 0)
 			(effects
 				(font
@@ -10038,7 +9703,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 82.8548 109.22 0)
 			(effects
 				(font
@@ -10065,7 +9730,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 83.82 105.41 0)
 			(effects
 				(font
@@ -10074,7 +9739,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-7989-1-ND"
+		(property "Footprint review check" ""
 			(at 83.82 105.41 0)
 			(effects
 				(font
@@ -10083,16 +9748,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 83.82 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "885012206071"
+		(property "MPN" ""
 			(at 83.82 105.41 0)
 			(effects
 				(font
@@ -10110,7 +9766,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C21")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -10126,7 +9782,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1de98817-c479-4a08-b3a9-48359e29e608")
-		(property "Reference" "C20"
+		(property "Reference" "C21"
 			(at 78.74 134.62 0)
 			(effects
 				(font
@@ -10144,7 +9800,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 80.3148 139.7 0)
 			(effects
 				(font
@@ -10171,7 +9827,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" ""
 			(at 81.28 135.89 0)
 			(effects
 				(font
@@ -10180,7 +9836,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "1276-1044-1-ND"
+		(property "Footprint review check" ""
 			(at 81.28 135.89 0)
 			(effects
 				(font
@@ -10189,16 +9845,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 81.28 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL10A475KP8NNNC"
+		(property "MPN" ""
 			(at 81.28 135.89 0)
 			(effects
 				(font
@@ -10216,7 +9863,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C20")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -10232,7 +9879,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "2066ecdb-5583-4a00-8362-c8c1de79befb")
-		(property "Reference" "R22"
+		(property "Reference" "R25"
 			(at 177.546 45.974 0)
 			(effects
 				(font
@@ -10286,15 +9933,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116005CT-ND"
-			(at 179.07 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Footprint review check" "+"
 			(at 179.07 46.99 0)
 			(effects
@@ -10322,7 +9960,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R22")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -10390,15 +10028,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "MCP9808T-E/MSCT-ND"
-			(at 93.98 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Footprint review check" "+"
 			(at 93.98 133.35 0)
 			(effects
@@ -10452,110 +10081,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 138.43 29.21 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2e10a2f5-b258-46b0-adaa-35dd28d3d4c3")
-		(property "Reference" "R18"
-			(at 133.604 28.194 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "20 Ω"
-			(at 143.764 27.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 138.43 30.988 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 138.43 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 138.43 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "732-560112116125CT-ND"
-			(at 138.43 29.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 138.43 29.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 138.43 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116125"
-			(at 138.43 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "caa82378-aee3-4f69-b8bf-9907678ad303")
-		)
-		(pin "2"
-			(uuid "0154d7e6-10f7-4488-99f8-155d8520ed9d")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 270.51 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10563,7 +10088,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "32795a05-ef13-4df9-bfde-efe4b4fede53")
-		(property "Reference" "R30"
+		(property "Reference" "R33"
 			(at 272.034 141.224 0)
 			(effects
 				(font
@@ -10617,15 +10142,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116005CT-ND"
-			(at 270.51 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Footprint review check" "+"
 			(at 270.51 142.24 0)
 			(effects
@@ -10653,7 +10169,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R30")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -10669,7 +10185,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "33e744ac-5c27-4c72-ac82-1e8dd8a43cf7")
-		(property "Reference" "C13"
+		(property "Reference" "C14"
 			(at 30.48 104.14 0)
 			(effects
 				(font
@@ -10687,7 +10203,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 32.0548 109.22 0)
 			(effects
 				(font
@@ -10714,7 +10230,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" ""
 			(at 33.02 105.41 0)
 			(effects
 				(font
@@ -10723,7 +10239,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "1276-1044-1-ND"
+		(property "Footprint review check" ""
 			(at 33.02 105.41 0)
 			(effects
 				(font
@@ -10732,16 +10248,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 33.02 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL10A475KP8NNNC"
+		(property "MPN" ""
 			(at 33.02 105.41 0)
 			(effects
 				(font
@@ -10759,7 +10266,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C13")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -10775,7 +10282,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "365d9acf-f53f-4536-b160-8ca9cf59f831")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR042"
 			(at 262.89 163.83 0)
 			(effects
 				(font
@@ -10826,7 +10333,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR029")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -10841,7 +10348,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3be2e465-1119-4e63-825a-118a1348baf8")
-		(property "Reference" "R16"
+		(property "Reference" "R19"
 			(at 55.626 63.5 90)
 			(effects
 				(font
@@ -10859,7 +10366,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 58.42 66.548 90)
 			(effects
 				(font
@@ -10886,7 +10393,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 58.42 64.77 0)
 			(effects
 				(font
@@ -10895,7 +10402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116001CT-ND"
+		(property "Footprint review check" ""
 			(at 58.42 64.77 0)
 			(effects
 				(font
@@ -10904,7 +10411,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
+		(property "MPN" ""
 			(at 58.42 64.77 0)
 			(effects
 				(font
@@ -10913,7 +10420,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "560112116001"
+		(property "Size" "0402"
 			(at 58.42 64.77 0)
 			(effects
 				(font
@@ -10931,112 +10438,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 261.62 36.83 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "40cef570-ebe2-4e41-82a6-b4f8fa60cf8c")
-		(property "Reference" "TVS6"
-			(at 258.064 36.83 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D5V0F1B2WS-7"
-			(at 251.46 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 261.62 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 261.62 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 261.62 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "31-D5V0F1B2WS-7CT-ND"
-			(at 261.62 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 261.62 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 261.62 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "D5V0F1B2WS-7"
-			(at 261.62 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "af14c31d-5b79-4068-802a-8252f60a57b8")
-		)
-		(pin "1"
-			(uuid "482492e0-c6a3-4b38-a18e-3b258883e1b2")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "TVS6")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -11051,7 +10453,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "413949fd-d9b4-4b05-903e-bc2904f5e326")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR038"
 			(at 179.07 71.12 0)
 			(effects
 				(font
@@ -11101,7 +10503,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR025")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -11175,128 +10577,24 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 270.51 97.79 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4597b08a-8867-40fe-95c9-75094162af3f")
-		(property "Reference" "TVS12"
-			(at 265.684 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D5V0F1B2WS-7"
-			(at 260.35 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 270.51 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 270.51 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 270.51 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "31-D5V0F1B2WS-7CT-ND"
-			(at 270.51 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 270.51 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 270.51 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "D5V0F1B2WS-7"
-			(at 270.51 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "43978561-b06e-4a8b-b7b4-63688ba57aca")
-		)
-		(pin "1"
-			(uuid "5d80a212-7c25-4e2e-aefb-da29344f4c8c")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "TVS12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 60.96 186.69 270)
+		(at 59.69 186.69 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "46d5f3dd-d72e-4466-b5e5-46adb84a8a52")
-		(property "Reference" "TVS2"
-			(at 65.278 186.69 90)
+		(property "Reference" "D2"
+			(at 61.214 186.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "D5V0F1B2WS-7"
-			(at 71.12 187.96 90)
+			(at 69.85 187.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11304,8 +10602,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 60.96 186.69 0)
+		(property "Footprint" ""
+			(at 59.69 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11314,7 +10612,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 60.96 186.69 0)
+			(at 59.69 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11323,7 +10621,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 60.96 186.69 0)
+			(at 59.69 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11331,8 +10629,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "31-D5V0F1B2WS-7CT-ND"
-			(at 60.96 186.69 0)
+		(property "Manufacturer" ""
+			(at 59.69 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11340,8 +10638,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 60.96 186.69 0)
+		(property "Footprint review check" ""
+			(at 59.69 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11349,17 +10647,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 60.96 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "D5V0F1B2WS-7"
-			(at 60.96 186.69 0)
+		(property "MPN" ""
+			(at 59.69 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11376,112 +10665,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "TVS2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 270.51 36.83 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "471cc2bf-7ddc-4b8e-981e-76928176855b")
-		(property "Reference" "TVS9"
-			(at 266.192 36.83 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D5V0F1B2WS-7"
-			(at 260.35 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 270.51 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 270.51 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 270.51 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "31-D5V0F1B2WS-7CT-ND"
-			(at 270.51 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 270.51 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 270.51 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "D5V0F1B2WS-7"
-			(at 270.51 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "60453fce-4b2a-49f5-80a6-ca8ce65cb89b")
-		)
-		(pin "1"
-			(uuid "53be722e-6ea9-44e3-9ebe-9258f5e669ae")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "TVS9")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -11497,7 +10681,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4b2d69ce-e5b7-421d-b1a2-9a26589f55f5")
-		(property "Reference" "C15"
+		(property "Reference" "C16"
 			(at 43.18 104.14 0)
 			(effects
 				(font
@@ -11515,7 +10699,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 44.7548 109.22 0)
 			(effects
 				(font
@@ -11542,7 +10726,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 45.72 105.41 0)
 			(effects
 				(font
@@ -11551,7 +10735,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-7989-1-ND"
+		(property "Footprint review check" ""
 			(at 45.72 105.41 0)
 			(effects
 				(font
@@ -11560,16 +10744,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 45.72 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "885012206071"
+		(property "MPN" ""
 			(at 45.72 105.41 0)
 			(effects
 				(font
@@ -11587,112 +10762,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 270.51 60.96 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4c4bf763-4181-4c56-9e06-bac011f4c12c")
-		(property "Reference" "TVS10"
-			(at 266.192 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D5V0F1B2WS-7"
-			(at 260.35 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 270.51 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 270.51 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 270.51 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "31-D5V0F1B2WS-7CT-ND"
-			(at 270.51 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 270.51 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 270.51 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "D5V0F1B2WS-7"
-			(at 270.51 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5b523b5d-c990-4fe6-8a50-785bb6b7925c")
-		)
-		(pin "1"
-			(uuid "ad3b5e5b-ffcf-4866-a59e-c51772230d61")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "TVS10")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -11708,7 +10778,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4d7fdb08-81ed-450a-a099-d6d127a726e9")
-		(property "Reference" "C12"
+		(property "Reference" "C13"
 			(at 20.32 134.62 0)
 			(effects
 				(font
@@ -11726,7 +10796,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 21.8948 139.7 0)
 			(effects
 				(font
@@ -11753,7 +10823,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" ""
 			(at 22.86 135.89 0)
 			(effects
 				(font
@@ -11762,7 +10832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "1276-1044-1-ND"
+		(property "Footprint review check" ""
 			(at 22.86 135.89 0)
 			(effects
 				(font
@@ -11771,16 +10841,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 22.86 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL10A475KP8NNNC"
+		(property "MPN" ""
 			(at 22.86 135.89 0)
 			(effects
 				(font
@@ -11798,7 +10859,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C12")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -11813,7 +10874,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "4d844631-913c-47d5-b563-f6693fd0eca2")
-		(property "Reference" "J6"
+		(property "Reference" "J7"
 			(at 276.86 36.83 0)
 			(effects
 				(font
@@ -11851,15 +10912,6 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 278.13 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "S1011EC-06-ND"
 			(at 278.13 26.67 0)
 			(effects
 				(font
@@ -11916,7 +10968,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "J6")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -11932,7 +10984,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4dc6301c-1707-4dde-ad68-cf6081f0ea74")
-		(property "Reference" "R26"
+		(property "Reference" "R29"
 			(at 229.616 145.034 0)
 			(effects
 				(font
@@ -11950,7 +11002,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 229.362 146.05 90)
 			(effects
 				(font
@@ -11977,7 +11029,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116098CT-ND"
+		(property "Manufacturer" ""
 			(at 231.14 146.05 0)
 			(effects
 				(font
@@ -11986,7 +11038,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Footprint review check" ""
 			(at 231.14 146.05 0)
 			(effects
 				(font
@@ -11995,16 +11047,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 231.14 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116098"
+		(property "MPN" ""
 			(at 231.14 146.05 0)
 			(effects
 				(font
@@ -12022,110 +11065,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 58.42 59.69 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "55bb0b55-2821-4bc3-a62f-5f8ee1c0b402")
-		(property "Reference" "R14"
-			(at 53.594 58.674 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "20 Ω"
-			(at 63.754 58.674 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 58.42 61.468 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 58.42 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "732-560112116125CT-ND"
-			(at 58.42 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 58.42 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 58.42 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116125"
-			(at 58.42 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "90479756-9576-4536-a642-905ffc25ba11")
-		)
-		(pin "2"
-			(uuid "2e010a60-9a91-4408-a69b-580d46593895")
-		)
-		(instances
-			(project ""
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R14")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -12149,7 +11089,7 @@
 				)
 			)
 		)
-		(property "Value" "STM32L552CETx"
+		(property "Value" "STM32L552CET6"
 			(at 103.632 85.344 0)
 			(effects
 				(font
@@ -12177,15 +11117,6 @@
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M33 MCU, 512KB flash, 256KB RAM, 110 MHz, 1.71-3.6V, 38 GPIO, LQFP48"
-			(at 104.14 41.402 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "497-STM32L552CET6-ND"
 			(at 104.14 41.402 0)
 			(effects
 				(font
@@ -12374,7 +11305,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5d34b2c1-3bfa-487e-b7a1-bbd2a9135c85")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR033"
 			(at 166.37 101.6 0)
 			(effects
 				(font
@@ -12424,7 +11355,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR019")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -12439,7 +11370,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "61ccd09d-40d1-4908-88fc-b8307d4a85a0")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR023"
 			(at 21.59 73.66 0)
 			(effects
 				(font
@@ -12489,7 +11420,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR09")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -12506,7 +11437,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64183a59-326b-41ee-9b17-0db91616eed1")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR034"
 			(at 166.37 119.38 0)
 			(effects
 				(font
@@ -12557,7 +11488,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR020")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -12565,7 +11496,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 273.05 101.6 0)
+		(at 273.05 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12573,8 +11504,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64dc12aa-1553-462d-b8fb-393168096600")
-		(property "Reference" "#PWR036"
-			(at 273.05 107.95 0)
+		(property "Reference" "#PWR047"
+			(at 273.05 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12583,7 +11514,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 273.05 106.68 0)
+			(at 273.05 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12592,7 +11523,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 273.05 101.6 0)
+			(at 273.05 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12601,7 +11532,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 273.05 101.6 0)
+			(at 273.05 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12610,7 +11541,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 273.05 101.6 0)
+			(at 273.05 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12624,7 +11555,112 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR036")
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 138.43 29.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "662e23a0-a77f-4143-9132-3fdc0c84cbcf")
+		(property "Reference" "R21"
+			(at 135.636 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0 Ω"
+			(at 141.224 28.194 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 138.43 30.988 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 138.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" ""
+			(at 138.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 138.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0402"
+			(at 138.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e3c88cc9-d56c-4ae3-ac65-404fd9ab8d8b")
+		)
+		(pin "1"
+			(uuid "b83067d9-d6fa-4022-94cc-8fdacfcb2eb0")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -12639,7 +11675,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "663df0f4-efca-43e5-82ab-f5acaa6b8969")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR026"
 			(at 22.86 175.26 0)
 			(effects
 				(font
@@ -12689,7 +11725,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR012")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -12704,7 +11740,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6680d9a4-8d64-40a8-a200-99d1523884f1")
-		(property "Reference" "R17"
+		(property "Reference" "R20"
 			(at 55.626 66.04 90)
 			(effects
 				(font
@@ -12722,7 +11758,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 58.42 69.088 90)
 			(effects
 				(font
@@ -12749,7 +11785,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 58.42 67.31 0)
 			(effects
 				(font
@@ -12758,7 +11794,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116001CT-ND"
+		(property "Footprint review check" ""
 			(at 58.42 67.31 0)
 			(effects
 				(font
@@ -12767,7 +11803,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
+		(property "MPN" ""
 			(at 58.42 67.31 0)
 			(effects
 				(font
@@ -12776,7 +11812,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "560112116001"
+		(property "Size" "0402"
 			(at 58.42 67.31 0)
 			(effects
 				(font
@@ -12794,7 +11830,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R17")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -12810,7 +11846,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "67538e24-ed78-4f85-b807-5e9129a9534f")
-		(property "Reference" "R29"
+		(property "Reference" "R32"
 			(at 261.366 152.654 0)
 			(effects
 				(font
@@ -12828,7 +11864,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 264.668 153.67 90)
 			(effects
 				(font
@@ -12855,7 +11891,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 262.89 153.67 0)
 			(effects
 				(font
@@ -12864,7 +11900,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116005CT-ND"
+		(property "Footprint review check" ""
 			(at 262.89 153.67 0)
 			(effects
 				(font
@@ -12873,16 +11909,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 262.89 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116005"
+		(property "MPN" ""
 			(at 262.89 153.67 0)
 			(effects
 				(font
@@ -12900,7 +11927,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R29")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -12916,7 +11943,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a0c52d4-2e62-45da-9895-3913c1d269a4")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR035"
 			(at 179.07 40.64 0)
 			(effects
 				(font
@@ -12967,7 +11994,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR022")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -12983,7 +12010,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6b19379f-ba88-4c20-acaf-9105bf24101d")
-		(property "Reference" "C19"
+		(property "Reference" "C20"
 			(at 68.58 104.14 0)
 			(effects
 				(font
@@ -13001,7 +12028,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 70.1548 109.22 0)
 			(effects
 				(font
@@ -13028,7 +12055,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 71.12 105.41 0)
 			(effects
 				(font
@@ -13037,7 +12064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-7989-1-ND"
+		(property "Footprint review check" ""
 			(at 71.12 105.41 0)
 			(effects
 				(font
@@ -13046,16 +12073,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 71.12 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "885012206071"
+		(property "MPN" ""
 			(at 71.12 105.41 0)
 			(effects
 				(font
@@ -13073,7 +12091,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C19")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -13089,7 +12107,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6b9366bd-8fd8-402b-92cc-6f689e39c5a2")
-		(property "Reference" "LED4"
+		(property "Reference" "LED6"
 			(at 227.076 133.35 90)
 			(effects
 				(font
@@ -13097,7 +12115,7 @@
 				)
 			)
 		)
-		(property "Value" "150141YS73100"
+		(property "Value" "150141RS73100"
 			(at 227.33 133.35 0)
 			(effects
 				(font
@@ -13106,7 +12124,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_PLCC_2835_Handsoldering"
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 231.14 133.35 0)
 			(effects
 				(font
@@ -13124,7 +12142,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 231.14 133.35 0)
 			(effects
 				(font
@@ -13142,15 +12160,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-5004-1-ND"
-			(at 231.14 133.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Footprint review check" "+"
 			(at 231.14 133.35 0)
 			(effects
@@ -13160,7 +12169,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "150141YS73100"
+		(property "MPN" "150141RS73100"
 			(at 231.14 133.35 0)
 			(effects
 				(font
@@ -13178,7 +12187,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "LED4")
+					(reference "LED6")
 					(unit 1)
 				)
 			)
@@ -13209,7 +12218,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_MicroCrystal_CM9V-T1A-2Pin_1.6x1.0mm_HandSoldering"
+		(property "Footprint" "Crystal:Crystal_SMD_MicroCrystal_CM9V-T1A-2Pin_1.6x1.0mm"
 			(at 58.42 46.99 0)
 			(effects
 				(font
@@ -13237,15 +12246,6 @@
 			)
 		)
 		(property "Manufacturer" "Abracon LLC"
-			(at 58.42 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "535-ABS05-32.768KHZ-9-TCT-ND"
 			(at 58.42 46.99 0)
 			(effects
 				(font
@@ -13297,7 +12297,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6ff9fbca-47b7-4510-9cc5-a5aae853cb0f")
-		(property "Reference" "C25"
+		(property "Reference" "C26"
 			(at 170.18 79.248 0)
 			(effects
 				(font
@@ -13315,7 +12315,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 173.6852 76.2 0)
 			(effects
 				(font
@@ -13342,7 +12342,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 172.72 80.01 0)
 			(effects
 				(font
@@ -13351,7 +12351,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-7989-1-ND"
+		(property "Footprint review check" ""
 			(at 172.72 80.01 0)
 			(effects
 				(font
@@ -13360,16 +12360,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 172.72 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "885012206071"
+		(property "MPN" ""
 			(at 172.72 80.01 0)
 			(effects
 				(font
@@ -13387,7 +12378,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C25")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -13403,7 +12394,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "724c7f35-e130-4b00-b1d4-1ee3092983c3")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR044"
 			(at 270.51 52.07 0)
 			(effects
 				(font
@@ -13454,7 +12445,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR032")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -13470,7 +12461,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "725ff669-8dec-4ebc-8af1-2c8a4f47717a")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR037"
 			(at 179.07 64.77 0)
 			(effects
 				(font
@@ -13521,7 +12512,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR024")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -13537,7 +12528,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7425be96-32a7-44fc-9c9b-a1295938ce9f")
-		(property "Reference" "LED3"
+		(property "Reference" "LED5"
 			(at 216.662 133.35 90)
 			(effects
 				(font
@@ -13545,7 +12536,7 @@
 				)
 			)
 		)
-		(property "Value" "150141YS73100"
+		(property "Value" "150141RS73100"
 			(at 217.17 133.35 0)
 			(effects
 				(font
@@ -13554,7 +12545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_PLCC_2835_Handsoldering"
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 220.98 133.35 0)
 			(effects
 				(font
@@ -13572,7 +12563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 220.98 133.35 0)
 			(effects
 				(font
@@ -13590,15 +12581,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-5004-1-ND"
-			(at 220.98 133.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Footprint review check" "+"
 			(at 220.98 133.35 0)
 			(effects
@@ -13608,7 +12590,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "150141YS73100"
+		(property "MPN" "150141RS73100"
 			(at 220.98 133.35 0)
 			(effects
 				(font
@@ -13626,7 +12608,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "LED3")
+					(reference "LED5")
 					(unit 1)
 				)
 			)
@@ -13641,7 +12623,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "749881ad-9493-4956-8bbb-7f659fefc194")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR036"
 			(at 179.07 46.99 0)
 			(effects
 				(font
@@ -13691,7 +12673,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR023")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -13706,7 +12688,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "74c0788d-d8f8-4b77-9d00-25d6f28c4b76")
-		(property "Reference" "C24"
+		(property "Reference" "C25"
 			(at 168.91 104.14 0)
 			(effects
 				(font
@@ -13724,7 +12706,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 167.3352 109.22 0)
 			(effects
 				(font
@@ -13751,7 +12733,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 166.37 105.41 0)
 			(effects
 				(font
@@ -13760,7 +12742,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-7989-1-ND"
+		(property "Footprint review check" ""
 			(at 166.37 105.41 0)
 			(effects
 				(font
@@ -13769,16 +12751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 166.37 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "885012206071"
+		(property "MPN" ""
 			(at 166.37 105.41 0)
 			(effects
 				(font
@@ -13796,7 +12769,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C24")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -13812,7 +12785,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "75d8ee30-c411-4cc5-a8ad-251f93d0e9c8")
-		(property "Reference" "C26"
+		(property "Reference" "C27"
 			(at 171.45 29.21 0)
 			(effects
 				(font
@@ -13830,7 +12803,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 173.0248 34.29 0)
 			(effects
 				(font
@@ -13857,7 +12830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 173.99 30.48 0)
 			(effects
 				(font
@@ -13866,7 +12839,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-7989-1-ND"
+		(property "Footprint review check" ""
 			(at 173.99 30.48 0)
 			(effects
 				(font
@@ -13875,16 +12848,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 173.99 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "885012206071"
+		(property "MPN" ""
 			(at 173.99 30.48 0)
 			(effects
 				(font
@@ -13902,7 +12866,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C26")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -13918,7 +12882,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7bde22a4-c2fa-4108-b130-b82330229df6")
-		(property "Reference" "R25"
+		(property "Reference" "R28"
 			(at 219.456 145.034 0)
 			(effects
 				(font
@@ -13936,7 +12900,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 219.202 146.05 90)
 			(effects
 				(font
@@ -13963,7 +12927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116098CT-ND"
+		(property "Manufacturer" ""
 			(at 220.98 146.05 0)
 			(effects
 				(font
@@ -13972,7 +12936,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Footprint review check" ""
 			(at 220.98 146.05 0)
 			(effects
 				(font
@@ -13981,16 +12945,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 220.98 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116098"
+		(property "MPN" ""
 			(at 220.98 146.05 0)
 			(effects
 				(font
@@ -14008,113 +12963,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 21.59 73.66 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7bf30633-e2c8-47de-90e8-7fb7343bb210")
-		(property "Reference" "R12"
-			(at 22.86 72.644 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "2.2 kΩ"
-			(at 22.86 74.422 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 23.368 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 21.59 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 21.59 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "732-560112116098CT-ND"
-			(at 21.59 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 21.59 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 21.59 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116098"
-			(at 21.59 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8a70a2e4-60bd-4915-b0bb-929b23f7e085")
-		)
-		(pin "1"
-			(uuid "982bbbd3-121f-4b87-afe1-dc385d5e78f8")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R12")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -14130,7 +12979,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "88b87025-4362-4168-8131-babcaa28c657")
-		(property "Reference" "R23"
+		(property "Reference" "R26"
 			(at 177.546 53.594 0)
 			(effects
 				(font
@@ -14148,7 +12997,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 180.848 54.61 90)
 			(effects
 				(font
@@ -14175,7 +13024,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 179.07 54.61 0)
 			(effects
 				(font
@@ -14184,7 +13033,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116005CT-ND"
+		(property "Footprint review check" ""
 			(at 179.07 54.61 0)
 			(effects
 				(font
@@ -14193,16 +13042,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 179.07 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116005"
+		(property "MPN" ""
 			(at 179.07 54.61 0)
 			(effects
 				(font
@@ -14220,7 +13060,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R23")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -14235,7 +13075,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "891d269b-7e9a-4dc5-bac6-1ea8b912c23e")
-		(property "Reference" "R20"
+		(property "Reference" "R23"
 			(at 180.34 21.844 0)
 			(effects
 				(font
@@ -14253,7 +13093,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 177.292 22.86 90)
 			(effects
 				(font
@@ -14280,7 +13120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 179.07 22.86 0)
 			(effects
 				(font
@@ -14289,7 +13129,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116074CT-ND"
+		(property "Footprint review check" ""
 			(at 179.07 22.86 0)
 			(effects
 				(font
@@ -14298,16 +13138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 179.07 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116074"
+		(property "MPN" ""
 			(at 179.07 22.86 0)
 			(effects
 				(font
@@ -14325,7 +13156,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R20")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -14340,7 +13171,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "893f0fc0-343a-4c7a-8174-0d3b2d639a33")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR031"
 			(at 81.28 135.89 0)
 			(effects
 				(font
@@ -14390,112 +13221,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 252.73 83.82 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "89ced514-2f16-4277-a61c-7cefa690138d")
-		(property "Reference" "TVS5"
-			(at 248.412 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D5V0F1B2WS-7"
-			(at 242.57 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 252.73 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 252.73 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 252.73 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "31-D5V0F1B2WS-7CT-ND"
-			(at 252.73 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 252.73 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 252.73 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "D5V0F1B2WS-7"
-			(at 252.73 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f2ec1c4e-3035-4933-8527-8939c621dff6")
-		)
-		(pin "1"
-			(uuid "f41e97f2-5ebb-4878-8c53-c14231bc8b66")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "TVS5")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -14511,7 +13237,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8af4bbbc-01d4-4d4d-984d-8a1b536720aa")
-		(property "Reference" "C17"
+		(property "Reference" "C18"
 			(at 55.88 104.14 0)
 			(effects
 				(font
@@ -14529,7 +13255,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 57.4548 109.22 0)
 			(effects
 				(font
@@ -14556,7 +13282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 58.42 105.41 0)
 			(effects
 				(font
@@ -14565,7 +13291,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-7989-1-ND"
+		(property "Footprint review check" ""
 			(at 58.42 105.41 0)
 			(effects
 				(font
@@ -14574,16 +13300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 58.42 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "885012206071"
+		(property "MPN" ""
 			(at 58.42 105.41 0)
 			(effects
 				(font
@@ -14601,112 +13318,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 261.62 60.96 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8b7051ef-0ea0-4f8e-8616-470112cf167f")
-		(property "Reference" "TVS7"
-			(at 257.556 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D5V0F1B2WS-7"
-			(at 251.46 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 261.62 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 261.62 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 261.62 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "31-D5V0F1B2WS-7CT-ND"
-			(at 261.62 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 261.62 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 261.62 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "D5V0F1B2WS-7"
-			(at 261.62 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7e9b44b9-c20f-4ed9-ad65-45a244997b33")
-		)
-		(pin "1"
-			(uuid "1a43d6ba-486f-4866-8031-42b4ec0a6666")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "TVS7")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -14721,7 +13333,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8fc57f6b-d173-40aa-a165-a338e7f78cb9")
-		(property "Reference" "R21"
+		(property "Reference" "R24"
 			(at 180.34 29.464 0)
 			(effects
 				(font
@@ -14739,7 +13351,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 177.292 30.48 90)
 			(effects
 				(font
@@ -14766,7 +13378,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 179.07 30.48 0)
 			(effects
 				(font
@@ -14775,7 +13387,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116074CT-ND"
+		(property "Footprint review check" ""
 			(at 179.07 30.48 0)
 			(effects
 				(font
@@ -14784,16 +13396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 179.07 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116074"
+		(property "MPN" ""
 			(at 179.07 30.48 0)
 			(effects
 				(font
@@ -14811,7 +13414,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R21")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -14827,7 +13430,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "93e7f857-efc1-4b5c-8a38-27d8cc773d8b")
-		(property "Reference" "R13"
+		(property "Reference" "R16"
 			(at 33.02 72.644 0)
 			(effects
 				(font
@@ -14836,7 +13439,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2.2 kΩ"
+		(property "Value" "4.7 kΩ"
 			(at 33.02 74.422 0)
 			(effects
 				(font
@@ -14845,7 +13448,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 33.528 73.66 90)
 			(effects
 				(font
@@ -14872,7 +13475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116098CT-ND"
+		(property "Manufacturer" ""
 			(at 31.75 73.66 0)
 			(effects
 				(font
@@ -14881,7 +13484,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Footprint review check" ""
 			(at 31.75 73.66 0)
 			(effects
 				(font
@@ -14890,16 +13493,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 31.75 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116098"
+		(property "MPN" ""
 			(at 31.75 73.66 0)
 			(effects
 				(font
@@ -14917,7 +13511,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R13")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -14925,7 +13519,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 273.05 87.63 0)
+		(at 273.05 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14933,8 +13527,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94a18206-eb96-4f3b-9654-3a0bee40090f")
-		(property "Reference" "#PWR035"
-			(at 273.05 93.98 0)
+		(property "Reference" "#PWR046"
+			(at 273.05 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14943,7 +13537,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 273.05 92.71 0)
+			(at 273.05 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14952,7 +13546,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 273.05 87.63 0)
+			(at 273.05 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14961,7 +13555,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 273.05 87.63 0)
+			(at 273.05 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14970,7 +13564,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 273.05 87.63 0)
+			(at 273.05 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14984,7 +13578,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR035")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -14999,7 +13593,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "983c88df-8010-41cd-84e5-dad625e82ca2")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR028"
 			(at 33.02 101.6 0)
 			(effects
 				(font
@@ -15049,7 +13643,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR014")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -15064,7 +13658,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a19faaaf-3cea-4f65-9460-495a1cd1d657")
-		(property "Reference" "J5"
+		(property "Reference" "J6"
 			(at 36.83 168.91 0)
 			(effects
 				(font
@@ -15099,15 +13693,6 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 35.56 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "S9185-ND"
 			(at 35.56 176.53 0)
 			(effects
 				(font
@@ -15176,7 +13761,7 @@
 		(instances
 			(project ""
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "J5")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -15191,7 +13776,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a1cdc2c2-eb95-41dd-845d-2fb075a2cc3b")
-		(property "Reference" "C18"
+		(property "Reference" "C19"
 			(at 66.04 49.784 0)
 			(effects
 				(font
@@ -15209,7 +13794,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 64.4652 54.61 0)
 			(effects
 				(font
@@ -15236,7 +13821,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 63.5 50.8 0)
 			(effects
 				(font
@@ -15245,7 +13830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-12050-1-ND"
+		(property "Footprint review check" ""
 			(at 63.5 50.8 0)
 			(effects
 				(font
@@ -15254,16 +13839,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 63.5 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "885012006093"
+		(property "MPN" ""
 			(at 63.5 50.8 0)
 			(effects
 				(font
@@ -15281,7 +13857,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C18")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -15296,7 +13872,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "a4b641d6-32d1-4507-8fb5-a155262de8f5")
-		(property "Reference" "J9"
+		(property "Reference" "J10"
 			(at 276.352 99.06 0)
 			(effects
 				(font
@@ -15342,15 +13918,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "S2011EC-01-ND"
-			(at 278.13 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "Sullins Connector Solutions"
 			(at 278.13 93.98 0)
 			(effects
@@ -15387,7 +13954,104 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "J9")
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 21.59 73.66 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a6d67639-e16b-4302-b1d1-514f2f67931e")
+		(property "Reference" "R15"
+			(at 22.86 72.644 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7 kΩ"
+			(at 22.86 74.422 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 23.368 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 21.59 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 21.59 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" ""
+			(at 21.59 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 21.59 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0bb866d0-dff7-418c-b4a0-518196db3d21")
+		)
+		(pin "1"
+			(uuid "8847dc82-21c7-4975-99ba-859ea61fc45d")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -15403,7 +14067,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aaf65ca6-36de-407a-84b2-95ef941c3e01")
-		(property "Reference" "C11"
+		(property "Reference" "C12"
 			(at 19.304 49.784 0)
 			(effects
 				(font
@@ -15421,7 +14085,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 20.6248 54.61 0)
 			(effects
 				(font
@@ -15448,7 +14112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 21.59 50.8 0)
 			(effects
 				(font
@@ -15457,7 +14121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-12050-1-ND"
+		(property "Footprint review check" ""
 			(at 21.59 50.8 0)
 			(effects
 				(font
@@ -15466,16 +14130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 21.59 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "885012006093"
+		(property "MPN" ""
 			(at 21.59 50.8 0)
 			(effects
 				(font
@@ -15493,112 +14148,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 261.62 83.82 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ae141efb-a7df-41d1-893c-cb0478a6395c")
-		(property "Reference" "TVS8"
-			(at 257.302 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D5V0F1B2WS-7"
-			(at 251.46 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 261.62 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 261.62 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 261.62 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "31-D5V0F1B2WS-7CT-ND"
-			(at 261.62 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 261.62 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 261.62 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "D5V0F1B2WS-7"
-			(at 261.62 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d32245fd-a2ae-4f7e-a9fb-817aa520fae1")
-		)
-		(pin "1"
-			(uuid "3d28820b-d48c-4f5b-864d-236e9ef523e7")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "TVS8")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -15613,7 +14163,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b00c8f81-3609-47fa-9232-d2fc1580c756")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR024"
 			(at 22.86 135.89 0)
 			(effects
 				(font
@@ -15663,7 +14213,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR010")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -15678,7 +14228,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b789915e-6bc2-4cce-96d6-22740bec8150")
-		(property "Reference" "R24"
+		(property "Reference" "R27"
 			(at 180.594 70.104 0)
 			(effects
 				(font
@@ -15696,7 +14246,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 177.292 71.12 90)
 			(effects
 				(font
@@ -15723,7 +14273,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 179.07 71.12 0)
 			(effects
 				(font
@@ -15732,7 +14282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116005CT-ND"
+		(property "Footprint review check" ""
 			(at 179.07 71.12 0)
 			(effects
 				(font
@@ -15741,16 +14291,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 179.07 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116005"
+		(property "MPN" ""
 			(at 179.07 71.12 0)
 			(effects
 				(font
@@ -15768,7 +14309,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R24")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -15776,23 +14317,24 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 69.85 186.69 270)
+		(at 67.31 186.69 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b86fa1cd-6b0f-46df-80a9-9a0d916fdebe")
-		(property "Reference" "TVS3"
-			(at 74.168 186.69 90)
+		(property "Reference" "D3"
+			(at 68.834 186.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "D5V0F1B2WS-7"
-			(at 80.01 187.96 90)
+			(at 77.47 187.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15800,8 +14342,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 69.85 186.69 0)
+		(property "Footprint" ""
+			(at 67.31 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15810,7 +14352,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 186.69 0)
+			(at 67.31 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15819,7 +14361,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 69.85 186.69 0)
+			(at 67.31 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15827,8 +14369,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "31-D5V0F1B2WS-7CT-ND"
-			(at 69.85 186.69 0)
+		(property "Manufacturer" ""
+			(at 67.31 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15836,8 +14378,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 69.85 186.69 0)
+		(property "Footprint review check" ""
+			(at 67.31 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15845,17 +14387,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 69.85 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "D5V0F1B2WS-7"
-			(at 69.85 186.69 0)
+		(property "MPN" ""
+			(at 67.31 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15872,7 +14405,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "TVS3")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -15888,7 +14421,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b8be1078-7fdb-4f6a-ac2d-a3ac0b780375")
-		(property "Reference" "R27"
+		(property "Reference" "R30"
 			(at 239.776 145.034 0)
 			(effects
 				(font
@@ -15906,7 +14439,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 239.522 146.05 90)
 			(effects
 				(font
@@ -15933,7 +14466,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116098CT-ND"
+		(property "Manufacturer" ""
 			(at 241.3 146.05 0)
 			(effects
 				(font
@@ -15942,7 +14475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Footprint review check" ""
 			(at 241.3 146.05 0)
 			(effects
 				(font
@@ -15951,16 +14484,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 241.3 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116098"
+		(property "MPN" ""
 			(at 241.3 146.05 0)
 			(effects
 				(font
@@ -15978,7 +14502,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R27")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -15993,12 +14517,13 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bd4dc33d-aa22-4ba8-8947-24faafa01787")
-		(property "Reference" "TVS1"
-			(at 56.388 186.69 90)
+		(property "Reference" "D1"
+			(at 53.594 186.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "D5V0F1B2WS-7"
@@ -16010,7 +14535,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
+		(property "Footprint" ""
 			(at 52.07 186.69 0)
 			(effects
 				(font
@@ -16037,7 +14562,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "31-D5V0F1B2WS-7CT-ND"
+		(property "Manufacturer" ""
 			(at 52.07 186.69 0)
 			(effects
 				(font
@@ -16046,7 +14571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Diodes Incorporated"
+		(property "Footprint review check" ""
 			(at 52.07 186.69 0)
 			(effects
 				(font
@@ -16055,16 +14580,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 52.07 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "D5V0F1B2WS-7"
+		(property "MPN" ""
 			(at 52.07 186.69 0)
 			(effects
 				(font
@@ -16082,7 +14598,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "TVS1")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -16098,7 +14614,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c4e2ad35-0465-4d56-8c75-4dacff4b6280")
-		(property "Reference" "C16"
+		(property "Reference" "C17"
 			(at 51.054 49.784 0)
 			(effects
 				(font
@@ -16116,7 +14632,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 52.3748 54.61 0)
 			(effects
 				(font
@@ -16143,7 +14659,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 53.34 50.8 0)
 			(effects
 				(font
@@ -16152,7 +14668,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-12050-1-ND"
+		(property "Footprint review check" ""
 			(at 53.34 50.8 0)
 			(effects
 				(font
@@ -16161,16 +14677,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 53.34 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "885012006093"
+		(property "MPN" ""
 			(at 53.34 50.8 0)
 			(effects
 				(font
@@ -16188,110 +14695,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:FerriteBead")
-		(at 152.4 97.79 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c4faa765-cd5b-4e9e-a35f-a0537af9cccc")
-		(property "Reference" "FB2"
-			(at 152.4 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "120 Ω @ 100 MHz"
-			(at 152.4 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 152.4 99.568 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 152.4 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 152.4 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "490-5254-1-ND"
-			(at 152.4 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 152.4 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 152.4 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "BLM18KG121TN1D"
-			(at 152.4 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d76c5903-0f58-4c1e-b678-0c9fc4382b0d")
-		)
-		(pin "2"
-			(uuid "ca775a19-a25f-4c65-9858-97d4e3659a29")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "FB2")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -16306,7 +14710,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d1b3c8c6-db6d-490a-92e3-bc1ebc59e1d2")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR045"
 			(at 270.51 77.47 0)
 			(effects
 				(font
@@ -16356,112 +14760,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR034")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 270.51 83.82 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d1dd01d3-0f93-487f-8cf2-c9d1a0d3d54b")
-		(property "Reference" "TVS11"
-			(at 266.192 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D5V0F1B2WS-7"
-			(at 260.35 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 270.51 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 270.51 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 270.51 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "31-D5V0F1B2WS-7CT-ND"
-			(at 270.51 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 270.51 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 270.51 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "D5V0F1B2WS-7"
-			(at 270.51 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ecb2cd82-4fe2-4df1-8bae-7bcd6d2c1a89")
-		)
-		(pin "1"
-			(uuid "ca3af4b7-18e6-4772-900e-f9513e54c6d2")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "TVS11")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -16477,7 +14776,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d434f31b-955e-45ce-a4dd-52b614ab824e")
-		(property "Reference" "LED5"
+		(property "Reference" "LED7"
 			(at 237.236 133.35 90)
 			(effects
 				(font
@@ -16485,7 +14784,7 @@
 				)
 			)
 		)
-		(property "Value" "150141YS73100"
+		(property "Value" "150141RS73100"
 			(at 237.49 133.35 0)
 			(effects
 				(font
@@ -16494,7 +14793,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_PLCC_2835_Handsoldering"
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
 			(at 241.3 133.35 0)
 			(effects
 				(font
@@ -16512,7 +14811,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 241.3 133.35 0)
 			(effects
 				(font
@@ -16530,15 +14829,6 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-5004-1-ND"
-			(at 241.3 133.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Footprint review check" "+"
 			(at 241.3 133.35 0)
 			(effects
@@ -16548,7 +14838,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "150141YS73100"
+		(property "MPN" "150141RS73100"
 			(at 241.3 133.35 0)
 			(effects
 				(font
@@ -16566,7 +14856,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "LED5")
+					(reference "LED7")
 					(unit 1)
 				)
 			)
@@ -16597,7 +14887,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering"
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 			(at 27.94 46.99 0)
 			(effects
 				(font
@@ -16616,15 +14906,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 27.94 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "50-ECS-160-9-33B-CKM-TR3CT-ND"
 			(at 27.94 46.99 0)
 			(effects
 				(font
@@ -16683,73 +14964,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 270.51 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da359a7b-c34e-47f9-a694-6ce24fb699e7")
-		(property "Reference" "#PWR031"
-			(at 270.51 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 270.51 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 270.51 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 270.51 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 270.51 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "58f41878-8841-47c2-b0e9-b7496ef1e74d")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 22.86 190.5 0)
 		(mirror y)
 		(unit 1)
@@ -16759,7 +14973,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "def325bc-6851-4632-ae18-8ee273b6e937")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR027"
 			(at 22.86 196.85 0)
 			(effects
 				(font
@@ -16810,73 +15024,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 179.07 19.05 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e1b7a4c4-6f09-4fb5-92c4-3e24fe272576")
-		(property "Reference" "#PWR021"
-			(at 179.07 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "V_BAT"
-			(at 179.07 15.494 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 179.07 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b5e53e4c-e6b4-4ab0-aa35-4e7c9e2ea9be")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR021")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -16892,7 +15040,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7b429e0-3cf5-4ee4-81c9-0e7cd94e23f9")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR022"
 			(at 21.59 60.96 0)
 			(effects
 				(font
@@ -16943,7 +15091,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR08")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -16960,7 +15108,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7e6d2c1-4f26-40ce-9213-b23531c3a302")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR032"
 			(at 81.28 167.64 0)
 			(effects
 				(font
@@ -17011,7 +15159,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR018")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -17027,7 +15175,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e91cd463-52da-4cfc-bba2-1881ab790acb")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR039"
 			(at 179.07 91.44 0)
 			(effects
 				(font
@@ -17078,7 +15226,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR026")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -17093,7 +15241,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eb0df88f-a8c4-4769-a739-f18298c175f2")
-		(property "Reference" "C14"
+		(property "Reference" "C15"
 			(at 37.846 49.784 0)
 			(effects
 				(font
@@ -17111,7 +15259,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 36.5252 54.61 0)
 			(effects
 				(font
@@ -17138,7 +15286,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 35.56 50.8 0)
 			(effects
 				(font
@@ -17147,7 +15295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-12050-1-ND"
+		(property "Footprint review check" ""
 			(at 35.56 50.8 0)
 			(effects
 				(font
@@ -17156,16 +15304,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 35.56 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "885012006093"
+		(property "MPN" ""
 			(at 35.56 50.8 0)
 			(effects
 				(font
@@ -17183,7 +15322,112 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C14")
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 58.42 59.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eb94bbb7-03e0-47fc-b772-59d910db44af")
+		(property "Reference" "R17"
+			(at 55.626 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0 Ω"
+			(at 61.214 58.674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 58.42 61.468 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 58.42 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 58.42 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" ""
+			(at 58.42 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 58.42 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0402"
+			(at 58.42 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ade827ab-1fac-4412-b746-4dbe3c3be6e7")
+		)
+		(pin "1"
+			(uuid "7b487374-c2da-4139-a649-f8d4248471ed")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -17199,7 +15443,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eeec01e1-f6d8-4332-83fe-f4a77d1270cc")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR029"
 			(at 33.02 119.38 0)
 			(effects
 				(font
@@ -17250,7 +15494,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR015")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -17265,7 +15509,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f28685f1-4079-46d7-a5c9-f3be2250401d")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR041"
 			(at 262.89 142.24 0)
 			(effects
 				(font
@@ -17315,7 +15559,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR028")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -17323,23 +15567,24 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 78.74 186.69 270)
+		(at 74.93 186.69 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "f2d7a06a-e69c-4da3-97db-db1ec76bd0eb")
-		(property "Reference" "TVS4"
-			(at 83.058 186.69 90)
+		(property "Reference" "D4"
+			(at 76.454 186.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "D5V0F1B2WS-7"
-			(at 88.9 187.96 90)
+			(at 85.09 187.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17347,8 +15592,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 78.74 186.69 0)
+		(property "Footprint" ""
+			(at 74.93 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17357,7 +15602,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 78.74 186.69 0)
+			(at 74.93 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17366,7 +15611,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 78.74 186.69 0)
+			(at 74.93 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17374,8 +15619,8 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "31-D5V0F1B2WS-7CT-ND"
-			(at 78.74 186.69 0)
+		(property "Manufacturer" ""
+			(at 74.93 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17383,8 +15628,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 78.74 186.69 0)
+		(property "Footprint review check" ""
+			(at 74.93 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17392,17 +15637,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 78.74 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "D5V0F1B2WS-7"
-			(at 78.74 186.69 0)
+		(property "MPN" ""
+			(at 74.93 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17419,7 +15655,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "TVS4")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -17434,7 +15670,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f70d9bae-5500-414c-b0b3-526716fa9ddb")
-		(property "Reference" "R31"
+		(property "Reference" "R34"
 			(at 272.034 152.654 0)
 			(effects
 				(font
@@ -17452,7 +15688,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 268.732 153.67 90)
 			(effects
 				(font
@@ -17479,7 +15715,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" ""
 			(at 270.51 153.67 0)
 			(effects
 				(font
@@ -17488,7 +15724,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part Number" "732-560112116005CT-ND"
+		(property "Footprint review check" ""
 			(at 270.51 153.67 0)
 			(effects
 				(font
@@ -17497,16 +15733,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 270.51 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116005"
+		(property "MPN" ""
 			(at 270.51 153.67 0)
 			(effects
 				(font
@@ -17524,7 +15751,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R31")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -17541,7 +15768,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb322424-3fb1-4989-8c72-0cf3751268a9")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR025"
 			(at 22.86 163.83 0)
 			(effects
 				(font
@@ -17592,111 +15819,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 138.43 31.75 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fba8e847-1e06-4ea3-8ae6-277c30ca908c")
-		(property "Reference" "R19"
-			(at 133.604 30.734 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "20 Ω"
-			(at 143.764 30.734 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 138.43 33.528 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 138.43 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 138.43 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "732-560112116125CT-ND"
-			(at 138.43 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 138.43 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 138.43 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116125"
-			(at 138.43 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8492816f-07d9-48fb-9479-94ee32a1d1b1")
-		)
-		(pin "2"
-			(uuid "b16f0eb2-1643-4b13-a70a-06cfdb10f7d4")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R19")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -17719,7 +15842,7 @@
 				)
 			)
 		)
-		(property "Value" "STM32L552CETx"
+		(property "Value" "STM32L552CET6"
 			(at 104.14 117.602 0)
 			(effects
 				(font
@@ -17747,15 +15870,6 @@
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M33 MCU, 512KB flash, 256KB RAM, 110 MHz, 1.71-3.6V, 38 GPIO, LQFP48"
-			(at 104.14 121.412 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key Part Number" "497-STM32L552CET6-ND"
 			(at 104.14 121.412 0)
 			(effects
 				(font
@@ -17937,73 +16051,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 270.51 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fddab76b-586e-4942-a233-db758ac77ec1")
-		(property "Reference" "#PWR033"
-			(at 270.51 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 270.51 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 270.51 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 270.51 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 270.51 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "516446ae-76f0-44fd-a3a9-f1e9064e8626")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 53.34 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18012,7 +16059,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fedb2ef6-4d9a-4879-a7c8-78b1add5d12c")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR030"
 			(at 53.34 60.96 0)
 			(effects
 				(font
@@ -18063,7 +16110,112 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR016")
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 58.42 62.23 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff9bb903-88e6-42dd-8671-3bb9886fb975")
+		(property "Reference" "R18"
+			(at 55.626 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0 Ω"
+			(at 61.214 61.214 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 58.42 64.008 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 58.42 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 58.42 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" ""
+			(at 58.42 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 58.42 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0402"
+			(at 58.42 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cf69e5c5-5edd-48e5-bb50-b25ae3bd8999")
+		)
+		(pin "1"
+			(uuid "b7522cdd-4d4b-47ea-821d-a836ce0a1621")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -18078,7 +16230,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ffc549d0-a08d-4658-b4a5-5fe393f53254")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR040"
 			(at 220.98 127 0)
 			(effects
 				(font
@@ -18128,7 +16280,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR027")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)

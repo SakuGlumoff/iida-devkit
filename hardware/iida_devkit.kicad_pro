@@ -307,7 +307,44 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "footprint_link_issues|1524000|977900|0df005f9-e2ab-40d6-bafd-86c466186ac0|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "footprint_link_issues|1905000|762000|3b2b9da7-364d-456c-873e-f907a439efe5|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "footprint_link_issues|2146300|762000|bce5c565-6921-4889-84e7-1c096c1aadd0|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "footprint_link_issues|914400|914400|c0fd04df-15b8-4a4f-b778-3830226a5620|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "four_way_junction|1066800|762000|42dce70f-b408-41fd-8b0c-405f973a5877|ca7b697e-1379-453f-ad93-431cc174e3ef|/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2||",
+        ""
+      ],
+      [
+        "four_way_junction|1397000|1460500|66559dfc-9d58-4006-9af1-0fa362df2422|d2a37419-f22a-4c36-9814-5d1c04100a31|/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a||",
+        ""
+      ],
+      [
+        "four_way_junction|1651000|1460500|51f4da40-9c47-4d5e-8815-40e54170ad22|b21e840e-69ce-4041-bdea-fc853ff366cb|/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a||",
+        ""
+      ],
+      [
+        "four_way_junction|889000|1130300|191fc0af-9ba1-4534-9d9b-709397ea4642|cd8f5ae6-6638-4d65-a771-eda288da41a6|/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a||",
+        ""
+      ],
+      [
+        "four_way_junction|914400|1143000|08563d63-0cf1-4457-89e7-aee61a9cfcbe|0634acf5-c61c-4e07-b374-496474a3d9b3|/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2||",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -493,9 +530,9 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
-      "footprint_filter": "ignore",
+      "footprint_filter": "warning",
       "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "four_way_junction": "error",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
@@ -519,7 +556,7 @@
       "similar_labels": "warning",
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
-      "single_global_label": "ignore",
+      "single_global_label": "error",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "unit_value_mismatch": "error",
@@ -559,7 +596,6 @@
         "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.2,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.266,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -577,7 +613,6 @@
         "bus_width": 12,
         "clearance": 0.155,
         "diff_pair_gap": 0.155,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.3,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -683,12 +718,6 @@
         },
         {
           "group_by": false,
-          "label": "Digi-Key Part Number",
-          "name": "Digi-Key Part Number",
-          "show": true
-        },
-        {
-          "group_by": false,
           "label": "Manufacturer",
           "name": "Manufacturer",
           "show": true
@@ -710,6 +739,42 @@
           "label": "MPN",
           "name": "MPN",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey Part Number",
+          "name": "DigiKey Part Number",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Class",
+          "name": "Class",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Size",
+          "name": "Size",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Tolerance",
+          "name": "Tolerance",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Voltage",
+          "name": "Voltage",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Capacitance",
+          "name": "Capacitance",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -766,6 +831,14 @@
     ],
     [
       "8a51e004-740e-440f-9bfb-b035bcbeb0d2",
+      "USB"
+    ],
+    [
+      "87c570c0-3d52-431f-af75-588e9bdc1a2a",
+      "Battery"
+    ],
+    [
+      "5e1bb3da-9ec5-412a-a6e9-5701708c7ef6",
       "Power"
     ],
     [
@@ -779,6 +852,10 @@
     [
       "33580d9f-a609-4568-baaf-9a29cf2dabcd",
       "SIM"
+    ],
+    [
+      "e6477a2c-b2b5-4454-829c-da955dc53725",
+      "Antenna"
     ]
   ],
   "text_variables": {}
