@@ -3,13 +3,93 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "b12a6e25-97fb-4aba-bc96-af8db389bb9a")
-	(paper "A4")
+	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-05-07")
+		(date "2025-05-08")
 		(rev "v5.0.0")
 	)
 	(lib_symbols
+		(symbol "Mechanical:Fiducial"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "FID"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fiducial"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fiducial Marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fiducial marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Fiducial*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fiducial_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers
 				(hide yes)
@@ -346,59 +426,167 @@
 	)
 	(text "There's no real chassis or a case to mount the PCB,\nso just place the mounting holes at the corners of the PCB."
 		(exclude_from_sim no)
-		(at 116.078 181.61 0)
+		(at 47.244 266.192 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
 		)
 		(uuid "5571a628-e5ce-4932-aa05-15b27a6c8f99")
 	)
-	(text "This is a project for practicing PCB design and programming.\n\nThe result is a device that is powered either with a battery or with a USB connection.\nThe device can recharge the battery via the USB connection.\n\nThe device includes:\n  - An example sensor (temperature)\n  - External flash for updating the firmware over the air (FOTA)\n  - A modem module that connects the main microcontroller to the internet with LTE CAT-M1\n  - Option to use either an external antenna or an integrated antenna\n\nA key goal of the project is to ensure it has as little reliance as possible on totalitarian\ncountries (e.g., China or Russia) or on hostile countries (e.g., USA).\nComponent sourcing must be done carefully to select manufacturers who can supply parts that are not\nproduced in such countries.\nInstead, democratic countries (e.g., Taiwan and Germany) should be preferred.\n\nTo reduce strain on the global environment, manufacturing and sourcing is centered around Europe."
+	(text "Place fiducials on three corners of the PCB."
 		(exclude_from_sim no)
-		(at 14.478 52.07 0)
+		(at 114.3 268.224 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5db3d87e-da32-430e-8bce-acb8c089f601")
+	)
+	(text "This is a project for practicing PCB design and programming.\n\nThe result is a device that is powered either with a battery or with a USB connection.\nThe device can recharge the battery via the USB connection.\n\nThe device includes:\n  - An example sensor (temperature)\n  - External flash for updating the firmware over the air (FOTA)\n  - A modem module that connects the main microcontroller to the internet with LTE CAT-M1\n  - Option to use either an external antenna or an integrated antenna\n\nA key goal of the project is to ensure it has as little reliance as possible on totalitarian\ncountries (e.g., China or Russia) or on hostile countries (e.g., USA).\nComponent sourcing must be done carefully to select manufacturers who can supply parts\nthat are not produced in such countries.\nInstead, democratic countries (e.g., Taiwan and Germany) should be preferred.\n\nTo reduce strain on the global environment, manufacturing and sourcing is centered around\nEurope."
+		(exclude_from_sim no)
+		(at 15.24 63.5 0)
 		(effects
 			(font
 				(size 2.54 2.54)
+				(thickness 0.3175)
 			)
-			(justify left)
+			(justify left top)
 		)
 		(uuid "b94eda75-5ba9-4359-bbae-047503216cba")
 	)
+	(text "Place a stitched GND guard rail around the edges of the PCB\nto provide a grounding point for human touch."
+		(exclude_from_sim no)
+		(at 186.182 268.732 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f537f821-913f-49bb-a009-fdda546dfa42")
+	)
+	(text_box "Iida devkit"
+		(exclude_from_sim no)
+		(at 12.7 12.7 0)
+		(size 393.7 38.1)
+		(margins 0.9525 2 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 255 0 1)
+		)
+		(effects
+			(font
+				(size 10.16 10.16)
+				(thickness 1.016)
+				(bold yes)
+			)
+		)
+		(uuid "787d821d-3720-4ed6-a47e-4fb5c4df732f")
+	)
+	(text_box "Block diagram"
+		(exclude_from_sim no)
+		(at 203.2 50.8 0)
+		(size 203.2 200.66)
+		(margins 0.9525 2 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "800f2ac3-56f6-4ff7-b950-bc301c70b1f0")
+	)
+	(text_box "Mechanical"
+		(exclude_from_sim no)
+		(at 12.7 251.46 0)
+		(size 285.75 33.02)
+		(margins 0.9525 2 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "e474c5c6-2dde-429d-84c6-9258dd376b9a")
+	)
+	(text_box "Description"
+		(exclude_from_sim no)
+		(at 12.7 50.8 0)
+		(size 190.5 200.66)
+		(margins 0.9525 2 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "fc0c0ea0-6294-4533-83e7-30955955ee3b")
+	)
 	(junction
-		(at 149.86 191.77)
+		(at 54.61 276.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "062403b7-13ce-4a49-b1b0-dd820d284646")
 	)
 	(junction
-		(at 110.49 116.84)
+		(at 266.7 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3af56dcd-c728-4093-91dc-1ce72299cf23")
 	)
 	(junction
-		(at 139.7 191.77)
+		(at 44.45 276.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "939d13a2-cc0b-4354-bde8-a93e85d138b7")
 	)
 	(junction
-		(at 114.3 105.41)
+		(at 270.51 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e0122a6a-5670-445e-a405-681022e6dd49")
 	)
 	(junction
-		(at 144.78 191.77)
+		(at 49.53 276.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f64cad8a-0185-476f-91dc-4b8cfcbc11f3")
 	)
 	(wire
 		(pts
-			(xy 191.77 128.27) (xy 198.12 128.27)
+			(xy 347.98 133.35) (xy 354.33 133.35)
 		)
 		(stroke
 			(width 0)
@@ -408,7 +596,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 135.89) (xy 198.12 135.89)
+			(xy 347.98 140.97) (xy 354.33 140.97)
 		)
 		(stroke
 			(width 0)
@@ -418,7 +606,17 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 133.35) (xy 165.1 133.35)
+			(xy 308.61 138.43) (xy 321.31 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0be2a261-38a4-4732-a31e-be88fc319480")
+	)
+	(wire
+		(pts
+			(xy 308.61 133.35) (xy 321.31 133.35)
 		)
 		(stroke
 			(width 0)
@@ -428,7 +626,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 135.89) (xy 123.19 135.89)
+			(xy 259.08 140.97) (xy 279.4 140.97)
 		)
 		(stroke
 			(width 0)
@@ -438,7 +636,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 130.81) (xy 165.1 130.81)
+			(xy 308.61 129.54) (xy 321.31 129.54)
 		)
 		(stroke
 			(width 0)
@@ -448,7 +646,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 133.35) (xy 198.12 133.35)
+			(xy 347.98 138.43) (xy 354.33 138.43)
 		)
 		(stroke
 			(width 0)
@@ -458,7 +656,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 105.41) (xy 114.3 119.38)
+			(xy 270.51 110.49) (xy 270.51 124.46)
 		)
 		(stroke
 			(width 0)
@@ -468,7 +666,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 116.84) (xy 110.49 116.84)
+			(xy 259.08 121.92) (xy 266.7 121.92)
 		)
 		(stroke
 			(width 0)
@@ -478,7 +676,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 123.19) (xy 198.12 123.19)
+			(xy 347.98 128.27) (xy 354.33 128.27)
 		)
 		(stroke
 			(width 0)
@@ -488,7 +686,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 133.35) (xy 123.19 133.35)
+			(xy 259.08 138.43) (xy 279.4 138.43)
 		)
 		(stroke
 			(width 0)
@@ -498,7 +696,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 109.22) (xy 198.12 109.22)
+			(xy 347.98 114.3) (xy 354.33 114.3)
 		)
 		(stroke
 			(width 0)
@@ -508,7 +706,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 130.81) (xy 198.12 130.81)
+			(xy 347.98 135.89) (xy 354.33 135.89)
 		)
 		(stroke
 			(width 0)
@@ -518,7 +716,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 191.77) (xy 144.78 191.77)
+			(xy 44.45 276.86) (xy 49.53 276.86)
 		)
 		(stroke
 			(width 0)
@@ -528,7 +726,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 128.27) (xy 165.1 128.27)
+			(xy 308.61 127) (xy 321.31 127)
 		)
 		(stroke
 			(width 0)
@@ -538,7 +736,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 105.41) (xy 123.19 105.41)
+			(xy 270.51 110.49) (xy 279.4 110.49)
 		)
 		(stroke
 			(width 0)
@@ -548,7 +746,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 125.73) (xy 165.1 125.73)
+			(xy 308.61 124.46) (xy 321.31 124.46)
 		)
 		(stroke
 			(width 0)
@@ -558,7 +756,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 191.77) (xy 139.7 191.77)
+			(xy 39.37 276.86) (xy 44.45 276.86)
 		)
 		(stroke
 			(width 0)
@@ -568,7 +766,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 107.95) (xy 110.49 107.95)
+			(xy 259.08 113.03) (xy 266.7 113.03)
 		)
 		(stroke
 			(width 0)
@@ -578,7 +776,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 191.77) (xy 149.86 191.77)
+			(xy 49.53 276.86) (xy 54.61 276.86)
 		)
 		(stroke
 			(width 0)
@@ -588,7 +786,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 116.84) (xy 110.49 130.81)
+			(xy 266.7 121.92) (xy 266.7 135.89)
 		)
 		(stroke
 			(width 0)
@@ -598,7 +796,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 107.95) (xy 110.49 116.84)
+			(xy 266.7 113.03) (xy 266.7 121.92)
 		)
 		(stroke
 			(width 0)
@@ -608,7 +806,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 105.41) (xy 114.3 105.41)
+			(xy 259.08 110.49) (xy 270.51 110.49)
 		)
 		(stroke
 			(width 0)
@@ -618,7 +816,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 99.06) (xy 114.3 99.06)
+			(xy 259.08 104.14) (xy 270.51 104.14)
 		)
 		(stroke
 			(width 0)
@@ -628,7 +826,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 130.81) (xy 110.49 130.81)
+			(xy 259.08 135.89) (xy 266.7 135.89)
 		)
 		(stroke
 			(width 0)
@@ -638,7 +836,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 135.89) (xy 165.1 135.89)
+			(xy 308.61 135.89) (xy 321.31 135.89)
 		)
 		(stroke
 			(width 0)
@@ -648,7 +846,17 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 125.73) (xy 198.12 125.73)
+			(xy 308.61 140.97) (xy 321.31 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e90ff09b-6afa-42c5-a191-81abec601e2b")
+	)
+	(wire
+		(pts
+			(xy 347.98 130.81) (xy 354.33 130.81)
 		)
 		(stroke
 			(width 0)
@@ -658,7 +866,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 119.38) (xy 102.87 119.38)
+			(xy 270.51 124.46) (xy 259.08 124.46)
 		)
 		(stroke
 			(width 0)
@@ -668,7 +876,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 134.62 189.23 0)
+		(at 39.37 274.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -676,7 +884,7 @@
 		(dnp no)
 		(uuid "160058f9-baa4-448c-b354-99225a2ceae8")
 		(property "Reference" "H1"
-			(at 133.35 184.785 0)
+			(at 38.1 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -685,7 +893,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 137.16 189.23 0)
+			(at 41.91 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -695,7 +903,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 134.62 189.23 0)
+			(at 39.37 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -704,7 +912,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 134.62 189.23 0)
+			(at 39.37 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -713,7 +921,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 134.62 189.23 0)
+			(at 39.37 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -722,7 +930,7 @@
 			)
 		)
 		(property "Manufacturer" "-"
-			(at 134.62 189.23 0)
+			(at 39.37 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -731,7 +939,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 134.62 189.23 0)
+			(at 39.37 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -740,7 +948,7 @@
 			)
 		)
 		(property "MPN" "-"
-			(at 134.62 189.23 0)
+			(at 39.37 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -749,7 +957,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 134.62 189.23 0)
+			(at 39.37 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -771,7 +979,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 149.86 189.23 0)
+		(at 54.61 274.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -779,7 +987,7 @@
 		(dnp no)
 		(uuid "37b17bca-3d3c-4c85-92bf-245f7303c029")
 		(property "Reference" "H4"
-			(at 148.59 184.785 0)
+			(at 53.34 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -788,7 +996,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 152.4 189.23 0)
+			(at 57.15 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -798,7 +1006,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 149.86 189.23 0)
+			(at 54.61 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -807,7 +1015,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.86 189.23 0)
+			(at 54.61 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -816,7 +1024,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 189.23 0)
+			(at 54.61 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -825,7 +1033,7 @@
 			)
 		)
 		(property "Manufacturer" "-"
-			(at 149.86 189.23 0)
+			(at 54.61 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -834,7 +1042,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 149.86 189.23 0)
+			(at 54.61 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -843,7 +1051,7 @@
 			)
 		)
 		(property "MPN" "-"
-			(at 149.86 189.23 0)
+			(at 54.61 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -852,7 +1060,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 149.86 189.23 0)
+			(at 54.61 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -874,7 +1082,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 149.86 191.77 0)
+		(at 54.61 276.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -882,8 +1090,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b88cd83-3afd-4da0-96db-2c7305c3c68f")
-		(property "Reference" "#PWR02"
-			(at 149.86 198.12 0)
+		(property "Reference" "#PWR01"
+			(at 54.61 283.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -892,7 +1100,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 149.86 196.85 0)
+			(at 54.61 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -901,7 +1109,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 191.77 0)
+			(at 54.61 276.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -910,7 +1118,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 191.77 0)
+			(at 54.61 276.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -919,7 +1127,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 191.77 0)
+			(at 54.61 276.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -933,7 +1141,71 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "#PWR02")
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 114.3 273.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "61c880d6-eb78-4373-ab8f-f1774093457b")
+		(property "Reference" "FID2"
+			(at 116.078 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 116.84 274.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 114.3 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 114.3 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
+					(reference "FID2")
 					(unit 1)
 				)
 			)
@@ -941,7 +1213,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 139.7 189.23 0)
+		(at 44.45 274.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -949,7 +1221,7 @@
 		(dnp no)
 		(uuid "701cbfd0-af05-42fa-a2d4-17530a2367e3")
 		(property "Reference" "H2"
-			(at 138.43 184.785 0)
+			(at 43.18 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -958,7 +1230,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 142.24 189.23 0)
+			(at 46.99 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -968,7 +1240,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 139.7 189.23 0)
+			(at 44.45 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -977,7 +1249,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 189.23 0)
+			(at 44.45 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -986,7 +1258,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 139.7 189.23 0)
+			(at 44.45 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -995,7 +1267,7 @@
 			)
 		)
 		(property "Manufacturer" "-"
-			(at 139.7 189.23 0)
+			(at 44.45 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1004,7 +1276,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 139.7 189.23 0)
+			(at 44.45 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1013,7 +1285,7 @@
 			)
 		)
 		(property "MPN" "-"
-			(at 139.7 189.23 0)
+			(at 44.45 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1022,7 +1294,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 139.7 189.23 0)
+			(at 44.45 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1043,16 +1315,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 101.6 273.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "87581f6e-a7ba-407e-a652-1fbebd13a04c")
+		(property "Reference" "FID1"
+			(at 103.378 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 104.14 274.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 101.6 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 101.6 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
+					(reference "FID1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
-		(at 114.3 99.06 0)
+		(at 270.51 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b0a3d814-bb98-439a-bcb4-9fa5713445be")
-		(property "Reference" "#PWR01"
-			(at 114.3 102.87 0)
+		(property "Reference" "#PWR02"
+			(at 270.51 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1061,7 +1397,7 @@
 			)
 		)
 		(property "Value" "V_3V3"
-			(at 114.3 95.504 0)
+			(at 270.51 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1069,7 +1405,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 99.06 0)
+			(at 270.51 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1078,7 +1414,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 99.06 0)
+			(at 270.51 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1087,7 +1423,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 114.3 99.06 0)
+			(at 270.51 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1101,7 +1437,71 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "#PWR01")
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 127 273.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc029735-4156-42eb-8513-6d4abdc50dad")
+		(property "Reference" "FID3"
+			(at 128.778 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 129.54 274.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 127 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 127 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
+					(reference "FID3")
 					(unit 1)
 				)
 			)
@@ -1109,7 +1509,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 144.78 189.23 0)
+		(at 49.53 274.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1117,7 +1517,7 @@
 		(dnp no)
 		(uuid "e64f6084-e950-4b3e-b4b3-d057eb9b5b4e")
 		(property "Reference" "H3"
-			(at 143.51 184.785 0)
+			(at 48.26 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1126,7 +1526,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 147.32 189.23 0)
+			(at 52.07 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1136,7 +1536,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 144.78 189.23 0)
+			(at 49.53 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1145,7 +1545,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 189.23 0)
+			(at 49.53 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1154,7 +1554,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 189.23 0)
+			(at 49.53 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1163,7 +1563,7 @@
 			)
 		)
 		(property "Manufacturer" "-"
-			(at 144.78 189.23 0)
+			(at 49.53 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1172,7 +1572,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 144.78 189.23 0)
+			(at 49.53 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1181,7 +1581,7 @@
 			)
 		)
 		(property "MPN" "-"
-			(at 144.78 189.23 0)
+			(at 49.53 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1190,7 +1590,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 144.78 189.23 0)
+			(at 49.53 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1211,7 +1611,7 @@
 		)
 	)
 	(sheet
-		(at 198.12 119.38)
+		(at 354.33 124.46)
 		(size 17.78 20.32)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1227,7 +1627,7 @@
 		)
 		(uuid "33580d9f-a609-4568-baaf-9a29cf2dabcd")
 		(property "Sheetname" "SIM"
-			(at 198.12 119.126 0)
+			(at 354.33 124.206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1236,7 +1636,7 @@
 			)
 		)
 		(property "Sheetfile" "sim.kicad_sch"
-			(at 198.12 139.954 0)
+			(at 354.33 145.034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1245,7 +1645,7 @@
 			)
 		)
 		(pin "MDM_V_INT" input
-			(at 198.12 123.19 180)
+			(at 354.33 128.27 180)
 			(uuid "bf86f2d1-ded2-4ed2-8cca-48ae08bc2493")
 			(effects
 				(font
@@ -1255,7 +1655,7 @@
 			)
 		)
 		(pin "SIM_CLK" input
-			(at 198.12 130.81 180)
+			(at 354.33 135.89 180)
 			(uuid "693f36e5-cc16-4300-9329-d5aa358dafaf")
 			(effects
 				(font
@@ -1265,7 +1665,7 @@
 			)
 		)
 		(pin "SIM_DET" output
-			(at 198.12 135.89 180)
+			(at 354.33 140.97 180)
 			(uuid "1cca0da1-4b7c-494c-a049-37bf150ca457")
 			(effects
 				(font
@@ -1275,7 +1675,7 @@
 			)
 		)
 		(pin "SIM_IO" bidirectional
-			(at 198.12 128.27 180)
+			(at 354.33 133.35 180)
 			(uuid "08d56c7a-a367-4d67-9e02-4f64ef417bd4")
 			(effects
 				(font
@@ -1285,7 +1685,7 @@
 			)
 		)
 		(pin "SIM_RST" input
-			(at 198.12 133.35 180)
+			(at 354.33 138.43 180)
 			(uuid "a6ba69b9-06a3-4518-84bb-289bc6acf676")
 			(effects
 				(font
@@ -1295,7 +1695,7 @@
 			)
 		)
 		(pin "SIM_VCC" input
-			(at 198.12 125.73 180)
+			(at 354.33 130.81 180)
 			(uuid "404c4a72-9795-4614-b361-df241580978f")
 			(effects
 				(font
@@ -1313,7 +1713,7 @@
 		)
 	)
 	(sheet
-		(at 165.1 96.52)
+		(at 321.31 101.6)
 		(size 26.67 43.18)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1329,7 +1729,7 @@
 		)
 		(uuid "3723475b-e956-4027-ac40-e47346743900")
 		(property "Sheetname" "Modem"
-			(at 165.1 96.266 0)
+			(at 321.31 101.346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1338,7 +1738,7 @@
 			)
 		)
 		(property "Sheetfile" "modem.kicad_sch"
-			(at 165.1 139.954 0)
+			(at 321.31 145.034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1347,7 +1747,7 @@
 			)
 		)
 		(pin "ANT" bidirectional
-			(at 191.77 109.22 0)
+			(at 347.98 114.3 0)
 			(uuid "b67b0332-d79a-44db-ab3c-27d929a9fc1f")
 			(effects
 				(font
@@ -1357,7 +1757,7 @@
 			)
 		)
 		(pin "MDM_PWR_EN" input
-			(at 165.1 125.73 180)
+			(at 321.31 124.46 180)
 			(uuid "0768c699-96c1-41f7-bb53-e3f9ca0e3a6b")
 			(effects
 				(font
@@ -1367,7 +1767,7 @@
 			)
 		)
 		(pin "MDM_PWR_ON" input
-			(at 165.1 128.27 180)
+			(at 321.31 127 180)
 			(uuid "300a9b01-09e7-4c4a-a67b-cfe150bbb506")
 			(effects
 				(font
@@ -1377,7 +1777,7 @@
 			)
 		)
 		(pin "MDM_RESET" input
-			(at 165.1 130.81 180)
+			(at 321.31 129.54 180)
 			(uuid "b60a62db-d570-48e8-ba02-96ba75cb38bd")
 			(effects
 				(font
@@ -1386,28 +1786,8 @@
 				(justify left)
 			)
 		)
-		(pin "MDM_RXD" bidirectional
-			(at 165.1 133.35 180)
-			(uuid "fbf36e09-fb98-4ad5-ae7f-d2ba86a4d4ba")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "MDM_TXD" bidirectional
-			(at 165.1 135.89 180)
-			(uuid "23280601-79c6-4031-b885-21c9c7916130")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "MDM_V_INT" output
-			(at 191.77 123.19 0)
+			(at 347.98 128.27 0)
 			(uuid "9452eb43-34af-4e3b-afe9-e66ed7e5d307")
 			(effects
 				(font
@@ -1417,7 +1797,7 @@
 			)
 		)
 		(pin "SIM_CLK" output
-			(at 191.77 130.81 0)
+			(at 347.98 135.89 0)
 			(uuid "8db62a61-3330-4be3-9848-2dc8d2793498")
 			(effects
 				(font
@@ -1427,7 +1807,7 @@
 			)
 		)
 		(pin "SIM_DET" input
-			(at 191.77 135.89 0)
+			(at 347.98 140.97 0)
 			(uuid "dd50aa16-17b3-415a-933e-3a0cd0dfd975")
 			(effects
 				(font
@@ -1437,7 +1817,7 @@
 			)
 		)
 		(pin "SIM_IO" bidirectional
-			(at 191.77 128.27 0)
+			(at 347.98 133.35 0)
 			(uuid "099f14a8-56b3-4df1-8976-d1947de0e38f")
 			(effects
 				(font
@@ -1447,7 +1827,7 @@
 			)
 		)
 		(pin "SIM_RST" output
-			(at 191.77 133.35 0)
+			(at 347.98 138.43 0)
 			(uuid "08a0090a-5e4b-4f9b-8a34-1425bfa1aac2")
 			(effects
 				(font
@@ -1457,13 +1837,53 @@
 			)
 		)
 		(pin "SIM_VCC" output
-			(at 191.77 125.73 0)
+			(at 347.98 130.81 0)
 			(uuid "dd101a31-d6c3-4874-999a-ea6ba2fd5570")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "MDM_CTS" output
+			(at 321.31 138.43 180)
+			(uuid "c606121b-f909-458b-82e3-b12cfb45ab16")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MDM_RTS" input
+			(at 321.31 140.97 180)
+			(uuid "7035cd27-eca4-43c0-b405-26e0b310684d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MDM_RXD" output
+			(at 321.31 133.35 180)
+			(uuid "fe470e78-a80e-4b6e-9fb8-7e1c5f739bdb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MDM_TXD" input
+			(at 321.31 135.89 180)
+			(uuid "164070c4-5875-4b3c-8732-e32bd0b09b0e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -1475,7 +1895,7 @@
 		)
 	)
 	(sheet
-		(at 85.09 96.52)
+		(at 241.3 101.6)
 		(size 17.78 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1491,7 +1911,7 @@
 		)
 		(uuid "5e1bb3da-9ec5-412a-a6e9-5701708c7ef6")
 		(property "Sheetname" "Power"
-			(at 85.09 96.266 0)
+			(at 241.3 101.346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1500,7 +1920,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 85.09 110.744 0)
+			(at 241.3 115.824 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1509,7 +1929,7 @@
 			)
 		)
 		(pin "V_3V3" output
-			(at 102.87 99.06 0)
+			(at 259.08 104.14 0)
 			(uuid "ceeb2b72-6d4b-4d62-8c65-210aee4412ab")
 			(effects
 				(font
@@ -1519,7 +1939,7 @@
 			)
 		)
 		(pin "V_5V0" input
-			(at 102.87 107.95 0)
+			(at 259.08 113.03 0)
 			(uuid "922408a0-0dac-46a7-8e0f-d6806cc34aa2")
 			(effects
 				(font
@@ -1529,7 +1949,7 @@
 			)
 		)
 		(pin "V_BAT" input
-			(at 102.87 105.41 0)
+			(at 259.08 110.49 0)
 			(uuid "e9e25424-d4ff-43bc-b2a3-cda51c0f50c0")
 			(effects
 				(font
@@ -1547,7 +1967,7 @@
 		)
 	)
 	(sheet
-		(at 123.19 96.52)
+		(at 279.4 101.6)
 		(size 29.21 43.18)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1563,7 +1983,7 @@
 		)
 		(uuid "6dd8d741-3080-458c-a4f5-a05a3905bb8a")
 		(property "Sheetname" "MCU"
-			(at 123.19 96.266 0)
+			(at 279.4 101.346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1572,7 +1992,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 123.19 140.208 0)
+			(at 279.4 145.288 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1581,7 +2001,7 @@
 			)
 		)
 		(pin "USB_DP" bidirectional
-			(at 123.19 133.35 180)
+			(at 279.4 138.43 180)
 			(uuid "c0d42e28-dc49-4020-81fd-6a9d8493d29b")
 			(effects
 				(font
@@ -1591,7 +2011,7 @@
 			)
 		)
 		(pin "USB_DN" bidirectional
-			(at 123.19 135.89 180)
+			(at 279.4 140.97 180)
 			(uuid "8abe9ec8-9267-412d-a685-9a985aecbeb1")
 			(effects
 				(font
@@ -1601,7 +2021,7 @@
 			)
 		)
 		(pin "MDM_PWR_EN" output
-			(at 152.4 125.73 0)
+			(at 308.61 124.46 0)
 			(uuid "3685f9eb-fb8a-46bc-a39e-1ce08dea3314")
 			(effects
 				(font
@@ -1611,7 +2031,7 @@
 			)
 		)
 		(pin "MDM_PWR_ON" output
-			(at 152.4 128.27 0)
+			(at 308.61 127 0)
 			(uuid "d80da251-e131-4d59-aaed-172617768a85")
 			(effects
 				(font
@@ -1621,7 +2041,7 @@
 			)
 		)
 		(pin "MDM_RESET" output
-			(at 152.4 130.81 0)
+			(at 308.61 129.54 0)
 			(uuid "423702ac-29ba-4b6d-ba04-a20f6f2b544a")
 			(effects
 				(font
@@ -1631,7 +2051,7 @@
 			)
 		)
 		(pin "MDM_RXD" input
-			(at 152.4 133.35 0)
+			(at 308.61 133.35 0)
 			(uuid "49c51f4b-d773-4c26-ac52-22802ad2cf86")
 			(effects
 				(font
@@ -1641,7 +2061,7 @@
 			)
 		)
 		(pin "MDM_TXD" output
-			(at 152.4 135.89 0)
+			(at 308.61 135.89 0)
 			(uuid "4171f7f1-af38-4b6d-b985-c89eba542d27")
 			(effects
 				(font
@@ -1651,13 +2071,33 @@
 			)
 		)
 		(pin "V_BAT" input
-			(at 123.19 105.41 180)
+			(at 279.4 110.49 180)
 			(uuid "dfe9f728-f51e-46d0-a950-b72cdd7f8bfc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "MDM_CTS" input
+			(at 308.61 138.43 0)
+			(uuid "a382dd69-d713-4d0d-bdc3-21f72535341f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MDM_RTS" output
+			(at 308.61 140.97 0)
+			(uuid "66f7248f-34fb-4537-b999-063df6144261")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -1669,7 +2109,7 @@
 		)
 	)
 	(sheet
-		(at 85.09 115.57)
+		(at 241.3 120.65)
 		(size 17.78 6.35)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1685,7 +2125,7 @@
 		)
 		(uuid "87c570c0-3d52-431f-af75-588e9bdc1a2a")
 		(property "Sheetname" "Battery"
-			(at 85.09 115.316 0)
+			(at 241.3 120.396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1694,7 +2134,7 @@
 			)
 		)
 		(property "Sheetfile" "battery.kicad_sch"
-			(at 85.09 122.174 0)
+			(at 241.3 127.254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1703,7 +2143,7 @@
 			)
 		)
 		(pin "V_5V0" input
-			(at 102.87 116.84 0)
+			(at 259.08 121.92 0)
 			(uuid "c7a2dd6f-e53d-49bf-a454-68606d3330c6")
 			(effects
 				(font
@@ -1713,7 +2153,7 @@
 			)
 		)
 		(pin "V_BAT" output
-			(at 102.87 119.38 0)
+			(at 259.08 124.46 0)
 			(uuid "9b2f0c14-f677-4a36-b2b7-b863e4c69089")
 			(effects
 				(font
@@ -1731,7 +2171,7 @@
 		)
 	)
 	(sheet
-		(at 85.09 127)
+		(at 241.3 132.08)
 		(size 17.78 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1747,7 +2187,7 @@
 		)
 		(uuid "8a51e004-740e-440f-9bfb-b035bcbeb0d2")
 		(property "Sheetname" "USB"
-			(at 85.09 126.746 0)
+			(at 241.3 131.826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1756,7 +2196,7 @@
 			)
 		)
 		(property "Sheetfile" "usb.kicad_sch"
-			(at 85.09 139.954 0)
+			(at 241.3 145.034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1765,7 +2205,7 @@
 			)
 		)
 		(pin "USB_DN" bidirectional
-			(at 102.87 135.89 0)
+			(at 259.08 140.97 0)
 			(uuid "ca4dac7e-1e1e-4be2-a319-70da5317c4b5")
 			(effects
 				(font
@@ -1775,7 +2215,7 @@
 			)
 		)
 		(pin "USB_DP" bidirectional
-			(at 102.87 133.35 0)
+			(at 259.08 138.43 0)
 			(uuid "b03d066f-2f5e-4cde-b3e8-b8b654bb7707")
 			(effects
 				(font
@@ -1785,7 +2225,7 @@
 			)
 		)
 		(pin "V_5V0" output
-			(at 102.87 130.81 0)
+			(at 259.08 135.89 0)
 			(uuid "e7ef3ea9-596c-4b79-b017-6f6d4db5093a")
 			(effects
 				(font
@@ -1803,7 +2243,7 @@
 		)
 	)
 	(sheet
-		(at 198.12 106.68)
+		(at 354.33 111.76)
 		(size 17.78 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1819,7 +2259,7 @@
 		)
 		(uuid "e6477a2c-b2b5-4454-829c-da955dc53725")
 		(property "Sheetname" "Antenna"
-			(at 198.12 106.426 0)
+			(at 354.33 111.506 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1828,7 +2268,7 @@
 			)
 		)
 		(property "Sheetfile" "antenna.kicad_sch"
-			(at 198.12 112.268 0)
+			(at 354.33 117.348 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1837,7 +2277,7 @@
 			)
 		)
 		(pin "ANT" bidirectional
-			(at 198.12 109.22 180)
+			(at 354.33 114.3 180)
 			(uuid "1d36ff11-13ef-45f2-b8bf-5224857eb108")
 			(effects
 				(font
