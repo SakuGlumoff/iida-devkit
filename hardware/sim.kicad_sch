@@ -10,6 +10,113 @@
 		(rev "v5.0.0")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -819,7 +926,7 @@
 	)
 	(text_box "SIM_DET is active high (1.8 V).\nWhen SIM connected: CD not shorted to GND -> SIM_DET is HIGH.\nWhen SIM not connected: CD shorted to GND -> SIM_DET is LOW."
 		(exclude_from_sim no)
-		(at 38.1 123.19 0)
+		(at 25.4 123.19 0)
 		(size 34.29 27.94)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -855,6 +962,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4128ad79-d80f-4803-b455-b945e1a3e6bd")
+	)
+	(junction
+		(at 63.5 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63e93c81-bd3b-483f-9a5c-6ab6cf879fe2")
+	)
+	(junction
+		(at 76.2 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65710c02-bb21-4dd7-94ea-fbf7fec8f741")
 	)
 	(junction
 		(at 153.67 133.35)
@@ -905,7 +1024,19 @@
 		(uuid "b945a0e9-4733-4337-ac25-731db97a36e2")
 	)
 	(junction
-		(at 60.96 148.59)
+		(at 76.2 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf72823e-1f9e-4953-a8e4-54073e4ece78")
+	)
+	(junction
+		(at 91.44 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1421ea2-b93a-4217-a0e8-ed4996ff33db")
+	)
+	(junction
+		(at 48.26 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c78ce89f-807b-4800-9a90-763f7a6de756")
@@ -915,6 +1046,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cbfe0670-ba39-4839-9d72-5d041ac61729")
+	)
+	(junction
+		(at 91.44 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d05b694f-ceed-40f0-be3a-1164e4c2cfdf")
 	)
 	(no_connect
 		(at 213.36 135.89)
@@ -982,13 +1119,33 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 140.97) (xy 124.46 140.97)
+			(xy 76.2 138.43) (xy 109.22 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2323c046-eb77-4729-934e-54ab0fa10462")
+	)
+	(wire
+		(pts
+			(xy 74.93 140.97) (xy 76.2 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "25b8af8b-be32-4354-b846-0dfc855f98d1")
+	)
+	(wire
+		(pts
+			(xy 91.44 133.35) (xy 93.98 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2918d430-d50b-4806-a0b5-0c09cbc34100")
 	)
 	(wire
 		(pts
@@ -1032,7 +1189,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 148.59) (xy 204.47 148.59)
+			(xy 48.26 148.59) (xy 63.5 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1052,7 +1209,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 133.35) (xy 93.98 133.35)
+			(xy 90.17 133.35) (xy 91.44 133.35)
 		)
 		(stroke
 			(width 0)
@@ -1062,7 +1219,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 143.51) (xy 139.7 143.51)
+			(xy 90.17 143.51) (xy 91.44 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1092,7 +1249,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 148.59) (xy 60.96 148.59)
+			(xy 45.72 148.59) (xy 48.26 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1112,6 +1269,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 148.59) (xy 204.47 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "866e70c1-b00d-4b5b-8a21-2f3e99806def")
+	)
+	(wire
+		(pts
 			(xy 166.37 138.43) (xy 166.37 151.13)
 		)
 		(stroke
@@ -1122,13 +1289,23 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 138.43) (xy 109.22 138.43)
+			(xy 74.93 138.43) (xy 76.2 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8f864e2a-ad0b-4e81-bd73-6b3bb6af6f77")
+	)
+	(wire
+		(pts
+			(xy 76.2 140.97) (xy 124.46 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d1779f1-4a5d-4896-8841-717f57243760")
 	)
 	(wire
 		(pts
@@ -1202,6 +1379,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 143.51) (xy 139.7 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3010524-9c84-44e3-831c-cef61c7aebbc")
+	)
+	(wire
+		(pts
 			(xy 238.76 151.13) (xy 238.76 153.67)
 		)
 		(stroke
@@ -1212,7 +1399,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 140.97) (xy 60.96 140.97)
+			(xy 45.72 140.97) (xy 48.26 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2137,7 +2324,7 @@
 	)
 	(hierarchical_label "SIM_RST"
 		(shape input)
-		(at 88.9 143.51 180)
+		(at 90.17 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2148,7 +2335,7 @@
 	)
 	(hierarchical_label "SIM_CLK"
 		(shape input)
-		(at 88.9 140.97 180)
+		(at 74.93 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2159,7 +2346,7 @@
 	)
 	(hierarchical_label "MDM_V_INT"
 		(shape input)
-		(at 58.42 140.97 180)
+		(at 45.72 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2170,7 +2357,7 @@
 	)
 	(hierarchical_label "SIM_DET"
 		(shape output)
-		(at 58.42 148.59 180)
+		(at 45.72 148.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2181,7 +2368,7 @@
 	)
 	(hierarchical_label "SIM_IO"
 		(shape bidirectional)
-		(at 88.9 138.43 180)
+		(at 74.93 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2192,7 +2379,7 @@
 	)
 	(hierarchical_label "SIM_VCC"
 		(shape input)
-		(at 88.9 133.35 180)
+		(at 90.17 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2361,7 +2548,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18f8afc5-88c2-4650-9c5f-3755b6587185")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR089"
 			(at 153.67 165.1 0)
 			(effects
 				(font
@@ -2412,7 +2599,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR088")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -2712,7 +2899,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29df661f-ccda-4942-95f8-f6529dffa86c")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR093"
 			(at 204.47 165.1 0)
 			(effects
 				(font
@@ -2763,7 +2950,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR092")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -2779,7 +2966,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41507364-c84d-49f5-a264-72bd97323604")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR087"
 			(at 124.46 165.1 0)
 			(effects
 				(font
@@ -2830,7 +3017,75 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR086")
+					(reference "#PWR087")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 91.44 143.51 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4ad0eae6-7826-468f-8648-01ebb3087b7e")
+		(property "Reference" "TP70"
+			(at 90.424 146.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 93.98 145.5421 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 96.52 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 91.44 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33976102-093b-4c83-8b8c-811f485c5dd2")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
+					(reference "TP70")
 					(unit 1)
 				)
 			)
@@ -2846,7 +3101,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ed9e724-69a2-400b-9fcf-580bb347f772")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR088"
 			(at 139.7 165.1 0)
 			(effects
 				(font
@@ -2897,7 +3152,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR087")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -2913,7 +3168,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f35c06e-0da8-46f5-bd90-f57890cf773d")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR095"
 			(at 238.76 160.02 0)
 			(effects
 				(font
@@ -2964,7 +3219,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR094")
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -2972,7 +3227,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 60.96 144.78 0)
+		(at 48.26 144.78 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2981,7 +3236,7 @@
 		(dnp no)
 		(uuid "52843770-230e-4dcf-9a2d-79725f22435b")
 		(property "Reference" "R53"
-			(at 62.23 143.002 0)
+			(at 49.53 143.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2990,7 +3245,7 @@
 			)
 		)
 		(property "Value" "2.2 kΩ"
-			(at 62.23 144.78 0)
+			(at 49.53 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2999,7 +3254,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 62.738 144.78 90)
+			(at 50.038 144.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3008,7 +3263,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 60.96 144.78 0)
+			(at 48.26 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3017,7 +3272,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 60.96 144.78 0)
+			(at 48.26 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3026,7 +3281,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 60.96 144.78 0)
+			(at 48.26 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3035,7 +3290,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 60.96 144.78 0)
+			(at 48.26 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3044,7 +3299,7 @@
 			)
 		)
 		(property "MPN" "560112110087"
-			(at 60.96 144.78 0)
+			(at 48.26 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3053,7 +3308,7 @@
 			)
 		)
 		(property "Tolerance" "≤ 5 %"
-			(at 62.23 146.558 0)
+			(at 49.53 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3062,7 +3317,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-560112110087CT-ND"
-			(at 60.96 144.78 0)
+			(at 48.26 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3095,7 +3350,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54abab9f-1145-42ea-91cb-30a0d159d348")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR090"
 			(at 166.37 165.1 0)
 			(effects
 				(font
@@ -3146,7 +3401,73 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR089")
+					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 76.2 140.97 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "56e27121-f21b-4631-81bd-41fc76e59782")
+		(property "Reference" "TP68"
+			(at 76.2 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 73.66 143.0021 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 71.12 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 76.2 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7ae309b-5b2b-4025-83ce-d9b20708e212")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
+					(reference "TP68")
 					(unit 1)
 				)
 			)
@@ -3162,7 +3483,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81b15885-06b4-4682-be05-bdd2a81c8e7e")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR086"
 			(at 109.22 165.1 0)
 			(effects
 				(font
@@ -3213,7 +3534,73 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR085")
+					(reference "#PWR086")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 76.2 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "882885e8-4fa3-4d17-bf3d-1dc906e3162f")
+		(property "Reference" "TP67"
+			(at 76.2 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 78.74 136.3979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 81.28 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 76.2 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a91a6667-cdeb-4880-ac35-e79c4f23470c")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
+					(reference "TP67")
 					(unit 1)
 				)
 			)
@@ -3229,7 +3616,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a0dc318-2b7e-4e0d-884a-705ca555ca64")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR091"
 			(at 179.07 165.1 0)
 			(effects
 				(font
@@ -3280,7 +3667,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR090")
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -4138,7 +4525,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd972f76-06e4-4f90-a6ac-2f70d6366329")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR092"
 			(at 191.77 165.1 0)
 			(effects
 				(font
@@ -4189,7 +4576,139 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR091")
+					(reference "#PWR092")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 91.44 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "db598ced-8f1e-42ed-b088-d6d31adea87b")
+		(property "Reference" "TP69"
+			(at 91.44 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 93.98 131.3179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 96.52 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 91.44 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1580b6a5-bf89-488d-aa59-0f15c89e241a")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
+					(reference "TP69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 63.5 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6bef71c-4bd2-4b04-a401-307e63cb33b4")
+		(property "Reference" "TP66"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 66.04 146.5579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 68.58 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 63.5 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06369aa3-4acd-4442-a0ce-e82d2ac0fc5d")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
+					(reference "TP66")
 					(unit 1)
 				)
 			)
@@ -4205,7 +4724,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8a778fa-5e48-4543-b872-2e2e0159cb99")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR094"
 			(at 213.36 160.02 0)
 			(effects
 				(font
@@ -4256,7 +4775,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR093")
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -4272,7 +4791,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e971d79a-9830-426e-9a66-52ef0d31eb1f")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR085"
 			(at 93.98 165.1 0)
 			(effects
 				(font
@@ -4323,7 +4842,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR084")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)

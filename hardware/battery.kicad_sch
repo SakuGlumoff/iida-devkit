@@ -481,6 +481,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016)
@@ -2626,10 +2733,16 @@
 		(uuid "26e73e5b-7133-4e89-847a-42b5d3e16f7a")
 	)
 	(junction
-		(at 129.54 63.5)
+		(at 113.03 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3edf3fae-f889-41f1-a968-7fbeed98120d")
+		(uuid "36b5b265-3cc4-407f-bd27-7c56f4415915")
+	)
+	(junction
+		(at 130.81 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6150e5b8-cef6-4544-ae00-edf7e980a784")
 	)
 	(junction
 		(at 100.33 146.05)
@@ -2644,10 +2757,46 @@
 		(uuid "7404d5b5-4ad4-4aa1-bede-74f1069fd64f")
 	)
 	(junction
+		(at 191.77 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c8658e6-b861-4302-97e0-ee1da0a6b2dd")
+	)
+	(junction
+		(at 144.78 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83a3c110-5210-4c6e-904a-14ab5f95dbd7")
+	)
+	(junction
+		(at 113.03 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8bb557ab-7869-493e-83db-7c84d123e2da")
+	)
+	(junction
+		(at 175.26 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9813c990-9529-40c4-9fd4-c5ee1b5edf0a")
+	)
+	(junction
+		(at 160.02 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f4bc404-689b-4250-8d16-5e75ab1ccf56")
+	)
+	(junction
 		(at 223.52 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "df466c72-4c2a-4efe-88cb-d749e99561ff")
+	)
+	(junction
+		(at 125.73 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebcea2f2-f0de-4cda-bb60-8b460ca39328")
 	)
 	(junction
 		(at 124.46 146.05)
@@ -2669,6 +2818,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 73.66) (xy 193.04 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01cf9a01-5127-4b17-817e-d41784b89fe7")
+	)
+	(wire
+		(pts
 			(xy 213.36 71.12) (xy 219.71 71.12)
 		)
 		(stroke
@@ -2679,7 +2838,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 63.5) (xy 129.54 63.5)
+			(xy 124.46 63.5) (xy 125.73 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2709,7 +2868,17 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 63.5) (xy 257.81 63.5)
+			(xy 125.73 63.5) (xy 130.81 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b1b545e-8746-4329-b023-dd6b541218af")
+	)
+	(wire
+		(pts
+			(xy 262.89 63.5) (xy 264.16 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2739,7 +2908,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 73.66) (xy 193.04 73.66)
+			(xy 180.34 73.66) (xy 191.77 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2759,16 +2928,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 63.5) (xy 139.7 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3643fad2-c677-4c86-9b7b-0d1bfabbc08a")
-	)
-	(wire
-		(pts
 			(xy 68.58 66.04) (xy 74.93 66.04)
 		)
 		(stroke
@@ -2779,7 +2938,7 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 63.5) (xy 266.7 63.5)
+			(xy 271.78 63.5) (xy 273.05 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2799,7 +2958,7 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 73.66) (xy 266.7 73.66)
+			(xy 271.78 76.2) (xy 273.05 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2829,7 +2988,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 71.12) (xy 119.38 71.12)
+			(xy 96.52 71.12) (xy 113.03 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2856,6 +3015,16 @@
 			(type default)
 		)
 		(uuid "62d90dbb-6b63-4dc1-ba28-50c2423ca6ec")
+	)
+	(wire
+		(pts
+			(xy 130.81 63.5) (xy 139.7 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64a14292-5293-4c54-b27f-67afc1b678b9")
 	)
 	(wire
 		(pts
@@ -2939,7 +3108,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 73.66) (xy 257.81 73.66)
+			(xy 262.89 76.2) (xy 264.16 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2969,7 +3138,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 63.5) (xy 241.3 63.5)
+			(xy 255.27 63.5) (xy 247.65 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3009,7 +3178,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 53.34) (xy 241.3 53.34)
+			(xy 255.27 50.8) (xy 247.65 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3039,7 +3208,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 53.34) (xy 257.81 53.34)
+			(xy 262.89 50.8) (xy 264.16 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3049,7 +3218,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 63.5) (xy 114.3 63.5)
+			(xy 111.76 63.5) (xy 113.03 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3059,7 +3228,17 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 73.66) (xy 241.3 73.66)
+			(xy 113.03 71.12) (xy 119.38 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3e8438a-3d52-47a0-9c3c-ef8df348ea55")
+	)
+	(wire
+		(pts
+			(xy 255.27 76.2) (xy 247.65 76.2)
 		)
 		(stroke
 			(width 0)
@@ -3139,7 +3318,7 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 53.34) (xy 266.7 53.34)
+			(xy 271.78 50.8) (xy 273.05 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3266,6 +3445,16 @@
 			(type default)
 		)
 		(uuid "f9b892d1-edc5-4ee6-abce-7d4fc927b040")
+	)
+	(wire
+		(pts
+			(xy 113.03 63.5) (xy 114.3 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff6b5429-eba0-4bc7-88e7-50f6e3e476d6")
 	)
 	(image
 		(at 189.23 104.14)
@@ -3900,7 +4089,7 @@
 		(uuid "3e235c4d-393d-4423-bd30-432295e20412")
 	)
 	(label "PG"
-		(at 241.3 73.66 0)
+		(at 247.65 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3950,7 +4139,7 @@
 		(uuid "8f6b4884-04ee-428b-917d-589de844f5cf")
 	)
 	(label "STAT2"
-		(at 241.3 63.5 0)
+		(at 247.65 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3990,7 +4179,7 @@
 		(uuid "c7a3bb16-1f8c-4e89-aa94-fc019c79db13")
 	)
 	(label "STAT1"
-		(at 241.3 53.34 0)
+		(at 247.65 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4022,7 +4211,7 @@
 	)
 	(hierarchical_label "V_5V0"
 		(shape input)
-		(at 266.7 63.5 0)
+		(at 273.05 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4044,7 +4233,7 @@
 	)
 	(hierarchical_label "V_5V0"
 		(shape input)
-		(at 266.7 53.34 0)
+		(at 273.05 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4066,7 +4255,7 @@
 	)
 	(hierarchical_label "V_5V0"
 		(shape input)
-		(at 266.7 73.66 0)
+		(at 273.05 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4390,7 +4579,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 261.62 53.34 0)
+		(at 267.97 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4398,7 +4587,7 @@
 		(dnp no)
 		(uuid "0a090640-990a-4214-90d1-6e43c59722be")
 		(property "Reference" "LED1"
-			(at 261.62 50.8 0)
+			(at 267.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4406,7 +4595,7 @@
 			)
 		)
 		(property "Value" "150141RS73100"
-			(at 260.35 47.625 90)
+			(at 266.7 45.085 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4415,7 +4604,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_PLCC_2835"
-			(at 261.62 53.34 0)
+			(at 267.97 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4424,7 +4613,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 261.62 53.34 0)
+			(at 267.97 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4433,7 +4622,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 261.62 53.34 0)
+			(at 267.97 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4442,7 +4631,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 261.62 53.34 90)
+			(at 267.97 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4451,7 +4640,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 261.62 53.34 0)
+			(at 267.97 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4460,7 +4649,7 @@
 			)
 		)
 		(property "MPN" "150141RS73100"
-			(at 261.62 53.34 0)
+			(at 267.97 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4469,7 +4658,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-5000-1-ND"
-			(at 261.62 53.34 0)
+			(at 267.97 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4494,7 +4683,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 252.73 63.5 270)
+		(at 259.08 63.5 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4502,7 +4691,7 @@
 		(dnp no)
 		(uuid "0e4f17f5-1490-4f74-9749-ecdced170b10")
 		(property "Reference" "R9"
-			(at 252.73 57.912 90)
+			(at 259.08 57.912 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4510,7 +4699,7 @@
 			)
 		)
 		(property "Value" "2.2 kΩ"
-			(at 252.73 59.69 90)
+			(at 259.08 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4518,7 +4707,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 252.73 61.722 90)
+			(at 259.08 61.722 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4527,7 +4716,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 63.5 0)
+			(at 259.08 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4536,7 +4725,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 252.73 63.5 0)
+			(at 259.08 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4545,7 +4734,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 252.73 63.5 0)
+			(at 259.08 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4554,7 +4743,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 252.73 63.5 0)
+			(at 259.08 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4563,7 +4752,7 @@
 			)
 		)
 		(property "MPN" "560112110087"
-			(at 252.73 63.5 0)
+			(at 259.08 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4572,7 +4761,7 @@
 			)
 		)
 		(property "Tolerance" "≤ 5 %"
-			(at 252.73 61.468 90)
+			(at 259.08 61.468 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4580,7 +4769,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-560112110087CT-ND"
-			(at 252.73 63.5 0)
+			(at 259.08 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4841,6 +5030,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 175.26 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "233cfbc2-2b48-4e65-ab48-da06ec36ce4d")
+		(property "Reference" "TP6"
+			(at 175.26 66.294 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 177.8 69.0879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 180.34 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 175.26 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc74e0dc-6d3f-42a1-b632-52253535d68a")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 166.37 73.66 0)
 		(unit 1)
@@ -4909,7 +5164,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 252.73 53.34 270)
+		(at 259.08 50.8 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4917,7 +5172,7 @@
 		(dnp no)
 		(uuid "535a9695-371e-486a-a768-612bfa0caf62")
 		(property "Reference" "R8"
-			(at 252.73 47.752 90)
+			(at 259.08 45.212 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4925,7 +5180,7 @@
 			)
 		)
 		(property "Value" "2.2 kΩ"
-			(at 252.73 49.53 90)
+			(at 259.08 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4933,7 +5188,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 252.73 51.562 90)
+			(at 259.08 49.022 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4942,7 +5197,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 53.34 0)
+			(at 259.08 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4951,7 +5206,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 252.73 53.34 0)
+			(at 259.08 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4960,7 +5215,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 252.73 53.34 0)
+			(at 259.08 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4969,7 +5224,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 252.73 53.34 0)
+			(at 259.08 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4978,7 +5233,7 @@
 			)
 		)
 		(property "MPN" "560112110087"
-			(at 252.73 53.34 0)
+			(at 259.08 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4987,7 +5242,7 @@
 			)
 		)
 		(property "Tolerance" "≤ 5 %"
-			(at 252.73 51.308 90)
+			(at 259.08 48.768 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4995,7 +5250,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-560112110087CT-ND"
-			(at 252.73 53.34 0)
+			(at 259.08 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5144,32 +5399,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 252.73 73.66 270)
+		(lib_id "Connector:TestPoint")
+		(at 247.65 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6ed21e3c-7b47-4138-a17e-35d26764eb57")
-		(property "Reference" "R10"
-			(at 252.73 68.072 90)
+		(uuid "663e3b80-675b-4b02-ae91-1691721282aa")
+		(property "Reference" "TP10"
+			(at 241.046 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "2.2 kΩ"
-			(at 252.73 69.85 90)
+		(property "Value" "TestPoint"
+			(at 245.6179 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 252.73 71.882 90)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 247.65 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5178,7 +5435,137 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 73.66 0)
+			(at 247.65 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 247.65 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "58b442ca-c7bd-4254-a301-37e8533f4744")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 125.73 63.5 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6cfcb3c5-2539-40cb-97b3-0fd9d0adf27c")
+		(property "Reference" "TP3"
+			(at 125.73 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 123.19 65.5321 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 120.65 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 125.73 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "542e847d-ce03-427f-955e-ad9a1af943ef")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 259.08 76.2 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6ed21e3c-7b47-4138-a17e-35d26764eb57")
+		(property "Reference" "R10"
+			(at 259.08 70.612 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2 kΩ"
+			(at 259.08 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 259.08 74.422 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5187,7 +5574,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 252.73 73.66 0)
+			(at 259.08 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5196,7 +5583,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 252.73 73.66 0)
+			(at 259.08 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5205,7 +5592,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 252.73 73.66 0)
+			(at 259.08 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5214,7 +5601,7 @@
 			)
 		)
 		(property "MPN" "560112110087"
-			(at 252.73 73.66 0)
+			(at 259.08 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5223,7 +5610,7 @@
 			)
 		)
 		(property "Tolerance" "≤ 5 %"
-			(at 252.73 71.628 90)
+			(at 259.08 74.168 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5231,7 +5618,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-560112110087CT-ND"
-			(at 252.73 73.66 0)
+			(at 259.08 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5256,7 +5643,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 129.54 67.31 0)
+		(at 130.81 67.31 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5265,7 +5652,7 @@
 		(dnp no)
 		(uuid "78a0e39e-28cb-4e13-ac10-5d1c53b42b8f")
 		(property "Reference" "C4"
-			(at 132.334 64.516 0)
+			(at 133.604 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5274,7 +5661,7 @@
 			)
 		)
 		(property "Value" "100 μF"
-			(at 132.334 66.294 0)
+			(at 133.604 66.294 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5283,7 +5670,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
-			(at 128.5748 71.12 0)
+			(at 129.8448 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5292,7 +5679,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 129.54 67.31 0)
+			(at 130.81 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5301,7 +5688,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 129.54 67.31 0)
+			(at 130.81 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5310,7 +5697,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-8598-1-ND"
-			(at 129.54 67.31 0)
+			(at 130.81 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5319,7 +5706,7 @@
 			)
 		)
 		(property "MPN" "860010372006"
-			(at 129.54 67.31 0)
+			(at 130.81 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5328,7 +5715,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 129.54 67.31 0)
+			(at 130.81 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5337,7 +5724,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 129.54 67.31 0)
+			(at 130.81 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5346,7 +5733,7 @@
 			)
 		)
 		(property "Tolerance" "≤ 20%"
-			(at 132.334 68.326 0)
+			(at 133.604 68.326 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5355,7 +5742,7 @@
 			)
 		)
 		(property "Voltage" "≥ 10 V"
-			(at 132.334 70.104 0)
+			(at 133.604 70.104 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5364,7 +5751,7 @@
 			)
 		)
 		(property "Size" "5.0mmx2.0mm"
-			(at 129.54 67.31 0)
+			(at 130.81 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5373,7 +5760,7 @@
 			)
 		)
 		(property "Class" "AlumElec"
-			(at 129.54 67.31 0)
+			(at 130.81 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5382,7 +5769,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 129.54 67.31 0)
+			(at 130.81 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5406,33 +5793,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 261.62 63.5 0)
+		(lib_id "Connector:TestPoint")
+		(at 144.78 132.08 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "83c8de35-a46e-44da-ac9d-403e72d793b4")
-		(property "Reference" "LED2"
-			(at 261.62 60.96 0)
+		(uuid "8214c91e-608b-4388-9032-d9687f04d837")
+		(property "Reference" "TP4"
+			(at 150.876 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "150141RS73100"
-			(at 260.35 57.785 90)
+		(property "Value" "TestPoint"
+			(at 146.8121 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_PLCC_2835"
-			(at 261.62 63.5 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 144.78 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5441,7 +5829,72 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 261.62 63.5 0)
+			(at 144.78 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 144.78 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eabf5b23-1c29-4bf9-99f0-2a94a75c84bb")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 267.97 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "83c8de35-a46e-44da-ac9d-403e72d793b4")
+		(property "Reference" "LED2"
+			(at 267.97 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "150141RS73100"
+			(at 266.7 57.785 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_PLCC_2835"
+			(at 267.97 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.97 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5450,7 +5903,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 261.62 63.5 0)
+			(at 267.97 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5459,7 +5912,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 261.62 63.5 90)
+			(at 267.97 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5468,7 +5921,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 261.62 63.5 0)
+			(at 267.97 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5477,7 +5930,7 @@
 			)
 		)
 		(property "MPN" "150141RS73100"
-			(at 261.62 63.5 0)
+			(at 267.97 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5486,7 +5939,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-5000-1-ND"
-			(at 261.62 63.5 0)
+			(at 267.97 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5511,7 +5964,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 129.54 71.12 0)
+		(at 130.81 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5520,7 +5973,7 @@
 		(fields_autoplaced yes)
 		(uuid "8a24666b-1a0f-4de0-8e8b-cd24bd747785")
 		(property "Reference" "#PWR05"
-			(at 129.54 77.47 0)
+			(at 130.81 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5529,7 +5982,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 76.2 0)
+			(at 130.81 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5538,7 +5991,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 71.12 0)
+			(at 130.81 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5547,7 +6000,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 71.12 0)
+			(at 130.81 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5556,7 +6009,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 129.54 71.12 0)
+			(at 130.81 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6059,6 +6512,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 113.03 71.12 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab470c3c-1f49-4d14-9b49-85d1d0caad30")
+		(property "Reference" "TP2"
+			(at 113.03 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 110.49 73.1521 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 107.95 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 113.03 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19f3b4f9-aa2e-4854-8ae4-7eb42c2491da")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 133.35 146.05 90)
 		(unit 1)
@@ -6172,6 +6691,72 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 247.65 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b5c39bfd-2149-41c7-8b85-d1fce04e42a4")
+		(property "Reference" "TP9"
+			(at 241.046 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 245.6179 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 247.65 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247.65 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 247.65 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1bc7eee4-e22f-4be9-883f-773274652622")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -6511,7 +7096,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 261.62 73.66 0)
+		(at 267.97 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6519,7 +7104,7 @@
 		(dnp no)
 		(uuid "bff1a927-bb27-46b1-9978-10d7fd4cd1ba")
 		(property "Reference" "LED3"
-			(at 261.62 71.12 0)
+			(at 267.97 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6527,7 +7112,7 @@
 			)
 		)
 		(property "Value" "150141RS73100"
-			(at 260.35 67.945 90)
+			(at 266.7 70.485 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6536,7 +7121,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_PLCC_2835"
-			(at 261.62 73.66 0)
+			(at 267.97 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6545,7 +7130,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 261.62 73.66 0)
+			(at 267.97 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6554,7 +7139,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 261.62 73.66 0)
+			(at 267.97 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6563,7 +7148,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 261.62 73.66 90)
+			(at 267.97 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6572,7 +7157,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 261.62 73.66 0)
+			(at 267.97 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6581,7 +7166,7 @@
 			)
 		)
 		(property "MPN" "150141RS73100"
-			(at 261.62 73.66 0)
+			(at 267.97 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6590,7 +7175,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-5000-1-ND"
-			(at 261.62 73.66 0)
+			(at 267.97 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6608,6 +7193,72 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
 					(reference "LED3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 191.77 73.66 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c73a898c-5c5e-43bc-b050-e0589dd1028a")
+		(property "Reference" "TP7"
+			(at 191.77 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 189.23 75.6921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 186.69 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 191.77 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bcc40d6f-b17b-4c5e-a9d5-3f7480a6e666")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -6949,6 +7600,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 113.03 63.5 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9c3ab4a-64b3-47e2-82c8-6a0d54ad4006")
+		(property "Reference" "TP1"
+			(at 113.03 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 110.49 65.5321 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 107.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 113.03 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14504df3-6644-4755-b7a3-585e64f5183d")
+		)
+		(instances
+			(project ""
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Battery_Management:MCP73833-xxx-MF")
 		(at 203.2 68.58 0)
 		(mirror y)
@@ -7141,6 +7858,72 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 160.02 127 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ebbcc878-bb4c-416b-b858-078c8b4ab66d")
+		(property "Reference" "TP5"
+			(at 165.862 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 162.0521 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 160.02 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 160.02 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6219f76a-3306-45f6-bebc-eb97d440b2dd")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -7533,6 +8316,72 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 247.65 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f5f83f18-6cdb-412b-9d00-50177d7ba451")
+		(property "Reference" "TP8"
+			(at 241.046 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 245.6179 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 247.65 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247.65 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 247.65 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ac5a5e7-96ef-4696-8667-7fb8912e6301")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "TP8")
 					(unit 1)
 				)
 			)
