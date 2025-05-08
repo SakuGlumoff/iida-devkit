@@ -857,12 +857,6 @@
 		(uuid "4128ad79-d80f-4803-b455-b945e1a3e6bd")
 	)
 	(junction
-		(at 60.96 148.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "41671960-e90b-43df-985f-4c477363e911")
-	)
-	(junction
 		(at 153.67 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -909,6 +903,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b945a0e9-4733-4337-ac25-731db97a36e2")
+	)
+	(junction
+		(at 60.96 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c78ce89f-807b-4800-9a90-763f7a6de756")
 	)
 	(junction
 		(at 238.76 148.59)
@@ -1029,6 +1029,16 @@
 			(type default)
 		)
 		(uuid "554c149c-b227-4ba0-a029-6190d1496ee2")
+	)
+	(wire
+		(pts
+			(xy 60.96 148.59) (xy 204.47 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55ff422a-a81b-4bec-a589-0ac7a7194440")
 	)
 	(wire
 		(pts
@@ -1199,16 +1209,6 @@
 			(type default)
 		)
 		(uuid "ed12b873-bdf2-465e-a2d9-1d213ffcc1ec")
-	)
-	(wire
-		(pts
-			(xy 60.96 148.59) (xy 204.47 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f512e968-4b9f-457f-acd0-0b117c3accb0")
 	)
 	(wire
 		(pts
@@ -2203,138 +2203,6 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 93.98 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "007a3726-735f-4c90-96e4-448867ee44be")
-		(property "Reference" "C36"
-			(at 91.186 150.622 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0.1 μF"
-			(at 91.186 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 94.9452 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 93.98 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "490-7998-1-ND"
-			(at 93.98 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 93.98 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 93.98 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" "X7R"
-			(at 91.186 154.432 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Size" "0402"
-			(at 91.186 155.956 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Tolerance" "10 %"
-			(at 91.186 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Voltage" "16 V"
-			(at 91.186 159.004 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "2"
-			(uuid "c92e5d73-2fdf-4ade-a8dd-99e2830a2bd1")
-		)
-		(pin "1"
-			(uuid "2cc18830-ee94-4129-854c-500802a87961")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "C36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 139.7 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2342,7 +2210,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "13884b04-73a4-48b3-b38f-07a48ebbdaf4")
-		(property "Reference" "C39"
+		(property "Reference" "C40"
 			(at 136.906 150.368 0)
 			(effects
 				(font
@@ -2396,7 +2264,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "GCM1555C1H470JA16D"
 			(at 139.7 154.94 0)
 			(effects
 				(font
@@ -2405,7 +2273,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Murata Electronics"
 			(at 139.7 154.94 0)
 			(effects
 				(font
@@ -2424,7 +2292,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 136.906 155.956 0)
+			(at 136.906 159.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2433,6 +2301,15 @@
 			)
 		)
 		(property "Tolerance" "≤ 5 %"
+			(at 136.906 155.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Voltage" "≥ 50V"
 			(at 136.906 157.734 0)
 			(effects
 				(font
@@ -2441,13 +2318,22 @@
 				(justify right)
 			)
 		)
-		(property "Voltage" "50V"
-			(at 136.906 159.512 0)
+		(property "Footprint review check" "+"
+			(at 139.7 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 139.7 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2459,7 +2345,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "C39")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -2475,7 +2361,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18f8afc5-88c2-4650-9c5f-3755b6587185")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR088"
 			(at 153.67 165.1 0)
 			(effects
 				(font
@@ -2526,7 +2412,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR077")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -2541,9 +2427,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "20ebe212-1d82-4810-9601-f29e3f7544dc")
-		(property "Reference" "D6"
-			(at 164.084 153.162 90)
+		(uuid "212ead55-8cdb-4922-9000-696131e9b4bb")
+		(property "Reference" "D7"
+			(at 164.592 154.178 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2551,7 +2437,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "DESD5V0U1BL-7B"
+		(property "Value" "DF2B5M4CT,L3F"
 			(at 164.846 156.21 90)
 			(effects
 				(font
@@ -2561,7 +2447,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
+		(property "Footprint" "Diode_SMD:D_SOD-882D"
 			(at 166.37 154.94 0)
 			(effects
 				(font
@@ -2588,7 +2474,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "31-DESD5V0U1BL-7BCT-ND"
+		(property "DigiKey Part Number" "DF2B5M4CTL3FCT-ND"
 			(at 166.37 154.94 0)
 			(effects
 				(font
@@ -2597,7 +2483,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "DF2B5M4CT,L3F"
 			(at 166.37 154.94 0)
 			(effects
 				(font
@@ -2606,7 +2492,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Toshiba Semiconductor and Storage"
 			(at 166.37 154.94 0)
 			(effects
 				(font
@@ -2615,7 +2501,7 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0402"
+		(property "Size" ""
 			(at 164.084 156.972 90)
 			(effects
 				(font
@@ -2624,8 +2510,8 @@
 				(justify right)
 			)
 		)
-		(property "Capacitance" "≤ 10 pF"
-			(at 164.084 154.94 90)
+		(property "Capacitance" "≤ 1 pF"
+			(at 164.592 155.956 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2633,16 +2519,34 @@
 				(justify right)
 			)
 		)
+		(property "Footprint review check" "+"
+			(at 166.37 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 166.37 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "31426c34-ace6-4b3b-aeea-e9a66bba4735")
+			(uuid "ecdd64ba-4b08-41f0-b608-691f882edb97")
 		)
 		(pin "1"
-			(uuid "15059456-b0f5-47a7-8e11-44464c8688a8")
+			(uuid "d8e3591c-d8cd-45e5-86ca-0e687a532146")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "D6")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -2657,7 +2561,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "216f92df-ff60-4e7c-ac82-aa1834cbaf98")
-		(property "Reference" "C38"
+		(property "Reference" "C39"
 			(at 121.666 150.368 0)
 			(effects
 				(font
@@ -2711,7 +2615,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "GCM1555C1H470JA16D"
 			(at 124.46 154.94 0)
 			(effects
 				(font
@@ -2720,7 +2624,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Murata Electronics"
 			(at 124.46 154.94 0)
 			(effects
 				(font
@@ -2739,7 +2643,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 121.666 155.956 0)
+			(at 121.666 159.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2748,6 +2652,15 @@
 			)
 		)
 		(property "Tolerance" "≤ 5 %"
+			(at 121.666 155.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Voltage" "≥ 50V"
 			(at 121.666 157.734 0)
 			(effects
 				(font
@@ -2756,13 +2669,22 @@
 				(justify right)
 			)
 		)
-		(property "Voltage" "50V"
-			(at 121.666 159.512 0)
+		(property "Footprint review check" "+"
+			(at 124.46 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 124.46 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2774,7 +2696,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "C38")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -2790,7 +2712,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29df661f-ccda-4942-95f8-f6529dffa86c")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR092"
 			(at 204.47 165.1 0)
 			(effects
 				(font
@@ -2841,7 +2763,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR081")
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -2857,7 +2779,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41507364-c84d-49f5-a264-72bd97323604")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR086"
 			(at 124.46 165.1 0)
 			(effects
 				(font
@@ -2908,239 +2830,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR075")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 179.07 154.94 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4374a0eb-ef2f-40a8-bac0-c23a10127b7e")
-		(property "Reference" "D7"
-			(at 176.784 153.162 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "DESD5V0U1BL-7B"
-			(at 177.546 156.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
-			(at 179.07 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.07 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 179.07 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "31-DESD5V0U1BL-7BCT-ND"
-			(at 179.07 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 179.07 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 179.07 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Size" "0402"
-			(at 176.784 156.972 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Capacitance" "≤ 10 pF"
-			(at 176.784 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "2"
-			(uuid "ecd72d25-745c-413a-a013-8448393a9142")
-		)
-		(pin "1"
-			(uuid "d5642b4a-d186-43fa-8623-8008519da9bc")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 191.77 154.94 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4cf3e925-222b-4565-82d5-3718cc35be53")
-		(property "Reference" "D8"
-			(at 189.484 153.162 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "DESD5V0U1BL-7B"
-			(at 190.246 156.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
-			(at 191.77 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 191.77 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 191.77 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "31-DESD5V0U1BL-7BCT-ND"
-			(at 191.77 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 191.77 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 191.77 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Size" ""
-			(at 189.484 156.972 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Capacitance" "≤ 10 pF"
-			(at 189.484 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "2"
-			(uuid "521e760c-49e8-41e4-b6b0-2d9b8e43433a")
-		)
-		(pin "1"
-			(uuid "25ecd89c-88cf-4ffb-8e67-eec151ab548c")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "D8")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -3156,7 +2846,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ed9e724-69a2-400b-9fcf-580bb347f772")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR087"
 			(at 139.7 165.1 0)
 			(effects
 				(font
@@ -3207,7 +2897,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR076")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -3223,7 +2913,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f35c06e-0da8-46f5-bd90-f57890cf773d")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR094"
 			(at 238.76 160.02 0)
 			(effects
 				(font
@@ -3274,7 +2964,122 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR083")
+					(reference "#PWR094")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 60.96 144.78 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "52843770-230e-4dcf-9a2d-79725f22435b")
+		(property "Reference" "R53"
+			(at 62.23 143.002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2.2 kΩ"
+			(at 62.23 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 62.738 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 60.96 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 60.96 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110087"
+			(at 60.96 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "≤ 5 %"
+			(at 62.23 146.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110087CT-ND"
+			(at 60.96 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1dd43911-9b63-4a69-a9be-64b9f40cdba7")
+		)
+		(pin "1"
+			(uuid "38401e96-f973-4061-87f5-0cceb2943242")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -3290,7 +3095,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54abab9f-1145-42ea-91cb-30a0d159d348")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR089"
 			(at 166.37 165.1 0)
 			(effects
 				(font
@@ -3341,7 +3146,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR078")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -3357,7 +3162,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81b15885-06b4-4682-be05-bdd2a81c8e7e")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR085"
 			(at 109.22 165.1 0)
 			(effects
 				(font
@@ -3408,7 +3213,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR074")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -3424,7 +3229,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a0dc318-2b7e-4e0d-884a-705ca555ca64")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR090"
 			(at 179.07 165.1 0)
 			(effects
 				(font
@@ -3475,103 +3280,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR079")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 60.96 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "96f7c049-0f26-4fda-bf33-ccf6aee3a151")
-		(property "Reference" "R49"
-			(at 59.69 143.764 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "2.2 kΩ"
-			(at 59.69 145.542 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 59.182 144.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.96 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 60.96 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 60.96 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" ""
-			(at 60.96 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 60.96 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a268275c-0934-4f9f-9693-37909883bdce")
-		)
-		(pin "1"
-			(uuid "ea9d4826-dcab-431e-9fc5-cd9dbddd7f29")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "R49")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -3586,7 +3295,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a8daea57-12e8-4230-85dd-92e174963bab")
-		(property "Reference" "C37"
+		(property "Reference" "C38"
 			(at 106.426 150.368 0)
 			(effects
 				(font
@@ -3640,7 +3349,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "GCM1555C1H470JA16D"
 			(at 109.22 154.94 0)
 			(effects
 				(font
@@ -3649,7 +3358,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Murata Electronics"
 			(at 109.22 154.94 0)
 			(effects
 				(font
@@ -3668,7 +3377,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 106.426 155.956 0)
+			(at 106.426 159.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3677,6 +3386,15 @@
 			)
 		)
 		(property "Tolerance" "≤ 5 %"
+			(at 106.426 155.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Voltage" "≥ 50V"
 			(at 106.426 157.734 0)
 			(effects
 				(font
@@ -3685,13 +3403,22 @@
 				(justify right)
 			)
 		)
-		(property "Voltage" "50V"
-			(at 106.426 159.512 0)
+		(property "Footprint review check" "+"
+			(at 109.22 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 109.22 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3703,7 +3430,141 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "C37")
+					(reference "C38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_TVS")
+		(at 204.47 154.94 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab73ec48-776f-4fe2-abdd-8cb23f44e479")
+		(property "Reference" "D10"
+			(at 202.692 154.178 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "DF2B5M4CT,L3F"
+			(at 202.946 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-882D"
+			(at 204.47 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.47 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
+			(at 204.47 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "DF2B5M4CTL3FCT-ND"
+			(at 204.47 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DF2B5M4CT,L3F"
+			(at 204.47 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Toshiba Semiconductor and Storage"
+			(at 204.47 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" ""
+			(at 202.184 156.972 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Capacitance" "≤ 1 pF"
+			(at 202.692 155.956 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 204.47 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 204.47 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1c03123b-b5b7-4482-bc3a-d2058e9f624f")
+		)
+		(pin "1"
+			(uuid "969aa476-a4c9-4deb-8885-72ee549b02f2")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -3719,8 +3580,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b192c070-f0e4-4e3d-9573-b0e48064a6fe")
-		(property "Reference" "D5"
-			(at 151.384 153.162 90)
+		(property "Reference" "D6"
+			(at 151.892 154.178 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3728,7 +3589,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "DESD5V0U1BL-7B"
+		(property "Value" "DF2B5M4CT,L3F"
 			(at 152.146 156.21 90)
 			(effects
 				(font
@@ -3738,7 +3599,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
+		(property "Footprint" "Diode_SMD:D_SOD-882D"
 			(at 153.67 154.94 0)
 			(effects
 				(font
@@ -3765,7 +3626,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "31-DESD5V0U1BL-7BCT-ND"
+		(property "DigiKey Part Number" "DF2B5M4CTL3FCT-ND"
 			(at 153.67 154.94 0)
 			(effects
 				(font
@@ -3774,7 +3635,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "DF2B5M4CT,L3F"
 			(at 153.67 154.94 0)
 			(effects
 				(font
@@ -3783,7 +3644,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Toshiba Semiconductor and Storage"
 			(at 153.67 154.94 0)
 			(effects
 				(font
@@ -3792,7 +3653,7 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0402"
+		(property "Size" ""
 			(at 151.384 156.972 90)
 			(effects
 				(font
@@ -3801,13 +3662,31 @@
 				(justify right)
 			)
 		)
-		(property "Capacitance" "≤ 10 pF"
-			(at 151.384 154.94 90)
+		(property "Capacitance" "≤ 1 pF"
+			(at 151.892 155.956 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 153.67 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 153.67 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3819,7 +3698,158 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "D5")
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 93.98 154.94 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b6ea6e28-0057-42bd-9836-5e89a21edaf4")
+		(property "Reference" "C37"
+			(at 91.44 150.368 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1 µF"
+			(at 91.44 152.146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 93.0148 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 93.98 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 93.98 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GCM155R71C104KA55J"
+			(at 93.98 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "490-7998-1-ND"
+			(at 93.98 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0402"
+			(at 91.44 159.258 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "≤ 10 %"
+			(at 91.44 155.702 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage" "≥ 16 V"
+			(at 91.44 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Class" "X7R"
+			(at 91.44 154.178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Power" ""
+			(at 93.98 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b259143-046b-4c77-b8c7-ebf952e60c03")
+		)
+		(pin "2"
+			(uuid "20642b15-8127-4e97-965f-a8ddbe03ab13")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -3904,6 +3934,24 @@
 				(hide yes)
 			)
 		)
+		(property "Footprint review check" "+"
+			(at 226.06 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 226.06 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "G2"
 			(uuid "7f70f22f-e7ac-4bb0-a672-d1d4d337ce09")
 		)
@@ -3948,16 +3996,16 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 204.47 154.94 270)
+		(at 179.07 154.94 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bcec94cc-288c-4da7-98f1-ecf71588a911")
-		(property "Reference" "D9"
-			(at 202.184 153.162 90)
+		(uuid "c44cb5fa-3bf0-4d20-81db-a5a641c36086")
+		(property "Reference" "D8"
+			(at 177.292 154.178 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3965,8 +4013,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "DESD5V0U1BL-7B"
-			(at 202.946 156.21 90)
+		(property "Value" "DF2B5M4CT,L3F"
+			(at 177.546 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3975,8 +4023,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
-			(at 204.47 154.94 0)
+		(property "Footprint" "Diode_SMD:D_SOD-882D"
+			(at 179.07 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3985,7 +4033,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 204.47 154.94 0)
+			(at 179.07 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3994,7 +4042,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 204.47 154.94 0)
+			(at 179.07 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4002,8 +4050,8 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "31-DESD5V0U1BL-7BCT-ND"
-			(at 204.47 154.94 0)
+		(property "DigiKey Part Number" "DF2B5M4CTL3FCT-ND"
+			(at 179.07 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4011,8 +4059,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 204.47 154.94 0)
+		(property "MPN" "DF2B5M4CT,L3F"
+			(at 179.07 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4020,8 +4068,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 204.47 154.94 0)
+		(property "Manufacturer" "Toshiba Semiconductor and Storage"
+			(at 179.07 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4029,8 +4077,8 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0402"
-			(at 202.184 156.972 90)
+		(property "Size" ""
+			(at 176.784 156.972 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4038,25 +4086,43 @@
 				(justify right)
 			)
 		)
-		(property "Capacitance" "≤ 10 pF"
-			(at 202.184 154.94 90)
+		(property "Capacitance" "≤ 1 pF"
+			(at 177.292 155.956 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 179.07 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 179.07 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "14b3deaf-7ff9-49f9-bd4a-2715f0a115ef")
+			(uuid "7cad3611-adcf-41e6-bdbe-a3a71cc074a4")
 		)
 		(pin "1"
-			(uuid "3f65b34c-03be-4b68-93a9-c0713320af7d")
+			(uuid "ebb2ec1a-d793-47fe-b04c-7b141155ad53")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "D9")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -4072,7 +4138,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd972f76-06e4-4f90-a6ac-2f70d6366329")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR091"
 			(at 191.77 165.1 0)
 			(effects
 				(font
@@ -4123,7 +4189,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR080")
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -4139,7 +4205,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8a778fa-5e48-4543-b872-2e2e0159cb99")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR093"
 			(at 213.36 160.02 0)
 			(effects
 				(font
@@ -4190,7 +4256,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR082")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -4206,7 +4272,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e971d79a-9830-426e-9a66-52ef0d31eb1f")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR084"
 			(at 93.98 165.1 0)
 			(effects
 				(font
@@ -4257,7 +4323,141 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR073")
+					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_TVS")
+		(at 191.77 154.94 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "efe35dac-7a9c-4987-ab9b-7be5e9444795")
+		(property "Reference" "D9"
+			(at 189.992 154.178 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "DF2B5M4CT,L3F"
+			(at 190.246 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-882D"
+			(at 191.77 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
+			(at 191.77 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "DF2B5M4CTL3FCT-ND"
+			(at 191.77 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DF2B5M4CT,L3F"
+			(at 191.77 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Toshiba Semiconductor and Storage"
+			(at 191.77 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" ""
+			(at 189.484 156.972 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Capacitance" "≤ 1 pF"
+			(at 189.992 155.956 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 191.77 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 191.77 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0fcefce7-314e-4a3d-be94-053c84008995")
+		)
+		(pin "1"
+			(uuid "65eb5568-c1c2-493a-a799-0ab817aad8b1")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
+					(reference "D9")
 					(unit 1)
 				)
 			)

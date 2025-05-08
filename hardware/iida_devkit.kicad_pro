@@ -307,7 +307,24 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "four_way_junction|1041400|1143000|08563d63-0cf1-4457-89e7-aee61a9cfcbe|0634acf5-c61c-4e07-b374-496474a3d9b3|/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2||",
+        ""
+      ],
+      [
+        "four_way_junction|1193800|762000|42dce70f-b408-41fd-8b0c-405f973a5877|ca7b697e-1379-453f-ad93-431cc174e3ef|/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2||",
+        ""
+      ],
+      [
+        "four_way_junction|1397000|1460500|66559dfc-9d58-4006-9af1-0fa362df2422|d2a37419-f22a-4c36-9814-5d1c04100a31|/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a||",
+        ""
+      ],
+      [
+        "four_way_junction|1651000|1460500|51f4da40-9c47-4d5e-8815-40e54170ad22|b21e840e-69ce-4041-bdea-fc853ff366cb|/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a||",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -713,7 +730,7 @@
           "group_by": false,
           "label": "Class",
           "name": "Class",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -737,7 +754,7 @@
           "group_by": false,
           "label": "Capacitance",
           "name": "Capacitance",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -747,8 +764,20 @@
         },
         {
           "group_by": false,
-          "label": "Digi-Key Part Number",
-          "name": "Digi-Key Part Number",
+          "label": "Saturation Current",
+          "name": "Saturation Current",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DCR",
+          "name": "DCR",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Power",
+          "name": "Power",
           "show": false
         }
       ],
