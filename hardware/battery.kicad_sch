@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-05-08")
+		(date "2025-05-09")
 		(rev "v5.0.0")
 	)
 	(lib_symbols
@@ -720,342 +720,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "DMN3008SFG_1"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "DMN3008SFG"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_SON:Diodes_PowerDI3333-8"
-				(at 5.08 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN3008SFG.pdf"
-				(at 5.08 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "17.6A Id, 30V Vds, N-Channel Power MOSFET, 4.4mOhm Ron, 86nC Qg (typ), PowerDI3333-8"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "N-Channel MOSFET"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Diodes*PowerDI3333*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "DMN3008SFG_1_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 0.254 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "DMN3008SFG_1_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1809,9 +1473,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:DMN3008SFG"
-			(pin_names
+		(symbol "PowerFET:Q_NMOS_PowerDI333-8"
+			(pin_numbers
 				(hide yes)
+			)
+			(pin_names
+				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1825,7 +1492,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "DMN3008SFG"
+			(property "Value" "Q_NMOS_PowerDI333-8"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -1845,7 +1512,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN3008SFG.pdf"
+			(property "Datasheet" "https://www.diodes.com/assets/Package-Files/PowerDI3333-8.pdf"
 				(at 5.08 -3.81 0)
 				(effects
 					(font
@@ -1855,7 +1522,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "17.6A Id, 30V Vds, N-Channel Power MOSFET, 4.4mOhm Ron, 86nC Qg (typ), PowerDI3333-8"
+			(property "Description" "N-Channel Power MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1873,7 +1540,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Diodes*PowerDI3333*"
+			(property "ki_fp_filters" "*PowerDI3333-8*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1882,10 +1549,34 @@
 					(hide yes)
 				)
 			)
-			(symbol "DMN3008SFG_0_1"
+			(symbol "Q_NMOS_PowerDI333-8_0_1"
 				(polyline
 					(pts
-						(xy -2.54 0) (xy 0.254 0)
+						(xy -5.08 3.81) (xy 2.54 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -3.81) (xy 2.54 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 0.254 0)
 					)
 					(stroke
 						(width 0)
@@ -1980,7 +1671,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
+						(xy 2.54 3.81) (xy 2.54 1.778)
 					)
 					(stroke
 						(width 0)
@@ -2014,7 +1705,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+						(xy 2.54 -3.81) (xy 2.54 0) (xy 0.762 0)
 					)
 					(stroke
 						(width 0)
@@ -2049,10 +1740,28 @@
 					)
 				)
 			)
-			(symbol "DMN3008SFG_1_1"
+			(symbol "Q_NMOS_PowerDI333-8_1_1"
+				(pin passive line
+					(at -5.08 7.62 270)
+					(length 3.8)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at -5.08 0 0)
-					(length 2.54)
+					(length 3.8)
 					(name "G"
 						(effects
 							(font
@@ -2069,8 +1778,8 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
+					(at -2.54 7.62 270)
+					(length 3.8)
 					(name "D"
 						(effects
 							(font
@@ -2078,7 +1787,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2087,8 +1796,8 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
+					(at -2.54 -7.62 90)
+					(length 3.8)
 					(name "S"
 						(effects
 							(font
@@ -2096,7 +1805,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2105,9 +1814,26 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
+					(at 0 7.62 270)
+					(length 3.8)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 3.8)
 					(name "S"
 						(effects
 							(font
@@ -2124,9 +1850,26 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
+					(at 2.54 7.62 270)
+					(length 3.8)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -7.62 90)
+					(length 3.8)
 					(name "S"
 						(effects
 							(font
@@ -2134,7 +1877,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2637,7 +2380,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "A 3.7 V nominal LiPo battery can\nbe used to power the device.\n\nThe device nominally consumes\nfrom 10 mA (sleep) to\n500 mA (data transmit)\nwhen battery powered.\n\nThe charging current is 450 mA,\nso connect a battery with\n≥ 450 mAh capacity.\n\nWhen powered by the USB-C,\nthe battery can be charged."
+	(text "A 3.7 V nominal LiPo battery can\nbe used to power the device.\n\nThe device nominally consumes\nfrom 10 mA (sleep) to\n700 mA (data transmit)\nwhen battery powered.\n\nThe charging current is 450 mA,\nso connect a battery with\n≥ 450 mAh capacity.\n\nWhen powered by the USB-C,\nthe battery can be charged."
 		(exclude_from_sim no)
 		(at 15.24 63.5 0)
 		(effects
@@ -2663,7 +2406,7 @@
 	)
 	(text "OPT: Bypass protection chip"
 		(exclude_from_sim no)
-		(at 190.5 190.754 0)
+		(at 197.358 187.198 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2671,7 +2414,7 @@
 		)
 		(uuid "7a1042e3-cce3-42c4-a0cc-e1d2e2cdb399")
 	)
-	(text "As LiPo batteries can be explosive,\nensure that we are protected against:\n- Over-current charge\n- Over-current discharge\n- Over-voltage\n- Under-voltage\n- Reverse polarity\n- Short circuit"
+	(text "As LiPo batteries can be dangerous,\nensure that we are protected against:\n- Over-current charge\n- Over-current discharge\n- Over-voltage\n- Under-voltage\n- Reverse polarity\n- Short circuit"
 		(exclude_from_sim no)
 		(at 90.17 63.5 0)
 		(effects
@@ -2863,6 +2606,18 @@
 		(uuid "014cd2b2-0c59-461f-a4a9-252cec9d08f8")
 	)
 	(junction
+		(at 218.44 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "045da2c2-686b-4406-9f56-416f77aa021c")
+	)
+	(junction
+		(at 218.44 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14a5ed51-0bb5-4b62-a2c3-9389bf879d1e")
+	)
+	(junction
 		(at 173.99 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2887,10 +2642,10 @@
 		(uuid "2d809745-ae46-42db-9de1-5b0ba0fcdb93")
 	)
 	(junction
-		(at 201.93 149.86)
+		(at 187.96 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "38dfd137-fb7a-4524-a15b-62e7e4348bd3")
+		(uuid "57374ec9-5d57-4318-b7c9-9ff5af350033")
 	)
 	(junction
 		(at 50.8 160.02)
@@ -2909,6 +2664,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6824a385-a189-42cb-8979-02faf59679a0")
+	)
+	(junction
+		(at 210.82 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b062e85-d222-4d31-8661-a0e796d079d3")
 	)
 	(junction
 		(at 151.13 168.91)
@@ -2935,10 +2696,22 @@
 		(uuid "7c8658e6-b861-4302-97e0-ee1da0a6b2dd")
 	)
 	(junction
+		(at 219.71 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7cba6126-be54-4b33-a8f5-b86272cb648c")
+	)
+	(junction
 		(at 100.33 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8bb557ab-7869-493e-83db-7c84d123e2da")
+	)
+	(junction
+		(at 195.58 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "902138e2-a69e-4317-af24-8a31e2602e20")
 	)
 	(junction
 		(at 264.16 156.21)
@@ -2953,10 +2726,10 @@
 		(uuid "a030d1fe-b03f-4722-b723-ae39fe50b425")
 	)
 	(junction
-		(at 208.28 168.91)
+		(at 187.96 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b63f5abe-92ea-463b-830e-ccbd6b0377a4")
+		(uuid "c2c8acca-3b75-4fdf-b755-c548c991def6")
 	)
 	(junction
 		(at 312.42 148.59)
@@ -2969,12 +2742,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ebcea2f2-f0de-4cda-bb60-8b460ca39328")
-	)
-	(junction
-		(at 190.5 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed2c6bc3-8470-499d-b9ed-578de851c15f")
 	)
 	(junction
 		(at 175.26 168.91)
@@ -3024,7 +2791,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 179.07) (xy 173.99 168.91)
+			(xy 173.99 176.53) (xy 173.99 168.91)
 		)
 		(stroke
 			(width 0)
@@ -3071,6 +2838,16 @@
 			(type default)
 		)
 		(uuid "12ec72cc-d563-4fda-9d34-48c7000ab991")
+	)
+	(wire
+		(pts
+			(xy 218.44 166.37) (xy 218.44 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c409f7d-c839-468f-ba38-00870cbee677")
 	)
 	(wire
 		(pts
@@ -3164,23 +2941,13 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 179.07) (xy 208.28 179.07)
+			(xy 218.44 168.91) (xy 219.71 168.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4418642f-0d47-4b03-ad82-d98b89c1b176")
-	)
-	(wire
-		(pts
-			(xy 208.28 168.91) (xy 210.82 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55e2322f-91d8-430a-bcee-3a9376cdc40b")
+		(uuid "4cebf2ee-1e86-4d68-b954-6f0ca39cd0d4")
 	)
 	(wire
 		(pts
@@ -3191,16 +2958,6 @@
 			(type default)
 		)
 		(uuid "56121483-e972-43fc-8570-095ac015f62a")
-	)
-	(wire
-		(pts
-			(xy 207.01 168.91) (xy 208.28 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62a5f489-05a4-4621-a0ab-aad82388d342")
 	)
 	(wire
 		(pts
@@ -3234,7 +2991,27 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 154.94) (xy 190.5 154.94)
+			(xy 210.82 149.86) (xy 210.82 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ee50aa2-0105-474e-a208-8d8a70e6ec92")
+	)
+	(wire
+		(pts
+			(xy 219.71 176.53) (xy 219.71 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72a095e7-e03c-41ce-8060-016a44457893")
+	)
+	(wire
+		(pts
+			(xy 185.42 154.94) (xy 195.58 154.94)
 		)
 		(stroke
 			(width 0)
@@ -3254,13 +3031,13 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 179.07) (xy 208.28 168.91)
+			(xy 198.12 176.53) (xy 219.71 176.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7c1e2057-d39c-4891-9d88-e33aa6b63bff")
+		(uuid "783f8d70-a827-4ce7-9adc-2f88a873e1f3")
 	)
 	(wire
 		(pts
@@ -3284,7 +3061,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 149.86) (xy 201.93 149.86)
+			(xy 185.42 149.86) (xy 210.82 149.86)
 		)
 		(stroke
 			(width 0)
@@ -3321,6 +3098,16 @@
 			(type default)
 		)
 		(uuid "89e38783-5ac1-4276-b0b0-985a98a566a7")
+	)
+	(wire
+		(pts
+			(xy 218.44 163.83) (xy 218.44 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ab7bca7-04a1-4082-9914-201108aa8889")
 	)
 	(wire
 		(pts
@@ -3384,13 +3171,13 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 154.94) (xy 190.5 161.29)
+			(xy 219.71 168.91) (xy 222.25 168.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9d68faac-c4aa-4aab-905b-1d75627473d6")
+		(uuid "9c1748b8-a3e7-4ac9-93e2-6c8671db6be0")
 	)
 	(wire
 		(pts
@@ -3514,6 +3301,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 168.91) (xy 187.96 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8a5fa2e-32bc-435f-b88e-c16ca29f23b5")
+	)
+	(wire
+		(pts
 			(xy 173.99 168.91) (xy 175.26 168.91)
 		)
 		(stroke
@@ -3534,13 +3331,13 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 168.91) (xy 185.42 168.91)
+			(xy 187.96 163.83) (xy 187.96 166.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cd4d609b-6488-4e36-9cb8-e361e66a862e")
+		(uuid "cf4ba980-baf6-432d-bc06-da974053e25b")
 	)
 	(wire
 		(pts
@@ -3584,16 +3381,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 149.86) (xy 201.93 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd5a7c2c-eb57-4b66-af68-48597634084f")
-	)
-	(wire
-		(pts
 			(xy 151.13 156.21) (xy 151.13 149.86)
 		)
 		(stroke
@@ -3634,6 +3421,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 166.37) (xy 187.96 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4614671-905b-4abe-9ac9-3296ea3ca5c9")
+	)
+	(wire
+		(pts
 			(xy 254 148.59) (xy 281.94 148.59)
 		)
 		(stroke
@@ -3644,7 +3441,17 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 179.07) (xy 189.23 179.07)
+			(xy 195.58 154.94) (xy 195.58 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e612bfa8-eded-4326-a619-6ae0278bb7ce")
+	)
+	(wire
+		(pts
+			(xy 173.99 176.53) (xy 195.58 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3661,16 +3468,6 @@
 			(type default)
 		)
 		(uuid "e8f984dc-fca6-4d9c-a0e6-2e200ad5b71e")
-	)
-	(wire
-		(pts
-			(xy 195.58 168.91) (xy 196.85 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef80cdee-c022-42af-aa6b-8da8593d7645")
 	)
 	(wire
 		(pts
@@ -4605,6 +4402,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 151.13 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "33331c7c-7378-4d28-ac4e-66bb9227e6bc")
 		)
@@ -4756,6 +4562,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 254 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7623b54a-d31c-4f2d-ba9b-6661e814e718")
 		)
@@ -4766,6 +4581,131 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PowerFET:Q_NMOS_PowerDI333-8")
+		(at 210.82 166.37 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0817f194-3af9-48e1-8637-dfe2b3289836")
+		(property "Reference" "Q3"
+			(at 210.82 171.958 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DMN2005"
+			(at 210.82 173.736 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Diodes_PowerDI3333-8"
+			(at 212.725 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Package-Files/PowerDI3333-8.pdf"
+			(at 214.63 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-Channel Power MOSFET"
+			(at 210.82 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DMN2005UFG-7"
+			(at 210.82 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 210.82 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "DMN2005UFG-7DICT-ND"
+			(at 210.82 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 210.82 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "bf6f7c49-17fc-444b-a9dd-5543b8547bd9")
+		)
+		(pin "5"
+			(uuid "7664631e-f7ff-44be-9528-05ae71a0af1d")
+		)
+		(pin "1"
+			(uuid "7b1db5f7-8506-4400-9b26-3540fdef18e7")
+		)
+		(pin "4"
+			(uuid "0a367425-54a4-492b-a00b-a8507376e971")
+		)
+		(pin "2"
+			(uuid "d4877018-f34d-46d7-8ef2-80f6903c7f9a")
+		)
+		(pin "8"
+			(uuid "a0ec7d9a-0c2f-41c3-a810-ca159fbeb16f")
+		)
+		(pin "7"
+			(uuid "87dbbf48-a76b-4873-887f-b11f9418c9c7")
+		)
+		(pin "6"
+			(uuid "bcf52367-274c-493a-8878-26d109bedf19")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -4852,6 +4792,15 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-5000-1-ND"
+			(at 365.76 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
 			(at 365.76 148.59 0)
 			(effects
 				(font
@@ -4971,6 +4920,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 356.87 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5d6c045e-5e41-48b1-943a-e357d0ea4360")
 		)
@@ -5083,6 +5041,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 38.1 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "12111172-4cd7-48d9-a9aa-e1367be530df")
 		)
@@ -5099,9 +5066,8 @@
 		)
 	)
 	(symbol
-		(lib_name "DMN3008SFG_1")
-		(lib_id "Transistor_FET:DMN3008SFG")
-		(at 190.5 166.37 270)
+		(lib_id "PowerFET:Q_NMOS_PowerDI333-8")
+		(at 195.58 166.37 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5109,7 +5075,7 @@
 		(dnp no)
 		(uuid "21ecf0e5-3d75-40d8-a22a-25f6779d9e07")
 		(property "Reference" "Q2"
-			(at 190.5 172.72 90)
+			(at 195.58 171.958 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5117,7 +5083,7 @@
 			)
 		)
 		(property "Value" "DMN2005"
-			(at 190.5 175.26 90)
+			(at 195.58 173.736 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5125,7 +5091,7 @@
 			)
 		)
 		(property "Footprint" "Package_SON:Diodes_PowerDI3333-8"
-			(at 188.595 171.45 0)
+			(at 193.675 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5135,8 +5101,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN3008SFG.pdf"
-			(at 186.69 171.45 0)
+		(property "Datasheet" "https://www.diodes.com/assets/Package-Files/PowerDI3333-8.pdf"
+			(at 191.77 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5145,8 +5111,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "17.6A Id, 30V Vds, N-Channel Power MOSFET, 4.4mOhm Ron, 86nC Qg (typ), PowerDI3333-8"
-			(at 190.5 166.37 0)
+		(property "Description" "N-Channel Power MOSFET"
+			(at 195.58 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5155,7 +5121,7 @@
 			)
 		)
 		(property "MPN" "DMN2005UFG-7"
-			(at 190.5 166.37 90)
+			(at 195.58 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5164,7 +5130,7 @@
 			)
 		)
 		(property "Manufacturer" "Diodes Incorporated"
-			(at 190.5 166.37 90)
+			(at 195.58 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5173,7 +5139,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "DMN2005UFG-7DICT-ND"
-			(at 190.5 166.37 90)
+			(at 195.58 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5182,16 +5148,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 190.5 166.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power" ""
-			(at 190.5 166.37 90)
+			(at 195.58 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5213,6 +5170,15 @@
 		)
 		(pin "2"
 			(uuid "c0203867-5f65-460f-a1f2-d9bad330eefa")
+		)
+		(pin "8"
+			(uuid "624a3cfe-578e-431d-9012-8ca3191e0cc2")
+		)
+		(pin "7"
+			(uuid "4accb170-abdf-4f31-be1b-2d9346b7393d")
+		)
+		(pin "6"
+			(uuid "d7b3f73f-f833-443b-a2ab-e5feec4f9f6d")
 		)
 		(instances
 			(project "iida_devkit"
@@ -5277,6 +5243,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 264.16 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dc74e0dc-6d3f-42a1-b632-52253535d68a")
 		)
@@ -5299,7 +5274,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ca152f3-94fa-43a9-bc8d-468afe8b7442")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR012"
 			(at 254 175.26 0)
 			(effects
 				(font
@@ -5350,7 +5325,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR013")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -5452,6 +5427,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 356.87 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e24f389c-cddf-4e29-a767-f55ac3ac895c")
 		)
@@ -5462,131 +5446,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:DMN3008SFG")
-		(at 201.93 166.37 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "653d0f28-6ac7-46dc-830a-1d9aeb353501")
-		(property "Reference" "Q3"
-			(at 201.93 172.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DMN2005"
-			(at 201.93 175.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SON:Diodes_PowerDI3333-8"
-			(at 203.835 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN3008SFG.pdf"
-			(at 205.74 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "17.6A Id, 30V Vds, N-Channel Power MOSFET, 4.4mOhm Ron, 86nC Qg (typ), PowerDI3333-8"
-			(at 201.93 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "DMN2005UFG-7"
-			(at 201.93 166.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 201.93 166.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "DMN2005UFG-7DICT-ND"
-			(at 201.93 166.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 201.93 166.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power" ""
-			(at 201.93 166.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "51f4da40-9c47-4d5e-8815-40e54170ad22")
-		)
-		(pin "5"
-			(uuid "a74391a1-2fb4-421e-b34a-a85edbe45d63")
-		)
-		(pin "1"
-			(uuid "b21e840e-69ce-4041-bdea-fc853ff366cb")
-		)
-		(pin "4"
-			(uuid "c598f7ae-0d91-4340-bffb-d3565ecd1b68")
-		)
-		(pin "2"
-			(uuid "b3129be0-a150-4972-b19b-e7c1ee3ec121")
-		)
-		(instances
-			(project ""
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -5639,6 +5498,15 @@
 		)
 		(property "Description" "test point"
 			(at 345.44 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 345.44 168.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5704,6 +5572,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 113.03 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
 			(at 113.03 149.86 0)
 			(effects
 				(font
@@ -5813,6 +5690,15 @@
 		)
 		(property "DigiKey Part Number" "732-560112110087CT-ND"
 			(at 356.87 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 356.87 168.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5971,6 +5857,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 118.11 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c67d7715-8d9d-4eb2-829c-7d70bc806ba6")
 		)
@@ -5988,7 +5883,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 190.5 154.94 270)
+		(at 195.58 154.94 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5996,7 +5891,7 @@
 		(dnp no)
 		(uuid "8214c91e-608b-4388-9032-d9687f04d837")
 		(property "Reference" "TP4"
-			(at 196.596 154.94 90)
+			(at 201.676 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6004,7 +5899,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 192.5321 157.48 0)
+			(at 197.6121 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6014,7 +5909,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 190.5 160.02 0)
+			(at 195.58 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6023,7 +5918,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 190.5 160.02 0)
+			(at 195.58 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6032,7 +5927,16 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 190.5 154.94 0)
+			(at 195.58 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 195.58 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6141,6 +6045,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 365.76 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "16cf0d03-7471-4286-8bca-e77e1a292042")
 		)
@@ -6232,7 +6145,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a24666b-1a0f-4de0-8e8b-cd24bd747785")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR09"
 			(at 118.11 163.83 0)
 			(effects
 				(font
@@ -6283,7 +6196,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR010")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -6394,6 +6307,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 146.05 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "eb6c4652-b43e-4cc3-b396-a128189e4556")
 		)
@@ -6419,7 +6341,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90b4acfe-402b-422a-9d7d-366829ea79d9")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR013"
 			(at 264.16 175.26 0)
 			(effects
 				(font
@@ -6470,7 +6392,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR014")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -6573,6 +6495,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 95.25 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b041c133-83a5-4a34-85ac-47174f1d57db")
 		)
@@ -6590,7 +6521,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 210.82 168.91 0)
+		(at 222.25 168.91 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6599,8 +6530,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b42c31b-4d21-4531-9731-1a3a11a590b1")
-		(property "Reference" "#PWR012"
-			(at 210.82 175.26 0)
+		(property "Reference" "#PWR011"
+			(at 222.25 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6609,7 +6540,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 210.82 173.99 0)
+			(at 222.25 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6618,7 +6549,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 210.82 168.91 0)
+			(at 222.25 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6627,7 +6558,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 168.91 0)
+			(at 222.25 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6636,7 +6567,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 210.82 168.91 0)
+			(at 222.25 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6650,7 +6581,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR012")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -6756,6 +6687,15 @@
 				(justify left)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 264.16 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a8195699-db41-4300-adb2-efc00a694922")
 		)
@@ -6817,6 +6757,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 100.33 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
 			(at 100.33 168.91 0)
 			(effects
 				(font
@@ -6941,6 +6890,15 @@
 				)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 180.34 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "34eba947-bebc-4365-9875-f5a45f0094dd")
 		)
@@ -7010,6 +6968,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 345.44 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1bc7eee4-e22f-4be9-883f-773274652622")
 		)
@@ -7032,7 +6999,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b890b18e-20a1-4090-b945-043f45d6181f")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR014"
 			(at 269.24 175.26 0)
 			(effects
 				(font
@@ -7083,7 +7050,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR015")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -7181,6 +7148,15 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-560112110087CT-ND"
+			(at 269.24 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
 			(at 269.24 163.83 0)
 			(effects
 				(font
@@ -7339,6 +7315,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 312.42 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6954bfae-54b2-44e5-b10f-08d645d6a587")
 		)
@@ -7443,6 +7428,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 365.76 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "42cb334b-e6e9-4f71-871c-2741ca6e944b")
 		)
@@ -7504,6 +7498,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 280.67 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
 			(at 280.67 158.75 0)
 			(effects
 				(font
@@ -7623,6 +7626,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 162.56 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c00ec3ff-bc1a-4073-86a5-424e695f1be1")
 		)
@@ -7640,7 +7652,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 189.23 184.15 90)
+		(at 195.58 181.61 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7649,7 +7661,7 @@
 		(dnp yes)
 		(uuid "ce93d343-1df3-4e7b-af87-056a95a44fe5")
 		(property "Reference" "J3"
-			(at 190.5 186.436 90)
+			(at 196.85 183.896 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7657,7 +7669,7 @@
 			)
 		)
 		(property "Value" "PRPC001DAAN-RC"
-			(at 191.77 186.69 0)
+			(at 198.12 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7667,7 +7679,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 189.23 184.15 0)
+			(at 195.58 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7676,7 +7688,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.23 184.15 0)
+			(at 195.58 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7685,7 +7697,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 189.23 184.15 0)
+			(at 195.58 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7694,7 +7706,7 @@
 			)
 		)
 		(property "Manufacturer" "Sullins Connector Solutions"
-			(at 189.23 184.15 0)
+			(at 195.58 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7703,7 +7715,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 189.23 184.15 0)
+			(at 195.58 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7712,7 +7724,7 @@
 			)
 		)
 		(property "MPN" "PRPC001DAAN-RC"
-			(at 189.23 184.15 0)
+			(at 195.58 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7721,7 +7733,16 @@
 			)
 		)
 		(property "Power" ""
-			(at 189.23 184.15 90)
+			(at 195.58 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 195.58 181.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7841,6 +7862,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 106.68 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "4a8e9fde-8ba9-4fcc-9350-112d3d05b606")
 		)
@@ -7905,6 +7935,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 100.33 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
 			(at 100.33 149.86 0)
 			(effects
 				(font
@@ -8014,6 +8053,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer Part Number" ""
+			(at 292.1 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1a766422-5c37-4379-9838-fbd6c7b5b640")
 		)
@@ -8066,7 +8114,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9cb1312-078a-4d7f-8346-5a18e0267645")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR010"
 			(at 162.56 170.18 0)
 			(effects
 				(font
@@ -8117,7 +8165,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR011")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -8125,7 +8173,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 201.93 149.86 270)
+		(at 210.82 149.86 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8133,7 +8181,7 @@
 		(dnp no)
 		(uuid "ebbcc878-bb4c-416b-b858-078c8b4ab66d")
 		(property "Reference" "TP5"
-			(at 207.772 149.86 90)
+			(at 216.662 149.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8141,7 +8189,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 203.9621 152.4 0)
+			(at 212.8521 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8151,7 +8199,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 201.93 154.94 0)
+			(at 210.82 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8160,7 +8208,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 154.94 0)
+			(at 210.82 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8169,7 +8217,16 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 201.93 149.86 0)
+			(at 210.82 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 210.82 149.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8199,7 +8256,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec35a1d5-75ff-4937-845b-c22e3c8990d4")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR016"
 			(at 312.42 165.1 0)
 			(effects
 				(font
@@ -8250,7 +8307,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR017")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -8345,6 +8402,15 @@
 			)
 		)
 		(property "Power" ""
+			(at 175.26 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
 			(at 175.26 152.4 0)
 			(effects
 				(font
@@ -8456,7 +8522,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5f6f34c-ce82-45b9-b44c-176c94056214")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR015"
 			(at 292.1 171.45 0)
 			(effects
 				(font
@@ -8507,7 +8573,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR016")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -8560,6 +8626,15 @@
 		)
 		(property "Description" "test point"
 			(at 345.44 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 345.44 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
