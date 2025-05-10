@@ -565,8 +565,8 @@
         "microvia_drill": 0.1,
         "name": "50 Ohm",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(0, 132, 0)",
         "track_width": 0.266,
         "via_diameter": 0.45,
         "via_drill": 0.25,
@@ -582,12 +582,30 @@
         "microvia_drill": 0.1,
         "name": "90 Ohm",
         "pcb_color": "rgb(0, 0, 255)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgb(0, 0, 194)",
         "track_width": 0.3,
         "via_diameter": 0.45,
         "via_drill": 0.25,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(0, 0, 0)",
+        "wire_width": 12
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(194, 0, 0)",
+        "wire_width": 12
       }
     ],
     "meta": {
@@ -603,6 +621,54 @@
       {
         "netclass": "50 Ohm",
         "pattern": "/*/ANT*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "V_*"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/*/VBUS*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/*/V_*V*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/*/V_BAT"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/*/BATT+"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "/*/BATT-"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Power/V*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/MCU/VDDA"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Modem/VCC*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/*/MDM_V*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/*/SIM_VCC"
       }
     ]
   },
@@ -647,7 +713,7 @@
           "group_by": true,
           "label": "Value",
           "name": "Value",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -659,7 +725,7 @@
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -695,7 +761,7 @@
           "group_by": false,
           "label": "Footprint review check",
           "name": "Footprint review check",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -713,36 +779,30 @@
           "group_by": false,
           "label": "Class",
           "name": "Class",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Size",
           "name": "Size",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Tolerance",
           "name": "Tolerance",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Voltage",
           "name": "Voltage",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Capacitance",
           "name": "Capacitance",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer Part Number",
-          "name": "Manufacturer Part Number",
           "show": false
         },
         {

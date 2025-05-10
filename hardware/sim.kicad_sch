@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-05-09")
+		(date "2025-05-10")
 		(rev "v5.0.0")
 	)
 	(lib_symbols
@@ -822,7 +822,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+		(symbol "power:Earth"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -843,7 +843,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "GND"
+			(property "Value" "Earth"
 				(at 0 -3.81 0)
 				(effects
 					(font
@@ -860,7 +860,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -869,7 +869,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(property "Description" "Power symbol creates a global label with name \"Earth\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -878,7 +878,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "global ground gnd"
 				(at 0 0 0)
 				(effects
 					(font
@@ -887,10 +887,46 @@
 					(hide yes)
 				)
 			)
-			(symbol "GND_0_1"
+			(symbol "Earth_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+						(xy -0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -2.54) (xy 0.127 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -901,7 +937,7 @@
 					)
 				)
 			)
-			(symbol "GND_1_1"
+			(symbol "Earth_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -1156,6 +1192,12 @@
 		(uuid "4128ad79-d80f-4803-b455-b945e1a3e6bd")
 	)
 	(junction
+		(at 330.2 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "440b7146-f76e-4bcd-b758-d796caa46530")
+	)
+	(junction
 		(at 278.13 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1178,12 +1220,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "74931604-141b-49a3-8525-0c25f214cd60")
-	)
-	(junction
-		(at 304.8 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7cee9327-b5c1-4228-adb2-317eb656a458")
 	)
 	(junction
 		(at 156.21 147.32)
@@ -1271,7 +1307,17 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 157.48) (xy 118.11 157.48)
+			(xy 168.91 168.91) (xy 168.91 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d0baffa-a55c-4edf-908b-16370ec929fd")
+	)
+	(wire
+		(pts
+			(xy 118.11 157.48) (xy 330.2 157.48)
 		)
 		(stroke
 			(width 0)
@@ -1308,6 +1354,16 @@
 			(type default)
 		)
 		(uuid "1a1aad66-cd67-4375-ae7c-fdc14a294b6c")
+	)
+	(wire
+		(pts
+			(xy 330.2 157.48) (xy 341.63 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b9e0c84-6ae0-4a95-9e94-98e51977ba2f")
 	)
 	(wire
 		(pts
@@ -1381,6 +1437,26 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 168.91) (xy 156.21 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39b7060d-2aa1-4a60-9a2b-b87b014acc50")
+	)
+	(wire
+		(pts
+			(xy 234.95 168.91) (xy 234.95 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "488a5b5b-22ce-4dd6-b2fe-4dadb83ec0d4")
+	)
+	(wire
+		(pts
 			(xy 168.91 142.24) (xy 168.91 160.02)
 		)
 		(stroke
@@ -1431,6 +1507,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 168.91) (xy 118.11 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b78c6e4-f37f-435e-b627-17351a691ce5")
+	)
+	(wire
+		(pts
 			(xy 130.81 152.4) (xy 63.5 152.4)
 		)
 		(stroke
@@ -1478,6 +1564,16 @@
 			(type default)
 		)
 		(uuid "8f864e2a-ad0b-4e81-bd73-6b3bb6af6f77")
+	)
+	(wire
+		(pts
+			(xy 130.81 168.91) (xy 130.81 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9067fff4-d747-44ee-b751-f76c117502ef")
 	)
 	(wire
 		(pts
@@ -1571,13 +1667,33 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 157.48) (xy 341.63 157.48)
+			(xy 250.19 168.91) (xy 250.19 167.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e8c28a2b-7cce-456b-9fea-54e57ec1fe94")
+		(uuid "e418b398-a3f0-4a31-9259-e42e32d3e3b3")
+	)
+	(wire
+		(pts
+			(xy 204.47 168.91) (xy 204.47 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e700fd12-bd90-4a8a-9287-66490703231e")
+	)
+	(wire
+		(pts
+			(xy 143.51 168.91) (xy 143.51 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb6b0612-e921-42e2-a1cd-f94e738468a5")
 	)
 	(wire
 		(pts
@@ -1588,6 +1704,16 @@
 			(type default)
 		)
 		(uuid "ed12b873-bdf2-465e-a2d9-1d213ffcc1ec")
+	)
+	(wire
+		(pts
+			(xy 219.71 168.91) (xy 219.71 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0d943ed-f288-4170-8727-285ab248b35b")
 	)
 	(wire
 		(pts
@@ -2071,15 +2197,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
-			(at 204.47 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "cdb41ea2-fb9c-4859-99a5-7e608e6f7a08")
 		)
@@ -2096,8 +2213,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 168.91 167.64 0)
+		(lib_id "power:Earth")
+		(at 168.91 168.91 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2106,8 +2223,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18f8afc5-88c2-4650-9c5f-3755b6587185")
-		(property "Reference" "#PWR0102"
-			(at 168.91 173.99 0)
+		(property "Reference" "#PWR0101"
+			(at 168.91 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2116,7 +2233,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 168.91 172.72 0)
+			(at 168.91 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2125,7 +2242,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 167.64 0)
+			(at 168.91 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2133,8 +2250,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 168.91 167.64 0)
+		(property "Datasheet" "~"
+			(at 168.91 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2142,8 +2259,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 167.64 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 168.91 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2157,7 +2274,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR0102")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -2299,15 +2416,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
-			(at 219.71 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "caad1703-225e-4fb1-a70c-82ccbfc65c2c")
 		)
@@ -2324,8 +2432,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 118.11 167.64 0)
+		(lib_id "power:Earth")
+		(at 118.11 168.91 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2334,8 +2442,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29df661f-ccda-4942-95f8-f6529dffa86c")
-		(property "Reference" "#PWR098"
-			(at 118.11 173.99 0)
+		(property "Reference" "#PWR097"
+			(at 118.11 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2344,7 +2452,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 118.11 172.72 0)
+			(at 118.11 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2353,7 +2461,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 167.64 0)
+			(at 118.11 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2361,8 +2469,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 118.11 167.64 0)
+		(property "Datasheet" "~"
+			(at 118.11 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2370,8 +2478,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 118.11 167.64 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 118.11 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2385,15 +2493,15 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR098")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 219.71 167.64 0)
+		(lib_id "power:Earth")
+		(at 219.71 168.91 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2402,8 +2510,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41507364-c84d-49f5-a264-72bd97323604")
-		(property "Reference" "#PWR0104"
-			(at 219.71 173.99 0)
+		(property "Reference" "#PWR0103"
+			(at 219.71 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2412,7 +2520,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 219.71 172.72 0)
+			(at 219.71 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2421,7 +2529,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 219.71 167.64 0)
+			(at 219.71 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2429,8 +2537,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 219.71 167.64 0)
+		(property "Datasheet" "~"
+			(at 219.71 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2438,8 +2546,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 219.71 167.64 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 219.71 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2453,7 +2561,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR0104")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -2464,11 +2572,11 @@
 		(at 262.89 152.4 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "4ad0eae6-7826-468f-8648-01ebb3087b7e")
-		(property "Reference" "TP68"
+		(property "Reference" "TP70"
 			(at 263.906 155.702 0)
 			(effects
 				(font
@@ -2514,30 +2622,21 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
-			(at 262.89 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "33976102-093b-4c83-8b8c-811f485c5dd2")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "TP68")
+					(reference "TP70")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 204.47 167.64 0)
+		(lib_id "power:Earth")
+		(at 204.47 168.91 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2546,8 +2645,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ed9e724-69a2-400b-9fcf-580bb347f772")
-		(property "Reference" "#PWR0103"
-			(at 204.47 173.99 0)
+		(property "Reference" "#PWR0102"
+			(at 204.47 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2556,7 +2655,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 204.47 172.72 0)
+			(at 204.47 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2565,7 +2664,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 167.64 0)
+			(at 204.47 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2573,8 +2672,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 204.47 167.64 0)
+		(property "Datasheet" "~"
+			(at 204.47 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2582,8 +2681,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 204.47 167.64 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 204.47 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2597,14 +2696,14 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR0103")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:Earth")
 		(at 38.1 162.56 0)
 		(mirror y)
 		(unit 1)
@@ -2614,7 +2713,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f35c06e-0da8-46f5-bd90-f57890cf773d")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR095"
 			(at 38.1 168.91 0)
 			(effects
 				(font
@@ -2641,7 +2740,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 38.1 162.56 0)
 			(effects
 				(font
@@ -2650,7 +2749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
 			(at 38.1 162.56 0)
 			(effects
 				(font
@@ -2665,7 +2764,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR096")
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -2681,7 +2780,7 @@
 		(dnp no)
 		(uuid "52843770-230e-4dcf-9a2d-79725f22435b")
 		(property "Reference" "R53"
-			(at 340.36 151.892 0)
+			(at 340.36 152.908 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2690,7 +2789,7 @@
 			)
 		)
 		(property "Value" "2.2 kΩ"
-			(at 340.36 153.67 0)
+			(at 340.36 154.686 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2759,18 +2858,10 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-		(property "DigiKey Part Number" "732-560112110087CT-ND"
-			(at 341.63 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
+		(property "DigiKey Part Number" "732-560112110087CT-ND"
 			(at 341.63 153.67 0)
 			(effects
 				(font
@@ -2795,8 +2886,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 156.21 167.64 0)
+		(lib_id "power:Earth")
+		(at 156.21 168.91 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2805,8 +2896,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54abab9f-1145-42ea-91cb-30a0d159d348")
-		(property "Reference" "#PWR0101"
-			(at 156.21 173.99 0)
+		(property "Reference" "#PWR0100"
+			(at 156.21 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2815,7 +2906,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 156.21 172.72 0)
+			(at 156.21 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2824,7 +2915,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 156.21 167.64 0)
+			(at 156.21 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2832,8 +2923,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 156.21 167.64 0)
+		(property "Datasheet" "~"
+			(at 156.21 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2841,8 +2932,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 167.64 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 156.21 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2856,7 +2947,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR0101")
+					(reference "#PWR0100")
 					(unit 1)
 				)
 			)
@@ -2868,11 +2959,11 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "56e27121-f21b-4631-81bd-41fc76e59782")
-		(property "Reference" "TP70"
+		(property "Reference" "TP72"
 			(at 278.13 154.94 0)
 			(effects
 				(font
@@ -2917,22 +3008,13 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
-			(at 278.13 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "f7ae309b-5b2b-4025-83ce-d9b20708e212")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "TP70")
+					(reference "TP72")
 					(unit 1)
 				)
 			)
@@ -3074,8 +3156,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 234.95 167.64 0)
+		(lib_id "power:Earth")
+		(at 234.95 168.91 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3084,8 +3166,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81b15885-06b4-4682-be05-bdd2a81c8e7e")
-		(property "Reference" "#PWR0105"
-			(at 234.95 173.99 0)
+		(property "Reference" "#PWR0104"
+			(at 234.95 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3094,7 +3176,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 234.95 172.72 0)
+			(at 234.95 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3103,7 +3185,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 167.64 0)
+			(at 234.95 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3111,8 +3193,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 234.95 167.64 0)
+		(property "Datasheet" "~"
+			(at 234.95 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3120,8 +3202,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 234.95 167.64 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 234.95 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3135,7 +3217,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR0105")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -3147,11 +3229,11 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "882885e8-4fa3-4d17-bf3d-1dc906e3162f")
-		(property "Reference" "TP69"
+		(property "Reference" "TP71"
 			(at 278.13 142.24 0)
 			(effects
 				(font
@@ -3196,30 +3278,21 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
-			(at 278.13 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "a91a6667-cdeb-4880-ac35-e79c4f23470c")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "TP69")
+					(reference "TP71")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 143.51 167.64 0)
+		(lib_id "power:Earth")
+		(at 143.51 168.91 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3228,8 +3301,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a0dc318-2b7e-4e0d-884a-705ca555ca64")
-		(property "Reference" "#PWR0100"
-			(at 143.51 173.99 0)
+		(property "Reference" "#PWR099"
+			(at 143.51 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3238,7 +3311,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 143.51 172.72 0)
+			(at 143.51 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3247,7 +3320,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 167.64 0)
+			(at 143.51 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3255,8 +3328,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 143.51 167.64 0)
+		(property "Datasheet" "~"
+			(at 143.51 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3264,8 +3337,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 167.64 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 143.51 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3279,7 +3352,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR0100")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -3556,15 +3629,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
-			(at 234.95 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "740ff19a-b2cc-40a7-82e5-47c899966b86")
 		)
@@ -3715,15 +3779,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
-			(at 250.19 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "9b259143-046b-4c77-b8c7-ebf952e60c03")
 		)
@@ -3837,15 +3892,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
-			(at 50.8 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "G2"
 			(uuid "7f70f22f-e7ac-4bb0-a672-d1d4d337ce09")
 		)
@@ -3889,8 +3935,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 130.81 167.64 0)
+		(lib_id "power:Earth")
+		(at 130.81 168.91 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3899,8 +3945,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd972f76-06e4-4f90-a6ac-2f70d6366329")
-		(property "Reference" "#PWR099"
-			(at 130.81 173.99 0)
+		(property "Reference" "#PWR098"
+			(at 130.81 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3909,7 +3955,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 172.72 0)
+			(at 130.81 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3918,7 +3964,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 167.64 0)
+			(at 130.81 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3926,8 +3972,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 130.81 167.64 0)
+		(property "Datasheet" "~"
+			(at 130.81 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3935,8 +3981,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 167.64 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 130.81 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3950,7 +3996,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR099")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -4097,11 +4143,11 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "db598ced-8f1e-42ed-b088-d6d31adea87b")
-		(property "Reference" "TP67"
+		(property "Reference" "TP69"
 			(at 262.89 137.16 0)
 			(effects
 				(font
@@ -4146,22 +4192,13 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
-			(at 262.89 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "1580b6a5-bf89-488d-aa59-0f15c89e241a")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "TP67")
+					(reference "TP69")
 					(unit 1)
 				)
 			)
@@ -4169,16 +4206,16 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 304.8 157.48 0)
+		(at 330.2 157.48 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "e6bef71c-4bd2-4b04-a401-307e63cb33b4")
-		(property "Reference" "TP71"
-			(at 304.8 152.4 0)
+		(property "Reference" "TP73"
+			(at 330.2 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4186,7 +4223,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 302.26 155.4479 0)
+			(at 327.66 155.4479 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4196,7 +4233,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 299.72 157.48 0)
+			(at 325.12 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4205,7 +4242,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 299.72 157.48 0)
+			(at 325.12 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4214,16 +4251,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 304.8 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 304.8 157.48 0)
+			(at 330.2 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4237,14 +4265,14 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "TP71")
+					(reference "TP73")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:Earth")
 		(at 63.5 162.56 0)
 		(mirror y)
 		(unit 1)
@@ -4254,7 +4282,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8a778fa-5e48-4543-b872-2e2e0159cb99")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR096"
 			(at 63.5 168.91 0)
 			(effects
 				(font
@@ -4281,7 +4309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 63.5 162.56 0)
 			(effects
 				(font
@@ -4290,7 +4318,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
 			(at 63.5 162.56 0)
 			(effects
 				(font
@@ -4305,15 +4333,15 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR097")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 250.19 167.64 0)
+		(lib_id "power:Earth")
+		(at 250.19 168.91 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4322,8 +4350,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e971d79a-9830-426e-9a66-52ef0d31eb1f")
-		(property "Reference" "#PWR0106"
-			(at 250.19 173.99 0)
+		(property "Reference" "#PWR0105"
+			(at 250.19 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4332,7 +4360,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 250.19 172.72 0)
+			(at 250.19 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4341,7 +4369,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.19 167.64 0)
+			(at 250.19 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4349,8 +4377,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 250.19 167.64 0)
+		(property "Datasheet" "~"
+			(at 250.19 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4358,8 +4386,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 250.19 167.64 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 250.19 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4373,7 +4401,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR0106")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)

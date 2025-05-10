@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-05-09")
+		(date "2025-05-10")
 		(rev "v5.0.0")
 	)
 	(lib_symbols
@@ -569,7 +569,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+		(symbol "power:Earth"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -590,7 +590,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "GND"
+			(property "Value" "Earth"
 				(at 0 -3.81 0)
 				(effects
 					(font
@@ -607,7 +607,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -616,7 +616,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(property "Description" "Power symbol creates a global label with name \"Earth\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -625,7 +625,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "global ground gnd"
 				(at 0 0 0)
 				(effects
 					(font
@@ -634,10 +634,46 @@
 					(hide yes)
 				)
 			)
-			(symbol "GND_0_1"
+			(symbol "Earth_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+						(xy -0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -2.54) (xy 0.127 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -648,7 +684,7 @@
 					)
 				)
 			)
-			(symbol "GND_1_1"
+			(symbol "Earth_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -682,6 +718,30 @@
 			(justify left top)
 		)
 		(uuid "37870905-df07-4053-9153-479df203e857")
+	)
+	(text "Use common center pad."
+		(exclude_from_sim no)
+		(at 57.912 139.192 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 194 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "3c16e326-c560-4d7e-b85f-bcc124d37059")
+	)
+	(text "The antenna feed line from the module's ANT pin to\nthe antenna should be matched to 50 Ω.\n\nThe target resonant frequency is\nthe LTE band 20 (800 MHz).\n\nProvide a footprint for a Π-type matching network for\nlater tuning."
+		(exclude_from_sim no)
+		(at 171.45 63.5 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.3175)
+			)
+			(justify left top)
+		)
+		(uuid "3e0a7194-1ed2-4c19-a405-d30b16aa375e")
 	)
 	(text "- Follow the natenna layout guidelines according to \"SARA-R5 series - System integration manual\" (UBX-19041356 - R20)\n  chapter \"2.4.1 General guidelines for antenna interfaces\"."
 		(exclude_from_sim no)
@@ -817,89 +877,68 @@
 		)
 		(uuid "8fa4ecc9-f049-4d76-9e19-0cf18c1181b3")
 	)
-	(text_box "NOTE: Use a common center pad"
-		(exclude_from_sim no)
-		(at 52.07 123.19 0)
-		(size 21.59 27.94)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 255 253 0 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "fddf6f5f-4ed8-4165-b5cd-9c47d8d3d229")
-	)
 	(junction
-		(at 360.68 101.6)
+		(at 360.68 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "006f8456-1a77-480d-a54b-6476c3a2e2de")
 	)
 	(junction
-		(at 231.14 101.6)
+		(at 231.14 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0b95206c-7111-4de2-9968-98e5f480ce6e")
 	)
 	(junction
-		(at 241.3 187.96)
+		(at 241.3 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1624ed0e-3e1d-42de-a939-14077cdf6993")
 	)
 	(junction
-		(at 360.68 111.76)
+		(at 58.42 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3049d42c-537f-4840-b1e1-25087b1cc1ce")
+	)
+	(junction
+		(at 360.68 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d406d8b-6569-4b8e-bd76-78b352956f14")
 	)
 	(junction
-		(at 55.88 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "779f4214-30cc-4222-be1a-fdeaacc29aef")
-	)
-	(junction
-		(at 231.14 177.8)
+		(at 231.14 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "85d057be-6ff9-417f-9644-95d27b13af5f")
 	)
 	(junction
-		(at 368.3 111.76)
+		(at 368.3 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e47d838-caed-431b-a386-800697de1d8b")
 	)
 	(junction
-		(at 241.3 101.6)
+		(at 241.3 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a83ac60c-4f9a-4c71-87eb-df518a743658")
 	)
 	(junction
-		(at 241.3 177.8)
+		(at 241.3 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c01dd5a6-beaf-429e-9691-3919ff73e577")
 	)
 	(junction
-		(at 368.3 187.96)
+		(at 368.3 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1495e75-b8f0-4bbd-ace5-2606f52e93a8")
 	)
 	(junction
-		(at 241.3 111.76)
+		(at 241.3 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d97adfc2-3803-4865-be24-13ab2fde1bd5")
@@ -916,7 +955,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 177.8) (xy 232.41 177.8)
+			(xy 231.14 165.1) (xy 232.41 165.1)
 		)
 		(stroke
 			(width 0)
@@ -926,7 +965,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 135.89) (xy 55.88 139.7)
+			(xy 58.42 135.89) (xy 58.42 139.7)
 		)
 		(stroke
 			(width 0)
@@ -936,7 +975,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 111.76) (xy 360.68 111.76)
+			(xy 241.3 124.46) (xy 360.68 124.46)
 		)
 		(stroke
 			(width 0)
@@ -946,7 +985,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 177.8) (xy 231.14 177.8)
+			(xy 76.2 165.1) (xy 231.14 165.1)
 		)
 		(stroke
 			(width 0)
@@ -966,7 +1005,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 187.96) (xy 368.3 187.96)
+			(xy 241.3 175.26) (xy 368.3 175.26)
 		)
 		(stroke
 			(width 0)
@@ -976,7 +1015,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 101.6) (xy 232.41 101.6)
+			(xy 231.14 114.3) (xy 232.41 114.3)
 		)
 		(stroke
 			(width 0)
@@ -986,7 +1025,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 111.76) (xy 231.14 110.49)
+			(xy 231.14 124.46) (xy 231.14 123.19)
 		)
 		(stroke
 			(width 0)
@@ -996,7 +1035,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 143.51) (xy 55.88 139.7)
+			(xy 58.42 143.51) (xy 58.42 139.7)
 		)
 		(stroke
 			(width 0)
@@ -1006,7 +1045,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 101.6) (xy 76.2 101.6)
+			(xy 231.14 114.3) (xy 76.2 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1016,7 +1055,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 102.87) (xy 231.14 101.6)
+			(xy 231.14 115.57) (xy 231.14 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1026,7 +1065,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 101.6) (xy 363.22 101.6)
+			(xy 360.68 114.3) (xy 363.22 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1036,7 +1075,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 106.68) (xy 368.3 111.76)
+			(xy 368.3 119.38) (xy 368.3 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1046,7 +1085,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 177.8) (xy 241.3 179.07)
+			(xy 241.3 165.1) (xy 241.3 166.37)
 		)
 		(stroke
 			(width 0)
@@ -1056,7 +1095,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 139.7) (xy 25.4 139.7)
+			(xy 33.02 139.7) (xy 58.42 139.7)
 		)
 		(stroke
 			(width 0)
@@ -1066,7 +1105,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 179.07) (xy 231.14 177.8)
+			(xy 231.14 166.37) (xy 231.14 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1076,7 +1115,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 187.96) (xy 231.14 186.69)
+			(xy 231.14 175.26) (xy 231.14 173.99)
 		)
 		(stroke
 			(width 0)
@@ -1086,7 +1125,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 135.89) (xy 59.69 135.89)
+			(xy 58.42 135.89) (xy 59.69 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1096,7 +1135,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 187.96) (xy 368.3 189.23)
+			(xy 368.3 175.26) (xy 368.3 176.53)
 		)
 		(stroke
 			(width 0)
@@ -1106,7 +1145,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 177.8) (xy 365.76 177.8)
+			(xy 241.3 165.1) (xy 365.76 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1116,7 +1155,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 101.6) (xy 241.3 101.6)
+			(xy 240.03 114.3) (xy 241.3 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1126,7 +1165,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 187.96) (xy 241.3 187.96)
+			(xy 231.14 175.26) (xy 241.3 175.26)
 		)
 		(stroke
 			(width 0)
@@ -1136,7 +1175,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 101.6) (xy 360.68 101.6)
+			(xy 241.3 114.3) (xy 360.68 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1146,7 +1185,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 101.6) (xy 241.3 102.87)
+			(xy 241.3 114.3) (xy 241.3 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1156,7 +1195,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 111.76) (xy 241.3 110.49)
+			(xy 241.3 124.46) (xy 241.3 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1166,7 +1205,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 111.76) (xy 368.3 111.76)
+			(xy 360.68 124.46) (xy 368.3 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1176,7 +1215,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 177.8) (xy 368.3 187.96)
+			(xy 368.3 165.1) (xy 368.3 175.26)
 		)
 		(stroke
 			(width 0)
@@ -1186,7 +1225,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 101.6) (xy 76.2 135.89)
+			(xy 76.2 114.3) (xy 76.2 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1196,7 +1235,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 187.96) (xy 241.3 186.69)
+			(xy 241.3 175.26) (xy 241.3 173.99)
 		)
 		(stroke
 			(width 0)
@@ -1206,7 +1245,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 110.49) (xy 360.68 111.76)
+			(xy 360.68 123.19) (xy 360.68 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1216,7 +1255,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 143.51) (xy 76.2 177.8)
+			(xy 76.2 143.51) (xy 76.2 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1226,7 +1265,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 143.51) (xy 59.69 143.51)
+			(xy 58.42 143.51) (xy 59.69 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1236,7 +1275,17 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 111.76) (xy 241.3 111.76)
+			(xy 368.3 125.73) (xy 368.3 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6d4eb63-315e-4cd4-afd7-44c967bae3a0")
+	)
+	(wire
+		(pts
+			(xy 231.14 124.46) (xy 241.3 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1246,7 +1295,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 102.87) (xy 360.68 101.6)
+			(xy 360.68 115.57) (xy 360.68 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1256,7 +1305,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 177.8) (xy 241.3 177.8)
+			(xy 240.03 165.1) (xy 241.3 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1265,7 +1314,7 @@
 		(uuid "fe20961e-1f13-44eb-9f68-0df44cc7cdbc")
 	)
 	(label "ANT_PCB"
-		(at 349.25 177.8 0)
+		(at 349.25 165.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1275,7 +1324,7 @@
 		(uuid "6ddda7a0-2a30-4985-be34-9b5c3378db9a")
 	)
 	(label "ANT_SEL_PCB"
-		(at 217.17 177.8 0)
+		(at 217.17 165.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1285,7 +1334,7 @@
 		(uuid "ac7eb1d7-80f5-48bf-b8eb-e2b73fdd0696")
 	)
 	(label "ANT_SMA"
-		(at 350.52 101.6 0)
+		(at 350.52 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1295,7 +1344,7 @@
 		(uuid "ca9b43c8-4565-4ba0-9550-df645ed4247e")
 	)
 	(label "ANT_SEL_SMA"
-		(at 217.17 101.6 0)
+		(at 217.17 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1306,7 +1355,7 @@
 	)
 	(hierarchical_label "ANT"
 		(shape bidirectional)
-		(at 25.4 139.7 180)
+		(at 33.02 139.7 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1317,7 +1366,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 236.22 101.6 90)
+		(at 236.22 114.3 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1326,7 +1375,7 @@
 		(dnp no)
 		(uuid "11174069-27f7-4929-a075-a83a0c1a6c7b")
 		(property "Reference" "R58"
-			(at 236.22 96.52 90)
+			(at 236.22 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1334,7 +1383,7 @@
 			)
 		)
 		(property "Value" "0 Ω"
-			(at 236.22 98.044 90)
+			(at 236.22 110.744 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1342,7 +1391,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 236.22 99.822 90)
+			(at 236.22 112.522 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1351,7 +1400,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 236.22 101.6 0)
+			(at 236.22 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1360,7 +1409,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 236.22 101.6 0)
+			(at 236.22 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1369,7 +1418,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-560112110001CT-ND"
-			(at 236.22 101.6 0)
+			(at 236.22 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1378,7 +1427,7 @@
 			)
 		)
 		(property "MPN" "560112110001"
-			(at 236.22 101.6 0)
+			(at 236.22 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1387,7 +1436,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 236.22 101.6 0)
+			(at 236.22 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1396,7 +1445,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 236.22 99.568 90)
+			(at 236.22 112.268 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1404,7 +1453,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 236.22 101.6 90)
+			(at 236.22 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1413,16 +1462,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 236.22 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 236.22 101.6 90)
+			(at 236.22 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1447,7 +1487,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 231.14 106.68 0)
+		(at 231.14 119.38 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1456,7 +1496,7 @@
 		(dnp yes)
 		(uuid "22b3c007-e4e6-45b1-a322-6cfc7bce586d")
 		(property "Reference" "R56"
-			(at 229.362 104.902 0)
+			(at 229.362 117.602 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1465,7 +1505,7 @@
 			)
 		)
 		(property "Value" "0 Ω"
-			(at 229.362 106.68 0)
+			(at 229.362 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1474,7 +1514,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 232.918 106.68 90)
+			(at 232.918 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1483,7 +1523,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 106.68 0)
+			(at 231.14 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1492,7 +1532,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 231.14 106.68 0)
+			(at 231.14 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1501,7 +1541,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-560112116001CT-ND"
-			(at 231.14 106.68 0)
+			(at 231.14 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1510,7 +1550,7 @@
 			)
 		)
 		(property "MPN" "560112116001"
-			(at 231.14 106.68 0)
+			(at 231.14 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1519,7 +1559,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 231.14 106.68 0)
+			(at 231.14 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1528,7 +1568,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 229.362 108.458 0)
+			(at 229.362 121.158 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1537,16 +1577,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 231.14 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 231.14 106.68 0)
+			(at 231.14 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1570,137 +1601,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 63.5 143.51 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2ee65c5c-531e-495b-bb12-b8105f7bc4a6")
-		(property "Reference" "R55"
-			(at 63.5 145.542 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0 Ω"
-			(at 63.5 147.066 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 63.5 145.288 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 63.5 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 63.5 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "732-560112110001CT-ND"
-			(at 63.5 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112110001"
-			(at 63.5 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 63.5 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Size" "0402"
-			(at 63.5 148.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 63.5 143.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power" ""
-			(at 63.5 143.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 63.5 143.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "958227a1-2052-440f-8d17-28b7f8b821b6")
-		)
-		(pin "2"
-			(uuid "a617af89-4aab-44d6-bdeb-2e659ef2c82c")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/e6477a2c-b2b5-4454-829c-da955dc53725"
-					(reference "R55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 368.3 101.6 0)
+		(at 368.3 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1708,7 +1610,7 @@
 		(dnp no)
 		(uuid "33cb46f6-beb3-4e6a-89e0-9f31f3f45f6c")
 		(property "Reference" "J20"
-			(at 370.84 101.6 0)
+			(at 370.84 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1717,7 +1619,7 @@
 			)
 		)
 		(property "Value" "132134"
-			(at 370.586 101.6 0)
+			(at 370.586 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1727,7 +1629,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical"
-			(at 368.3 101.6 0)
+			(at 368.3 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1736,7 +1638,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 368.3 101.6 0)
+			(at 368.3 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1745,7 +1647,7 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 368.3 101.6 0)
+			(at 368.3 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1754,7 +1656,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "ACX1230-ND"
-			(at 368.3 101.6 0)
+			(at 368.3 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1763,7 +1665,7 @@
 			)
 		)
 		(property "MPN" "132134"
-			(at 368.3 101.6 0)
+			(at 368.3 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1772,7 +1674,7 @@
 			)
 		)
 		(property "Manufacturer" "Amphenol RF"
-			(at 368.3 101.6 0)
+			(at 368.3 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1781,7 +1683,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 368.3 101.6 0)
+			(at 368.3 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1790,16 +1692,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 368.3 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 368.3 101.6 0)
+			(at 368.3 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1928,15 +1821,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
-			(at 63.5 135.89 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "8df920b6-7e19-4a7d-b553-e2a09ad93e21")
 		)
@@ -1954,7 +1838,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 360.68 106.68 270)
+		(at 360.68 119.38 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1963,7 +1847,7 @@
 		(dnp no)
 		(uuid "407ff2d9-f159-480a-ae7b-d9356ed632a9")
 		(property "Reference" "D11"
-			(at 358.902 105.918 90)
+			(at 358.902 118.618 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1972,7 +1856,7 @@
 			)
 		)
 		(property "Value" "DF2B5M4CT,L3F"
-			(at 359.156 107.95 90)
+			(at 359.156 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1982,7 +1866,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-882D"
-			(at 360.68 106.68 0)
+			(at 360.68 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1991,7 +1875,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 360.68 106.68 0)
+			(at 360.68 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2000,7 +1884,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 360.68 106.68 0)
+			(at 360.68 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2009,7 +1893,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "DF2B5M4CTL3FCT-ND"
-			(at 360.68 106.68 0)
+			(at 360.68 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2018,7 +1902,7 @@
 			)
 		)
 		(property "MPN" "DF2B5M4CT,L3F"
-			(at 360.68 106.68 0)
+			(at 360.68 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2027,7 +1911,7 @@
 			)
 		)
 		(property "Manufacturer" "Toshiba Semiconductor and Storage"
-			(at 360.68 106.68 0)
+			(at 360.68 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2036,7 +1920,7 @@
 			)
 		)
 		(property "Size" ""
-			(at 358.394 108.712 90)
+			(at 358.394 121.412 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2045,7 +1929,7 @@
 			)
 		)
 		(property "Capacitance" "≤ 1 pF"
-			(at 358.902 107.696 90)
+			(at 358.902 120.396 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2054,7 +1938,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 360.68 106.68 90)
+			(at 360.68 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2063,16 +1947,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 360.68 106.68 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 360.68 106.68 90)
+			(at 360.68 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2097,7 +1972,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 231.14 182.88 0)
+		(at 231.14 170.18 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2106,7 +1981,7 @@
 		(dnp yes)
 		(uuid "5b87a25d-eaf3-402b-8f22-273525a02e4b")
 		(property "Reference" "R57"
-			(at 229.362 181.102 0)
+			(at 229.362 168.402 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2115,7 +1990,7 @@
 			)
 		)
 		(property "Value" "0 Ω"
-			(at 229.362 182.88 0)
+			(at 229.362 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2124,7 +1999,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 232.918 182.88 90)
+			(at 232.918 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2133,7 +2008,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 182.88 0)
+			(at 231.14 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2142,7 +2017,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 231.14 182.88 0)
+			(at 231.14 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2151,7 +2026,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-560112116001CT-ND"
-			(at 231.14 182.88 0)
+			(at 231.14 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2160,7 +2035,7 @@
 			)
 		)
 		(property "MPN" "560112116001"
-			(at 231.14 182.88 0)
+			(at 231.14 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2169,7 +2044,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 231.14 182.88 0)
+			(at 231.14 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2178,7 +2053,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 229.362 184.658 0)
+			(at 229.362 171.958 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2187,16 +2062,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 231.14 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 231.14 182.88 0)
+			(at 231.14 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2221,7 +2087,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 241.3 182.88 0)
+		(at 241.3 170.18 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2230,7 +2096,7 @@
 		(dnp yes)
 		(uuid "6fa0afe5-b365-4cd5-9bc0-2a818e59a8fb")
 		(property "Reference" "R61"
-			(at 239.522 181.102 0)
+			(at 239.522 168.402 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2239,7 +2105,7 @@
 			)
 		)
 		(property "Value" "0 Ω"
-			(at 239.522 182.88 0)
+			(at 239.522 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2248,7 +2114,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 243.078 182.88 90)
+			(at 243.078 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2257,7 +2123,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 241.3 182.88 0)
+			(at 241.3 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2266,7 +2132,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 241.3 182.88 0)
+			(at 241.3 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2275,7 +2141,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-560112116001CT-ND"
-			(at 241.3 182.88 0)
+			(at 241.3 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2284,7 +2150,7 @@
 			)
 		)
 		(property "MPN" "560112116001"
-			(at 241.3 182.88 0)
+			(at 241.3 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2293,7 +2159,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 241.3 182.88 0)
+			(at 241.3 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2302,7 +2168,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 239.522 184.658 0)
+			(at 239.522 171.958 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2311,16 +2177,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 241.3 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 241.3 182.88 0)
+			(at 241.3 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2345,15 +2202,15 @@
 	)
 	(symbol
 		(lib_id "Device:Antenna_Dipole")
-		(at 365.76 172.72 0)
+		(at 365.76 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "78c978c3-f7e3-4940-86ea-71d649527316")
 		(property "Reference" "AE1"
-			(at 371.856 175.006 0)
+			(at 371.856 162.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2362,7 +2219,7 @@
 			)
 		)
 		(property "Value" "Antenna_Shield"
-			(at 369.57 173.3549 0)
+			(at 369.57 160.6549 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2372,7 +2229,7 @@
 			)
 		)
 		(property "Footprint" "PCB_antenna:800MHz_antenna"
-			(at 365.76 172.72 0)
+			(at 365.76 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2381,7 +2238,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 365.76 172.72 0)
+			(at 365.76 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2390,7 +2247,7 @@
 			)
 		)
 		(property "Description" "Dipole antenna"
-			(at 365.76 172.72 0)
+			(at 365.76 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2399,16 +2256,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 365.76 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 365.76 172.72 0)
+			(at 365.76 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2432,8 +2280,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 368.3 111.76 0)
+		(lib_id "power:Earth")
+		(at 368.3 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2441,8 +2289,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7dc94978-756c-4b21-a9d4-5814a9dae5c1")
-		(property "Reference" "#PWR0107"
-			(at 368.3 118.11 0)
+		(property "Reference" "#PWR0106"
+			(at 368.3 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2451,7 +2299,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 368.3 116.84 0)
+			(at 368.3 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2460,7 +2308,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 368.3 111.76 0)
+			(at 368.3 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2468,8 +2316,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 368.3 111.76 0)
+		(property "Datasheet" "~"
+			(at 368.3 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2477,8 +2325,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 368.3 111.76 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 368.3 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2492,7 +2340,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/e6477a2c-b2b5-4454-829c-da955dc53725"
-					(reference "#PWR0107")
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -2500,7 +2348,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 241.3 106.68 0)
+		(at 241.3 119.38 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2509,7 +2357,7 @@
 		(dnp yes)
 		(uuid "90542579-6447-4adc-90e7-fadc8078a945")
 		(property "Reference" "R60"
-			(at 239.522 104.902 0)
+			(at 239.522 117.602 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2518,7 +2366,7 @@
 			)
 		)
 		(property "Value" "0 Ω"
-			(at 239.522 106.68 0)
+			(at 239.522 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2527,7 +2375,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 243.078 106.68 90)
+			(at 243.078 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2536,7 +2384,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 241.3 106.68 0)
+			(at 241.3 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2545,7 +2393,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 241.3 106.68 0)
+			(at 241.3 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2554,7 +2402,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-560112116001CT-ND"
-			(at 241.3 106.68 0)
+			(at 241.3 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2563,7 +2411,7 @@
 			)
 		)
 		(property "MPN" "560112116001"
-			(at 241.3 106.68 0)
+			(at 241.3 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2572,7 +2420,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 241.3 106.68 0)
+			(at 241.3 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2581,7 +2429,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 239.522 108.458 0)
+			(at 239.522 121.158 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2590,16 +2438,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 241.3 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 241.3 106.68 0)
+			(at 241.3 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2623,8 +2462,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 368.3 189.23 0)
+		(lib_id "power:Earth")
+		(at 368.3 176.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2632,8 +2471,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b09853c8-dec7-466b-ab64-83e26ea7898e")
-		(property "Reference" "#PWR0108"
-			(at 368.3 195.58 0)
+		(property "Reference" "#PWR0107"
+			(at 368.3 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2642,7 +2481,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 368.3 194.31 0)
+			(at 368.3 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2651,7 +2490,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 368.3 189.23 0)
+			(at 368.3 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2659,8 +2498,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 368.3 189.23 0)
+		(property "Datasheet" "~"
+			(at 368.3 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2668,8 +2507,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 368.3 189.23 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 368.3 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2683,7 +2522,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/e6477a2c-b2b5-4454-829c-da955dc53725"
-					(reference "#PWR0108")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -2691,7 +2530,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 236.22 177.8 90)
+		(at 236.22 165.1 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2700,7 +2539,7 @@
 		(dnp no)
 		(uuid "ca51ac1f-95ff-4b75-9932-aa279c07cef1")
 		(property "Reference" "R59"
-			(at 236.22 172.72 90)
+			(at 236.22 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2708,7 +2547,7 @@
 			)
 		)
 		(property "Value" "0 Ω"
-			(at 236.22 174.244 90)
+			(at 236.22 161.544 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2716,7 +2555,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 236.22 176.022 90)
+			(at 236.22 163.322 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2725,7 +2564,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 236.22 177.8 0)
+			(at 236.22 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2734,7 +2573,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 236.22 177.8 0)
+			(at 236.22 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2743,7 +2582,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-560112110001CT-ND"
-			(at 236.22 177.8 0)
+			(at 236.22 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2752,7 +2591,7 @@
 			)
 		)
 		(property "MPN" "560112110001"
-			(at 236.22 177.8 0)
+			(at 236.22 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2761,7 +2600,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 236.22 177.8 0)
+			(at 236.22 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2770,7 +2609,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 236.22 175.768 90)
+			(at 236.22 163.068 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2778,7 +2617,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 236.22 177.8 90)
+			(at 236.22 165.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2787,16 +2626,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 236.22 177.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 236.22 177.8 90)
+			(at 236.22 165.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2814,6 +2644,127 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/e6477a2c-b2b5-4454-829c-da955dc53725"
 					(reference "R59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 63.5 143.51 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eb0750bb-f728-4812-82c8-50031af3cb3b")
+		(property "Reference" "R55"
+			(at 63.5 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0 Ω"
+			(at 63.5 139.954 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 63.5 141.732 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110001CT-ND"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110001"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0402"
+			(at 63.5 141.478 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 63.5 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 63.5 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5063dcf-a6a9-47be-81ff-5a2adaf84802")
+		)
+		(pin "2"
+			(uuid "13401076-d173-48ad-807a-8799f7b65afc")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/e6477a2c-b2b5-4454-829c-da955dc53725"
+					(reference "R55")
 					(unit 1)
 				)
 			)

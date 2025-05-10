@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-05-09")
+		(date "2025-05-10")
 		(rev "v5.0.0")
 	)
 	(lib_symbols
@@ -322,7 +322,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+		(symbol "power:Earth"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -343,7 +343,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "GND"
+			(property "Value" "Earth"
 				(at 0 -3.81 0)
 				(effects
 					(font
@@ -360,7 +360,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -369,7 +369,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(property "Description" "Power symbol creates a global label with name \"Earth\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -378,7 +378,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "global ground gnd"
 				(at 0 0 0)
 				(effects
 					(font
@@ -387,10 +387,46 @@
 					(hide yes)
 				)
 			)
-			(symbol "GND_0_1"
+			(symbol "Earth_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+						(xy -0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -2.54) (xy 0.127 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -401,7 +437,7 @@
 					)
 				)
 			)
-			(symbol "GND_1_1"
+			(symbol "Earth_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -424,27 +460,67 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "There's no real chassis or a case to mount the PCB,\nso just place the mounting holes at the corners of the PCB."
+	(text "- Schematic comments are in blue"
 		(exclude_from_sim no)
-		(at 47.244 266.192 0)
+		(at 15.24 262.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 0 0 194 1)
 			)
+			(justify left)
+		)
+		(uuid "19452172-fff1-4f06-88c0-fd95f324d72d")
+	)
+	(text "- Layout comments are in magenta"
+		(exclude_from_sim no)
+		(at 15.24 265.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 194 1)
+			)
+			(justify left)
+		)
+		(uuid "3e8cc5f3-e2a1-4b96-b6f9-60ea61d39b6d")
+	)
+	(text "There's no real chassis or a case to mount the PCB,\nso just place the mounting holes at the corners of the PCB."
+		(exclude_from_sim no)
+		(at 205.74 228.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 194 1)
+			)
+			(justify left top)
 		)
 		(uuid "5571a628-e5ce-4932-aa05-15b27a6c8f99")
 	)
-	(text "Place fiducials on three corners of the PCB."
+	(text "Place fiducials at three corners of the PCB."
 		(exclude_from_sim no)
-		(at 114.3 268.224 0)
+		(at 279.4 228.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 194 0 194 1)
 			)
+			(justify left top)
 		)
 		(uuid "5db3d87e-da32-430e-8bce-acb8c089f601")
 	)
-	(text "This is a project for practicing PCB design and programming.\n\nThe result is a device that is powered either with a battery or with a USB connection.\nThe device can recharge the battery via the USB connection.\n\nThe device includes:\n  - An example sensor (temperature)\n  - External flash for updating the firmware over the air (FOTA)\n  - A modem module that connects the main microcontroller to the internet with LTE CAT-M1\n  - Option to use either an external antenna or an integrated antenna\n\nA key goal of the project is to ensure it has as little reliance as possible on totalitarian\ncountries (e.g., China or Russia) or on hostile countries (e.g., USA).\nComponent sourcing must be done carefully to select manufacturers who can supply parts\nthat are not produced in such countries.\nInstead, democratic countries (e.g., Taiwan and Germany) should be preferred.\n\nTo reduce strain on the global environment, manufacturing and sourcing is centered around\nEurope.\n\nFor manufacturing, the following companies are recommended:\n- Aisler (Germany)\n- Aspocomp? (Finland)\n\nFor components, the following companies are recommended:\n- Würth Elektronik (Germany)\n- Infineon Technologies (Germany)\n- STMicroelectronics (Italy)"
+	(text "- Mechanical comments are in green"
+		(exclude_from_sim no)
+		(at 15.24 267.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 194 0 1)
+			)
+			(justify left)
+		)
+		(uuid "6363c4ec-6886-4a7e-af61-da201b10e83c")
+	)
+	(text "This is a project for practicing PCB design and programming.\n\nThe result is a device that is powered either with a battery or with a USB connection.\nThe device can recharge the battery via the USB connection.\n\nThe device includes:\n  - An example sensor (temperature)\n  - External flash for updating the firmware over the air (FOTA)\n  - A modem module that connects the main microcontroller to the internet with LTE CAT-M1\n  - Option to use either an external antenna or an integrated antenna\n\nA key goal of the project is to ensure it has as little reliance as possible on totalitarian\ncountries (e.g., China or Russia) or on hostile countries (e.g., USA).\nComponent sourcing must be done carefully to select manufacturers who can supply parts\nthat are not produced in such countries.\nInstead, democratic countries (e.g., Taiwan and Germany) should be preferred.\n\nTo reduce strain on the global environment, manufacturing and sourcing is centered around\nEurope.\n\nFor manufacturing, the following companies are recommended:\n- Aisler (Germany)\n- Aspocomp? (Finland)\n\nFor components, the following companies are recommended:\n- Würth Elektronik (Germany)\n- Infineon Technologies (Germany)\n- STMicroelectronics (Italy)\n\nFor suppliers, the following companies are recommended:\n- Transfer Multisort Elektronik (Poland)\n- RS Components (England)"
 		(exclude_from_sim no)
 		(at 15.24 63.5 0)
 		(effects
@@ -456,15 +532,39 @@
 		)
 		(uuid "b94eda75-5ba9-4359-bbae-047503216cba")
 	)
-	(text "Place a stitched GND guard rail around the edges of the PCB\nto provide a grounding point for human touch."
+	(text "Place a stitched GND guard rail around the edges of the PCB\nto provide a grounding point for human touch when handling the device."
 		(exclude_from_sim no)
-		(at 186.182 268.732 0)
+		(at 330.2 228.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 194 0 194 1)
 			)
+			(justify left top)
 		)
 		(uuid "f537f821-913f-49bb-a009-fdda546dfa42")
+	)
+	(text_box "Notes"
+		(exclude_from_sim no)
+		(at 12.7 251.46 0)
+		(size 285.75 33.02)
+		(margins 0.9525 2 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "4dca222e-8ff4-4da1-b112-3c6b3f070407")
 	)
 	(text_box "Iida devkit"
 		(exclude_from_sim no)
@@ -491,7 +591,7 @@
 	(text_box "Block diagram"
 		(exclude_from_sim no)
 		(at 203.2 50.8 0)
-		(size 203.2 200.66)
+		(size 203.2 167.64)
 		(margins 0.9525 2 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -512,8 +612,8 @@
 	)
 	(text_box "Mechanical"
 		(exclude_from_sim no)
-		(at 12.7 251.46 0)
-		(size 285.75 33.02)
+		(at 203.2 218.44 0)
+		(size 203.2 33.02)
 		(margins 0.9525 2 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -555,7 +655,7 @@
 		(uuid "fc0c0ea0-6294-4533-83e7-30955955ee3b")
 	)
 	(junction
-		(at 54.61 276.86)
+		(at 245.11 243.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "062403b7-13ce-4a49-b1b0-dd820d284646")
@@ -567,10 +667,10 @@
 		(uuid "3af56dcd-c728-4093-91dc-1ce72299cf23")
 	)
 	(junction
-		(at 44.45 276.86)
+		(at 234.95 243.84)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "939d13a2-cc0b-4354-bde8-a93e85d138b7")
+		(uuid "bc0f3575-1bd0-4dc4-80d4-6dac45927ceb")
 	)
 	(junction
 		(at 270.51 110.49)
@@ -579,7 +679,7 @@
 		(uuid "e0122a6a-5670-445e-a405-681022e6dd49")
 	)
 	(junction
-		(at 49.53 276.86)
+		(at 240.03 243.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f64cad8a-0185-476f-91dc-4b8cfcbc11f3")
@@ -686,6 +786,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 245.11) (xy 245.11 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "386fda58-e430-490d-bae8-b2077de6227b")
+	)
+	(wire
+		(pts
 			(xy 259.08 138.43) (xy 279.4 138.43)
 		)
 		(stroke
@@ -716,13 +826,23 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 276.86) (xy 49.53 276.86)
+			(xy 234.95 243.84) (xy 240.03 243.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5af8a3c2-e4ba-48d5-8484-80313c425d14")
+	)
+	(wire
+		(pts
+			(xy 234.95 242.57) (xy 234.95 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67b638d1-3498-4b69-a40e-cb4940cd878e")
 	)
 	(wire
 		(pts
@@ -756,7 +876,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 276.86) (xy 44.45 276.86)
+			(xy 229.87 243.84) (xy 234.95 243.84)
 		)
 		(stroke
 			(width 0)
@@ -776,13 +896,23 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 276.86) (xy 54.61 276.86)
+			(xy 240.03 243.84) (xy 245.11 243.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a4e0ba10-6c1f-42ce-8447-de68f649553c")
+	)
+	(wire
+		(pts
+			(xy 229.87 243.84) (xy 229.87 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdbac034-567d-46cb-a3eb-b2d672dce84c")
 	)
 	(wire
 		(pts
@@ -813,6 +943,16 @@
 			(type default)
 		)
 		(uuid "cf877adf-639e-45aa-b479-9ce7558174d4")
+	)
+	(wire
+		(pts
+			(xy 245.11 242.57) (xy 245.11 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfa10933-25a5-450f-a9df-2e1674feb9ed")
 	)
 	(wire
 		(pts
@@ -856,6 +996,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 242.57) (xy 240.03 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb5f4bf6-2044-458c-9151-2dd85df0240f")
+	)
+	(wire
+		(pts
 			(xy 347.98 130.81) (xy 354.33 130.81)
 		)
 		(stroke
@@ -876,7 +1026,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 39.37 274.32 0)
+		(at 229.87 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -884,16 +1034,15 @@
 		(dnp no)
 		(uuid "160058f9-baa4-448c-b354-99225a2ceae8")
 		(property "Reference" "H1"
-			(at 38.1 269.875 0)
+			(at 229.87 235.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 41.91 274.32 0)
+			(at 232.41 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -903,7 +1052,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 39.37 274.32 0)
+			(at 229.87 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -912,7 +1061,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 274.32 0)
+			(at 229.87 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -921,7 +1070,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 39.37 274.32 0)
+			(at 229.87 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -930,7 +1079,7 @@
 			)
 		)
 		(property "Manufacturer" "-"
-			(at 39.37 274.32 0)
+			(at 229.87 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -939,7 +1088,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 39.37 274.32 0)
+			(at 229.87 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -948,7 +1097,7 @@
 			)
 		)
 		(property "MPN" "-"
-			(at 39.37 274.32 0)
+			(at 229.87 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -957,16 +1106,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 39.37 274.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 39.37 274.32 0)
+			(at 229.87 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -988,7 +1128,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 54.61 274.32 0)
+		(at 245.11 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -996,16 +1136,15 @@
 		(dnp no)
 		(uuid "37b17bca-3d3c-4c85-92bf-245f7303c029")
 		(property "Reference" "H4"
-			(at 53.34 269.875 0)
+			(at 245.11 235.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 57.15 274.32 0)
+			(at 247.65 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1015,7 +1154,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 54.61 274.32 0)
+			(at 245.11 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1024,7 +1163,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 274.32 0)
+			(at 245.11 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1033,7 +1172,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 54.61 274.32 0)
+			(at 245.11 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1042,7 +1181,7 @@
 			)
 		)
 		(property "Manufacturer" "-"
-			(at 54.61 274.32 0)
+			(at 245.11 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1051,7 +1190,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 54.61 274.32 0)
+			(at 245.11 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1060,7 +1199,7 @@
 			)
 		)
 		(property "MPN" "-"
-			(at 54.61 274.32 0)
+			(at 245.11 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1069,16 +1208,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 54.61 274.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 54.61 274.32 0)
+			(at 245.11 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1099,8 +1229,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 54.61 276.86 0)
+		(lib_id "power:Earth")
+		(at 245.11 245.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1109,7 +1239,7 @@
 		(fields_autoplaced yes)
 		(uuid "4b88cd83-3afd-4da0-96db-2c7305c3c68f")
 		(property "Reference" "#PWR01"
-			(at 54.61 283.21 0)
+			(at 245.11 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1118,7 +1248,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 281.94 0)
+			(at 245.11 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1127,7 +1257,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 276.86 0)
+			(at 245.11 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1135,8 +1265,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 54.61 276.86 0)
+		(property "Datasheet" "~"
+			(at 245.11 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1144,8 +1274,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 276.86 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 245.11 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1167,7 +1297,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 114.3 273.05 0)
+		(at 299.72 234.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1175,16 +1305,15 @@
 		(dnp no)
 		(uuid "61c880d6-eb78-4373-ab8f-f1774093457b")
 		(property "Reference" "FID2"
-			(at 116.078 273.05 0)
+			(at 299.72 232.156 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 116.84 274.3199 0)
+			(at 302.26 236.2199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1194,7 +1323,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 114.3 273.05 0)
+			(at 299.72 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1203,7 +1332,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 114.3 273.05 0)
+			(at 299.72 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1212,16 +1341,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 114.3 273.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 114.3 273.05 0)
+			(at 299.72 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1240,7 +1360,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 44.45 274.32 0)
+		(at 234.95 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1248,16 +1368,15 @@
 		(dnp no)
 		(uuid "701cbfd0-af05-42fa-a2d4-17530a2367e3")
 		(property "Reference" "H2"
-			(at 43.18 269.875 0)
+			(at 234.95 235.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 46.99 274.32 0)
+			(at 237.49 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1267,7 +1386,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 44.45 274.32 0)
+			(at 234.95 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1276,7 +1395,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 44.45 274.32 0)
+			(at 234.95 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1285,7 +1404,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 44.45 274.32 0)
+			(at 234.95 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1294,7 +1413,7 @@
 			)
 		)
 		(property "Manufacturer" "-"
-			(at 44.45 274.32 0)
+			(at 234.95 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1303,7 +1422,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 44.45 274.32 0)
+			(at 234.95 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1312,7 +1431,7 @@
 			)
 		)
 		(property "MPN" "-"
-			(at 44.45 274.32 0)
+			(at 234.95 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1321,16 +1440,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 44.45 274.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 44.45 274.32 0)
+			(at 234.95 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1352,7 +1462,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 101.6 273.05 0)
+		(at 287.02 234.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1360,16 +1470,15 @@
 		(dnp no)
 		(uuid "87581f6e-a7ba-407e-a652-1fbebd13a04c")
 		(property "Reference" "FID1"
-			(at 103.378 273.05 0)
+			(at 287.02 232.156 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 104.14 274.3199 0)
+			(at 289.56 236.2199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1379,7 +1488,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 101.6 273.05 0)
+			(at 287.02 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1388,7 +1497,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 273.05 0)
+			(at 287.02 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1397,16 +1506,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 101.6 273.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 101.6 273.05 0)
+			(at 287.02 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1490,7 +1590,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 127 273.05 0)
+		(at 312.42 234.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1498,16 +1598,15 @@
 		(dnp no)
 		(uuid "cc029735-4156-42eb-8513-6d4abdc50dad")
 		(property "Reference" "FID3"
-			(at 128.778 273.05 0)
+			(at 312.42 232.156 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 129.54 274.3199 0)
+			(at 314.96 236.2199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1517,7 +1616,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 127 273.05 0)
+			(at 312.42 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1526,7 +1625,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 127 273.05 0)
+			(at 312.42 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1535,16 +1634,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 127 273.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 127 273.05 0)
+			(at 312.42 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1563,7 +1653,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 49.53 274.32 0)
+		(at 240.03 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1571,16 +1661,15 @@
 		(dnp no)
 		(uuid "e64f6084-e950-4b3e-b4b3-d057eb9b5b4e")
 		(property "Reference" "H3"
-			(at 48.26 269.875 0)
+			(at 240.03 235.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 52.07 274.32 0)
+			(at 242.57 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1590,7 +1679,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 49.53 274.32 0)
+			(at 240.03 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1599,7 +1688,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 274.32 0)
+			(at 240.03 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1608,7 +1697,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 49.53 274.32 0)
+			(at 240.03 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1617,7 +1706,7 @@
 			)
 		)
 		(property "Manufacturer" "-"
-			(at 49.53 274.32 0)
+			(at 240.03 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1626,7 +1715,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 49.53 274.32 0)
+			(at 240.03 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1635,7 +1724,7 @@
 			)
 		)
 		(property "MPN" "-"
-			(at 49.53 274.32 0)
+			(at 240.03 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1644,16 +1733,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 49.53 274.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 49.53 274.32 0)
+			(at 240.03 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
