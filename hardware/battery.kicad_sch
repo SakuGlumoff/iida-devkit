@@ -2177,6 +2177,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+BATT"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+BATT"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+BATT\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power battery"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+BATT_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+BATT_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:Earth"
 			(power)
 			(pin_numbers
@@ -2723,6 +2848,12 @@
 		(uuid "9813c990-9529-40c4-9fd4-c5ee1b5edf0a")
 	)
 	(junction
+		(at 312.42 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9efb49bb-3e27-44f9-8470-630bb8fc212d")
+	)
+	(junction
 		(at 50.8 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2745,12 +2876,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db369431-181e-4ff9-b412-21c0c0322567")
-	)
-	(junction
-		(at 312.42 148.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "df466c72-4c2a-4efe-88cb-d749e99561ff")
 	)
 	(junction
 		(at 177.8 168.91)
@@ -2968,7 +3093,7 @@
 	)
 	(wire
 		(pts
-			(xy 369.57 158.75) (xy 370.84 158.75)
+			(xy 369.57 158.75) (xy 374.65 158.75)
 		)
 		(stroke
 			(width 0)
@@ -2998,7 +3123,7 @@
 	)
 	(wire
 		(pts
-			(xy 369.57 168.91) (xy 370.84 168.91)
+			(xy 369.57 168.91) (xy 374.65 168.91)
 		)
 		(stroke
 			(width 0)
@@ -3348,7 +3473,7 @@
 	)
 	(wire
 		(pts
-			(xy 369.57 148.59) (xy 370.84 148.59)
+			(xy 369.57 148.59) (xy 374.65 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3375,16 +3500,6 @@
 			(type default)
 		)
 		(uuid "c9fdca20-feba-4304-b056-5a0c2c7e024c")
-	)
-	(wire
-		(pts
-			(xy 312.42 148.59) (xy 317.5 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cba4a808-e172-43b3-a426-92307c9ecddd")
 	)
 	(wire
 		(pts
@@ -4374,17 +4489,6 @@
 		)
 		(uuid "e2b10e4d-b442-4120-b3ed-ead983370cbf")
 	)
-	(hierarchical_label "V_5V0"
-		(shape input)
-		(at 370.84 158.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1627dacf-9180-4ca1-ae6f-9e72c58a42e9")
-	)
 	(hierarchical_label "V_BAT"
 		(shape output)
 		(at 255.27 139.7 0)
@@ -4395,39 +4499,6 @@
 			(justify left)
 		)
 		(uuid "45aa8bf4-b6a0-4bdc-9e45-8ebc90497a70")
-	)
-	(hierarchical_label "V_5V0"
-		(shape input)
-		(at 370.84 148.59 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "60fc46ee-2c62-4851-b1f5-ee16bc659163")
-	)
-	(hierarchical_label "V_5V0"
-		(shape input)
-		(at 370.84 168.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ed2e1fbe-3548-4220-8d9f-896c700bef49")
-	)
-	(hierarchical_label "V_5V0"
-		(shape input)
-		(at 317.5 148.59 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f17ee0f8-b611-468d-bc93-591c15631e9c")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -4857,6 +4928,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 374.65 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09013df9-e517-4c29-9220-84a50332d58d")
+		(property "Reference" "#PWR020"
+			(at 374.65 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V_5V0"
+			(at 374.65 155.194 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.65 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 374.65 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 374.65 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57b7a3fa-be73-463f-a3fb-a3afb7e49e17")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 365.76 148.59 0)
 		(unit 1)
@@ -4955,118 +5091,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
 					(reference "LED1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 356.87 158.75 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0e4f17f5-1490-4f74-9749-ecdced170b10")
-		(property "Reference" "R9"
-			(at 356.87 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.2 kΩ"
-			(at 356.87 156.718 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 356.87 156.972 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 356.87 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 356.87 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 356.87 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 356.87 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112110087"
-			(at 356.87 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "≤ 10 %"
-			(at 356.87 156.718 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "732-560112110087CT-ND"
-			(at 356.87 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5d6c045e-5e41-48b1-943a-e357d0ea4360")
-		)
-		(pin "1"
-			(uuid "60e2b29c-c197-4ccf-a4f9-5f767b65376e")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -5384,7 +5408,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ca152f3-94fa-43a9-bc8d-468afe8b7442")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR013"
 			(at 254 175.26 0)
 			(effects
 				(font
@@ -5435,7 +5459,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR011")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5508,32 +5532,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 356.87 148.59 270)
+		(lib_id "power:+BATT")
+		(at 312.42 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "535a9695-371e-486a-a768-612bfa0caf62")
-		(property "Reference" "R8"
-			(at 356.87 144.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.2 kΩ"
-			(at 356.87 146.558 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 356.87 146.812 90)
+		(uuid "4b1d4a2b-fd99-4d07-9f5c-1d85c9d7c922")
+		(property "Reference" "#PWR017"
+			(at 312.42 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5541,8 +5549,25 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 356.87 148.59 0)
+		(property "Value" "V_5V0"
+			(at 312.42 145.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 312.42 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 312.42 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5551,69 +5576,86 @@
 			)
 		)
 		(property "Description" ""
-			(at 356.87 148.59 0)
+			(at 312.42 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 356.87 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 356.87 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112110087"
-			(at 356.87 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "≤ 10 %"
-			(at 356.87 146.558 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "732-560112110087CT-ND"
-			(at 356.87 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e24f389c-cddf-4e29-a767-f55ac3ac895c")
 		)
 		(pin "1"
-			(uuid "7b6e12f0-9a97-4847-839c-2d610d3ecba2")
+			(uuid "91de6ce6-d1d9-4f89-9875-9390d8c61a1a")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "R8")
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 374.65 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5468ac0f-4721-45b6-a698-ac753625e1af")
+		(property "Reference" "#PWR021"
+			(at 374.65 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V_5V0"
+			(at 374.65 165.354 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.65 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 374.65 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 374.65 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "584b82ee-fd5d-4005-a0f0-f9529948eea2")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -5746,118 +5788,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
 					(reference "TP5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 356.87 168.91 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6ed21e3c-7b47-4138-a17e-35d26764eb57")
-		(property "Reference" "R10"
-			(at 356.87 165.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.2 kΩ"
-			(at 356.87 166.878 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 356.87 167.132 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 356.87 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 356.87 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 356.87 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 356.87 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112110087"
-			(at 356.87 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "≤ 10 %"
-			(at 356.87 166.878 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "732-560112110087CT-ND"
-			(at 356.87 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f63c76a4-ae7a-43ab-b82e-004f99498834")
-		)
-		(pin "1"
-			(uuid "348fef27-7965-4e1e-a746-e67aff815a6b")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -6008,6 +5938,120 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 356.87 168.91 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "79f677c0-369b-4017-afe7-460f59753119")
+		(property "Reference" "R10"
+			(at 356.87 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7 kΩ"
+			(at 356.87 166.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 356.87 167.132 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 356.87 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 356.87 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 356.87 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110245"
+			(at 356.87 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110245CT-ND"
+			(at 356.87 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 356.87 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "≤ 5 %"
+			(at 358.648 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6b96d683-61c8-4e3d-a904-ed5ea1ef1424")
+		)
+		(pin "1"
+			(uuid "b080befb-7a44-4799-9de5-d61f7048e7a9")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -6380,7 +6424,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90b4acfe-402b-422a-9d7d-366829ea79d9")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR014"
 			(at 264.16 175.26 0)
 			(effects
 				(font
@@ -6431,7 +6475,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR012")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -6560,7 +6604,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b42c31b-4d21-4531-9731-1a3a11a590b1")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR012"
 			(at 223.52 185.42 0)
 			(effects
 				(font
@@ -6611,7 +6655,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR010")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -6918,6 +6962,120 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 356.87 158.75 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b2478f7b-359a-41e9-97cf-5c39623ee162")
+		(property "Reference" "R9"
+			(at 356.87 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7 kΩ"
+			(at 356.87 156.718 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 356.87 156.972 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 356.87 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 356.87 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 356.87 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110245"
+			(at 356.87 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110245CT-ND"
+			(at 356.87 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 356.87 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "≤ 5 %"
+			(at 358.648 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e8629cda-31bb-426b-9e43-e3a62ad1d765")
+		)
+		(pin "1"
+			(uuid "3380c6cc-7ef2-4009-a2cc-cbf95ab08684")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 345.44 158.75 90)
 		(unit 1)
@@ -6993,7 +7151,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b890b18e-20a1-4090-b945-043f45d6181f")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR015"
 			(at 269.24 175.26 0)
 			(effects
 				(font
@@ -7044,7 +7202,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR013")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -7887,6 +8045,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 374.65 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9c4ffe0-aa5c-421d-954d-c1e61719d745")
+		(property "Reference" "#PWR019"
+			(at 374.65 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V_5V0"
+			(at 374.65 145.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.65 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 374.65 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 374.65 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0dda606-5430-4607-a235-83447522610e")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Battery_Management:MCP73833-xxx-MF")
 		(at 292.1 153.67 0)
 		(mirror y)
@@ -8027,6 +8250,120 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 356.87 148.59 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e2e8bcad-138c-4c9d-874e-7eb85933da86")
+		(property "Reference" "R8"
+			(at 356.87 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7 kΩ"
+			(at 356.87 146.558 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 356.87 146.812 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 356.87 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 356.87 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 356.87 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110245"
+			(at 356.87 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110245CT-ND"
+			(at 356.87 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 356.87 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "≤ 5 %"
+			(at 358.648 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5f5298b8-850f-4c5c-b349-a5d82685a761")
+		)
+		(pin "1"
+			(uuid "ff1dc33f-9bab-468a-85fd-b3cb1ac90b35")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:Earth")
 		(at 162.56 165.1 0)
 		(unit 1)
@@ -8036,7 +8373,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9cb1312-078a-4d7f-8346-5a18e0267645")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR011"
 			(at 162.56 171.45 0)
 			(effects
 				(font
@@ -8087,7 +8424,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR09")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -8169,7 +8506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec35a1d5-75ff-4937-845b-c22e3c8990d4")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR018"
 			(at 312.42 165.1 0)
 			(effects
 				(font
@@ -8220,7 +8557,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR015")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -8426,7 +8763,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5f6f34c-ce82-45b9-b44c-176c94056214")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR016"
 			(at 292.1 172.72 0)
 			(effects
 				(font
@@ -8477,7 +8814,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR014")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
