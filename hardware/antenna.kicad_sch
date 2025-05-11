@@ -707,7 +707,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "The device incorporates an integrated PCB antenna as well as an SMA jack.\n\nSelection between the two antennas is done using a 0402 0 Ω jumper to\nminimize impedance mismatch in the antenna rail."
+	(text "The device incorporates an integrated PCB antenna as well as an SMA jack.\n\nSelection between the two antennas is made using a 0402 0 Ω jumper to\nminimize impedance mismatch in the antenna rail."
 		(exclude_from_sim no)
 		(at 15.24 63.5 0)
 		(effects
@@ -731,7 +731,7 @@
 		)
 		(uuid "3c16e326-c560-4d7e-b85f-bcc124d37059")
 	)
-	(text "The antenna feed line from the module's ANT pin to\nthe antenna should be matched to 50 Ω.\n\nThe target resonant frequency is\nthe LTE band 20 (800 MHz).\n\nProvide a footprint for a Π-type matching network for\nlater tuning."
+	(text "The antenna feed line from the module's ANT pin to\nthe antenna should be matched to 50 Ω.\n\nThe target resonant frequency is in\nthe LTE band 20 (800 MHz).\n\nProvide a footprint for a Π-type matching network\nfor later tuning."
 		(exclude_from_sim no)
 		(at 171.45 63.5 0)
 		(effects
@@ -743,19 +743,20 @@
 		)
 		(uuid "3e0a7194-1ed2-4c19-a405-d30b16aa375e")
 	)
-	(text "- Follow the natenna layout guidelines according to \"SARA-R5 series - System integration manual\" (UBX-19041356 - R20)\n  chapter \"2.4.1 General guidelines for antenna interfaces\"."
+	(text "- Follow the antenna layout guidelines according to \"SARA-R5 series - System integration manual\" (UBX-19041356 - R20)\n  chapter \"2.4.1 General guidelines for antenna interfaces\"."
 		(exclude_from_sim no)
 		(at 15.24 262.89 0)
 		(effects
 			(font
 				(size 2.54 2.54)
 				(thickness 0.3175)
+				(color 194 0 194 1)
 			)
 			(justify left top)
 		)
 		(uuid "9f5057d1-125c-4ae8-a1c8-1f66b8437ffd")
 	)
-	(text "As the SMA jack is a human-interface,\nprovide ESD protection on it.\n\nEnsure that the TVS protection doesn't\nnegatively affect the matching network too much."
+	(text "Since the SMA jack is a human interface,\nprovide ESD protection for it.\n\nEnsure that the TVS protection does not negatively\naffect the matching network too much."
 		(exclude_from_sim no)
 		(at 300.99 63.5 0)
 		(effects

@@ -960,7 +960,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "As the SIM card can be either placed in\nthe connector or not, provide detection\nfor the SIM card insertion and removal."
+	(text "Since the SIM card can either be placed\nin the connector or not, provide detection\nfor its insertion and removal."
 		(exclude_from_sim no)
 		(at 300.99 63.5 0)
 		(effects
@@ -972,7 +972,7 @@
 		)
 		(uuid "06f4dfca-6be6-436b-aae8-782fc03f83e7")
 	)
-	(text "- SIM detection implemented according to \"SARA-R5 series - System integration manual\" (UBX-19041356 - R20)\n  chapter \"2.5.1.4 Guidelines for single SIM card connection with detection\"."
+	(text "- SIM detection implemented according to \"SARA-R5 series - System integration manual\" (UBX-19041356 - R20)\n  chapter \"2.5.1.4 Guidelines for single SIM card connection with detection\" but modified to work with\n  a normally closed switch."
 		(exclude_from_sim no)
 		(at 15.24 262.89 0)
 		(effects
@@ -984,7 +984,7 @@
 		)
 		(uuid "1e3093ad-ddf3-4cca-8580-19ac7cb1e70c")
 	)
-	(text "SIM_DET is active high (1.8 V).\nWhen SIM connected: CD not shorted to GND -> SIM_DET is HIGH.\nWhen SIM not connected: CD shorted to GND -> SIM_DET is LOW."
+	(text "SIM_DET is active high (1.8 V).\nWhen the SIM is inserted, CD is not shorted to GND, so SIM_DET is HIGH.\nWhen the SIM is not inserted, CD is shorted to GND, so SIM_DET is LOW."
 		(exclude_from_sim no)
 		(at 317.5 134.62 0)
 		(effects
@@ -995,7 +995,7 @@
 		)
 		(uuid "4a2ac2f5-6ecd-419f-adcb-4cc389b4ad7a")
 	)
-	(text "Provide basic filtering of high frequency noise on\nthe SIM connection lines.\n\nNoise from the antenna can easily couple to\nSIM connection lines."
+	(text "Provide basic filtering of high-frequency noise on\nthe SIM connection lines.\n\nNoise from the antenna can easily couple onto\nthe SIM connection lines."
 		(exclude_from_sim no)
 		(at 190.5 63.5 0)
 		(effects
@@ -1007,7 +1007,7 @@
 		)
 		(uuid "5a982b49-3bf0-4475-ae88-b25dc7338890")
 	)
-	(text "Since the SIM connector is a\nhuman interface, ensure that\nan ESD event does not damage\neither the SIM card or the module."
+	(text "Since the SIM connector is a human\ninterface, ensure that no ESD events\ndamage either the SIM card or\nthe module."
 		(exclude_from_sim no)
 		(at 102.87 63.5 0)
 		(effects
@@ -1019,7 +1019,7 @@
 		)
 		(uuid "7b07a124-2054-4712-aa8c-2c5bb63918ee")
 	)
-	(text "Modem network connection requires\na registered SIM.\n\nConnect a nano-SIM to\nthe SIM connector."
+	(text "A modem network connection requires\na registered SIM card.\n\nInsert a nano-SIM into the SIM connector."
 		(exclude_from_sim no)
 		(at 15.24 63.5 0)
 		(effects

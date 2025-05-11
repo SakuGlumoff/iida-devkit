@@ -6474,7 +6474,7 @@
 	)
 	(text "Use a common center pad."
 		(exclude_from_sim no)
-		(at 391.668 109.982 0)
+		(at 368.808 108.712 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6484,7 +6484,7 @@
 		)
 		(uuid "8d305fcc-72f2-4a39-ad7a-f46ef34f6eb1")
 	)
-	(text "Place headers for GPIOs along the edges of the PCB."
+	(text "Place the GPIO headers along the edges of the PCB."
 		(exclude_from_sim no)
 		(at 306.07 212.09 0)
 		(effects
@@ -6518,7 +6518,7 @@
 		)
 		(uuid "dcd7106a-7948-4f75-9106-7d4cb244a422")
 	)
-	(text_box "V_BAT is at 4.2 V when fully charged.\nThis circuit draws at most\n4.2 V / 2 MΩ = 2.1 µA.\n\nV_BAT_SENSE is 2.1 V when fully charged and 1.75 V when almost empty."
+	(text_box "V_BAT is at 4.2 V when fully charged.\nThis circuit draws a maximum current of:\n4.2 V / 2 MΩ = 2.1 µA.\n\nV_BAT_SENSE is 2.1 V when fully charged and 1.75 V when nearly empty."
 		(exclude_from_sim no)
 		(at 330.2 52.07 0)
 		(size 74.93 12.7)
@@ -6712,10 +6712,10 @@
 		)
 		(uuid "a1dd07b8-77ed-4ae5-a440-725315233cf3")
 	)
-	(text_box "Tie LOW  to boot from flash.\nTie HIGH to boot to system bootloader.\n\nAs the system bootloader is not used,\nBOOT0 should be tied LOW."
+	(text_box "Connect LOW to boot from flash.\nConnect HIGH to boot to the system bootloader.\n\nSince the system bootloader is not used,\nBOOT0 should be connected to LOW."
 		(exclude_from_sim no)
-		(at 375.92 80.01 0)
-		(size 29.21 17.78)
+		(at 378.46 100.33 0)
+		(size 26.67 20.32)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -7072,7 +7072,7 @@
 		(uuid "a83ffd20-d305-4039-b376-5922cef06ee7")
 	)
 	(junction
-		(at 393.7 111.76)
+		(at 370.84 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac8eba8a-d221-48d1-9412-235be53ca1d0")
@@ -7609,7 +7609,7 @@
 	)
 	(wire
 		(pts
-			(xy 393.7 120.65) (xy 393.7 119.38)
+			(xy 370.84 119.38) (xy 370.84 118.11)
 		)
 		(stroke
 			(width 0)
@@ -7769,7 +7769,7 @@
 	)
 	(wire
 		(pts
-			(xy 393.7 102.87) (xy 393.7 104.14)
+			(xy 370.84 101.6) (xy 370.84 102.87)
 		)
 		(stroke
 			(width 0)
@@ -7799,7 +7799,7 @@
 	)
 	(wire
 		(pts
-			(xy 330.2 111.76) (xy 393.7 111.76)
+			(xy 330.2 110.49) (xy 370.84 110.49)
 		)
 		(stroke
 			(width 0)
@@ -10179,7 +10179,7 @@
 	)
 	(wire
 		(pts
-			(xy 330.2 111.76) (xy 330.2 125.73)
+			(xy 330.2 110.49) (xy 330.2 125.73)
 		)
 		(stroke
 			(width 0)
@@ -13290,7 +13290,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 393.7 115.57 0)
+		(at 370.84 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13298,7 +13298,7 @@
 		(dnp no)
 		(uuid "1e54ae39-e907-40a9-baf3-d760e640b5b8")
 		(property "Reference" "R39"
-			(at 394.97 114.808 0)
+			(at 372.11 113.538 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13307,7 +13307,7 @@
 			)
 		)
 		(property "Value" "10 kΩ"
-			(at 394.97 116.586 0)
+			(at 372.11 115.316 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13316,7 +13316,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 391.922 115.57 90)
+			(at 369.062 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13325,7 +13325,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 393.7 115.57 0)
+			(at 370.84 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13334,7 +13334,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 393.7 115.57 0)
+			(at 370.84 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13343,7 +13343,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 393.7 115.57 0)
+			(at 370.84 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13352,7 +13352,7 @@
 			)
 		)
 		(property "MPN" "560112110020"
-			(at 393.7 115.57 0)
+			(at 370.84 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13361,7 +13361,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-560112110020CT-ND"
-			(at 393.7 115.57 0)
+			(at 370.84 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13370,7 +13370,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 393.7 115.57 0)
+			(at 370.84 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13379,7 +13379,7 @@
 			)
 		)
 		(property "Tolerance" "≤ 5 %"
-			(at 394.97 117.348 0)
+			(at 372.11 116.078 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17141,7 +17141,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 393.7 120.65 0)
+		(at 370.84 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17150,7 +17150,7 @@
 		(fields_autoplaced yes)
 		(uuid "725ff669-8dec-4ebc-8af1-2c8a4f47717a")
 		(property "Reference" "#PWR086"
-			(at 393.7 127 0)
+			(at 370.84 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17159,7 +17159,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 393.7 125.73 0)
+			(at 370.84 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17168,7 +17168,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 393.7 120.65 0)
+			(at 370.84 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17177,7 +17177,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 393.7 120.65 0)
+			(at 370.84 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17186,7 +17186,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 393.7 120.65 0)
+			(at 370.84 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17322,7 +17322,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 393.7 102.87 0)
+		(at 370.84 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17330,7 +17330,7 @@
 		(dnp no)
 		(uuid "749881ad-9493-4956-8bbb-7f659fefc194")
 		(property "Reference" "#PWR085"
-			(at 393.7 106.68 0)
+			(at 370.84 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17339,7 +17339,7 @@
 			)
 		)
 		(property "Value" "V_3V3"
-			(at 393.7 99.06 0)
+			(at 370.84 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17347,7 +17347,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 393.7 102.87 0)
+			(at 370.84 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17356,7 +17356,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 393.7 102.87 0)
+			(at 370.84 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17365,7 +17365,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 393.7 102.87 0)
+			(at 370.84 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19741,7 +19741,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 393.7 107.95 0)
+		(at 370.84 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -19749,7 +19749,7 @@
 		(dnp yes)
 		(uuid "a7dfd12a-6d9b-4264-9b08-f4f28ed309a7")
 		(property "Reference" "R38"
-			(at 394.97 107.188 0)
+			(at 372.11 105.918 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19758,7 +19758,7 @@
 			)
 		)
 		(property "Value" "10 kΩ"
-			(at 394.97 108.966 0)
+			(at 372.11 107.696 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19767,7 +19767,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 391.922 107.95 90)
+			(at 369.062 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19776,7 +19776,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 393.7 107.95 0)
+			(at 370.84 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19785,7 +19785,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 393.7 107.95 0)
+			(at 370.84 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19794,7 +19794,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 393.7 107.95 0)
+			(at 370.84 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19803,7 +19803,7 @@
 			)
 		)
 		(property "MPN" "560112110020"
-			(at 393.7 107.95 0)
+			(at 370.84 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19812,7 +19812,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-560112110020CT-ND"
-			(at 393.7 107.95 0)
+			(at 370.84 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19821,7 +19821,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 393.7 107.95 0)
+			(at 370.84 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19830,7 +19830,7 @@
 			)
 		)
 		(property "Tolerance" "≤ 5 %"
-			(at 394.97 109.728 0)
+			(at 372.11 108.458 0)
 			(effects
 				(font
 					(size 1.27 1.27)

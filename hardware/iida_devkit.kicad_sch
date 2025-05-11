@@ -609,7 +609,7 @@
 		)
 		(uuid "3e8cc5f3-e2a1-4b96-b6f9-60ea61d39b6d")
 	)
-	(text "There's no real chassis or a case to mount the PCB,\nso just place the mounting holes at the corners of the PCB."
+	(text "There's no actual chassis or case for mounting the PCB,\nso just place the mounting holes at the corners of the board."
 		(exclude_from_sim no)
 		(at 205.74 228.6 0)
 		(effects
@@ -621,7 +621,7 @@
 		)
 		(uuid "5571a628-e5ce-4932-aa05-15b27a6c8f99")
 	)
-	(text "Place fiducials at three corners of the PCB."
+	(text "Place fiducials at the top-left, bottom-left,\nand bottom-right corners of the PCB."
 		(exclude_from_sim no)
 		(at 279.4 228.6 0)
 		(effects
@@ -645,7 +645,7 @@
 		)
 		(uuid "6363c4ec-6886-4a7e-af61-da201b10e83c")
 	)
-	(text "This is a project for practicing PCB design and programming.\n\nThe result is a device that is powered either with a battery or with a USB connection.\nThe device can recharge the battery via the USB connection.\n\nThe device includes:\n  - An example sensor (temperature)\n  - External flash for updating the firmware over the air (FOTA)\n  - A modem module that connects the main microcontroller to the internet with LTE CAT-M1\n  - Option to use either an external antenna or an integrated antenna\n\nA key goal of the project is to ensure it has as little reliance as possible on totalitarian\ncountries (e.g., China or Russia) or on hostile countries (e.g., USA).\nComponent sourcing must be done carefully to select manufacturers who can supply parts\nthat are not produced in such countries.\nInstead, democratic countries (e.g., Taiwan and Germany) should be preferred.\n\nTo reduce strain on the global environment, manufacturing and sourcing is centered around\nEurope.\n\nFor manufacturing, the following companies are recommended:\n- Aisler (Germany)\n- Aspocomp? (Finland)\n\nFor components, the following companies are recommended:\n- Würth Elektronik (Germany)\n- Infineon Technologies (Germany)\n- STMicroelectronics (Italy)\n\nFor suppliers, the following companies are recommended:\n- Transfer Multisort Elektronik (Poland)\n- RS Components (England)"
+	(text "This project serves as a practice exercise in PCB design and embedded programming.\n\nThe result is a device that can be powered either by a battery or via a USB connection.\nThe device is capable of recharging the battery through the USB interface.\n\nKey features of the device include:\n- A sample sensor (temperature)\n- External flash memory to support firmware-over-the-air (FOTA) updates\n- A modem module that connects the main microcontroller to the internet via LTE CAT-M1\n- Support for both an external antenna and an integrated antenna\n\nA primary objective of this project is to minimize reliance on totalitarian states\n(e.g., China or Russia) and on countries that may be hostile (e.g., the United States).\nComponent sourcing should prioritize manufacturers that do not produce\ncomponents in such countries.\nPreference should be given to suppliers and manufacturers based in democratic nations,\nsuch as Taiwan and Germany.\n\nTo help reduce environmental impact, both manufacturing and component sourcing are\nfocused around Europe.\n\nRecommended manufacturers:\n- Aisler (Germany)\n- Multi CB (Germany)\n- Aspocomp (Finland)\n\nRecommended component manufacturers:\n- Würth Elektronik (Germany)\n- Infineon Technologies (Germany)\n- STMicroelectronics (Italy)\n\nRecommended distributors:\n- Transfer Multisort Elektronik (Poland)\n- RS Components (United Kingdom)\n- Farnell (United Kingdom)"
 		(exclude_from_sim no)
 		(at 15.24 63.5 0)
 		(effects
@@ -657,7 +657,7 @@
 		)
 		(uuid "b94eda75-5ba9-4359-bbae-047503216cba")
 	)
-	(text "Place a stitched GND guard rail around the edges of the PCB\nto provide a grounding point for human touch when handling the device."
+	(text "Place a stitched ground guard rail along the edges of the PCB\nto provide a grounding point for human contact when handling the device."
 		(exclude_from_sim no)
 		(at 330.2 228.6 0)
 		(effects
@@ -1405,7 +1405,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 299.72 234.95 0)
+		(at 299.72 241.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1413,7 +1413,7 @@
 		(dnp no)
 		(uuid "61c880d6-eb78-4373-ab8f-f1774093457b")
 		(property "Reference" "FID2"
-			(at 299.72 232.156 0)
+			(at 299.72 238.506 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1421,7 +1421,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 302.26 236.2199 0)
+			(at 302.26 242.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1431,7 +1431,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 299.72 234.95 0)
+			(at 299.72 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1440,7 +1440,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 299.72 234.95 0)
+			(at 299.72 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1449,7 +1449,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 299.72 234.95 0)
+			(at 299.72 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1570,7 +1570,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 287.02 234.95 0)
+		(at 287.02 241.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1578,7 +1578,7 @@
 		(dnp no)
 		(uuid "87581f6e-a7ba-407e-a652-1fbebd13a04c")
 		(property "Reference" "FID1"
-			(at 287.02 232.156 0)
+			(at 287.02 238.506 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1586,7 +1586,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 289.56 236.2199 0)
+			(at 289.56 242.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1596,7 +1596,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 287.02 234.95 0)
+			(at 287.02 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1605,7 +1605,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 287.02 234.95 0)
+			(at 287.02 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1614,7 +1614,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 287.02 234.95 0)
+			(at 287.02 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1763,7 +1763,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 312.42 234.95 0)
+		(at 312.42 241.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1771,7 +1771,7 @@
 		(dnp no)
 		(uuid "cc029735-4156-42eb-8513-6d4abdc50dad")
 		(property "Reference" "FID3"
-			(at 312.42 232.156 0)
+			(at 312.42 238.506 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1779,7 +1779,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 314.96 236.2199 0)
+			(at 314.96 242.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1789,7 +1789,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 312.42 234.95 0)
+			(at 312.42 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1798,7 +1798,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 312.42 234.95 0)
+			(at 312.42 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1807,7 +1807,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 312.42 234.95 0)
+			(at 312.42 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -1840,9 +1840,9 @@
 		)
 		(uuid "634ad882-5d85-4979-b11f-8dd072b05a73")
 	)
-	(text "Due to long cables and unreliable power sources,\nthe VBUS line from the \"Downstream Facing Port\" device can be noisy,\nso do some simple filtering for it."
+	(text "Due to the long cables and unreliable power sources, the VBUS line from\nthe Downstream Facing Port (DFP) device can be noisy.\nTherefore, it's recommended to implement simple filtering for it."
 		(exclude_from_sim no)
-		(at 254 63.5 0)
+		(at 248.92 63.5 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -1863,7 +1863,7 @@
 		)
 		(uuid "97503736-a758-4f24-af30-873570fbc187")
 	)
-	(text "The device can be powered with a USB-C\nconnection from a \"Downstream Facing Port\"\ndevice such as a PC.\n\nThe datalines are used for communication\nbetween the PC and the device."
+	(text "The device can be powered via a USB-C connection\nfrom a Downstream Facing Port (DFP) device,\nsuch as a PC.\n\nThe data lines are used for communication between\nthe PC and the device."
 		(exclude_from_sim no)
 		(at 17.78 63.5 0)
 		(effects
@@ -1875,7 +1875,7 @@
 		)
 		(uuid "c30a9fab-4af8-4004-b346-8a8dd4076b80")
 	)
-	(text "To not only protect the device but also the\n\"Downstream Facing Port\" device, provide:\n- Over-current protection\n\nAs the USB-C connection is a human-interface, provide:\n- ESD protection"
+	(text "To protect both the device and the\nDownstream Facing Port (DFP) device,\nprovide the following:\n- Over-current protection\n\nSince the USB-C connection is a human interface,\nalso provide:\n- ESD protection"
 		(exclude_from_sim no)
 		(at 132.08 63.5 0)
 		(effects
@@ -1887,7 +1887,7 @@
 		)
 		(uuid "c618df7e-7a6a-4ea3-8a45-8e767ddd89ac")
 	)
-	(text "CC1 & CC2 tied to ground with 5.1 kΩ resistors\n-> 15 W can be drawn.\n\nP / U = I -> 15 W / 5 V = 3 A"
+	(text "With CC1 and CC2 connected to ground through\n5.1 kΩ resistors, a current of 3 A can be drawn."
 		(exclude_from_sim no)
 		(at 76.2 161.29 0)
 		(effects
