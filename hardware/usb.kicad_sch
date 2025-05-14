@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-05-13")
+		(date "2025-05-14")
 		(rev "v5.0.0")
 	)
 	(lib_symbols
@@ -1840,18 +1840,6 @@
 		)
 		(uuid "634ad882-5d85-4979-b11f-8dd072b05a73")
 	)
-	(text "Due to the long cables and unreliable power sources, the VBUS line from\nthe Downstream Facing Port (DFP) device can be noisy.\nTherefore, it's recommended to implement simple filtering for it."
-		(exclude_from_sim no)
-		(at 248.92 63.5 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.3175)
-			)
-			(justify left top)
-		)
-		(uuid "87e289b2-8485-4a59-835f-6487dce66ebc")
-	)
 	(text "Place as close to the USB-C receptacle as possible."
 		(exclude_from_sim no)
 		(at 204.47 141.478 0)
@@ -1862,30 +1850,6 @@
 			)
 		)
 		(uuid "97503736-a758-4f24-af30-873570fbc187")
-	)
-	(text "The device can be powered via a USB-C connection\nfrom a Downstream Facing Port (DFP) device,\nsuch as a PC.\n\nThe data lines are used for communication between\nthe PC and the device."
-		(exclude_from_sim no)
-		(at 17.78 63.5 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.3175)
-			)
-			(justify left top)
-		)
-		(uuid "c30a9fab-4af8-4004-b346-8a8dd4076b80")
-	)
-	(text "To protect both the device and the\nDownstream Facing Port (DFP) device,\nprovide the following:\n- Over-current protection\n\nSince the USB-C connection is a human interface,\nalso provide:\n- ESD protection"
-		(exclude_from_sim no)
-		(at 132.08 63.5 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.3175)
-			)
-			(justify left top)
-		)
-		(uuid "c618df7e-7a6a-4ea3-8a45-8e767ddd89ac")
 	)
 	(text "With CC1 and CC2 connected to ground through\n5.1 kΩ resistors, a current of 3 A can be drawn."
 		(exclude_from_sim no)
@@ -1942,6 +1906,46 @@
 		)
 		(uuid "4617fd33-f842-4b97-a108-680e33cefd1f")
 	)
+	(text_box "To protect both the device and the Downstream Facing Port (DFP) device, provide the following:\n- Over-current protection\n\nSince the USB-C connection is a human interface, also provide:\n- ESD protection"
+		(exclude_from_sim no)
+		(at 132.08 63.5 0)
+		(size 139.7 38.1)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "93f4ac6f-c116-44bd-9283-2d440c06ef4e")
+	)
+	(text_box "The device can be powered via a USB-C connection\nfrom a Downstream Facing Port (DFP) device,\nsuch as a PC.\n\nThe data lines are used for communication between\nthe PC and the device."
+		(exclude_from_sim no)
+		(at 15.24 63.5 0)
+		(size 111.76 26.67)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "a7c5076f-9c0a-4204-b592-2967b88c27d2")
+	)
 	(text_box "Input"
 		(exclude_from_sim no)
 		(at 12.7 50.8 0)
@@ -1966,8 +1970,8 @@
 	)
 	(text_box "Filtering"
 		(exclude_from_sim no)
-		(at 246.38 50.8 0)
-		(size 160.02 200.66)
+		(at 298.45 50.8 0)
+		(size 107.95 200.66)
 		(margins 0.9525 2 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -1986,10 +1990,30 @@
 		)
 		(uuid "bd80e1eb-1a03-420a-843f-ed9c5374a1b3")
 	)
+	(text_box "Due to the long cables and unreliable power sources, the VBUS line from\nthe Downstream Facing Port (DFP) device can be noisy.\nTherefore, it's recommended to implement simple filtering for it."
+		(exclude_from_sim no)
+		(at 299.72 63.5 0)
+		(size 105.41 25.4)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "cba01e0b-8fea-4104-9d61-e64d884fd3c6")
+	)
 	(text_box "Protection"
 		(exclude_from_sim no)
 		(at 129.54 50.8 0)
-		(size 116.84 200.66)
+		(size 168.91 200.66)
 		(margins 0.9525 2 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2009,12 +2033,6 @@
 		(uuid "d20f0045-9707-4450-ab74-41050d13512f")
 	)
 	(junction
-		(at 304.8 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "18d4a7fd-9bcd-4140-9c8b-7efca2d9e56c")
-	)
-	(junction
 		(at 78.74 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2027,12 +2045,6 @@
 		(uuid "236b5267-6390-4ac4-9a70-be6be7a7f51b")
 	)
 	(junction
-		(at 342.9 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "26cfe3c1-52d8-4e15-8ad7-547e57b75bad")
-	)
-	(junction
 		(at 78.74 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2043,6 +2055,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5570c0fe-0217-4353-b980-64e41000cc3b")
+	)
+	(junction
+		(at 328.93 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f7c59eb-6c67-46cc-a432-3ac30ab833b3")
+	)
+	(junction
+		(at 347.98 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c09e44a-0762-4ca5-a583-ca6330c6440b")
 	)
 	(junction
 		(at 204.47 109.22)
@@ -2063,16 +2087,16 @@
 		(uuid "adb5520f-c91f-4c81-959b-0e53f3df91e7")
 	)
 	(junction
-		(at 266.7 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bdbdd1f4-bd7a-41fa-8e96-dfe924e1b806")
-	)
-	(junction
 		(at 78.74 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb7d2a87-624a-44fa-9152-68a436fbedbc")
+	)
+	(junction
+		(at 373.38 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df87eebe-bc61-4b7d-993e-542b64f94554")
 	)
 	(junction
 		(at 48.26 154.94)
@@ -2096,16 +2120,6 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 109.22) (xy 320.04 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01160867-6988-4b5e-bb30-3d23958f292a")
-	)
-	(wire
-		(pts
 			(xy 78.74 125.73) (xy 199.39 125.73)
 		)
 		(stroke
@@ -2116,7 +2130,7 @@
 	)
 	(wire
 		(pts
-			(xy 342.9 118.11) (xy 342.9 119.38)
+			(xy 373.38 118.11) (xy 373.38 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2146,6 +2160,16 @@
 	)
 	(wire
 		(pts
+			(xy 373.38 109.22) (xy 379.73 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ebde298-12b7-4f9d-ab00-676711b68a14")
+	)
+	(wire
+		(pts
 			(xy 78.74 128.27) (xy 78.74 130.81)
 		)
 		(stroke
@@ -2156,7 +2180,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 109.22) (xy 266.7 109.22)
+			(xy 204.47 109.22) (xy 328.93 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2176,7 +2200,7 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 109.22) (xy 304.8 110.49)
+			(xy 347.98 109.22) (xy 347.98 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2236,7 +2260,7 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 118.11) (xy 304.8 119.38)
+			(xy 347.98 118.11) (xy 347.98 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2266,7 +2290,7 @@
 	)
 	(wire
 		(pts
-			(xy 342.9 109.22) (xy 342.9 110.49)
+			(xy 373.38 109.22) (xy 373.38 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2296,13 +2320,13 @@
 	)
 	(wire
 		(pts
-			(xy 342.9 109.22) (xy 355.6 109.22)
+			(xy 347.98 109.22) (xy 356.87 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9c669424-708b-40f0-9e60-f9b30904417c")
+		(uuid "98bc696d-d51d-4c85-a931-5ce81c84e813")
 	)
 	(wire
 		(pts
@@ -2336,7 +2360,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 109.22) (xy 342.9 109.22)
+			(xy 364.49 109.22) (xy 373.38 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2346,13 +2370,13 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 109.22) (xy 304.8 109.22)
+			(xy 328.93 109.22) (xy 347.98 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d0851807-525f-4386-9546-8677cf3c956e")
+		(uuid "d3e85cf0-a282-45a1-8497-79a9513e8055")
 	)
 	(wire
 		(pts
@@ -2465,7 +2489,7 @@
 		(uuid "bc2b3d06-cc88-4d5f-b933-14136d3f265f")
 	)
 	(label "VBUS_UNFILTERED"
-		(at 279.4 109.22 0)
+		(at 330.2 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2508,7 +2532,7 @@
 	)
 	(hierarchical_label "V_5V0"
 		(shape output)
-		(at 355.6 109.22 0)
+		(at 379.73 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2587,7 +2611,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 342.9 114.3 0)
+		(at 373.38 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2595,7 +2619,7 @@
 		(dnp no)
 		(uuid "253afc75-0a84-431e-89a9-4507e7417b1c")
 		(property "Reference" "C2"
-			(at 345.44 111.506 0)
+			(at 375.92 111.506 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2604,7 +2628,7 @@
 			)
 		)
 		(property "Value" "0.1 µF"
-			(at 345.44 113.284 0)
+			(at 375.92 113.284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2613,7 +2637,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 343.8652 118.11 0)
+			(at 374.3452 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2622,7 +2646,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 342.9 114.3 0)
+			(at 373.38 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2631,7 +2655,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 342.9 114.3 0)
+			(at 373.38 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2640,7 +2664,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 342.9 114.3 0)
+			(at 373.38 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2649,7 +2673,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 342.9 114.3 0)
+			(at 373.38 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2658,7 +2682,7 @@
 			)
 		)
 		(property "MPN" "GCM155R71C104KA55J"
-			(at 342.9 114.3 0)
+			(at 373.38 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2667,7 +2691,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "490-7998-1-ND"
-			(at 342.9 114.3 0)
+			(at 373.38 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2676,7 +2700,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 342.9 114.3 0)
+			(at 373.38 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2685,7 +2709,7 @@
 			)
 		)
 		(property "Tolerance" "≤ 20 %"
-			(at 345.44 115.316 0)
+			(at 375.92 115.316 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2694,7 +2718,7 @@
 			)
 		)
 		(property "Voltage" "≥ 16 V"
-			(at 345.44 117.094 0)
+			(at 375.92 117.094 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2703,7 +2727,7 @@
 			)
 		)
 		(property "Class" "X7R"
-			(at 342.9 114.3 0)
+			(at 373.38 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2712,7 +2736,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 342.9 114.3 0)
+			(at 373.38 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2849,7 +2873,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 304.8 119.38 0)
+		(at 347.98 119.38 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2859,7 +2883,7 @@
 		(fields_autoplaced yes)
 		(uuid "3ea781f3-068a-40fb-873d-257deb3c6c04")
 		(property "Reference" "#PWR07"
-			(at 304.8 125.73 0)
+			(at 347.98 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2868,7 +2892,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 304.8 124.46 0)
+			(at 347.98 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2877,7 +2901,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 304.8 119.38 0)
+			(at 347.98 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2886,7 +2910,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 304.8 119.38 0)
+			(at 347.98 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2895,7 +2919,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 304.8 119.38 0)
+			(at 347.98 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2917,7 +2941,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 266.7 109.22 0)
+		(at 328.93 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -2925,7 +2949,7 @@
 		(dnp no)
 		(uuid "429683ca-be41-4178-bcc3-f52e9310579c")
 		(property "Reference" "TP1"
-			(at 266.7 104.14 0)
+			(at 328.93 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2933,7 +2957,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 269.24 107.1879 0)
+			(at 331.47 107.1879 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2943,7 +2967,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 271.78 109.22 0)
+			(at 334.01 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2952,7 +2976,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 271.78 109.22 0)
+			(at 334.01 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2961,7 +2985,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 266.7 109.22 0)
+			(at 328.93 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3177,7 +3201,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 304.8 114.3 0)
+		(at 347.98 114.3 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3186,7 +3210,7 @@
 		(dnp no)
 		(uuid "9956d5d1-dffc-4ae1-a4e2-b1816d38bff4")
 		(property "Reference" "C1"
-			(at 302.26 111.506 0)
+			(at 345.44 111.506 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3195,7 +3219,7 @@
 			)
 		)
 		(property "Value" "0.1 µF"
-			(at 302.26 113.284 0)
+			(at 345.44 113.284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3204,7 +3228,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 303.8348 118.11 0)
+			(at 347.0148 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3213,7 +3237,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 304.8 114.3 0)
+			(at 347.98 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3222,7 +3246,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 304.8 114.3 0)
+			(at 347.98 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3231,7 +3255,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 304.8 114.3 0)
+			(at 347.98 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3240,7 +3264,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 304.8 114.3 0)
+			(at 347.98 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3249,7 +3273,7 @@
 			)
 		)
 		(property "MPN" "GCM155R71C104KA55J"
-			(at 304.8 114.3 0)
+			(at 347.98 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3258,7 +3282,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "490-7998-1-ND"
-			(at 304.8 114.3 0)
+			(at 347.98 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3267,7 +3291,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 304.8 114.3 0)
+			(at 347.98 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3276,7 +3300,7 @@
 			)
 		)
 		(property "Tolerance" "≤ 20 %"
-			(at 302.26 115.316 0)
+			(at 345.44 115.316 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3285,7 +3309,7 @@
 			)
 		)
 		(property "Voltage" "≥ 16 V"
-			(at 302.26 117.094 0)
+			(at 345.44 117.094 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3294,7 +3318,7 @@
 			)
 		)
 		(property "Class" "X7R"
-			(at 304.8 114.3 0)
+			(at 347.98 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3303,7 +3327,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 304.8 114.3 0)
+			(at 347.98 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3328,7 +3352,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 342.9 119.38 0)
+		(at 373.38 119.38 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3338,7 +3362,7 @@
 		(fields_autoplaced yes)
 		(uuid "a76c47d1-2e6e-469e-a9b4-f48277cda81c")
 		(property "Reference" "#PWR08"
-			(at 342.9 125.73 0)
+			(at 373.38 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3347,7 +3371,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 342.9 124.46 0)
+			(at 373.38 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3356,7 +3380,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 342.9 119.38 0)
+			(at 373.38 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3365,7 +3389,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 342.9 119.38 0)
+			(at 373.38 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3374,7 +3398,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 342.9 119.38 0)
+			(at 373.38 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3464,7 +3488,7 @@
 	)
 	(symbol
 		(lib_id "Device:FerriteBead")
-		(at 323.85 109.22 270)
+		(at 360.68 109.22 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3472,7 +3496,7 @@
 		(dnp no)
 		(uuid "bce5c565-6921-4889-84e7-1c096c1aadd0")
 		(property "Reference" "FB1"
-			(at 323.85 105.41 90)
+			(at 360.68 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3480,7 +3504,7 @@
 			)
 		)
 		(property "Value" "BLM18EG221SN1D"
-			(at 323.85 113.284 90)
+			(at 360.68 113.284 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3488,7 +3512,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 323.85 107.442 90)
+			(at 360.68 107.442 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3497,7 +3521,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 323.85 109.22 0)
+			(at 360.68 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3506,7 +3530,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 323.85 109.22 0)
+			(at 360.68 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3515,7 +3539,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 323.85 109.22 0)
+			(at 360.68 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3524,7 +3548,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 323.85 109.22 0)
+			(at 360.68 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3533,7 +3557,7 @@
 			)
 		)
 		(property "MPN" "BLM18EG221SN1D"
-			(at 323.85 109.22 0)
+			(at 360.68 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3542,7 +3566,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "490-3992-1-ND"
-			(at 323.85 109.22 0)
+			(at 360.68 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3551,7 +3575,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 323.85 109.22 90)
+			(at 360.68 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)

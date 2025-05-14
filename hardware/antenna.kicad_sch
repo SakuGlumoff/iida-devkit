@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-05-13")
+		(date "2025-05-14")
 		(rev "v5.0.0")
 	)
 	(lib_symbols
@@ -707,18 +707,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "The device incorporates an integrated PCB antenna as well as an SMA jack.\n\nSelection between the two antennas is made using a 0402 0 Ω jumper to\nminimize impedance mismatch in the antenna rail."
-		(exclude_from_sim no)
-		(at 15.24 63.5 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.3175)
-			)
-			(justify left top)
-		)
-		(uuid "37870905-df07-4053-9153-479df203e857")
-	)
 	(text "Use a common center pad."
 		(exclude_from_sim no)
 		(at 62.992 139.192 0)
@@ -730,43 +718,6 @@
 			(justify right bottom)
 		)
 		(uuid "3c16e326-c560-4d7e-b85f-bcc124d37059")
-	)
-	(text "The antenna feed line from the module's ANT pin to\nthe antenna should be matched to 50 Ω.\n\nThe target resonant frequency is in\nthe LTE band 20 (800 MHz).\n\nProvide a footprint for a Π-type matching network\nfor later tuning."
-		(exclude_from_sim no)
-		(at 171.45 63.5 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.3175)
-			)
-			(justify left top)
-		)
-		(uuid "3e0a7194-1ed2-4c19-a405-d30b16aa375e")
-	)
-	(text "- Follow the antenna layout guidelines according to \"SARA-R5 series - System integration manual\" (UBX-19041356 - R20)\n  chapter \"2.4.1 General guidelines for antenna interfaces\"."
-		(exclude_from_sim no)
-		(at 15.24 262.89 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.3175)
-				(color 194 0 194 1)
-			)
-			(justify left top)
-		)
-		(uuid "9f5057d1-125c-4ae8-a1c8-1f66b8437ffd")
-	)
-	(text "Since the SMA jack is a human interface,\nprovide ESD protection for it.\n\nEnsure that the TVS protection does not negatively\naffect the matching network too much."
-		(exclude_from_sim no)
-		(at 300.99 63.5 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.3175)
-			)
-			(justify left top)
-		)
-		(uuid "cdab6fcc-8246-458d-a355-8d75198a5321")
 	)
 	(text_box "Matching network"
 		(exclude_from_sim no)
@@ -834,6 +785,46 @@
 		)
 		(uuid "32993348-b895-42cd-9cbc-7379e5ee5699")
 	)
+	(text_box "The antenna feed line from the module's ANT pin to the antenna should be matched to 50 Ω.\n\nThe target resonant frequency is in the LTE band 20 (800 MHz).\n\nProvide a footprint for a Π-type matching network for later tuning."
+		(exclude_from_sim no)
+		(at 171.45 63.5 0)
+		(size 124.46 38.1)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "375f1241-db81-43b7-9c52-e0e846818a84")
+	)
+	(text_box "Since the SMA jack is a human interface, provide ESD protection for it.\n\nEnsure that the TVS protection does not negatively affect the matching network too much."
+		(exclude_from_sim no)
+		(at 299.72 63.5 0)
+		(size 104.14 25.4)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "79022bc4-fc90-4f39-89fe-6e92f158179b")
+	)
 	(text_box "Antenna front-end"
 		(exclude_from_sim no)
 		(at 298.45 50.8 0)
@@ -877,6 +868,47 @@
 			)
 		)
 		(uuid "8fa4ecc9-f049-4d76-9e19-0cf18c1181b3")
+	)
+	(text_box "- Follow the antenna layout guidelines according to \"SARA-R5 series - System integration manual\" (UBX-19041356 - R20)\n  chapter \"2.4.1 General guidelines for antenna interfaces\"."
+		(exclude_from_sim no)
+		(at 13.97 260.35 0)
+		(size 281.94 22.86)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 194 0 194 1)
+			)
+			(justify left top)
+		)
+		(uuid "9063d846-fec9-4bcd-a7f3-c87d98d48ba9")
+	)
+	(text_box "The device incorporates an integrated PCB antenna as well as an SMA jack.\n\nSelection between the two antennas is made using a 0402 0 Ω jumper to minimize impedance mismatch in the antenna rail."
+		(exclude_from_sim no)
+		(at 15.24 63.5 0)
+		(size 151.13 25.4)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "fc5a263f-961d-4cee-ae5b-06d71e3b8216")
 	)
 	(junction
 		(at 360.68 114.3)
@@ -1375,7 +1407,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "11174069-27f7-4929-a075-a83a0c1a6c7b")
-		(property "Reference" "R50"
+		(property "Reference" "R58"
 			(at 236.22 109.22 90)
 			(effects
 				(font
@@ -1480,7 +1512,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/e6477a2c-b2b5-4454-829c-da955dc53725"
-					(reference "R50")
+					(reference "R58")
 					(unit 1)
 				)
 			)
@@ -1496,7 +1528,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "22b3c007-e4e6-45b1-a322-6cfc7bce586d")
-		(property "Reference" "R48"
+		(property "Reference" "R56"
 			(at 229.362 117.602 0)
 			(effects
 				(font
@@ -1595,7 +1627,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/e6477a2c-b2b5-4454-829c-da955dc53725"
-					(reference "R48")
+					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -1726,7 +1758,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3be853b5-8fa6-486b-bde6-a272a7f3808f")
-		(property "Reference" "R46"
+		(property "Reference" "R54"
 			(at 69.85 130.81 90)
 			(effects
 				(font
@@ -1831,7 +1863,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/e6477a2c-b2b5-4454-829c-da955dc53725"
-					(reference "R46")
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -1981,7 +2013,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "5b87a25d-eaf3-402b-8f22-273525a02e4b")
-		(property "Reference" "R49"
+		(property "Reference" "R57"
 			(at 229.362 168.402 0)
 			(effects
 				(font
@@ -2080,7 +2112,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/e6477a2c-b2b5-4454-829c-da955dc53725"
-					(reference "R49")
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -2096,7 +2128,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "6fa0afe5-b365-4cd5-9bc0-2a818e59a8fb")
-		(property "Reference" "R53"
+		(property "Reference" "R61"
 			(at 239.522 168.402 0)
 			(effects
 				(font
@@ -2195,7 +2227,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/e6477a2c-b2b5-4454-829c-da955dc53725"
-					(reference "R53")
+					(reference "R61")
 					(unit 1)
 				)
 			)
@@ -2357,7 +2389,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "90542579-6447-4adc-90e7-fadc8078a945")
-		(property "Reference" "R52"
+		(property "Reference" "R60"
 			(at 239.522 117.602 0)
 			(effects
 				(font
@@ -2456,7 +2488,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/e6477a2c-b2b5-4454-829c-da955dc53725"
-					(reference "R52")
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -2539,7 +2571,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ca51ac1f-95ff-4b75-9932-aa279c07cef1")
-		(property "Reference" "R51"
+		(property "Reference" "R59"
 			(at 236.22 160.02 90)
 			(effects
 				(font
@@ -2644,7 +2676,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/e6477a2c-b2b5-4454-829c-da955dc53725"
-					(reference "R51")
+					(reference "R59")
 					(unit 1)
 				)
 			)
@@ -2660,7 +2692,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eb0750bb-f728-4812-82c8-50031af3cb3b")
-		(property "Reference" "R47"
+		(property "Reference" "R55"
 			(at 69.85 138.43 90)
 			(effects
 				(font
@@ -2765,7 +2797,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/e6477a2c-b2b5-4454-829c-da955dc53725"
-					(reference "R47")
+					(reference "R55")
 					(unit 1)
 				)
 			)

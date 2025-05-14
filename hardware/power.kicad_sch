@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-05-13")
+		(date "2025-05-14")
 		(rev "v5.0.0")
 	)
 	(lib_symbols
@@ -1929,7 +1929,7 @@
 	)
 	(text "The regulator is capable of sourcing\n2 A @ V_{IN} = 3 V and 4 A @ V_{IN} = 5V.\n\nThe MCU draws approximately 100 mA in the worst-case scenario.\nThe modem draws approximately 500 mA in the worst-case scenario.\n\nThe values for the inductor and the feedback resistors are generated\nby the Texas Instruments' WEBENCH Power Designer tool with\nthe following parameters:\n- V_{IN}_MIN = 3.0 V\n- V_{IN}_MAX = 5.0 V\n- V_{OUT} = 3.3 V\n- I_{OUT}_MAX = 2 A"
 		(exclude_from_sim no)
-		(at 190.5 101.6 0)
+		(at 177.8 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1948,18 +1948,6 @@
 			(justify left top)
 		)
 		(uuid "1d2c1da5-5b11-438b-b45e-9bb5615281d3")
-	)
-	(text "For testing and measurement purposes,\nprovide the following:\n- LED indicators to display the states of\n  the voltage rails\n- The ability to easily perform current\n  measurements\n- Test points to verify voltage rail levels"
-		(exclude_from_sim no)
-		(at 300.99 63.5 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.3175)
-			)
-			(justify left top)
-		)
-		(uuid "27350b12-6e31-43a8-99ca-abfc7a2cffc6")
 	)
 	(text "Place the 1 cm x 1 cm ground test point at the edge of the PCB\nso that the oscilloscope ground can be connected to it using\nan alligator clip."
 		(exclude_from_sim no)
@@ -1995,18 +1983,6 @@
 		)
 		(uuid "5d0a2d80-fe21-4aa0-a475-3cc100bb4269")
 	)
-	(text "To ensure no back-feeding occurs,\nthe device can be powered either\nthrough the USB-C connection or\nby using a battery.\n\nIt is important to OR the power\ninputs to prevent this issue."
-		(exclude_from_sim no)
-		(at 15.24 63.5 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.3175)
-			)
-			(justify left top)
-		)
-		(uuid "9914436d-6519-463e-afc7-dcabfa0874db")
-	)
 	(text "Testing: For current measurements,\npopulate the header and\nremove the 0 Ω jumper."
 		(exclude_from_sim no)
 		(at 322.58 133.35 0)
@@ -2028,18 +2004,6 @@
 			(justify left top)
 		)
 		(uuid "d7c068cc-910f-431e-8046-261b824eb479")
-	)
-	(text "Since the LiPo battery voltage can drop below the desired system\nvoltage of 3.3V and the input voltage can be as high as 5V,\nit is recommended to use a buck-boost regulator.\n\nThere is also a significant amount of capacitance on the output rail,\nso it is recommended to use a regulator with soft-start functionality."
-		(exclude_from_sim no)
-		(at 133.35 63.5 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.3175)
-			)
-			(justify left top)
-		)
-		(uuid "e42d4ed5-4e94-4fd0-bcbd-ff1ed3c6aa7a")
 	)
 	(text_box "Notes"
 		(exclude_from_sim no)
@@ -2063,6 +2027,46 @@
 		)
 		(uuid "0890869d-9118-4542-b315-10ff61c750eb")
 	)
+	(text_box "Since the LiPo battery voltage can drop below the desired system voltage of 3.3V and the input voltage can be as high as 5V, it is recommended to use a buck-boost regulator.\n\nThere is also a significant amount of capacitance on the output rail, so it is recommended to use a regulator with soft-start functionality."
+		(exclude_from_sim no)
+		(at 133.35 63.5 0)
+		(size 162.56 38.1)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "1f388145-4b2d-4d77-a834-1574ae040178")
+	)
+	(text_box "For testing and measurement purposes, provide the following:\n- LED indicators to display the states of the voltage rails\n- The ability to easily perform current measurements\n- Test points to verify voltage rail levels"
+		(exclude_from_sim no)
+		(at 300.99 63.5 0)
+		(size 102.87 38.1)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "2f73079e-0e67-4faa-b3ea-c88abde03c03")
+	)
 	(text_box "Power regulation"
 		(exclude_from_sim no)
 		(at 130.81 50.8 0)
@@ -2084,6 +2088,26 @@
 			(justify left top)
 		)
 		(uuid "842202c4-1545-4d7f-975f-e6b6e77d9eb3")
+	)
+	(text_box "To ensure no back-feeding occurs, the device can be powered either through the USB-C connection or by using a battery.\n\nIt is important to OR the power inputs to prevent this issue."
+		(exclude_from_sim no)
+		(at 15.24 63.5 0)
+		(size 111.76 26.67)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "bcc89fe3-fd24-4da5-959e-39ac229a743b")
 	)
 	(text_box "Power path management"
 		(exclude_from_sim no)
@@ -3531,7 +3555,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c162ac5-88e5-4876-925d-4b1824423b27")
-		(property "Reference" "R15"
+		(property "Reference" "R16"
 			(at 332.232 154.686 90)
 			(effects
 				(font
@@ -3639,7 +3663,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "R15")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -4007,7 +4031,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4ad57943-1bb4-4572-814d-a93fdb6ee6de")
-		(property "Reference" "R12"
+		(property "Reference" "R13"
 			(at 181.61 207.264 0)
 			(effects
 				(font
@@ -4115,7 +4139,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "R12")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -4199,7 +4223,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "52b47752-8d24-4a3b-a2b5-56e2231397e9")
-		(property "Reference" "R14"
+		(property "Reference" "R15"
 			(at 229.87 162.052 0)
 			(effects
 				(font
@@ -4298,7 +4322,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "R14")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -5161,7 +5185,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8e563074-d32f-4346-b479-63683a16873a")
-		(property "Reference" "R17"
+		(property "Reference" "R18"
 			(at 388.62 208.534 0)
 			(effects
 				(font
@@ -5261,7 +5285,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "R17")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -5345,7 +5369,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "914d51fd-50d0-4e09-9422-c5c0ca0b84ff")
-		(property "Reference" "R16"
+		(property "Reference" "R17"
 			(at 358.14 208.534 0)
 			(effects
 				(font
@@ -5445,7 +5469,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "R16")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -5961,7 +5985,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "b8273d8f-bb70-4dfd-86ad-0f77b422d2f6")
-		(property "Reference" "R11"
+		(property "Reference" "R12"
 			(at 173.99 199.39 90)
 			(effects
 				(font
@@ -6058,7 +6082,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "R11")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -6496,7 +6520,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c739c759-fc3c-408c-baf3-d0d01d44d87b")
-		(property "Reference" "R13"
+		(property "Reference" "R14"
 			(at 229.87 154.432 0)
 			(effects
 				(font
@@ -6595,7 +6619,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "R13")
+					(reference "R14")
 					(unit 1)
 				)
 			)

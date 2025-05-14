@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-05-13")
+		(date "2025-05-14")
 		(rev "v5.0.0")
 	)
 	(lib_symbols
@@ -3204,6 +3204,12 @@
 		(uuid "9b93357e-69af-49ca-8459-536829901736")
 	)
 	(junction
+		(at 382.27 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d39afd3-90d5-48ac-98b4-3c2459670d1c")
+	)
+	(junction
 		(at 39.37 199.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3214,12 +3220,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a2ea79fc-8990-4cf0-b1eb-91452ddfab05")
-	)
-	(junction
-		(at 375.92 181.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b564c8d6-6b4c-47d4-acd9-d3b54df5be5b")
 	)
 	(junction
 		(at 172.72 205.74)
@@ -3602,6 +3602,16 @@
 			(type default)
 		)
 		(uuid "4752c737-8f92-4653-8408-f8b7e2d414a0")
+	)
+	(wire
+		(pts
+			(xy 382.27 181.61) (xy 383.54 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d013550-ece8-41e1-adee-1d0f71ba6f45")
 	)
 	(wire
 		(pts
@@ -4045,6 +4055,16 @@
 	)
 	(wire
 		(pts
+			(xy 391.16 181.61) (xy 392.43 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c01be119-848a-4bf4-a3c1-66fd73215bfc")
+	)
+	(wire
+		(pts
 			(xy 124.46 191.77) (xy 125.73 191.77)
 		)
 		(stroke
@@ -4175,7 +4195,7 @@
 	)
 	(wire
 		(pts
-			(xy 374.65 181.61) (xy 375.92 181.61)
+			(xy 374.65 181.61) (xy 382.27 181.61)
 		)
 		(stroke
 			(width 0)
@@ -4262,16 +4282,6 @@
 			(type default)
 		)
 		(uuid "e8f984dc-fca6-4d9c-a0e6-2e200ad5b71e")
-	)
-	(wire
-		(pts
-			(xy 375.92 181.61) (xy 381 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0b8aad7-0010-440a-ab2e-c8a05ae85d8d")
 	)
 	(wire
 		(pts
@@ -5123,6 +5133,16 @@
 		)
 		(uuid "99f2f096-330b-475e-8a38-e79ace1e00e4")
 	)
+	(label "ALRTn"
+		(at 381 181.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a2235af9-50a6-4397-9bc6-31c56de738fa")
+	)
 	(label "BATT+"
 		(at 38.1 199.39 180)
 		(effects
@@ -5166,7 +5186,7 @@
 	)
 	(hierarchical_label "BAT_INTn"
 		(shape output)
-		(at 381 181.61 0)
+		(at 392.43 181.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6372,6 +6392,127 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 387.35 181.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5c396997-4839-40bf-b1d2-7c4f3bfae951")
+		(property "Reference" "R11"
+			(at 387.35 177.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0 Ω"
+			(at 387.35 179.324 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 387.35 183.388 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 387.35 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 387.35 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 387.35 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 387.35 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110001"
+			(at 387.35 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0402"
+			(at 387.35 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110001CT-ND"
+			(at 387.35 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 387.35 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b0e73ffd-e361-4b4a-b220-51ab1d0917c2")
+		)
+		(pin "1"
+			(uuid "e5cf9479-79f8-4aea-8a0a-4b46052c4ab3")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 290.83 201.93 90)
 		(unit 1)
@@ -7344,7 +7485,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 375.92 181.61 0)
+		(at 382.27 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7352,7 +7493,7 @@
 		(dnp no)
 		(uuid "91e0f5bf-e99f-45df-ab02-4c228fc0de51")
 		(property "Reference" "TP13"
-			(at 375.92 176.784 0)
+			(at 382.27 176.784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7360,7 +7501,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 378.46 179.5779 0)
+			(at 384.81 179.5779 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7370,7 +7511,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 381 181.61 0)
+			(at 387.35 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7379,7 +7520,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 381 181.61 0)
+			(at 387.35 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7388,7 +7529,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 375.92 181.61 0)
+			(at 382.27 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)

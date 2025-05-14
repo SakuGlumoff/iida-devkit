@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-05-13")
+		(date "2025-05-14")
 		(rev "v5.0.0")
 	)
 	(lib_symbols
@@ -131,6 +131,130 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
 					(name "~"
 						(effects
 							(font
@@ -392,6 +516,239 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SHT3x_DIS:SHT31-DIS"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 9.906 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "I²C humidity and temperature sensor, ±2%RH, ±0.2°C, DFN-8"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm *DFN-8-*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SHT31-DIS_1_1"
+				(rectangle
+					(start -7.62 8.89)
+					(end 7.62 -13.97)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -10.16 6.35 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 -8.89 0)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 -11.43 0)
+					(length 2.54)
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 6.35 180)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 3.81 180)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 1.27 180)
+					(length 2.54)
+					(name "ALERT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -1.27 180)
+					(length 2.54)
+					(name "nRESET"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -8.89 180)
+					(length 2.54)
+					(name "ADDR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -11.43 180)
+					(length 2.54)
+					(name "R"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -665,15 +1022,90 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Temperature sensor"
+	(text "nRESET is not used"
 		(exclude_from_sim no)
-		(at 217.932 138.938 0)
+		(at 212.09 198.628 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify right top)
 		)
-		(uuid "e950efac-baa3-4ec8-a133-2a1de423a81d")
+		(uuid "4108cb17-b691-4f3a-ad9b-4caa9c1b8e3e")
+	)
+	(text "Remove copper from around the sensor to not skew results."
+		(exclude_from_sim no)
+		(at 82.55 222.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 194 1)
+			)
+		)
+		(uuid "d593dcf6-d439-4da1-bd89-95d932b4ce85")
+	)
+	(text_box "To measure the relative around the device, integrate a humidity sensor.\n\nThe humidity sensor provides an interrupt line, HUM_INT, which provides alert events for the host controller MCU."
+		(exclude_from_sim no)
+		(at 133.35 63.5 0)
+		(size 113.03 26.67)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "0cb8c21f-2673-408c-8298-c5ab4e501ef5")
+	)
+	(text_box "With ADDR tied to ground,\nthe address is 0x44h."
+		(exclude_from_sim no)
+		(at 201.93 217.17 0)
+		(size 38.1 6.35)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 251 255 120 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1ddc6c7c-1cfd-49b4-b08c-29bafae95445")
+	)
+	(text_box "Ambient temperature sensor"
+		(exclude_from_sim no)
+		(at 12.7 50.8 0)
+		(size 118.11 200.66)
+		(margins 0.9525 2 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "1f61a99e-b37f-43f3-8630-8a0d5577b9e7")
 	)
 	(text_box "Sensors"
 		(exclude_from_sim no)
@@ -697,6 +1129,28 @@
 		)
 		(uuid "48090ba6-e224-42e4-83b4-10dcaedc8648")
 	)
+	(text_box "Humidity sensor"
+		(exclude_from_sim no)
+		(at 130.81 50.8 0)
+		(size 167.64 200.66)
+		(margins 0.9525 2 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "8e5c933d-bb74-4c71-b4a9-e9bfe2976155")
+	)
 	(text_box "Notes"
 		(exclude_from_sim no)
 		(at 12.7 251.46 0)
@@ -719,9 +1173,29 @@
 		)
 		(uuid "8ed4c4ae-d7d4-41ef-83a8-1394d12b06f9")
 	)
+	(text_box "To measure the ambient temperature around the device, integrate a temperature sensor.\n\nThe temperature sensor provides an interrupt line, TEMP_INTn, which provides alert events for the host controller MCU."
+		(exclude_from_sim no)
+		(at 15.24 63.5 0)
+		(size 113.03 26.67)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "c8ce00b5-911d-4267-a893-644ed2ccbf29")
+	)
 	(text_box "With [A0 .. A2] tied to ground,\nthe address is 0x18h."
 		(exclude_from_sim no)
-		(at 195.58 167.64 0)
+		(at 63.5 213.36 0)
 		(size 38.1 6.35)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -741,38 +1215,86 @@
 		(uuid "c9ef6475-8400-4822-ae8c-0d70bc170343")
 	)
 	(junction
-		(at 203.2 160.02)
+		(at 234.95 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0dabac3b-9329-4d4d-985b-0a48d81a2eaf")
+	)
+	(junction
+		(at 93.98 205.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2365bcea-1ad7-453e-8b54-cd49a9fcaecc")
 	)
 	(junction
-		(at 203.2 157.48)
+		(at 58.42 195.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44f91daf-f763-4455-b3da-4dcd1456b65f")
+	)
+	(junction
+		(at 234.95 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b63380f-260f-4b49-a245-a5b93d9059e3")
+	)
+	(junction
+		(at 93.98 203.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6cc7b338-0590-4b3a-b87a-263cf9ac921d")
 	)
 	(junction
-		(at 224.79 157.48)
+		(at 72.39 203.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "76e2a157-e842-42a9-9476-e49d344b7c7b")
 	)
 	(junction
-		(at 203.2 144.78)
+		(at 234.95 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80d0b7a6-c014-4887-99c2-662157947907")
+	)
+	(junction
+		(at 93.98 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8ab2b6c0-a08e-4c79-95b1-4dd13a00892e")
 	)
 	(junction
-		(at 224.79 160.02)
+		(at 182.88 195.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "999a6728-7f23-42cb-bbfe-bbc16945fbd1")
+	)
+	(junction
+		(at 72.39 205.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "be247dae-5606-48ad-b70d-be26ff0a98db")
 	)
+	(junction
+		(at 209.55 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2404ba7-0563-4538-8ae1-0aac240451b2")
+	)
+	(junction
+		(at 45.72 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df555fba-711e-4ccc-a75e-02219098c46b")
+	)
+	(junction
+		(at 43.18 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9eca086-2ecb-4730-a52b-a200a53f1e1f")
+	)
 	(wire
 		(pts
-			(xy 203.2 160.02) (xy 203.2 162.56)
+			(xy 93.98 205.74) (xy 93.98 208.28)
 		)
 		(stroke
 			(width 0)
@@ -782,27 +1304,37 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 147.32) (xy 224.79 147.32)
+			(xy 212.09 198.12) (xy 193.04 198.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "06bd67be-ca50-4e60-a225-1b076e3c8f26")
+		(uuid "0133cf18-439f-4775-8417-fed27dc19b31")
 	)
 	(wire
 		(pts
-			(xy 233.68 144.78) (xy 224.79 144.78)
+			(xy 45.72 139.7) (xy 204.47 139.7)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "119eb17e-e595-4165-94bb-f83789f41ad9")
+		(uuid "102d7184-9368-41e1-9c2b-c917fe278569")
 	)
 	(wire
 		(pts
-			(xy 203.2 160.02) (xy 203.2 157.48)
+			(xy 234.95 190.5) (xy 234.95 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "126da752-f318-4d74-a052-d4d6ecf5aac9")
+	)
+	(wire
+		(pts
+			(xy 93.98 205.74) (xy 93.98 203.2)
 		)
 		(stroke
 			(width 0)
@@ -812,7 +1344,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 157.48) (xy 204.47 157.48)
+			(xy 93.98 203.2) (xy 92.71 203.2)
 		)
 		(stroke
 			(width 0)
@@ -822,7 +1354,17 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 157.48) (xy 203.2 153.67)
+			(xy 45.72 190.5) (xy 72.39 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d5799ba-1aca-44c8-92f7-4b687bc2dbca")
+	)
+	(wire
+		(pts
+			(xy 93.98 203.2) (xy 93.98 199.39)
 		)
 		(stroke
 			(width 0)
@@ -832,7 +1374,47 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 160.02) (xy 224.79 162.56)
+			(xy 201.93 142.24) (xy 43.18 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "373b0bd0-d169-435c-a952-7600d217a19e")
+	)
+	(wire
+		(pts
+			(xy 43.18 193.04) (xy 72.39 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "393f86a4-b227-4cf3-8beb-88d60ee6471d")
+	)
+	(wire
+		(pts
+			(xy 232.41 208.28) (xy 234.95 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a4946d2-f766-41a4-851b-e08055760ac8")
+	)
+	(wire
+		(pts
+			(xy 43.18 142.24) (xy 38.1 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "407c11da-0f75-48b7-bba8-6f7929dc5e29")
+	)
+	(wire
+		(pts
+			(xy 72.39 205.74) (xy 72.39 208.28)
 		)
 		(stroke
 			(width 0)
@@ -842,7 +1424,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 144.78) (xy 204.47 144.78)
+			(xy 93.98 190.5) (xy 92.71 190.5)
 		)
 		(stroke
 			(width 0)
@@ -852,7 +1434,47 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 142.24) (xy 203.2 144.78)
+			(xy 58.42 195.58) (xy 72.39 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47527a54-b46c-4389-886d-14ec90fdf045")
+	)
+	(wire
+		(pts
+			(xy 234.95 205.74) (xy 234.95 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4951a10f-da5f-4ea6-b7a9-f48181e2e2d2")
+	)
+	(wire
+		(pts
+			(xy 212.09 193.04) (xy 201.93 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51539446-9186-46ae-a93e-2c8d6576a0db")
+	)
+	(wire
+		(pts
+			(xy 209.55 208.28) (xy 209.55 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53f336f7-dec6-432b-953b-6e2bc7284dbb")
+	)
+	(wire
+		(pts
+			(xy 93.98 187.96) (xy 93.98 190.5)
 		)
 		(stroke
 			(width 0)
@@ -862,7 +1484,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 154.94) (xy 224.79 157.48)
+			(xy 72.39 200.66) (xy 72.39 203.2)
 		)
 		(stroke
 			(width 0)
@@ -872,7 +1494,87 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 160.02) (xy 204.47 160.02)
+			(xy 43.18 193.04) (xy 43.18 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67210424-d286-4800-b16f-2327a79ef8e6")
+	)
+	(wire
+		(pts
+			(xy 182.88 195.58) (xy 212.09 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bc66d41-21ed-458d-b6c1-ed1af491c37c")
+	)
+	(wire
+		(pts
+			(xy 193.04 198.12) (xy 193.04 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6df0118d-3a79-44e6-90f2-8ad7fa79f664")
+	)
+	(wire
+		(pts
+			(xy 209.55 205.74) (xy 212.09 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ed11444-d938-45f4-80d3-da6bffa5f949")
+	)
+	(wire
+		(pts
+			(xy 232.41 190.5) (xy 234.95 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73a5293b-3825-4185-a5d5-24d11b639ccf")
+	)
+	(wire
+		(pts
+			(xy 201.93 193.04) (xy 201.93 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76f3b737-40b9-4d36-b023-82d678108153")
+	)
+	(wire
+		(pts
+			(xy 204.47 190.5) (xy 212.09 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e42434a-be65-40b2-a20f-705b8f8c875c")
+	)
+	(wire
+		(pts
+			(xy 234.95 201.93) (xy 234.95 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "843a38ff-2bf0-455b-9672-aea0697897ae")
+	)
+	(wire
+		(pts
+			(xy 93.98 205.74) (xy 92.71 205.74)
 		)
 		(stroke
 			(width 0)
@@ -882,7 +1584,47 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 157.48) (xy 224.79 160.02)
+			(xy 58.42 179.07) (xy 58.42 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8872ed55-6e4f-4844-ab7c-c45a97319bcd")
+	)
+	(wire
+		(pts
+			(xy 193.04 177.8) (xy 193.04 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e1c7bb5-924e-41c1-a788-59b765a32cf4")
+	)
+	(wire
+		(pts
+			(xy 58.42 187.96) (xy 58.42 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fe82ed5-0d4c-473a-9cc0-f36d48d0e384")
+	)
+	(wire
+		(pts
+			(xy 234.95 208.28) (xy 234.95 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91e7bf96-e84a-4cab-aeab-f2d65c354218")
+	)
+	(wire
+		(pts
+			(xy 72.39 203.2) (xy 72.39 205.74)
 		)
 		(stroke
 			(width 0)
@@ -892,7 +1634,117 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 144.78) (xy 203.2 146.05)
+			(xy 170.18 195.58) (xy 172.72 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93f0c5e1-7dea-496e-af55-b3aa50e5eb21")
+	)
+	(wire
+		(pts
+			(xy 204.47 139.7) (xy 204.47 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7151ffd-f238-4036-8321-41403dd18b0f")
+	)
+	(wire
+		(pts
+			(xy 43.18 195.58) (xy 45.72 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baaee201-7b01-4e00-9602-9c574502ae9f")
+	)
+	(wire
+		(pts
+			(xy 232.41 205.74) (xy 234.95 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beef8cf7-d3a0-4264-af22-c322a472bd6b")
+	)
+	(wire
+		(pts
+			(xy 182.88 177.8) (xy 182.88 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf4b393c-3d17-4d6b-adcb-a64e18e19e03")
+	)
+	(wire
+		(pts
+			(xy 209.55 210.82) (xy 209.55 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf981370-d683-4f41-a959-f567fdde6cf7")
+	)
+	(wire
+		(pts
+			(xy 180.34 195.58) (xy 182.88 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c66fc155-4b6b-4020-934a-f696d6f7332e")
+	)
+	(wire
+		(pts
+			(xy 182.88 186.69) (xy 182.88 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6e52b31-6138-4709-a3b6-5ae441820c61")
+	)
+	(wire
+		(pts
+			(xy 209.55 208.28) (xy 212.09 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca797681-2ca4-4e57-afc7-fa86079f08c4")
+	)
+	(wire
+		(pts
+			(xy 234.95 187.96) (xy 234.95 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d35a3802-0334-4a9f-90ec-48408d4ef2d9")
+	)
+	(wire
+		(pts
+			(xy 45.72 190.5) (xy 45.72 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da296aed-a4d6-499a-a063-524d413b00d6")
+	)
+	(wire
+		(pts
+			(xy 93.98 190.5) (xy 93.98 191.77)
 		)
 		(stroke
 			(width 0)
@@ -902,51 +1754,101 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 149.86) (xy 224.79 149.86)
+			(xy 53.34 195.58) (xy 58.42 195.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fe4abe75-c8b6-450e-8177-4cc69f90748a")
+		(uuid "e9d9af57-5447-4a7c-ab1c-f241dd15b850")
 	)
-	(hierarchical_label "I2C_SCL"
-		(shape output)
-		(at 233.68 147.32 0)
+	(wire
+		(pts
+			(xy 45.72 139.7) (xy 38.1 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbfed97d-c095-40a1-87d1-dc9f10635b48")
+	)
+	(label "HUM_RESETn"
+		(at 199.39 198.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
+		)
+		(uuid "07787a1f-d66f-4e52-a210-543f6f951bc0")
+	)
+	(label "HUM_ALERT"
+		(at 199.39 195.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "27de2237-ebdd-4d9c-92d4-3d68ab17f52c")
+	)
+	(label "TEMP_ALERT"
+		(at 60.96 195.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "35f9405f-f44a-4055-99ed-826b40181cc1")
+	)
+	(hierarchical_label "I2C_SCL"
+		(shape input)
+		(at 38.1 142.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
 		)
 		(uuid "3769ed6f-807d-4d02-a016-cad9fb74bf35")
 	)
-	(hierarchical_label "TEMP_INT"
+	(hierarchical_label "HUM_INT"
 		(shape output)
-		(at 233.68 149.86 0)
+		(at 170.18 195.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
+		)
+		(uuid "400501bd-6d67-49be-ae58-cef7336ca99c")
+	)
+	(hierarchical_label "TEMP_INTn"
+		(shape output)
+		(at 43.18 195.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
 		)
 		(uuid "76c30201-736a-47eb-8b99-fd24d1dc528d")
 	)
 	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
-		(at 233.68 144.78 0)
+		(at 38.1 139.7 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "80caf36e-450f-4d4c-9a66-02dd0f8f0146")
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 203.2 162.56 0)
-		(mirror y)
+		(at 93.98 208.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -954,8 +1856,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03d62b5c-05bc-4c11-acf3-049019925f74")
-		(property "Reference" "#PWR0112"
-			(at 203.2 168.91 0)
+		(property "Reference" "#PWR0115"
+			(at 93.98 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -964,7 +1866,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.2 167.64 0)
+			(at 93.98 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -973,7 +1875,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 162.56 0)
+			(at 93.98 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -982,7 +1884,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 203.2 162.56 0)
+			(at 93.98 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -991,7 +1893,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 203.2 162.56 0)
+			(at 93.98 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1005,7 +1907,123 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
-					(reference "#PWR0112")
+					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SHT3x_DIS:SHT31-DIS")
+		(at 222.25 196.85 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09dd8622-3c97-4ca8-b479-3eda4c58d7a6")
+		(property "Reference" "U13"
+			(at 222.25 186.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SHT31-DIS-B2.5KS"
+			(at 222.25 211.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm"
+			(at 222.25 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf"
+			(at 222.25 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "I²C humidity and temperature sensor, ±2%RH, ±0.2°C, DFN-8"
+			(at 222.25 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "1649-1011-1-ND"
+			(at 222.25 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SHT31-DIS-B2.5KS"
+			(at 222.25 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sensirion AG"
+			(at 222.25 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6def4bfd-fd91-4788-a15e-8b2054e93ab5")
+		)
+		(pin "5"
+			(uuid "09703d41-c850-4931-9fab-8a29f6946a2e")
+		)
+		(pin "8"
+			(uuid "204be81b-8004-4c00-9531-e2e79a6e75b2")
+		)
+		(pin "9"
+			(uuid "fbdeaf9f-c9ba-41c5-b25f-a4dc1357b0c9")
+		)
+		(pin "3"
+			(uuid "a762ff9e-8e0e-4fe8-82ab-edccaa2d7dc7")
+		)
+		(pin "6"
+			(uuid "b1f455b3-cdc9-4a2d-9726-aa3c53da8358")
+		)
+		(pin "4"
+			(uuid "395f99c0-65a5-4e42-bba3-499679a6b12f")
+		)
+		(pin "7"
+			(uuid "991f476a-1c32-437c-b651-5e9511942a8e")
+		)
+		(pin "2"
+			(uuid "3c7cbd6d-7f3e-4cc1-b808-8772dd2e7301")
+		)
+		(instances
+			(project ""
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "U13")
 					(unit 1)
 				)
 			)
@@ -1013,16 +2031,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 203.2 149.86 0)
-		(mirror y)
+		(at 234.95 198.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "10367e1d-d434-478b-b37c-af356566524c")
+		(uuid "0c45ef77-bd99-4eef-9f1f-a8fb08185c7f")
 		(property "Reference" "C40"
-			(at 200.66 147.066 0)
+			(at 237.49 195.326 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1031,7 +2048,7 @@
 			)
 		)
 		(property "Value" "0.1 µF"
-			(at 200.66 148.844 0)
+			(at 237.49 197.104 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1040,7 +2057,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 202.2348 153.67 0)
+			(at 235.9152 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1049,7 +2066,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 203.2 149.86 0)
+			(at 234.95 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1058,7 +2075,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 203.2 149.86 0)
+			(at 234.95 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1067,7 +2084,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 203.2 149.86 0)
+			(at 234.95 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1076,7 +2093,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 203.2 149.86 0)
+			(at 234.95 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1085,7 +2102,7 @@
 			)
 		)
 		(property "MPN" "GCM155R71C104KA55J"
-			(at 203.2 149.86 0)
+			(at 234.95 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1094,7 +2111,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "490-7998-1-ND"
-			(at 203.2 149.86 0)
+			(at 234.95 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1103,7 +2120,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 203.2 149.86 0)
+			(at 234.95 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1112,7 +2129,7 @@
 			)
 		)
 		(property "Tolerance" "≤ 10 %"
-			(at 200.66 150.876 0)
+			(at 237.49 199.136 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1121,7 +2138,7 @@
 			)
 		)
 		(property "Voltage" "≥ 16 V"
-			(at 200.66 152.654 0)
+			(at 237.49 200.914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1130,7 +2147,7 @@
 			)
 		)
 		(property "Class" "X7R"
-			(at 203.2 149.86 0)
+			(at 234.95 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1139,7 +2156,157 @@
 			)
 		)
 		(property "Power" ""
-			(at 203.2 149.86 0)
+			(at 234.95 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d244cee-92e2-410b-a3cf-bd5264fbadb6")
+		)
+		(pin "2"
+			(uuid "7f8120d8-d355-4910-bbf0-723144a6fc27")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 93.98 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "10367e1d-d434-478b-b37c-af356566524c")
+		(property "Reference" "C39"
+			(at 96.52 192.786 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1 µF"
+			(at 96.52 194.564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 94.9452 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 93.98 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 93.98 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GCM155R71C104KA55J"
+			(at 93.98 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "490-7998-1-ND"
+			(at 93.98 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0402"
+			(at 93.98 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "≤ 10 %"
+			(at 96.52 196.596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage" "≥ 16 V"
+			(at 96.52 198.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Class" "X7R"
+			(at 93.98 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 93.98 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1156,40 +2323,42 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
-					(reference "C40")
+					(reference "C39")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "MCP9808:MCP9808T-E/MC")
-		(at 214.63 140.97 0)
+		(lib_id "Device:R")
+		(at 182.88 182.88 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "24bf88c0-4a3e-456b-9c2f-7d1250306edb")
-		(property "Reference" "U12"
-			(at 214.63 141.224 0)
+		(uuid "161b25ba-62a6-4936-b571-e1fcca65ed7c")
+		(property "Reference" "R71"
+			(at 181.61 181.102 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "MCP9808T-E/MC"
-			(at 214.63 163.83 0)
+		(property "Value" "10 kΩ"
+			(at 181.61 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm"
-			(at 214.63 140.97 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 184.658 182.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1197,8 +2366,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22203b.pdf"
-			(at 214.63 140.97 0)
+		(property "Datasheet" "~"
+			(at 182.88 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1207,7 +2376,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 214.63 140.97 0)
+			(at 182.88 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1215,8 +2384,26 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Microchip Technology"
-			(at 214.63 140.97 0)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 182.88 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110020"
+			(at 182.88 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110020CT-ND"
+			(at 182.88 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1225,7 +2412,101 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 214.63 140.97 0)
+			(at 182.88 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "≤ 5 %"
+			(at 181.61 184.658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "b8812aad-4446-4321-b0bc-76d6d2ba23c9")
+		)
+		(pin "2"
+			(uuid "28a5ddd6-3843-4423-8000-a8ee2aa25825")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "R71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MCP9808:MCP9808T-E/MC")
+		(at 82.55 186.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "24bf88c0-4a3e-456b-9c2f-7d1250306edb")
+		(property "Reference" "U12"
+			(at 82.55 186.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP9808T-E/MC"
+			(at 82.55 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm"
+			(at 82.55 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22203b.pdf"
+			(at 82.55 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 82.55 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Microchip Technology"
+			(at 82.55 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 82.55 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1234,7 +2515,7 @@
 			)
 		)
 		(property "MPN" "MCP9808T-E/MC"
-			(at 214.63 140.97 0)
+			(at 82.55 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1243,7 +2524,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "MCP9808T-E/MCCT-ND"
-			(at 214.63 140.97 0)
+			(at 82.55 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1289,15 +2570,16 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 203.2 142.24 0)
+		(at 58.42 179.07 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "893f0fc0-343a-4c7a-8174-0d3b2d639a33")
-		(property "Reference" "#PWR0111"
-			(at 203.2 146.05 0)
+		(uuid "25109e54-3df9-44f2-91f1-fe629755f808")
+		(property "Reference" "#PWR0112"
+			(at 58.42 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1306,7 +2588,7 @@
 			)
 		)
 		(property "Value" "V_3V3"
-			(at 203.2 138.43 0)
+			(at 58.42 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1314,7 +2596,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 142.24 0)
+			(at 58.42 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1323,7 +2605,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 142.24 0)
+			(at 58.42 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1332,7 +2614,309 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 203.2 142.24 0)
+			(at 58.42 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad8f96c5-3444-4a2e-8e69-f82d8fa39856")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "#PWR0112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 49.53 195.58 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "49253b97-3ac8-437f-b7ce-7d3d23bce6e9")
+		(property "Reference" "R68"
+			(at 49.53 197.866 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0 Ω"
+			(at 49.53 199.644 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 49.53 193.802 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 49.53 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 49.53 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110001"
+			(at 49.53 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0402"
+			(at 49.53 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110001CT-ND"
+			(at 49.53 195.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 49.53 195.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "786291d0-2a10-4197-928c-9d936772e905")
+		)
+		(pin "1"
+			(uuid "d5c02a36-7dbf-45fd-a5bf-1adacf37dd21")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "R68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 58.42 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "49637510-bbfa-4327-b122-f98a532b2fc2")
+		(property "Reference" "R69"
+			(at 59.69 182.372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10 kΩ"
+			(at 59.69 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 56.642 184.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 58.42 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 58.42 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110020"
+			(at 58.42 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110020CT-ND"
+			(at 58.42 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 58.42 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "≤ 5 %"
+			(at 59.69 185.928 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "68f907e6-0278-46e7-b676-4713abe82dce")
+		)
+		(pin "2"
+			(uuid "3eb64316-8a35-4125-84ce-0b971f12a2b2")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "R69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 93.98 187.96 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "893f0fc0-343a-4c7a-8174-0d3b2d639a33")
+		(property "Reference" "#PWR0114"
+			(at 93.98 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V_3V3"
+			(at 93.98 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 93.98 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1346,43 +2930,39 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
-					(reference "#PWR0111")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 224.79 162.56 0)
-		(mirror y)
+		(lib_id "Device:R")
+		(at 176.53 195.58 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e7e6d2c1-4f26-40ce-9213-b23531c3a302")
-		(property "Reference" "#PWR0113"
-			(at 224.79 168.91 0)
+		(uuid "8a91daa7-5411-40c5-8514-53396f440471")
+		(property "Reference" "R70"
+			(at 176.53 191.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 224.79 167.64 0)
+		(property "Value" "0 Ω"
+			(at 176.53 193.294 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 224.79 162.56 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 176.53 197.358 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1391,7 +2971,197 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 224.79 162.56 0)
+			(at 176.53 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 176.53 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 176.53 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 176.53 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110001"
+			(at 176.53 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0402"
+			(at 176.53 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110001CT-ND"
+			(at 176.53 195.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 176.53 195.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "60727328-54e2-472f-aafb-da62fb49ec6c")
+		)
+		(pin "1"
+			(uuid "3612aabe-2bf5-42dc-ae89-f696d38bfaef")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "R70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 193.04 177.8 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b5e7ca70-ef46-419e-8d5b-94f294a761b8")
+		(property "Reference" "#PWR0117"
+			(at 193.04 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V_3V3"
+			(at 193.04 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 193.04 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f2afcf4-10bf-4682-bbaf-5b77152ce979")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "#PWR0117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 234.95 210.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9d9c6f0-20cf-4130-b8c7-f510752f8d93")
+		(property "Reference" "#PWR0120"
+			(at 234.95 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.95 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 234.95 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1400,7 +3170,273 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 224.79 162.56 0)
+			(at 234.95 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e37678a-ae1d-47bf-9b4b-9c0b7b8b9871")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "#PWR0120")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 182.88 177.8 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bad719e3-6f42-401b-8e60-096ebb0fed91")
+		(property "Reference" "#PWR0116"
+			(at 182.88 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V_3V3"
+			(at 182.88 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 182.88 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "08f59fa8-14d8-4e8f-ab2b-a14e870f0fc9")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "#PWR0116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 209.55 210.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c99334d0-3510-4373-be3e-675e3a665d89")
+		(property "Reference" "#PWR0118"
+			(at 209.55 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 209.55 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 209.55 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 209.55 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "965d8f77-3427-4a03-b7c0-dcef6873cf54")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "#PWR0118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 234.95 187.96 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d2e558dc-380e-49ba-8146-1a20802fd57f")
+		(property "Reference" "#PWR0119"
+			(at 234.95 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V_3V3"
+			(at 234.95 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 234.95 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b632d802-95a1-4789-bc51-555768157792")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "#PWR0119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 72.39 208.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7e6d2c1-4f26-40ce-9213-b23531c3a302")
+		(property "Reference" "#PWR0113"
+			(at 72.39 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 72.39 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 72.39 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1415,6 +3451,121 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
 					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 193.04 182.88 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f00e0e9c-6a4a-42bb-a53f-23911ea88d8b")
+		(property "Reference" "R72"
+			(at 191.77 181.102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10 kΩ"
+			(at 191.77 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 194.818 182.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 193.04 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110020"
+			(at 193.04 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110020CT-ND"
+			(at 193.04 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 193.04 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "≤ 5 %"
+			(at 191.77 184.658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "d5bbef9b-710a-4f64-a2c9-ab9b14b57fa4")
+		)
+		(pin "2"
+			(uuid "e1790066-f804-4b98-8a68-b305624ebe2c")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "R72")
 					(unit 1)
 				)
 			)

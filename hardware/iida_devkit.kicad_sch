@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-05-13")
+		(date "2025-05-14")
 		(rev "v5.0.0")
 	)
 	(lib_symbols
@@ -520,18 +520,6 @@
 		)
 		(uuid "6363c4ec-6886-4a7e-af61-da201b10e83c")
 	)
-	(text "This project serves as a practice exercise in PCB design and embedded programming.\n\nThe result is a device that can be powered either by a battery or via a USB connection.\nThe device is capable of recharging the battery through the USB interface.\n\nKey features of the device include:\n- A sample sensor (temperature)\n- External flash memory to support firmware-over-the-air (FOTA) updates\n- A modem module that connects the main microcontroller to the internet via LTE CAT-M1\n- Support for both an external antenna and an integrated antenna\n\nA primary objective of this project is to minimize reliance on totalitarian states\n(e.g., China or Russia), on countries that support such states (e.g., India),\nand on countries that may be hostile (e.g., the United States).\nComponent sourcing should prioritize manufacturers that do not produce\ncomponents in such countries.\nPreference should be given to suppliers and manufacturers based in democratic nations,\nsuch as Taiwan and Germany.\n\nTo help reduce environmental impact, both manufacturing and component sourcing are\nfocused around Europe.\n\nRecommended manufacturers:\n- Aisler (Germany)\n- Multi CB (Germany)\n- Aspocomp (Finland)\n\nRecommended component manufacturers:\n- Würth Elektronik (Germany)\n- Infineon Technologies (Germany)\n- STMicroelectronics (Italy)\n\nRecommended distributors:\n- Transfer Multisort Elektronik (Poland)\n- RS Components (United Kingdom)\n- Farnell (United Kingdom)"
-		(exclude_from_sim no)
-		(at 15.24 63.5 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.3175)
-			)
-			(justify left top)
-		)
-		(uuid "b94eda75-5ba9-4359-bbae-047503216cba")
-	)
 	(text "Place a stitched ground guard rail along the edges of the PCB\nto provide a grounding point for human contact when handling the device."
 		(exclude_from_sim no)
 		(at 330.2 228.6 0)
@@ -565,6 +553,26 @@
 			(justify left top)
 		)
 		(uuid "4dca222e-8ff4-4da1-b112-3c6b3f070407")
+	)
+	(text_box "This project serves as a practice exercise in PCB design and embedded programming.\n\nThe result is a device that can be powered either by a battery or via a USB connection.\nThe device is capable of recharging the battery through the USB interface.\n\nKey features of the device include:\n- Sample sensors for temperature and humidity\n- External flash memory to support firmware-over-the-air (FOTA) updates\n- A modem module that connects the main microcontroller to the internet via LTE CAT-M1\n- Support for both an external antenna and an integrated antenna\n\nA primary objective of this project is to minimize reliance on totalitarian states (e.g., China or Russia), on countries that support such states (e.g., India), and on countries that may be hostile (e.g., the United States).\nComponent sourcing should prioritize manufacturers that do not produce components in such countries.\nPreference should be given to suppliers and manufacturers based in democratic nations, such as Taiwan and Germany.\n\nTo help reduce environmental impact, both manufacturing and component sourcing are focused around Europe.\n\nRecommended manufacturers:\n- Aisler (Germany)\n- Multi CB (Germany)\n- Aspocomp (Finland)\n\nRecommended component manufacturers:\n- Würth Elektronik (Germany)\n- Infineon Technologies (Germany)\n- STMicroelectronics (Italy)\n\nRecommended distributors:\n- Transfer Multisort Elektronik (Poland)\n- RS Components (United Kingdom)\n- Farnell (United Kingdom)"
+		(exclude_from_sim no)
+		(at 15.24 63.5 0)
+		(size 186.69 186.69)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "58e03f07-7e00-4687-9a2e-acc315e02fb7")
 	)
 	(text_box "Iida devkit"
 		(exclude_from_sim no)
@@ -784,7 +792,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 111.76) (xy 316.23 100.33)
+			(xy 316.23 111.76) (xy 316.23 101.6)
 		)
 		(stroke
 			(width 0)
@@ -821,6 +829,16 @@
 			(type default)
 		)
 		(uuid "2c92ff13-4d44-4d26-8d61-ddd0073c729c")
+	)
+	(wire
+		(pts
+			(xy 318.77 114.3) (xy 318.77 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3859afa4-fa38-40a2-a814-da46c1e727ff")
 	)
 	(wire
 		(pts
@@ -994,6 +1012,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 114.3) (xy 318.77 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b306d6d-d060-43be-adcb-b39c86843657")
+	)
+	(wire
+		(pts
 			(xy 279.4 114.3) (xy 279.4 137.16)
 		)
 		(stroke
@@ -1091,6 +1119,16 @@
 			(type default)
 		)
 		(uuid "d472246b-4478-4ed4-be8f-0595d3f3ed69")
+	)
+	(wire
+		(pts
+			(xy 318.77 99.06) (xy 312.42 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5ef04ed-2916-477e-8bf3-5a35719fc353")
 	)
 	(wire
 		(pts
@@ -1224,7 +1262,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 100.33) (xy 312.42 100.33)
+			(xy 316.23 101.6) (xy 312.42 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2668,9 +2706,19 @@
 				(justify left)
 			)
 		)
-		(pin "TEMP_INT" output
-			(at 312.42 100.33 0)
+		(pin "TEMP_INTn" output
+			(at 312.42 101.6 0)
 			(uuid "e6de1325-9d42-40fa-b01a-55155d4ee72b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "HUM_INT" output
+			(at 312.42 99.06 0)
+			(uuid "801466b6-511e-4586-8adb-72ff80b20f3a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2843,9 +2891,19 @@
 				(justify right)
 			)
 		)
-		(pin "TEMP_INT" input
+		(pin "TEMP_INTn" input
 			(at 312.42 111.76 0)
 			(uuid "7be5adb7-0914-4524-8e00-191343693b47")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "HUM_INT" input
+			(at 312.42 114.3 0)
+			(uuid "907a47c9-a155-4433-a276-8dc7a4727d86")
 			(effects
 				(font
 					(size 1.27 1.27)
