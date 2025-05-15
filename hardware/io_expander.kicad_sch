@@ -1249,10 +1249,10 @@
 		)
 		(uuid "53bb1acd-4b0e-4d65-8497-0f9f64985b29")
 	)
-	(text_box "The modem is controlled by three GPIO signals.\n\nMDM_PWR_EN is asserted HIGH to enable powering the modem.\nMDM_PWR_ON is asserted HIGH for 100 ms after the modem is powered on to turn it off.\nMDM_RESET is asserted HIGH for 100 ms after the modem is powered on to reset it."
+	(text_box "The modem is controlled by three GPIO signals.\n\nMDM_PWR_EN enables power to the modem when asserted HIGH and disables power to the modem when asserted LOW.\n\nMDM_PWR_ON is used to turn the modem back on after setting it to a power saving mode.\n\nMDM_RESET is used to reset the modem when UART communcation cannot be used."
 		(exclude_from_sim no)
 		(at 205.74 63.5 0)
-		(size 90.17 43.18)
+		(size 90.17 57.15)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width -0.0001)
