@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-05-14")
+		(date "2025-05-15")
 		(rev "v5.0.0")
 	)
 	(lib_symbols
@@ -8649,7 +8649,7 @@
 				(justify left)
 			)
 		)
-		(property "Voltage" "≥ 16 V"
+		(property "Voltage" "≥ 10 V"
 			(at 148.59 197.104 0)
 			(effects
 				(font
@@ -8701,11 +8701,12 @@
 		(dnp no)
 		(uuid "07842c6a-ebfb-41e0-a676-fdf728526ea9")
 		(property "Reference" "J16"
-			(at 402.59 137.414 0)
+			(at 402.59 137.922 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "PRPC006SAAN-RC"
@@ -9048,20 +9049,22 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1a410c23-233e-4c4c-b8a5-c90ebc7cf38c")
-		(property "Reference" "U7"
-			(at 280.67 95.758 0)
+		(property "Reference" "U8"
+			(at 280.67 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "AT25SF081B-MAHB-T"
-			(at 280.67 115.316 0)
+			(at 280.67 114.808 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_2x3mm_P0.5mm_EP0.61x2.2mm"
@@ -9161,7 +9164,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "U7")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -10523,20 +10526,22 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5712140f-5238-4b70-b8e5-6d5cb85c3b38")
-		(property "Reference" "U6"
-			(at 209.55 80.772 0)
+		(property "Reference" "U7"
+			(at 209.55 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "STM32L552CEU6"
-			(at 209.296 176.53 0)
+			(at 209.55 175.768 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm"
@@ -10761,7 +10766,7 @@
 		(instances
 			(project ""
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "U6")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -11461,11 +11466,12 @@
 		(dnp no)
 		(uuid "616da1c9-ad30-40e0-bca6-94c0a37fba7e")
 		(property "Reference" "J17"
-			(at 402.59 169.164 0)
+			(at 402.59 169.672 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "PRPC006SAAN-RC"
@@ -11843,11 +11849,12 @@
 		(dnp yes)
 		(uuid "6b546192-8dd1-4371-90d0-6ed2c523f5d8")
 		(property "Reference" "J18"
-			(at 402.59 198.374 0)
+			(at 402.59 198.882 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "PRPC001DAAN-RC"
@@ -12501,11 +12508,12 @@
 		(dnp yes)
 		(uuid "76447ad9-c3c5-415f-b235-543885549b90")
 		(property "Reference" "J12"
-			(at 401.32 231.394 0)
+			(at 401.32 231.902 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Value" "PRPC006SAAN-RC"
@@ -13361,7 +13369,7 @@
 				(justify left)
 			)
 		)
-		(property "Voltage" "≥ 16 V"
+		(property "Voltage" "≥ 10 V"
 			(at 173.99 197.104 0)
 			(effects
 				(font
@@ -13918,11 +13926,12 @@
 		(dnp no)
 		(uuid "9891bd97-397c-403d-9e49-e61938b5b3c6")
 		(property "Reference" "J15"
-			(at 402.59 112.014 0)
+			(at 402.59 112.522 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "PRPC006SAAN-RC"
@@ -14044,11 +14053,12 @@
 		(dnp no)
 		(uuid "a19faaaf-3cea-4f65-9460-495a1cd1d657")
 		(property "Reference" "J10"
-			(at 105.41 87.884 0)
+			(at 105.41 88.646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "SBH11-NBPC-D05-SM-BK"
@@ -14784,7 +14794,7 @@
 				(justify left)
 			)
 		)
-		(property "Voltage" "≥ 16 V"
+		(property "Voltage" "≥ 10 V"
 			(at 186.69 197.104 0)
 			(effects
 				(font
@@ -15000,7 +15010,7 @@
 				(justify left)
 			)
 		)
-		(property "Voltage" "≥ 16 V"
+		(property "Voltage" "≥ 10 V"
 			(at 295.91 106.934 0)
 			(effects
 				(font
@@ -15511,11 +15521,12 @@
 		(dnp no)
 		(uuid "bfc57ff3-10e1-4144-8046-f979c6b931a4")
 		(property "Reference" "J14"
-			(at 402.59 86.614 0)
+			(at 402.59 87.122 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "PRPC006SAAN-RC"
@@ -15851,7 +15862,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "≥ 16 V"
+		(property "Voltage" "≥ 10 V"
 			(at 107.95 135.636 0)
 			(effects
 				(font
@@ -16039,11 +16050,12 @@
 		(dnp no)
 		(uuid "ca4b86e7-d408-415d-9046-f71c95cd3b90")
 		(property "Reference" "J13"
-			(at 402.59 61.214 0)
+			(at 402.59 61.722 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "PRPC006SAAN-RC"
@@ -17486,7 +17498,7 @@
 				(justify left)
 			)
 		)
-		(property "Voltage" "≥ 16 V"
+		(property "Voltage" "≥ 10 V"
 			(at 161.29 197.104 0)
 			(effects
 				(font
@@ -17847,20 +17859,22 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fd534512-3a7c-4a62-b561-3fb57d77d9de")
-		(property "Reference" "U6"
-			(at 209.55 181.864 0)
+		(property "Reference" "U7"
+			(at 209.55 182.372 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "STM32L552CEU6"
-			(at 209.55 208.28 0)
+			(at 209.55 207.518 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm"
@@ -18085,7 +18099,7 @@
 		(instances
 			(project ""
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "U6")
+					(reference "U7")
 					(unit 2)
 				)
 			)
