@@ -681,16 +681,22 @@
 		(uuid "38e4c98b-ccd1-49d6-a466-46e17ad3a71d")
 	)
 	(junction
+		(at 232.41 243.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6041a1fb-c9c2-4c9b-ab50-b3e560b20a18")
+	)
+	(junction
 		(at 275.59 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "86d047b3-1b2b-4b3b-93c8-63ecf8a35842")
 	)
 	(junction
-		(at 234.95 243.84)
+		(at 238.76 243.84)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bc0f3575-1bd0-4dc4-80d4-6dac45927ceb")
+		(uuid "98f5a8f3-7e07-449c-8245-ed16263a4b19")
 	)
 	(junction
 		(at 279.4 137.16)
@@ -704,11 +710,15 @@
 		(color 0 0 0 0)
 		(uuid "dae50982-2c3a-4afc-9055-37fc0288c2c0")
 	)
-	(junction
-		(at 240.03 243.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f64cad8a-0185-476f-91dc-4b8cfcbc11f3")
+	(wire
+		(pts
+			(xy 232.41 243.84) (xy 238.76 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0430be5c-da31-4712-8830-5f99d1a5266b")
 	)
 	(wire
 		(pts
@@ -852,6 +862,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 243.84) (xy 245.11 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bdfc546-9e75-4477-8049-63c3e1b3d45c")
+	)
+	(wire
+		(pts
 			(xy 312.42 127) (xy 316.23 127)
 		)
 		(stroke
@@ -892,16 +912,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 243.84) (xy 240.03 243.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5af8a3c2-e4ba-48d5-8484-80313c425d14")
-	)
-	(wire
-		(pts
 			(xy 237.49 157.48) (xy 283.21 157.48)
 		)
 		(stroke
@@ -932,7 +942,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 242.57) (xy 234.95 243.84)
+			(xy 232.41 242.57) (xy 232.41 243.84)
 		)
 		(stroke
 			(width 0)
@@ -992,7 +1002,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 243.84) (xy 234.95 243.84)
+			(xy 226.06 243.84) (xy 232.41 243.84)
 		)
 		(stroke
 			(width 0)
@@ -1009,16 +1019,6 @@
 			(type default)
 		)
 		(uuid "9df435a0-8abd-4114-82db-70c51e98b0bc")
-	)
-	(wire
-		(pts
-			(xy 240.03 243.84) (xy 245.11 243.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4e0ba10-6c1f-42ce-8447-de68f649553c")
 	)
 	(wire
 		(pts
@@ -1052,7 +1052,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 243.84) (xy 229.87 242.57)
+			(xy 226.06 243.84) (xy 226.06 242.57)
 		)
 		(stroke
 			(width 0)
@@ -1162,7 +1162,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 242.57) (xy 240.03 243.84)
+			(xy 238.76 242.57) (xy 238.76 243.84)
 		)
 		(stroke
 			(width 0)
@@ -1242,15 +1242,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 229.87 240.03 0)
+		(at 226.06 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "160058f9-baa4-448c-b354-99225a2ceae8")
-		(property "Reference" "H1"
-			(at 229.87 235.712 0)
+		(property "Reference" "H101"
+			(at 226.06 235.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1258,7 +1258,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 232.41 240.03 0)
+			(at 228.6 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1268,7 +1268,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 229.87 240.03 0)
+			(at 226.06 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1277,7 +1277,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 229.87 240.03 0)
+			(at 226.06 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1286,7 +1286,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 229.87 240.03 0)
+			(at 226.06 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1295,7 +1295,7 @@
 			)
 		)
 		(property "Manufacturer" "-"
-			(at 229.87 240.03 0)
+			(at 226.06 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1304,7 +1304,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 229.87 240.03 0)
+			(at 226.06 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1313,7 +1313,7 @@
 			)
 		)
 		(property "MPN" "-"
-			(at 229.87 240.03 0)
+			(at 226.06 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1322,7 +1322,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 229.87 240.03 0)
+			(at 226.06 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1336,7 +1336,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "H1")
+					(reference "H101")
 					(unit 1)
 				)
 			)
@@ -1351,7 +1351,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "37b17bca-3d3c-4c85-92bf-245f7303c029")
-		(property "Reference" "H4"
+		(property "Reference" "H104"
 			(at 245.11 235.712 0)
 			(effects
 				(font
@@ -1438,7 +1438,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "H4")
+					(reference "H104")
 					(unit 1)
 				)
 			)
@@ -1454,7 +1454,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b88cd83-3afd-4da0-96db-2c7305c3c68f")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR0101"
 			(at 245.11 251.46 0)
 			(effects
 				(font
@@ -1505,7 +1505,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "#PWR01")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -1520,7 +1520,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "61c880d6-eb78-4373-ab8f-f1774093457b")
-		(property "Reference" "FID2"
+		(property "Reference" "FID102"
 			(at 299.72 238.506 0)
 			(effects
 				(font
@@ -1568,7 +1568,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "FID2")
+					(reference "FID102")
 					(unit 1)
 				)
 			)
@@ -1576,15 +1576,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 234.95 240.03 0)
+		(at 232.41 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "701cbfd0-af05-42fa-a2d4-17530a2367e3")
-		(property "Reference" "H2"
-			(at 234.95 235.712 0)
+		(property "Reference" "H102"
+			(at 232.41 235.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1592,7 +1592,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 237.49 240.03 0)
+			(at 234.95 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1602,7 +1602,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 234.95 240.03 0)
+			(at 232.41 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1611,7 +1611,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 234.95 240.03 0)
+			(at 232.41 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1620,7 +1620,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 234.95 240.03 0)
+			(at 232.41 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1629,7 +1629,7 @@
 			)
 		)
 		(property "Manufacturer" "-"
-			(at 234.95 240.03 0)
+			(at 232.41 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1638,7 +1638,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 234.95 240.03 0)
+			(at 232.41 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1647,7 +1647,7 @@
 			)
 		)
 		(property "MPN" "-"
-			(at 234.95 240.03 0)
+			(at 232.41 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1656,7 +1656,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 234.95 240.03 0)
+			(at 232.41 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1670,7 +1670,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "H2")
+					(reference "H102")
 					(unit 1)
 				)
 			)
@@ -1685,7 +1685,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "87581f6e-a7ba-407e-a652-1fbebd13a04c")
-		(property "Reference" "FID1"
+		(property "Reference" "FID101"
 			(at 287.02 238.506 0)
 			(effects
 				(font
@@ -1733,7 +1733,7 @@
 		(instances
 			(project ""
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "FID1")
+					(reference "FID101")
 					(unit 1)
 				)
 			)
@@ -1748,7 +1748,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b0a3d814-bb98-439a-bcb4-9fa5713445be")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR0102"
 			(at 316.23 91.44 0)
 			(effects
 				(font
@@ -1798,7 +1798,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "#PWR02")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -1813,7 +1813,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cc029735-4156-42eb-8513-6d4abdc50dad")
-		(property "Reference" "FID3"
+		(property "Reference" "FID103"
 			(at 312.42 238.506 0)
 			(effects
 				(font
@@ -1861,7 +1861,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "FID3")
+					(reference "FID103")
 					(unit 1)
 				)
 			)
@@ -1869,15 +1869,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 240.03 240.03 0)
+		(at 238.76 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "e64f6084-e950-4b3e-b4b3-d057eb9b5b4e")
-		(property "Reference" "H3"
-			(at 240.03 235.712 0)
+		(property "Reference" "H103"
+			(at 238.76 235.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1885,7 +1885,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 242.57 240.03 0)
+			(at 241.3 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1895,7 +1895,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 240.03 240.03 0)
+			(at 238.76 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1904,7 +1904,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 240.03 240.03 0)
+			(at 238.76 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1913,7 +1913,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 240.03 240.03 0)
+			(at 238.76 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1922,7 +1922,7 @@
 			)
 		)
 		(property "Manufacturer" "-"
-			(at 240.03 240.03 0)
+			(at 238.76 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1931,7 +1931,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 240.03 240.03 0)
+			(at 238.76 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1940,7 +1940,7 @@
 			)
 		)
 		(property "MPN" "-"
-			(at 240.03 240.03 0)
+			(at 238.76 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1949,7 +1949,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 240.03 240.03 0)
+			(at 238.76 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1963,7 +1963,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "H3")
+					(reference "H103")
 					(unit 1)
 				)
 			)
