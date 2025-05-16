@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-05-15")
+		(date "2025-05-16")
 		(rev "v5.0.0")
 	)
 	(lib_symbols
@@ -2076,16 +2076,16 @@
 		(uuid "367572a9-89a6-481d-aa8b-f7ede2d26d07")
 	)
 	(junction
+		(at 317.5 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "424b45f1-6be7-4aa9-b218-f81f410b3c5b")
+	)
+	(junction
 		(at 80.01 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5570c0fe-0217-4353-b980-64e41000cc3b")
-	)
-	(junction
-		(at 328.93 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6f7c59eb-6c67-46cc-a432-3ac30ab833b3")
 	)
 	(junction
 		(at 347.98 109.22)
@@ -2152,6 +2152,16 @@
 			(type default)
 		)
 		(uuid "0148dd0b-08f5-4490-abc1-60a1bc2f8a3f")
+	)
+	(wire
+		(pts
+			(xy 317.5 109.22) (xy 347.98 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07d24a88-d0ac-44f4-8107-e480e8a8abb9")
 	)
 	(wire
 		(pts
@@ -2235,7 +2245,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 109.22) (xy 328.93 109.22)
+			(xy 204.47 109.22) (xy 317.5 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2472,16 +2482,6 @@
 			(type default)
 		)
 		(uuid "cf4ce553-10e4-459e-bc9d-56e792d5d990")
-	)
-	(wire
-		(pts
-			(xy 328.93 109.22) (xy 347.98 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3e85cf0-a282-45a1-8497-79a9513e8055")
 	)
 	(wire
 		(pts
@@ -3096,7 +3096,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 328.93 109.22 0)
+		(at 317.5 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -3104,7 +3104,7 @@
 		(dnp no)
 		(uuid "429683ca-be41-4178-bcc3-f52e9310579c")
 		(property "Reference" "TP1"
-			(at 328.93 104.14 0)
+			(at 317.5 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3112,7 +3112,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 331.47 107.1879 0)
+			(at 320.04 107.1879 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3122,7 +3122,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 334.01 109.22 0)
+			(at 322.58 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3131,7 +3131,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 334.01 109.22 0)
+			(at 322.58 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3140,7 +3140,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 328.93 109.22 0)
+			(at 317.5 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
