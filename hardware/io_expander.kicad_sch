@@ -2079,6 +2079,121 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 93.98 162.56 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "04dec4d1-c0ab-4f58-9675-dcf6696f64ad")
+		(property "Reference" "R704"
+			(at 90.932 162.052 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "22 Ω"
+			(at 97.028 162.052 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
+			(at 93.98 160.782 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 93.98 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110046"
+			(at 93.98 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0402"
+			(at 93.98 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110046CT-ND"
+			(at 93.98 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 93.98 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a0cc6920-232b-443a-aea9-6b47a812393c")
+		)
+		(pin "1"
+			(uuid "7ac14873-37b8-4455-ac1a-4103700cc096")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
+					(reference "R704")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 44.45 143.51 0)
 		(mirror y)
 		(unit 1)
@@ -2194,33 +2309,34 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 93.98 160.02 90)
+		(at 93.98 165.1 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1264bec3-63b6-4a1b-81ef-758d2f9e552c")
-		(property "Reference" "R703"
-			(at 90.932 159.766 90)
+		(uuid "185fabd0-3f72-43e9-855b-b13b6a7e95f8")
+		(property "Reference" "R705"
+			(at 90.932 164.592 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "0 Ω"
-			(at 96.774 159.766 90)
+		(property "Value" "22 Ω"
+			(at 97.028 164.592 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right top)
+				(justify right bottom)
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
-			(at 93.98 161.798 90)
+			(at 93.98 163.322 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2229,7 +2345,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 93.98 160.02 0)
+			(at 93.98 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2238,7 +2354,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 160.02 0)
+			(at 93.98 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2247,7 +2363,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 93.98 160.02 0)
+			(at 93.98 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2255,17 +2371,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 93.98 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112110001"
-			(at 93.98 160.02 0)
+		(property "MPN" "560112110046"
+			(at 93.98 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2274,7 +2381,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 93.98 160.02 0)
+			(at 93.98 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2282,8 +2389,8 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "732-560112110001CT-ND"
-			(at 93.98 160.02 90)
+		(property "DigiKey Part Number" "732-560112110046CT-ND"
+			(at 93.98 165.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2291,8 +2398,8 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
-			(at 93.98 160.02 90)
+		(property "Footprint review check" "+"
+			(at 93.98 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2301,15 +2408,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "2c01870d-2452-4681-9f89-2f795b6f573c")
+			(uuid "ab6414c9-c2dd-44e6-845f-67fd7bc588a5")
 		)
 		(pin "1"
-			(uuid "7705f1ce-82e5-470a-b8f8-f1df1814261a")
+			(uuid "04fc376f-a9c7-42ac-89b9-5dc0d7ed8919")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
-					(reference "R703")
+					(reference "R705")
 					(unit 1)
 				)
 			)
@@ -2490,129 +2597,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
 					(reference "#PWR0707")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 93.98 162.56 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "51cdfb9f-0661-4eca-90b5-9a2538d7ad46")
-		(property "Reference" "R704"
-			(at 90.932 162.306 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Value" "0 Ω"
-			(at 96.774 162.306 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right top)
-			)
-		)
-		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
-			(at 93.98 164.338 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 93.98 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 93.98 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 93.98 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112110001"
-			(at 93.98 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Size" "0402"
-			(at 93.98 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "732-560112110001CT-ND"
-			(at 93.98 162.56 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power" ""
-			(at 93.98 162.56 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a759b846-17a1-4033-8c86-b994b305f916")
-		)
-		(pin "1"
-			(uuid "900577b9-baf2-40ba-a827-c959d7b5646f")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
-					(reference "R704")
 					(unit 1)
 				)
 			)
@@ -2910,6 +2894,119 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
 					(reference "LED702")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 50.8 157.48 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "71aa32a5-8dd6-4af0-95d0-c4d53d7e4969")
+		(property "Reference" "R702"
+			(at 50.8 159.766 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22 Ω"
+			(at 50.8 161.544 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
+			(at 50.8 155.702 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 50.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110046"
+			(at 50.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0402"
+			(at 50.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110046CT-ND"
+			(at 50.8 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 50.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "65995e0e-926a-46cf-ab42-ad872382db6f")
+		)
+		(pin "1"
+			(uuid "dc4201e8-fa35-4614-b0ee-815e05242fd6")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
+					(reference "R702")
 					(unit 1)
 				)
 			)
@@ -3354,129 +3451,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
 					(reference "LED703")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 93.98 165.1 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a7719c29-57b4-4fa3-89d6-6f9a954caf7d")
-		(property "Reference" "R705"
-			(at 90.932 164.846 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Value" "0 Ω"
-			(at 96.774 164.846 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right top)
-			)
-		)
-		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
-			(at 93.98 166.878 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 93.98 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 93.98 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 93.98 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112110001"
-			(at 93.98 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Size" "0402"
-			(at 93.98 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "732-560112110001CT-ND"
-			(at 93.98 165.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power" ""
-			(at 93.98 165.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cbf8d585-a32b-44f8-b34f-df8bf420c5be")
-		)
-		(pin "1"
-			(uuid "ae37da51-41fb-4cfd-9e02-38f96896fe55")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
-					(reference "R705")
 					(unit 1)
 				)
 			)
@@ -4020,32 +3994,34 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 50.8 157.48 90)
+		(at 93.98 160.02 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c5ae598c-9a35-4fc8-bbad-490f0be83260")
-		(property "Reference" "R702"
-			(at 50.8 159.766 90)
+		(uuid "de3e99a0-fd48-46be-a6bb-c67dfa888d0d")
+		(property "Reference" "R703"
+			(at 90.932 159.512 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "0 Ω"
-			(at 50.8 161.544 90)
+		(property "Value" "22 Ω"
+			(at 97.028 159.512 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right bottom)
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
-			(at 50.8 155.702 90)
+			(at 93.98 158.242 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4054,7 +4030,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 157.48 0)
+			(at 93.98 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4063,7 +4039,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 50.8 157.48 0)
+			(at 93.98 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4072,7 +4048,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 50.8 157.48 0)
+			(at 93.98 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4080,17 +4056,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 50.8 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112110001"
-			(at 50.8 157.48 0)
+		(property "MPN" "560112110046"
+			(at 93.98 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4099,7 +4066,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 50.8 157.48 0)
+			(at 93.98 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4107,8 +4074,8 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "732-560112110001CT-ND"
-			(at 50.8 157.48 90)
+		(property "DigiKey Part Number" "732-560112110046CT-ND"
+			(at 93.98 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4116,8 +4083,8 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
-			(at 50.8 157.48 90)
+		(property "Footprint review check" "+"
+			(at 93.98 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4126,15 +4093,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "db053f8a-e728-438f-b093-6d0a85ab607d")
+			(uuid "d3217dcd-7fb5-48f8-9f17-1e026ad7907a")
 		)
 		(pin "1"
-			(uuid "1a1ea5c9-9c32-4913-9f3c-f900d6ecfaa8")
+			(uuid "6c6f0dab-9299-4eb3-acd6-5820afbbf485")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
-					(reference "R702")
+					(reference "R703")
 					(unit 1)
 				)
 			)
