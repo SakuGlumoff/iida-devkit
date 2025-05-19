@@ -1965,6 +1965,132 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:NetTie_2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "NT"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NetTie_2"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Net tie, 2 pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "net tie short"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Net*Tie*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "NetTie_2_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NetTie_2_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -3341,12 +3467,6 @@
 		(uuid "5d1987b1-bb37-4c19-ba8d-fc77767b280f")
 	)
 	(junction
-		(at 52.07 210.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6615a513-a04d-4645-9b71-b983cc104c65")
-	)
-	(junction
 		(at 222.25 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3449,10 +3569,28 @@
 		(uuid "c84f7c58-15e5-497a-98e0-060ce11ca457")
 	)
 	(junction
+		(at 52.07 210.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6411ced-d085-4429-b040-9a77d4d12fe7")
+	)
+	(junction
 		(at 158.75 210.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e02ac8e0-205a-44cf-a3a0-4a3bd64ee08a")
+	)
+	(junction
+		(at 53.34 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e80ecd65-09b2-4375-b3a5-c6e8102aaa7e")
+	)
+	(junction
+		(at 52.07 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8130727-52ee-4721-aa71-b3ba772241d0")
 	)
 	(junction
 		(at 107.95 190.5)
@@ -3465,12 +3603,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f800eb95-04e9-4e21-b54e-ec150b183c6c")
-	)
-	(junction
-		(at 52.07 190.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fc19903c-ca77-4be4-9903-067749b3ff9a")
 	)
 	(wire
 		(pts
@@ -3601,6 +3733,16 @@
 			(type default)
 		)
 		(uuid "12ec72cc-d563-4fda-9d34-48c7000ab991")
+	)
+	(wire
+		(pts
+			(xy 53.34 190.5) (xy 85.09 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bcb9496-2528-4989-8f8e-37052358487d")
 	)
 	(wire
 		(pts
@@ -3744,6 +3886,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 190.5) (xy 52.07 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3eac2626-6307-4c40-b09d-561abfe0531c")
+	)
+	(wire
+		(pts
 			(xy 232.41 198.12) (xy 232.41 201.93)
 		)
 		(stroke
@@ -3794,6 +3946,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 210.82) (xy 52.07 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44f97ccd-1445-408e-a638-5648b54ff27b")
+	)
+	(wire
+		(pts
 			(xy 160.02 210.82) (xy 158.75 210.82)
 		)
 		(stroke
@@ -3811,6 +3973,16 @@
 			(type default)
 		)
 		(uuid "484f1f42-a57c-433a-8d00-e5b9793de5e0")
+	)
+	(wire
+		(pts
+			(xy 53.34 185.42) (xy 53.34 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4973fbcc-31d4-4f13-b258-73a47ea54b2d")
 	)
 	(wire
 		(pts
@@ -3881,6 +4053,16 @@
 			(type default)
 		)
 		(uuid "6493ee84-5ef3-4beb-b5a3-5146caf65da0")
+	)
+	(wire
+		(pts
+			(xy 54.61 185.42) (xy 53.34 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66e3e0cf-af5f-48f9-b48e-578996a89ffc")
 	)
 	(wire
 		(pts
@@ -3974,6 +4156,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 185.42) (xy 63.5 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a393b5e-038e-48cb-9766-ec8e22a1df8f")
+	)
+	(wire
+		(pts
 			(xy 170.18 208.28) (xy 168.91 208.28)
 		)
 		(stroke
@@ -4064,7 +4256,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 190.5) (xy 85.09 190.5)
+			(xy 52.07 190.5) (xy 53.34 190.5)
 		)
 		(stroke
 			(width 0)
@@ -4374,16 +4566,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 189.23) (xy 52.07 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7c049d3-86f9-4cb4-adca-f54bbbf21afe")
-	)
-	(wire
-		(pts
 			(xy 375.92 194.31) (xy 375.92 196.85)
 		)
 		(stroke
@@ -4491,16 +4673,6 @@
 			(type default)
 		)
 		(uuid "e799c271-67dd-4469-8653-2fb8fc0b7447")
-	)
-	(wire
-		(pts
-			(xy 52.07 212.09) (xy 52.07 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7fe589c-4669-483c-9287-daeec1c92c98")
 	)
 	(wire
 		(pts
@@ -5544,6 +5716,17 @@
 		)
 		(uuid "7d835740-e0fe-4afd-9717-7311263dbe3f")
 	)
+	(hierarchical_label "BAT_DET_OUT"
+		(shape output)
+		(at 63.5 185.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a4db4221-222f-416b-b519-7d398d1e50fc")
+	)
 	(hierarchical_label "I2C_SCL"
 		(shape input)
 		(at 393.7 186.69 0)
@@ -5565,6 +5748,75 @@
 			(justify left)
 		)
 		(uuid "fb1ffa4b-4c51-4e0d-b6a6-12b6fffecd1d")
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 57.15 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "01a0145d-14ae-42c3-a7e6-e3a45dd7f137")
+		(property "Reference" "NT301"
+			(at 57.15 184.912 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 57.15 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+			(at 57.15 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 57.15 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "64208fcd-94e1-4cfc-a342-6ec0b187cc95")
+		)
+		(pin "2"
+			(uuid "a3a4b45f-aa96-4849-ab6f-5838447b394f")
+		)
+		(instances
+			(project ""
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "NT301")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -6458,72 +6710,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 52.07 189.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "3a3452f9-9e76-48ce-8c82-26bb88d0bb65")
-		(property "Reference" "TP301"
-			(at 52.07 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 54.61 187.1979 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 57.15 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 57.15 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 52.07 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "be82646c-f67f-46db-af4e-a9e3266cb5c4")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "TP301")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:Earth")
 		(at 355.6 196.85 0)
 		(unit 1)
@@ -6533,7 +6719,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4dc506f6-4fc7-4471-942d-1c000fa01b9b")
-		(property "Reference" "#PWR0312"
+		(property "Reference" "#PWR0309"
 			(at 355.6 203.2 0)
 			(effects
 				(font
@@ -6584,7 +6770,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR0312")
+					(reference "#PWR0309")
 					(unit 1)
 				)
 			)
@@ -8174,72 +8360,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 52.07 212.09 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "ab470c3c-1f49-4d14-9b49-85d1d0caad30")
-		(property "Reference" "TP302"
-			(at 52.07 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 49.53 214.1221 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 46.99 212.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 46.99 212.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 52.07 212.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "19f3b4f9-aa2e-4854-8ae4-7eb42c2491da")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "TP302")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 163.83 210.82 90)
 		(unit 1)
@@ -8977,6 +9097,74 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
+		(at 50.8 190.5 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "c4949081-413c-40ee-963c-9ce54ed1239c")
+		(property "Reference" "TP301"
+			(at 46.482 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 48.7679 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 50.8 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41d4054a-137f-4619-8390-8be3ab92cd60")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "TP301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
 		(at 250.19 200.66 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9272,7 +9460,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1968798-33e4-4fa7-beed-18fa9bf54b70")
-		(property "Reference" "#PWR0313"
+		(property "Reference" "#PWR0310"
 			(at 375.92 203.2 0)
 			(effects
 				(font
@@ -9323,7 +9511,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR0313")
+					(reference "#PWR0310")
 					(unit 1)
 				)
 			)
@@ -10367,7 +10555,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8e4b6dd-6db1-4c94-80d1-13279aac276e")
-		(property "Reference" "#PWR0311"
+		(property "Reference" "#PWR0308"
 			(at 351.79 198.12 0)
 			(effects
 				(font
@@ -10418,7 +10606,75 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR0311")
+					(reference "#PWR0308")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 50.8 210.82 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "fdeafe1c-faa4-4627-ada7-08ffb7aabc8a")
+		(property "Reference" "TP302"
+			(at 46.482 210.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 48.7679 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 50.8 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e626d310-cd0d-4a14-9d83-db79990cb27d")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
+					(reference "TP302")
 					(unit 1)
 				)
 			)
