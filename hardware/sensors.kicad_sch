@@ -1468,7 +1468,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 187.96) (xy 93.98 190.5)
+			(xy 93.98 189.23) (xy 93.98 190.5)
 		)
 		(stroke
 			(width 0)
@@ -2240,16 +2240,15 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 48.26 185.42 0)
-		(mirror y)
+		(at 227.33 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "25109e54-3df9-44f2-91f1-fe629755f808")
-		(property "Reference" "#PWR0601"
-			(at 48.26 189.23 0)
+		(uuid "2a7597a1-9118-46ac-978e-d3d3d14fff60")
+		(property "Reference" "#PWR0605"
+			(at 227.33 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2258,15 +2257,16 @@
 			)
 		)
 		(property "Value" "V_3V3"
-			(at 48.26 181.61 0)
+			(at 227.33 178.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 185.42 0)
+			(at 227.33 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2275,7 +2275,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 185.42 0)
+			(at 227.33 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2284,7 +2284,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 48.26 185.42 0)
+			(at 227.33 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2293,12 +2293,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ad8f96c5-3444-4a2e-8e69-f82d8fa39856")
+			(uuid "555ad73e-0cae-4371-931a-94c325cf9085")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
-					(reference "#PWR0601")
+					(reference "#PWR0605")
 					(unit 1)
 				)
 			)
@@ -2524,72 +2524,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 93.98 187.96 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "893f0fc0-343a-4c7a-8174-0d3b2d639a33")
-		(property "Reference" "#PWR0603"
-			(at 93.98 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "V_3V3"
-			(at 93.98 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 93.98 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a2b6cc68-d5c5-46b9-9d54-aa18c0f93b1e")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
-					(reference "#PWR0603")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:Earth")
 		(at 227.33 199.39 0)
 		(unit 1)
@@ -2657,6 +2591,138 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 93.98 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d948cd9f-6bf8-4db7-8729-c29cafa6b71d")
+		(property "Reference" "#PWR0603"
+			(at 93.98 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V_3V3"
+			(at 93.98 186.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 93.98 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6edeb6f3-4859-4890-b5e7-5a7b4f4698c8")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "#PWR0603")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 48.26 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd7b88e8-8903-418c-b01f-294b6249a839")
+		(property "Reference" "#PWR0601"
+			(at 48.26 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V_3V3"
+			(at 48.26 182.626 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 48.26 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee5033e1-ccc5-4a2e-a912-48313c3c0c47")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
+					(reference "#PWR0601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 53.34 195.58 90)
 		(unit 1)
@@ -2664,21 +2730,23 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c313d18f-7f9d-48f8-ab98-202aebea5536")
+		(uuid "e1a81d9f-db88-4799-b7f5-7e3576fb6ee7")
 		(property "Reference" "R602"
-			(at 53.34 191.77 90)
+			(at 53.34 192.786 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Value" "22 Ω"
-			(at 53.34 193.294 90)
+			(at 53.34 194.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
@@ -2754,81 +2822,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "8dde8ef9-9ea3-4df9-ab20-618ce6e950e8")
+			(uuid "4e4e84c7-8896-4b28-9304-9ae8bdd549b8")
 		)
 		(pin "1"
-			(uuid "d421d483-50c6-4210-94a1-6161e60870d9")
+			(uuid "04a2c7aa-7f1d-45d6-8492-d4a7513ea201")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
 					(reference "R602")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 227.33 181.61 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d2e558dc-380e-49ba-8146-1a20802fd57f")
-		(property "Reference" "#PWR0605"
-			(at 227.33 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "V_3V3"
-			(at 227.33 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 227.33 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 227.33 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 227.33 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b632d802-95a1-4789-bc51-555768157792")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/a0fcaba3-6b11-4ded-a169-408190a4a974"
-					(reference "#PWR0605")
 					(unit 1)
 				)
 			)

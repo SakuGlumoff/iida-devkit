@@ -2136,11 +2136,11 @@
 		(uuid "eb6b1ff8-1920-496f-9186-2edd03264a2c")
 	)
 	(no_connect
-		(at 78.74 148.59)
+		(at 80.01 148.59)
 		(uuid "14749de5-7fcb-4f6d-abe0-2d8cd365ec0f")
 	)
 	(no_connect
-		(at 78.74 146.05)
+		(at 80.01 146.05)
 		(uuid "ac8fd576-50fa-4a62-8788-c94a66c9b15e")
 	)
 	(wire
@@ -2162,6 +2162,16 @@
 			(type default)
 		)
 		(uuid "07d24a88-d0ac-44f4-8107-e480e8a8abb9")
+	)
+	(wire
+		(pts
+			(xy 80.01 146.05) (xy 78.74 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "128d35dc-fbd6-472a-8984-da9ec1fc0d3d")
 	)
 	(wire
 		(pts
@@ -2242,6 +2252,16 @@
 			(type default)
 		)
 		(uuid "3223713e-fd8f-4ad1-b6d1-51faa1f97a02")
+	)
+	(wire
+		(pts
+			(xy 80.01 148.59) (xy 78.74 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33e42ea3-4937-4e2f-ac65-80ba36ff3e05")
 	)
 	(wire
 		(pts
@@ -2604,62 +2624,62 @@
 		(uuid "f72d77cf-55e7-4f96-b18a-0a367f30dc4d")
 	)
 	(label "USB_DN_IN"
-		(at 91.44 125.73 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "16a40584-b7d1-4dbd-80ce-208f05633bac")
-	)
-	(label "CC1"
-		(at 91.44 137.16 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "49730a86-0c09-4ef5-9f9e-0d48f8d6f51f")
-	)
-	(label "CC2"
-		(at 91.44 139.7 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "92831560-87a0-4b7f-9796-af6e34a28d12")
-	)
-	(label "USB_DP_IN"
-		(at 91.44 128.27 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bc2b3d06-cc88-4d5f-b933-14136d3f265f")
-	)
-	(label "VBUS_UNFILTERED"
-		(at 330.2 109.22 0)
+		(at 81.28 125.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "d2251dff-6375-4d27-8b78-0cba47e05fef")
+		(uuid "16a40584-b7d1-4dbd-80ce-208f05633bac")
 	)
-	(label "VBUS"
-		(at 91.44 109.22 180)
+	(label "CC1"
+		(at 81.28 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "49730a86-0c09-4ef5-9f9e-0d48f8d6f51f")
+	)
+	(label "CC2"
+		(at 81.28 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "92831560-87a0-4b7f-9796-af6e34a28d12")
+	)
+	(label "USB_DP_IN"
+		(at 81.28 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc2b3d06-cc88-4d5f-b933-14136d3f265f")
+	)
+	(label "VBUS_UNFILTERED"
+		(at 346.71 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
+		)
+		(uuid "d2251dff-6375-4d27-8b78-0cba47e05fef")
+	)
+	(label "VBUS"
+		(at 81.28 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
 		)
 		(uuid "f77d15c4-5783-4644-9c52-6d77cf227e5e")
 	)
@@ -2924,19 +2944,21 @@
 		(dnp no)
 		(uuid "3b2b9da7-364d-456c-873e-f907a439efe5")
 		(property "Reference" "F201"
-			(at 158.75 104.902 90)
+			(at 158.75 106.426 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Value" "1.5A"
-			(at 158.75 106.68 90)
+			(at 158.75 108.204 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
@@ -3239,21 +3261,21 @@
 		(dnp no)
 		(uuid "66d6ef44-3bc4-4fe6-a762-996f449a7d29")
 		(property "Reference" "U201"
-			(at 204.724 121.92 0)
+			(at 204.724 122.682 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left bottom)
 			)
 		)
 		(property "Value" "USBLC6-2SC6"
-			(at 204.978 132.334 0)
+			(at 204.724 131.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left top)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
@@ -3652,19 +3674,21 @@
 		(dnp no)
 		(uuid "bce5c565-6921-4889-84e7-1c096c1aadd0")
 		(property "Reference" "FB201"
-			(at 360.68 103.632 90)
+			(at 360.68 104.394 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "BLM18EG221SN1D"
-			(at 360.68 105.41 90)
+			(at 360.68 106.172 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"

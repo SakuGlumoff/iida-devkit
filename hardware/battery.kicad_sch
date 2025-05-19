@@ -3455,16 +3455,22 @@
 		(uuid "51bfaa73-6d0a-4810-bfbd-1f5dfb8aa0f4")
 	)
 	(junction
+		(at 52.07 199.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "563c61e6-d5a3-4ae3-8623-733016cab640")
+	)
+	(junction
 		(at 168.91 210.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "57374ec9-5d57-4318-b7c9-9ff5af350033")
 	)
 	(junction
-		(at 39.37 201.93)
+		(at 52.07 201.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5d1987b1-bb37-4c19-ba8d-fc77767b280f")
+		(uuid "634042dd-da83-4c5c-99be-6bd06aea5897")
 	)
 	(junction
 		(at 222.25 190.5)
@@ -3537,12 +3543,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d39afd3-90d5-48ac-98b4-3c2459670d1c")
-	)
-	(junction
-		(at 39.37 199.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a030d1fe-b03f-4722-b723-ae39fe50b425")
 	)
 	(junction
 		(at 132.08 190.5)
@@ -3646,16 +3646,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 201.93) (xy 52.07 201.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07141dd3-c666-432b-a637-d20fcb1c13db")
-	)
-	(wire
-		(pts
 			(xy 201.93 210.82) (xy 203.2 210.82)
 		)
 		(stroke
@@ -3683,16 +3673,6 @@
 			(type default)
 		)
 		(uuid "0b1b545e-8746-4329-b023-dd6b541218af")
-	)
-	(wire
-		(pts
-			(xy 39.37 199.39) (xy 52.07 199.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0de657a0-5b2f-4819-a675-40e8434d69d3")
 	)
 	(wire
 		(pts
@@ -3826,7 +3806,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 199.39) (xy 39.37 199.39)
+			(xy 31.75 199.39) (xy 52.07 199.39)
 		)
 		(stroke
 			(width 0)
@@ -3846,7 +3826,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 201.93) (xy 39.37 201.93)
+			(xy 31.75 201.93) (xy 52.07 201.93)
 		)
 		(stroke
 			(width 0)
@@ -5581,12 +5561,12 @@
 		(uuid "7942dafb-2629-4dc4-9d30-8aaa7cb83375")
 	)
 	(label "BATT-"
-		(at 38.1 201.93 180)
+		(at 31.75 201.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "8f6b4884-04ee-428b-917d-589de844f5cf")
 	)
@@ -5621,12 +5601,12 @@
 		(uuid "a2235af9-50a6-4397-9bc6-31c56de738fa")
 	)
 	(label "BATT+"
-		(at 38.1 199.39 180)
+		(at 31.75 199.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "aae306e3-7f5c-40dd-8b05-9042e4f94a3b")
 	)
@@ -6131,19 +6111,21 @@
 		(dnp no)
 		(uuid "0817f194-3af9-48e1-8637-dfe2b3289836")
 		(property "Reference" "Q303"
-			(at 194.31 213.868 90)
+			(at 194.31 213.106 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Value" "DMN2005"
-			(at 194.31 215.646 90)
+			(at 194.31 214.884 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Footprint" "Package_SON:Diodes_PowerDI3333-8"
@@ -6248,12 +6230,13 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a090640-990a-4214-90d1-6e43c59722be")
-		(property "Reference" "LED301"
-			(at 325.12 186.69 0)
+		(property "Reference" "D301"
+			(at 325.12 187.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "150141RS73100"
@@ -6337,7 +6320,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "LED301")
+					(reference "D301")
 					(unit 1)
 				)
 			)
@@ -6468,19 +6451,21 @@
 		(dnp no)
 		(uuid "21ecf0e5-3d75-40d8-a22a-25f6779d9e07")
 		(property "Reference" "Q302"
-			(at 177.8 213.868 90)
+			(at 177.8 213.106 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Value" "DMN2005"
-			(at 177.8 215.646 90)
+			(at 177.8 214.884 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Footprint" "Package_SON:Diodes_PowerDI3333-8"
@@ -6586,11 +6571,12 @@
 		(dnp no)
 		(uuid "233cfbc2-2b48-4e65-ab48-da06ec36ce4d")
 		(property "Reference" "TP308"
-			(at 232.41 193.294 0)
+			(at 232.41 193.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -6786,19 +6772,21 @@
 		(dnp no)
 		(uuid "5c396997-4839-40bf-b1d2-7c4f3bfae951")
 		(property "Reference" "R309"
-			(at 388.62 177.8 90)
+			(at 388.62 178.816 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Value" "22 Ω"
-			(at 388.62 179.324 90)
+			(at 388.62 180.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
@@ -6965,11 +6953,12 @@
 		(dnp no)
 		(uuid "6cfcb3c5-2539-40cb-97b3-0fd9d0adf27c")
 		(property "Reference" "TP304"
-			(at 107.95 196.85 0)
+			(at 107.95 196.088 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -7333,19 +7322,21 @@
 		(dnp no)
 		(uuid "79f677c0-369b-4017-afe7-460f59753119")
 		(property "Reference" "R308"
-			(at 316.23 198.12 90)
+			(at 316.23 198.882 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "4.7 kΩ"
-			(at 316.23 199.898 90)
+			(at 316.23 200.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
@@ -7512,12 +7503,13 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "83c8de35-a46e-44da-ac9d-403e72d793b4")
-		(property "Reference" "LED302"
-			(at 325.12 193.04 0)
+		(property "Reference" "D302"
+			(at 325.12 194.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "150141RS73100"
@@ -7601,7 +7593,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "LED302")
+					(reference "D302")
 					(unit 1)
 				)
 			)
@@ -7609,7 +7601,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 39.37 201.93 0)
+		(at 52.07 201.93 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7618,7 +7610,7 @@
 		(dnp no)
 		(uuid "888c3a1b-979e-4b33-8bd9-7547aa1925f9")
 		(property "Reference" "#FLG0302"
-			(at 39.37 203.835 0)
+			(at 53.975 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7627,15 +7619,16 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 39.37 205.232 0)
+			(at 54.864 201.93 90)
 			(effects
 				(font
 					(size 0.5 0.5)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 201.93 0)
+			(at 52.07 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7644,7 +7637,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 201.93 0)
+			(at 52.07 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7653,7 +7646,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 39.37 201.93 0)
+			(at 52.07 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7683,19 +7676,21 @@
 		(dnp no)
 		(uuid "8baeedef-5ed3-48ff-8fe2-ae05b2cffb06")
 		(property "Reference" "R301"
-			(at 127 186.69 90)
+			(at 127 187.452 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Value" "330 Ω"
-			(at 127 188.468 90)
+			(at 127 189.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
@@ -7937,19 +7932,21 @@
 		(dnp no)
 		(uuid "929169e8-e761-41db-a651-ed9f8e089708")
 		(property "Reference" "F301"
-			(at 88.9 186.944 90)
+			(at 88.9 187.706 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Value" "1.5A"
-			(at 88.9 188.722 90)
+			(at 88.9 189.484 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
@@ -8232,19 +8229,21 @@
 		(dnp no)
 		(uuid "ab31f3bd-c104-45e1-b615-9dc3e8b50a6f")
 		(property "Reference" "U303"
-			(at 365.76 178.054 0)
+			(at 365.76 178.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "MAX17048"
-			(at 365.76 197.866 0)
+			(at 365.76 197.104 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:TDFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.2mm"
@@ -8360,19 +8359,21 @@
 		(dnp no)
 		(uuid "ae7110db-5065-4400-8524-6e7597d410bf")
 		(property "Reference" "R303"
-			(at 163.83 203.454 90)
+			(at 163.83 204.216 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Value" "82 mΩ"
-			(at 163.83 204.978 90)
+			(at 163.83 205.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
@@ -8439,19 +8440,21 @@
 			)
 		)
 		(property "Tolerance" "≤ 1 %"
-			(at 163.83 206.756 90)
+			(at 163.83 207.518 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Power" "≥ 1/4 W"
-			(at 163.83 208.534 90)
+			(at 163.83 209.296 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(pin "2"
@@ -8480,19 +8483,21 @@
 		(dnp no)
 		(uuid "b2478f7b-359a-41e9-97cf-5c39623ee162")
 		(property "Reference" "R307"
-			(at 316.23 191.77 90)
+			(at 316.23 192.532 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "4.7 kΩ"
-			(at 316.23 193.548 90)
+			(at 316.23 194.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
@@ -8991,12 +8996,13 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bff1a927-bb27-46b1-9978-10d7fd4cd1ba")
-		(property "Reference" "LED303"
-			(at 325.12 199.39 0)
+		(property "Reference" "D303"
+			(at 325.12 200.406 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "150141RS73100"
@@ -9080,7 +9086,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "LED303")
+					(reference "D303")
 					(unit 1)
 				)
 			)
@@ -9164,11 +9170,12 @@
 		(dnp no)
 		(uuid "c73a898c-5c5e-43bc-b050-e0589dd1028a")
 		(property "Reference" "TP309"
-			(at 250.19 205.74 0)
+			(at 250.19 204.978 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -9346,11 +9353,12 @@
 		(dnp yes)
 		(uuid "ce93d343-1df3-4e7b-af87-056a95a44fe5")
 		(property "Reference" "J302"
-			(at 158.75 227.076 90)
+			(at 158.75 226.568 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Value" "PRPC001DAAN-RC"
@@ -9518,19 +9526,21 @@
 		(dnp no)
 		(uuid "d46e4816-3db7-4e7f-a70a-bb2c20244fcc")
 		(property "Reference" "Q301"
-			(at 101.6 185.674 90)
+			(at 101.6 186.436 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Value" "DMG2305UX-7"
-			(at 101.6 187.452 90)
+			(at 101.6 188.214 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
@@ -9633,11 +9643,12 @@
 		(dnp no)
 		(uuid "d9c3ab4a-64b3-47e2-82c8-6a0d54ad4006")
 		(property "Reference" "TP303"
-			(at 95.25 196.85 0)
+			(at 95.25 196.088 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -9700,19 +9711,21 @@
 		(dnp no)
 		(uuid "e21f0d82-8b3d-4d1f-8195-3e3f0e85ace4")
 		(property "Reference" "U302"
-			(at 261.62 184.912 0)
+			(at 261.62 185.674 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "MCP73833T-FCI/MF"
-			(at 261.62 186.69 0)
+			(at 261.62 187.452 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.58x2.35mm"
@@ -9840,19 +9853,21 @@
 		(dnp no)
 		(uuid "e2e8bcad-138c-4c9d-874e-7eb85933da86")
 		(property "Reference" "R306"
-			(at 316.23 185.42 90)
+			(at 316.23 186.182 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "4.7 kΩ"
-			(at 316.23 187.198 90)
+			(at 316.23 187.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
@@ -10222,19 +10237,21 @@
 		(dnp no)
 		(uuid "ef75fb1e-43e1-469d-af17-70620d9fcf90")
 		(property "Reference" "U301"
-			(at 158.75 185.166 0)
+			(at 158.75 185.928 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "BQ29728DSER"
-			(at 158.75 186.944 0)
+			(at 158.75 187.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Footprint" "Package_SON:WSON-6_1.5x1.5mm_P0.5mm"
@@ -10338,8 +10355,8 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 39.37 199.39 0)
-		(mirror y)
+		(at 52.07 199.39 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10347,7 +10364,7 @@
 		(dnp no)
 		(uuid "f4c63b23-464b-4c4c-a2c3-e7be0be4b7a5")
 		(property "Reference" "#FLG0301"
-			(at 39.37 197.485 0)
+			(at 53.975 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10356,15 +10373,16 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 39.37 196.088 0)
+			(at 54.864 199.39 90)
 			(effects
 				(font
 					(size 0.5 0.5)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 199.39 0)
+			(at 52.07 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10373,7 +10391,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 199.39 0)
+			(at 52.07 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10382,7 +10400,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 39.37 199.39 0)
+			(at 52.07 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)

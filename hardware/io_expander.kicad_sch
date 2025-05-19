@@ -2308,6 +2308,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 185.42 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f3f9cab-fe2c-4393-8697-8b290014a1ac")
+		(property "Reference" "#PWR0706"
+			(at 185.42 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V_3V3"
+			(at 185.42 126.746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 185.42 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7cc3b3f6-d332-4a88-9eab-beceba1d5758")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
+					(reference "#PWR0706")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 93.98 165.1 90)
 		(mirror x)
@@ -2539,13 +2605,12 @@
 	(symbol
 		(lib_id "power:+3.3V")
 		(at 342.9 160.02 0)
-		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "43be9864-1f25-4bc9-8766-ec39ecc625ce")
+		(uuid "329ca0ca-0aad-4860-a525-96220805d398")
 		(property "Reference" "#PWR0707"
 			(at 342.9 163.83 0)
 			(effects
@@ -2556,11 +2621,12 @@
 			)
 		)
 		(property "Value" "V_3V3"
-			(at 342.9 156.21 0)
+			(at 342.9 157.226 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
@@ -2591,12 +2657,78 @@
 			)
 		)
 		(pin "1"
-			(uuid "97beaa36-29d3-4083-926e-936635785df2")
+			(uuid "e48371dd-6653-4930-91d0-2de2e80d918d")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
 					(reference "#PWR0707")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 44.45 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "50d9e556-d528-4cf8-ae4c-be9cf1cfac0b")
+		(property "Reference" "#PWR0701"
+			(at 44.45 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V_3V3"
+			(at 44.45 135.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 44.45 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c81c17b-d84c-4c81-95e2-8b1d4adf0e35")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
+					(reference "#PWR0701")
 					(unit 1)
 				)
 			)
@@ -2787,24 +2919,24 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 175.26 135.89 270)
-		(mirror x)
+		(at 175.26 135.89 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "6b9366bd-8fd8-402b-92cc-6f689e39c5a2")
-		(property "Reference" "LED702"
-			(at 171.196 135.89 90)
+		(property "Reference" "D702"
+			(at 173.482 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "150141RS73100"
-			(at 171.45 135.89 0)
+			(at 179.07 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2893,40 +3025,23 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
-					(reference "LED702")
+					(reference "D702")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 50.8 157.48 90)
-		(mirror x)
+		(lib_id "power:+3.3V")
+		(at 73.66 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "71aa32a5-8dd6-4af0-95d0-c4d53d7e4969")
-		(property "Reference" "R702"
-			(at 50.8 159.766 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22 Ω"
-			(at 50.8 161.544 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
-			(at 50.8 155.702 90)
+		(uuid "70d587e7-0dcb-4475-9dad-10bfc6e46038")
+		(property "Reference" "#PWR0703"
+			(at 73.66 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2934,8 +3049,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 50.8 157.48 0)
+		(property "Value" "V_3V3"
+			(at 73.66 131.826 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2943,8 +3067,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 50.8 157.48 0)
+		(property "Datasheet" ""
+			(at 73.66 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2952,61 +3076,22 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 50.8 157.48 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 73.66 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "MPN" "560112110046"
-			(at 50.8 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Size" "0402"
-			(at 50.8 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "732-560112110046CT-ND"
-			(at 50.8 157.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 50.8 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "65995e0e-926a-46cf-ab42-ad872382db6f")
 		)
 		(pin "1"
-			(uuid "dc4201e8-fa35-4614-b0ee-815e05242fd6")
+			(uuid "f883506b-bd55-4ad2-bb18-6568f29af3c2")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
-					(reference "R702")
+					(reference "#PWR0703")
 					(unit 1)
 				)
 			)
@@ -3014,24 +3099,24 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 165.1 135.89 270)
-		(mirror x)
+		(at 165.1 135.89 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "7425be96-32a7-44fc-9c9b-a1295938ce9f")
-		(property "Reference" "LED701"
-			(at 160.782 135.89 90)
+		(property "Reference" "D701"
+			(at 163.576 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "150141RS73100"
-			(at 161.29 135.89 0)
+			(at 168.91 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3120,7 +3205,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
-					(reference "LED701")
+					(reference "D701")
 					(unit 1)
 				)
 			)
@@ -3344,24 +3429,24 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 185.42 135.89 270)
-		(mirror x)
+		(at 185.42 135.89 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "a638ebb9-8fca-404e-9aca-40bf8e798fc3")
-		(property "Reference" "LED703"
-			(at 181.356 135.89 90)
+		(property "Reference" "D703"
+			(at 183.642 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "150141RS73100"
-			(at 181.61 135.89 0)
+			(at 189.23 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3450,72 +3535,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
-					(reference "LED703")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 73.66 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ac7ea9a7-256e-46e9-adad-693f362353e7")
-		(property "Reference" "#PWR0703"
-			(at 73.66 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "V_3V3"
-			(at 73.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 73.66 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "43bdd950-88c3-4baa-9bff-a3745713f415")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
-					(reference "#PWR0703")
+					(reference "D703")
 					(unit 1)
 				)
 			)
@@ -3699,71 +3719,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
 					(reference "R706")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 44.45 138.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b9e28176-d771-4c34-9d38-a44521f2fcd4")
-		(property "Reference" "#PWR0701"
-			(at 44.45 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "V_3V3"
-			(at 44.45 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 44.45 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7305db3c-5bf8-407e-95c5-c1e5ec098196")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
-					(reference "#PWR0701")
 					(unit 1)
 				)
 			)
@@ -3994,6 +3949,121 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 50.8 157.48 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cf257da8-fb2d-4de5-bc1a-45d47616c720")
+		(property "Reference" "R702"
+			(at 50.8 159.004 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Value" "22 Ω"
+			(at 50.8 160.782 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
+			(at 50.8 155.702 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 50.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110046"
+			(at 50.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Size" "0402"
+			(at 50.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110046CT-ND"
+			(at 50.8 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 50.8 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1898c071-b4ad-4864-8e1b-cd3d7cf83b68")
+		)
+		(pin "1"
+			(uuid "4cc0c799-0f09-4885-b04d-d77a6dc52697")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
+					(reference "R702")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 93.98 160.02 90)
 		(mirror x)
 		(unit 1)
@@ -4217,71 +4287,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
 					(reference "R708")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 185.42 129.54 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ffc549d0-a08d-4658-b4a5-5fe393f53254")
-		(property "Reference" "#PWR0706"
-			(at 185.42 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "V_3V3"
-			(at 185.42 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 185.42 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 185.42 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 185.42 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "730f288a-fb8b-4323-a2cc-f96dfd37c3cf")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/fc9750e4-5084-4ed3-a485-2381fb20a6d1"
-					(reference "#PWR0706")
 					(unit 1)
 				)
 			)

@@ -3932,11 +3932,12 @@
 		(dnp no)
 		(uuid "22e38162-8f86-44a1-8214-9429a1c7aa67")
 		(property "Reference" "TP402"
-			(at 177.8 172.72 0)
+			(at 177.8 173.482 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -3999,21 +4000,21 @@
 		(dnp no)
 		(uuid "2c162ac5-88e5-4876-925d-4b1824423b27")
 		(property "Reference" "R405"
-			(at 332.232 154.686 90)
+			(at 330.2 153.924 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify bottom)
 			)
 		)
 		(property "Value" "0 Ω"
-			(at 332.232 156.464 90)
+			(at 330.2 155.702 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify bottom)
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
@@ -4852,11 +4853,12 @@
 		(dnp no)
 		(uuid "6de708b3-dc3e-4923-bd5e-07128bc4f87f")
 		(property "Reference" "TP405"
-			(at 228.6 170.18 0)
+			(at 228.6 170.942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -5413,11 +5415,12 @@
 		(dnp no)
 		(uuid "7ed8c6d3-1134-48e9-97de-901385e5f533")
 		(property "Reference" "TP401"
-			(at 82.55 147.32 0)
+			(at 82.55 148.082 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -6609,23 +6612,25 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 334.01 187.96 90)
+		(at 334.01 187.96 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b9a0bee4-9922-4995-bd57-3b87328d5507")
-		(property "Reference" "LED401"
-			(at 338.074 187.96 90)
+		(property "Reference" "D401"
+			(at 335.788 187.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "150141RS73100"
-			(at 328.295 189.23 90)
+			(at 339.725 189.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6714,7 +6719,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "LED401")
+					(reference "D401")
 					(unit 1)
 				)
 			)
@@ -6934,11 +6939,12 @@
 		(dnp yes)
 		(uuid "c3ed62d0-6354-45b7-8c29-209fe5b6ec6e")
 		(property "Reference" "J401"
-			(at 67.31 194.564 0)
+			(at 67.31 195.326 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "PRPC001DAAN-RC"
@@ -7682,23 +7688,25 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 364.49 187.96 90)
+		(at 364.49 187.96 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "e59975af-979f-4bdf-859d-540b26aa0ade")
-		(property "Reference" "LED402"
-			(at 368.554 187.96 90)
+		(property "Reference" "D402"
+			(at 366.268 187.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "150141RS73100"
-			(at 358.775 189.23 90)
+			(at 370.205 189.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7787,7 +7795,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "LED402")
+					(reference "D402")
 					(unit 1)
 				)
 			)
