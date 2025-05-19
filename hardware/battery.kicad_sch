@@ -2744,131 +2744,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+BATT"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+BATT"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+BATT\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power battery"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+BATT_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+BATT_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:Earth"
 			(power)
 			(pin_numbers
@@ -3412,7 +3287,7 @@
 		(uuid "056805eb-261c-4478-b2ff-74ea3b7f0569")
 	)
 	(junction
-		(at 356.87 181.61)
+		(at 355.6 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "14305319-1b5d-404b-a0fb-43ce35638de1")
@@ -3759,7 +3634,7 @@
 	)
 	(wire
 		(pts
-			(xy 356.87 181.61) (xy 356.87 184.15)
+			(xy 355.6 181.61) (xy 355.6 184.15)
 		)
 		(stroke
 			(width 0)
@@ -3839,7 +3714,7 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 195.58) (xy 334.01 195.58)
+			(xy 328.93 195.58) (xy 330.2 195.58)
 		)
 		(stroke
 			(width 0)
@@ -3856,6 +3731,16 @@
 			(type default)
 		)
 		(uuid "3dabd46b-f42f-43b3-ab4f-10b56badbeb4")
+	)
+	(wire
+		(pts
+			(xy 107.95 191.77) (xy 107.95 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e4028c4-56ef-44a3-8a44-e3ab4ef639d3")
 	)
 	(wire
 		(pts
@@ -3889,7 +3774,7 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 201.93) (xy 334.01 201.93)
+			(xy 328.93 201.93) (xy 330.2 201.93)
 		)
 		(stroke
 			(width 0)
@@ -3939,16 +3824,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 212.09) (xy 52.07 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50893376-0246-4fdd-8328-8abacfbc74f8")
-	)
-	(wire
-		(pts
 			(xy 203.2 205.74) (xy 203.2 208.28)
 		)
 		(stroke
@@ -3956,6 +3831,16 @@
 			(type default)
 		)
 		(uuid "58b9c1f8-2126-410c-8139-91c24e0595b1")
+	)
+	(wire
+		(pts
+			(xy 355.6 184.15) (xy 356.87 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59c18578-8653-4366-bcf9-9756993bd9a6")
 	)
 	(wire
 		(pts
@@ -4229,6 +4114,16 @@
 	)
 	(wire
 		(pts
+			(xy 355.6 181.61) (xy 356.87 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "965329a8-8368-4ad1-a2b2-ff9383a0a1e0")
+	)
+	(wire
+		(pts
 			(xy 237.49 209.55) (xy 237.49 210.82)
 		)
 		(stroke
@@ -4319,7 +4214,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 181.61) (xy 356.87 181.61)
+			(xy 351.79 181.61) (xy 355.6 181.61)
 		)
 		(stroke
 			(width 0)
@@ -4429,7 +4324,7 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 189.23) (xy 334.01 189.23)
+			(xy 328.93 189.23) (xy 330.2 189.23)
 		)
 		(stroke
 			(width 0)
@@ -4476,6 +4371,16 @@
 			(type default)
 		)
 		(uuid "d571ce65-8913-4228-963d-171e02ddd753")
+	)
+	(wire
+		(pts
+			(xy 52.07 189.23) (xy 52.07 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7c049d3-86f9-4cb4-adca-f54bbbf21afe")
 	)
 	(wire
 		(pts
@@ -4589,6 +4494,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 212.09) (xy 52.07 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7fe589c-4669-483c-9287-daeec1c92c98")
+	)
+	(wire
+		(pts
 			(xy 119.38 205.74) (xy 119.38 210.82)
 		)
 		(stroke
@@ -4606,6 +4521,16 @@
 			(type default)
 		)
 		(uuid "e8f984dc-fca6-4d9c-a0e6-2e200ad5b71e")
+	)
+	(wire
+		(pts
+			(xy 95.25 191.77) (xy 95.25 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec51bc4d-7d4d-47f4-814f-c963a4fc6bbc")
 	)
 	(wire
 		(pts
@@ -5553,6 +5478,28 @@
 		)
 		(uuid "e2b10e4d-b442-4120-b3ed-ead983370cbf")
 	)
+	(hierarchical_label "V_5V0"
+		(shape input)
+		(at 330.2 201.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3552be4b-58b0-4a30-9f7e-fdca07df7dcd")
+	)
+	(hierarchical_label "V_5V0"
+		(shape input)
+		(at 330.2 189.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3cc78121-c27a-4f06-9a7d-6cc016fa2b32")
+	)
 	(hierarchical_label "V_BAT"
 		(shape output)
 		(at 393.7 173.99 0)
@@ -5574,6 +5521,17 @@
 			(justify left)
 		)
 		(uuid "5ff8d75e-8f83-4d8f-8a9a-54e284ec7758")
+	)
+	(hierarchical_label "V_5V0"
+		(shape input)
+		(at 330.2 195.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "706a5318-0105-4e5e-8399-dcb7138f329c")
 	)
 	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
@@ -6024,71 +5982,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
 					(reference "Q303")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 334.01 195.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "09013df9-e517-4c29-9220-84a50332d58d")
-		(property "Reference" "#PWR0309"
-			(at 334.01 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "V_5V0"
-			(at 334.01 192.024 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 334.01 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 334.01 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 334.01 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "57b7a3fa-be73-463f-a3fb-a3afb7e49e17")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR0309")
 					(unit 1)
 				)
 			)
@@ -6566,7 +6459,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 52.07 190.5 0)
+		(at 52.07 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -6574,7 +6467,7 @@
 		(dnp no)
 		(uuid "3a3452f9-9e76-48ce-8c82-26bb88d0bb65")
 		(property "Reference" "TP301"
-			(at 52.07 185.42 0)
+			(at 52.07 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6582,7 +6475,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 54.61 188.4679 0)
+			(at 54.61 187.1979 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6592,7 +6485,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 57.15 190.5 0)
+			(at 57.15 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6601,7 +6494,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 190.5 0)
+			(at 57.15 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6610,7 +6503,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 52.07 190.5 0)
+			(at 52.07 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6692,71 +6585,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
 					(reference "#PWR0312")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 334.01 201.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5468ac0f-4721-45b6-a698-ac753625e1af")
-		(property "Reference" "#PWR0310"
-			(at 334.01 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "V_5V0"
-			(at 334.01 198.374 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 334.01 201.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 334.01 201.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 334.01 201.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "584b82ee-fd5d-4005-a0f0-f9529948eea2")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR0310")
 					(unit 1)
 				)
 			)
@@ -6893,11 +6721,12 @@
 		(dnp no)
 		(uuid "663e3b80-675b-4b02-ae91-1691721282aa")
 		(property "Reference" "TP312"
-			(at 298.196 201.93 90)
+			(at 300.482 201.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -6951,7 +6780,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 107.95 190.5 180)
+		(at 107.95 191.77 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -6959,7 +6788,7 @@
 		(dnp no)
 		(uuid "6cfcb3c5-2539-40cb-97b3-0fd9d0adf27c")
 		(property "Reference" "TP304"
-			(at 107.95 195.58 0)
+			(at 107.95 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6967,7 +6796,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 105.41 192.5321 0)
+			(at 105.41 193.8021 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6977,7 +6806,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 102.87 190.5 0)
+			(at 102.87 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6986,7 +6815,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 102.87 190.5 0)
+			(at 102.87 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6995,7 +6824,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 107.95 190.5 0)
+			(at 107.95 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8653,11 +8482,12 @@
 		(dnp no)
 		(uuid "b5c39bfd-2149-41c7-8b85-d1fce04e42a4")
 		(property "Reference" "TP311"
-			(at 298.196 195.58 90)
+			(at 300.482 195.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -9616,7 +9446,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 95.25 190.5 180)
+		(at 95.25 191.77 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9624,7 +9454,7 @@
 		(dnp no)
 		(uuid "d9c3ab4a-64b3-47e2-82c8-6a0d54ad4006")
 		(property "Reference" "TP303"
-			(at 95.25 195.58 0)
+			(at 95.25 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9632,7 +9462,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 92.71 192.5321 0)
+			(at 92.71 193.8021 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9642,7 +9472,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 90.17 190.5 0)
+			(at 90.17 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9651,7 +9481,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 90.17 190.5 0)
+			(at 90.17 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9660,7 +9490,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 95.25 190.5 0)
+			(at 95.25 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9675,71 +9505,6 @@
 			(project ""
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
 					(reference "TP303")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 334.01 189.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d9c4ffe0-aa5c-421d-954d-c1e61719d745")
-		(property "Reference" "#PWR0308"
-			(at 334.01 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "V_5V0"
-			(at 334.01 185.674 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 334.01 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 334.01 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 334.01 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e0dda606-5430-4607-a235-83447522610e")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/87c570c0-3d52-431f-af75-588e9bdc1a2a"
-					(reference "#PWR0308")
 					(unit 1)
 				)
 			)
@@ -10535,11 +10300,12 @@
 		(dnp no)
 		(uuid "f5f83f18-6cdb-412b-9d00-50177d7ba451")
 		(property "Reference" "TP310"
-			(at 298.196 189.23 90)
+			(at 300.482 189.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "TestPoint"
