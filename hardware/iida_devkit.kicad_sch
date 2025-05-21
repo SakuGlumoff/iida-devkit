@@ -460,6 +460,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "10. Antennas"
+		(exclude_from_sim no)
+		(at 207.01 99.06 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+			(href "#10")
+		)
+		(uuid "115b7ae0-51d9-44ea-9afe-860f67af375c")
+	)
 	(text "- Schematic comments are in blue"
 		(exclude_from_sim no)
 		(at 15.24 262.89 0)
@@ -472,6 +484,30 @@
 		)
 		(uuid "19452172-fff1-4f06-88c0-fd95f324d72d")
 	)
+	(text "3. Battery"
+		(exclude_from_sim no)
+		(at 207.01 72.39 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+			(href "#3")
+		)
+		(uuid "245abe0b-c17f-405a-953e-203c43b7017e")
+	)
+	(text "5. Microcontroller"
+		(exclude_from_sim no)
+		(at 207.01 80.01 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+			(href "#5")
+		)
+		(uuid "382e7804-44c1-4119-a864-93341bc1ba9e")
+	)
 	(text "- Layout comments are in magenta"
 		(exclude_from_sim no)
 		(at 15.24 265.43 0)
@@ -483,6 +519,42 @@
 			(justify left)
 		)
 		(uuid "3e8cc5f3-e2a1-4b96-b6f9-60ea61d39b6d")
+	)
+	(text "6. Sensors"
+		(exclude_from_sim no)
+		(at 207.01 83.82 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+			(href "#5")
+		)
+		(uuid "3edc1241-32ef-4047-89fa-df8ef7862d8c")
+	)
+	(text "1. Introduction"
+		(exclude_from_sim no)
+		(at 207.01 64.77 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+			(href "#1")
+		)
+		(uuid "47bcdc5d-730c-4fb0-8d5a-f0a595e41c4b")
+	)
+	(text "7. IO expander"
+		(exclude_from_sim no)
+		(at 207.01 87.63 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+			(href "#7")
+		)
+		(uuid "4828b7b9-e90c-4032-8d19-69bf95ed7de2")
 	)
 	(text "There's no actual chassis or a case for mounting the PCB,\nso just place the mounting holes at the corners of the board."
 		(exclude_from_sim no)
@@ -520,6 +592,54 @@
 		)
 		(uuid "6363c4ec-6886-4a7e-af61-da201b10e83c")
 	)
+	(text "4. Power"
+		(exclude_from_sim no)
+		(at 207.01 76.2 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+			(href "#4")
+		)
+		(uuid "a258eca2-0dca-4849-8058-1b3a444a958b")
+	)
+	(text "8. Modem"
+		(exclude_from_sim no)
+		(at 207.01 91.44 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+			(href "#8")
+		)
+		(uuid "c2c9bbf6-35ef-4a5f-a802-9a96793129b7")
+	)
+	(text "2. USB"
+		(exclude_from_sim no)
+		(at 207.01 68.58 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+			(href "#2")
+		)
+		(uuid "d1bb4cdf-f637-44b1-865d-242b12913993")
+	)
+	(text "9. SIM"
+		(exclude_from_sim no)
+		(at 207.01 95.25 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+			(href "#9")
+		)
+		(uuid "e59ff292-5bcf-432b-aaa5-07b57e4a5f7c")
+	)
 	(text "Place a stitched ground guard rail along the edges of the PCB\nto provide a grounding point for human contact when handling the device."
 		(exclude_from_sim no)
 		(at 330.2 228.6 0)
@@ -531,26 +651,6 @@
 			(justify left top)
 		)
 		(uuid "f537f821-913f-49bb-a009-fdda546dfa42")
-	)
-	(text_box "1. Introduction\n2. USB\n3. Battery\n4. Power\n5. MCU\n6. Sensors\n7. IO Expander\n8. Modem\n9. SIM\n10. Antenna"
-		(exclude_from_sim no)
-		(at 205.74 63.5 0)
-		(size 199.39 48.26)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left top)
-		)
-		(uuid "3f283847-1f89-4036-882b-6c0be09f300e")
 	)
 	(text_box "Notes"
 		(exclude_from_sim no)
@@ -594,7 +694,7 @@
 		)
 		(uuid "58e03f07-7e00-4687-9a2e-acc315e02fb7")
 	)
-	(text_box "Iida devkit"
+	(text_box "Introduction"
 		(exclude_from_sim no)
 		(at 12.7 12.7 0)
 		(size 393.7 38.1)
@@ -2401,7 +2501,7 @@
 			(color 0 255 0 1.0000)
 		)
 		(uuid "6dd8d741-3080-458c-a4f5-a05a3905bb8a")
-		(property "Sheetname" "MCU"
+		(property "Sheetname" "Microcontroller"
 			(at 283.21 185.166 0)
 			(effects
 				(font
@@ -2410,7 +2510,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "mcu.kicad_sch"
+		(property "Sheetfile" "microcontroller.kicad_sch"
 			(at 283.21 213.868 0)
 			(effects
 				(font
@@ -2790,7 +2890,7 @@
 			(color 0 255 0 1.0000)
 		)
 		(uuid "e6477a2c-b2b5-4454-829c-da955dc53725")
-		(property "Sheetname" "Antenna"
+		(property "Sheetname" "Antennas"
 			(at 358.14 182.626 0)
 			(effects
 				(font
@@ -2799,7 +2899,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "antenna.kicad_sch"
+		(property "Sheetfile" "antennas.kicad_sch"
 			(at 358.14 188.468 0)
 			(effects
 				(font
