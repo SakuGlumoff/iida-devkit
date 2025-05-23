@@ -1220,6 +1220,12 @@
 		(uuid "4128ad79-d80f-4803-b455-b945e1a3e6bd")
 	)
 	(junction
+		(at 251.46 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54d2e2f8-4dfc-4d1a-a5bc-3b64fceed901")
+	)
+	(junction
 		(at 278.13 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1296,12 +1302,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cbfe0670-ba39-4839-9d72-5d041ac61729")
-	)
-	(junction
-		(at 262.89 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d05b694f-ceed-40f0-be3a-1164e4c2cfdf")
 	)
 	(junction
 		(at 330.2 157.48)
@@ -1405,7 +1405,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 160.02) (xy 63.5 162.56)
+			(xy 64.77 160.02) (xy 64.77 162.56)
 		)
 		(stroke
 			(width 0)
@@ -1435,7 +1435,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 142.24) (xy 250.19 142.24)
+			(xy 251.46 142.24) (xy 252.73 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1495,6 +1495,16 @@
 	)
 	(wire
 		(pts
+			(xy 278.13 151.13) (xy 278.13 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b753e47-5061-4b9f-a8b4-e587f60cf12e")
+	)
+	(wire
+		(pts
 			(xy 168.91 142.24) (xy 168.91 160.02)
 		)
 		(stroke
@@ -1512,16 +1522,6 @@
 			(type default)
 		)
 		(uuid "569f83bf-ac8b-4726-9b87-107242e958aa")
-	)
-	(wire
-		(pts
-			(xy 264.16 142.24) (xy 262.89 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bdf036f-fcf6-49f7-b1d3-addf822bf7b8")
 	)
 	(wire
 		(pts
@@ -1562,6 +1562,16 @@
 			(type default)
 		)
 		(uuid "7dd6da04-4983-4d8c-8d0a-00595d699d26")
+	)
+	(wire
+		(pts
+			(xy 251.46 140.97) (xy 251.46 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "802e20e6-c5c2-4098-a829-e46822477c03")
 	)
 	(wire
 		(pts
@@ -1645,6 +1655,26 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 160.02) (xy 63.5 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96f9fce9-45ca-40fb-9652-f83098014e36")
+	)
+	(wire
+		(pts
+			(xy 278.13 146.05) (xy 278.13 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c4c6726-08a4-4c7f-a0a5-4f5a712628fe")
+	)
+	(wire
+		(pts
 			(xy 278.13 149.86) (xy 219.71 149.86)
 		)
 		(stroke
@@ -1652,6 +1682,16 @@
 			(type default)
 		)
 		(uuid "9d1779f1-4a5d-4896-8841-717f57243760")
+	)
+	(wire
+		(pts
+			(xy 330.2 156.21) (xy 330.2 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a370b1a8-e413-4ffe-a3dd-7beb370523f3")
 	)
 	(wire
 		(pts
@@ -1823,6 +1863,16 @@
 		)
 		(uuid "f0d943ed-f288-4170-8727-285ab248b35b")
 	)
+	(wire
+		(pts
+			(xy 251.46 142.24) (xy 250.19 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa9e2442-ec1e-4f78-907e-5caaa6706cc2")
+	)
 	(hierarchical_label "SIM_RST"
 		(shape input)
 		(at 264.16 152.4 0)
@@ -1845,7 +1895,7 @@
 		)
 		(uuid "44821490-4e48-43c7-b69f-4ef581dec11d")
 	)
-	(hierarchical_label "MDM_V_INT"
+	(hierarchical_label "V_1V8_MDM"
 		(shape input)
 		(at 341.63 147.32 180)
 		(effects
@@ -1878,9 +1928,9 @@
 		)
 		(uuid "b2ee0a67-b470-4658-a607-06779fd6da76")
 	)
-	(hierarchical_label "SIM_VCC"
+	(hierarchical_label "V_1V8_SIM"
 		(shape input)
-		(at 264.16 142.24 0)
+		(at 252.73 142.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2000,7 +2050,7 @@
 				(justify right)
 			)
 		)
-		(property "Voltage" "≥ 1.8 V"
+		(property "Voltage" "≥ 2.5 V"
 			(at 154.432 165.862 90)
 			(effects
 				(font
@@ -2135,7 +2185,7 @@
 				(justify right)
 			)
 		)
-		(property "Voltage" "≥ 1.8 V"
+		(property "Voltage" "≥ 2.5 V"
 			(at 116.332 165.862 90)
 			(effects
 				(font
@@ -2901,7 +2951,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 278.13 149.86 0)
+		(at 278.13 151.13 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2910,7 +2960,7 @@
 		(dnp no)
 		(uuid "56e27121-f21b-4631-81bd-41fc76e59782")
 		(property "Reference" "TP904"
-			(at 278.13 154.178 0)
+			(at 278.13 155.448 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2919,7 +2969,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 280.67 151.8921 0)
+			(at 280.67 153.1621 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2929,7 +2979,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 283.21 149.86 0)
+			(at 283.21 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2938,7 +2988,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 283.21 149.86 0)
+			(at 283.21 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2947,7 +2997,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 278.13 149.86 0)
+			(at 278.13 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3220,7 +3270,7 @@
 				(justify right)
 			)
 		)
-		(property "Voltage" "≥ 1.8 V"
+		(property "Voltage" "≥ 2.5 V"
 			(at 141.732 165.862 90)
 			(effects
 				(font
@@ -3314,7 +3364,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 278.13 147.32 0)
+		(at 278.13 146.05 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3323,7 +3373,7 @@
 		(dnp no)
 		(uuid "882885e8-4fa3-4d17-bf3d-1dc906e3162f")
 		(property "Reference" "TP903"
-			(at 278.13 143.002 0)
+			(at 278.13 141.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3332,7 +3382,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 275.59 145.2879 0)
+			(at 275.59 144.0179 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3342,7 +3392,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 273.05 147.32 0)
+			(at 273.05 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3351,7 +3401,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 273.05 147.32 0)
+			(at 273.05 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3360,7 +3410,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 278.13 147.32 0)
+			(at 278.13 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3559,7 +3609,7 @@
 				(justify right)
 			)
 		)
-		(property "Voltage" "≥ 1.8 V"
+		(property "Voltage" "≥ 2.5 V"
 			(at 167.132 165.862 90)
 			(effects
 				(font
@@ -3833,7 +3883,7 @@
 				(justify left)
 			)
 		)
-		(property "Voltage" "≥ 16 V"
+		(property "Voltage" "≥ 6 V"
 			(at 252.73 166.37 0)
 			(effects
 				(font
@@ -3877,7 +3927,7 @@
 		(dnp no)
 		(uuid "b77c72b1-1baa-454f-a9bf-44f9e2f0fdf2")
 		(property "Reference" "J901"
-			(at 50.8 137.668 0)
+			(at 50.8 139.446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3886,12 +3936,12 @@
 			)
 		)
 		(property "Value" "SIM8066-6-1-14-01-A"
-			(at 50.8 139.446 0)
+			(at 50.8 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
+				(justify top)
 			)
 		)
 		(property "Footprint" "GCT:SIM8066-6-1-14-01-A"
@@ -4202,7 +4252,7 @@
 				(justify right)
 			)
 		)
-		(property "Voltage" "≥ 1.8 V"
+		(property "Voltage" "≥ 2.5 V"
 			(at 129.032 165.862 90)
 			(effects
 				(font
@@ -4228,7 +4278,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 262.89 142.24 0)
+		(at 251.46 140.97 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4237,7 +4287,7 @@
 		(dnp no)
 		(uuid "db598ced-8f1e-42ed-b088-d6d31adea87b")
 		(property "Reference" "TP901"
-			(at 262.89 137.922 0)
+			(at 251.46 136.652 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4246,7 +4296,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 260.35 140.2079 0)
+			(at 248.92 138.9379 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4256,7 +4306,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 257.81 142.24 0)
+			(at 246.38 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4265,7 +4315,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 257.81 142.24 0)
+			(at 246.38 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4274,7 +4324,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 262.89 142.24 0)
+			(at 251.46 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4296,7 +4346,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 330.2 157.48 0)
+		(at 330.2 156.21 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4305,7 +4355,7 @@
 		(dnp no)
 		(uuid "e6bef71c-4bd2-4b04-a401-307e63cb33b4")
 		(property "Reference" "TP905"
-			(at 330.2 153.162 0)
+			(at 330.2 151.892 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4314,7 +4364,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 327.66 155.4479 0)
+			(at 327.66 154.1779 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4324,7 +4374,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 325.12 157.48 0)
+			(at 325.12 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4333,7 +4383,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 325.12 157.48 0)
+			(at 325.12 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4342,7 +4392,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 330.2 157.48 0)
+			(at 330.2 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4364,7 +4414,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 63.5 162.56 0)
+		(at 64.77 162.56 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4374,7 +4424,7 @@
 		(fields_autoplaced yes)
 		(uuid "e8a778fa-5e48-4543-b872-2e2e0159cb99")
 		(property "Reference" "#PWR0902"
-			(at 63.5 168.91 0)
+			(at 64.77 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4383,7 +4433,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 167.64 0)
+			(at 64.77 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4392,7 +4442,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 162.56 0)
+			(at 64.77 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4401,7 +4451,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 63.5 162.56 0)
+			(at 64.77 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4410,7 +4460,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 63.5 162.56 0)
+			(at 64.77 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)

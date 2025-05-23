@@ -1794,12 +1794,12 @@
 		(uuid "fe20961e-1f13-44eb-9f68-0df44cc7cdbc")
 	)
 	(label "ANT_PCB_MATCHED"
-		(at 342.9 205.74 0)
+		(at 360.68 205.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "6ddda7a0-2a30-4985-be34-9b5c3378db9a")
 	)
@@ -1813,13 +1813,13 @@
 		)
 		(uuid "ac7eb1d7-80f5-48bf-b8eb-e2b73fdd0696")
 	)
-	(label "ANT_SMA"
-		(at 350.52 154.94 0)
+	(label "ANT_SMA_MATCHED"
+		(at 360.68 154.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "ca9b43c8-4565-4ba0-9550-df645ed4247e")
 	)
@@ -2705,7 +2705,7 @@
 		(dnp no)
 		(uuid "407ff2d9-f159-480a-ae7b-d9356ed632a9")
 		(property "Reference" "D1001"
-			(at 358.902 159.258 90)
+			(at 358.902 158.242 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2777,24 +2777,6 @@
 				(hide yes)
 			)
 		)
-		(property "Size" ""
-			(at 358.394 162.052 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Capacitance" "≤ 1 pF"
-			(at 358.902 161.036 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(property "Footprint review check" "+"
 			(at 360.68 160.02 90)
 			(effects
@@ -2804,13 +2786,22 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
-			(at 360.68 160.02 90)
+		(property "Capacitance" "≤ 1 pF"
+			(at 358.902 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify right)
+			)
+		)
+		(property "Voltage" "≥ 5 V"
+			(at 358.902 161.798 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(pin "2"
