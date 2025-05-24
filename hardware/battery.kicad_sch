@@ -3405,6 +3405,12 @@
 		(uuid "14a5ed51-0bb5-4b62-a2c3-9389bf879d1e")
 	)
 	(junction
+		(at 381 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20befcaa-f028-43cd-97cc-0840d13e394c")
+	)
+	(junction
 		(at 261.62 207.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3511,12 +3517,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9813c990-9529-40c4-9fd4-c5ee1b5edf0a")
-	)
-	(junction
-		(at 382.27 181.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9d39afd3-90d5-48ac-98b4-3c2459670d1c")
 	)
 	(junction
 		(at 132.08 190.5)
@@ -3786,6 +3786,16 @@
 	)
 	(wire
 		(pts
+			(xy 381 180.34) (xy 381 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f20d7ad-1a41-44d6-9a05-f6856d5b4973")
+	)
+	(wire
+		(pts
 			(xy 237.49 200.66) (xy 250.19 200.66)
 		)
 		(stroke
@@ -3796,7 +3806,7 @@
 	)
 	(wire
 		(pts
-			(xy 374.65 184.15) (xy 393.7 184.15)
+			(xy 374.65 184.15) (xy 391.16 184.15)
 		)
 		(stroke
 			(width 0)
@@ -3976,16 +3986,6 @@
 	)
 	(wire
 		(pts
-			(xy 382.27 181.61) (xy 384.81 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d013550-ece8-41e1-adee-1d0f71ba6f45")
-	)
-	(wire
-		(pts
 			(xy 195.58 205.74) (xy 195.58 208.28)
 		)
 		(stroke
@@ -4013,6 +4013,16 @@
 			(type default)
 		)
 		(uuid "5f507ec5-39ad-4009-b178-17cd41dcbaa6")
+	)
+	(wire
+		(pts
+			(xy 382.27 181.61) (xy 381 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60ea8ca2-06b1-4721-84af-6464a819d75b")
 	)
 	(wire
 		(pts
@@ -4106,7 +4116,7 @@
 	)
 	(wire
 		(pts
-			(xy 374.65 186.69) (xy 393.7 186.69)
+			(xy 374.65 186.69) (xy 391.16 186.69)
 		)
 		(stroke
 			(width 0)
@@ -4276,7 +4286,7 @@
 	)
 	(wire
 		(pts
-			(xy 342.9 173.99) (xy 393.7 173.99)
+			(xy 342.9 173.99) (xy 391.16 173.99)
 		)
 		(stroke
 			(width 0)
@@ -4476,7 +4486,7 @@
 	)
 	(wire
 		(pts
-			(xy 392.43 181.61) (xy 393.7 181.61)
+			(xy 389.89 181.61) (xy 391.16 181.61)
 		)
 		(stroke
 			(width 0)
@@ -4596,7 +4606,7 @@
 	)
 	(wire
 		(pts
-			(xy 374.65 181.61) (xy 382.27 181.61)
+			(xy 374.65 181.61) (xy 381 181.61)
 		)
 		(stroke
 			(width 0)
@@ -5657,12 +5667,12 @@
 		(uuid "99f2f096-330b-475e-8a38-e79ace1e00e4")
 	)
 	(label "ALRTn"
-		(at 381 181.61 180)
+		(at 374.65 181.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "a2235af9-50a6-4397-9bc6-31c56de738fa")
 	)
@@ -5720,7 +5730,7 @@
 	)
 	(hierarchical_label "V_BAT"
 		(shape output)
-		(at 393.7 173.99 0)
+		(at 391.16 173.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5729,9 +5739,9 @@
 		)
 		(uuid "45aa8bf4-b6a0-4bdc-9e45-8ebc90497a70")
 	)
-	(hierarchical_label "BAT_INTn"
+	(hierarchical_label "BAT_MON_INTn"
 		(shape output)
-		(at 393.7 181.61 0)
+		(at 391.16 181.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5753,7 +5763,7 @@
 	)
 	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
-		(at 393.7 184.15 0)
+		(at 391.16 184.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5775,7 +5785,7 @@
 	)
 	(hierarchical_label "I2C_SCL"
 		(shape input)
-		(at 393.7 186.69 0)
+		(at 391.16 186.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6897,7 +6907,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 388.62 181.61 90)
+		(at 386.08 181.61 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6905,7 +6915,7 @@
 		(dnp no)
 		(uuid "5c396997-4839-40bf-b1d2-7c4f3bfae951")
 		(property "Reference" "R309"
-			(at 388.62 178.816 90)
+			(at 386.08 178.816 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6914,7 +6924,7 @@
 			)
 		)
 		(property "Value" "22 Ω"
-			(at 388.62 180.34 90)
+			(at 386.08 180.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6923,7 +6933,7 @@
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
-			(at 388.62 183.388 90)
+			(at 386.08 183.388 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6932,7 +6942,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 388.62 181.61 0)
+			(at 386.08 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6941,7 +6951,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 388.62 181.61 0)
+			(at 386.08 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6950,7 +6960,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 388.62 181.61 0)
+			(at 386.08 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6959,7 +6969,7 @@
 			)
 		)
 		(property "MPN" "560112110046"
-			(at 388.62 181.61 0)
+			(at 386.08 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6968,7 +6978,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 388.62 181.61 0)
+			(at 386.08 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6977,7 +6987,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-560112110046CT-ND"
-			(at 388.62 181.61 90)
+			(at 386.08 181.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6986,7 +6996,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 388.62 181.61 0)
+			(at 386.08 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7991,7 +8001,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 382.27 181.61 0)
+		(at 381 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7999,7 +8009,7 @@
 		(dnp no)
 		(uuid "91e0f5bf-e99f-45df-ab02-4c228fc0de51")
 		(property "Reference" "TP313"
-			(at 382.27 176.784 0)
+			(at 381 175.514 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8007,7 +8017,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 384.81 179.5779 0)
+			(at 383.54 178.3079 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8017,7 +8027,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 387.35 181.61 0)
+			(at 386.08 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8026,7 +8036,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 387.35 181.61 0)
+			(at 386.08 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8035,7 +8045,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 382.27 181.61 0)
+			(at 381 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -117,6 +117,148 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1887,6 +2029,16 @@
 		)
 		(uuid "de1c9b4a-01f2-44cd-8a09-4d5fddeb0a0c")
 	)
+	(text "OPT: External +5V supply"
+		(exclude_from_sim no)
+		(at 63.5 186.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e07e1e03-f5a6-4f05-8f59-b96c930bfed0")
+	)
 	(text_box "USB"
 		(exclude_from_sim no)
 		(at 12.7 12.7 0)
@@ -2425,6 +2577,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 177.8) (xy 76.2 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a73f1bc6-f45b-4f7f-b32a-7bca97be855f")
+	)
+	(wire
+		(pts
 			(xy 92.71 139.7) (xy 78.74 139.7)
 		)
 		(stroke
@@ -2432,6 +2594,16 @@
 			(type default)
 		)
 		(uuid "af45ad46-c23b-4d89-8d62-6a6023d8ab47")
+	)
+	(wire
+		(pts
+			(xy 69.85 181.61) (xy 69.85 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5921955-3ae4-49c7-a893-931999c9e12c")
 	)
 	(wire
 		(pts
@@ -2492,6 +2664,16 @@
 			(type default)
 		)
 		(uuid "cf4ce553-10e4-459e-bc9d-56e792d5d990")
+	)
+	(wire
+		(pts
+			(xy 69.85 180.34) (xy 68.58 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d714fcba-cb56-473c-84eb-fa49db2bc13c")
 	)
 	(wire
 		(pts
@@ -2623,6 +2805,16 @@
 		)
 		(uuid "f72d77cf-55e7-4f96-b18a-0a367f30dc4d")
 	)
+	(label "VBUS"
+		(at 76.2 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "03caab23-5422-4b5a-80c9-60133a9f8de2")
+	)
 	(label "USB_DN_IN"
 		(at 81.28 125.73 0)
 		(effects
@@ -2715,6 +2907,73 @@
 			(justify left)
 		)
 		(uuid "e2886358-ab16-4a91-b0d6-20c4705dff75")
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 69.85 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "031b2355-2b51-4bd0-be87-1c12f04bb325")
+		(property "Reference" "#PWR0202"
+			(at 69.85 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 69.85 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 69.85 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a875a915-7f8b-410e-a2ab-fb695915b412")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
+					(reference "#PWR0202")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:Earth")
@@ -3059,7 +3318,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ea781f3-068a-40fb-873d-257deb3c6c04")
-		(property "Reference" "#PWR0205"
+		(property "Reference" "#PWR0206"
 			(at 347.98 125.73 0)
 			(effects
 				(font
@@ -3110,7 +3369,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
-					(reference "#PWR0205")
+					(reference "#PWR0206")
 					(unit 1)
 				)
 			)
@@ -3194,7 +3453,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43ee604b-db97-4c8a-95d8-3de35db15b41")
-		(property "Reference" "#PWR0202"
+		(property "Reference" "#PWR0203"
 			(at 92.71 163.83 0)
 			(effects
 				(font
@@ -3245,7 +3504,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
-					(reference "#PWR0202")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
@@ -3539,7 +3798,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a76c47d1-2e6e-469e-a9b4-f48277cda81c")
-		(property "Reference" "#PWR0206"
+		(property "Reference" "#PWR0207"
 			(at 373.38 125.73 0)
 			(effects
 				(font
@@ -3590,7 +3849,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
-					(reference "#PWR0206")
+					(reference "#PWR0207")
 					(unit 1)
 				)
 			)
@@ -3607,7 +3866,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b941ea2e-1655-4db6-9d2f-10dc861b15f6")
-		(property "Reference" "#PWR0203"
+		(property "Reference" "#PWR0204"
 			(at 96.52 163.83 0)
 			(effects
 				(font
@@ -3658,7 +3917,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
-					(reference "#PWR0203")
+					(reference "#PWR0204")
 					(unit 1)
 				)
 			)
@@ -3934,6 +4193,113 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 63.5 177.8 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "c3ed62d0-6354-45b7-8c29-209fe5b6ec6e")
+		(property "Reference" "J202"
+			(at 63.5 176.276 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Value" "PRPC001DAAN-RC"
+			(at 60.96 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 63.5 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 63.5 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sullins Connector Solutions"
+			(at 63.5 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 63.5 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PRPC001DAAN-RC"
+			(at 63.5 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 63.5 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aad822d4-1372-4051-bc57-05b7bb4dc850")
+		)
+		(pin "1"
+			(uuid "99ca6527-e13a-436e-87f6-83da01e30130")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
+					(reference "J202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 96.52 152.4 180)
 		(unit 1)
@@ -4191,7 +4557,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa05b54a-c021-47dd-bb3e-35cbb62d59f7")
-		(property "Reference" "#PWR0204"
+		(property "Reference" "#PWR0205"
 			(at 204.47 140.97 0)
 			(effects
 				(font
@@ -4242,7 +4608,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
-					(reference "#PWR0204")
+					(reference "#PWR0205")
 					(unit 1)
 				)
 			)
