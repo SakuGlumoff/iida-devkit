@@ -2076,12 +2076,6 @@
 		(uuid "367572a9-89a6-481d-aa8b-f7ede2d26d07")
 	)
 	(junction
-		(at 317.5 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "424b45f1-6be7-4aa9-b218-f81f410b3c5b")
-	)
-	(junction
 		(at 80.01 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2092,12 +2086,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7c09e44a-0762-4ca5-a583-ca6330c6440b")
-	)
-	(junction
-		(at 204.47 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8fadb6a2-4a92-4c99-a953-61b1ee56802f")
 	)
 	(junction
 		(at 46.99 149.86)
@@ -2118,10 +2106,22 @@
 		(uuid "cb7d2a87-624a-44fa-9152-68a436fbedbc")
 	)
 	(junction
+		(at 204.47 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ddb87d5e-b32c-42ae-a007-357a301a30f4")
+	)
+	(junction
 		(at 373.38 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "df87eebe-bc61-4b7d-993e-542b64f94554")
+	)
+	(junction
+		(at 317.5 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e07d9bd3-c411-445b-a57f-8d0c49247e75")
 	)
 	(junction
 		(at 46.99 154.94)
@@ -2265,16 +2265,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 109.22) (xy 317.5 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38cc8978-de2b-46f7-ad6e-61d91862c26e")
-	)
-	(wire
-		(pts
 			(xy 80.01 123.19) (xy 78.74 123.19)
 		)
 		(stroke
@@ -2345,16 +2335,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 109.22) (xy 204.47 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d0bfda6-627c-4be1-9147-2a2e9f7a55a5")
-	)
-	(wire
-		(pts
 			(xy 347.98 118.11) (xy 347.98 119.38)
 		)
 		(stroke
@@ -2392,6 +2372,16 @@
 			(type default)
 		)
 		(uuid "840f7719-c2c4-4f7d-90df-645487c7b7d8")
+	)
+	(wire
+		(pts
+			(xy 204.47 109.22) (xy 231.14 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e57f4e2-3891-428a-8bff-42556b4b76be")
 	)
 	(wire
 		(pts
@@ -2445,7 +2435,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 109.22) (xy 154.94 109.22)
+			(xy 80.01 109.22) (xy 204.47 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2552,6 +2542,16 @@
 			(type default)
 		)
 		(uuid "dc93ad80-18d3-438c-ba1f-61f105de121c")
+	)
+	(wire
+		(pts
+			(xy 238.76 109.22) (xy 317.5 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dddff9e7-c3fb-4538-afbc-68b8fc354143")
 	)
 	(wire
 		(pts
@@ -2936,7 +2936,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 158.75 109.22 90)
+		(at 234.95 109.22 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2944,7 +2944,7 @@
 		(dnp no)
 		(uuid "3b2b9da7-364d-456c-873e-f907a439efe5")
 		(property "Reference" "F201"
-			(at 158.75 106.426 90)
+			(at 234.95 106.426 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2953,7 +2953,7 @@
 			)
 		)
 		(property "Value" "1.5A"
-			(at 158.75 108.204 90)
+			(at 234.95 108.204 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2962,7 +2962,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
-			(at 158.75 110.998 90)
+			(at 234.95 110.998 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2971,7 +2971,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 158.75 109.22 0)
+			(at 234.95 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2980,7 +2980,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 158.75 109.22 0)
+			(at 234.95 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2989,7 +2989,7 @@
 			)
 		)
 		(property "Manufacturer" "Eaton - Electronics Division"
-			(at 158.75 109.22 90)
+			(at 234.95 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2998,7 +2998,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 158.75 109.22 0)
+			(at 234.95 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3007,7 +3007,7 @@
 			)
 		)
 		(property "MPN" "PTSLR08056V150"
-			(at 158.75 109.22 0)
+			(at 234.95 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3016,7 +3016,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "283-PTSLR08056V150CT-ND"
-			(at 158.75 109.22 90)
+			(at 234.95 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3025,7 +3025,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 158.75 109.22 90)
+			(at 234.95 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
