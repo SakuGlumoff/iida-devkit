@@ -1864,7 +1864,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Place the headers near the test points for the oscilloscope ground."
+	(text "Place the header near the test points for the oscilloscope ground."
 		(exclude_from_sim no)
 		(at 317.5 233.68 0)
 		(effects
@@ -1897,18 +1897,6 @@
 			(justify left top)
 		)
 		(uuid "1d2c1da5-5b11-438b-b45e-9bb5615281d3")
-	)
-	(text "Place the 1 cm x 1 cm ground test point at the edge of the PCB\nso that the oscilloscope ground can be connected to it using\nan alligator clip."
-		(exclude_from_sim no)
-		(at 317.5 243.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 194 0 194 1)
-			)
-			(justify left top)
-		)
-		(uuid "46b87959-1473-4cb3-a99c-8b78e698e76b")
 	)
 	(text "Use a common center pad."
 		(exclude_from_sim no)
@@ -2702,7 +2690,7 @@
 	)
 	(wire
 		(pts
-			(xy 330.2 222.25) (xy 330.2 223.52)
+			(xy 330.2 224.79) (xy 330.2 226.06)
 		)
 		(stroke
 			(width 0)
@@ -2729,16 +2717,6 @@
 			(type default)
 		)
 		(uuid "8a1337b8-d843-46cc-afd5-56546926be49")
-	)
-	(wire
-		(pts
-			(xy 325.12 228.6) (xy 330.2 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c4f922b-f180-453a-9cd0-9de3f6fb7fa8")
 	)
 	(wire
 		(pts
@@ -2779,16 +2757,6 @@
 			(type default)
 		)
 		(uuid "8f6acbdd-0070-4df6-ac53-e2674e243855")
-	)
-	(wire
-		(pts
-			(xy 330.2 228.6) (xy 330.2 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "905cea30-6d72-4a1e-b985-8cb8e3e5aae1")
 	)
 	(wire
 		(pts
@@ -2932,7 +2900,7 @@
 	)
 	(wire
 		(pts
-			(xy 330.2 222.25) (xy 325.12 222.25)
+			(xy 330.2 224.79) (xy 325.12 224.79)
 		)
 		(stroke
 			(width 0)
@@ -3012,16 +2980,6 @@
 	)
 	(wire
 		(pts
-			(xy 330.2 238.76) (xy 330.2 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8aea44f-166d-457b-aa57-7f20831366b8")
-	)
-	(wire
-		(pts
 			(xy 356.87 228.6) (xy 361.95 228.6)
 		)
 		(stroke
@@ -3039,16 +2997,6 @@
 			(type default)
 		)
 		(uuid "cd264bc0-3a50-4819-ad5e-792b6a29fdf0")
-	)
-	(wire
-		(pts
-			(xy 330.2 238.76) (xy 325.12 238.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce9d9a46-db5e-40f5-944d-645bf93a03ba")
 	)
 	(wire
 		(pts
@@ -3728,73 +3676,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 330.2 240.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "051f4204-32f6-421e-bdae-7a54a7b85fbc")
-		(property "Reference" "#PWR0417"
-			(at 330.2 246.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 330.2 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 330.2 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 330.2 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 330.2 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "44e1e429-dd23-4978-90af-c6e02cbaef37")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "#PWR0417")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 279.4 160.02 0)
 		(mirror y)
@@ -3941,74 +3822,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
 					(reference "C406")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 325.12 238.76 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "110f6875-b0e2-4b82-a289-78e04e1b958f")
-		(property "Reference" "TP406"
-			(at 320.802 238.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 323.0879 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Mechanical:TestPoint_Pad_10.0x10.0mm"
-			(at 325.12 243.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 325.12 243.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 325.12 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "59a32936-5e68-4e31-ae6b-bc9e5c09bd3e")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "TP406")
 					(unit 1)
 				)
 			)
@@ -4493,74 +4306,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 330.2 229.87 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4a8fd88f-01ea-4ed9-a3d5-2314c967a72b")
-		(property "Reference" "#PWR0416"
-			(at 330.2 236.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 330.2 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 330.2 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 330.2 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 330.2 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a3c8904e-8561-4f5e-b560-a8f882f94e6a")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "#PWR0416")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 180.34 233.68 0)
 		(mirror x)
@@ -4877,7 +4622,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5fc208fd-dd69-44bb-8c14-b685b15aee60")
-		(property "Reference" "TP407"
+		(property "Reference" "TP406"
 			(at 352.552 222.25 90)
 			(effects
 				(font
@@ -4929,7 +4674,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "TP407")
+					(reference "TP406")
 					(unit 1)
 				)
 			)
@@ -5230,7 +4975,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "72bd22e3-e1ec-4c33-844a-aee9b7be2709")
-		(property "Reference" "J404"
+		(property "Reference" "J403"
 			(at 330.2 142.24 90)
 			(effects
 				(font
@@ -5320,7 +5065,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "J404")
+					(reference "J403")
 					(unit 1)
 				)
 			)
@@ -5389,109 +5134,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
 					(reference "TP403")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
-		(at 320.04 228.6 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "7bd5213a-dd56-4d2a-8713-f6a4bf658be8")
-		(property "Reference" "J403"
-			(at 320.04 226.822 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Value" "61300111121"
-			(at 320.04 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 320.04 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 320.04 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 320.04 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "732-5314-ND"
-			(at 320.04 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 320.04 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "61300111121"
-			(at 320.04 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 320.04 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "84debf19-5c00-4862-8eaa-7eb12c4590c2")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "J403")
 					(unit 1)
 				)
 			)
@@ -6289,7 +5931,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "a0b143c0-3ac2-4d4f-bf35-6e1180cb33cb")
-		(property "Reference" "J405"
+		(property "Reference" "J404"
 			(at 328.93 177.292 0)
 			(effects
 				(font
@@ -6380,7 +6022,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "J405")
+					(reference "J404")
 					(unit 1)
 				)
 			)
@@ -6681,7 +6323,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
 			(at 173.99 230.378 90)
 			(effects
 				(font
@@ -6961,7 +6603,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "beecbd68-923e-4bd4-87e0-d40ccfb7c75e")
-		(property "Reference" "#PWR0418"
+		(property "Reference" "#PWR0416"
 			(at 334.01 208.28 0)
 			(effects
 				(font
@@ -7012,7 +6654,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "#PWR0418")
+					(reference "#PWR0416")
 					(unit 1)
 				)
 			)
@@ -7679,7 +7321,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "d61e7b15-9435-4723-8279-09c63536c332")
-		(property "Reference" "J406"
+		(property "Reference" "J405"
 			(at 359.41 177.292 0)
 			(effects
 				(font
@@ -7770,7 +7412,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "J406")
+					(reference "J405")
 					(unit 1)
 				)
 			)
@@ -7778,7 +7420,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 330.2 223.52 0)
+		(at 330.2 226.06 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7788,7 +7430,7 @@
 		(fields_autoplaced yes)
 		(uuid "d8f51cc0-fc13-45c8-998d-566982269eb4")
 		(property "Reference" "#PWR0415"
-			(at 330.2 229.87 0)
+			(at 330.2 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7797,7 +7439,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 330.2 228.6 0)
+			(at 330.2 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7806,7 +7448,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 330.2 223.52 0)
+			(at 330.2 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7815,7 +7457,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 330.2 223.52 0)
+			(at 330.2 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7824,7 +7466,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 330.2 223.52 0)
+			(at 330.2 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8121,7 +7763,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e902a50a-68d3-42b7-a16e-ce92513b5b61")
-		(property "Reference" "TP408"
+		(property "Reference" "TP407"
 			(at 352.552 228.6 90)
 			(effects
 				(font
@@ -8173,7 +7815,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "TP408")
+					(reference "TP407")
 					(unit 1)
 				)
 			)
@@ -8450,7 +8092,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 320.04 222.25 0)
+		(at 320.04 224.79 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8459,7 +8101,7 @@
 		(dnp yes)
 		(uuid "fbc10307-d818-43c5-b1fd-acca0ec24019")
 		(property "Reference" "J402"
-			(at 320.04 220.472 0)
+			(at 320.04 223.012 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8468,7 +8110,7 @@
 			)
 		)
 		(property "Value" "61300111121"
-			(at 320.04 218.44 0)
+			(at 320.04 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8477,7 +8119,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 320.04 222.25 0)
+			(at 320.04 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8486,7 +8128,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 320.04 222.25 0)
+			(at 320.04 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8495,7 +8137,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 320.04 222.25 0)
+			(at 320.04 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8504,7 +8146,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-5314-ND"
-			(at 320.04 222.25 0)
+			(at 320.04 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8513,7 +8155,7 @@
 			)
 		)
 		(property "Footprint review check" "+"
-			(at 320.04 222.25 0)
+			(at 320.04 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8522,7 +8164,7 @@
 			)
 		)
 		(property "MPN" "61300111121"
-			(at 320.04 222.25 0)
+			(at 320.04 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8531,7 +8173,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 320.04 222.25 0)
+			(at 320.04 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8562,7 +8204,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe3f721f-a2fe-452e-b754-19e30b9ee114")
-		(property "Reference" "#PWR0419"
+		(property "Reference" "#PWR0417"
 			(at 364.49 208.28 0)
 			(effects
 				(font
@@ -8613,7 +8255,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "#PWR0419")
+					(reference "#PWR0417")
 					(unit 1)
 				)
 			)
