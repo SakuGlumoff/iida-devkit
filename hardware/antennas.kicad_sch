@@ -1064,6 +1064,26 @@
 		)
 		(uuid "1aca5b2e-8707-45d2-b024-95d832813fd8")
 	)
+	(text_box "KiCad doesn't support netclass selection boxes, so to keep the antenna lines in the same netclass so to speak, assign labels so that KiCad assigns the correct netclass to them."
+		(exclude_from_sim no)
+		(at 109.22 233.68 0)
+		(size 143.51 13.97)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1c10375c-af00-408b-b25f-f07922cbb986")
+	)
 	(text_box "Notes"
 		(exclude_from_sim no)
 		(at 12.7 251.46 0)
@@ -1278,6 +1298,18 @@
 		(uuid "36df2d8e-40f2-443c-88f6-a5b9a19c3346")
 	)
 	(junction
+		(at 138.43 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3bfc0792-4ad3-4d99-9e00-b98e4334a906")
+	)
+	(junction
+		(at 218.44 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "645061f9-f511-45a5-9145-78c2a25b67ba")
+	)
+	(junction
 		(at 156.21 205.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1288,6 +1320,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "71efdd8d-76f1-4986-9083-e7c1c0ad9a43")
+	)
+	(junction
+		(at 179.07 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "799c5f6f-9ba3-4405-b912-d729dad26d0c")
 	)
 	(junction
 		(at 297.18 154.94)
@@ -1313,15 +1351,37 @@
 		(color 0 0 0 0)
 		(uuid "d56b1025-8ff9-449a-8075-63f0a4c8c876")
 	)
+	(junction
+		(at 152.4 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9e0a2e4-012e-4fe6-ab36-05bcdcb66875")
+	)
+	(junction
+		(at 190.5 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da7e3999-7ab9-4efc-a408-70d1c6f3889a")
+	)
 	(wire
 		(pts
-			(xy 138.43 205.74) (xy 139.7 205.74)
+			(xy 137.16 205.74) (xy 138.43 205.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "02746af5-df6d-461d-a409-a85792f56561")
+	)
+	(wire
+		(pts
+			(xy 190.5 205.74) (xy 195.58 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02e2afe6-1445-463f-8cf1-2160d2fa656e")
 	)
 	(wire
 		(pts
@@ -1365,6 +1425,36 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 205.74) (xy 156.21 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12033e9b-231c-4290-803e-0ae23fd91679")
+	)
+	(wire
+		(pts
+			(xy 179.07 205.74) (xy 180.34 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16cdce77-bace-48b6-b70d-b7b91d319f73")
+	)
+	(wire
+		(pts
+			(xy 179.07 228.6) (xy 162.56 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1952171a-84e7-4e59-9f2a-d7166b72ec27")
+	)
+	(wire
+		(pts
 			(xy 156.21 208.28) (xy 156.21 205.74)
 		)
 		(stroke
@@ -1382,6 +1472,16 @@
 			(type default)
 		)
 		(uuid "20bafae0-9d13-4c4e-a11c-f7a27dbdda2e")
+	)
+	(wire
+		(pts
+			(xy 179.07 205.74) (xy 179.07 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "210f40f9-e4b2-452e-8909-f17739da07a0")
 	)
 	(wire
 		(pts
@@ -1405,6 +1505,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 205.74) (xy 218.44 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ef9dbbd-ea79-4aff-a176-fa9c19e07f25")
+	)
+	(wire
+		(pts
 			(xy 287.02 154.94) (xy 288.29 154.94)
 		)
 		(stroke
@@ -1412,6 +1522,26 @@
 			(type default)
 		)
 		(uuid "3249405b-7ed3-4427-aa2c-58d2c901b794")
+	)
+	(wire
+		(pts
+			(xy 138.43 205.74) (xy 138.43 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "346cd1d9-9f52-41c4-9dcd-79652f274163")
+	)
+	(wire
+		(pts
+			(xy 190.5 205.74) (xy 190.5 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42435b07-df6c-4f0c-8ce6-fe09241ed30d")
 	)
 	(wire
 		(pts
@@ -1425,7 +1555,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 205.74) (xy 195.58 205.74)
+			(xy 187.96 205.74) (xy 190.5 205.74)
 		)
 		(stroke
 			(width 0)
@@ -1475,7 +1605,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 205.74) (xy 130.81 205.74)
+			(xy 76.2 205.74) (xy 129.54 205.74)
 		)
 		(stroke
 			(width 0)
@@ -1485,7 +1615,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 205.74) (xy 156.21 205.74)
+			(xy 147.32 205.74) (xy 152.4 205.74)
 		)
 		(stroke
 			(width 0)
@@ -1502,6 +1632,26 @@
 			(type default)
 		)
 		(uuid "574fa95a-e1ea-4421-b9d2-7010e934481c")
+	)
+	(wire
+		(pts
+			(xy 138.43 228.6) (xy 121.92 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59e31288-8ff5-4f7f-a331-185fc524584f")
+	)
+	(wire
+		(pts
+			(xy 152.4 205.74) (xy 152.4 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cf66c99-54fe-4191-bdf1-893c0279ce0e")
 	)
 	(wire
 		(pts
@@ -1532,6 +1682,16 @@
 			(type default)
 		)
 		(uuid "6b7f8608-c579-40fc-9efc-98cf29117137")
+	)
+	(wire
+		(pts
+			(xy 190.5 190.5) (xy 207.01 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6da0fb35-3408-4197-a1c3-09eaafac0b07")
 	)
 	(wire
 		(pts
@@ -1605,7 +1765,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 205.74) (xy 287.02 205.74)
+			(xy 227.33 205.74) (xy 287.02 205.74)
 		)
 		(stroke
 			(width 0)
@@ -1645,6 +1805,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 205.74) (xy 219.71 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1ecae03-399b-4323-9d1b-16dd4d388c1d")
+	)
+	(wire
+		(pts
 			(xy 295.91 154.94) (xy 297.18 154.94)
 		)
 		(stroke
@@ -1652,6 +1822,26 @@
 			(type default)
 		)
 		(uuid "c2b7199b-96a4-46ff-a176-d6ca50b9a3e8")
+	)
+	(wire
+		(pts
+			(xy 138.43 205.74) (xy 139.7 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2d9b1d0-d101-4bdf-a406-0b5fa65b7e08")
+	)
+	(wire
+		(pts
+			(xy 152.4 190.5) (xy 168.91 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3753083-1113-49d2-825b-5bd670433cf8")
 	)
 	(wire
 		(pts
@@ -1775,6 +1965,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 228.6) (xy 201.93 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2d24974-b0ce-4a2d-8df1-ef1c20b14cd5")
+	)
+	(wire
+		(pts
 			(xy 360.68 156.21) (xy 360.68 154.94)
 		)
 		(stroke
@@ -1792,6 +1992,16 @@
 			(type default)
 		)
 		(uuid "fe20961e-1f13-44eb-9f68-0df44cc7cdbc")
+	)
+	(label "ANT_SEL_PCB_g5"
+		(at 201.93 228.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1be384d9-93c7-407c-bee8-72cbfa064c1d")
 	)
 	(label "ANT_PCB_MATCHED"
 		(at 360.68 205.74 180)
@@ -1823,6 +2033,26 @@
 		)
 		(uuid "ca9b43c8-4565-4ba0-9550-df645ed4247e")
 	)
+	(label "ANT_SEL_PCB_g4"
+		(at 207.01 190.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d32d5211-a1b2-4a4d-94ae-438887fa6daf")
+	)
+	(label "ANT_SEL_PCB_g3"
+		(at 162.56 228.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d52d5a6a-ca22-4d17-a771-a2cb6accd003")
+	)
 	(label "ANT_SEL_PCB"
 		(at 88.9 205.74 0)
 		(effects
@@ -1833,6 +2063,16 @@
 		)
 		(uuid "d85c610a-7d86-4a52-9492-3674b92751c0")
 	)
+	(label "ANT_SEL_PCB_g2"
+		(at 168.91 190.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e45f23c5-876b-4bf3-9df3-b077efdb0cd9")
+	)
 	(label "ANT_SEL_SMA"
 		(at 88.9 154.94 0)
 		(effects
@@ -1842,6 +2082,16 @@
 			(justify left bottom)
 		)
 		(uuid "ec791cd1-ac6b-4666-9e47-f0c64daa9fc8")
+	)
+	(label "ANT_SEL_PCB_g1"
+		(at 121.92 228.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f34e198a-8f59-4147-a2c1-c7db03dd9ef0")
 	)
 	(hierarchical_label "ANT"
 		(shape bidirectional)
@@ -2821,7 +3071,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 222.25 205.74 90)
+		(at 223.52 205.74 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2829,7 +3079,7 @@
 		(dnp no)
 		(uuid "417f3e57-3fc3-4b7b-98b3-73f098fd7514")
 		(property "Reference" "L1005"
-			(at 222.25 198.882 90)
+			(at 223.52 198.882 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2838,7 +3088,7 @@
 			)
 		)
 		(property "Value" "36 nH"
-			(at 222.25 200.914 90)
+			(at 223.52 200.914 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2847,7 +3097,7 @@
 			)
 		)
 		(property "Footprint" "perfect_footprints:L_0402_1005Metric"
-			(at 222.25 205.74 0)
+			(at 223.52 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2856,7 +3106,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.25 205.74 0)
+			(at 223.52 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2865,7 +3115,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 222.25 205.74 0)
+			(at 223.52 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2874,7 +3124,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 222.25 204.47 90)
+			(at 223.52 204.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2883,7 +3133,7 @@
 			)
 		)
 		(property "Tolerance" "≤ 5 %"
-			(at 222.25 202.692 90)
+			(at 223.52 202.692 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2892,7 +3142,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-7447650136CT-ND"
-			(at 222.25 205.74 90)
+			(at 223.52 205.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2901,7 +3151,7 @@
 			)
 		)
 		(property "MPN" "7447650136"
-			(at 222.25 205.74 90)
+			(at 223.52 205.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2910,7 +3160,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 222.25 205.74 90)
+			(at 223.52 205.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4445,7 +4695,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 134.62 205.74 90)
+		(at 133.35 205.74 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4453,7 +4703,7 @@
 		(dnp no)
 		(uuid "b2e9566b-b9a3-4376-91ab-ce7807bd374c")
 		(property "Reference" "C1001"
-			(at 134.62 195.58 90)
+			(at 133.35 195.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4462,7 +4712,7 @@
 			)
 		)
 		(property "Value" "1.1 pF"
-			(at 134.62 197.612 90)
+			(at 133.35 197.612 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4471,7 +4721,7 @@
 			)
 		)
 		(property "Footprint" "perfect_footprints:C_0402_1005Metric"
-			(at 138.43 204.7748 0)
+			(at 137.16 204.7748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4480,7 +4730,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 134.62 205.74 0)
+			(at 133.35 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4489,7 +4739,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 134.62 205.74 0)
+			(at 133.35 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4498,7 +4748,7 @@
 			)
 		)
 		(property "Class" "C0G"
-			(at 134.62 199.644 90)
+			(at 133.35 199.644 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4507,7 +4757,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 134.62 203.2 90)
+			(at 133.35 203.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4516,7 +4766,7 @@
 			)
 		)
 		(property "Tolerance" "≤ 5 %"
-			(at 134.62 201.422 90)
+			(at 133.35 201.422 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4525,7 +4775,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "732-13231-1-ND"
-			(at 134.62 205.74 90)
+			(at 133.35 205.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4534,7 +4784,7 @@
 			)
 		)
 		(property "MPN" "885392005006"
-			(at 134.62 205.74 90)
+			(at 133.35 205.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4543,7 +4793,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 134.62 205.74 90)
+			(at 133.35 205.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4568,7 +4818,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 182.88 205.74 90)
+		(at 184.15 205.74 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4576,7 +4826,7 @@
 		(dnp no)
 		(uuid "c8c718fb-9adf-4a9f-b07b-883059a16c04")
 		(property "Reference" "L1003"
-			(at 182.88 198.882 90)
+			(at 184.15 198.882 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4585,7 +4835,7 @@
 			)
 		)
 		(property "Value" "110 nH"
-			(at 182.88 200.914 90)
+			(at 184.15 200.914 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4594,7 +4844,7 @@
 			)
 		)
 		(property "Footprint" "perfect_footprints:L_0402_1005Metric"
-			(at 182.88 205.74 0)
+			(at 184.15 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4603,7 +4853,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 182.88 205.74 0)
+			(at 184.15 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4612,7 +4862,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 182.88 205.74 0)
+			(at 184.15 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4621,7 +4871,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 182.88 204.47 90)
+			(at 184.15 204.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4630,7 +4880,7 @@
 			)
 		)
 		(property "Tolerance" "≤ 5 %"
-			(at 182.88 202.692 90)
+			(at 184.15 202.692 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4639,7 +4889,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "490-12204-1-ND"
-			(at 182.88 205.74 90)
+			(at 184.15 205.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4648,7 +4898,7 @@
 			)
 		)
 		(property "MPN" "LQW15CAR11J00D"
-			(at 182.88 205.74 90)
+			(at 184.15 205.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4657,7 +4907,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 182.88 205.74 90)
+			(at 184.15 205.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
