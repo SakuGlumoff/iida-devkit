@@ -545,28 +545,11 @@
         "line_style": 0,
         "microvia_diameter": 0.5,
         "microvia_drill": 0.25,
-        "name": "50 Ohm",
+        "name": "Antenna",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
         "schematic_color": "rgb(0, 132, 0)",
         "track_width": 0.7,
-        "via_diameter": 0.5,
-        "via_drill": 0.25,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.125,
-        "diff_pair_gap": 0.125,
-        "diff_pair_width": 0.241,
-        "line_style": 0,
-        "microvia_diameter": 0.5,
-        "microvia_drill": 0.25,
-        "name": "90 Ohm",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
-        "schematic_color": "rgb(0, 0, 194)",
-        "track_width": 0.241,
         "via_diameter": 0.5,
         "via_drill": 0.25,
         "wire_width": 6
@@ -598,71 +581,125 @@
         "via_diameter": 0.75,
         "via_drill": 0.45,
         "wire_width": 12
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.125,
+        "diff_pair_gap": 0.125,
+        "diff_pair_width": 0.241,
+        "line_style": 0,
+        "microvia_diameter": 0.5,
+        "microvia_drill": 0.25,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgb(0, 0, 194)",
+        "track_width": 0.241,
+        "via_diameter": 0.5,
+        "via_drill": 0.25,
+        "wire_width": 6
       }
     ],
     "meta": {
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "90 Ohm",
-        "pattern": "/*/USB_*"
-      },
-      {
-        "netclass": "50 Ohm",
-        "pattern": "/*/ANT*"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "V_*"
-      },
-      {
-        "netclass": "GND",
-        "pattern": "GND"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/*/VBUS*"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/*/V_*V*"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/*/V_BAT"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/*/BATT+"
-      },
-      {
-        "netclass": "GND",
-        "pattern": "/*/BATT-"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/Power/V*"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/MCU/VDDA"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/Modem/VCC*"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/*/MDM_V*"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/*/SIM_VCC"
-      }
-    ]
+    "netclass_assignments": {
+      "/Antennas/ANT": [
+        "Antenna"
+      ],
+      "/Antennas/ANT_PCB_FILTERED": [
+        "Antenna"
+      ],
+      "/Antennas/ANT_PCB_MATCHED": [
+        "Antenna"
+      ],
+      "/Antennas/ANT_SEL_PCB": [
+        "Antenna"
+      ],
+      "/Antennas/ANT_SEL_SMA": [
+        "Antenna"
+      ],
+      "/Antennas/ANT_SMA_MATCHED": [
+        "Antenna"
+      ],
+      "/Battery/BATT+": [
+        "Power"
+      ],
+      "/Battery/BATT-": [
+        "GND"
+      ],
+      "/Battery/V_5V0": [
+        "Power"
+      ],
+      "/Battery/V_BAT": [
+        "Power"
+      ],
+      "/Microcontroller/USB_DN": [
+        "USB"
+      ],
+      "/Microcontroller/USB_DP": [
+        "USB"
+      ],
+      "/Microcontroller/VDDA": [
+        "Power"
+      ],
+      "/Modem/VCC": [
+        "Power"
+      ],
+      "/Modem/VCC_FILTERING": [
+        "Power"
+      ],
+      "/Modem/V_1V8_MDM": [
+        "Power"
+      ],
+      "/Modem/V_1V8_SIM": [
+        "Power"
+      ],
+      "/Power/VINA": [
+        "Power"
+      ],
+      "/Power/VOUT": [
+        "Power"
+      ],
+      "/Power/V_SYS": [
+        "Power"
+      ],
+      "/USB/USB_DN_IN": [
+        "USB"
+      ],
+      "/USB/USB_DP_IN": [
+        "USB"
+      ],
+      "/USB/VBUS": [
+        "Power"
+      ],
+      "/USB/VBUS_UNFILTERED": [
+        "Power"
+      ],
+      "GND": [
+        "GND"
+      ],
+      "Net-(C1001-Pad2)": [
+        "Antenna"
+      ],
+      "Net-(C1002-Pad2)": [
+        "Antenna"
+      ],
+      "Net-(C1003-Pad2)": [
+        "Antenna"
+      ],
+      "Net-(C1004-Pad2)": [
+        "Antenna"
+      ],
+      "Net-(C1005-Pad2)": [
+        "Antenna"
+      ],
+      "V_3V3": [
+        "Power"
+      ]
+    },
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {

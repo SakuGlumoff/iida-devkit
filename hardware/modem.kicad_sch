@@ -4215,16 +4215,16 @@
 		(uuid "30239de0-9343-494c-b457-ecfcda8a4f23")
 	)
 	(junction
-		(at 215.9 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3379fdf6-70a1-495c-9162-fe5e96c9df1c")
-	)
-	(junction
 		(at 261.62 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3890c4ae-f037-4f89-b70a-d2d8446d03f9")
+	)
+	(junction
+		(at 222.25 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c467994-87f1-49c3-866a-01d4252a073b")
 	)
 	(junction
 		(at 261.62 68.58)
@@ -5140,7 +5140,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 68.58) (xy 265.43 68.58)
+			(xy 261.62 68.58) (xy 273.05 68.58)
 		)
 		(stroke
 			(width 0)
@@ -5477,6 +5477,16 @@
 			(type default)
 		)
 		(uuid "50eecda6-d049-4b54-adb3-1fbb74d152a6")
+	)
+	(wire
+		(pts
+			(xy 222.25 68.58) (xy 228.6 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "515c82f9-56ad-40cf-8ce0-2d1d14403bbc")
 	)
 	(wire
 		(pts
@@ -6330,7 +6340,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 68.58) (xy 215.9 68.58)
+			(xy 172.72 68.58) (xy 222.25 68.58)
 		)
 		(stroke
 			(width 0)
@@ -7050,17 +7060,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 68.58) (xy 228.6 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de3c6566-6c59-428a-b17a-77078419c43b")
-	)
-	(wire
-		(pts
-			(xy 260.35 187.96) (xy 264.16 187.96)
+			(xy 260.35 187.96) (xy 273.05 187.96)
 		)
 		(stroke
 			(width 0)
@@ -7641,7 +7641,7 @@
 	)
 	(hierarchical_label "V_1V8_MDM"
 		(shape output)
-		(at 265.43 68.58 0)
+		(at 273.05 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7663,7 +7663,7 @@
 	)
 	(hierarchical_label "V_1V8_SIM"
 		(shape output)
-		(at 264.16 187.96 0)
+		(at 273.05 187.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7792,6 +7792,126 @@
 			(justify right)
 		)
 		(uuid "fc6b1dfa-e358-4503-bf35-96f56ef1a69e")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape dot)
+		(at 266.7226 187.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8ef56f77-597a-4b61-adff-a5cbf93e295f")
+		(property "Netclass" "Power"
+			(at 266.7226 184.658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Component Class" ""
+			(at -88.8774 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape dot)
+		(at 215.9 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b61f20fb-044f-4e6e-9351-89a9ffe549e6")
+		(property "Netclass" "Power"
+			(at 215.9 65.278 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Component Class" ""
+			(at -139.7 -55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape dot)
+		(at 267.97 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8b79aee-8f77-405d-b77f-6b8aa5b2934f")
+		(property "Netclass" "Power"
+			(at 267.97 65.278 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Component Class" ""
+			(at -87.63 -55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape dot)
+		(at 71.12 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1f13abd-1832-47fc-9d35-90ee9697a1ed")
+		(property "Netclass" "Power"
+			(at 71.12 65.278 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Component Class" ""
+			(at -284.48 -55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_name "Q_NMOS_GSD_2")
@@ -11701,7 +11821,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 215.9 68.58 0)
+		(at 222.25 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11709,7 +11829,7 @@
 		(dnp no)
 		(uuid "7a8c14e1-761d-44e6-851d-cf74906f6495")
 		(property "Reference" "#FLG0801"
-			(at 215.9 66.675 0)
+			(at 222.25 66.675 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11718,7 +11838,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 215.9 65.532 0)
+			(at 222.25 65.532 0)
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -11726,7 +11846,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 68.58 0)
+			(at 222.25 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11735,7 +11855,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 68.58 0)
+			(at 222.25 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11744,7 +11864,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 215.9 68.58 0)
+			(at 222.25 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)

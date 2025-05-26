@@ -2377,7 +2377,7 @@
 	)
 	(wire
 		(pts
-			(xy 373.38 109.22) (xy 379.73 109.22)
+			(xy 373.38 109.22) (xy 386.08 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2687,7 +2687,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 128.27) (xy 209.55 128.27)
+			(xy 228.6 128.27) (xy 209.55 128.27)
 		)
 		(stroke
 			(width 0)
@@ -2737,7 +2737,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 125.73) (xy 209.55 125.73)
+			(xy 228.6 125.73) (xy 209.55 125.73)
 		)
 		(stroke
 			(width 0)
@@ -2856,12 +2856,12 @@
 		(uuid "bc2b3d06-cc88-4d5f-b933-14136d3f265f")
 	)
 	(label "VBUS_UNFILTERED"
-		(at 346.71 109.22 180)
+		(at 241.3 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "d2251dff-6375-4d27-8b78-0cba47e05fef")
 	)
@@ -2877,7 +2877,7 @@
 	)
 	(hierarchical_label "USB_DP"
 		(shape bidirectional)
-		(at 213.36 128.27 0)
+		(at 228.6 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2888,7 +2888,7 @@
 	)
 	(hierarchical_label "USB_DN"
 		(shape bidirectional)
-		(at 213.36 125.73 0)
+		(at 228.6 125.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2899,7 +2899,7 @@
 	)
 	(hierarchical_label "V_5V0"
 		(shape output)
-		(at 379.73 109.22 0)
+		(at 386.08 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2907,6 +2907,186 @@
 			(justify left)
 		)
 		(uuid "e2886358-ab16-4a91-b0d6-20c4705dff75")
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 223.52 123.19) (xy 226.06 123.19) (xy 226.06 130.81) (xy 223.52 130.81)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 66ef4619-9451-4ebd-8b0e-d4c795b167f6)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 95.25 123.19) (xy 97.79 123.19) (xy 97.79 130.81) (xy 95.25 130.81)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid bd46e4fd-f4b9-4db5-92b0-b875b58d9759)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape dot)
+		(at 381 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5db47246-71f7-4037-aace-5b12715d88d2")
+		(property "Netclass" "Power"
+			(at 381 105.918 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Component Class" ""
+			(at 25.4 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape dot)
+		(at 266.7 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "814b83c9-0a26-432c-9eb8-bcf55ca62531")
+		(property "Netclass" "Power"
+			(at 266.7 105.918 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Component Class" ""
+			(at -88.9 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape dot)
+		(at 96.52 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8ba35d9c-65f3-4d44-b1a8-5179a6cd2379")
+		(property "Netclass" "USB"
+			(at 96.52 119.888 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Component Class" ""
+			(at -21.59 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape dot)
+		(at 101.6 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9251b781-0cc6-4f99-80d2-a1e1bcb3e4d5")
+		(property "Netclass" "Power"
+			(at 101.6 105.918 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Component Class" ""
+			(at -254 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape dot)
+		(at 224.79 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef2bc1a8-aac4-4251-9b93-629233f91a7c")
+		(property "Netclass" "USB"
+			(at 224.79 119.888 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Component Class" ""
+			(at 106.68 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:Earth")

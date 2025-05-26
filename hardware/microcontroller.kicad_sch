@@ -4199,6 +4199,12 @@
 		(uuid "187430e3-fd00-4be7-a728-0aa153d1f7e0")
 	)
 	(junction
+		(at 233.68 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "274271ac-b104-4fd7-8813-63346cb16d13")
+	)
+	(junction
 		(at 193.04 198.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4335,12 +4341,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f57a340-2394-447d-83f6-3bc13e92fd30")
-	)
-	(junction
-		(at 236.22 184.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "91a4e3ac-6b0b-4bbe-80fb-b9f232a2bef2")
 	)
 	(junction
 		(at 180.34 237.49)
@@ -5274,7 +5274,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 184.15) (xy 236.22 184.15)
+			(xy 226.06 184.15) (xy 233.68 184.15)
 		)
 		(stroke
 			(width 0)
@@ -6204,16 +6204,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 184.15) (xy 241.3 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a300bc6-4ff7-4c08-b91e-be03f72bf3b7")
-	)
-	(wire
-		(pts
 			(xy 224.79 147.32) (xy 241.3 147.32)
 		)
 		(stroke
@@ -6391,6 +6381,16 @@
 			(type default)
 		)
 		(uuid "a71f87e5-25f8-421c-9964-d32ecef6902e")
+	)
+	(wire
+		(pts
+			(xy 233.68 184.15) (xy 241.3 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8954c47-8c9f-4b8e-9440-cb818502abf9")
 	)
 	(wire
 		(pts
@@ -8295,6 +8295,36 @@
 			(justify right)
 		)
 		(uuid "febb8ce8-d951-4ac5-bd81-d3586c3278c1")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape dot)
+		(at 238.76 184.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9890170-5cbd-4272-8015-5639cba3ecde")
+		(property "Netclass" "Power"
+			(at 238.76 180.848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Component Class" ""
+			(at -116.84 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
@@ -16521,7 +16551,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 236.22 184.15 0)
+		(at 233.68 184.15 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16530,7 +16560,7 @@
 		(dnp no)
 		(uuid "dc01b554-302a-4b6c-8450-98888d7411a3")
 		(property "Reference" "#FLG0501"
-			(at 236.22 182.245 0)
+			(at 233.68 182.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16539,7 +16569,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 236.22 181.102 0)
+			(at 233.68 181.102 0)
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -16547,7 +16577,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 236.22 184.15 0)
+			(at 233.68 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16556,7 +16586,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 236.22 184.15 0)
+			(at 233.68 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16565,7 +16595,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 236.22 184.15 0)
+			(at 233.68 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
