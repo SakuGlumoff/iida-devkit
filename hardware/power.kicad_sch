@@ -2494,12 +2494,6 @@
 		(uuid "93913420-12c8-4cfc-90a1-4fe2cc7eb4be")
 	)
 	(junction
-		(at 177.8 175.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9d042195-bc42-4568-a7e6-6d44ac2cf1bc")
-	)
-	(junction
 		(at 372.11 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2726,16 +2720,6 @@
 			(type default)
 		)
 		(uuid "13cec241-286c-4256-8466-e04e0f42dd00")
-	)
-	(wire
-		(pts
-			(xy 177.8 173.99) (xy 177.8 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14635b9b-9872-4a06-a3aa-62d711c78fb8")
 	)
 	(wire
 		(pts
@@ -3066,16 +3050,6 @@
 			(type default)
 		)
 		(uuid "59162c3e-9b29-4871-bf2a-ce59f2f9c581")
-	)
-	(wire
-		(pts
-			(xy 175.26 175.26) (xy 177.8 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "607c824b-f3f6-408b-8b19-19509cfbdd5a")
 	)
 	(wire
 		(pts
@@ -3929,7 +3903,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 175.26) (xy 184.15 175.26)
+			(xy 175.26 175.26) (xy 184.15 175.26)
 		)
 		(stroke
 			(width 0)
@@ -6508,73 +6482,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
 					(reference "TP403")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 177.8 173.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "6de708b3-dc3e-4923-bd5e-07128bc4f87f")
-		(property "Reference" "TP401"
-			(at 177.8 169.672 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 180.34 171.9579 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 182.88 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 182.88 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 177.8 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ebab6c06-0bdd-4ed3-97ec-40c10f228008")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "TP401")
 					(unit 1)
 				)
 			)
