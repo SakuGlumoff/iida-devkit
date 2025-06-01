@@ -6,117 +6,10 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-05-31")
+		(date "2025-06-01")
 		(rev "v5.0.0")
 	)
 	(lib_symbols
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016)
@@ -1986,12 +1879,6 @@
 		(uuid "df87eebe-bc61-4b7d-993e-542b64f94554")
 	)
 	(junction
-		(at 317.5 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e07d9bd3-c411-445b-a57f-8d0c49247e75")
-	)
-	(junction
 		(at 46.99 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2023,7 +1910,7 @@
 	)
 	(wire
 		(pts
-			(xy 317.5 109.22) (xy 347.98 109.22)
+			(xy 238.76 109.22) (xy 347.98 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2493,16 +2380,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 109.22) (xy 317.5 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dddff9e7-c3fb-4538-afbc-68b8fc354143")
-	)
-	(wire
-		(pts
 			(xy 209.55 109.22) (xy 231.14 109.22)
 		)
 		(stroke
@@ -2656,7 +2533,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 0b570707-cf47-4bf3-a050-22f0d6fe6c54)
+			(uuid 8dc15285-43ac-4031-8912-9ea45e2167e9)
 		)
 	)
 	(netclass_flag ""
@@ -3357,73 +3234,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
 					(reference "#PWR0208")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 317.5 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "429683ca-be41-4178-bcc3-f52e9310579c")
-		(property "Reference" "TP201"
-			(at 317.5 104.902 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 320.04 107.1879 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 322.58 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 322.58 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 317.5 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "674eed70-9561-4070-99b1-a895b3259285")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/8a51e004-740e-440f-9bfb-b035bcbeb0d2"
-					(reference "TP201")
 					(unit 1)
 				)
 			)
