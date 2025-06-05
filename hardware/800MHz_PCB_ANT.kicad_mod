@@ -1,0 +1,207 @@
+(footprint "800MHz_PCB_ANT"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "5a01e7b4-b5de-40ba-8d77-5f63e4381f10")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "800MHz_PCB_ANT"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "db393248-a1da-4021-9bdf-560fe7ed25bc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "50c68adf-aed0-4b51-8015-a05d230ce531")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "14b51a55-5aa3-4ea0-9804-61e0b1034465")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(net_tie_pad_groups "1,2")
+	(fp_rect
+		(start -1 -10)
+		(end 33.194 -8)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "B.Cu")
+		(uuid "5e9f758e-6545-4976-869d-8c92bb876484")
+	)
+	(fp_rect
+		(start 1 -10)
+		(end -1 -1)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "B.Cu")
+		(uuid "a944a9fa-0525-431c-aefc-fa6e51aa10e3")
+	)
+	(fp_rect
+		(start 6 -10)
+		(end 4 -1)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "B.Cu")
+		(uuid "e4e8c473-7a6c-422f-9912-e3439ac35144")
+	)
+	(fp_rect
+		(start 36 -12)
+		(end -6 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "9758a73a-9bc2-44d6-b12c-eab0b0f0bb35")
+	)
+	(fp_rect
+		(start 36 -12)
+		(end -6 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "56609754-78d9-4d96-9a62-9c80acac0799")
+	)
+	(fp_text user "L = 34.194 mm"
+		(at -1 -10 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "0148c460-9a43-4108-9744-056a71d36ed9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "H = 10 mm"
+		(at -1 -10 90)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "b8a91bb8-ea03-4064-bca2-d8e59708fc38")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify right bottom)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "1ae7d8f4-b50f-4050-8ff1-ab551fd0c6e1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text_box "Λ = 800 Mhz @ 4.5 ε_{R} = 176.777 mm.\n\nQuarter wavelength = 44.194 mm.\n\nFeed line is Λ/10 distance away from the shorting pin, which is 4.4 mm."
+		(start -6.05 -23.175)
+		(end 36.05 -12.125)
+		(margins 1.0025 1.0025 1.0025 1.0025)
+		(layer "Cmts.User")
+		(uuid "6bf33169-2443-44d0-ae1a-e431217b3d88")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+		(border yes)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+	)
+	(pad "1" connect rect
+		(at 5 0)
+		(size 2 2)
+		(layers "B.Cu")
+		(clearance 0.5)
+		(teardrops
+			(best_length_ratio 2)
+			(max_length 40)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges yes)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "139b4729-b15d-4c1d-831d-9d6f5f41e913")
+	)
+	(pad "2" connect rect
+		(at 0 0)
+		(size 2 2)
+		(layers "B.Cu")
+		(zone_connect 2)
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "20a17849-6d19-45c8-8fee-feb976abe1a1")
+	)
+	(embedded_fonts no)
+)
