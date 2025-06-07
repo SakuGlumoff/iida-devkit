@@ -7,6 +7,7 @@
 		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
+		(hide yes)
 		(uuid "5a01e7b4-b5de-40ba-8d77-5f63e4381f10")
 		(effects
 			(font
@@ -16,7 +17,7 @@
 		)
 	)
 	(property "Value" "800MHz_PCB_ANT"
-		(at 0 1 0)
+		(at 6 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "db393248-a1da-4021-9bdf-560fe7ed25bc")
@@ -54,43 +55,142 @@
 		)
 	)
 	(attr exclude_from_pos_files exclude_from_bom)
-	(net_tie_pad_groups "1,2")
+	(net_tie_pad_groups "1, 2")
 	(fp_rect
-		(start -1 -10)
-		(end 33.194 -8)
+		(start 1 -13)
+		(end 9.5 -10.1)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(fill yes)
 		(layer "B.Cu")
-		(uuid "5e9f758e-6545-4976-869d-8c92bb876484")
+		(uuid "1118239b-c471-4389-a395-f8227558b9e2")
 	)
 	(fp_rect
-		(start 1 -10)
-		(end -1 -1)
+		(start 1 -12.5)
+		(end 3 -1)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(fill yes)
 		(layer "B.Cu")
-		(uuid "a944a9fa-0525-431c-aefc-fa6e51aa10e3")
+		(uuid "07f2de57-38f7-44b3-87fc-6c01f617b4da")
 	)
 	(fp_rect
-		(start 6 -10)
-		(end 4 -1)
+		(start 5.4 -12.5)
+		(end 6.2 -0.4)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(fill yes)
 		(layer "B.Cu")
-		(uuid "e4e8c473-7a6c-422f-9912-e3439ac35144")
+		(uuid "acc0447d-9d05-4232-a5f0-df08e9d05ad5")
 	)
 	(fp_rect
-		(start 36 -12)
-		(end -6 0)
+		(start 8.05 -13)
+		(end 10.95 -4.75)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "B.Cu")
+		(uuid "2a583aa9-8cfa-4515-949b-3d71218e8a28")
+	)
+	(fp_rect
+		(start 8.05 -6.2)
+		(end 16.55 -3.3)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "B.Cu")
+		(uuid "e729bebc-9044-4c9f-af5f-702be619c024")
+	)
+	(fp_rect
+		(start 15.1 -13)
+		(end 23.6 -10.1)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "B.Cu")
+		(uuid "3a2a4976-e0e7-46e7-843d-1054980228fd")
+	)
+	(fp_rect
+		(start 15.1 -11.55)
+		(end 18 -3.3)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "B.Cu")
+		(uuid "f78549c9-7839-47d1-9e9b-510fede6eb2c")
+	)
+	(fp_rect
+		(start 22.15 -13)
+		(end 25.05 -4.75)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "B.Cu")
+		(uuid "d6b13aad-67d3-4b09-92d6-fd23b60ddcbd")
+	)
+	(fp_rect
+		(start 22.15 -6.2)
+		(end 30.65 -3.3)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "B.Cu")
+		(uuid "78a196c7-58c8-40a3-933d-8e8b686c2789")
+	)
+	(fp_rect
+		(start 29.2 -13)
+		(end 37.7 -10.1)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "B.Cu")
+		(uuid "361aa174-00f4-42a9-84cf-7ec39de950a1")
+	)
+	(fp_rect
+		(start 29.2 -11.55)
+		(end 32.1 -3.3)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "B.Cu")
+		(uuid "f4f7166e-a3da-49b7-b4d5-1924b1b7c242")
+	)
+	(fp_rect
+		(start 36.25 -13)
+		(end 39.15 -4.75)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "B.Cu")
+		(uuid "01994aa6-1bff-4f90-a025-9cf430a263f5")
+	)
+	(fp_rect
+		(start 0 -15)
+		(end 80 0)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -100,44 +200,18 @@
 		(uuid "9758a73a-9bc2-44d6-b12c-eab0b0f0bb35")
 	)
 	(fp_rect
-		(start 36 -12)
-		(end -6 0)
+		(start 0 -15)
+		(end 80 0)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "56609754-78d9-4d96-9a62-9c80acac0799")
-	)
-	(fp_text user "L = 34.194 mm"
-		(at -1 -10 0)
-		(unlocked yes)
-		(layer "Cmts.User")
-		(uuid "0148c460-9a43-4108-9744-056a71d36ed9")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left bottom)
-		)
-	)
-	(fp_text user "H = 10 mm"
-		(at -1 -10 90)
-		(unlocked yes)
-		(layer "Cmts.User")
-		(uuid "b8a91bb8-ea03-4064-bca2-d8e59708fc38")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify right bottom)
-		)
+		(uuid "34c7024c-7117-45f3-af20-9e2dcc7193a4")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 2.25 0)
+		(at 6 2.25 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "1ae7d8f4-b50f-4050-8ff1-ab551fd0c6e1")
@@ -148,9 +222,9 @@
 			)
 		)
 	)
-	(fp_text_box "Λ = 800 Mhz @ 4.5 ε_{R} = 176.777 mm.\n\nQuarter wavelength = 44.194 mm.\n\nFeed line is Λ/10 distance away from the shorting pin, which is 4.4 mm."
-		(start -6.05 -23.175)
-		(end 36.05 -12.125)
+	(fp_text_box "Antenna designed with Ansys HFSS. Refer to the PCB antenna design document for details.\n\nEnsure that there is a dielectric inside the courtyard."
+		(start 0 -20.9)
+		(end 80 -15.09)
 		(margins 1.0025 1.0025 1.0025 1.0025)
 		(layer "Cmts.User")
 		(uuid "6bf33169-2443-44d0-ae1a-e431217b3d88")
@@ -168,8 +242,8 @@
 		)
 	)
 	(pad "1" connect rect
-		(at 5 0)
-		(size 2 2)
+		(at 5.8 0)
+		(size 0.8 0.8)
 		(layers "B.Cu")
 		(clearance 0.5)
 		(teardrops
@@ -186,7 +260,7 @@
 		(uuid "139b4729-b15d-4c1d-831d-9d6f5f41e913")
 	)
 	(pad "2" connect rect
-		(at 0 0)
+		(at 2 0)
 		(size 2 2)
 		(layers "B.Cu")
 		(zone_connect 2)
@@ -202,6 +276,75 @@
 			(prefer_zone_connections yes)
 		)
 		(uuid "20a17849-6d19-45c8-8fee-feb976abe1a1")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "F.Cu" "B.Cu" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
+			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
+			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
+			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
+			"In29.Cu" "In30.Cu"
+		)
+		(uuid "a27c9e30-e64a-4309-8b04-dac6108a6932")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 0 0) (xy 0 -15) (xy 80 -15) (xy 80 0)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "B.Cu")
+		(uuid "582ee2a3-7b17-4cd3-986a-4e999d74c787")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 0 0) (xy 0 -15) (xy 80 -15) (xy 80 0)
+			)
+		)
 	)
 	(embedded_fonts no)
 )
