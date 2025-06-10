@@ -49,6 +49,23 @@ jobs:
           name: firmware
           path: iida_devkit.hex
           if-no-files-found: error
+      - name: Build documentation
+        run: |
+          docker run -v $PWD:/iida-devkit -w /iida-devkit iida-devkit \
+          /bin/bash -c "\
+            python3 -m venv .venv && source .venv/bin/activate && \
+            pip install -r doc/requirements.txt && \
+            pushd doc && \
+            make clean && make html && \
+            popd && \
+            mv doc/_build/html ./
+          "
+      - name: Archive documentation
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation
+          path: html
+          if-no-files-found: error
   release:
     needs: [build]
     runs-on: ubuntu-latest
