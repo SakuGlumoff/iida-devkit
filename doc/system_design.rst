@@ -20,41 +20,34 @@ Commands
 ++++++++
 
 The command task supports the following commands:
-
-- ``help``: Prints a list of available commands.
-- ``version``: Prints the current firmware version.
-- ``reset``: Resets the system.
-- ``get_sensor``: Prints the current sensor values.
-- ``get_sensor <sensor_id>``: Prints the current value of the specified sensor.
-- ``get_battery``: Prints the current battery status.
-- ``get_hwid``: Prints the hardware ID of the system.
-- ``get_imei``: Prints the IMEI of the system.
-- ``get_ip``: Gets the current IP address of the modem.
-- ``get_modem_info``: Gets the modem information.
-- ``get_logs``: Gets the logs from the system.
-- ``clear_logs``: Clears the logs from the system.
-- ``set_sim_pin <pin>``: Sets the SIM PIN for the modem.
-- ``set_apn <apn>``: Sets the APN for the modem.
-- ``set_password <password>``: Sets the password for the modem.
-- ``ping <host>``: Pings the specified host.
+  - ``help``: Prints a list of available commands.
+  - ``version``: Prints the current firmware version.
+  - ``reset``: Resets the system.
+  - ``get_sensor``: Prints the current sensor values.
+  - ``get_sensor <sensor_id>``: Prints the current value of the specified sensor.
+  - ``get_battery``: Prints the current battery status.
+  - ``get_hwid``: Prints the hardware ID of the system.
+  - ``get_imei``: Prints the IMEI of the system.
+  - ``get_ip``: Gets the current IP address of the modem.
+  - ``get_modem_info``: Gets the modem information.
+  - ``get_logs``: Gets the logs from the system.
+  - ``clear_logs``: Clears the logs from the system.
+  - ``set_sim_pin <pin>``: Sets the SIM PIN for the modem.
+  - ``set_apn <apn>``: Sets the APN for the modem.
+  - ``set_password <password>``: Sets the password for the modem.
+  - ``ping <host>``: Pings the specified host.
 
 
 User button
 +++++++++++
 
 The command task supports three different user button press types:
-
-- A single press
-
-  - Identified as a single falling edge of the user button signal in a two second timeframe.
-
-- A double press
-
-  - Identified as two falling edges of the user button signal within a two second timeframe.
-
-- A long press
-
-  - Identified as a single falling edge of the user button signal that lasts for at least two seconds.
+  - A single press
+    - Identified as a single falling edge of the user button signal in a two second timeframe.
+  - A double press
+    - Identified as two falling edges of the user button signal within a two second timeframe.
+  - A long press
+    - Identified as a single falling edge of the user button signal that lasts for at least two seconds.
 
 Sensor task
 -----------

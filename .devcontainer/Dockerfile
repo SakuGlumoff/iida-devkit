@@ -45,6 +45,11 @@ RUN	apt-get update -y && \
 RUN	apt update -y && \
 	apt install -y kicad/bookworm-backports
 
+# Install documentation tools
+RUN	apt-get update -y && \
+	apt-get install -y \
+	graphviz
+
 WORKDIR	/
 
 # Create and set a default user

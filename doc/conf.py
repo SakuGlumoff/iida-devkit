@@ -32,6 +32,7 @@ extensions = [
     "sphinx.ext.autosummary",
     "sphinx.ext.intersphinx",
     "sphinxcontrib.wavedrom",
+    "sphinx.ext.graphviz",
 ]
 
 intersphinx_mapping = {

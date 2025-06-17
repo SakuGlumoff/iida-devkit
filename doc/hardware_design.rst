@@ -75,7 +75,33 @@ All unused GPIO pins are available on headers along the edges of the board.
 Microcontroller
 ===============
 
-TODO
+The device is based on the STM32L552 microcontroller, which is a low-power ARM Cortex-M33 based MCU with a rich set of peripherals and features suitable for IoT applications.
+
+The microcontroller is configured to run at a frequency of 100 MHz, with a system clock derived from the internal high-speed oscillator (HSI) and the external crystal oscillator (HSE) for precise timing.
+
+The microcontroller acts as the central processing unit of the device, managing all operations, including communication with the modem, handling user inputs, and processing sensor data.
+
+The microcontroller features:
+  - 512 KB Flash memory
+  - 256 KB SRAM
+
+Memory map
+----------
+
+.. graphviz::
+
+   digraph memory_map {
+     rankdir=TB;
+     node [shape=record, width=2.5, height=0.6, fontsize=12];
+     nodesep=0;
+     ranksep=0;
+
+     ROM   [label="{ ROM | 0x8000'0000 - 0x8000'FFFF }", style=filled, fillcolor="#e6f2ff"];
+     RAM   [label="{ RAM | 0x8001'0000 - 0x8001'FFFF }", style=filled, fillcolor="#e6ffe6"];
+     USER  [label="{ USER | 0x8002'0000 - 0x8002'FFFF }", style=filled, fillcolor="#fff2cc"];
+
+     USER -> RAM -> ROM [style=invis];
+   }
 
 Debugging
 ---------
