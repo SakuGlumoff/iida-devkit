@@ -8,10 +8,22 @@ alabaster==0.7.16
     # via sphinx
 babel==2.17.0
     # via sphinx
+cairocffi==1.7.1
+    # via cairosvg
+cairosvg==2.8.2
+    # via sphinxcontrib-wavedrom
 certifi==2025.4.26
     # via requests
+cffi==1.17.1
+    # via
+    #   cairocffi
+    #   xcffib
 charset-normalizer==3.4.2
     # via requests
+cssselect2==0.8.0
+    # via cairosvg
+defusedxml==0.7.1
+    # via cairosvg
 docutils==0.19
     # via
     #   sphinx
@@ -26,10 +38,18 @@ markupsafe==3.0.2
     # via jinja2
 packaging==25.0
     # via sphinx
+pillow==11.2.1
+    # via cairosvg
+pycparser==2.22
+    # via cffi
 pygments==2.19.1
     # via sphinx
+pyyaml==6.0.2
+    # via wavedrom
 requests==2.32.4
     # via sphinx
+six==1.17.0
+    # via wavedrom
 snowballstemmer==3.0.1
     # via sphinx
 sphinx==5.3.0
@@ -37,6 +57,7 @@ sphinx==5.3.0
     #   -r requirements.in
     #   sphinx-rtd-theme
     #   sphinxcontrib-jquery
+    #   sphinxcontrib-wavedrom
 sphinx-rtd-theme==2.0.0
     # via -r requirements.in
 sphinxcontrib-applehelp==2.0.0
@@ -53,5 +74,21 @@ sphinxcontrib-qthelp==2.0.0
     # via sphinx
 sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
+sphinxcontrib-wavedrom==3.0.4
+    # via -r requirements.in
+svgwrite==1.4.3
+    # via wavedrom
+tinycss2==1.4.0
+    # via
+    #   cairosvg
+    #   cssselect2
 urllib3==2.4.0
     # via requests
+wavedrom==2.0.3.post3
+    # via sphinxcontrib-wavedrom
+webencodings==0.5.1
+    # via
+    #   cssselect2
+    #   tinycss2
+xcffib==1.9.0
+    # via sphinxcontrib-wavedrom
