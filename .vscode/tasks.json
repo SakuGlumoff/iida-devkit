@@ -2,6 +2,21 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "Build: Documentation",
+			"group": {
+				"kind": "build"
+			},
+			"problemMatcher": [],
+			"type": "shell",
+			"command": [
+				"source ${workspaceFolder}/.venv/bin/activate",
+				"&& cd doc",
+				"&& pip install -r requirements.txt",
+				"&& make clean",
+				"&& make html latexpdf"
+			]
+		},
+		{
 			"label": "Build: App",
 			"group": {
 				"kind": "build",

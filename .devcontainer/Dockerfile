@@ -41,6 +41,14 @@ RUN	apt-get update -y && \
 	python3-dev python3-pip python3-setuptools python3-tk python3-wheel xz-utils file \
 	make gcc gcc-multilib g++-multilib libsdl2-dev libmagic1
 
+# Install documentation dependencies
+RUN apt-get update -y && \
+	apt-get install -y \
+	texlive-latex-base \
+	texlive-fonts-recommended \
+	texlive-fonts-extra \
+	texlive-latex-extra
+
 # Install KiCad
 RUN	apt update -y && \
 	apt install -y kicad/bookworm-backports
