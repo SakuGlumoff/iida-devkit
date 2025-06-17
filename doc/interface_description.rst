@@ -1,8 +1,14 @@
 Interface description
 #####################
 
+This document describes the interface between the various tasks in the system.
+
+The tasks are assigned different priority levels being one of [ `HIGH`, `MEDIUM`, `LOW` ].
+
 Command task
 ============
+
+The priority of the command task is `HIGH`.
 
 The command task informs other tasks of user button events using the ``extern struct k_event user_button_event`` specified in the command task header.
 
@@ -32,19 +38,67 @@ The other tasks will then respond to these events by performing the requested ac
 Sensor task
 ===========
 
-TODO
+The priority of the sensor task is `LOW`.
+
+The sensor task informs other tasks of sensor events using the ``extern struct k_event sensor_event`` specified in the sensor task header.
+
+The event bits (``enum sensor_event_bits``) are defined as follows:
+  - ``UPDATE_TEMP_SENSOR``: The temperature sensor has been updated (0x1).
+  - ``UPDATE_HUMIDITY_SENSOR``: The humidity sensor has been updated (0x2).
+  - ``ALERT_TEMP_SENSOR``: The temperature sensor has detected an alert condition (0x3).
+  - ``ALERT_HUMIDITY_SENSOR``: The humidity sensor has detected an alert condition (0x4).
+
+The other tasks may then read the sensor values using the following functions specified in the sensor task header:
+  - ``float sensor_task_get_temperature(void)``: Returns the current temperature value.
+  - ``float sensor_task_get_humidity(void)``: Returns the current humidity value.
+
+The sensor task handles the configuration and control of the temperature and humidity sensors.
 
 Battery task
 ============
 
-TODO
+The priority of the battery task is `LOW`.
+
+The battery task informs other tasks of battery events using the ``extern struct k_event battery_event`` specified in the battery task header.
+
+The event bits (``enum battery_event_bits``) are defined as follows:
+  - ``UPDATE_BATTERY_STATUS``: The battery status has been updated (0x1).
+  - ``ALERT_BATTERY_LOW``: The battery is low (0x2).
+
+The other tasks may then read the battery status using the following functions specified in the battery task header:
+  - ``uint32_t battery_task_get_voltage(void)``: Returns the current battery voltage.
+  - ``uint32_t battery_task_get_percentage(void)``: Returns the current battery percentage.
+
+The battery task handles the configuration and control of the battery monitor.
 
 IO expander task
 ================
 
-TODO
+The priority of the IO expander task is `LOW`.
+
+The IO expander task informs other tasks of IO events using the ``extern struct k_event io_event`` specified in the IO expander task header.
+
+The event bits (``enum io_event_bits``) are defined as follows:
+  - ``TEMP_SENSOR_ALERT``: The temperature sensor has detected an alert condition (0x1).
+  - ``BATTERY_LOW_ALERT``: The battery monitor has detected a low battery condition (0x2).
+
+The other tasks may use the following functions to control the IO expander:
+  - ``void io_expander_task_set_led(enum indicator_led led, bool state)``: Sets the state of a specific LED.
+  - ``void io_expander_task_modem_reset(bool state, uint32_t time)``: Resets the modem.
+  - ``void io_expander_task_modem_power_enable(bool state)``: Enables the modem on or off.
+  - ``void io_expander_task_modem_power_ctrl(bool state)``: Controls the modem power pin.
+
+The IO expander task handles control of the IO expander and also clearing the interrupts from the IO expander.
 
 Network task
 ============
 
-TODO
+The priority of the network task is `MEDIUM`.
+
+The other tasks may query modem information using the following functions specified in the network task header:
+  - ``modem_state_t network_task_get_modem_state(void)``: Returns the current state of the modem.
+  - ``uint8_t network_task_get_modem_rssi(void)``: Returns the current RSSI value of the modem.
+  - ``uint8_t* network_task_get_modem_imei(void)``: Returns the current IMEI of the modem.
+  - ``uint8_t* network_task_get_modem_ip(void)``: Returns the current IP address of the modem.
+
+The network task monitors for sensor and battery events and sends updates about them to the backend server.
