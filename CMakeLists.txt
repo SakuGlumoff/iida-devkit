@@ -1,14 +1,6 @@
-cmake_minimum_required(VERSION 3.20.0)
-find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
+# This is needed so that custom driver classes using system calls are taken into account
+zephyr_syscall_include_directories(include)
 
-project(app
-	LANGUAGES C CXX
-)
+zephyr_include_directories(include)
 
-target_sources(app PRIVATE
-	${CMAKE_CURRENT_LIST_DIR}/src/main.c
-)
-
-target_include_directories(app PRIVATE
-	${CMAKE_CURRENT_LIST_DIR}/src/include
-)
+add_subdirectory(drivers)

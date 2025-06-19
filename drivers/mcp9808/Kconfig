@@ -1,0 +1,7 @@
+config MCP9808
+	bool "MCP9808 Temperature Sensor"
+	default y
+	select i2c
+	select gpio
+	help
+	  Enable support for the MCP9808 temperature sensor.

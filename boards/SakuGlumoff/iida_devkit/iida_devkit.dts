@@ -144,6 +144,7 @@
 	norflash: norflash@60000000 {
 		compatible = "st,stm32-ospi-nor";
 		reg = <0x60000000 DT_SIZE_M(8)>;
+		size = <DT_SIZE_M(8)>;
 		ospi-max-frequency = <DT_FREQ_M(1)>;
 		spi-bus-width = <OSPI_SPI_MODE>;
 		data-rate = <OSPI_STR_TRANSFER>;
