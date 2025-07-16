@@ -1,0 +1,17 @@
+/ {
+	leds: leds {
+		compatible = "gpio-leds";
+		dbg_led_a: dbg_led_a {
+			gpios = <&gpioa 9 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			label = "DBG_LED_A";
+		};
+		dbg_led_b: dbg_led_b {
+			gpios = <&gpioa 8 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			label = "DBG_LED_B";
+		};
+		dbg_led_c: dbg_led_c {
+			gpios = <&gpiob 15 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			label = "DBG_LED_C";
+		};
+	};
+};

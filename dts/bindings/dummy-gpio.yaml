@@ -1,0 +1,9 @@
+description: A dummy GPIO pin
+
+compatible: "dummy-gpio"
+
+properties:
+  gpios:
+    type: phandle-array
+    required: true
+    description: The GPIO used as a dummy pin.
