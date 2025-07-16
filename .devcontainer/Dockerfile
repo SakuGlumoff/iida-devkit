@@ -8,13 +8,33 @@ WORKDIR	/tmp
 RUN	echo "deb http://deb.debian.org/debian bookworm-backports main" >> /etc/apt/sources.list.d/backports.list && \
 	apt-get update -y && \
 	apt-get install -y \
-	python3 python3-venv \
-	curl wget \
-	unzip gzip xz-utils \
-	git git-lfs \
+	git git-lfs cmake ninja-build gperf \
+	ccache dfu-util device-tree-compiler wget curl \
+	xz-utils file unzip gzip \
+	make gcc gcc-multilib g++-multilib libsdl2-dev libmagic1 \
 	bash-completion \
-	cmake ninja-build \
 	libncurses5 libncursesw5
+
+# Install a Zephyr compatible Python version
+RUN	apt-get update -y && \
+	apt-get install -y \
+	pkg-config zlib1g-dev openssl \
+	libssl-dev libreadline-dev libbz2-dev \
+	libsqlite3-dev libgdbm-dev libncurses5-dev \
+	libncursesw5-dev tk-dev uuid-dev \
+	liblzma-dev libgdbm-compat-dev libffi-dev
+RUN	wget https://www.python.org/ftp/python/3.13.5/Python-3.13.5.tar.xz && \
+	tar -xf Python-3.13.5.tar.xz && \
+	rm Python-3.13.5.tar.xz && \
+	cd Python-3.13.5 && \
+	./configure --prefix=/opt/python/3.13.5 --enable-shared --enable-optimizations && \
+	make -j$(nproc) && \
+	make install
+RUN	apt-get update -y && \
+	apt-get install -y \
+	python3-venv python3-dev python3-pip python3-setuptools python3-tk python3-wheel
+ENV	PATH="$PATH:/opt/python/3.13.5/bin"
+ENV	LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/python/3.13.5/lib"
 
 # Install J-Link tools
 RUN	curl \
@@ -50,6 +70,9 @@ RUN	apt-get update -y && \
 	apt-get install -y \
 	graphviz
 
+# Clean up
+RUN	rm -rf /tmp/*
+
 WORKDIR	/
 
 # Create and set a default user
@@ -69,9 +92,9 @@ USER 	$USERNAME
 WORKDIR	/home/user
 
 # Install Zephyr toolchain
-RUN	wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.17.0/zephyr-sdk-0.17.0_linux-x86_64_minimal.tar.xz && \
-	tar -xvf zephyr-sdk-0.17.0_linux-x86_64_minimal.tar.xz && \
-	rm zephyr-sdk-0.17.0_linux-x86_64_minimal.tar.xz && \
-	./zephyr-sdk-0.17.0/setup.sh -t arm-zephyr-eabi -h -c
+RUN	wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.17.2/zephyr-sdk-0.17.2_linux-x86_64_minimal.tar.xz && \
+	tar -xvf zephyr-sdk-0.17.2_linux-x86_64_minimal.tar.xz && \
+	rm zephyr-sdk-0.17.2_linux-x86_64_minimal.tar.xz && \
+	./zephyr-sdk-0.17.2/setup.sh -t arm-zephyr-eabi -h -c
 
 SHELL	["/bin/bash"]

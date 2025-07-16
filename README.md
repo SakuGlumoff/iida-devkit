@@ -23,7 +23,7 @@ The harware was designed with [KiCad EDA](https://www.kicad.org/).
 
 ### Building the application
 
-Build the application with `west build -b iida_devkit@4.2.1 . -- -DBOARD_ROOT=.`.
+Build the application with `west build -b iida_devkit@4.2.1 . -- -DBOARD_ROOT=$(pwd)`.
 
 ### Running the application
 

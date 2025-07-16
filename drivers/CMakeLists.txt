@@ -1,0 +1,3 @@
+add_subdirectory_ifdef(CONFIG_MCP9808 mcp9808)
+add_subdirectory_ifdef(CONFIG_SHT40 sht40)
+add_subdirectory_ifdef(CONFIG_MAX17048G max17048g)
