@@ -26,7 +26,7 @@
 			"type": "shell",
 			"command": [
 				"source ${workspaceFolder}/.venv/bin/activate",
-				"&& west build -b iida_devkit@4.2.1 app -- -DBOARD_ROOT=.."
+				"&& west build -b iida_devkit app -- -DBOARD_ROOT=.."
 			]
 		}
 	]

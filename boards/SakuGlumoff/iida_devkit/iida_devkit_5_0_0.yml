@@ -1,0 +1,23 @@
+identifier: iida_devkit
+name: Iida-devkit
+vendor: SakuGlumoff
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - gpio
+  - dac
+  - adc
+  - dma
+  - usart
+  - spi
+  - i2c
+  - usbd
+  - usb_device
+  - watchdog
+  - octospi
+ram: 192
+flash: 512

@@ -28,7 +28,7 @@ jobs:
             pip install -r zephyr/scripts/requirements.txt && \
             west zephyr-export && \
             west sdk install -t arm-zephyr-eabi && \
-            west build -b iida_devkit@4.2.1 app -- -DBOARD_ROOT=..
+            west build -b iida_devkit app -- -DBOARD_ROOT=..
           "
       - name: Archive firmware
         uses: actions/upload-artifact@v4

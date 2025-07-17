@@ -17,15 +17,11 @@
 
 LOG_MODULE_REGISTER(main, CONFIG_APP_LOG_LEVEL);
 
-#define DBG_LED_A DT_NODELABEL(dbg_led_a)
-static const struct gpio_dt_spec led_a = GPIO_DT_SPEC_GET(DBG_LED_A, gpios);
-#define DBG_LED_B DT_NODELABEL(dbg_led_b)
-static const struct gpio_dt_spec led_b = GPIO_DT_SPEC_GET(DBG_LED_B, gpios);
-#define DBG_LED_C DT_NODELABEL(dbg_led_c)
-static const struct gpio_dt_spec led_c = GPIO_DT_SPEC_GET(DBG_LED_C, gpios);
+#define DBG_GPIO_ENABLED DT_NODE_EXISTS(DT_NODELABEL(dbg_gpio))
 
-#define DBG_GPIO DT_NODELABEL(dbg_gpio)
-static const struct gpio_dt_spec dbg_gpio = GPIO_DT_SPEC_GET(DBG_GPIO, gpios);
+#if DBG_GPIO_ENABLED
+static const struct gpio_dt_spec dbg_gpio = GPIO_DT_SPEC_GET_OR(DT_NODELABEL(dbg_gpio), gpios, {0});
+#endif
 
 #define MCP9808 DT_NODELABEL(mcp9808)
 static const struct device *const mcp9808 = DEVICE_DT_GET(MCP9808);
@@ -69,7 +65,7 @@ void single_sector_test(const struct device *flash_dev)
 		}
 		if (memcmp(erased, buf, len) != 0) {
 			LOG_INF("Flash erase failed at offset 0x%x got 0x%x",
-			       SPI_FLASH_TEST_REGION_OFFSET, *(uint32_t *)buf);
+				SPI_FLASH_TEST_REGION_OFFSET, *(uint32_t *)buf);
 			return;
 		}
 		LOG_INF("Flash erase succeeded!");
@@ -100,8 +96,8 @@ void single_sector_test(const struct device *flash_dev)
 		LOG_INF("Data read does not match data written!!");
 		while (rp < rpe) {
 			LOG_INF("%08x wrote %02x read %02x %s",
-			       (uint32_t)(SPI_FLASH_TEST_REGION_OFFSET + (rp - buf)), *wp, *rp,
-			       (*rp == *wp) ? "match" : "MISMATCH");
+				(uint32_t)(SPI_FLASH_TEST_REGION_OFFSET + (rp - buf)), *wp, *rp,
+				(*rp == *wp) ? "match" : "MISMATCH");
 			++rp;
 			++wp;
 		}
@@ -121,9 +117,7 @@ int main(void)
 	printk("Built on %s @ %s\n", __DATE__, __TIME__);
 
 	int ret;
-	bool ledOkay = true;
 	bool mcp9808Okay = true;
-	bool dbgGpioOkay = true;
 	uint32_t counter = 0UL;
 
 	if (mcp9808 == NULL) {
@@ -140,30 +134,8 @@ int main(void)
 		return 0;
 	}
 
-	if (gpio_is_ready_dt(&led_a)) {
-		ret = gpio_pin_configure_dt(&led_a, GPIO_OUTPUT_INACTIVE);
-		if (ret < 0) {
-			LOG_ERR("Could not configure DBG LED A");
-			ledOkay = false;
-		}
-	}
-
-	if (gpio_is_ready_dt(&led_b)) {
-		ret = gpio_pin_configure_dt(&led_b, GPIO_OUTPUT_INACTIVE);
-		if (ret < 0) {
-			LOG_ERR("Could not configure DBG LED B");
-			ledOkay = false;
-		}
-	}
-
-	if (gpio_is_ready_dt(&led_c)) {
-		ret = gpio_pin_configure_dt(&led_c, GPIO_OUTPUT_INACTIVE);
-		if (ret < 0) {
-			LOG_ERR("Could not configure DBG LED C");
-			ledOkay = false;
-		}
-	}
-
+#if DBG_GPIO_ENABLED
+	bool dbgGpioOkay = true;
 	if (gpio_is_ready_dt(&dbg_gpio)) {
 		ret = gpio_pin_configure_dt(&dbg_gpio, GPIO_OUTPUT_INACTIVE);
 		if (ret < 0) {
@@ -171,26 +143,13 @@ int main(void)
 			dbgGpioOkay = false;
 		}
 	}
+#endif
 
 #ifdef SELF_TEST
 	single_sector_test(norflash);
 #endif
 
 	while (1) {
-		for (int i = 0; i < 3; i++) {
-			if (!ledOkay) {
-				continue;
-			}
-			if (i == 0) {
-				(void)gpio_pin_toggle_dt(&led_a);
-			} else if (i == 1) {
-				(void)gpio_pin_toggle_dt(&led_b);
-			} else if (i == 2) {
-				(void)gpio_pin_toggle_dt(&led_c);
-			}
-			k_sleep(K_MSEC(100));
-		}
-
 		if (mcp9808Okay) {
 			ret = sensor_sample_fetch(mcp9808);
 			if (ret != 0) {
@@ -210,9 +169,11 @@ int main(void)
 			}
 		}
 
+#if DBG_GPIO_ENABLED
 		if (dbgGpioOkay) {
 			(void)gpio_pin_toggle_dt(&dbg_gpio);
 		}
+#endif
 
 		LOG_INF("Counter: %" PRIu32, counter++);
 	}
