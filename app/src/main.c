@@ -4,6 +4,7 @@
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
 #include <zephyr/device.h>
+#include <zephyr/drivers/i2c.h>
 #include <zephyr/drivers/gpio.h>
 #include <zephyr/drivers/sensor.h>
 #include <zephyr/drivers/flash.h>
@@ -14,13 +15,12 @@
 #include <zephyr/usb/usbd.h>
 
 #include "main.h"
+#include "debug.h"
 
 LOG_MODULE_REGISTER(main, CONFIG_APP_LOG_LEVEL);
 
-#define DBG_GPIO_ENABLED DT_NODE_EXISTS(DT_NODELABEL(dbg_gpio))
-
-#if DBG_GPIO_ENABLED
-static const struct gpio_dt_spec dbg_gpio = GPIO_DT_SPEC_GET_OR(DT_NODELABEL(dbg_gpio), gpios, {0});
+#if DT_NODE_EXISTS(DT_NODELABEL(io_expander))
+static const struct i2c_dt_spec io_expander = I2C_DT_SPEC_GET(DT_NODELABEL(io_expander));
 #endif
 
 #define MCP9808 DT_NODELABEL(mcp9808)
@@ -104,6 +104,17 @@ void single_sector_test(const struct device *flash_dev)
 	}
 }
 
+#if DT_NODE_EXISTS(DT_NODELABEL(io_expander))
+static inline bool init_io_expander(void)
+{
+	if (!device_is_ready(io_expander.bus)) {
+		LOG_ERR("IO expander bus %s is not ready", io_expander.bus->name);
+		return false;
+	}
+	return true;
+}
+#endif
+
 int main(void)
 {
 	if (usb_enable(NULL)) {
@@ -117,40 +128,48 @@ int main(void)
 	printk("Built on %s @ %s\n", __DATE__, __TIME__);
 
 	int ret;
-	bool mcp9808Okay = true;
+	bool mcp9808_okay = true;
+	bool norflash_okay = true;
 	uint32_t counter = 0UL;
 
 	if (mcp9808 == NULL) {
 		LOG_ERR("MCP9808 not found");
-		mcp9808Okay = false;
-	}
-	if (!device_is_ready(mcp9808)) {
-		LOG_ERR("MCP9808 not ready");
-		mcp9808Okay = false;
-	}
-
-	if (!device_is_ready(norflash)) {
-		LOG_ERR("FLASH device not ready");
-		return 0;
-	}
-
-#if DBG_GPIO_ENABLED
-	bool dbgGpioOkay = true;
-	if (gpio_is_ready_dt(&dbg_gpio)) {
-		ret = gpio_pin_configure_dt(&dbg_gpio, GPIO_OUTPUT_INACTIVE);
-		if (ret < 0) {
-			LOG_ERR("Could not configure DBG GPIO");
-			dbgGpioOkay = false;
+		mcp9808_okay = false;
+	} else {
+		if (!device_is_ready(mcp9808)) {
+			LOG_ERR("MCP9808 not ready");
+			mcp9808_okay = false;
 		}
 	}
+
+	if (norflash == NULL) {
+		LOG_ERR("NOR flash not found");
+		norflash_okay = false;
+	} else {
+		if (!device_is_ready(norflash)) {
+			LOG_ERR("FLASH device not ready");
+			norflash_okay = false;
+		}
+	}
+
+#if DT_NODE_EXISTS(DT_NODELABEL(io_expander))
+	bool io_expander_okay = true;
+	io_expander_okay = init_io_expander();
+	if (io_expander_okay) {
+		debug_init();
+	}
+#else
+	debug_init();
 #endif
 
 #ifdef SELF_TEST
-	single_sector_test(norflash);
+	if (norflash_okay) {
+		single_sector_test(norflash);
+	}
 #endif
 
 	while (1) {
-		if (mcp9808Okay) {
+		if (mcp9808_okay) {
 			ret = sensor_sample_fetch(mcp9808);
 			if (ret != 0) {
 				LOG_ERR("Could not sample TEMP SENS: %d\n", ret);
@@ -169,11 +188,18 @@ int main(void)
 			}
 		}
 
-#if DBG_GPIO_ENABLED
-		if (dbgGpioOkay) {
-			(void)gpio_pin_toggle_dt(&dbg_gpio);
+		debug_gpio_toggle();
+
+		for (int i = 0; i < 3; i++) {
+			if (i == 0) {
+				debug_led_toggle(DBG_LED_A);
+			} else if (i == 1) {
+				debug_led_toggle(DBG_LED_B);
+			} else if (i == 2) {
+				debug_led_toggle(DBG_LED_C);
+			}
+			k_sleep(K_MSEC(100));
 		}
-#endif
 
 		LOG_INF("Counter: %" PRIu32, counter++);
 	}

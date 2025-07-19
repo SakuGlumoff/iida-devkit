@@ -1,0 +1,97 @@
+/ {
+	leds {
+		compatible = "gpio-leds";
+		dbg_led_a: dbg_led_a {
+			gpios = <&io_expander 0 (GPIO_ACTIVE_LOW)>;
+			label = "DBG_LED_A";
+		};
+		dbg_led_b: dbg_led_b {
+			gpios = <&io_expander 1 (GPIO_ACTIVE_LOW)>;
+			label = "DBG_LED_B";
+		};
+		dbg_led_c: dbg_led_c {
+			gpios = <&io_expander 2 (GPIO_ACTIVE_LOW)>;
+			label = "DBG_LED_C";
+		};
+	};
+
+	gpio_external {
+		compatible = "dummy-gpio";
+		mdm_pwr_en: mdm_pwr_en {
+			gpios = <&io_expander 3 (GPIO_ACTIVE_HIGH)>;
+		};
+		mdm_reset: mdm_reset {
+			gpios = <&io_expander 4 (GPIO_ACTIVE_HIGH)>;
+		};
+		mdm_pwr_on: mdm_pwr_on {
+			gpios = <&io_expander 5 (GPIO_ACTIVE_HIGH)>;
+		};
+		temp_int_n: temp_int_n {
+			gpios = <&io_expander 6 (GPIO_ACTIVE_LOW)>;
+		};
+		bat_mon_int_n: bat_mon_int_n {
+			gpios = <&io_expander 7 (GPIO_ACTIVE_LOW)>;
+		};
+	};
+};
+
+&octospi1 {
+	pinctrl-0 = <&octospi1_io0_pb1 &octospi1_io1_pb0 &octospi1_io2_pa7 &octospi1_io3_pa6 &octospi1_clk_pb10 &octospi1_ncs_pb11>;
+	pinctrl-names = "default";
+	status = "okay";
+	norflash: norflash@60000000 {
+		compatible = "st,stm32-ospi-nor";
+		reg = <0x60000000 DT_SIZE_M(8)>;
+		size = <DT_SIZE_M(8)>;
+		ospi-max-frequency = <DT_FREQ_M(1)>;
+		spi-bus-width = <OSPI_SPI_MODE>;
+		data-rate = <OSPI_STR_TRANSFER>;
+		dmas = <&dma1 0 41 0x480>; /* request 41 for OCTOSPI1 */
+		dma-names = "tx_rx";
+	};
+};
+
+&i2c2 {
+	pinctrl-0 = <&i2c2_scl_pb13 &i2c2_sda_pb14>;
+	pinctrl-names = "default";
+	clock-frequency = <I2C_BITRATE_STANDARD>;
+	status = "okay";
+	mcp9808: mcp9808@18 {
+		compatible = "microchip,mcp9808", "jedec,jc-42.4-temp";
+		reg = <0x18>;
+		resolution = <3>;
+	};
+	io_expander: io_expander@20 {
+		compatible = "ti,tca9538";
+		reg = <0x20>;
+		gpio-controller;
+		ngpios = <8>;
+		input-latch = <0>;
+		interrupt-mask = <0x38>;
+		#gpio-cells = <2>;
+		nint-gpios = <&gpioc 13 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
+	};
+};
+
+&usart1 {
+	pinctrl-0 = <&usart1_tx_pb6 &usart1_rx_pb7>;
+	pinctrl-names = "default";
+	current-speed = <115200>;
+	status = "okay";
+};
+
+&usart2 {
+	pinctrl-0 = <&usart2_tx_pa2 &usart2_rx_pa3>;
+	pinctrl-names = "default";
+	current-speed = <115200>;
+	status = "okay";
+};
+
+zephyr_udc0: &usb {
+	pinctrl-0 = <&usb_dm_pa11 &usb_dp_pa12>;
+	pinctrl-names = "default";
+	status = "okay";
+	cdc_acm_uart0: cdc_acm_uart0 {
+		compatible = "zephyr,cdc-acm-uart";
+	};
+};
