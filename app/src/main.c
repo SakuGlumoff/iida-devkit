@@ -13,6 +13,7 @@
 #include <zephyr/autoconf.h>
 #include <zephyr/usb/usb_device.h>
 #include <zephyr/usb/usbd.h>
+#include <zephyr/drivers/fuel_gauge.h>
 
 #include "main.h"
 #include "debug.h"
@@ -21,6 +22,10 @@ LOG_MODULE_REGISTER(main, CONFIG_APP_LOG_LEVEL);
 
 #if DT_NODE_EXISTS(DT_NODELABEL(io_expander))
 static const struct i2c_dt_spec io_expander = I2C_DT_SPEC_GET(DT_NODELABEL(io_expander));
+#endif
+
+#if DT_NODE_EXISTS(DT_NODELABEL(fuel_gauge))
+static const struct device *const fuel_gauge = DEVICE_DT_GET_ANY(maxim_max17048);
 #endif
 
 #define MCP9808 DT_NODELABEL(mcp9808)
@@ -115,6 +120,23 @@ static inline bool init_io_expander(void)
 }
 #endif
 
+#if DT_NODE_EXISTS(DT_NODELABEL(fuel_gauge))
+static inline bool init_fuel_gauge(void)
+{
+	if (fuel_gauge == NULL) {
+		LOG_ERR("Fuel gauge not found");
+		return false;
+	}
+
+	if (!device_is_ready(fuel_gauge)) {
+		LOG_ERR("Fuel gauge not ready");
+		return false;
+	}
+
+	return true;
+}
+#endif
+
 int main(void)
 {
 	if (usb_enable(NULL)) {
@@ -152,6 +174,10 @@ int main(void)
 		}
 	}
 
+#if DT_NODE_EXISTS(DT_NODELABEL(fuel_gauge))
+	bool fuel_gauge_okay = init_fuel_gauge();
+#endif
+
 #if DT_NODE_EXISTS(DT_NODELABEL(io_expander))
 	bool io_expander_okay = true;
 	io_expander_okay = init_io_expander();
@@ -187,6 +213,28 @@ int main(void)
 				}
 			}
 		}
+
+#if DT_NODE_EXISTS(DT_NODELABEL(fuel_gauge))
+		if (fuel_gauge_okay) {
+			union fuel_gauge_prop_val batt_val = {0};
+			ret = fuel_gauge_get_prop(fuel_gauge, FUEL_GAUGE_RELATIVE_STATE_OF_CHARGE,
+						  &batt_val);
+			if (ret < 0) {
+				LOG_ERR("Could not get battery SoC");
+			} else {
+				LOG_INF("BATT SoC: %u %%", batt_val.relative_state_of_charge);
+			}
+
+			union fuel_gauge_prop_val volt_val = {0};
+			ret = fuel_gauge_get_prop(fuel_gauge, FUEL_GAUGE_VOLTAGE, &volt_val);
+			if (ret < 0) {
+				LOG_ERR("Could not get battery voltage");
+			} else {
+				double voltage = (double)(volt_val.voltage) / 1000 / 1000;
+				LOG_INF("BATT voltage: %0.2f %%", voltage);
+			}
+		}
+#endif
 
 		debug_gpio_toggle();
 

@@ -71,6 +71,11 @@
 		#gpio-cells = <2>;
 		nint-gpios = <&gpioc 13 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
 	};
+	fuel_gauge: fuel_gauge@36 {
+		compatible = "maxim,max17048";
+		status = "okay";
+		reg = <0x36>;
+	};
 };
 
 &usart1 {
