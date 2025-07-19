@@ -16,7 +16,7 @@
 	};
 
 	gpio_external {
-		compatible = "dummy-gpio";
+		compatible = "gpio-leds";
 		mdm_pwr_en: mdm_pwr_en {
 			gpios = <&io_expander 3 (GPIO_ACTIVE_HIGH)>;
 		};
@@ -26,12 +26,10 @@
 		mdm_pwr_on: mdm_pwr_on {
 			gpios = <&io_expander 5 (GPIO_ACTIVE_HIGH)>;
 		};
-		temp_int_n: temp_int_n {
-			gpios = <&io_expander 6 (GPIO_ACTIVE_LOW)>;
-		};
-		bat_mon_int_n: bat_mon_int_n {
-			gpios = <&io_expander 7 (GPIO_ACTIVE_LOW)>;
-		};
+	};
+
+	chosen {
+		uart,modem = &usart1;
 	};
 };
 
@@ -66,8 +64,6 @@
 		reg = <0x20>;
 		gpio-controller;
 		ngpios = <8>;
-		input-latch = <0>;
-		interrupt-mask = <0x38>;
 		#gpio-cells = <2>;
 		nint-gpios = <&gpioc 13 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
 	};
