@@ -15,30 +15,12 @@
 #include <zephyr/usb/usbd.h>
 
 #include "main.h"
+#include "debug.h"
 
 LOG_MODULE_REGISTER(main, CONFIG_APP_LOG_LEVEL);
 
-#if DT_NODE_EXISTS(DT_NODELABEL(dbg_gpio))
-static const struct gpio_dt_spec dbg_gpio = GPIO_DT_SPEC_GET_OR(DT_NODELABEL(dbg_gpio), gpios, {0});
-#endif
-
 #if DT_NODE_EXISTS(DT_NODELABEL(io_expander))
 static const struct i2c_dt_spec io_expander = I2C_DT_SPEC_GET(DT_NODELABEL(io_expander));
-#endif
-
-#if DT_NODE_EXISTS(DT_NODELABEL(dbg_led_a))
-static const struct gpio_dt_spec dbg_led_a =
-	GPIO_DT_SPEC_GET_OR(DT_NODELABEL(dbg_led_a), gpios, {0});
-#endif
-
-#if DT_NODE_EXISTS(DT_NODELABEL(dbg_led_b))
-static const struct gpio_dt_spec dbg_led_b =
-	GPIO_DT_SPEC_GET_OR(DT_NODELABEL(dbg_led_b), gpios, {0});
-#endif
-
-#if DT_NODE_EXISTS(DT_NODELABEL(dbg_led_c))
-static const struct gpio_dt_spec dbg_led_c =
-	GPIO_DT_SPEC_GET_OR(DT_NODELABEL(dbg_led_c), gpios, {0});
 #endif
 
 #define MCP9808 DT_NODELABEL(mcp9808)
@@ -133,54 +115,6 @@ static inline bool init_io_expander(void)
 }
 #endif
 
-static inline bool init_debug_leds(void)
-{
-	int status = 0;
-
-#if DT_NODE_EXISTS(DT_NODELABEL(dbg_led_a))
-	status = gpio_pin_configure_dt(&dbg_led_a, GPIO_OUTPUT_INACTIVE);
-	if (status < 0) {
-		return false;
-	}
-#endif
-
-#if DT_NODE_EXISTS(DT_NODELABEL(dbg_led_b))
-	status = gpio_pin_configure_dt(&dbg_led_b, GPIO_OUTPUT_INACTIVE);
-	if (status < 0) {
-		return false;
-	}
-#endif
-
-#if DT_NODE_EXISTS(DT_NODELABEL(dbg_led_c))
-	status = gpio_pin_configure_dt(&dbg_led_c, GPIO_OUTPUT_INACTIVE);
-	if (status < 0) {
-		return false;
-	}
-#endif
-
-	return true;
-}
-
-static inline bool init_dbg_gpio(void)
-{
-	int status = 0;
-
-#if DT_NODE_EXISTS(DT_NODELABEL(dbg_gpio))
-	if (!gpio_is_ready_dt(&dbg_gpio)) {
-		LOG_ERR("DBG GPIO not ready");
-		return false;
-	}
-
-	status = gpio_pin_configure_dt(&dbg_gpio, GPIO_OUTPUT_INACTIVE);
-	if (status < 0) {
-		LOG_ERR("Could not configure DBG GPIO");
-		return false;
-	}
-#endif
-
-	return true;
-}
-
 int main(void)
 {
 	if (usb_enable(NULL)) {
@@ -194,13 +128,9 @@ int main(void)
 	printk("Built on %s @ %s\n", __DATE__, __TIME__);
 
 	int ret;
-	bool dbg_gpio_okay = true;
 	bool mcp9808_okay = true;
-	bool dbg_leds_okay = true;
 	bool norflash_okay = true;
 	uint32_t counter = 0UL;
-
-	dbg_gpio_okay = init_dbg_gpio();
 
 	if (mcp9808 == NULL) {
 		LOG_ERR("MCP9808 not found");
@@ -212,31 +142,6 @@ int main(void)
 		}
 	}
 
-#if DT_NODE_EXISTS(DT_NODELABEL(io_expander))
-	bool io_expander_okay = true;
-	io_expander_okay = init_io_expander();
-	if (io_expander_okay) {
-		dbg_leds_okay = init_debug_leds();
-		if (!dbg_leds_okay) {
-			LOG_ERR("Debug LEDs not ready");
-		}
-
-		if (norflash == NULL) {
-			LOG_ERR("NOR flash not found");
-			norflash_okay = false;
-		} else {
-			if (!device_is_ready(norflash)) {
-				LOG_ERR("FLASH device not ready");
-				norflash_okay = false;
-			}
-		}
-	}
-#else
-	dbg_leds_okay = init_debug_leds();
-	if (!dbg_leds_okay) {
-		LOG_ERR("Debug LEDs not ready");
-	}
-
 	if (norflash == NULL) {
 		LOG_ERR("NOR flash not found");
 		norflash_okay = false;
@@ -246,6 +151,15 @@ int main(void)
 			norflash_okay = false;
 		}
 	}
+
+#if DT_NODE_EXISTS(DT_NODELABEL(io_expander))
+	bool io_expander_okay = true;
+	io_expander_okay = init_io_expander();
+	if (io_expander_okay) {
+		debug_init();
+	}
+#else
+	debug_init();
 #endif
 
 #ifdef SELF_TEST
@@ -274,29 +188,17 @@ int main(void)
 			}
 		}
 
-		if (dbg_gpio_okay) {
-#if DT_NODE_EXISTS(DT_NODELABEL(dbg_gpio))
-			(void)gpio_pin_toggle_dt(&dbg_gpio);
-#endif
-		}
+		debug_gpio_toggle();
 
-		if (dbg_leds_okay) {
-			for (int i = 0; i < 3; i++) {
-				if (i == 0) {
-#if DT_NODE_EXISTS(DT_NODELABEL(dbg_led_a))
-					(void)gpio_pin_toggle_dt(&dbg_led_a);
-#endif
-				} else if (i == 1) {
-#if DT_NODE_EXISTS(DT_NODELABEL(dbg_led_b))
-					(void)gpio_pin_toggle_dt(&dbg_led_b);
-#endif
-				} else if (i == 2) {
-#if DT_NODE_EXISTS(DT_NODELABEL(dbg_led_c))
-					(void)gpio_pin_toggle_dt(&dbg_led_c);
-#endif
-				}
-				k_sleep(K_MSEC(100));
+		for (int i = 0; i < 3; i++) {
+			if (i == 0) {
+				debug_led_toggle(DBG_LED_A);
+			} else if (i == 1) {
+				debug_led_toggle(DBG_LED_B);
+			} else if (i == 2) {
+				debug_led_toggle(DBG_LED_C);
 			}
+			k_sleep(K_MSEC(100));
 		}
 
 		LOG_INF("Counter: %" PRIu32, counter++);
