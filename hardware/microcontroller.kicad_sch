@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-06-13")
-		(rev "v5.0.0")
+		(date "2025-07-30")
+		(rev "v5.1.0")
 	)
 	(lib_symbols
 		(symbol "Connector:TC2050"
@@ -4130,6 +4130,17 @@
 			(justify left bottom)
 		)
 		(uuid "8d305fcc-72f2-4a39-ad7a-f46ef34f6eb1")
+	)
+	(text "Battery detection disabled as the\ncharging circuit causes conflicts"
+		(exclude_from_sim no)
+		(at 103.886 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "8f8c29ea-dc2a-476a-a277-1555d7404656")
 	)
 	(text "Place the GPIO headers along the edges of the PCB."
 		(exclude_from_sim no)
@@ -8796,9 +8807,9 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0af2416a-e904-471d-be7e-3d1a7478764f")
 		(property "Reference" "R504"
 			(at 115.57 165.608 0)
@@ -12919,9 +12930,9 @@
 		(at 127 171.45 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7796b9b8-ff57-42a7-bb1a-9710d52746d5")
 		(property "Reference" "R506"
 			(at 127 168.402 90)
@@ -13404,9 +13415,9 @@
 		(at 100.33 177.8 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "87859615-9314-4574-b172-7d9d6a4e35b3")
 		(property "Reference" "R503"
 			(at 100.33 174.752 90)
@@ -13886,9 +13897,9 @@
 		(at 95.25 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8d57a0da-65f7-4eb6-b285-9ad25864e4f0")
 		(property "Reference" "R502"
 			(at 93.98 181.864 0)
@@ -16645,9 +16656,9 @@
 		(at 111.76 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d16717cc-d0f4-49d4-a65c-a810c6598618")
 		(property "Reference" "Q501"
 			(at 116.332 177.038 0)

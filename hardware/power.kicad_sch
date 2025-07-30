@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-06-13")
-		(rev "v5.0.0")
+		(date "2025-07-30")
+		(rev "v5.1.0")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -2125,6 +2125,17 @@
 		)
 		(uuid "1d2c1da5-5b11-438b-b45e-9bb5615281d3")
 	)
+	(text "Max dropout voltage is 250 mV\naccording to datasheet."
+		(exclude_from_sim no)
+		(at 275.59 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "2bf8abcd-8618-41ec-9aeb-da3d2d1aed8d")
+	)
 	(text "Use a common center pad."
 		(exclude_from_sim no)
 		(at 115.57 222.25 0)
@@ -2136,6 +2147,17 @@
 			(justify left top)
 		)
 		(uuid "489671f0-9e24-4a66-ac8c-9e68bb575067")
+	)
+	(text "V_{OUT} will be 3.55 V, which is just enough for the LDO."
+		(exclude_from_sim no)
+		(at 193.04 204.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a9887006-7ad7-456c-bde6-641b93c721e8")
 	)
 	(text "Testing: For current measurements,\npopulate the header and\nremove the 0 Ω jumper."
 		(exclude_from_sim no)
@@ -4242,7 +4264,7 @@
 			"AAAAAOmcmWzJVQAAaWYgVGFtaWwgQw=="
 		)
 	)
-	(label "V_3V7"
+	(label "V_3V55"
 		(at 176.53 152.4 0)
 		(effects
 			(font
@@ -4925,121 +4947,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
 					(reference "C408")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 232.41 160.02 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0cdd5d61-3ec2-4f4d-bfdb-7a684546943e")
-		(property "Reference" "R405"
-			(at 233.68 158.242 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1.69 MΩ"
-			(at 233.68 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
-			(at 234.188 160.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 232.41 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 232.41 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 232.41 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112110180"
-			(at 232.41 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "732-560112110180CT-ND"
-			(at 232.41 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 232.41 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "≤ 1 %"
-			(at 233.68 161.798 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "2"
-			(uuid "dc0ca7d1-1bd6-4fd5-88f7-e6b2071f9aec")
-		)
-		(pin "1"
-			(uuid "f7c62bff-1473-4cdd-b0f9-4cac25c4d735")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "R405")
 					(unit 1)
 				)
 			)
@@ -5997,6 +5904,121 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
 					(reference "R402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 232.41 160.02 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4ddebfb0-510b-4973-b361-99940cb523ca")
+		(property "Reference" "R405"
+			(at 233.68 158.242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1.1 MΩ"
+			(at 233.68 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
+			(at 234.188 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.41 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 232.41 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 232.41 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112110179"
+			(at 232.41 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "732-560112110179CT-ND"
+			(at 232.41 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint review check" "+"
+			(at 232.41 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "≤ 1 %"
+			(at 233.68 161.798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "2"
+			(uuid "5d166836-1677-446d-b615-060deceec067")
+		)
+		(pin "1"
+			(uuid "1654ef46-e04d-4ed1-a873-3f55b5036e5e")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
+					(reference "R405")
 					(unit 1)
 				)
 			)
@@ -9611,7 +9633,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1.69 MΩ"
+		(property "Value" "1.1 MΩ"
 			(at 185.42 170.18 0)
 			(effects
 				(font
@@ -9656,7 +9678,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "560112110180"
+		(property "MPN" "560112110179"
 			(at 184.15 170.18 0)
 			(effects
 				(font
@@ -9665,7 +9687,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "732-560112110180CT-ND"
+		(property "DigiKey Part Number" "732-560112110179CT-ND"
 			(at 184.15 170.18 0)
 			(effects
 				(font
