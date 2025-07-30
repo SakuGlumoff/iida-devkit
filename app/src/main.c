@@ -14,6 +14,8 @@
 #include <zephyr/usb/usb_device.h>
 #include <zephyr/usb/usbd.h>
 #include <zephyr/drivers/fuel_gauge.h>
+#include <zephyr/drivers/cellular.h>
+#include <zephyr/drivers/uart.h>
 
 #include "main.h"
 #include "debug.h"
@@ -26,6 +28,25 @@ static const struct i2c_dt_spec io_expander = I2C_DT_SPEC_GET(DT_NODELABEL(io_ex
 
 #if DT_NODE_EXISTS(DT_NODELABEL(fuel_gauge))
 static const struct device *const fuel_gauge = DEVICE_DT_GET_ANY(maxim_max17048);
+#endif
+
+#if DT_NODE_EXISTS(DT_NODELABEL(mdm_pwr_en))
+static const struct gpio_dt_spec mdm_pwr_en =
+	GPIO_DT_SPEC_GET_OR(DT_NODELABEL(mdm_pwr_en), gpios, {0});
+#endif
+
+#if DT_NODE_EXISTS(DT_NODELABEL(mdm_reset))
+static const struct gpio_dt_spec mdm_reset =
+	GPIO_DT_SPEC_GET_OR(DT_NODELABEL(mdm_reset), gpios, {0});
+#endif
+
+#if DT_NODE_EXISTS(DT_NODELABEL(mdm_pwr_on))
+static const struct gpio_dt_spec mdm_pwr_on =
+	GPIO_DT_SPEC_GET_OR(DT_NODELABEL(mdm_pwr_on), gpios, {0});
+#endif
+
+#if DT_NODE_EXISTS(DT_CHOSEN(uart_modem))
+static const struct device *const mdm_uart = DEVICE_DT_GET(DT_CHOSEN(uart_modem));
 #endif
 
 #define MCP9808 DT_NODELABEL(mcp9808)
@@ -137,6 +158,49 @@ static inline bool init_fuel_gauge(void)
 }
 #endif
 
+static bool init_modem_pins(void)
+{
+	int status = 0;
+
+#if DT_NODE_EXISTS(DT_NODELABEL(mdm_pwr_en))
+	if (!gpio_is_ready_dt(&mdm_pwr_en)) {
+		LOG_ERR("MDM_PWR_EN not ready");
+		return false;
+	}
+	status = gpio_pin_configure_dt(&mdm_pwr_en, GPIO_OUTPUT_LOW);
+	if (status < 0) {
+		LOG_ERR("Could not configure MDM_PWR_EN");
+		return false;
+	}
+#endif
+
+#if DT_NODE_EXISTS(DT_NODELABEL(mdm_reset))
+	if (!gpio_is_ready_dt(&mdm_reset)) {
+		LOG_ERR("MDM_RESET not ready");
+		return false;
+	}
+	status = gpio_pin_configure_dt(&mdm_reset, GPIO_OUTPUT_LOW);
+	if (status < 0) {
+		LOG_ERR("Could not configure MDM_RESET");
+		return false;
+	}
+#endif
+
+#if DT_NODE_EXISTS(DT_NODELABEL(mdm_pwr_on))
+	if (!gpio_is_ready_dt(&mdm_pwr_on)) {
+		LOG_ERR("MDM_PWR_ON not ready");
+		return false;
+	}
+	status = gpio_pin_configure_dt(&mdm_pwr_on, GPIO_OUTPUT_LOW);
+	if (status < 0) {
+		LOG_ERR("Could not configure MDM_PWR_ON");
+		return false;
+	}
+#endif
+
+	return true;
+}
+
 int main(void)
 {
 	if (usb_enable(NULL)) {
@@ -174,6 +238,19 @@ int main(void)
 		}
 	}
 
+#if DT_NODE_EXISTS(DT_CHOSEN(uart_modem))
+	bool mdm_uart_okay = true;
+	if (mdm_uart == NULL) {
+		LOG_ERR("MDM UART not found");
+		mdm_uart_okay = false;
+	} else {
+		if (!device_is_ready(mdm_uart)) {
+			LOG_ERR("MDM UART not ready");
+			mdm_uart_okay = false;
+		}
+	}
+#endif
+
 #if DT_NODE_EXISTS(DT_NODELABEL(fuel_gauge))
 	bool fuel_gauge_okay = init_fuel_gauge();
 #endif
@@ -192,6 +269,27 @@ int main(void)
 	if (norflash_okay) {
 		single_sector_test(norflash);
 	}
+#endif
+
+	init_modem_pins();
+
+#if DT_NODE_EXISTS(DT_NODELABEL(mdm_reset))
+	(void)gpio_pin_set_dt(&mdm_reset, 0);
+#endif
+
+#if DT_NODE_EXISTS(DT_NODELABEL(mdm_pwr_on))
+	(void)gpio_pin_set_dt(&mdm_pwr_on, 0);
+#endif
+
+#if DT_NODE_EXISTS(DT_NODELABEL(mdm_pwr_en))
+	(void)gpio_pin_set_dt(&mdm_pwr_en, 1);
+#endif
+
+#if DT_NODE_EXISTS(DT_NODELABEL(mdm_pwr_on))
+	k_busy_wait(1000 * 1000);
+	(void)gpio_pin_set_dt(&mdm_pwr_on, 1);
+	k_busy_wait(250 * 1000);
+	(void)gpio_pin_set_dt(&mdm_pwr_on, 0);
 #endif
 
 	while (1) {
@@ -248,6 +346,16 @@ int main(void)
 			}
 			k_sleep(K_MSEC(100));
 		}
+
+#if DT_NODE_EXISTS(DT_CHOSEN(uart_modem))
+		if (mdm_uart_okay) {
+			static const char *at_msg = "AT\r\n";
+			for (int i = 0; i < strlen(at_msg); i++) {
+				uart_poll_out(mdm_uart, at_msg[i]);
+			}
+			k_sleep(K_MSEC(1000));
+		}
+#endif
 
 		LOG_INF("Counter: %" PRIu32, counter++);
 	}
