@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-07-30")
+		(date "2025-07-31")
 		(rev "v5.1.0")
 	)
 	(lib_symbols
@@ -934,16 +934,6 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 194.31) (xy 283.21 194.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15c5648a-3bce-4de7-b9b9-0df49ec5165f")
-	)
-	(wire
-		(pts
 			(xy 312.42 167.64) (xy 325.12 167.64)
 		)
 		(stroke
@@ -951,6 +941,16 @@
 			(type default)
 		)
 		(uuid "15eeeaa3-29cd-4ac9-bfbb-6bb9470a37c5")
+	)
+	(wire
+		(pts
+			(xy 269.24 194.31) (xy 283.21 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ffd2c0a-2216-4fb4-a9c4-8129858b8ae0")
 	)
 	(wire
 		(pts
@@ -1074,7 +1074,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 181.61) (xy 266.7 139.7)
+			(xy 266.7 181.61) (xy 266.7 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1104,7 +1104,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 139.7) (xy 283.21 139.7)
+			(xy 266.7 138.43) (xy 283.21 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1121,6 +1121,16 @@
 			(type default)
 		)
 		(uuid "73853855-494f-449d-82f4-9105fa281516")
+	)
+	(wire
+		(pts
+			(xy 269.24 140.97) (xy 269.24 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f179b0d-bbe8-4a52-94cf-d410134b743e")
 	)
 	(wire
 		(pts
@@ -1184,7 +1194,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 137.16) (xy 236.22 194.31)
+			(xy 236.22 135.89) (xy 236.22 194.31)
 		)
 		(stroke
 			(width 0)
@@ -1204,7 +1214,7 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 137.16) (xy 236.22 137.16)
+			(xy 283.21 135.89) (xy 236.22 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1341,6 +1351,16 @@
 			(type default)
 		)
 		(uuid "f61da318-0f9c-4876-ae27-c10fd52165c3")
+	)
+	(wire
+		(pts
+			(xy 283.21 140.97) (xy 269.24 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f85367d5-420b-4c16-af65-daf514605e49")
 	)
 	(wire
 		(pts
@@ -2444,8 +2464,8 @@
 		)
 	)
 	(sheet
-		(at 283.21 134.62)
-		(size 29.21 7.62)
+		(at 283.21 133.35)
+		(size 29.21 8.89)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2460,7 +2480,7 @@
 		)
 		(uuid "5e1bb3da-9ec5-412a-a6e9-5701708c7ef6")
 		(property "Sheetname" "Power"
-			(at 283.21 134.366 0)
+			(at 283.21 133.096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2488,7 +2508,7 @@
 			)
 		)
 		(pin "V_5V0" input
-			(at 283.21 137.16 180)
+			(at 283.21 135.89 180)
 			(uuid "5767fceb-16e6-4e4a-91ef-dd6ba0ba61b9")
 			(effects
 				(font
@@ -2498,8 +2518,18 @@
 			)
 		)
 		(pin "V_BAT" input
-			(at 283.21 139.7 180)
+			(at 283.21 138.43 180)
 			(uuid "b0dd2de3-4dc8-45c5-aa1e-87c791ee2674")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWR_ST" output
+			(at 283.21 140.97 180)
+			(uuid "b942a64f-4c70-46e0-a1f1-cfbfb010b259")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2639,7 +2669,7 @@
 				(justify right)
 			)
 		)
-		(pin "BAT_DET" input
+		(pin "PWR_ST" input
 			(at 283.21 194.31 180)
 			(uuid "b98615a1-07f4-473d-820a-8247ac8ceb40")
 			(effects
@@ -2739,16 +2769,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "BAT_DET" output
-			(at 262.89 194.31 0)
-			(uuid "d71d0948-3a5f-4891-bf41-6ceb3f77e133")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(instances
