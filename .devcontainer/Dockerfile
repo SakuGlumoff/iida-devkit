@@ -72,6 +72,7 @@ RUN	apt-get update -y && \
 
 # Clean up
 RUN	rm -rf /tmp/*
+RUN	mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old
 
 WORKDIR	/
 
@@ -92,9 +93,10 @@ USER 	$USERNAME
 WORKDIR	/home/user
 
 # Install Zephyr toolchain
-RUN	wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.17.2/zephyr-sdk-0.17.2_linux-x86_64_minimal.tar.xz && \
-	tar -xvf zephyr-sdk-0.17.2_linux-x86_64_minimal.tar.xz && \
-	rm zephyr-sdk-0.17.2_linux-x86_64_minimal.tar.xz && \
-	./zephyr-sdk-0.17.2/setup.sh -t arm-zephyr-eabi -h -c
+RUN	wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.17.4/zephyr-sdk-0.17.4_linux-x86_64_minimal.tar.xz && \
+	tar -xvf zephyr-sdk-0.17.4_linux-x86_64_minimal.tar.xz && \
+	rm zephyr-sdk-0.17.4_linux-x86_64_minimal.tar.xz && \
+	./zephyr-sdk-0.17.4/setup.sh -t arm-zephyr-eabi -h -c
+ENV	ZEPHYR_SDK_INSTALL_DIR=/home/user/zephyr-sdk-0.17.4
 
 SHELL	["/bin/bash"]

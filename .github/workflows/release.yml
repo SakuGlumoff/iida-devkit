@@ -1,65 +1,54 @@
 name: Release
+
 on:
   push:
     tags:
       - 'v*'
+
 jobs:
   build:
     runs-on: [self-hosted, docker]
+    container:
+      image: ghcr.io/sakuglumoff/iida-devkit:trunk
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
     environment: release
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: true
-          token: ${{ secrets.PAT_TOKEN }}
-      - name: Build docker image
-        # Build the docker image with current user's IDs so that permissions to the workspace are retained.
-        run: docker build -t iida-devkit .devcontainer --build-arg USER_UID=$(id -u) --build-arg USER_GID=$(id -g)
-      - name: Export HW design files
-        run: |
-          docker run -v $PWD:/iida-devkit -w /iida-devkit iida-devkit \
-          /bin/bash -c "\
-            mkdir ./hardware/manufacturing && \
-            kicad-cli sch export pdf --output iida_devkit.pdf ./hardware/iida_devkit.kicad_sch \
-          "
-      - name: Archive HW design files
-        uses: actions/upload-artifact@v4
-        with:
-          name: hardware
-          path: iida_devkit.pdf
-          if-no-files-found: error
       - name: Build firmware
         run: |
-          docker run -v $PWD:/iida-devkit -w /iida-devkit iida-devkit \
-          /bin/bash -c "\
-            python3 -m venv .venv && source .venv/bin/activate && \
-            pip install west && \
-            west init . && \
-            west update && \
-            pip install -r zephyr/scripts/requirements.txt && \
-            west zephyr-export && \
-            west sdk install -t arm-zephyr-eabi && \
-            west build -b iida_devkit app -- -DBOARD_ROOT=.. && \
-            mv ./build/zephyr/zephyr.hex iida_devkit.hex
-          "
+          rm -rf /__w/iida-devkit/iida-devkit/.west /__w/iida-devkit/iida-devkit/*
+          export PATH=$PATH:/github/home/.local/bin
+          pip install west==1.4.0
+          west init -m ${{ github.server_url }}/${{ github.repository }}.git --mr ${{ github.ref_name }}
+          west update
+          pip install -r zephyr/scripts/requirements.txt
+          west zephyr-export
+          west build -b iida_devkit application/app -- -DBOARD_ROOT=..
+          mv ./build/zephyr/zephyr.hex iida_devkit.hex
       - name: Archive firmware
         uses: actions/upload-artifact@v4
         with:
           name: firmware
           path: iida_devkit.hex
           if-no-files-found: error
+      - name: Export HW design files
+        run: |
+          mkdir application/hardware/manufacturing
+          kicad-cli sch export pdf --output iida_devkit.pdf application/hardware/iida_devkit.kicad_sch
+      - name: Archive HW design files
+        uses: actions/upload-artifact@v4
+        with:
+          name: hardware
+          path: iida_devkit.pdf
+          if-no-files-found: error
       - name: Build documentation
         run: |
-          docker run -v $PWD:/iida-devkit -w /iida-devkit iida-devkit \
-          /bin/bash -c "\
-            python3 -m venv .venv && source .venv/bin/activate && \
-            pip install -r doc/requirements.txt && \
-            pushd doc && \
-            make clean && make html && \
-            popd && \
-            mv doc/_build/html ./
-          "
+          pip install -r application/doc/requirements.txt
+          pushd application/doc
+          make clean && make html
+          popd
+          mv application/doc/_build/html ./
       - name: Archive documentation
         uses: actions/upload-artifact@v4
         with:

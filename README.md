@@ -13,17 +13,16 @@ The harware was designed with [KiCad EDA](https://www.kicad.org/).
 
 ### Setup
 
-1. Start a new virtual environment for Python with `python3 -m venv .venv && source .venv/bin/activate`.
-2. Install west with `pip install west`.
-3. Initialize the west projects with `west init .`.
+1. Use the Dockerfile inside the `.devcontainer/Dockerfile` to build and image and launch a container using that image. Alternatively, download the image with `docker pull ghcr.io/sakuglumoff/iida-devkit:latest`.
+2. Install the `west` tool with `pip install west`.
+3. Initialize the west projects with `west init -m git@github.com:SakuGlumoff/iida-devkit.git --mr trunk`.
 4. Update the west projects with `west update`.
 5. Install required Python packages with `pip install -r zephyr/scripts/requirements.txt`.
 6. Export the Zephyr library for CMake with `west zephyr-export`.
-7. Install the toolchain with `west sdk install -t arm-zephyr-eabi`.
 
 ### Building the application
 
-Build the application with `west build -b iida_devkit@4.2.1 . -- -DBOARD_ROOT=$(pwd)`.
+Build the application with `west build -b iida_devkit application -- -DBOARD_ROOT=..`.
 
 ### Running the application
 
