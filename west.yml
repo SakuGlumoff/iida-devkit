@@ -5,8 +5,7 @@ manifest:
   projects:
     - name: zephyr
       remote: zephyrproject-rtos
-      revision: v3.7.1
-      import:
-        name-allowlist:
-          - cmsis
-          - hal_stm32
+      revision: v4.2.0
+      import: true
+  self:
+    path: application
