@@ -9,8 +9,7 @@
 			"problemMatcher": [],
 			"type": "shell",
 			"command": [
-				"source ${workspaceFolder}/.venv/bin/activate",
-				"&& cd doc",
+				"cd ${workspaceFolder}/application/doc",
 				"&& pip install -r requirements.txt",
 				"&& make clean",
 				"&& make html"
@@ -25,8 +24,7 @@
 			"problemMatcher": "$gcc",
 			"type": "shell",
 			"command": [
-				"source ${workspaceFolder}/.venv/bin/activate",
-				"&& west build -b iida_devkit app -- -DBOARD_ROOT=.."
+				"west build -b iida_devkit application/app -- -DBOARD_ROOT=.."
 			]
 		}
 	]

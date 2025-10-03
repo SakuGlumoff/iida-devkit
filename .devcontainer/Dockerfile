@@ -90,13 +90,15 @@ RUN	groupadd --gid $USER_GID $USERNAME \
 	&& chmod 0440 /etc/sudoers.d/$USERNAME
 USER 	$USERNAME
 
-WORKDIR	/home/user
+WORKDIR	/home/$USERNAME
+
+ENV	PATH=$PATH:/home/$USERNAME/.local/bin
 
 # Install Zephyr toolchain
 RUN	wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.17.4/zephyr-sdk-0.17.4_linux-x86_64_minimal.tar.xz && \
 	tar -xvf zephyr-sdk-0.17.4_linux-x86_64_minimal.tar.xz && \
 	rm zephyr-sdk-0.17.4_linux-x86_64_minimal.tar.xz && \
 	./zephyr-sdk-0.17.4/setup.sh -t arm-zephyr-eabi -h -c
-ENV	ZEPHYR_SDK_INSTALL_DIR=/home/user/zephyr-sdk-0.17.4
+ENV	ZEPHYR_SDK_INSTALL_DIR=/home/$USERNAME/zephyr-sdk-0.17.4
 
 SHELL	["/bin/bash"]
