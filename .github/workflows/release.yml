@@ -34,7 +34,9 @@ jobs:
           if-no-files-found: error
       - name: Export HW design files
         run: |
-          mkdir application/hardware/manufacturing
+          cd application
+          git submodule update --init --recursive
+          mkdir hardware/manufacturing
           kicad-cli sch export pdf --output iida_devkit.pdf application/hardware/iida_devkit.kicad_sch
       - name: Archive HW design files
         uses: actions/upload-artifact@v4

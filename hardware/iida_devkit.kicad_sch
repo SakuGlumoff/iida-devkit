@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Iida devkit")
-		(date "2025-09-02")
+		(date "2025-10-04")
 		(rev "v5.1.1")
 	)
 	(lib_symbols
@@ -944,16 +944,6 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 194.31) (xy 283.21 194.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ffd2c0a-2216-4fb4-a9c4-8129858b8ae0")
-	)
-	(wire
-		(pts
 			(xy 316.23 162.56) (xy 316.23 151.13)
 		)
 		(stroke
@@ -991,6 +981,16 @@
 			(type default)
 		)
 		(uuid "2c92ff13-4d44-4d26-8d61-ddd0073c729c")
+	)
+	(wire
+		(pts
+			(xy 317.5 190.5) (xy 312.42 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32775adb-294f-4960-b94d-045c740930fa")
 	)
 	(wire
 		(pts
@@ -1034,6 +1034,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 139.7) (xy 317.5 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fec0b44-2ee6-47cf-b96f-fedeb469e331")
+	)
+	(wire
+		(pts
 			(xy 351.79 185.42) (xy 358.14 185.42)
 		)
 		(stroke
@@ -1074,7 +1084,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 181.61) (xy 266.7 138.43)
+			(xy 266.7 181.61) (xy 266.7 139.7)
 		)
 		(stroke
 			(width 0)
@@ -1104,7 +1114,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 138.43) (xy 283.21 138.43)
+			(xy 266.7 139.7) (xy 283.21 139.7)
 		)
 		(stroke
 			(width 0)
@@ -1121,16 +1131,6 @@
 			(type default)
 		)
 		(uuid "73853855-494f-449d-82f4-9105fa281516")
-	)
-	(wire
-		(pts
-			(xy 269.24 140.97) (xy 269.24 194.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f179b0d-bbe8-4a52-94cf-d410134b743e")
 	)
 	(wire
 		(pts
@@ -1194,7 +1194,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 135.89) (xy 236.22 194.31)
+			(xy 236.22 137.16) (xy 236.22 194.31)
 		)
 		(stroke
 			(width 0)
@@ -1214,7 +1214,7 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 135.89) (xy 236.22 135.89)
+			(xy 283.21 137.16) (xy 236.22 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1244,7 +1244,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 138.43) (xy 325.12 138.43)
+			(xy 312.42 137.16) (xy 317.5 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1354,13 +1354,13 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 140.97) (xy 269.24 140.97)
+			(xy 317.5 139.7) (xy 317.5 190.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f85367d5-420b-4c16-af65-daf514605e49")
+		(uuid "f7edcde1-5088-470f-982a-56b8176e0f0f")
 	)
 	(wire
 		(pts
@@ -1411,36 +1411,6 @@
 			(type default)
 		)
 		(uuid "fc895c70-009d-406a-8181-040212e802f0")
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape dot)
-		(at 317.5 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8c85b5e0-0175-491f-a8a6-b03e4ab1db38")
-		(property "Netclass" "Power"
-			(at 317.5 135.128 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Component Class" ""
-			(at -38.1 13.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
@@ -1948,7 +1918,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 325.12 138.43 0)
+		(at 317.5 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1956,7 +1926,7 @@
 		(dnp no)
 		(uuid "b0a3d814-bb98-439a-bcb4-9fa5713445be")
 		(property "Reference" "#PWR0102"
-			(at 325.12 142.24 0)
+			(at 317.5 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1965,7 +1935,7 @@
 			)
 		)
 		(property "Value" "V_3V3"
-			(at 325.12 135.636 0)
+			(at 317.5 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1974,7 +1944,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 325.12 138.43 0)
+			(at 317.5 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1983,7 +1953,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 325.12 138.43 0)
+			(at 317.5 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1992,7 +1962,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 325.12 138.43 0)
+			(at 317.5 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2464,8 +2434,8 @@
 		)
 	)
 	(sheet
-		(at 283.21 133.35)
-		(size 29.21 8.89)
+		(at 283.21 134.62)
+		(size 29.21 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2480,7 +2450,7 @@
 		)
 		(uuid "5e1bb3da-9ec5-412a-a6e9-5701708c7ef6")
 		(property "Sheetname" "Power"
-			(at 283.21 133.096 0)
+			(at 283.21 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2498,7 +2468,7 @@
 			)
 		)
 		(pin "V_3V3" output
-			(at 312.42 138.43 0)
+			(at 312.42 137.16 0)
 			(uuid "ceeb2b72-6d4b-4d62-8c65-210aee4412ab")
 			(effects
 				(font
@@ -2508,7 +2478,7 @@
 			)
 		)
 		(pin "V_5V0" input
-			(at 283.21 135.89 180)
+			(at 283.21 137.16 180)
 			(uuid "5767fceb-16e6-4e4a-91ef-dd6ba0ba61b9")
 			(effects
 				(font
@@ -2518,7 +2488,7 @@
 			)
 		)
 		(pin "V_BAT" input
-			(at 283.21 138.43 180)
+			(at 283.21 139.7 180)
 			(uuid "b0dd2de3-4dc8-45c5-aa1e-87c791ee2674")
 			(effects
 				(font
@@ -2527,14 +2497,14 @@
 				(justify left)
 			)
 		)
-		(pin "PWR_ST" output
-			(at 283.21 140.97 180)
+		(pin "BAT_DETn" output
+			(at 312.42 139.7 0)
 			(uuid "b942a64f-4c70-46e0-a1f1-cfbfb010b259")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(instances
@@ -2669,14 +2639,14 @@
 				(justify right)
 			)
 		)
-		(pin "PWR_ST" input
-			(at 283.21 194.31 180)
+		(pin "BAT_DETn" input
+			(at 312.42 190.5 0)
 			(uuid "b98615a1-07f4-473d-820a-8247ac8ceb40")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(instances
