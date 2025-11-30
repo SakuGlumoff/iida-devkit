@@ -6,7 +6,7 @@ on:
       - 'v*'
 
 jobs:
-  build:
+  build_fw:
     runs-on: [self-hosted, docker]
     container:
       image: ghcr.io/sakuglumoff/iida-devkit:trunk
@@ -32,24 +32,13 @@ jobs:
           name: firmware
           path: iida_devkit.hex
           if-no-files-found: error
-      - name: Export HW design files
-        run: |
-          cd application
-          git submodule update --init --recursive
-          mkdir hardware/manufacturing
-          kicad-cli sch export pdf --output iida_devkit.pdf application/hardware/iida_devkit.kicad_sch
-      - name: Archive HW design files
-        uses: actions/upload-artifact@v4
-        with:
-          name: hardware
-          path: iida_devkit.pdf
-          if-no-files-found: error
       - name: Build documentation
         run: |
+          export PATH=$PATH:/github/home/.local/bin
           pip install -r application/doc/requirements.txt
-          pushd application/doc
+          cd application/doc
           make clean && make html
-          popd
+          cd ../..
           mv application/doc/_build/html ./
       - name: Archive documentation
         uses: actions/upload-artifact@v4
@@ -57,8 +46,27 @@ jobs:
           name: documentation
           path: html
           if-no-files-found: error
+  build_hw:
+    runs-on: [self-hosted, docker]
+    container:
+      image: kicad/kicad:9.0
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          submodules: true
+      - name: Export HW design files
+        run: |
+          mkdir hardware/manufacturing
+          kicad-cli sch export pdf --output iida_devkit.pdf hardware/iida_devkit.kicad_sch
+      - name: Archive HW design files
+        uses: actions/upload-artifact@v4
+        with:
+          name: hardware
+          path: iida_devkit.pdf
+          if-no-files-found: error
   release:
-    needs: [build]
+    needs: [build_Fw, build_hw]
     runs-on: ubuntu-latest
     environment: release
     permissions:
