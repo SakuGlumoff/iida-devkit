@@ -598,66 +598,42 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.15,
         "line_style": 0,
-        "microvia_diameter": 0.8,
-        "microvia_drill": 0.45,
-        "name": "Antenna",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
-        "schematic_color": "rgb(0, 132, 0)",
-        "track_width": 0.69,
-        "tuning_profile": "",
-        "via_diameter": 0.8,
-        "via_drill": 0.45,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.15,
-        "line_style": 0,
-        "microvia_diameter": 0.75,
-        "microvia_drill": 0.45,
-        "name": "GND",
+        "name": "CHASSIS",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
-        "schematic_color": "rgb(0, 0, 0)",
+        "schematic_color": "rgb(0, 194, 0)",
         "tuning_profile": "",
-        "via_diameter": 0.8,
-        "via_drill": 0.45,
-        "wire_width": 12
+        "wire_width": 20
       },
       {
         "bus_width": 12,
-        "clearance": 0.15,
         "line_style": 0,
-        "microvia_diameter": 0.75,
-        "microvia_drill": 0.45,
-        "name": "Power",
+        "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
-        "schematic_color": "rgb(194, 0, 0)",
+        "schematic_color": "rgb(0, 0, 0)",
         "tuning_profile": "",
-        "via_diameter": 0.8,
-        "via_drill": 0.45,
-        "wire_width": 12
+        "wire_width": 20
       },
       {
         "bus_width": 12,
-        "clearance": 0.15,
-        "diff_pair_gap": 0.15,
-        "diff_pair_width": 0.225,
         "line_style": 0,
-        "microvia_diameter": 0.6,
-        "microvia_drill": 0.25,
+        "name": "PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(255, 0, 0)",
+        "tuning_profile": "",
+        "wire_width": 20
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
         "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
-        "schematic_color": "rgb(0, 0, 194)",
-        "track_width": 0.225,
+        "schematic_color": "rgb(0, 0, 255)",
         "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.25,
         "wire_width": 6
       }
     ],
@@ -717,6 +693,15 @@
       "/Modem/V_1V8_SIM": [
         "Power"
       ],
+      "/Power input/VINA": [
+        "Power"
+      ],
+      "/Power/USB.DM": [
+        "USB"
+      ],
+      "/Power/USB.DP": [
+        "USB"
+      ],
       "/Power/VINA": [
         "Power"
       ],
@@ -765,11 +750,27 @@
       "Net-(C1005-Pad2)": [
         "Antenna"
       ],
+      "Net-(C406-Pad1)": [
+        "Power"
+      ],
       "V_3V3": [
         "Power"
       ]
     },
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "PWR",
+        "pattern": "*V_*"
+      },
+      {
+        "netclass": "CHASSIS",
+        "pattern": "CHASSIS"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -946,7 +947,16 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
+    "bus_aliases": {
+      "I2C": [
+        "I2C.SDA",
+        "I2C.SCL"
+      ],
+      "USB": [
+        "USB.DM",
+        "USB.DP"
+      ]
+    },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -995,21 +1005,13 @@
         "uuid": "b12a6e25-97fb-4aba-bc96-af8db389bb9a"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR3,#PWR529-530,C409,C516",
     "variants": []
   },
   "sheets": [
     [
       "b12a6e25-97fb-4aba-bc96-af8db389bb9a",
       "iida_devkit"
-    ],
-    [
-      "8a51e004-740e-440f-9bfb-b035bcbeb0d2",
-      "USB"
-    ],
-    [
-      "87c570c0-3d52-431f-af75-588e9bdc1a2a",
-      "Battery"
     ],
     [
       "5e1bb3da-9ec5-412a-a6e9-5701708c7ef6",

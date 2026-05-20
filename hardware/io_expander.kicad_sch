@@ -1470,6 +1470,24 @@
 		(color 0 0 0 0)
 		(uuid "c1e87d30-f8ad-4221-bb2d-08314e397901")
 	)
+	(bus_entry
+		(at 34.29 152.4)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac2a7f6c-4ceb-48bc-820b-508591738fe6")
+	)
+	(bus_entry
+		(at 34.29 149.86)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edcdc05a-0c94-4ac2-8719-cb17460f45d7")
+	)
 	(wire
 		(pts
 			(xy 165.1 152.4) (xy 165.1 148.59)
@@ -1720,6 +1738,16 @@
 		)
 		(uuid "60ed9d17-7f96-4ec0-9850-5c9d268c5bcf")
 	)
+	(bus
+		(pts
+			(xy 34.29 149.86) (xy 33.02 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62ecc5ec-4263-4ec7-8543-bd07c4185f8e")
+	)
 	(wire
 		(pts
 			(xy 73.66 134.62) (xy 73.66 135.89)
@@ -1850,6 +1878,16 @@
 		)
 		(uuid "c200537c-7a90-45ac-97c5-017aae325619")
 	)
+	(bus
+		(pts
+			(xy 34.29 152.4) (xy 34.29 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3a9e412-f8d5-43cd-bddf-223482339c7d")
+	)
 	(wire
 		(pts
 			(xy 36.83 157.48) (xy 44.45 157.48)
@@ -1930,6 +1968,16 @@
 		)
 		(uuid "161a91e7-313b-469d-8fd1-ced209a997a2")
 	)
+	(label "I2C.SDA"
+		(at 36.83 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1c23d318-7e3f-4ded-a3d9-d63185bcd724")
+	)
 	(label "LED_A"
 		(at 157.48 152.4 180)
 		(effects
@@ -1939,6 +1987,16 @@
 			(justify right bottom)
 		)
 		(uuid "6d12c17a-5f6c-4304-a629-1014b67a86d0")
+	)
+	(label "I2C.SCL"
+		(at 36.83 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c7431974-ec6b-4472-9bc0-57471af6c39d")
 	)
 	(label "LED_B"
 		(at 157.48 154.94 180)
@@ -1993,17 +2051,6 @@
 		)
 		(uuid "7ab8d4ff-3519-44fe-b5f5-527103d78e5b")
 	)
-	(hierarchical_label "I2C_SCL"
-		(shape input)
-		(at 36.83 152.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "80dc93b4-25a4-46bc-95ec-ec25f70fd393")
-	)
 	(hierarchical_label "IO_EXP_INT"
 		(shape output)
 		(at 36.83 157.48 180)
@@ -2015,16 +2062,16 @@
 		)
 		(uuid "8c0bdcfa-d6a4-4c19-9eaa-ce581230db70")
 	)
-	(hierarchical_label "I2C_SDA"
+	(hierarchical_label "I2C"
 		(shape bidirectional)
-		(at 36.83 154.94 180)
+		(at 33.02 149.86 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "a14e35b3-b99b-41c9-ac02-82242dac9678")
+		(uuid "9482d12c-3a4e-426a-a59c-ebb63a0cd6d7")
 	)
 	(hierarchical_label "MDM_RESET"
 		(shape output)
