@@ -599,9 +599,19 @@
       {
         "bus_width": 12,
         "line_style": 0,
+        "name": "ANT",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(255, 0, 255)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
         "name": "CHASSIS",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 2,
         "schematic_color": "rgb(0, 194, 0)",
         "tuning_profile": "",
         "wire_width": 20
@@ -611,7 +621,7 @@
         "line_style": 0,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 3,
         "schematic_color": "rgb(0, 0, 0)",
         "tuning_profile": "",
         "wire_width": 20
@@ -621,7 +631,7 @@
         "line_style": 0,
         "name": "PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 4,
         "schematic_color": "rgb(255, 0, 0)",
         "tuning_profile": "",
         "wire_width": 20
@@ -629,9 +639,19 @@
       {
         "bus_width": 12,
         "line_style": 0,
+        "name": "SIM",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(255, 153, 0)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
         "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 5,
         "schematic_color": "rgb(0, 0, 255)",
         "tuning_profile": "",
         "wire_width": 6
@@ -643,22 +663,22 @@
     "net_colors": null,
     "netclass_assignments": {
       "/Antennas/ANT": [
-        "Antenna"
+        "ANT"
       ],
       "/Antennas/ANT_PCB_FILTERED": [
-        "Antenna"
+        "ANT"
       ],
       "/Antennas/ANT_PCB_MATCHED": [
-        "Antenna"
+        "ANT"
       ],
       "/Antennas/ANT_SEL_PCB": [
-        "Antenna"
+        "ANT"
       ],
       "/Antennas/ANT_SEL_SMA": [
-        "Antenna"
+        "ANT"
       ],
       "/Antennas/ANT_SMA_MATCHED": [
-        "Antenna"
+        "ANT"
       ],
       "/Battery/BATT+": [
         "Power"
@@ -672,6 +692,12 @@
       "/Battery/V_BAT": [
         "Power"
       ],
+      "/Microcontroller/USB.DM": [
+        "USB"
+      ],
+      "/Microcontroller/USB.DP": [
+        "USB"
+      ],
       "/Microcontroller/USB_DN": [
         "USB"
       ],
@@ -680,6 +706,18 @@
       ],
       "/Microcontroller/VDDA": [
         "Power"
+      ],
+      "/Microcontroller/{USB}": [
+        "USB"
+      ],
+      "/Modem/SIM.CLK": [
+        "SIM"
+      ],
+      "/Modem/SIM.DATA": [
+        "SIM"
+      ],
+      "/Modem/SIM.RST": [
+        "SIM"
       ],
       "/Modem/VCC": [
         "Power"
@@ -692,6 +730,9 @@
       ],
       "/Modem/V_1V8_SIM": [
         "Power"
+      ],
+      "/Modem/{SIM}": [
+        "SIM"
       ],
       "/Power input/VINA": [
         "Power"
@@ -752,6 +793,21 @@
       ],
       "Net-(C406-Pad1)": [
         "Power"
+      ],
+      "Net-(C52-Pad2)": [
+        "ANT"
+      ],
+      "Net-(C53-Pad2)": [
+        "ANT"
+      ],
+      "Net-(C54-Pad2)": [
+        "ANT"
+      ],
+      "Net-(C55-Pad2)": [
+        "ANT"
+      ],
+      "Net-(C56-Pad2)": [
+        "ANT"
       ],
       "V_3V3": [
         "Power"
@@ -948,9 +1004,22 @@
       "sort_field": "Reference"
     },
     "bus_aliases": {
+      "FLASH_QSPI": [
+        "FLASH_QSPI.CSn",
+        "FLASH_QSPI.SCK",
+        "FLASH_QSPI.IO0",
+        "FLASH_QSPI.IO1",
+        "FLASH_QSPI.IO2",
+        "FLASH_QSPI.IO3"
+      ],
       "I2C": [
         "I2C.SDA",
         "I2C.SCL"
+      ],
+      "SIM": [
+        "SIM.DATA",
+        "SIM.CLK",
+        "SIM.RST"
       ],
       "USB": [
         "USB.DM",
@@ -1005,7 +1074,7 @@
         "uuid": "b12a6e25-97fb-4aba-bc96-af8db389bb9a"
       }
     ],
-    "used_designators": "R213-229,R523-530,R814-815,U2,D403-404,D706,L302,#PWR4-5,#PWR807-808,#PWR815-819,C224-238,Q805-806",
+    "used_designators": "F1-2,F202-203,C1-56,C239-248,C404-416,R1-86,R104-108,R217-218,R230-259,R531-551,#FLG1-10,D1-15,D701-703,D707-708,#PWR1-79,#PWR701-707,AE1,L1-7,L302,U1-13,U701,FB1,FID1-3,H1-4,J1-20,JP1,Q1-10,SW1-2,TP1-5,Y1-2",
     "variants": []
   },
   "sheets": [
@@ -1024,10 +1093,6 @@
     [
       "a0fcaba3-6b11-4ded-a169-408190a4a974",
       "Peripherals"
-    ],
-    [
-      "fc9750e4-5084-4ed3-a485-2381fb20a6d1",
-      "IO expander"
     ],
     [
       "3723475b-e956-4027-ac40-e47346743900",

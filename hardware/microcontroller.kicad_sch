@@ -1425,6 +1425,28 @@
 					)
 				)
 			)
+			(property private "KLC_S3.3" "The rectangle is not a symbol body but a graphical element"
+				(at 0 -12.7 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S4.1" "Some pins are on 50mil grid to make the symbol small"
+				(at 0 -15.24 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "quartz ceramic resonator oscillator"
 				(at 0 0 0)
 				(show_name no)
@@ -1509,18 +1531,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0 3.556) (xy 0 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0 -3.81) (xy 0 -3.556)
 					)
 					(stroke
@@ -1576,9 +1586,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 5.08 270)
+					(at 0 -5.08 90)
 					(length 1.27)
-					(name "2"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1614,7 +1624,8 @@
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 1.27)
-					(name "4"
+					(hide yes)
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1817,7 +1828,7 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 0 0 0)
+				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1828,7 +1839,7 @@
 				)
 			)
 			(property "Description" "Solder Jumper, 2-pole, open"
-				(at 0 0 0)
+				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1866,7 +1877,7 @@
 						(xy -0.254 1.016) (xy -0.254 -1.016)
 					)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1878,19 +1889,7 @@
 					(mid -1.2656 0)
 					(end -0.254 1.016)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1902,19 +1901,7 @@
 					(mid 1.2656 0)
 					(end 0.254 -1.016)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1926,7 +1913,7 @@
 						(xy 0.254 1.016) (xy 0.254 -1.016)
 					)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1936,8 +1923,8 @@
 			)
 			(symbol "SolderJumper_2_Open_1_1"
 				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
+					(at -5.08 0 0)
+					(length 3.81)
 					(name "A"
 						(effects
 							(font
@@ -1954,8 +1941,8 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
+					(at 5.08 0 180)
+					(length 3.81)
 					(name "B"
 						(effects
 							(font
@@ -4178,6 +4165,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 12.7 251.46)
+		(end 298.45 284.48)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0dd906a6-c8c4-4c78-8541-13acd405e162")
+	)
 	(text "Placeholder for a ferrite if needed"
 		(exclude_from_sim no)
 		(at 260.35 185.674 0)
@@ -4188,6 +4187,19 @@
 			(justify top)
 		)
 		(uuid "067c5980-8c01-4a3f-b12d-c2dd73404f9b")
+	)
+	(text "Notes"
+		(exclude_from_sim no)
+		(at 13.97 254 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "10605d24-f2ff-4c6e-b651-45253738b1d0")
 	)
 	(text "Place the GPIO headers along the edges of the PCB."
 		(exclude_from_sim no)
@@ -4200,28 +4212,6 @@
 			(justify left top)
 		)
 		(uuid "9942399f-a0ba-44a9-8332-bd511701a54d")
-	)
-	(text_box "Notes"
-		(exclude_from_sim no)
-		(at 12.7 251.46 0)
-		(size 285.75 33.02)
-		(margins 0.9525 2 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 5.08 5.08)
-				(thickness 1.016)
-				(bold yes)
-			)
-			(justify left top)
-		)
-		(uuid "39fc2f04-fab4-4c24-a311-d00d5997993e")
 	)
 	(text_box "Microcontroller"
 		(exclude_from_sim no)
@@ -4256,12 +4246,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "03b0601e-7dbc-45a8-9749-ebf313610ceb")
-	)
-	(junction
-		(at 226.06 184.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0a02b69b-67e1-40d1-ba6e-42d05d14df14")
 	)
 	(junction
 		(at 349.25 190.5)
@@ -4304,12 +4288,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "340f12f8-90a4-4035-b537-58310f0c7f59")
-	)
-	(junction
-		(at 226.06 203.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "364e5d84-32bc-46cc-a105-394f30c4df3a")
 	)
 	(junction
 		(at 151.13 203.2)
@@ -4408,6 +4386,18 @@
 		(uuid "83e191cc-cee0-40ae-af98-95b50f4559f4")
 	)
 	(junction
+		(at 237.49 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8465e4d3-ea6a-4fe9-b40e-09815effa3ac")
+	)
+	(junction
+		(at 228.6 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8bc9604d-9dec-469c-9a5c-ee8bd019c447")
+	)
+	(junction
 		(at 394.97 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4480,6 +4470,12 @@
 		(uuid "b4c7855a-8174-4bd8-a8cf-f94f72cd1ce5")
 	)
 	(junction
+		(at 228.6 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7415498-ff15-4489-a0d1-b45c139e45c1")
+	)
+	(junction
 		(at 189.23 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4498,12 +4494,6 @@
 		(uuid "d01b1235-0006-45a8-937a-ee295f8505c8")
 	)
 	(junction
-		(at 233.68 184.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d2ce1865-3333-4429-8aa1-40c17f8f697d")
-	)
-	(junction
 		(at 394.97 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4514,12 +4504,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d86b6ebf-5f9e-4d34-a7db-9c47441e9949")
-	)
-	(junction
-		(at 170.18 234.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc535a2c-e5ea-4287-b85e-d1364429b2a8")
 	)
 	(junction
 		(at 241.3 83.82)
@@ -4606,10 +4590,6 @@
 	(no_connect
 		(at 226.06 135.89)
 		(uuid "c185c671-2096-4f30-ba44-e158672851f9")
-	)
-	(no_connect
-		(at 226.06 133.35)
-		(uuid "c7d932ac-df98-4f9b-a1f0-ce30f38b133d")
 	)
 	(no_connect
 		(at 130.81 118.11)
@@ -4899,7 +4879,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 123.19) (xy 194.31 123.19)
+			(xy 162.56 123.19) (xy 194.31 123.19)
 		)
 		(stroke
 			(width 0)
@@ -5259,7 +5239,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 182.88) (xy 233.68 184.15)
+			(xy 237.49 182.88) (xy 237.49 184.15)
 		)
 		(stroke
 			(width 0)
@@ -5309,7 +5289,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 184.15) (xy 226.06 184.15)
+			(xy 224.79 184.15) (xy 228.6 184.15)
 		)
 		(stroke
 			(width 0)
@@ -5339,7 +5319,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 189.23) (xy 226.06 184.15)
+			(xy 228.6 189.23) (xy 228.6 184.15)
 		)
 		(stroke
 			(width 0)
@@ -5436,16 +5416,6 @@
 			(type default)
 		)
 		(uuid "40a0dd7a-e7d5-4e24-89e3-3d6f0f1e8abf")
-	)
-	(wire
-		(pts
-			(xy 226.06 184.15) (xy 233.68 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "428befdb-ba05-498e-be11-b1bf69edbf38")
 	)
 	(wire
 		(pts
@@ -5709,16 +5679,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 229.87) (xy 185.42 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "660e48cb-4c0b-424f-b4be-d15480b57ef8")
-	)
-	(wire
-		(pts
 			(xy 231.14 233.68) (xy 231.14 237.49)
 		)
 		(stroke
@@ -5979,16 +5939,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 234.95) (xy 186.69 234.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7dee72e1-1e4b-4240-8807-6838cf5ac9a3")
-	)
-	(wire
-		(pts
 			(xy 349.25 190.5) (xy 355.6 190.5)
 		)
 		(stroke
@@ -6056,16 +6006,6 @@
 			(type default)
 		)
 		(uuid "87beb1ab-c5ed-45ad-86f6-574efd47799f")
-	)
-	(wire
-		(pts
-			(xy 186.69 229.87) (xy 186.69 234.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89f27775-9c60-4a5a-9f74-f8829d3df08f")
 	)
 	(wire
 		(pts
@@ -6219,7 +6159,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 133.35) (xy 226.06 133.35)
+			(xy 224.79 133.35) (xy 241.3 133.35)
 		)
 		(stroke
 			(width 0)
@@ -6246,16 +6186,6 @@
 			(type default)
 		)
 		(uuid "9b930747-c370-4bd5-8c9a-fe849a7a5876")
-	)
-	(wire
-		(pts
-			(xy 226.06 203.2) (xy 241.3 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9bf8739b-2f68-4ad2-adad-68adad8695b9")
 	)
 	(wire
 		(pts
@@ -6319,7 +6249,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 196.85) (xy 226.06 203.2)
+			(xy 228.6 196.85) (xy 228.6 203.2)
 		)
 		(stroke
 			(width 0)
@@ -6379,13 +6309,13 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 184.15) (xy 241.3 184.15)
+			(xy 228.6 203.2) (xy 241.3 203.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a8954c47-8c9f-4b8e-9440-cb818502abf9")
+		(uuid "a8f1d725-4309-4573-b9c1-cda0daa1970a")
 	)
 	(wire
 		(pts
@@ -6476,6 +6406,16 @@
 			(type default)
 		)
 		(uuid "b525c3f0-cd98-4ef6-8274-f8eb8a89ac41")
+	)
+	(wire
+		(pts
+			(xy 228.6 184.15) (xy 237.49 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5a8bfef-b1d3-4430-944e-c4c1a527127a")
 	)
 	(wire
 		(pts
@@ -6669,7 +6609,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 123.19) (xy 167.64 123.19)
+			(xy 129.54 123.19) (xy 154.94 123.19)
 		)
 		(stroke
 			(width 0)
@@ -6779,7 +6719,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 234.95) (xy 170.18 229.87)
+			(xy 170.18 229.87) (xy 170.18 237.49)
 		)
 		(stroke
 			(width 0)
@@ -6836,6 +6776,16 @@
 			(type default)
 		)
 		(uuid "d904a44c-5f09-4477-9d6c-6a7d3b6963c5")
+	)
+	(wire
+		(pts
+			(xy 237.49 184.15) (xy 241.3 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9a08547-0653-4bc7-a186-84f0e343a307")
 	)
 	(wire
 		(pts
@@ -7069,16 +7019,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 234.95) (xy 170.18 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f51f9ae6-9e07-497b-8ba2-d914ad308f46")
-	)
-	(wire
-		(pts
 			(xy 170.18 229.87) (xy 170.18 223.52)
 		)
 		(stroke
@@ -7149,7 +7089,7 @@
 	)
 	(wire
 		(pts
-			(xy 308.61 190.5) (xy 318.77 190.5)
+			(xy 306.07 190.5) (xy 316.23 190.5)
 		)
 		(stroke
 			(width 0)
@@ -7179,7 +7119,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 203.2) (xy 226.06 203.2)
+			(xy 224.79 203.2) (xy 228.6 203.2)
 		)
 		(stroke
 			(width 0)
@@ -7488,7 +7428,7 @@
 		(uuid "83fb62a4-dba6-4a95-b212-95ca9869f313")
 	)
 	(label "GPIO_PA9"
-		(at 308.61 190.5 0)
+		(at 306.07 190.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7548,7 +7488,7 @@
 		(uuid "a0c9fb2c-4f4d-4e10-8227-54be5c192d9c")
 	)
 	(label "V_DDA"
-		(at 226.06 184.15 0)
+		(at 228.6 184.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7738,12 +7678,12 @@
 		(uuid "fb5aca3d-10c2-452f-bb9e-b1a9621f7963")
 	)
 	(label "DBG_UART_RX"
-		(at 130.81 123.19 0)
+		(at 142.24 123.19 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "fd96d1a6-331c-4da8-9941-9737f290bd1e")
 	)
@@ -7778,18 +7718,7 @@
 		)
 		(uuid "187f9505-aeab-4086-afe7-b1a12635cebd")
 	)
-	(hierarchical_label "I2C"
-		(shape bidirectional)
-		(at 382.27 173.99 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "29b46e65-481c-46be-93fa-876f6218515a")
-	)
-	(hierarchical_label "USB"
+	(hierarchical_label "{USB}"
 		(shape bidirectional)
 		(at 176.53 106.68 180)
 		(effects
@@ -7799,6 +7728,28 @@
 			(justify right)
 		)
 		(uuid "2f62d9e6-cb28-4d97-9051-be47094391f1")
+	)
+	(hierarchical_label "EEPROM_WCn"
+		(shape output)
+		(at 241.3 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3108a01f-e51a-4c3e-b455-d3e960b92eb5")
+	)
+	(hierarchical_label "{I2C}"
+		(shape bidirectional)
+		(at 276.86 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5f36a0f2-6da7-4bb1-ae7f-9c604d13cfb4")
 	)
 	(hierarchical_label "BAT_DETn"
 		(shape output)
@@ -7810,6 +7761,17 @@
 			(justify right)
 		)
 		(uuid "654561c6-d62c-4ba6-a149-d510b976eadf")
+	)
+	(hierarchical_label "{I2C}"
+		(shape bidirectional)
+		(at 382.27 173.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8bf1fd0b-9a1d-43b2-95e0-201bdf377e28")
 	)
 	(hierarchical_label "MDM_RXD"
 		(shape input)
@@ -7855,18 +7817,7 @@
 		)
 		(uuid "b2b60c6d-7a65-4d1a-a138-eb04f3be6b50")
 	)
-	(hierarchical_label "I2C"
-		(shape bidirectional)
-		(at 276.86 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b84f5f98-d87e-419e-bcc3-8ff5d20563ef")
-	)
-	(hierarchical_label "FLASH_QSPI"
+	(hierarchical_label "{FLASH_QSPI}"
 		(shape bidirectional)
 		(at 276.86 96.52 0)
 		(effects
@@ -7875,7 +7826,7 @@
 			)
 			(justify left)
 		)
-		(uuid "ccd0cddb-c85a-498e-9a7d-10edd1c41502")
+		(uuid "b8cd95ba-ee49-44bf-b247-a3225c4fcd64")
 	)
 	(hierarchical_label "MDM_TXD"
 		(shape output)
@@ -7911,7 +7862,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "007b751f-3b5d-45c1-9433-23a1297a30f5")
-		(property "Reference" "SW501"
+		(property "Reference" "SW1"
 			(at 121.92 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7933,7 +7884,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645"
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645Sx43SMTR92"
 			(at 124.46 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -7955,7 +7906,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single Pole Single Throw (SPST) switch"
 			(at 124.46 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -8030,188 +7981,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "SW501")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 151.13 193.04 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "065e1aaa-e678-4398-ba0d-b1238110c142")
-		(property "Reference" "C503"
-			(at 148.59 190.246 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1 µF"
-			(at 148.59 192.024 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "perfect_footprints:C_0402_1005Metric"
-			(at 150.1648 196.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 151.13 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 151.13 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 151.13 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 151.13 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "885012205037"
-			(at 151.13 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "732-7532-1-ND"
-			(at 151.13 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Size" "0402"
-			(at 151.13 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 10 %"
-			(at 148.59 194.056 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Voltage" "≥ 10 V"
-			(at 148.59 195.834 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Class" "X7R"
-			(at 151.13 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 151.13 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "41ac8703-a915-4382-bdcb-a6399b47db33")
-		)
-		(pin "2"
-			(uuid "aab5ca94-ae8e-47fb-86f1-37fbceb31e65")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C503")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -8228,7 +7998,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "07842c6a-ebfb-41e0-a676-fdf728526ea9")
-		(property "Reference" "J506"
+		(property "Reference" "J15"
 			(at 402.59 137.922 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8360,15 +8130,17 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "J506")
+					(reference "J15")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_name "C_1")
 		(lib_id "Device:C")
-		(at 241.3 193.04 0)
+		(at 176.53 193.04 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8376,9 +8148,157 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "1394e0bb-894f-4475-9dc0-11638939ce4c")
-		(property "Reference" "C512"
-			(at 243.84 190.246 0)
+		(uuid "0b1c6e2e-d619-4358-8aa3-9240715ff0f2")
+		(property "Reference" "C24"
+			(at 173.99 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1 µF"
+			(at 173.99 192.278 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "perfect_footprints:C_0201_0603Metric"
+			(at 175.5648 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 176.53 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 176.53 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage rating" "16 V"
+			(at 173.736 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "20 %"
+			(at 173.736 195.326 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature coefficient" "X5R"
+			(at 173.736 196.342 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0201"
+			(at 173.736 197.358 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 176.53 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5ac3b745-9131-4f5d-93e4-c55feb954ae6")
+		)
+		(pin "1"
+			(uuid "4dbe9495-b673-494a-a75c-da38b959ff8f")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "C_1")
+		(lib_id "Device:C")
+		(at 228.6 193.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "10bacf0c-63e1-4834-a609-0b1fcd6dbb7c")
+		(property "Reference" "C28"
+			(at 231.14 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8389,7 +8309,7 @@
 			)
 		)
 		(property "Value" "0.1 µF"
-			(at 243.84 192.024 0)
+			(at 231.14 192.278 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8399,8 +8319,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "perfect_footprints:C_0402_1005Metric"
-			(at 242.2652 196.85 0)
+		(property "Footprint" "perfect_footprints:C_0201_0603Metric"
+			(at 229.5652 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8411,7 +8331,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 193.04 0)
+			(at 228.6 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8422,7 +8342,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 241.3 193.04 0)
+			(at 228.6 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8432,8 +8352,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 241.3 193.04 0)
+		(property "MPN" ""
+			(at 228.6 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8443,74 +8363,52 @@
 				)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 241.3 193.04 0)
-			(hide yes)
+		(property "Voltage rating" "16 V"
+			(at 231.394 194.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "885012205037"
-			(at 241.3 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "732-7532-1-ND"
-			(at 241.3 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Size" "0402"
-			(at 241.3 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 10 %"
-			(at 243.84 194.056 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 				(justify left)
 			)
 		)
-		(property "Voltage" "≥ 10 V"
-			(at 243.84 195.834 0)
+		(property "Tolerance" "20 %"
+			(at 231.394 195.326 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 				(justify left)
 			)
 		)
-		(property "Class" "X7R"
-			(at 241.3 193.04 0)
+		(property "Temperature coefficient" "X5R"
+			(at 231.394 196.342 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0201"
+			(at 231.394 197.358 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 228.6 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8519,208 +8417,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Power" ""
-			(at 241.3 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5c7d6693-011e-412e-9464-614e796c9bbb")
 		)
 		(pin "2"
-			(uuid "b8820ddd-1dc0-4b82-b324-24efec352f1d")
+			(uuid "022dfa43-876f-4ffb-94b7-c63fe2fab197")
+		)
+		(pin "1"
+			(uuid "aa4de4c3-5178-4882-9062-dbdfdbf2f392")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C512")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 279.4 193.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1562bb29-5769-44fe-b92f-bf11656c33b6")
-		(property "Reference" "C513"
-			(at 281.94 190.246 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7 µF"
-			(at 281.94 192.024 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 280.3652 196.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 279.4 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 279.4 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 279.4 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 279.4 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "GRM188R61E475KE11D"
-			(at 279.4 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "490-7203-1-ND"
-			(at 279.4 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Size" "0402"
-			(at 279.4 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 20%"
-			(at 281.94 194.056 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Voltage" "≥ 10 V"
-			(at 281.94 195.834 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Class" "X5R"
-			(at 279.4 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 279.4 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "59413636-687c-486f-836a-85a1bc0faa0b")
-		)
-		(pin "2"
-			(uuid "bbdec60b-8d8f-4c97-9f6d-d7f3c5e59314")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C513")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -8737,7 +8444,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "1885a485-2c2a-4b45-b3ce-82a6bf7440e1")
-		(property "Reference" "J502"
+		(property "Reference" "J11"
 			(at 124.46 116.332 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8869,7 +8576,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "J502")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -8887,7 +8594,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a73a6e0-3a2a-43f2-973b-7b62eb31e7dc")
-		(property "Reference" "#PWR0520"
+		(property "Reference" "#PWR028"
 			(at 355.6 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -8948,88 +8655,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0520")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 322.58 190.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1e338d2e-61f8-4c08-b534-a2ed105b2a41")
-		(property "Reference" "JP501"
-			(at 322.58 188.976 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 322.58 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
-			(at 322.58 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 322.58 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 322.58 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0a147926-b52c-4ffb-8730-42da744ebbeb")
-		)
-		(pin "1"
-			(uuid "6bbd1f0d-55b4-44c6-ae1c-37c367357819")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "JP501")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -9046,9 +8672,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "1e54ae39-e907-40a9-baf3-d760e640b5b8")
-		(property "Reference" "R505"
-			(at 170.18 88.138 0)
+		(uuid "1cc536fb-0dec-4a11-ada2-96fd00ae05c3")
+		(property "Reference" "R27"
+			(at 170.18 85.852 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9059,7 +8685,7 @@
 			)
 		)
 		(property "Value" "10 kΩ"
-			(at 170.18 89.916 0)
+			(at 170.18 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9069,7 +8695,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
+		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
 			(at 173.228 88.9 90)
 			(hide yes)
 			(show_name no)
@@ -9102,7 +8728,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "MPN" ""
 			(at 171.45 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -9113,7 +8739,7 @@
 				)
 			)
 		)
-		(property "MPN" "560112110020"
+		(property "Manufacturer" ""
 			(at 171.45 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -9124,50 +8750,130 @@
 				)
 			)
 		)
-		(property "DigiKey Part Number" "732-560112110020CT-ND"
-			(at 171.45 88.9 0)
-			(hide yes)
+		(property "Tolerance" "1 %"
+			(at 170.18 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 171.45 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 5 %"
-			(at 170.18 90.678 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 				(justify left)
 			)
 		)
-		(pin "1"
-			(uuid "add8a52d-3ddb-426c-8026-79cd19620e13")
+		(property "Power rating" "0.1 W"
+			(at 170.18 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0201"
+			(at 170.18 91.4401 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
 		)
 		(pin "2"
-			(uuid "b5601403-a641-4f30-b955-836f6be04a1b")
+			(uuid "13c29b69-8b6b-4548-a3a6-54a966e639b9")
+		)
+		(pin "1"
+			(uuid "c8feb7bc-ce53-43d8-9816-dcbd20f921e6")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R505")
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 321.31 190.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1e338d2e-61f8-4c08-b534-a2ed105b2a41")
+		(property "Reference" "JP1"
+			(at 321.31 188.976 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 321.31 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+			(at 321.31 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 321.31 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 321.31 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0a147926-b52c-4ffb-8730-42da744ebbeb")
+		)
+		(pin "1"
+			(uuid "6bbd1f0d-55b4-44c6-ae1c-37c367357819")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -9183,27 +8889,27 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "28b2119c-1863-4d15-b3a5-c4480c7c19f2")
-		(property "Reference" "R404"
-			(at 83.82 188.722 90)
+		(uuid "216acc0a-8be4-47fc-8afc-286944312aa5")
+		(property "Reference" "R22"
+			(at 81.28 184.658 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify top)
+				(justify right top)
 			)
 		)
 		(property "Value" "330 Ω"
-			(at 83.82 190.5 90)
+			(at 81.28 186.436 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify top)
+				(justify right top)
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
@@ -9228,29 +8934,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 83.82 191.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 83.82 191.77 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
+		(property "Description" ""
 			(at 83.82 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -9272,8 +8956,8 @@
 				)
 			)
 		)
-		(property "DigiKey Part Number" "732-560112110231CT-ND"
-			(at 83.82 191.77 90)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 83.82 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9283,18 +8967,40 @@
 				)
 			)
 		)
-		(property "Tolerance" "≤ 5 %"
-			(at 83.82 189.738 90)
-			(hide yes)
+		(property "Tolerance" "1 %"
+			(at 81.28 187.706 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
+				(justify right top)
 			)
 		)
-		(property "Power" ""
+		(property "Power rating" "0.1 W"
+			(at 81.28 188.976 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify right top)
+			)
+		)
+		(property "Size" "0402"
+			(at 81.28 190.246 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify right top)
+			)
+		)
+		(property "Digi-Key Part Number" "732-560112110231CT-ND"
 			(at 83.82 191.77 90)
 			(hide yes)
 			(show_name no)
@@ -9306,15 +9012,164 @@
 			)
 		)
 		(pin "2"
-			(uuid "e5b4ffbe-0cdf-4d17-840c-33e3aacdd779")
+			(uuid "b080ad7a-418f-4716-b3d9-6c2807c0a819")
 		)
 		(pin "1"
-			(uuid "7910f3e9-fe26-404d-8ed3-8e85c3efe427")
+			(uuid "33c6a665-0937-44a0-9c73-22da33471fed")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R404")
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "C_1")
+		(lib_id "Device:C")
+		(at 163.83 193.04 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "296c2904-edf0-4f5d-a3b2-be37542c2d36")
+		(property "Reference" "C21"
+			(at 161.29 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1 µF"
+			(at 161.29 192.278 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "perfect_footprints:C_0201_0603Metric"
+			(at 162.8648 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 163.83 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 163.83 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage rating" "16 V"
+			(at 161.036 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "20 %"
+			(at 161.036 195.326 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature coefficient" "X5R"
+			(at 161.036 196.342 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0201"
+			(at 161.036 197.358 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 163.83 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9a296177-e665-44b9-8266-ff0309a16cdf")
+		)
+		(pin "1"
+			(uuid "12d076b7-a487-4834-bebb-32c11e6f70f3")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -9331,7 +9186,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2de80825-b48e-42c9-9b7d-bbfa61b1cc3d")
-		(property "Reference" "#PWR0512"
+		(property "Reference" "#PWR024"
 			(at 241.3 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -9392,7 +9247,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0512")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -9411,7 +9266,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e7d78af-1aa8-4695-ad65-f7728ab10190")
-		(property "Reference" "#PWR0405"
+		(property "Reference" "#PWR013"
 			(at 62.23 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -9472,15 +9327,16 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0405")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 254 78.74 0)
+		(lib_name "C_1")
+		(lib_id "Device:C")
+		(at 349.25 195.58 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -9489,31 +9345,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "47b83fdf-5d06-462c-8ffd-a038c038bdb9")
-		(property "Reference" "R509"
-			(at 255.27 76.962 0)
+		(uuid "42a1dcbe-cb55-442f-9ba2-bc8659d63478")
+		(property "Reference" "C31"
+			(at 346.71 193.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "4.7 kΩ"
-			(at 255.27 78.74 0)
+		(property "Value" "1 µF"
+			(at 346.71 194.818 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
-			(at 255.778 78.74 90)
+		(property "Footprint" "perfect_footprints:C_0201_0603Metric"
+			(at 348.2848 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9524,7 +9380,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 78.74 0)
+			(at 349.25 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9535,7 +9391,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 254 78.74 0)
+			(at 349.25 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9545,8 +9401,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 254 78.74 0)
+		(property "MPN" ""
+			(at 349.25 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9556,8 +9412,52 @@
 				)
 			)
 		)
-		(property "MPN" "560112110245"
-			(at 254 78.74 0)
+		(property "Voltage rating" "16 V"
+			(at 346.456 196.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "20 %"
+			(at 346.456 197.866 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature coefficient" "X5R"
+			(at 346.456 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0201"
+			(at 346.456 199.898 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 349.25 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9565,51 +9465,166 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "DigiKey Part Number" "732-560112110245CT-ND"
-			(at 254 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 254 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 5 %"
-			(at 255.27 80.518 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "2"
-			(uuid "49e9252c-bbea-4e20-92d6-ca2bbf2b7fc1")
+			(uuid "2c4a3cd9-d855-482f-a603-1da8b7081a53")
 		)
 		(pin "1"
-			(uuid "508505d9-d94d-46be-a1da-a763c73938ac")
+			(uuid "1a3daac9-948e-44ec-8443-0d62486e4c6b")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R509")
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "C_1")
+		(lib_id "Device:C")
+		(at 241.3 193.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "43b67b2d-f789-42b2-ab79-82ecfe15efe1")
+		(property "Reference" "C29"
+			(at 243.84 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1 µF"
+			(at 243.84 192.278 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "perfect_footprints:C_0201_0603Metric"
+			(at 242.2652 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 241.3 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 241.3 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage rating" "16 V"
+			(at 244.094 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "20 %"
+			(at 244.094 195.326 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature coefficient" "X5R"
+			(at 244.094 196.342 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0201"
+			(at 244.094 197.358 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 241.3 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e5ca9e96-7c65-4479-ab38-98d586f99e72")
+		)
+		(pin "1"
+			(uuid "de0c5463-cedb-4a77-b6d6-5f6627289adf")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -9626,7 +9641,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4fdd6d0d-0fa3-4633-8590-bcc1730be5db")
-		(property "Reference" "#PWR0513"
+		(property "Reference" "#PWR025"
 			(at 279.4 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -9687,7 +9702,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0513")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -9705,7 +9720,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56b21611-a823-4f01-83bc-2553257e16ea")
-		(property "Reference" "#PWR0523"
+		(property "Reference" "#PWR031"
 			(at 394.97 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -9766,7 +9781,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0523")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -9783,7 +9798,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5712140f-5238-4b70-b8e5-6d5cb85c3b38")
-		(property "Reference" "U501"
+		(property "Reference" "U6"
 			(at 209.55 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10043,7 +10058,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "U501")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -10060,7 +10075,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "579e347b-cc8f-4b42-8357-011b7f066459")
-		(property "Reference" "Y501"
+		(property "Reference" "Y1"
 			(at 186.944 228.092 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10104,7 +10119,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
 			(at 180.34 229.87 0)
 			(hide yes)
 			(show_name no)
@@ -10185,7 +10200,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "Y501")
+					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -10203,7 +10218,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5aee82da-624f-4dbf-8ca4-0ff26480f4c1")
-		(property "Reference" "#PWR0524"
+		(property "Reference" "#PWR032"
 			(at 394.97 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -10264,15 +10279,15 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0524")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 226.06 193.04 0)
+		(lib_id "Device:R")
+		(at 260.35 184.15 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10280,31 +10295,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "5c81ebad-d2c0-4acc-bab4-4b3517724725")
-		(property "Reference" "C509"
-			(at 228.346 190.246 0)
+		(uuid "5b6ab863-ff72-49b4-9fc0-de263f95a9ba")
+		(property "Reference" "R33"
+			(at 257.81 180.086 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right top)
 			)
 		)
-		(property "Value" "0.01 μF"
-			(at 228.346 192.024 0)
+		(property "Value" "0 Ω"
+			(at 257.81 181.61 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right top)
 			)
 		)
-		(property "Footprint" "perfect_footprints:C_0402_1005Metric"
-			(at 227.0252 196.85 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 260.35 185.928 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10315,7 +10330,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 226.06 193.04 0)
+			(at 260.35 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10325,8 +10340,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 226.06 193.04 0)
+		(property "Description" ""
+			(at 260.35 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10336,8 +10351,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 226.06 193.04 0)
+		(property "MPN" ""
+			(at 260.35 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10347,8 +10362,8 @@
 				)
 			)
 		)
-		(property "DigiKey Part Number" "732-7562-1-ND"
-			(at 226.06 193.04 0)
+		(property "Manufacturer" ""
+			(at 260.35 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10358,8 +10373,19 @@
 				)
 			)
 		)
-		(property "MPN" "885012205067"
-			(at 226.06 193.04 0)
+		(property "Size" "0603"
+			(at 257.81 182.88 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify right top)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 260.35 184.15 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10368,84 +10394,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Footprint review check" "+"
-			(at 226.06 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Size" "0402"
-			(at 228.6 196.596 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Tolerance" "≤ 10 %"
-			(at 228.346 194.056 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Voltage" "≥ 10 V"
-			(at 228.346 195.834 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Class" "X7R"
-			(at 226.06 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 226.06 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5b670d9a-b460-4af4-ad15-f3e1b4777a4e")
 		)
 		(pin "2"
-			(uuid "49ae143c-31ae-41cd-9dcb-fa247693411d")
+			(uuid "34babe72-5b58-4113-9dfb-5fbb2a893e1b")
+		)
+		(pin "1"
+			(uuid "da269465-a480-4124-962e-c21e4999cfbc")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C509")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -10463,7 +10422,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5ceee183-89a5-4420-8743-0e66bc2329af")
-		(property "Reference" "C505"
+		(property "Reference" "C22"
 			(at 175.26 213.614 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10627,7 +10586,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C505")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -10645,7 +10604,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f4a3d0e-f9d9-4d27-9013-1052b98a6812")
-		(property "Reference" "C510"
+		(property "Reference" "C26"
 			(at 226.06 213.614 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10809,7 +10768,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C510")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -10826,7 +10785,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5fcf92c3-d414-46b5-96ee-d1668356331b")
-		(property "Reference" "#PWR0525"
+		(property "Reference" "#PWR033"
 			(at 394.97 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -10887,7 +10846,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0525")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -10904,7 +10863,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "616da1c9-ad30-40e0-bca6-94c0a37fba7e")
-		(property "Reference" "J507"
+		(property "Reference" "J16"
 			(at 402.59 169.672 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11036,7 +10995,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "J507")
+					(reference "J16")
 					(unit 1)
 				)
 			)
@@ -11053,7 +11012,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "62469758-dc77-40a0-94c8-a1d1db498c07")
-		(property "Reference" "#PWR0501"
+		(property "Reference" "#PWR014"
 			(at 92.71 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -11114,7 +11073,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0501")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -11133,7 +11092,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64183a59-326b-41ee-9b17-0db91616eed1")
-		(property "Reference" "#PWR0514"
+		(property "Reference" "#PWR026"
 			(at 279.4 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -11194,7 +11153,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0514")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -11212,7 +11171,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6943b4ed-2d11-45d4-958d-b73bf83b881c")
-		(property "Reference" "#PWR0519"
+		(property "Reference" "#PWR027"
 			(at 355.6 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -11273,7 +11232,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0519")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -11290,7 +11249,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "6b546192-8dd1-4371-90d0-6ed2c523f5d8")
-		(property "Reference" "J508"
+		(property "Reference" "J17"
 			(at 402.59 198.882 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11399,15 +11358,16 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "J508")
+					(reference "J17")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 62.23 186.69 0)
+		(lib_id "Device:C")
+		(at 279.4 193.04 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11415,31 +11375,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "6f851ed3-560b-488e-8dfa-ea0f4fd3d626")
-		(property "Reference" "R403"
-			(at 60.96 185.928 0)
+		(uuid "6f2293e4-fd84-4524-9a6b-f573690c787c")
+		(property "Reference" "C30"
+			(at 276.86 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "180 kΩ"
-			(at 60.96 187.706 0)
+		(property "Value" "4.7 µF"
+			(at 276.86 192.278 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
-			(at 60.452 186.69 90)
+		(property "Footprint" "perfect_footprints:C_0402_1005Metric_HDI"
+			(at 278.4348 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11449,8 +11409,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 62.23 186.69 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2822/CL05A475MO5NUNC_Spec.pdf"
+			(at 279.4 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11460,8 +11420,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 62.23 186.69 0)
+		(property "Description" "4.7 µF ±20% 16V Ceramic Capacitor X5R 0402 (1005 Metric)"
+			(at 279.4 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11471,8 +11431,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 62.23 186.69 0)
+		(property "MPN" "CL05A475MO5NUNC"
+			(at 279.4 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11482,8 +11442,8 @@
 				)
 			)
 		)
-		(property "DigiKey Part Number" "732-560112110082CT-ND"
-			(at 62.23 186.69 0)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 279.4 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11493,30 +11453,52 @@
 				)
 			)
 		)
-		(property "MPN" "560112110082"
-			(at 62.23 186.69 0)
-			(hide yes)
+		(property "Voltage rating" "16 V"
+			(at 276.606 194.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 62.23 186.69 0)
-			(hide yes)
+		(property "Tolerance" "20 %"
+			(at 276.606 195.326 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
+				(justify left)
 			)
 		)
-		(property "Tolerance" "≤ 1 %"
-			(at 60.96 188.468 0)
+		(property "Temperature coefficient" "X5R"
+			(at 276.606 196.342 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0402"
+			(at 276.606 197.358 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi-Key Part Number" "1276-6836-1-ND"
+			(at 279.4 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11524,156 +11506,18 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(pin "2"
-			(uuid "a56018f0-fb16-4a2e-a8e2-976135baaa9c")
+			(uuid "e8f505eb-29ce-4f97-8b83-16479fc0ea1c")
 		)
 		(pin "1"
-			(uuid "75356684-39d4-4a27-b272-eec57625d31f")
+			(uuid "3709c478-db19-40e2-8302-6b00458d42a5")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R403")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 355.6 185.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6fc29d7b-b236-4db2-bbdc-a5db470be629")
-		(property "Reference" "R522"
-			(at 356.87 184.658 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10 kΩ"
-			(at 356.87 186.436 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
-			(at 353.822 185.42 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 355.6 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 355.6 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 355.6 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "560112110020"
-			(at 355.6 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "732-560112110020CT-ND"
-			(at 355.6 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 355.6 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 5 %"
-			(at 356.87 187.198 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "cef7e86f-27ec-46a1-9c12-99ee463dbdb4")
-		)
-		(pin "2"
-			(uuid "86a74e02-a8ea-414a-bf0c-64d5aa626961")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R522")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -11692,7 +11536,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "725ff669-8dec-4ebc-8af1-2c8a4f47717a")
-		(property "Reference" "#PWR0509"
+		(property "Reference" "#PWR022"
 			(at 171.45 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -11753,7 +11597,156 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0509")
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "C_1")
+		(lib_id "Device:C")
+		(at 189.23 193.04 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "739f5468-07ff-41db-a385-fdfc8b557318")
+		(property "Reference" "C25"
+			(at 186.69 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1 µF"
+			(at 186.69 192.278 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "perfect_footprints:C_0201_0603Metric"
+			(at 188.2648 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 189.23 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage rating" "16 V"
+			(at 186.436 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "20 %"
+			(at 186.436 195.326 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature coefficient" "X5R"
+			(at 186.436 196.342 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0201"
+			(at 186.436 197.358 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 189.23 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "72f1cd25-5bd5-4aed-9781-7e8aee988306")
+		)
+		(pin "1"
+			(uuid "0d7365c7-136d-40fe-be4a-98efbacac053")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -11771,7 +11764,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "76447ad9-c3c5-415f-b235-543885549b90")
-		(property "Reference" "J509"
+		(property "Reference" "J18"
 			(at 402.59 215.392 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11903,7 +11896,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "J509")
+					(reference "J18")
 					(unit 1)
 				)
 			)
@@ -11911,7 +11904,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 260.35 184.15 90)
+		(at 355.6 185.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11919,31 +11912,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "76d5e022-334b-4033-9c31-ac4a3b9c9e51")
-		(property "Reference" "R510"
-			(at 260.35 179.324 90)
+		(uuid "7e0544cb-5523-4296-a26b-d795f5c4162c")
+		(property "Reference" "R35"
+			(at 356.87 182.372 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify top)
+				(justify left)
 			)
 		)
-		(property "Value" "0 Ω"
-			(at 260.35 181.102 90)
+		(property "Value" "10 kΩ"
+			(at 356.87 184.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify top)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 260.35 185.928 90)
+		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
+			(at 353.822 185.42 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11954,7 +11947,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 184.15 0)
+			(at 355.6 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11965,7 +11958,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 260.35 184.15 0)
+			(at 355.6 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11975,8 +11968,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 260.35 184.15 0)
+		(property "MPN" ""
+			(at 355.6 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11986,8 +11979,8 @@
 				)
 			)
 		)
-		(property "MPN" "560112116001"
-			(at 260.35 184.15 0)
+		(property "Manufacturer" ""
+			(at 355.6 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11997,49 +11990,49 @@
 				)
 			)
 		)
-		(property "DigiKey Part Number" "732-560112116001CT-ND"
-			(at 260.35 184.15 90)
-			(hide yes)
+		(property "Tolerance" "1 %"
+			(at 356.87 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 260.35 184.15 0)
-			(hide yes)
+		(property "Power rating" "0.1 W"
+			(at 356.87 186.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
+				(justify left)
 			)
 		)
-		(property "Size" "0603"
-			(at 260.35 182.88 90)
+		(property "Size" "0201"
+			(at 356.87 187.9601 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
-				(justify top)
+				(justify left)
 			)
 		)
 		(pin "2"
-			(uuid "8edcc4c9-14c6-48b0-923d-048e7d9f98ba")
+			(uuid "3461c699-200b-4d80-8c7e-6c7c7d3096ff")
 		)
 		(pin "1"
-			(uuid "fa7707da-c849-4dc5-9d42-5cc7cf5fd6f3")
+			(uuid "98fc4fc4-35f6-423c-a590-afda3fb0c5f5")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R510")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -12055,27 +12048,27 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "79376cd1-906c-4b65-9644-9256b222a641")
-		(property "Reference" "R503"
-			(at 139.7 94.742 90)
+		(uuid "852bb952-8b88-4dfb-a6ed-e583f0160c3f")
+		(property "Reference" "R24"
+			(at 137.16 90.678 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify top)
+				(justify right top)
 			)
 		)
 		(property "Value" "330 Ω"
-			(at 139.7 96.52 90)
+			(at 137.16 92.456 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify top)
+				(justify right top)
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
@@ -12100,29 +12093,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 139.7 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 139.7 97.79 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
+		(property "Description" ""
 			(at 139.7 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -12144,8 +12115,8 @@
 				)
 			)
 		)
-		(property "DigiKey Part Number" "732-560112110231CT-ND"
-			(at 139.7 97.79 90)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 139.7 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12155,18 +12126,40 @@
 				)
 			)
 		)
-		(property "Tolerance" "≤ 5 %"
-			(at 139.7 95.758 90)
-			(hide yes)
+		(property "Tolerance" "1 %"
+			(at 137.16 93.726 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
+				(justify right top)
 			)
 		)
-		(property "Power" ""
+		(property "Power rating" "0.1 W"
+			(at 137.16 94.996 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify right top)
+			)
+		)
+		(property "Size" "0402"
+			(at 137.16 96.266 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify right top)
+			)
+		)
+		(property "Digi-Key Part Number" "732-560112110231CT-ND"
 			(at 139.7 97.79 90)
 			(hide yes)
 			(show_name no)
@@ -12178,15 +12171,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "83e5c4e9-caec-46c8-bf87-93134c59faef")
+			(uuid "b36f609d-ba83-4d29-929e-196aaf735aa5")
 		)
 		(pin "1"
-			(uuid "8c62f47e-1bf5-49c3-ba97-e601a928892d")
+			(uuid "59719c16-9005-4413-8086-3f9c923a180f")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R503")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -12202,9 +12195,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "8732c0f9-a30c-4597-8c74-7ffab85fe442")
-		(property "Reference" "R501"
-			(at 125.73 91.948 0)
+		(uuid "85c6b2c2-55dd-4d81-9fa6-cef19698e3d9")
+		(property "Reference" "R23"
+			(at 125.73 89.662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12215,7 +12208,7 @@
 			)
 		)
 		(property "Value" "10 kΩ"
-			(at 125.73 93.726 0)
+			(at 125.73 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12225,7 +12218,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
+		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
 			(at 122.682 92.71 90)
 			(hide yes)
 			(show_name no)
@@ -12258,7 +12251,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "MPN" ""
 			(at 124.46 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -12269,7 +12262,7 @@
 				)
 			)
 		)
-		(property "MPN" "560112110020"
+		(property "Manufacturer" ""
 			(at 124.46 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -12280,50 +12273,49 @@
 				)
 			)
 		)
-		(property "DigiKey Part Number" "732-560112110020CT-ND"
-			(at 124.46 92.71 0)
-			(hide yes)
+		(property "Tolerance" "1 %"
+			(at 125.73 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 124.46 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 5 %"
-			(at 125.73 94.488 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 				(justify left)
 			)
 		)
-		(pin "1"
-			(uuid "d7ee636c-8743-48d9-b857-edfc55915981")
+		(property "Power rating" "0.1 W"
+			(at 125.73 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0201"
+			(at 125.73 95.2501 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
 		)
 		(pin "2"
-			(uuid "f21becc2-2560-4260-af85-51e44a61de6a")
+			(uuid "686b012e-b3c0-42fd-aecd-f3a8ad5af3b3")
+		)
+		(pin "1"
+			(uuid "78617c9e-492f-4099-b98f-ad05e4ab0cd9")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R501")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -12340,7 +12332,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "87dd3f02-9f46-4530-888f-f4459facca1d")
-		(property "Reference" "R524"
+		(property "Reference" "R29"
 			(at 232.156 101.346 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12470,188 +12462,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R524")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 176.53 193.04 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "895c1f8f-c828-4eb1-83a6-47a6e9ac6462")
-		(property "Reference" "C507"
-			(at 173.99 190.246 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1 µF"
-			(at 173.99 192.024 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "perfect_footprints:C_0402_1005Metric"
-			(at 175.5648 196.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 176.53 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 176.53 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 176.53 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "885012205037"
-			(at 176.53 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "732-7532-1-ND"
-			(at 176.53 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Size" "0402"
-			(at 176.53 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 10 %"
-			(at 173.99 194.056 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Voltage" "≥ 10 V"
-			(at 173.99 195.834 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Class" "X7R"
-			(at 176.53 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 176.53 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "46563699-7b62-4da6-bf5e-849e39e6051d")
-		)
-		(pin "2"
-			(uuid "8fbaeb8e-d9ec-43c5-bb23-c7f8fa4d0cc2")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C507")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -12668,7 +12479,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8bb31e15-e2f4-429d-b371-659cef0922bf")
-		(property "Reference" "J501"
+		(property "Reference" "J10"
 			(at 101.6 141.986 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12756,7 +12567,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "J501")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -12764,7 +12575,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 171.45 123.19 90)
+		(at 158.75 123.19 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12773,8 +12584,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8d6e5180-87e7-4192-8561-58bd3257af67")
-		(property "Reference" "R527"
-			(at 168.656 122.936 90)
+		(property "Reference" "R26"
+			(at 155.956 122.936 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12785,7 +12596,7 @@
 			)
 		)
 		(property "Value" "27 Ω"
-			(at 174.244 122.936 90)
+			(at 161.544 122.936 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12796,7 +12607,7 @@
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
-			(at 171.45 124.968 90)
+			(at 158.75 124.968 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12807,7 +12618,7 @@
 			)
 		)
 		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
-			(at 171.45 123.19 0)
+			(at 158.75 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12818,7 +12629,7 @@
 			)
 		)
 		(property "Description" "27 Ohms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Thick Film"
-			(at 171.45 123.19 0)
+			(at 158.75 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12829,7 +12640,7 @@
 			)
 		)
 		(property "MPN" "ERJ-1GNF27R0C"
-			(at 171.45 123.19 0)
+			(at 158.75 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12840,7 +12651,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic Electronic Components"
-			(at 171.45 123.19 0)
+			(at 158.75 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12851,7 +12662,7 @@
 			)
 		)
 		(property "Tolerance" "1 %"
-			(at 180.34 121.92 90)
+			(at 167.64 121.92 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12862,7 +12673,7 @@
 			)
 		)
 		(property "Power rating" "0.05 W"
-			(at 184.15 122.936 90)
+			(at 171.45 122.936 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12873,7 +12684,7 @@
 			)
 		)
 		(property "Size" "0201"
-			(at 180.34 122.936 90)
+			(at 167.64 122.936 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12884,7 +12695,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" "P122894CT-ND"
-			(at 171.45 123.19 90)
+			(at 158.75 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12903,7 +12714,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R527")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -12920,7 +12731,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8db0b6e2-06c7-4fb7-a8cf-3d0e3548128d")
-		(property "Reference" "Y502"
+		(property "Reference" "Y2"
 			(at 234.188 228.092 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13039,7 +12850,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "Y502")
+					(reference "Y2")
 					(unit 1)
 				)
 			)
@@ -13056,7 +12867,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8dea9d08-1c0f-4077-a471-9c7f0e310119")
-		(property "Reference" "R525"
+		(property "Reference" "R30"
 			(at 232.156 120.396 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13186,7 +12997,154 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R525")
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 344.17 190.5 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8f5a3132-0099-4381-9fab-d9206f93e56f")
+		(property "Reference" "R34"
+			(at 341.63 183.388 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "330 Ω"
+			(at 341.63 185.166 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
+			(at 344.17 192.278 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 344.17 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 344.17 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "560112110231"
+			(at 344.17 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 344.17 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1 %"
+			(at 341.63 186.436 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify right top)
+			)
+		)
+		(property "Power rating" "0.1 W"
+			(at 341.63 187.706 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify right top)
+			)
+		)
+		(property "Size" "0402"
+			(at 341.63 188.976 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify right top)
+			)
+		)
+		(property "Digi-Key Part Number" "732-560112110231CT-ND"
+			(at 344.17 190.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9ef8c58e-cd69-4ff3-b82a-0b3febb0938a")
+		)
+		(pin "1"
+			(uuid "da450b66-afbf-4f1c-ba9a-aaa25817cb2b")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -13203,7 +13161,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "93356aac-75fe-4768-b24b-d8d16aabc8cf")
-		(property "Reference" "C511"
+		(property "Reference" "C27"
 			(at 226.06 240.03 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13367,7 +13325,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C511")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -13385,7 +13343,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94a18206-eb96-4f3b-9654-3a0bee40090f")
-		(property "Reference" "#PWR0526"
+		(property "Reference" "#PWR034"
 			(at 394.97 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -13446,7 +13404,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0526")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -13463,7 +13421,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9891bd97-397c-403d-9e49-e61938b5b3c6")
-		(property "Reference" "J505"
+		(property "Reference" "J14"
 			(at 402.59 112.522 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13595,7 +13553,315 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "J505")
+					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "C_1")
+		(lib_id "Device:C")
+		(at 151.13 193.04 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9e5a311b-45ac-42c8-8da7-178bd766ae47")
+		(property "Reference" "C20"
+			(at 148.59 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1 µF"
+			(at 148.59 192.278 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "perfect_footprints:C_0201_0603Metric"
+			(at 150.1648 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 151.13 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 151.13 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage rating" "16 V"
+			(at 148.336 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "20 %"
+			(at 148.336 195.326 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature coefficient" "X5R"
+			(at 148.336 196.342 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0201"
+			(at 148.336 197.358 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 151.13 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2aae801b-ad66-4c68-af86-879dba0408d3")
+		)
+		(pin "1"
+			(uuid "30b95c33-2b06-45e0-8647-9ee154c94e8a")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 138.43 193.04 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a2c02854-4766-41d8-8d5d-ed39bc4e7f58")
+		(property "Reference" "C19"
+			(at 135.89 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7 µF"
+			(at 135.89 192.278 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "perfect_footprints:C_0402_1005Metric_HDI"
+			(at 137.4648 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2822/CL05A475MO5NUNC_Spec.pdf"
+			(at 138.43 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4.7 µF ±20% 16V Ceramic Capacitor X5R 0402 (1005 Metric)"
+			(at 138.43 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05A475MO5NUNC"
+			(at 138.43 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 138.43 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage rating" "16 V"
+			(at 135.636 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "20 %"
+			(at 135.636 195.326 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature coefficient" "X5R"
+			(at 135.636 196.342 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0402"
+			(at 135.636 197.358 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi-Key Part Number" "1276-6836-1-ND"
+			(at 138.43 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e276e756-e6c2-4164-9f01-31806528aa25")
+		)
+		(pin "1"
+			(uuid "491ca509-c339-4446-9280-27c67845d5a5")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -13612,7 +13878,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a35cef9f-f3e7-40ee-8c0f-6cf96c7aa9e0")
-		(property "Reference" "#PWR0503"
+		(property "Reference" "#PWR016"
 			(at 124.46 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13673,7 +13939,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0503")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -13691,7 +13957,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a44abb1d-67a1-43e3-a458-ffbca3aed651")
-		(property "Reference" "#PWR0510"
+		(property "Reference" "#PWR021"
 			(at 170.18 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -13752,7 +14018,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0510")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -13771,7 +14037,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a518f499-d96d-493f-aa0a-3650f97d89e6")
-		(property "Reference" "#PWR0505"
+		(property "Reference" "#PWR018"
 			(at 130.81 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -13832,188 +14098,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0505")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 189.23 193.04 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "aba817d3-bdb9-4fa2-927a-80c9822d68f9")
-		(property "Reference" "C508"
-			(at 186.69 190.246 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1 µF"
-			(at 186.69 192.024 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "perfect_footprints:C_0402_1005Metric"
-			(at 188.2648 196.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 189.23 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 189.23 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 189.23 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 189.23 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "885012205037"
-			(at 189.23 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "732-7532-1-ND"
-			(at 189.23 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Size" "0402"
-			(at 189.23 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 10 %"
-			(at 186.69 194.056 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Voltage" "≥ 10 V"
-			(at 186.69 195.834 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Class" "X7R"
-			(at 189.23 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 189.23 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9590a837-de92-4c4b-b054-679caaeda045")
-		)
-		(pin "2"
-			(uuid "ff4f5a6a-ab92-47de-94d8-bff4aa0b931a")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C508")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -14030,7 +14115,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b5e9da7a-a738-4a5d-a2b3-52b6bcb4d0a3")
-		(property "Reference" "SW502"
+		(property "Reference" "SW2"
 			(at 358.14 195.58 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14052,7 +14137,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645"
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645Sx43SMTR92"
 			(at 355.6 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -14074,7 +14159,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single Pole Single Throw (SPST) switch"
 			(at 355.6 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -14138,7 +14223,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "SW502")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -14155,7 +14240,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bbe904f2-34f1-47c5-bfa2-ed3b0c8aa6c6")
-		(property "Reference" "C506"
+		(property "Reference" "C23"
 			(at 175.26 240.03 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14319,7 +14404,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C506")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -14336,7 +14421,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bf2c6b6a-1b66-41d1-a2d8-f15a83f71c8a")
-		(property "Reference" "R526"
+		(property "Reference" "R25"
 			(at 155.956 120.396 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14466,7 +14551,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R526")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -14483,7 +14568,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bfc57ff3-10e1-4144-8046-f979c6b931a4")
-		(property "Reference" "J504"
+		(property "Reference" "J13"
 			(at 402.59 87.122 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14615,144 +14700,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "J504")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 241.3 78.74 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bfe38734-77a3-40f8-80c7-560939f23491")
-		(property "Reference" "R508"
-			(at 242.57 76.962 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7 kΩ"
-			(at 242.57 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
-			(at 243.078 78.74 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 241.3 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 241.3 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "560112110245"
-			(at 241.3 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "732-560112110245CT-ND"
-			(at 241.3 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 241.3 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 5 %"
-			(at 242.57 80.518 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "2"
-			(uuid "780dfcff-4eb7-49ae-b518-2564e3d931ee")
-		)
-		(pin "1"
-			(uuid "4a466908-0c5a-4a39-80d6-d5c03b903d40")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R508")
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -14770,7 +14718,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c2a407c9-aab7-457e-a14b-039b1ef676ef")
-		(property "Reference" "Q401"
+		(property "Reference" "Q4"
 			(at 64.262 197.358 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14892,325 +14840,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "Q401")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 130.81 102.87 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c5509756-003f-4a22-8a23-ba5b61efcef9")
-		(property "Reference" "C501"
-			(at 133.35 101.092 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1 µF"
-			(at 133.35 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "perfect_footprints:C_0402_1005Metric"
-			(at 131.7752 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 130.81 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 130.81 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "885012205037"
-			(at 130.81 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "732-7532-1-ND"
-			(at 130.81 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Size" "0402"
-			(at 130.81 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 10 %"
-			(at 133.35 103.886 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Voltage" "≥ 10 V"
-			(at 133.35 105.156 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Class" "X7R"
-			(at 130.81 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 130.81 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f4ad9691-4bc6-4ce4-9135-292ded82864e")
-		)
-		(pin "2"
-			(uuid "5314f977-c7c4-436b-b8e3-7f3b511c627c")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C501")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 344.17 190.5 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c8eaa0c8-aa93-4553-ab28-823cee044953")
-		(property "Reference" "R521"
-			(at 344.17 187.452 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify top)
-			)
-		)
-		(property "Value" "330 Ω"
-			(at 344.17 189.23 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify top)
-			)
-		)
-		(property "Footprint" "perfect_footprints:R_0402_1005Metric"
-			(at 344.17 192.278 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 344.17 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 344.17 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 344.17 190.5 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 344.17 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "560112110231"
-			(at 344.17 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "732-560112110231CT-ND"
-			(at 344.17 190.5 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 5 %"
-			(at 344.17 188.468 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e50d4267-9f1a-49dd-9ba3-ad5970381c59")
-		)
-		(pin "1"
-			(uuid "09583013-531b-4468-8aff-1cb1493c5871")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R521")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -15227,7 +14857,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ca4b86e7-d408-415d-9046-f71c95cd3b90")
-		(property "Reference" "J503"
+		(property "Reference" "J12"
 			(at 402.59 61.722 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15359,7 +14989,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "J503")
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -15376,7 +15006,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cbc11c8c-1fa8-4204-a74a-029bab8dd24a")
-		(property "Reference" "#PWR0529"
+		(property "Reference" "#PWR012"
 			(at 62.23 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -15437,7 +15067,279 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0529")
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 241.3 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cc1aaa56-8367-41ea-9c12-95327ba312e1")
+		(property "Reference" "R31"
+			(at 242.57 75.692 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2 kΩ"
+			(at 242.57 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
+			(at 239.522 78.74 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 241.3 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 241.3 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 241.3 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1 %"
+			(at 242.57 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Power rating" "0.1 W"
+			(at 242.57 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0201"
+			(at 242.57 81.2801 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "19282b30-380b-49f3-ae59-9aad820f1259")
+		)
+		(pin "1"
+			(uuid "33613925-572b-4b0a-9bf2-8a1e946e4c52")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 254 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cdd2a082-acc0-4a49-97ea-f0dcfb8fdfc4")
+		(property "Reference" "R32"
+			(at 255.27 75.692 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2 kΩ"
+			(at 255.27 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
+			(at 252.222 78.74 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 254 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 254 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 254 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1 %"
+			(at 255.27 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Power rating" "0.1 W"
+			(at 255.27 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0201"
+			(at 255.27 81.2801 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "c6269856-5413-4d00-83e1-185663b04913")
+		)
+		(pin "1"
+			(uuid "db97b83b-1c60-4338-aa7c-ee8842a66d71")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -15455,7 +15357,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce60796a-11a1-4c6d-98e2-8a875c4b1720")
-		(property "Reference" "#PWR0521"
+		(property "Reference" "#PWR029"
 			(at 394.97 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -15516,7 +15418,155 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0521")
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "C_1")
+		(lib_id "Device:C")
+		(at 130.81 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cea370a4-06e1-4608-ad5d-a277dee7f519")
+		(property "Reference" "C18"
+			(at 133.35 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1 µF"
+			(at 133.35 102.108 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "perfect_footprints:C_0201_0603Metric"
+			(at 131.7752 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 130.81 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage rating" "16 V"
+			(at 133.604 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "20 %"
+			(at 133.604 105.156 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature coefficient" "X5R"
+			(at 133.604 106.172 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0201"
+			(at 133.604 107.188 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 130.81 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "24ff40f4-4242-4328-8cdd-e3e3f0a2479f")
+		)
+		(pin "1"
+			(uuid "0ac05c76-dfbb-4978-b961-d670aed4d885")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -15534,7 +15584,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf492f1f-d438-49f0-bdf0-9bb27019c149")
-		(property "Reference" "#PWR0527"
+		(property "Reference" "#PWR035"
 			(at 394.97 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -15595,7 +15645,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0527")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -15603,7 +15653,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 233.68 182.88 0)
+		(at 237.49 182.88 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -15613,8 +15663,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dc01b554-302a-4b6c-8450-98888d7411a3")
-		(property "Reference" "#FLG0501"
-			(at 233.68 180.975 0)
+		(property "Reference" "#FLG07"
+			(at 237.49 180.975 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15625,7 +15675,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 233.68 179.832 0)
+			(at 237.49 179.832 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15635,7 +15685,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 182.88 0)
+			(at 237.49 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15646,7 +15696,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 182.88 0)
+			(at 237.49 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15657,7 +15707,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 233.68 182.88 0)
+			(at 237.49 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15673,188 +15723,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#FLG0501")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 138.43 193.04 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "dd24602c-be12-4b4f-9efe-720c56dcce02")
-		(property "Reference" "C502"
-			(at 135.89 190.246 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7 µF"
-			(at 135.89 192.024 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 137.4648 196.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 138.43 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 138.43 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 138.43 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 138.43 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "GRM188R61E475KE11D"
-			(at 138.43 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "490-7203-1-ND"
-			(at 138.43 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Size" "0402"
-			(at 138.43 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 20%"
-			(at 135.89 194.056 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Voltage" "≥ 10 V"
-			(at 135.89 195.834 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Class" "X5R"
-			(at 138.43 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 138.43 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c3a36f39-3d77-4775-8943-a8ce7a1158c4")
-		)
-		(pin "2"
-			(uuid "b5669cd2-7148-47ea-8c99-3180e2d68ea2")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C502")
+					(reference "#FLG07")
 					(unit 1)
 				)
 			)
@@ -15871,7 +15740,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e18d4b56-7874-4f96-9a25-b1c785087548")
-		(property "Reference" "#PWR0506"
+		(property "Reference" "#PWR019"
 			(at 138.43 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -15932,7 +15801,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0506")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -15950,7 +15819,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1e7b0b5-24f3-49b5-9662-56bbce6db91a")
-		(property "Reference" "#PWR0522"
+		(property "Reference" "#PWR030"
 			(at 394.97 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -16011,7 +15880,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0522")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -16029,7 +15898,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e34a93ea-aba3-4b4b-9bad-4b3a4a5b0b42")
-		(property "Reference" "#PWR0528"
+		(property "Reference" "#PWR036"
 			(at 394.97 238.76 0)
 			(hide yes)
 			(show_name no)
@@ -16090,7 +15959,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0528")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -16109,7 +15978,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e91cd463-52da-4cfc-bba2-1881ab790acb")
-		(property "Reference" "#PWR0504"
+		(property "Reference" "#PWR017"
 			(at 124.46 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -16170,7 +16039,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0504")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -16188,7 +16057,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e92b63ca-e636-4f5a-ac8e-1e32688c56cf")
-		(property "Reference" "C222"
+		(property "Reference" "C17"
 			(at 81.28 195.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16318,7 +16187,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C222")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -16336,7 +16205,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed70d249-2bbc-47fb-9fd0-77382f3f8524")
-		(property "Reference" "#PWR0511"
+		(property "Reference" "#PWR023"
 			(at 218.44 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -16397,7 +16266,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0511")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -16415,7 +16284,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eeec01e1-f6d8-4332-83fe-f4a77d1270cc")
-		(property "Reference" "#PWR0507"
+		(property "Reference" "#PWR020"
 			(at 138.43 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -16476,188 +16345,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0507")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 163.83 193.04 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ef77ed1a-a19c-4932-9698-2bfa959975ba")
-		(property "Reference" "C504"
-			(at 161.29 190.246 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1 µF"
-			(at 161.29 192.024 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "perfect_footprints:C_0402_1005Metric"
-			(at 162.8648 196.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 163.83 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 163.83 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 163.83 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "885012205037"
-			(at 163.83 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "732-7532-1-ND"
-			(at 163.83 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Size" "0402"
-			(at 163.83 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 10 %"
-			(at 161.29 194.056 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Voltage" "≥ 10 V"
-			(at 161.29 195.834 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Class" "X7R"
-			(at 163.83 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 163.83 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1f1d9a9a-19a0-45db-ab65-5413215ce15e")
-		)
-		(pin "2"
-			(uuid "ea4d2e77-9acb-44ef-abe0-33f34d474f6b")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C504")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -16674,7 +16362,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f13d705e-f877-42b9-8d6c-2c80e064a020")
-		(property "Reference" "R523"
+		(property "Reference" "R28"
 			(at 232.156 98.806 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16804,7 +16492,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R523")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -16823,7 +16511,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f14fcc64-1ecf-485f-9149-8f028d60a894")
-		(property "Reference" "#PWR0502"
+		(property "Reference" "#PWR015"
 			(at 92.71 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -16884,15 +16572,15 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "#PWR0502")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 349.25 195.58 0)
+		(lib_id "Device:R")
+		(at 62.23 186.69 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -16901,9 +16589,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f200b703-dc1c-4176-942c-b232d215a8fc")
-		(property "Reference" "C515"
-			(at 346.71 193.802 0)
+		(uuid "faaa9bd7-56d7-4572-ad43-60dfcd9b1a93")
+		(property "Reference" "R21"
+			(at 60.96 183.642 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16913,8 +16601,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1 µF"
-			(at 346.71 195.58 0)
+		(property "Value" "180 kΩ"
+			(at 60.96 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16924,8 +16612,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "perfect_footprints:C_0402_1005Metric"
-			(at 348.2848 199.39 0)
+		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
+			(at 64.008 186.69 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16936,7 +16624,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 349.25 195.58 0)
+			(at 62.23 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16947,7 +16635,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 349.25 195.58 0)
+			(at 62.23 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16957,8 +16645,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 349.25 195.58 0)
+		(property "MPN" ""
+			(at 62.23 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16968,8 +16656,8 @@
 				)
 			)
 		)
-		(property "Footprint review check" "+"
-			(at 349.25 195.58 0)
+		(property "Manufacturer" ""
+			(at 62.23 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16979,83 +16667,49 @@
 				)
 			)
 		)
-		(property "MPN" "885012205037"
-			(at 349.25 195.58 0)
-			(hide yes)
+		(property "Tolerance" "1 %"
+			(at 60.96 186.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "732-7532-1-ND"
-			(at 349.25 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Size" "0402"
-			(at 349.25 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "≤ 10 %"
-			(at 346.71 196.596 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 				(justify left)
 			)
 		)
-		(property "Voltage" "≥ 10 V"
-			(at 346.71 197.866 0)
+		(property "Power rating" "0.1 W"
+			(at 60.96 187.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 				(justify left)
 			)
 		)
-		(property "Class" "X7R"
-			(at 349.25 195.58 0)
-			(hide yes)
+		(property "Size" "0201"
+			(at 60.96 189.2301 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
+				(justify left)
 			)
-		)
-		(pin "1"
-			(uuid "5e118b98-a65a-41e8-8925-d8c7ffb34ef4")
 		)
 		(pin "2"
-			(uuid "3b678ef4-5004-47ef-aef7-35eee2141950")
+			(uuid "d15dd900-fc4b-4c2b-98b6-862ffd322971")
+		)
+		(pin "1"
+			(uuid "e1748b21-6e51-414f-836c-7d371dd14cde")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "C515")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -17072,7 +16726,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fd534512-3a7c-4a62-b561-3fb57d77d9de")
-		(property "Reference" "U501"
+		(property "Reference" "U6"
 			(at 209.55 181.102 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17332,7 +16986,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "U501")
+					(reference "U6")
 					(unit 2)
 				)
 			)

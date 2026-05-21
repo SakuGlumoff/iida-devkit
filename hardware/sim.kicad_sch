@@ -1583,6 +1583,91 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 298.45 38.1)
+		(end 406.4 251.46)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "197733da-8bf6-46a6-93d0-a33b7576607b")
+	)
+	(rectangle
+		(start 12.7 251.46)
+		(end 298.45 284.48)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "3835c7cf-bc0f-4c31-b03c-115b5c0cf5fc")
+	)
+	(rectangle
+		(start 100.33 38.1)
+		(end 187.96 251.46)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ac239406-6c72-4516-b9dc-5d162e2a842e")
+	)
+	(rectangle
+		(start 187.96 38.1)
+		(end 298.45 251.46)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b218dcd0-5aae-40a4-a913-c5539750b893")
+	)
+	(rectangle
+		(start 12.7 38.1)
+		(end 100.33 251.46)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "fe2b4f90-37c5-41a7-8dc7-46b0970b6c03")
+	)
+	(text "Route SIM as\n50 Ω single-ended."
+		(exclude_from_sim no)
+		(at 276.86 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 194 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "14a6649e-f876-47f0-b9e5-7dd3fd86a951")
+	)
+	(text "SIM detection"
+		(exclude_from_sim no)
+		(at 299.72 40.64 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "2e3e23df-f607-44b7-b59f-c154949f9b60")
+	)
 	(text "SIM_DET is active high (1.8 V).\nWhen the SIM is inserted, CD is not shorted to GND, so SIM_DET is HIGH.\nWhen the SIM is not inserted, CD is shorted to GND, so SIM_DET is LOW."
 		(exclude_from_sim no)
 		(at 317.5 134.62 0)
@@ -1594,18 +1679,9 @@
 		)
 		(uuid "4a2ac2f5-6ecd-419f-adcb-4cc389b4ad7a")
 	)
-	(text_box "SIM input"
+	(text "Notes"
 		(exclude_from_sim no)
-		(at 12.7 50.8 0)
-		(size 87.63 200.66)
-		(margins 0.9525 2 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
+		(at 13.97 254 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -1614,20 +1690,11 @@
 			)
 			(justify left top)
 		)
-		(uuid "13ccf3c4-67d3-4dc3-bb2f-c12fc7dd026c")
+		(uuid "62502419-f4a6-4117-970e-403eef7a2d87")
 	)
-	(text_box "Filtering"
+	(text "SIM input"
 		(exclude_from_sim no)
-		(at 187.96 50.8 0)
-		(size 110.49 200.66)
-		(margins 0.9525 2 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
+		(at 13.97 40.64 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -1636,20 +1703,11 @@
 			)
 			(justify left top)
 		)
-		(uuid "15e60037-5c52-4547-968a-37806fc16187")
+		(uuid "63b886ae-a871-4923-a942-6ece78cffc26")
 	)
-	(text_box "SIM detection"
+	(text "Protection"
 		(exclude_from_sim no)
-		(at 298.45 50.8 0)
-		(size 107.95 200.66)
-		(margins 0.9525 2 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
+		(at 101.6 40.64 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -1658,7 +1716,20 @@
 			)
 			(justify left top)
 		)
-		(uuid "19260e0c-6f72-4ce5-811a-2aeb68238223")
+		(uuid "81075b05-c440-4150-9809-eba4e48774b5")
+	)
+	(text "Filtering"
+		(exclude_from_sim no)
+		(at 189.23 40.64 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "9ba50840-2701-4bc6-9a1e-5f7a41779542")
 	)
 	(text_box "Since the SIM connector is a human interface, ensure that no ESD events damage either the SIM card or the module."
 		(exclude_from_sim no)
@@ -1700,28 +1771,6 @@
 		)
 		(uuid "2ee7dd0f-fb37-4e75-ac04-a8d71d6df65f")
 	)
-	(text_box "Protection"
-		(exclude_from_sim no)
-		(at 100.33 50.8 0)
-		(size 87.63 200.66)
-		(margins 0.9525 2 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 5.08 5.08)
-				(thickness 1.016)
-				(bold yes)
-			)
-			(justify left top)
-		)
-		(uuid "88bfe392-42c9-4350-ac9d-adaf1a6b0f9f")
-	)
 	(text_box "- SIM detection implemented according to \"SARA-R5 series - System integration manual\" (UBX-19041356 - R20) chapter \"2.5.1.4 Guidelines for single SIM card connection with detection\" but modified to work with a normally closed switch."
 		(exclude_from_sim no)
 		(at 15.24 260.35 0)
@@ -1745,7 +1794,7 @@
 	(text_box "SIM"
 		(exclude_from_sim no)
 		(at 12.7 12.7 0)
-		(size 393.7 38.1)
+		(size 393.7 25.4)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -1784,28 +1833,6 @@
 		)
 		(uuid "ba1333d0-bdde-4190-bf3c-5d6494f0b518")
 	)
-	(text_box "Notes"
-		(exclude_from_sim no)
-		(at 12.7 251.46 0)
-		(size 285.75 33.02)
-		(margins 0.9525 2 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 5.08 5.08)
-				(thickness 1.016)
-				(bold yes)
-			)
-			(justify left top)
-		)
-		(uuid "e6ca44de-aef2-4b79-9929-c625c03db290")
-	)
 	(text_box "A modem network connection requires a registered SIM card.\n\nInsert a nano-SIM into the SIM connector."
 		(exclude_from_sim no)
 		(at 15.24 63.5 0)
@@ -1839,16 +1866,16 @@
 		(uuid "2393d76a-0783-422d-a608-a375ad1f7c07")
 	)
 	(junction
+		(at 261.62 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4866d225-ef1b-4511-938d-ed39b125eecb")
+	)
+	(junction
 		(at 139.7 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b47e950-071c-4439-b8db-ab6f587af79c")
-	)
-	(junction
-		(at 142.24 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "61f04a3a-49d9-4e0d-94d8-1cb4d74398dd")
 	)
 	(junction
 		(at 36.83 160.02)
@@ -1860,25 +1887,13 @@
 		(at 231.14 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7351301f-af6c-4c91-ac0b-bc0501905013")
+		(uuid "71d79e97-6c1e-436b-940d-6fc85f9e86b4")
 	)
 	(junction
-		(at 215.9 152.4)
+		(at 36.83 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "74931604-141b-49a3-8525-0c25f214cd60")
-	)
-	(junction
-		(at 36.83 189.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "82195d8d-99c3-4151-a9a8-93d287bb3de4")
-	)
-	(junction
-		(at 246.38 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "895d7108-e07b-45fe-8d35-46305b5bd4de")
+		(uuid "77027333-33fc-410e-a617-a98d981fa476")
 	)
 	(junction
 		(at 132.08 157.48)
@@ -1893,10 +1908,10 @@
 		(uuid "9ee3740c-d041-411d-9801-cc539667b4a2")
 	)
 	(junction
-		(at 215.9 137.16)
+		(at 246.38 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9f6f9c22-e375-424c-8915-47bf3c78296a")
+		(uuid "acc4bf0b-8d2f-46eb-bccb-43d2792fbb88")
 	)
 	(junction
 		(at 36.83 154.94)
@@ -1909,12 +1924,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b41666a3-a984-44af-adf5-22639866d474")
-	)
-	(junction
-		(at 261.62 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c6adc4d7-42dd-4d2b-9556-328fc5ba4d30")
 	)
 	(junction
 		(at 36.83 157.48)
@@ -1941,6 +1950,24 @@
 		(uuid "e4786f11-5432-4928-b598-2f649e2cadea")
 	)
 	(junction
+		(at 142.24 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5d42a0e-f22c-4ac6-a804-73ede7757e4d")
+	)
+	(junction
+		(at 215.9 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee01d6ef-9b88-460c-a4c1-314ede87110f")
+	)
+	(junction
+		(at 215.9 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc0ddaaa-d23a-4d48-a124-c2c3fd07c1da")
+	)
+	(junction
 		(at 215.9 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1963,7 +1990,7 @@
 		(uuid "c9e9d2d0-b35a-4179-89b0-2950caa27b0f")
 	)
 	(bus_entry
-		(at 279.4 144.78)
+		(at 276.86 144.78)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -1972,7 +1999,7 @@
 		(uuid "8be2e67a-c074-4da3-95e9-2f4b4b96f96a")
 	)
 	(bus_entry
-		(at 279.4 147.32)
+		(at 276.86 147.32)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -1981,7 +2008,7 @@
 		(uuid "93b1c442-c72f-4b4a-b978-90d164c1f156")
 	)
 	(bus_entry
-		(at 279.4 149.86)
+		(at 276.86 149.86)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -1991,7 +2018,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 173.99) (xy 139.7 189.23)
+			(xy 139.7 173.99) (xy 139.7 182.88)
 		)
 		(stroke
 			(width 0)
@@ -2081,7 +2108,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 147.32) (xy 276.86 147.32)
+			(xy 246.38 147.32) (xy 274.32 147.32)
 		)
 		(stroke
 			(width 0)
@@ -2101,7 +2128,7 @@
 	)
 	(bus
 		(pts
-			(xy 279.4 144.78) (xy 280.67 144.78)
+			(xy 276.86 144.78) (xy 278.13 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2111,7 +2138,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 149.86) (xy 276.86 149.86)
+			(xy 231.14 149.86) (xy 274.32 149.86)
 		)
 		(stroke
 			(width 0)
@@ -2121,7 +2148,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 137.16) (xy 280.67 137.16)
+			(xy 261.62 134.62) (xy 278.13 134.62)
 		)
 		(stroke
 			(width 0)
@@ -2131,7 +2158,17 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 137.16) (xy 215.9 137.16)
+			(xy 215.9 134.62) (xy 215.9 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a74f989-1c6a-409f-bb04-3f7c7d47a814")
+	)
+	(wire
+		(pts
+			(xy 142.24 134.62) (xy 215.9 134.62)
 		)
 		(stroke
 			(width 0)
@@ -2179,19 +2216,9 @@
 		)
 		(uuid "360e376a-c2da-4928-bf1b-a5fd1584a00e")
 	)
-	(wire
-		(pts
-			(xy 215.9 137.16) (xy 215.9 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39199af2-e4f6-4b02-9ef5-893b7e6f5dde")
-	)
 	(bus
 		(pts
-			(xy 279.4 149.86) (xy 279.4 144.78)
+			(xy 276.86 149.86) (xy 276.86 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2221,23 +2248,23 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 137.16) (xy 142.24 163.83)
+			(xy 36.83 182.88) (xy 36.83 184.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5573413c-90cd-453a-b264-a2e45a7cf237")
+		(uuid "4e805d39-fcd2-463e-9d5d-1ac662485dcd")
 	)
 	(wire
 		(pts
-			(xy 261.62 137.16) (xy 261.62 160.02)
+			(xy 142.24 134.62) (xy 142.24 163.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "56e647b9-cfb8-41bf-9912-19e285e81113")
+		(uuid "5f3a6616-3ecc-4c9b-91c7-db17fab87c24")
 	)
 	(wire
 		(pts
@@ -2351,6 +2378,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 134.62) (xy 261.62 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dd10fd0-a291-4272-b450-61baa2d76578")
+	)
+	(wire
+		(pts
 			(xy 134.62 152.4) (xy 134.62 163.83)
 		)
 		(stroke
@@ -2361,7 +2398,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 137.16) (xy 64.77 142.24)
+			(xy 64.77 134.62) (xy 64.77 142.24)
 		)
 		(stroke
 			(width 0)
@@ -2401,7 +2438,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 137.16) (xy 215.9 137.16)
+			(xy 261.62 134.62) (xy 215.9 134.62)
 		)
 		(stroke
 			(width 0)
@@ -2471,7 +2508,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 152.4) (xy 276.86 152.4)
+			(xy 215.9 152.4) (xy 274.32 152.4)
 		)
 		(stroke
 			(width 0)
@@ -2481,17 +2518,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 189.23) (xy 36.83 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da66d849-f84d-4238-90ab-54d110b5eaf3")
-	)
-	(wire
-		(pts
-			(xy 36.83 189.23) (xy 139.7 189.23)
+			(xy 36.83 182.88) (xy 139.7 182.88)
 		)
 		(stroke
 			(width 0)
@@ -2561,7 +2588,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 160.02) (xy 36.83 189.23)
+			(xy 36.83 160.02) (xy 36.83 182.88)
 		)
 		(stroke
 			(width 0)
@@ -2571,7 +2598,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 137.16) (xy 142.24 137.16)
+			(xy 64.77 134.62) (xy 142.24 134.62)
 		)
 		(stroke
 			(width 0)
@@ -2600,7 +2627,7 @@
 		(uuid "f41a1686-8ab9-4b8e-bca4-f91848e3c8f3")
 	)
 	(label "SIM.RST"
-		(at 276.86 152.4 180)
+		(at 274.32 152.4 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2610,7 +2637,7 @@
 		(uuid "1bc512dd-c6a0-4e1d-98d5-55ca09680ff3")
 	)
 	(label "SIM.CLK"
-		(at 276.86 149.86 180)
+		(at 274.32 149.86 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2620,7 +2647,7 @@
 		(uuid "8b6a11a5-6590-4187-8a39-c516908f9aa2")
 	)
 	(label "SIM.DATA"
-		(at 276.86 147.32 180)
+		(at 274.32 147.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2651,9 +2678,20 @@
 		)
 		(uuid "624e63c8-5906-4eea-9677-a1092dbe1384")
 	)
+	(hierarchical_label "{SIM}"
+		(shape bidirectional)
+		(at 278.13 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "765621a3-315e-4278-a803-9ef9206c22e1")
+	)
 	(hierarchical_label "V_1V8_SIM"
 		(shape input)
-		(at 280.67 137.16 0)
+		(at 278.13 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2662,16 +2700,39 @@
 		)
 		(uuid "cead0808-0c88-49a9-abc3-a5f90e0fde7d")
 	)
-	(hierarchical_label "SIM"
-		(shape bidirectional)
-		(at 280.67 144.78 0)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 276.86 144.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "f2939eb8-7ce0-4bd9-85f3-eba4e08a17ff")
+		(uuid "ad18f2b1-fec9-4716-bc28-0786ba0fc421")
+		(property "Net Class" "SIM"
+			(at 277.876 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 209.55 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -2684,7 +2745,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "353aa42e-52ea-48d6-b6cb-4754ce76da58")
-		(property "Reference" "R213"
+		(property "Reference" "R77"
 			(at 217.17 139.192 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2803,7 +2864,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "R213")
+					(reference "R77")
 					(unit 1)
 				)
 			)
@@ -2821,7 +2882,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "571a4247-631f-4ecf-a5cc-fd320e3e55cc")
-		(property "Reference" "C237"
+		(property "Reference" "C50"
 			(at 248.92 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2951,7 +3012,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "C237")
+					(reference "C50")
 					(unit 1)
 				)
 			)
@@ -2959,7 +3020,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 36.83 190.5 0)
+		(at 36.83 184.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2968,8 +3029,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77f02817-deae-4797-8d19-ae78fb51e698")
-		(property "Reference" "#PWR04"
-			(at 36.83 195.58 0)
+		(property "Reference" "#PWR067"
+			(at 36.83 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2980,7 +3041,7 @@
 			)
 		)
 		(property "Value" "CHASSIS"
-			(at 36.83 193.294 0)
+			(at 36.83 186.944 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2992,7 +3053,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 191.77 0)
+			(at 36.83 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3003,7 +3064,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 191.77 0)
+			(at 36.83 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3014,7 +3075,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 36.83 190.5 0)
+			(at 36.83 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3030,7 +3091,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR04")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -3047,7 +3108,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7c3c1356-0f79-42d0-b5ce-3ccd9080e8e7")
-		(property "Reference" "D706"
+		(property "Reference" "D14"
 			(at 151.638 167.1319 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3177,7 +3238,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "D706")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -3195,7 +3256,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b77c72b1-1baa-454f-a9bf-44f9e2f0fdf2")
-		(property "Reference" "J901"
+		(property "Reference" "J19"
 			(at 50.8 139.446 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3335,7 +3396,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "J901")
+					(reference "J19")
 					(unit 1)
 				)
 			)
@@ -3353,7 +3414,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b869fa11-6bc2-4154-8f0b-0bc53d2e38f0")
-		(property "Reference" "C235"
+		(property "Reference" "C48"
 			(at 218.44 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3483,7 +3544,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "C235")
+					(reference "C48")
 					(unit 1)
 				)
 			)
@@ -3501,7 +3562,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c63ef3c0-77e1-4a46-b5a4-395303978f81")
-		(property "Reference" "C238"
+		(property "Reference" "C51"
 			(at 264.16 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3631,7 +3692,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "C238")
+					(reference "C51")
 					(unit 1)
 				)
 			)
@@ -3648,7 +3709,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cf16b3b4-b48f-48e5-9f4b-cbe83de28aac")
-		(property "Reference" "R214"
+		(property "Reference" "R78"
 			(at 344.17 149.352 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3767,7 +3828,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "R214")
+					(reference "R78")
 					(unit 1)
 				)
 			)
@@ -3786,7 +3847,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8a778fa-5e48-4543-b872-2e2e0159cb99")
-		(property "Reference" "#PWR0902"
+		(property "Reference" "#PWR068"
 			(at 64.77 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -3847,7 +3908,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "#PWR0902")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -3865,7 +3926,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f3b66968-90d1-4aa9-aa69-7155cb85d0ab")
-		(property "Reference" "C236"
+		(property "Reference" "C49"
 			(at 233.68 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3995,7 +4056,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/33580d9f-a609-4568-baaf-9a29cf2dabcd"
-					(reference "C236")
+					(reference "C49")
 					(unit 1)
 				)
 			)
