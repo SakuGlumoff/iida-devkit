@@ -6222,7 +6222,7 @@
 		)
 		(uuid "7c495598-efd2-4805-8eb2-24e13f343757")
 	)
-	(text "USB"
+	(text "USB-C"
 		(exclude_from_sim no)
 		(at 13.97 40.64 0)
 		(effects
@@ -6387,10 +6387,10 @@
 		)
 		(uuid "2dabc522-e0f0-4614-80b9-f4fdfa15ae69")
 	)
-	(text_box "If V_BAT > V_5V0, V_SYS = V_BAT\nIf V_5V0 > V_BAT, V_SYS = V_BUS\n\nIf the board is powered from V_BAT, then ST is pulled high.\nIf the board is powered from V_BUS, then ST is pulled low.\n\nBAT_DETn is low when the device is battery powered and high when USB powered."
+	(text_box "If V_BAT > V_5V0, V_SYS = V_BAT\nIf V_5V0 > V_BAT, V_SYS = V_BUS\n\nIf the board is powered from V_BAT, then ST is pulled high.\n\nIf the board is powered from V_BUS, then ST is pulled low."
 		(exclude_from_sim no)
 		(at 205.74 88.9 0)
-		(size 39.37 24.3946)
+		(size 35.56 20.3199)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width -0.0001)
@@ -6506,6 +6506,26 @@
 			(justify left top)
 		)
 		(uuid "e85ee324-3662-4120-9517-c79a8eae2a3e")
+	)
+	(text_box "The USB-C interface can be used to power the board, charge the battery and communicate with the microcontroller.\n\nWith 5.1 k pull-downs on the CC lines, the device is advertised as a downstream device.\n\nNOTE: The device can momentarily draw more than 500 mA so a USB-C to USB-A cable might not suffice."
+		(exclude_from_sim no)
+		(at 50.8 39.37 0)
+		(size 48.26 24.13)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f863569e-cc06-4634-9dda-67f24f59f84c")
 	)
 	(text_box "Power"
 		(exclude_from_sim no)
@@ -11327,7 +11347,7 @@
 		)
 		(uuid "08aa1bd8-2c2f-46fd-bcb9-7bf89aca2204")
 	)
-	(hierarchical_label "BAT_DETn"
+	(hierarchical_label "ST"
 		(shape output)
 		(at 210.82 71.12 0)
 		(effects

@@ -816,7 +816,7 @@
     "netclass_patterns": [
       {
         "netclass": "PWR",
-        "pattern": "*V_*"
+        "pattern": "/*/V_*"
       },
       {
         "netclass": "CHASSIS",
@@ -825,6 +825,10 @@
       {
         "netclass": "GND",
         "pattern": "GND"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "V_*"
       }
     ]
   },
@@ -1074,7 +1078,7 @@
         "uuid": "b12a6e25-97fb-4aba-bc96-af8db389bb9a"
       }
     ],
-    "used_designators": "U10,U14,C57-61,C207-208,C210,#PWR23,#PWR80-81,L201,F3,FB2,R33,R87-94,Y3",
+    "used_designators": "C41-42,C44-45,D10-11,#PWR82-83,Q11,R90",
     "variants": []
   },
   "sheets": [
