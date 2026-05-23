@@ -10,161 +10,6 @@
 		(rev "v5.1.1")
 	)
 	(lib_symbols
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1249,21 +1094,9 @@
 		)
 		(uuid "47bcdc5d-730c-4fb0-8d5a-f0a595e41c4b")
 	)
-	(text "There's no actual chassis or a case for mounting the PCB,\nso just place the mounting holes at the corners of the board."
-		(exclude_from_sim no)
-		(at 148.59 228.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 194 0 194 1)
-			)
-			(justify left top)
-		)
-		(uuid "5571a628-e5ce-4932-aa05-15b27a6c8f99")
-	)
 	(text "Place fiducials at the top-left, bottom-left,\nand bottom-right corners of the PCB."
 		(exclude_from_sim no)
-		(at 220.98 237.49 0)
+		(at 220.98 231.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1348,17 +1181,6 @@
 		)
 		(uuid "c2c9bbf6-35ef-4a5f-a802-9a96793129b7")
 	)
-	(text "Place closely together."
-		(exclude_from_sim no)
-		(at 317.5 246.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 194 0 194 1)
-			)
-		)
-		(uuid "d0cb59f5-e6d2-45cb-91ff-65bd4aa627c6")
-	)
 	(text "Block diagram"
 		(exclude_from_sim no)
 		(at 147.32 40.64 0)
@@ -1371,18 +1193,6 @@
 			(justify left top)
 		)
 		(uuid "d3599084-73fb-4721-a2b4-e017d0ca05bc")
-	)
-	(text "Place a stitched ground guard rail along the edges of the PCB\nto provide a grounding point for human contact when handling the device."
-		(exclude_from_sim no)
-		(at 218.44 224.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 194 0 194 1)
-			)
-			(justify left top)
-		)
-		(uuid "f537f821-913f-49bb-a009-fdda546dfa42")
 	)
 	(text "Table of Contents"
 		(exclude_from_sim no)
@@ -1440,43 +1250,31 @@
 		(uuid "787d821d-3720-4ed6-a47e-4fb5c4df732f")
 	)
 	(junction
-		(at 312.42 237.49)
+		(at 287.02 241.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "038aacf1-8d19-48e2-89e7-0a9b87745f45")
 	)
 	(junction
-		(at 187.96 243.84)
+		(at 187.96 245.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "062403b7-13ce-4a49-b1b0-dd820d284646")
 	)
 	(junction
-		(at 322.58 228.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3a766f15-27f6-4819-beae-96b4d308b8c6")
-	)
-	(junction
-		(at 175.26 243.84)
+		(at 175.26 245.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6041a1fb-c9c2-4c9b-ab50-b3e560b20a18")
 	)
 	(junction
-		(at 312.42 228.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7953b554-528b-48f5-bc8f-bfb0ea908a0f")
-	)
-	(junction
-		(at 322.58 237.49)
+		(at 297.18 241.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8617b4a0-6671-4789-8a0d-2c65e96326b0")
 	)
 	(junction
-		(at 181.61 243.84)
+		(at 181.61 245.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "98f5a8f3-7e07-449c-8245-ed16263a4b19")
@@ -1489,7 +1287,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 243.84) (xy 181.61 243.84)
+			(xy 175.26 245.11) (xy 181.61 245.11)
 		)
 		(stroke
 			(width 0)
@@ -1609,7 +1407,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 245.11) (xy 187.96 243.84)
+			(xy 187.96 246.38) (xy 187.96 245.11)
 		)
 		(stroke
 			(width 0)
@@ -1639,7 +1437,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 243.84) (xy 187.96 243.84)
+			(xy 181.61 245.11) (xy 187.96 245.11)
 		)
 		(stroke
 			(width 0)
@@ -1669,7 +1467,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 242.57) (xy 175.26 243.84)
+			(xy 175.26 243.84) (xy 175.26 245.11)
 		)
 		(stroke
 			(width 0)
@@ -1679,17 +1477,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 228.6) (xy 312.42 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69184aa8-e4ea-4b2c-8b1e-718e6bf4e0ca")
-	)
-	(wire
-		(pts
-			(xy 312.42 237.49) (xy 313.69 237.49)
+			(xy 287.02 241.3) (xy 288.29 241.3)
 		)
 		(stroke
 			(width 0)
@@ -1719,7 +1507,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 238.76) (xy 322.58 237.49)
+			(xy 297.18 242.57) (xy 297.18 241.3)
 		)
 		(stroke
 			(width 0)
@@ -1739,16 +1527,6 @@
 	)
 	(wire
 		(pts
-			(xy 321.31 228.6) (xy 322.58 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "820d9f94-3689-4527-806f-156cdb2798d1")
-	)
-	(wire
-		(pts
 			(xy 228.6 68.58) (xy 254 68.58)
 		)
 		(stroke
@@ -1759,7 +1537,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 238.76) (xy 312.42 237.49)
+			(xy 287.02 242.57) (xy 287.02 241.3)
 		)
 		(stroke
 			(width 0)
@@ -1789,7 +1567,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 243.84) (xy 175.26 243.84)
+			(xy 168.91 245.11) (xy 175.26 245.11)
 		)
 		(stroke
 			(width 0)
@@ -1806,16 +1584,6 @@
 			(type default)
 		)
 		(uuid "99cd6093-1696-4b1f-83f8-856e3187896d")
-	)
-	(wire
-		(pts
-			(xy 313.69 228.6) (xy 312.42 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a5d05cd-e728-4231-9920-7bec509253fd")
 	)
 	(wire
 		(pts
@@ -1839,7 +1607,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 243.84) (xy 168.91 242.57)
+			(xy 168.91 245.11) (xy 168.91 243.84)
 		)
 		(stroke
 			(width 0)
@@ -1859,17 +1627,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 228.6) (xy 322.58 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8e09a6f-b7bb-4f72-a8ce-5836049abca0")
-	)
-	(wire
-		(pts
-			(xy 187.96 242.57) (xy 187.96 243.84)
+			(xy 187.96 243.84) (xy 187.96 245.11)
 		)
 		(stroke
 			(width 0)
@@ -1889,7 +1647,7 @@
 	)
 	(wire
 		(pts
-			(xy 323.85 228.6) (xy 322.58 228.6)
+			(xy 298.45 241.3) (xy 297.18 241.3)
 		)
 		(stroke
 			(width 0)
@@ -1909,7 +1667,7 @@
 	)
 	(wire
 		(pts
-			(xy 321.31 237.49) (xy 322.58 237.49)
+			(xy 295.91 241.3) (xy 297.18 241.3)
 		)
 		(stroke
 			(width 0)
@@ -1959,7 +1717,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 242.57) (xy 181.61 243.84)
+			(xy 181.61 243.84) (xy 181.61 245.11)
 		)
 		(stroke
 			(width 0)
@@ -1989,7 +1747,7 @@
 	)
 	(wire
 		(pts
-			(xy 311.15 228.6) (xy 312.42 228.6)
+			(xy 285.75 241.3) (xy 287.02 241.3)
 		)
 		(stroke
 			(width 0)
@@ -1999,7 +1757,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 323.85 228.6 270)
+		(at 298.45 241.3 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -2010,7 +1768,7 @@
 		(dnp no)
 		(uuid "136b9214-bf0c-4608-bb95-87f6d5b8f762")
 		(property "Reference" "#FLG0102"
-			(at 325.755 228.6 0)
+			(at 300.355 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2021,7 +1779,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 327.025 228.6 0)
+			(at 301.625 241.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2031,7 +1789,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 323.85 228.6 0)
+			(at 298.45 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2042,7 +1800,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 323.85 228.6 0)
+			(at 298.45 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2053,7 +1811,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 323.85 228.6 0)
+			(at 298.45 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2077,7 +1835,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 168.91 240.03 0)
+		(at 168.91 241.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2087,7 +1845,7 @@
 		(dnp no)
 		(uuid "160058f9-baa4-448c-b354-99225a2ceae8")
 		(property "Reference" "H101"
-			(at 168.91 236.728 0)
+			(at 168.91 237.998 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2098,7 +1856,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 171.45 240.03 0)
+			(at 171.45 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2110,7 +1868,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 168.91 240.03 0)
+			(at 168.91 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2121,7 +1879,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 240.03 0)
+			(at 168.91 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2132,95 +1890,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 168.91 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "-"
-			(at 168.91 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 168.91 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "-"
-			(at 168.91 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 168.91 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 168.91 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 168.91 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 168.91 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 168.91 240.03 0)
+			(at 168.91 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2244,7 +1914,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 187.96 240.03 0)
+		(at 187.96 241.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2254,7 +1924,7 @@
 		(dnp no)
 		(uuid "37b17bca-3d3c-4c85-92bf-245f7303c029")
 		(property "Reference" "H104"
-			(at 187.96 236.728 0)
+			(at 187.96 237.998 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2265,7 +1935,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 190.5 240.03 0)
+			(at 190.5 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2277,7 +1947,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 187.96 240.03 0)
+			(at 187.96 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2288,7 +1958,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.96 240.03 0)
+			(at 187.96 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2299,95 +1969,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 187.96 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "-"
-			(at 187.96 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 187.96 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "-"
-			(at 187.96 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 187.96 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 187.96 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 187.96 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 187.96 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 187.96 240.03 0)
+			(at 187.96 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2411,7 +1993,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 241.3 247.65 0)
+		(at 241.3 241.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2421,7 +2003,7 @@
 		(dnp no)
 		(uuid "61c880d6-eb78-4373-ab8f-f1774093457b")
 		(property "Reference" "FID102"
-			(at 241.3 245.872 0)
+			(at 241.3 239.522 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2432,7 +2014,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 243.84 248.9199 0)
+			(at 243.84 242.5699 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2444,7 +2026,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask3mm"
-			(at 241.3 247.65 0)
+			(at 241.3 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2455,7 +2037,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 247.65 0)
+			(at 241.3 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2466,51 +2048,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 241.3 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 241.3 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 241.3 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 241.3 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 241.3 247.65 0)
+			(at 241.3 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2531,7 +2069,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 175.26 240.03 0)
+		(at 175.26 241.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2541,7 +2079,7 @@
 		(dnp no)
 		(uuid "701cbfd0-af05-42fa-a2d4-17530a2367e3")
 		(property "Reference" "H102"
-			(at 175.26 236.728 0)
+			(at 175.26 237.998 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2552,7 +2090,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 177.8 240.03 0)
+			(at 177.8 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2564,7 +2102,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 175.26 240.03 0)
+			(at 175.26 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2575,7 +2113,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 240.03 0)
+			(at 175.26 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2586,95 +2124,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 175.26 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "-"
-			(at 175.26 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 175.26 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "-"
-			(at 175.26 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 175.26 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 175.26 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 175.26 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 175.26 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 175.26 240.03 0)
+			(at 175.26 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2698,7 +2148,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 322.58 238.76 0)
+		(at 297.18 242.57 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -2709,7 +2159,7 @@
 		(dnp no)
 		(uuid "74719751-033d-41ca-a890-a76e9e143961")
 		(property "Reference" "#PWR0104"
-			(at 322.58 245.11 0)
+			(at 297.18 248.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2720,7 +2170,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 322.58 242.57 0)
+			(at 297.18 246.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2731,7 +2181,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 322.58 238.76 0)
+			(at 297.18 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2742,7 +2192,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 322.58 238.76 0)
+			(at 297.18 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2753,7 +2203,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 322.58 238.76 0)
+			(at 297.18 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2777,7 +2227,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 228.6 247.65 0)
+		(at 228.6 241.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2787,7 +2237,7 @@
 		(dnp no)
 		(uuid "87581f6e-a7ba-407e-a652-1fbebd13a04c")
 		(property "Reference" "FID101"
-			(at 228.6 245.872 0)
+			(at 228.6 239.522 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2798,7 +2248,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 231.14 248.9199 0)
+			(at 231.14 242.5699 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2810,7 +2260,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask3mm"
-			(at 228.6 247.65 0)
+			(at 228.6 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2821,7 +2271,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 247.65 0)
+			(at 228.6 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2832,51 +2282,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 228.6 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 228.6 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 228.6 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 228.6 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 228.6 247.65 0)
+			(at 228.6 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2890,175 +2296,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
 					(reference "FID101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 317.5 228.6 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "915e05d1-e5c0-43c5-8a0d-3bd7a0a7b35e")
-		(property "Reference" "C101"
-			(at 314.96 222.504 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right top)
-			)
-		)
-		(property "Value" "0.047 µF"
-			(at 314.96 224.536 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right top)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 321.31 227.6348 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 317.5 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 317.5 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 317.5 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 317.5 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Size" "1206"
-			(at 314.96 226.06 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.7 0.7)
-				)
-				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 317.5 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 317.5 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 317.5 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 317.5 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 317.5 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "231bd5ce-d839-42d1-9aee-14601fe42a40")
-		)
-		(pin "1"
-			(uuid "4d9eafbd-02bb-4c06-ae4a-85ca90a4ec88")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "C101")
 					(unit 1)
 				)
 			)
@@ -3144,7 +2381,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 311.15 228.6 90)
+		(at 285.75 241.3 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -3155,7 +2392,7 @@
 		(dnp no)
 		(uuid "9e7d02a8-07a0-4b3c-abfd-4982e0e20f8e")
 		(property "Reference" "#FLG0101"
-			(at 309.245 228.6 0)
+			(at 283.845 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3166,7 +2403,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 307.975 228.6 0)
+			(at 282.575 241.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3176,7 +2413,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 311.15 228.6 0)
+			(at 285.75 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3187,7 +2424,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 311.15 228.6 0)
+			(at 285.75 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3198,7 +2435,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 311.15 228.6 0)
+			(at 285.75 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3222,7 +2459,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 187.96 245.11 0)
+		(at 187.96 246.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3232,7 +2469,7 @@
 		(dnp no)
 		(uuid "b3574920-8eaa-4237-b048-25a384fda3b9")
 		(property "Reference" "#PWR0101"
-			(at 187.96 250.19 0)
+			(at 187.96 251.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3243,7 +2480,7 @@
 			)
 		)
 		(property "Value" "CHASSIS"
-			(at 187.96 247.904 0)
+			(at 187.96 249.174 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3255,7 +2492,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 187.96 246.38 0)
+			(at 187.96 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3266,7 +2503,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.96 246.38 0)
+			(at 187.96 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3277,7 +2514,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 187.96 245.11 0)
+			(at 187.96 246.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3301,7 +2538,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 312.42 238.76 0)
+		(at 287.02 242.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3311,7 +2548,7 @@
 		(dnp no)
 		(uuid "c8844f57-ff11-4384-b85f-4a4bd0420f39")
 		(property "Reference" "#PWR0103"
-			(at 312.42 243.84 0)
+			(at 287.02 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3322,7 +2559,7 @@
 			)
 		)
 		(property "Value" "CHASSIS"
-			(at 312.42 241.554 0)
+			(at 287.02 245.364 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3333,7 +2570,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 312.42 240.03 0)
+			(at 287.02 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3344,7 +2581,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 312.42 240.03 0)
+			(at 287.02 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3355,7 +2592,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 312.42 238.76 0)
+			(at 287.02 242.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3379,7 +2616,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 254 247.65 0)
+		(at 254 241.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3389,7 +2626,7 @@
 		(dnp no)
 		(uuid "cc029735-4156-42eb-8513-6d4abdc50dad")
 		(property "Reference" "FID103"
-			(at 254 245.872 0)
+			(at 254 239.522 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3400,7 +2637,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 256.54 248.9199 0)
+			(at 256.54 242.5699 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3412,7 +2649,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask3mm"
-			(at 254 247.65 0)
+			(at 254 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3423,7 +2660,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 247.65 0)
+			(at 254 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3434,51 +2671,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 254 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 254 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 254 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 254 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 254 247.65 0)
+			(at 254 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3499,7 +2692,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 317.5 237.49 90)
+		(at 292.1 241.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3509,7 +2702,7 @@
 		(dnp no)
 		(uuid "d9dda72a-aec7-4cfb-80ce-4f66711689c0")
 		(property "Reference" "R101"
-			(at 314.96 233.426 90)
+			(at 289.56 237.236 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3520,7 +2713,7 @@
 			)
 		)
 		(property "Value" "0 Ω"
-			(at 314.96 234.95 90)
+			(at 289.56 238.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3531,7 +2724,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 317.5 239.268 90)
+			(at 292.1 243.078 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3541,8 +2734,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
-			(at 317.5 237.49 0)
+		(property "Datasheet" ""
+			(at 292.1 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3552,30 +2745,8 @@
 				)
 			)
 		)
-		(property "Description" "0 Ohms Jumper Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200 Thick Film"
-			(at 317.5 237.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RMCF1206ZT0R00"
-			(at 317.5 237.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Stackpole Electronics Inc"
-			(at 317.5 237.49 0)
+		(property "Description" "0Ω Thick Film Resistor 1206"
+			(at 292.1 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3586,7 +2757,7 @@
 			)
 		)
 		(property "Size" "1206"
-			(at 314.96 236.22 90)
+			(at 289.56 240.03 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3594,61 +2765,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" "RMCF1206ZT0R00CT-ND"
-			(at 317.5 237.49 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 317.5 237.49 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 317.5 237.49 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 317.5 237.49 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 317.5 237.49 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -3668,7 +2784,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 181.61 240.03 0)
+		(at 181.61 241.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3678,7 +2794,7 @@
 		(dnp no)
 		(uuid "e64f6084-e950-4b3e-b4b3-d057eb9b5b4e")
 		(property "Reference" "H103"
-			(at 181.61 236.728 0)
+			(at 181.61 237.998 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3689,7 +2805,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 184.15 240.03 0)
+			(at 184.15 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3701,7 +2817,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 181.61 240.03 0)
+			(at 181.61 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3712,7 +2828,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 240.03 0)
+			(at 181.61 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3723,95 +2839,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 181.61 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "-"
-			(at 181.61 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 181.61 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "-"
-			(at 181.61 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 181.61 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 181.61 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 181.61 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 181.61 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 181.61 240.03 0)
+			(at 181.61 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

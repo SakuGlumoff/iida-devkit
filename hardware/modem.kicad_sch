@@ -165,6 +165,161 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Polarized"
 			(pin_numbers
 				(hide yes)
@@ -325,6 +480,184 @@
 					(at 0 -3.81 90)
 					(length 2.794)
 					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -526,328 +859,6 @@
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:L_Ferrite"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "L"
-				(at -1.27 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L_Ferrite"
-				(at 2.794 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Inductor with ferrite core"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "L_Ferrite_0_1"
-				(arc
-					(start 0 2.54)
-					(mid 0.6323 1.905)
-					(end 0 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 -0.635)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -1.905)
-					(end 0 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 2.286) (xy 1.016 2.794)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 1.27) (xy 1.016 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0.254) (xy 1.016 0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -0.762) (xy 1.016 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -1.778) (xy 1.016 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -2.794) (xy 1.016 -2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 2.794) (xy 1.524 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 1.778) (xy 1.524 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 0.762) (xy 1.524 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 -0.254) (xy 1.524 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 -1.27) (xy 1.524 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 -2.286) (xy 1.524 -2.794)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_Ferrite_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10288,7 +10299,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "33 pF 1% 50V MLCC C0G 0402 (1005 Metric)"
 			(at 326.39 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -10299,18 +10310,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
-			(at 326.39 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage rating" "16 V"
+		(property "Voltage rating" "50 V"
 			(at 323.596 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10321,7 +10321,7 @@
 				(justify left)
 			)
 		)
-		(property "Tolerance" "20 %"
+		(property "Tolerance" "1 %"
 			(at 323.596 191.516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10332,7 +10332,7 @@
 				(justify left)
 			)
 		)
-		(property "Temperature coefficient" "X5R"
+		(property "Temperature coefficient" "C0G"
 			(at 323.596 192.532 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10352,61 +10352,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 326.39 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 326.39 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 326.39 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 326.39 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 326.39 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -10469,7 +10414,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/BSS806N_Rev2.3_.pdf?folderId=db3a3043156fd573011622e10b5c1f67&fileId=db3a304330f686060131185f0553451c"
+		(property "Datasheet" ""
 			(at 276.86 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -10480,106 +10425,7 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 276.86 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "BSS806NH6327XTSA1CT-ND"
-			(at 276.86 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "BSS806NH6327XTSA1"
-			(at 276.86 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Infineon Technologies"
-			(at 276.86 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 276.86 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 276.86 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 276.86 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 276.86 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 276.86 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
+		(property "Description" "BSS806NH SOT-23"
 			(at 276.86 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -10663,85 +10509,8 @@
 				)
 			)
 		)
-		(property "Description" "Ultra-Compact LTE Cat M1/ NB1/ NB2 Module"
+		(property "Description" "BG770AGLAA-N06-SGNSA"
 			(at 209.55 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Quectel"
-			(at 209.55 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "BG77"
-			(at 209.55 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digi-Key Part Number" "2958-BG770AGLAA-N06-SGNSATR-ND"
-			(at 209.55 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 209.55 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 209.55 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 209.55 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 209.55 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11099,18 +10868,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 114.3 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
+		(property "Description" "0.1 µF 20% 16V MLCC X5R 0402 (1005 Metric)"
 			(at 114.3 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -11163,61 +10921,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 114.3 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 114.3 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 114.3 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 114.3 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 114.3 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -11291,29 +10994,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 354.33 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 354.33 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "180kΩ Resistor 1% 0.1W 0402"
 			(at 354.33 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -11355,50 +11036,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Class" ""
-			(at 354.33 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 354.33 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 354.33 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 354.33 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -11539,7 +11176,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/BSS806N_Rev2.3_.pdf?folderId=db3a3043156fd573011622e10b5c1f67&fileId=db3a304330f686060131185f0553451c"
+		(property "Datasheet" ""
 			(at 48.26 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -11550,106 +11187,7 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 48.26 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "BSS806NH6327XTSA1CT-ND"
-			(at 48.26 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "BSS806NH6327XTSA1"
-			(at 48.26 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Infineon Technologies"
-			(at 48.26 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 48.26 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 48.26 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 48.26 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 48.26 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 48.26 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
+		(property "Description" "BSS806NH SOT-23"
 			(at 48.26 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -11735,18 +11273,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 129.54 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
+		(property "Description" "10000 pF 20% 16V MLCC X5R 0402 (1005 Metric)"
 			(at 129.54 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -11799,61 +11326,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 129.54 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 129.54 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 129.54 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 129.54 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 129.54 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -12005,29 +11477,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 292.1 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "560112110231"
-			(at 292.1 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Description" "330Ω Resistor 1% 0.1W 0402"
 			(at 292.1 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -12069,61 +11519,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" "732-560112110231CT-ND"
-			(at 292.1 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 292.1 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 292.1 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 292.1 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 292.1 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -12255,7 +11650,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.9"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x3"
 			(at 75.2348 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -12277,7 +11672,7 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "100 µF SMD aluminum electrolytic 20% 25 V D6.3mm"
 			(at 76.2 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -12288,18 +11683,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
-			(at 76.2 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage rating" "16 V"
+		(property "Voltage rating" "25 V"
 			(at 73.406 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12341,61 +11725,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 76.2 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 76.2 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 76.2 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 76.2 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 76.2 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -12458,7 +11787,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DT1240A-08LP3810.pdf"
+		(property "Datasheet" ""
 			(at 326.39 197.866 0)
 			(hide yes)
 			(show_name no)
@@ -12469,7 +11798,7 @@
 				)
 			)
 		)
-		(property "Description" "10V Clamp 5.5A (8/20µs) Ipp Tvs Diode Surface Mount U-DFN3810-9 (Type B)"
+		(property "Description" "DT1240A-08LP3810-7"
 			(at 358.394 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -12490,83 +11819,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Digi-Key Part Number" "DT1240A-08LP3810-7DICT-ND"
-			(at 360.68 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "DT1240A-08LP3810-7"
-			(at 360.68 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 360.68 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 360.68 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 360.68 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 360.68 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 360.68 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "4"
@@ -12662,7 +11914,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "100 pF 5% 50V MLCC C0G 0402 (1005 Metric)"
 			(at 142.24 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -12673,18 +11925,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
-			(at 142.24 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage rating" "16 V"
+		(property "Voltage rating" "50 V"
 			(at 139.446 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12695,7 +11936,7 @@
 				(justify left)
 			)
 		)
-		(property "Tolerance" "20 %"
+		(property "Tolerance" "5 %"
 			(at 139.446 73.406 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12706,7 +11947,7 @@
 				(justify left)
 			)
 		)
-		(property "Temperature coefficient" "X5R"
+		(property "Temperature coefficient" "C0G"
 			(at 139.446 74.422 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12726,61 +11967,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 142.24 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 142.24 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 142.24 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 142.24 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 142.24 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -12854,29 +12040,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 107.95 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 107.95 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "180kΩ Resistor 1% 0.1W 0402"
 			(at 107.95 233.68 0)
 			(hide yes)
 			(show_name no)
@@ -12918,50 +12082,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Class" ""
-			(at 107.95 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 107.95 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 107.95 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 107.95 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -13036,7 +12156,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "33 pF 1% 50V MLCC C0G 0402 (1005 Metric)"
 			(at 314.96 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -13047,18 +12167,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
-			(at 314.96 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage rating" "16 V"
+		(property "Voltage rating" "50 V"
 			(at 312.166 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13069,7 +12178,7 @@
 				(justify left)
 			)
 		)
-		(property "Tolerance" "20 %"
+		(property "Tolerance" "1 %"
 			(at 312.166 191.516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13080,7 +12189,7 @@
 				(justify left)
 			)
 		)
-		(property "Temperature coefficient" "X5R"
+		(property "Temperature coefficient" "C0G"
 			(at 312.166 192.532 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13100,61 +12209,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 314.96 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 314.96 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 314.96 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 314.96 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 314.96 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -13296,7 +12350,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/150060RS75000.pdf"
+		(property "Datasheet" ""
 			(at 304.8 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -13307,41 +12361,8 @@
 				)
 			)
 		)
-		(property "Description" "Red 625nm LED Indication - Discrete 2V 0603 (1608 Metric)"
+		(property "Description" "Red LED 2V 0603 (1608 Metric)"
 			(at 304.8 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "150060RS75000"
-			(at 304.8 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 304.8 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digi-Key Part Number" "732-4978-1-ND"
-			(at 304.8 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13360,50 +12381,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Class" ""
-			(at 304.8 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 304.8 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 304.8 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 304.8 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -13623,7 +12600,7 @@
 				(justify top)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6657/sim8066.pdf"
+		(property "Datasheet" ""
 			(at 386.08 188.468 0)
 			(hide yes)
 			(show_name no)
@@ -13635,7 +12612,7 @@
 				(justify top)
 			)
 		)
-		(property "Description" "7 (6 + 1) Position Card Connector NANO SIM Surface Mount, Right Angle Gold"
+		(property "Description" "SIM8066-6-1-14-01-A"
 			(at 386.08 188.468 0)
 			(hide yes)
 			(show_name no)
@@ -13645,96 +12622,6 @@
 					(size 1.27 1.27)
 				)
 				(justify top)
-			)
-		)
-		(property "DigiKey Part Number" "2073-SIM8066-6-1-14-01-ACT-ND"
-			(at 386.08 188.468 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify top)
-			)
-		)
-		(property "Manufacturer" "GCT"
-			(at 386.08 188.468 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify top)
-			)
-		)
-		(property "MPN" "SIM8066-6-1-14-01-A"
-			(at 386.08 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 386.08 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 386.08 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 386.08 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 386.08 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 386.08 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "G2"
@@ -13834,29 +12721,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 266.7 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "560112110231"
-			(at 266.7 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Description" "330Ω Resistor 1% 0.1W 0402"
 			(at 266.7 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -13898,61 +12763,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" "732-560112110231CT-ND"
-			(at 266.7 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 266.7 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 266.7 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 266.7 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 266.7 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -14026,29 +12836,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 341.63 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 341.63 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "180kΩ Resistor 1% 0.1W 0402"
 			(at 341.63 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -14090,50 +12878,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Class" ""
-			(at 341.63 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 341.63 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 341.63 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 341.63 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -14206,29 +12950,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 133.35 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 133.35 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "180kΩ Resistor 1% 0.1W 0402"
 			(at 133.35 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -14270,50 +12992,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Class" ""
-			(at 133.35 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 133.35 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 133.35 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 133.35 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -14376,7 +13054,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/BSS806N_Rev2.3_.pdf?folderId=db3a3043156fd573011622e10b5c1f67&fileId=db3a304330f686060131185f0553451c"
+		(property "Datasheet" ""
 			(at 60.96 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -14387,106 +13065,7 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 60.96 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "BSS806NH6327XTSA1CT-ND"
-			(at 60.96 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "BSS806NH6327XTSA1"
-			(at 60.96 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Infineon Technologies"
-			(at 60.96 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 60.96 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 60.96 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 60.96 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 60.96 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 60.96 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
+		(property "Description" "BSS806NH SOT-23"
 			(at 60.96 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -14570,29 +13149,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 247.65 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 247.65 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "22Ω Resistor 1% 0.1W 0402"
 			(at 247.65 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -14634,61 +13191,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 247.65 175.26 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 247.65 175.26 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 247.65 175.26 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 247.65 175.26 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 247.65 175.26 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -14762,29 +13264,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 31.75 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 31.75 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "180kΩ Resistor 1% 0.1W 0402"
 			(at 31.75 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -14828,50 +13308,6 @@
 				(justify left)
 			)
 		)
-		(property "Class" ""
-			(at 31.75 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 31.75 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 31.75 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 31.75 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "439eeebd-0b14-4f78-a6f0-ab967723f782")
 		)
@@ -14888,7 +13324,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L_Ferrite")
+		(lib_id "Device:L")
 		(at 82.55 55.88 90)
 		(unit 1)
 		(body_style 1)
@@ -14899,7 +13335,7 @@
 		(dnp no)
 		(uuid "5b894029-29da-4911-9eb3-d117c9e005f9")
 		(property "Reference" "FB501"
-			(at 79.756 46.99 90)
+			(at 80.01 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14909,8 +13345,8 @@
 				(justify right top)
 			)
 		)
-		(property "Value" "??????????????????"
-			(at 79.756 48.768 90)
+		(property "Value" "BLM21BB201SH1D"
+			(at 80.01 50.038 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14942,7 +13378,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Inductor"
 			(at 82.55 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -14953,41 +13389,8 @@
 				)
 			)
 		)
-		(property "Digi-Key Part Number" ""
-			(at 82.55 55.88 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 82.55 55.88 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 82.55 55.88 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Current rating" "600 mA"
-			(at 79.756 51.816 90)
+			(at 80.01 53.086 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14998,7 +13401,7 @@
 			)
 		)
 		(property "Impedance" "800 Ω @ 700 - 960 MHz"
-			(at 79.756 50.292 90)
+			(at 80.01 51.562 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15009,7 +13412,7 @@
 			)
 		)
 		(property "Size" "0805"
-			(at 79.756 53.34 90)
+			(at 80.01 54.61 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15017,50 +13420,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Class" ""
-			(at 82.55 55.88 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 82.55 55.88 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 82.55 55.88 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 82.55 55.88 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -15134,29 +13493,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 44.45 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 44.45 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "180kΩ Resistor 1% 0.1W 0402"
 			(at 44.45 233.68 0)
 			(hide yes)
 			(show_name no)
@@ -15198,50 +13535,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Class" ""
-			(at 44.45 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 44.45 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 44.45 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 44.45 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -15314,29 +13607,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 260.35 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 260.35 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "180kΩ Resistor 1% 0.1W 0402"
 			(at 260.35 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -15378,50 +13649,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Class" ""
-			(at 260.35 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 260.35 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 260.35 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 260.35 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -15494,29 +13721,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 247.65 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 247.65 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "22Ω Resistor 1% 0.1W 0402"
 			(at 247.65 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -15558,61 +13763,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 247.65 177.8 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 247.65 177.8 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 247.65 177.8 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 247.65 177.8 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 247.65 177.8 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -15687,18 +13837,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 101.6 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
+		(property "Description" "1 µF 20% 16V MLCC X5R 0402 (1005 Metric)"
 			(at 101.6 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -15751,61 +13890,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 101.6 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 101.6 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 101.6 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 101.6 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 101.6 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -15878,29 +13962,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 247.65 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 247.65 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "22Ω Resistor 1% 0.1W 0402"
 			(at 247.65 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -15942,61 +14004,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 247.65 172.72 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 247.65 172.72 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 247.65 172.72 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 247.65 172.72 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 247.65 172.72 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -16070,18 +14077,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 133.35 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
+		(property "Description" "1 µF 20% 16V MLCC X5R 0402 (1005 Metric)"
 			(at 133.35 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -16134,61 +14130,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 133.35 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 133.35 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 133.35 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 133.35 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 133.35 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -16262,52 +14203,8 @@
 				)
 			)
 		)
-		(property "Description" "8-Bit Bi-Directional, Level-Shifting, Voltage Translator for Open-Drain and Push-Pull Applications"
+		(property "Description" "TXS0108E VQFN-20-EP(3.7x4.7)"
 			(at 101.6 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 101.6 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 101.6 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 101.6 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 101.6 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16469,198 +14366,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
-		(lib_id "Device:C")
-		(at 168.91 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "73f1ffb4-f8f7-408d-aa29-87f9557b7f04")
-		(property "Reference" "C509"
-			(at 171.45 101.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.01 µF"
-			(at 171.45 103.378 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "perfect_footprints:C_0402_1005Metric"
-			(at 169.8752 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 168.91 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 168.91 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage rating" "16 V"
-			(at 171.704 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.7 0.7)
-				)
-				(justify left)
-			)
-		)
-		(property "Tolerance" "20 %"
-			(at 171.704 106.426 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.7 0.7)
-				)
-				(justify left)
-			)
-		)
-		(property "Temperature coefficient" "X5R"
-			(at 171.704 107.442 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.7 0.7)
-				)
-				(justify left)
-			)
-		)
-		(property "Size" "0402"
-			(at 171.704 108.458 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.7 0.7)
-				)
-				(justify left)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 168.91 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 168.91 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 168.91 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 168.91 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 168.91 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "593ca118-e35f-4c18-b527-1e2a6ecc88b8")
-		)
-		(pin "1"
-			(uuid "d087821a-414e-4a50-b1ab-52bcc9793996")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "C509")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 68.58 152.4 90)
 		(unit 1)
@@ -16715,29 +14420,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 68.58 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 68.58 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "22Ω Resistor 1% 0.1W 0402"
 			(at 68.58 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -16779,61 +14462,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 68.58 152.4 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 68.58 152.4 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 68.58 152.4 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 68.58 152.4 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 68.58 152.4 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -17066,29 +14694,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 50.8 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "560112110231"
-			(at 50.8 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Description" "330Ω Resistor 1% 0.1W 0402"
 			(at 50.8 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -17130,61 +14736,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" "732-560112110231CT-ND"
-			(at 50.8 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 50.8 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 50.8 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 50.8 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 50.8 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -17257,29 +14808,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 68.58 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 68.58 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "22Ω Resistor 1% 0.1W 0402"
 			(at 68.58 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -17321,61 +14850,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 68.58 160.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 68.58 160.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 68.58 160.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 68.58 160.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 68.58 160.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -17518,7 +14992,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/BSS806N_Rev2.3_.pdf?folderId=db3a3043156fd573011622e10b5c1f67&fileId=db3a304330f686060131185f0553451c"
+		(property "Datasheet" ""
 			(at 302.26 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -17529,106 +15003,7 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 302.26 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "BSS806NH6327XTSA1CT-ND"
-			(at 302.26 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "BSS806NH6327XTSA1"
-			(at 302.26 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Infineon Technologies"
-			(at 302.26 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 302.26 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 302.26 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 302.26 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 302.26 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 302.26 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
+		(property "Description" "BSS806NH SOT-23"
 			(at 302.26 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -17792,29 +15167,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 31.75 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 31.75 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "180kΩ Resistor 1% 0.1W 0402"
 			(at 31.75 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -17856,50 +15209,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Class" ""
-			(at 31.75 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 31.75 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 31.75 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 31.75 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -17972,29 +15281,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 68.58 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 68.58 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "22Ω Resistor 1% 0.1W 0402"
 			(at 68.58 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -18036,61 +15323,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 68.58 147.32 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 68.58 147.32 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 68.58 147.32 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 68.58 147.32 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 68.58 147.32 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -18164,29 +15396,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 50.8 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 50.8 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "330Ω Resistor 1% 0.1W 0402"
 			(at 50.8 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -18230,50 +15440,6 @@
 				(justify left)
 			)
 		)
-		(property "Class" ""
-			(at 50.8 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 50.8 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 50.8 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 50.8 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "1a067963-4aed-4260-a304-2f6c2fb9568b")
 		)
@@ -18284,6 +15450,132 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
 					(reference "R507")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 88.9 71.12 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a19e0155-f664-40da-a4e7-e5765ec31438")
+		(property "Reference" "C503"
+			(at 86.36 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22 µF"
+			(at 86.36 70.358 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 87.9348 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22 µF 20% 16V MLCC X5R 0603 (1608 Metric)"
+			(at 88.9 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage rating" "16 V"
+			(at 86.106 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "20 %"
+			(at 86.106 73.406 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Temperature coefficient" "X5R"
+			(at 86.106 74.422 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0603"
+			(at 86.106 75.438 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "760db2f9-6484-4591-8a3a-bebc0298f036")
+		)
+		(pin "1"
+			(uuid "7ca19f19-9d4e-4d92-834b-23030d362c5e")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
+					(reference "C503")
 					(unit 1)
 				)
 			)
@@ -18344,29 +15636,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 38.1 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 38.1 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "0Ω Resistor 0805"
 			(at 38.1 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -18386,61 +15656,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 38.1 160.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 38.1 160.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 38.1 160.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 38.1 160.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 38.1 160.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -18672,29 +15887,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 114.3 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "560112110231"
-			(at 114.3 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Description" "330Ω Resistor 1% 0.1W 0402"
 			(at 114.3 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -18736,61 +15929,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" "732-560112110231CT-ND"
-			(at 114.3 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 114.3 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 114.3 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 114.3 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 114.3 228.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -19020,29 +16158,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 285.75 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 285.75 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "180kΩ Resistor 1% 0.1W 0402"
 			(at 285.75 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -19084,50 +16200,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Class" ""
-			(at 285.75 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 285.75 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 285.75 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 285.75 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -19202,18 +16274,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 292.1 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
+		(property "Description" "1 µF 20% 16V MLCC X5R 0402 (1005 Metric)"
 			(at 292.1 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -19266,61 +16327,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 292.1 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 292.1 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 292.1 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 292.1 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 292.1 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -19383,7 +16389,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/150060RS75000.pdf"
+		(property "Datasheet" ""
 			(at 279.4 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -19394,41 +16400,8 @@
 				)
 			)
 		)
-		(property "Description" "Red 625nm LED Indication - Discrete 2V 0603 (1608 Metric)"
+		(property "Description" "Red LED 2V 0603 (1608 Metric)"
 			(at 279.4 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "150060RS75000"
-			(at 279.4 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 279.4 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digi-Key Part Number" "732-4978-1-ND"
-			(at 279.4 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19447,50 +16420,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Class" ""
-			(at 279.4 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 279.4 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 279.4 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 279.4 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -19563,29 +16492,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 68.58 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 68.58 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "22Ω Resistor 1% 0.1W 0402"
 			(at 68.58 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -19627,61 +16534,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 68.58 149.86 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 68.58 149.86 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 68.58 149.86 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 68.58 149.86 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 68.58 149.86 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -19756,18 +16608,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 76.2 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
+		(property "Description" "1 µF 20% 16V MLCC X5R 0402 (1005 Metric)"
 			(at 76.2 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -19820,61 +16661,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 76.2 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 76.2 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 76.2 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 76.2 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 76.2 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -19947,29 +16733,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 279.4 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 279.4 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "2.2kΩ Resistor 1% 0.1W 0402"
 			(at 279.4 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -20011,50 +16775,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Class" ""
-			(at 279.4 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 279.4 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 279.4 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 279.4 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -20127,29 +16847,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 38.1 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "560112110231"
-			(at 38.1 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Description" "330Ω Resistor 1% 0.1W 0402"
 			(at 38.1 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -20191,61 +16889,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" "732-560112110231CT-ND"
-			(at 38.1 81.28 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 38.1 81.28 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 38.1 81.28 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 38.1 81.28 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 38.1 81.28 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -20397,29 +17040,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 304.8 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 304.8 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "2.2kΩ Resistor 1% 0.1W 0402"
 			(at 304.8 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -20463,50 +17084,6 @@
 				(justify left)
 			)
 		)
-		(property "Class" ""
-			(at 304.8 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 304.8 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 304.8 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 304.8 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "a928149b-730d-42d8-8952-9dac9ad76331")
 		)
@@ -20545,7 +17122,7 @@
 				(justify top)
 			)
 		)
-		(property "Value" "IRLML6401TRPBF"
+		(property "Value" "IRLML6401"
 			(at 50.8 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20567,7 +17144,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMG2305UX.pdf"
+		(property "Datasheet" ""
 			(at 50.8 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -20578,107 +17155,8 @@
 				)
 			)
 		)
-		(property "Description" "P-MOSFET transistor, gate/source/drain"
+		(property "Description" "IRLML6401 SOT-23"
 			(at 50.8 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "IRLML6401PBFCT-ND"
-			(at 50.8 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "IRLML6401TRPBF"
-			(at 50.8 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Infineon Technologies"
-			(at 50.8 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 50.8 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 50.8 58.42 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 50.8 58.42 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 50.8 58.42 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 50.8 58.42 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 50.8 58.42 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20763,7 +17241,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "33 pF 1% 50V MLCC C0G 0402 (1005 Metric)"
 			(at 303.53 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -20774,18 +17252,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
-			(at 303.53 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage rating" "16 V"
+		(property "Voltage rating" "50 V"
 			(at 300.736 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20796,7 +17263,7 @@
 				(justify left)
 			)
 		)
-		(property "Tolerance" "20 %"
+		(property "Tolerance" "1 %"
 			(at 300.736 191.516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20807,7 +17274,7 @@
 				(justify left)
 			)
 		)
-		(property "Temperature coefficient" "X5R"
+		(property "Temperature coefficient" "C0G"
 			(at 300.736 192.532 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20827,61 +17294,6 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 303.53 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 303.53 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 303.53 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 303.53 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 303.53 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -20981,7 +17393,7 @@
 	(symbol
 		(lib_name "C_1")
 		(lib_id "Device:C")
-		(at 88.9 71.12 0)
+		(at 168.91 104.14 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -20990,9 +17402,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f7a8e4c9-9315-4421-b28e-5972dc57748d")
-		(property "Reference" "C503"
-			(at 86.36 68.58 0)
+		(uuid "f6c09b8b-9517-4a48-a0af-8e4a1e1d4830")
+		(property "Reference" "C509"
+			(at 166.37 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21002,8 +17414,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10 µF"
-			(at 86.36 70.358 0)
+		(property "Value" "10000 pF"
+			(at 166.37 103.378 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21014,7 +17426,7 @@
 			)
 		)
 		(property "Footprint" "perfect_footprints:C_0402_1005Metric"
-			(at 87.9348 74.93 0)
+			(at 167.9448 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21025,7 +17437,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 71.12 0)
+			(at 168.91 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21035,19 +17447,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 88.9 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 88.9 71.12 0)
+		(property "Description" "10000 pF 20% 16V MLCC X5R 0402 (1005 Metric)"
+			(at 168.91 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21058,7 +17459,7 @@
 			)
 		)
 		(property "Voltage rating" "16 V"
-			(at 86.106 72.39 0)
+			(at 166.116 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21069,7 +17470,7 @@
 			)
 		)
 		(property "Tolerance" "20 %"
-			(at 86.106 73.406 0)
+			(at 166.116 106.426 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21080,7 +17481,7 @@
 			)
 		)
 		(property "Temperature coefficient" "X5R"
-			(at 86.106 74.422 0)
+			(at 166.116 107.442 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21091,7 +17492,7 @@
 			)
 		)
 		(property "Size" "0402"
-			(at 86.106 75.438 0)
+			(at 166.116 108.458 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21101,71 +17502,16 @@
 				(justify left)
 			)
 		)
-		(property "Digi-Key Part Number" ""
-			(at 88.9 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 88.9 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 88.9 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 88.9 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 88.9 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
-			(uuid "2f065fca-ceb1-4a90-b3f9-b04cceea0688")
+			(uuid "074f6664-882b-462d-903e-d1c725026643")
 		)
 		(pin "1"
-			(uuid "1d5d0af8-801b-4f79-853f-e324cb883b93")
+			(uuid "2a89ce0b-ff9d-4ead-b32b-9bd7e70196c9")
 		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "C503")
+					(reference "C509")
 					(unit 1)
 				)
 			)
@@ -21227,29 +17573,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 38.1 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 38.1 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "Description" "0Ω Resistor 0805"
 			(at 38.1 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -21269,61 +17593,6 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
-			)
-		)
-		(property "Digi-Key Part Number" ""
-			(at 38.1 162.56 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 38.1 162.56 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 38.1 162.56 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 38.1 162.56 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 38.1 162.56 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -21386,7 +17655,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/BSS806N_Rev2.3_.pdf?folderId=db3a3043156fd573011622e10b5c1f67&fileId=db3a304330f686060131185f0553451c"
+		(property "Datasheet" ""
 			(at 124.46 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -21397,106 +17666,7 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 124.46 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "BSS806NH6327XTSA1CT-ND"
-			(at 124.46 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "BSS806NH6327XTSA1"
-			(at 124.46 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Infineon Technologies"
-			(at 124.46 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint review check" "+"
-			(at 124.46 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" ""
-			(at 124.46 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Class" ""
-			(at 124.46 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DCR" ""
-			(at 124.46 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Saturation Current" ""
-			(at 124.46 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
+		(property "Description" "BSS806NH SOT-23"
 			(at 124.46 228.6 0)
 			(hide yes)
 			(show_name no)
