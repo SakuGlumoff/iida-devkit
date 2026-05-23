@@ -1,0 +1,34 @@
+name: Hardware verification
+
+on:
+  push:
+    paths:
+      - 'hardware/**'
+    branches:
+      - trunk
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: [self-hosted, docker]
+    container:
+      image: kicad/kicad:10.0
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          submodules: true
+      - name: Install fonts
+        run: |
+              sudo chmod 644 fonts/courier_new.ttf
+              sudo mv fonts/courier_new.ttf /usr/local/share/fonts
+              fc-cache
+      - name: Generate PDF
+        run: kicad-cli sch export pdf --output iida-devkit.pdf --default-font "Courier New" hardware/iida_devkit.kicad_sch
+      - name: Archive schematics
+        uses: actions/upload-artifact@v7
+        with:
+          name: schematics
+          path: iida-devkit.pdf
+          if-no-files-found: error
+          archive: false

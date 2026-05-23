@@ -49,22 +49,26 @@ jobs:
   build_hw:
     runs-on: [self-hosted, docker]
     container:
-      image: kicad/kicad:9.0
+      image: kicad/kicad:10.0
     steps:
       - name: Checkout
         uses: actions/checkout@v5
         with:
           submodules: true
-      - name: Export HW design files
+      - name: Install fonts
         run: |
-          mkdir hardware/manufacturing
-          kicad-cli sch export pdf --output iida_devkit.pdf hardware/iida_devkit.kicad_sch
-      - name: Archive HW design files
-        uses: actions/upload-artifact@v4
+              sudo chmod 644 fonts/courier_new.ttf
+              sudo mv fonts/courier_new.ttf /usr/local/share/fonts
+              fc-cache
+      - name: Generate PDF
+        run: kicad-cli sch export pdf --output iida-devkit.pdf --default-font "Courier New" hardware/iida_devkit.kicad_sch
+      - name: Archive schematics
+        uses: actions/upload-artifact@v7
         with:
-          name: hardware
-          path: iida_devkit.pdf
+          name: schematics
+          path: iida-devkit.pdf
           if-no-files-found: error
+          archive: false
   release:
     needs: [build_Fw, build_hw]
     runs-on: ubuntu-latest
