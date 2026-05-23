@@ -1130,7 +1130,7 @@
 		(uuid "18edcd6d-24ba-484f-9880-f10349278ac5")
 	)
 	(rectangle
-		(start 12.7 77.47)
+		(start 12.7 76.2)
 		(end 146.05 251.46)
 		(stroke
 			(width 0)
@@ -1167,7 +1167,7 @@
 	)
 	(rectangle
 		(start 12.7 38.1)
-		(end 146.05 77.47)
+		(end 146.05 76.2)
 		(stroke
 			(width 0)
 			(type default)
@@ -1177,15 +1177,15 @@
 		)
 		(uuid "f2412626-d667-44f6-8710-04ee76a218c5")
 	)
-	(text "7. Antennas"
+	(text "6. Antennas"
 		(exclude_from_sim no)
-		(at 16.51 73.66 0)
+		(at 16.51 69.85 0)
 		(effects
 			(font
 				(size 2.54 2.54)
 			)
 			(justify left)
-			(href "#7")
+			(href "#6")
 		)
 		(uuid "115b7ae0-51d9-44ea-9afe-860f67af375c")
 	)
@@ -1287,7 +1287,7 @@
 	)
 	(text "Description"
 		(exclude_from_sim no)
-		(at 13.97 80.01 0)
+		(at 13.97 78.74 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -1372,18 +1372,6 @@
 		)
 		(uuid "d3599084-73fb-4721-a2b4-e017d0ca05bc")
 	)
-	(text "6. SIM"
-		(exclude_from_sim no)
-		(at 16.51 69.85 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left)
-			(href "#6")
-		)
-		(uuid "e59ff292-5bcf-432b-aaa5-07b57e4a5f7c")
-	)
 	(text "Place a stitched ground guard rail along the edges of the PCB\nto provide a grounding point for human contact when handling the device."
 		(exclude_from_sim no)
 		(at 218.44 224.79 0)
@@ -1411,8 +1399,8 @@
 	)
 	(text_box "This project serves as a practice exercise in PCB design and embedded programming.\nThe result is a device that can be powered either by a battery or via a USB connection.\nThe device is capable of recharging the battery through the USB interface.\n\nKey features of the device include:\n- Sample sensors for temperature and humidity\n- External flash memory to support firmware-over-the-air (FOTA) updates\n- A modem module that connects the main microcontroller to the internet via LTE CAT-M1\n- Support for both an external antenna and an integrated antenna\n\nA primary objective of this project is to minimize reliance on totalitarian states (e.g., China or Russia), on countries that support such states (e.g., India), and on countries that may be hostile (e.g., the United States).\nComponent sourcing should prioritize manufacturers that do not produce components in such countries.\nPreference should be given to suppliers and manufacturers based in democratic nations, such as Taiwan and Germany.\nTo help reduce environmental impact, both manufacturing and component sourcing are focused around Europe.\n\nRecommended manufacturers: Aisler (Germany), Multi CB (Germany), Aspocomp (Finland)\n\nRecommended component manufacturers: Würth Elektronik (Germany), Infineon Technologies (Germany), STMicroelectronics (Italy)\n\nRecommended distributors: TME (Poland), RS Components (UK), Farnell (UK)"
 		(exclude_from_sim no)
-		(at 15.24 90.17 0)
-		(size 129.54 160.0199)
+		(at 15.24 88.9 0)
+		(size 129.54 161.2899)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width -0.0001)
@@ -1521,7 +1509,7 @@
 	)
 	(wire
 		(pts
-			(xy 311.15 107.95) (xy 318.77 107.95)
+			(xy 311.15 125.73) (xy 317.5 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1671,16 +1659,6 @@
 	)
 	(wire
 		(pts
-			(xy 311.15 118.11) (xy 318.77 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "552daee0-c66c-4cf3-b3dc-8431116c4d57")
-	)
-	(wire
-		(pts
 			(xy 279.4 105.41) (xy 279.4 92.71)
 		)
 		(stroke
@@ -1801,16 +1779,6 @@
 	)
 	(wire
 		(pts
-			(xy 311.15 125.73) (xy 318.77 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "926a222c-8e3b-49df-95bd-cf1f0d06871f")
-	)
-	(wire
-		(pts
 			(xy 279.4 92.71) (xy 276.86 92.71)
 		)
 		(stroke
@@ -1881,16 +1849,6 @@
 	)
 	(wire
 		(pts
-			(xy 311.15 120.65) (xy 318.77 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab297e9d-869e-4813-b557-d8ee1d508f81")
-	)
-	(wire
-		(pts
 			(xy 168.91 243.84) (xy 168.91 242.57)
 		)
 		(stroke
@@ -1948,16 +1906,6 @@
 			(type default)
 		)
 		(uuid "cfa10933-25a5-450f-a9df-2e1674feb9ed")
-	)
-	(bus
-		(pts
-			(xy 311.15 123.19) (xy 318.77 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5886aa5-338b-43a1-96c9-103ac63af818")
 	)
 	(wire
 		(pts
@@ -3490,92 +3438,6 @@
 		)
 	)
 	(sheet
-		(at 318.77 115.57)
-		(size 17.78 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0.1524)
-			(type solid)
-			(color 0 0 0 1)
-		)
-		(fill
-			(color 0 255 0 1)
-		)
-		(uuid "33580d9f-a609-4568-baaf-9a29cf2dabcd")
-		(property "Sheetname" "SIM"
-			(at 318.77 113.284 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "sim.kicad_sch"
-			(at 318.77 115.316 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(pin "SIM_DET" output
-			(at 318.77 125.73 180)
-			(uuid "7ef84c29-2b9d-4cf6-ad72-78b6a19a8194")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "V_1V8_MDM" input
-			(at 318.77 118.11 180)
-			(uuid "66630a0a-f3ce-4429-ba74-16f94941e25c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "V_1V8_SIM" input
-			(at 318.77 120.65 180)
-			(uuid "0984f0a9-2227-4351-a9d9-583b4e0690ce")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "{SIM}" bidirectional
-			(at 318.77 123.19 180)
-			(uuid "36ad5a89-65c1-4282-9075-009ba91756c2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 284.48 80.01)
 		(size 26.67 48.26)
 		(exclude_from_sim no)
@@ -3614,7 +3476,7 @@
 			)
 		)
 		(pin "ANT" bidirectional
-			(at 311.15 107.95 0)
+			(at 311.15 125.73 0)
 			(uuid "7cf8a187-69d4-44a5-b1fd-2b6be342f5f7")
 			(effects
 				(font
@@ -3681,46 +3543,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "SIM_DET" input
-			(at 311.15 125.73 0)
-			(uuid "977b0369-d493-4c0c-a183-1f96c9df0ff5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "V_1V8_MDM" output
-			(at 311.15 118.11 0)
-			(uuid "46fdf47d-61b4-45c9-a6fe-9afab894ebbb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "V_1V8_SIM" output
-			(at 311.15 120.65 0)
-			(uuid "90484fe7-e401-487d-afc8-5c7fc7564c32")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "{SIM}" bidirectional
-			(at 311.15 123.19 0)
-			(uuid "4a3b55df-64af-4717-8888-dc72e389a846")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "EN_V_3V3_MDM" input
@@ -4171,8 +3993,8 @@
 		)
 	)
 	(sheet
-		(at 318.77 105.41)
-		(size 17.78 5.08)
+		(at 317.5 123.19)
+		(size 25.4 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4187,7 +4009,7 @@
 		)
 		(uuid "e6477a2c-b2b5-4454-829c-da955dc53725")
 		(property "Sheetname" "Antennas"
-			(at 318.77 103.124 0)
+			(at 317.5 120.904 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4198,7 +4020,7 @@
 			)
 		)
 		(property "Sheetfile" "antennas.kicad_sch"
-			(at 318.77 104.902 0)
+			(at 317.5 122.682 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4209,7 +4031,7 @@
 			)
 		)
 		(pin "ANT" bidirectional
-			(at 318.77 107.95 180)
+			(at 317.5 125.73 180)
 			(uuid "f4d1755a-cfb9-419c-bbc5-a7c5f27f6746")
 			(effects
 				(font
@@ -4221,7 +4043,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(page "7")
+					(page "6")
 				)
 			)
 		)
