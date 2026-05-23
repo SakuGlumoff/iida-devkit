@@ -876,7 +876,7 @@
       "method": 1,
       "sort_order": 0
     },
-    "bom_export_filename": "manufacturing\\iida_devkit_BOM.csv",
+    "bom_export_filename": "manufacturing/${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -910,7 +910,7 @@
           "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
@@ -1022,6 +1022,42 @@
           "label": "Digi-Key Part Number",
           "name": "Digi-Key Part Number",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage rating",
+          "name": "Voltage rating",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Breakdown voltage",
+          "name": "Breakdown voltage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Current rating",
+          "name": "Current rating",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Impedance",
+          "name": "Impedance",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Temperature coefficient",
+          "name": "Temperature coefficient",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Power rating",
+          "name": "Power rating",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -1102,7 +1138,7 @@
         "uuid": "b12a6e25-97fb-4aba-bc96-af8db389bb9a"
       }
     ],
-    "used_designators": "D205-208,D401-403,D501-502",
+    "used_designators": "L201,L601-605,AE601,#PWR101-104,#PWR201-207,#PWR301-325,#PWR401-405,#PWR501-516,#PWR601-602,D201-208,D401-403,D501-503,D601,R101,R201-220,R301-321,R401-416,R501-526,R601-608,#FLG101-102,#FLG201-204,#FLG301,#FLG501,C101,C201-216,C301-315,C401-405,C501-513,C601-605,FB501,F201-202,FID101-103,H101-104,J201-209,J301-307,J501,J601,JP301,Q201-203,Q301,Q501-506,SW301-302,TP201-205,U201-205,U301,U401-405,U501-502,Y301-302",
     "variants": []
   },
   "sheets": [
