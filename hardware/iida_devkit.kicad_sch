@@ -1641,6 +1641,16 @@
 	)
 	(wire
 		(pts
+			(xy 276.86 110.49) (xy 284.48 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a371f52-0110-4f33-8c87-a0fd3e4f7073")
+	)
+	(wire
+		(pts
 			(xy 242.57 66.04) (xy 242.57 64.77)
 		)
 		(stroke
@@ -1831,6 +1841,16 @@
 	)
 	(wire
 		(pts
+			(xy 276.86 115.57) (xy 284.48 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99cd6093-1696-4b1f-83f8-856e3187896d")
+	)
+	(wire
+		(pts
 			(xy 313.69 228.6) (xy 312.42 228.6)
 		)
 		(stroke
@@ -1888,6 +1908,16 @@
 			(type default)
 		)
 		(uuid "bdc09804-ebb4-4b60-9c55-c50c15f66d2e")
+	)
+	(wire
+		(pts
+			(xy 276.86 113.03) (xy 284.48 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfc6e75a-3b19-408d-a1e2-5dabeced25de")
 	)
 	(wire
 		(pts
@@ -2554,7 +2584,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "74719751-033d-41ca-a890-a76e9e143961")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR04"
 			(at 322.58 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -2615,7 +2645,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "#PWR02")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -2833,7 +2863,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9c3e4ff6-c48c-437d-a188-4874c91fe240")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR02"
 			(at 242.57 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -2894,7 +2924,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "#PWR04")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -2989,7 +3019,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b3574920-8eaa-4237-b048-25a384fda3b9")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR01"
 			(at 187.96 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -3051,7 +3081,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "#PWR03")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -3068,7 +3098,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c8844f57-ff11-4384-b85f-4a4bd0420f39")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR03"
 			(at 312.42 243.84 0)
 			(hide yes)
 			(show_name no)
@@ -3129,7 +3159,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "#PWR01")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -3222,7 +3252,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d9dda72a-aec7-4cfb-80ce-4f66711689c0")
-		(property "Reference" "R2"
+		(property "Reference" "R1"
 			(at 314.96 233.426 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3330,7 +3360,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
-					(reference "R2")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3603,16 +3633,6 @@
 				(justify left)
 			)
 		)
-		(pin "MDM_PWR_EN" input
-			(at 284.48 87.63 180)
-			(uuid "a1cd0cac-d1e5-4314-81d1-25b18ed8f1c6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "MDM_PWR_ON" input
 			(at 284.48 85.09 180)
 			(uuid "72583b3f-bb5c-4076-b163-a16de4cfa8c7")
@@ -3701,6 +3721,46 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "EN_V_3V3_MDM" input
+			(at 284.48 87.63 180)
+			(uuid "92ba88a8-2717-4b8c-8abf-c4a9646128a6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MDM_DCD" output
+			(at 284.48 115.57 180)
+			(uuid "af98cf78-ca14-481e-a9d9-83c85ae27dd2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MDM_DTR" input
+			(at 284.48 113.03 180)
+			(uuid "d150d1d8-7c8a-4444-bd5d-6c85715fb36b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MDM_RI" output
+			(at 284.48 110.49 180)
+			(uuid "7fe24a4e-254f-4165-8486-15246098e844")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -3855,7 +3915,7 @@
 				(justify left)
 			)
 		)
-		(pin "IO_EXP_INT" input
+		(pin "IO_EXP_INTn" input
 			(at 276.86 105.41 0)
 			(uuid "31f6c099-d2b1-4e5b-980b-b40f20997e69")
 			(effects
@@ -3945,6 +4005,36 @@
 				(justify left)
 			)
 		)
+		(pin "MDM_DCD" input
+			(at 276.86 115.57 0)
+			(uuid "e9eb5d2f-3350-403a-ba50-7ab3717a10b6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MDM_DTR" output
+			(at 276.86 113.03 0)
+			(uuid "6c7c35b9-98a7-46e5-9885-cead00f4e965")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MDM_RI" input
+			(at 276.86 110.49 0)
+			(uuid "29a525f6-6b5b-42a7-b0ac-b8ec31df023d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a"
@@ -4032,7 +4122,7 @@
 				(justify left)
 			)
 		)
-		(pin "IO_EXP_INT" output
+		(pin "IO_EXP_INTn" output
 			(at 276.86 92.71 0)
 			(uuid "d69574d4-674e-4239-bdf1-940fc3d72ca1")
 			(effects
@@ -4042,7 +4132,7 @@
 				(justify right)
 			)
 		)
-		(pin "MDM_PWR_EN" output
+		(pin "EN_V_3V3_MDM" output
 			(at 276.86 87.63 0)
 			(uuid "927a298a-5175-40b3-be09-376fc5a42c45")
 			(effects
