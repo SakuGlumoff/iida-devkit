@@ -4766,6 +4766,19 @@
 		(uuid "48046799-577c-4540-830b-f8734d0b222e")
 	)
 	(rectangle
+		(start 50.8 157.48)
+		(end 63.5 175.26)
+		(stroke
+			(width 0)
+			(type dash)
+			(color 194 0 194 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "49586318-675f-43e3-8453-eb6ef9dfc8aa")
+	)
+	(rectangle
 		(start 12.7 101.6)
 		(end 190.5 190.5)
 		(stroke
@@ -4854,6 +4867,27 @@
 		)
 		(uuid "9f0f78b7-0ff6-489e-b698-3d3bd688d688")
 	)
+	(text_box "Orient in a poka-yoke fashion to easily swap RX and TX."
+		(exclude_from_sim no)
+		(at 50.8 175.26 0)
+		(size 12.7 14.1714)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 194 1)
+			)
+			(justify left)
+		)
+		(uuid "030e472f-fc79-429d-922b-5c0b530c5711")
+	)
 	(text_box ""
 		(exclude_from_sim no)
 		(at 15.24 260.35 0)
@@ -4874,6 +4908,26 @@
 		)
 		(uuid "49c2ba87-f033-40b4-86ab-2c12d7a79499")
 	)
+	(text_box "To turn on the modem, set MDM_PWR_ON HIGH for 500 - 1000 ms.\nTo turn off the modem, set MDM_PWR_ON HIGH for 650 - 1500 ms.\nTo reset the modem, set MDM_RESET HIGH for 2000 - 3800 ms."
+		(exclude_from_sim no)
+		(at 15.24 199.39 0)
+		(size 158.75 16.51)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "75e080ce-baba-4842-9377-4fe2fdd67a7e")
+	)
 	(text_box "To establish UART communication between the module and the MCU, convert the modem's 1.8 V logic levels to the MCU's 3.3 V logic levels."
 		(exclude_from_sim no)
 		(at 15.24 111.76 0)
@@ -4888,7 +4942,7 @@
 		)
 		(effects
 			(font
-				(size 2.54 2.54)
+				(size 1.27 1.27)
 			)
 			(justify left top)
 		)
@@ -4915,12 +4969,6 @@
 			)
 		)
 		(uuid "e63193af-d0e5-4930-b989-c68d2d942d25")
-	)
-	(junction
-		(at 146.05 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "01a64dc7-e235-4de1-9beb-f14262a54bd5")
 	)
 	(junction
 		(at 295.91 76.2)
@@ -4971,7 +5019,7 @@
 		(uuid "19bd25c6-5e78-4a22-b502-e8bc462d3ab8")
 	)
 	(junction
-		(at 118.11 147.32)
+		(at 143.51 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1ea46417-02ff-4e21-99fc-b369426b688d")
@@ -5001,13 +5049,7 @@
 		(uuid "371e7b31-832d-46f5-bbd8-f0168fa48f8c")
 	)
 	(junction
-		(at 120.65 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "38ebc989-c0f1-4dc2-8196-4fa94a2f1e0b")
-	)
-	(junction
-		(at 118.11 142.24)
+		(at 143.51 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3b7a5e57-4245-4c30-ab62-0ffa627dd92a")
@@ -5079,7 +5121,7 @@
 		(uuid "6d113213-fd80-4cd8-b49b-29d7e64424b3")
 	)
 	(junction
-		(at 85.09 180.34)
+		(at 110.49 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "71c8d4ea-561e-422e-a8a8-447bb0987896")
@@ -5097,16 +5139,10 @@
 		(uuid "74b9005f-da65-4c58-9569-a24f2ea1d07e")
 	)
 	(junction
-		(at 127 133.35)
+		(at 152.4 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7ae3375c-908d-4a10-8d78-50b71a947558")
-	)
-	(junction
-		(at 158.75 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7e59e43a-1b4d-4239-aaaa-40a664a640bf")
 	)
 	(junction
 		(at 31.75 91.44)
@@ -5115,10 +5151,16 @@
 		(uuid "7eb71398-5ec6-47f3-96f9-def823f47772")
 	)
 	(junction
-		(at 76.2 133.35)
+		(at 101.6 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7fce8284-b647-4515-aae2-98c02bf35cb9")
+	)
+	(junction
+		(at 171.45 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8013c157-b7e3-45a9-92b9-a8cf9e21d880")
 	)
 	(junction
 		(at 88.9 55.88)
@@ -5137,6 +5179,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9176aa47-ac3e-48f3-85a2-2104024736b2")
+	)
+	(junction
+		(at 142.24 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "961cf03a-fae6-4dbe-9c44-6c9e72ee1e6f")
 	)
 	(junction
 		(at 88.9 91.44)
@@ -5163,10 +5211,16 @@
 		(uuid "a0731e26-5024-4fc1-a1ea-1e767761628a")
 	)
 	(junction
-		(at 118.11 180.34)
+		(at 143.51 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b28ca568-1ce0-4e32-b15e-849912baeac9")
+	)
+	(junction
+		(at 142.24 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2eeb89d-05db-404d-9c96-c2fcc035f36a")
 	)
 	(junction
 		(at 295.91 83.82)
@@ -5229,10 +5283,10 @@
 		(uuid "de1fcc66-c40c-4f32-a38b-122bc77df42c")
 	)
 	(junction
-		(at 146.05 55.88)
+		(at 154.94 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e5ffb728-d9c4-4a15-9a80-eaa8fc12e14c")
+		(uuid "e0b68b65-4f5e-4b7d-bb6c-fc26acf56725")
 	)
 	(junction
 		(at 101.6 55.88)
@@ -5283,15 +5337,11 @@
 		(uuid "33be4f44-68f3-4f10-aa81-84cc9ce87b42")
 	)
 	(no_connect
-		(at 237.49 182.88)
-		(uuid "39191a8a-b1ba-47d3-9961-912573d117f8")
-	)
-	(no_connect
 		(at 295.91 132.08)
 		(uuid "3f716e2d-260d-4d6b-92fb-6cd1684d3f95")
 	)
 	(no_connect
-		(at 85.09 170.18)
+		(at 110.49 170.18)
 		(uuid "40d0ebeb-3ee5-4064-b38a-190f9025340a")
 	)
 	(no_connect
@@ -5321,6 +5371,10 @@
 	(no_connect
 		(at 237.49 152.4)
 		(uuid "6d040cb8-213c-4d5b-86d6-2d7cbf5f02af")
+	)
+	(no_connect
+		(at 237.49 182.88)
+		(uuid "7598efca-a349-4129-bcbd-e78657a281ef")
 	)
 	(no_connect
 		(at 295.91 139.7)
@@ -5367,7 +5421,7 @@
 		(uuid "c363c31f-c8b7-4639-a0d5-caf53739a287")
 	)
 	(no_connect
-		(at 118.11 170.18)
+		(at 143.51 170.18)
 		(uuid "c83eb102-3c0b-4b46-bc87-d8d2c4649277")
 	)
 	(no_connect
@@ -5419,6 +5473,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 167.64) (xy 111.76 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0026a9cc-6f19-4b24-b0c2-a989a440339a")
+	)
+	(wire
+		(pts
 			(xy 237.49 93.98) (xy 237.49 91.44)
 		)
 		(stroke
@@ -5429,7 +5493,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 67.31) (xy 146.05 55.88)
+			(xy 142.24 67.31) (xy 142.24 55.88)
 		)
 		(stroke
 			(width 0)
@@ -5479,6 +5543,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 165.1) (xy 90.17 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0928cf18-c3e1-4009-8dfa-838d4e8369fc")
+	)
+	(wire
+		(pts
 			(xy 295.91 78.74) (xy 295.91 76.2)
 		)
 		(stroke
@@ -5509,7 +5583,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 154.94) (xy 86.36 154.94)
+			(xy 97.79 154.94) (xy 111.76 154.94)
 		)
 		(stroke
 			(width 0)
@@ -5519,7 +5593,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 143.51) (xy 127 142.24)
+			(xy 152.4 143.51) (xy 152.4 142.24)
 		)
 		(stroke
 			(width 0)
@@ -5549,7 +5623,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 157.48) (xy 127 157.48)
+			(xy 142.24 157.48) (xy 152.4 157.48)
 		)
 		(stroke
 			(width 0)
@@ -5779,7 +5853,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 142.24) (xy 85.09 142.24)
+			(xy 111.76 142.24) (xy 110.49 142.24)
 		)
 		(stroke
 			(width 0)
@@ -5849,7 +5923,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 162.56) (xy 127 162.56)
+			(xy 142.24 162.56) (xy 152.4 162.56)
 		)
 		(stroke
 			(width 0)
@@ -5879,6 +5953,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 165.1) (xy 53.34 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33d5eb2b-23b3-41e7-a3fd-ec855e850608")
+	)
+	(wire
+		(pts
 			(xy 40.64 81.28) (xy 43.18 81.28)
 		)
 		(stroke
@@ -5899,7 +5983,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 180.34) (xy 85.09 175.26)
+			(xy 110.49 180.34) (xy 110.49 175.26)
 		)
 		(stroke
 			(width 0)
@@ -5919,7 +6003,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 167.64) (xy 127 167.64)
+			(xy 142.24 167.64) (xy 152.4 167.64)
 		)
 		(stroke
 			(width 0)
@@ -5989,23 +6073,13 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 67.31) (xy 158.75 55.88)
+			(xy 154.94 67.31) (xy 154.94 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4019ea66-f452-49cc-b76d-1a9cbb6584b3")
-	)
-	(wire
-		(pts
-			(xy 120.65 55.88) (xy 237.49 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40daed6e-4ccf-4e84-98c8-7eb60620713b")
 	)
 	(wire
 		(pts
@@ -6069,6 +6143,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 167.64) (xy 53.34 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48f54132-ad91-4177-bc77-5af89cffcb12")
+	)
+	(wire
+		(pts
 			(xy 342.9 101.6) (xy 361.95 101.6)
 		)
 		(stroke
@@ -6109,7 +6193,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 156.21) (xy 139.7 180.34)
+			(xy 165.1 156.21) (xy 165.1 180.34)
 		)
 		(stroke
 			(width 0)
@@ -6189,13 +6273,23 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 147.32) (xy 118.11 147.32)
+			(xy 142.24 147.32) (xy 143.51 147.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "55c6d06d-65e6-4770-9a13-65ca409b9fc3")
+	)
+	(wire
+		(pts
+			(xy 237.49 182.88) (xy 238.76 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5649c94a-894f-48a2-804e-6eadfa48f822")
 	)
 	(wire
 		(pts
@@ -6229,7 +6323,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 175.26) (xy 118.11 180.34)
+			(xy 143.51 175.26) (xy 143.51 180.34)
 		)
 		(stroke
 			(width 0)
@@ -6239,7 +6333,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 133.35) (xy 127 134.62)
+			(xy 152.4 133.35) (xy 152.4 134.62)
 		)
 		(stroke
 			(width 0)
@@ -6299,7 +6393,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 133.35) (xy 76.2 133.35)
+			(xy 110.49 133.35) (xy 101.6 133.35)
 		)
 		(stroke
 			(width 0)
@@ -6309,7 +6403,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 142.24) (xy 118.11 142.24)
+			(xy 142.24 142.24) (xy 143.51 142.24)
 		)
 		(stroke
 			(width 0)
@@ -6379,7 +6473,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 180.34) (xy 139.7 180.34)
+			(xy 143.51 180.34) (xy 165.1 180.34)
 		)
 		(stroke
 			(width 0)
@@ -6409,7 +6503,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 152.4) (xy 86.36 152.4)
+			(xy 97.79 152.4) (xy 111.76 152.4)
 		)
 		(stroke
 			(width 0)
@@ -6439,7 +6533,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 152.4) (xy 127 152.4)
+			(xy 142.24 152.4) (xy 152.4 152.4)
 		)
 		(stroke
 			(width 0)
@@ -6469,7 +6563,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 74.93) (xy 158.75 91.44)
+			(xy 154.94 74.93) (xy 154.94 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6479,7 +6573,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 180.34) (xy 118.11 180.34)
+			(xy 110.49 180.34) (xy 143.51 180.34)
 		)
 		(stroke
 			(width 0)
@@ -6489,7 +6583,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 157.48) (xy 86.36 157.48)
+			(xy 97.79 157.48) (xy 111.76 157.48)
 		)
 		(stroke
 			(width 0)
@@ -6569,7 +6663,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 165.1) (xy 86.36 165.1)
+			(xy 97.79 165.1) (xy 111.76 165.1)
 		)
 		(stroke
 			(width 0)
@@ -6589,7 +6683,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 133.35) (xy 129.54 133.35)
+			(xy 152.4 133.35) (xy 154.94 133.35)
 		)
 		(stroke
 			(width 0)
@@ -6609,7 +6703,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 180.34) (xy 85.09 181.61)
+			(xy 110.49 180.34) (xy 110.49 181.61)
 		)
 		(stroke
 			(width 0)
@@ -6699,7 +6793,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 170.18) (xy 118.11 170.18)
+			(xy 142.24 170.18) (xy 143.51 170.18)
 		)
 		(stroke
 			(width 0)
@@ -6739,7 +6833,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 147.32) (xy 139.7 147.32)
+			(xy 143.51 147.32) (xy 165.1 147.32)
 		)
 		(stroke
 			(width 0)
@@ -6779,7 +6873,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 162.56) (xy 86.36 162.56)
+			(xy 81.28 162.56) (xy 111.76 162.56)
 		)
 		(stroke
 			(width 0)
@@ -6869,7 +6963,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 154.94) (xy 64.77 154.94)
+			(xy 81.28 154.94) (xy 90.17 154.94)
 		)
 		(stroke
 			(width 0)
@@ -6919,7 +7013,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 165.1) (xy 127 165.1)
+			(xy 142.24 165.1) (xy 152.4 165.1)
 		)
 		(stroke
 			(width 0)
@@ -6939,7 +7033,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 154.94) (xy 127 154.94)
+			(xy 142.24 154.94) (xy 152.4 154.94)
 		)
 		(stroke
 			(width 0)
@@ -6959,7 +7053,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 152.4) (xy 64.77 152.4)
+			(xy 81.28 152.4) (xy 90.17 152.4)
 		)
 		(stroke
 			(width 0)
@@ -6979,7 +7073,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 133.35) (xy 76.2 134.62)
+			(xy 101.6 133.35) (xy 101.6 134.62)
 		)
 		(stroke
 			(width 0)
@@ -7039,7 +7133,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 170.18) (xy 86.36 170.18)
+			(xy 110.49 170.18) (xy 111.76 170.18)
 		)
 		(stroke
 			(width 0)
@@ -7049,7 +7143,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 142.24) (xy 118.11 133.35)
+			(xy 143.51 142.24) (xy 143.51 133.35)
 		)
 		(stroke
 			(width 0)
@@ -7059,7 +7153,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 147.32) (xy 139.7 148.59)
+			(xy 165.1 147.32) (xy 165.1 148.59)
 		)
 		(stroke
 			(width 0)
@@ -7129,7 +7223,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 91.44) (xy 146.05 91.44)
+			(xy 127 91.44) (xy 142.24 91.44)
 		)
 		(stroke
 			(width 0)
@@ -7159,17 +7253,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 91.44) (xy 158.75 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae0ec2cf-c02a-4494-a448-3397576b32b8")
-	)
-	(wire
-		(pts
-			(xy 116.84 160.02) (xy 127 160.02)
+			(xy 142.24 160.02) (xy 152.4 160.02)
 		)
 		(stroke
 			(width 0)
@@ -7189,7 +7273,17 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 142.24) (xy 85.09 133.35)
+			(xy 171.45 55.88) (xy 237.49 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b649f4dc-d362-436e-b985-bf03b30bb220")
+	)
+	(wire
+		(pts
+			(xy 110.49 142.24) (xy 110.49 133.35)
 		)
 		(stroke
 			(width 0)
@@ -7216,16 +7310,6 @@
 			(type default)
 		)
 		(uuid "b8d053b5-bb6f-43e7-94a3-121571cab482")
-	)
-	(wire
-		(pts
-			(xy 55.88 165.1) (xy 64.77 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b92698ca-00d6-4b7c-8ad9-0bd83ab92718")
 	)
 	(wire
 		(pts
@@ -7309,7 +7393,17 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 143.51) (xy 76.2 142.24)
+			(xy 142.24 91.44) (xy 154.94 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c50bcfef-df5f-4c51-b84b-74a58a57fd0c")
+	)
+	(wire
+		(pts
+			(xy 101.6 143.51) (xy 101.6 142.24)
 		)
 		(stroke
 			(width 0)
@@ -7319,7 +7413,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 157.48) (xy 64.77 157.48)
+			(xy 81.28 157.48) (xy 90.17 157.48)
 		)
 		(stroke
 			(width 0)
@@ -7349,7 +7443,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 175.26) (xy 118.11 175.26)
+			(xy 142.24 175.26) (xy 143.51 175.26)
 		)
 		(stroke
 			(width 0)
@@ -7459,7 +7553,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 54.61) (xy 120.65 55.88)
+			(xy 171.45 54.61) (xy 171.45 55.88)
 		)
 		(stroke
 			(width 0)
@@ -7499,7 +7593,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 74.93) (xy 146.05 91.44)
+			(xy 142.24 74.93) (xy 142.24 91.44)
 		)
 		(stroke
 			(width 0)
@@ -7539,7 +7633,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 55.88) (xy 120.65 55.88)
+			(xy 114.3 55.88) (xy 171.45 55.88)
 		)
 		(stroke
 			(width 0)
@@ -7569,7 +7663,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 132.08) (xy 76.2 133.35)
+			(xy 101.6 132.08) (xy 101.6 133.35)
 		)
 		(stroke
 			(width 0)
@@ -7639,7 +7733,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 175.26) (xy 86.36 175.26)
+			(xy 110.49 175.26) (xy 111.76 175.26)
 		)
 		(stroke
 			(width 0)
@@ -7669,7 +7763,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 133.35) (xy 127 133.35)
+			(xy 143.51 133.35) (xy 152.4 133.35)
 		)
 		(stroke
 			(width 0)
@@ -7729,16 +7823,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 182.88) (xy 237.49 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f787869d-cf04-450c-b7cd-d72605e3cb90")
-	)
-	(wire
-		(pts
 			(xy 294.64 96.52) (xy 295.91 96.52)
 		)
 		(stroke
@@ -7759,23 +7843,13 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 142.24) (xy 118.11 147.32)
+			(xy 143.51 142.24) (xy 143.51 147.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fa9b6ab2-a1be-41f5-87aa-915ad80929b4")
-	)
-	(wire
-		(pts
-			(xy 55.88 167.64) (xy 86.36 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc37e2fd-f0a5-455f-b609-81c8ece13322")
 	)
 	(wire
 		(pts
@@ -7819,7 +7893,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 160.02) (xy 86.36 160.02)
+			(xy 81.28 160.02) (xy 111.76 160.02)
 		)
 		(stroke
 			(width 0)
@@ -7828,7 +7902,7 @@
 		(uuid "ffe23d57-aca0-4225-8e69-be8953b0c8e6")
 	)
 	(label "RXD"
-		(at 127 167.64 180)
+		(at 152.4 167.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7868,7 +7942,7 @@
 		(uuid "186c8686-9942-4858-8520-1aa675b6fdeb")
 	)
 	(label "RI"
-		(at 127 152.4 180)
+		(at 152.4 152.4 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7928,7 +8002,7 @@
 		(uuid "5b3dac62-8661-4df4-82e5-b2f2fc87d79e")
 	)
 	(label "DCD"
-		(at 127 154.94 180)
+		(at 152.4 154.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7968,7 +8042,7 @@
 		(uuid "87c9acaa-4416-4b27-86a9-093f343f622e")
 	)
 	(label "CTS"
-		(at 127 157.48 180)
+		(at 152.4 157.48 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7978,7 +8052,7 @@
 		(uuid "8dfc7f67-3081-4e9e-862a-c30f473e8d7c")
 	)
 	(label "DTR"
-		(at 127 162.56 180)
+		(at 152.4 162.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8018,7 +8092,7 @@
 		(uuid "b013491c-c2f3-4d45-bc0e-d2bce6293ee0")
 	)
 	(label "TXD"
-		(at 127 165.1 180)
+		(at 152.4 165.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8028,12 +8102,12 @@
 		(uuid "b9394ff3-b3fa-4c27-8513-0a4ea5faeda8")
 	)
 	(label "V_3V3_MDM"
-		(at 133.35 55.88 0)
+		(at 166.37 55.88 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "c05fc093-c4aa-4970-b814-8a493728ceef")
 	)
@@ -8058,7 +8132,7 @@
 		(uuid "dbf37dc5-f5fd-426a-89d5-368fcdd1bef7")
 	)
 	(label "RTS"
-		(at 127 160.02 180)
+		(at 152.4 160.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8079,7 +8153,7 @@
 	)
 	(hierarchical_label "MDM_DTR"
 		(shape input)
-		(at 55.88 162.56 180)
+		(at 81.28 162.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8101,7 +8175,7 @@
 	)
 	(hierarchical_label "MDM_RXD"
 		(shape output)
-		(at 55.88 165.1 180)
+		(at 44.45 165.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8112,7 +8186,7 @@
 	)
 	(hierarchical_label "V_1V8_MDM"
 		(shape output)
-		(at 129.54 133.35 0)
+		(at 154.94 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8134,7 +8208,7 @@
 	)
 	(hierarchical_label "MDM_RTS"
 		(shape input)
-		(at 55.88 160.02 180)
+		(at 81.28 160.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8145,7 +8219,7 @@
 	)
 	(hierarchical_label "MDM_TXD"
 		(shape input)
-		(at 55.88 167.64 180)
+		(at 44.45 167.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8189,7 +8263,7 @@
 	)
 	(hierarchical_label "MDM_RI"
 		(shape output)
-		(at 55.88 152.4 180)
+		(at 81.28 152.4 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8211,7 +8285,7 @@
 	)
 	(hierarchical_label "MDM_CTS"
 		(shape output)
-		(at 55.88 157.48 180)
+		(at 81.28 157.48 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8233,7 +8307,7 @@
 	)
 	(hierarchical_label "MDM_DCD"
 		(shape output)
-		(at 55.88 154.94 180)
+		(at 81.28 154.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8264,7 +8338,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "02172575-bee1-482b-abee-27c4e4501a02")
-		(property "Reference" "R75"
+		(property "Reference" "R521"
 			(at 363.22 62.992 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8383,7 +8457,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R75")
+					(reference "R521")
 					(unit 1)
 				)
 			)
@@ -8401,7 +8475,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "06208430-bc17-495e-aded-944d775fbcc2")
-		(property "Reference" "Q9"
+		(property "Reference" "Q505"
 			(at 363.982 75.438 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8523,7 +8597,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "Q9")
+					(reference "Q505")
 					(unit 1)
 				)
 			)
@@ -8540,7 +8614,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "09257380-fdb3-48e3-ae53-d41ff71857d7")
-		(property "Reference" "U13"
+		(property "Reference" "U502"
 			(at 266.7 50.292 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8913,7 +8987,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "U13")
+					(reference "U502")
 					(unit 1)
 				)
 			)
@@ -8932,7 +9006,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0a8a721d-1fe8-42be-9e0c-08f97cc3c519")
-		(property "Reference" "C42"
+		(property "Reference" "C505"
 			(at 124.46 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9062,7 +9136,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "C42")
+					(reference "C505")
 					(unit 1)
 				)
 			)
@@ -9079,7 +9153,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0f89f9c0-8fe8-4d47-aebb-7ab75a8a0be7")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR0514"
 			(at 361.95 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -9140,7 +9214,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#PWR055")
+					(reference "#PWR0514")
 					(unit 1)
 				)
 			)
@@ -9158,7 +9232,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1f505cfb-75c3-4ffa-838f-4e89154b6830")
-		(property "Reference" "Q5"
+		(property "Reference" "Q501"
 			(at 52.832 80.518 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9280,7 +9354,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "Q5")
+					(reference "Q501")
 					(unit 1)
 				)
 			)
@@ -9289,7 +9363,7 @@
 	(symbol
 		(lib_name "C_1")
 		(lib_id "Device:C")
-		(at 146.05 71.12 0)
+		(at 142.24 71.12 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -9299,8 +9373,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "20325769-dd74-4c81-ae8e-994b9631b8b3")
-		(property "Reference" "C44"
-			(at 143.51 68.58 0)
+		(property "Reference" "C506"
+			(at 139.7 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9311,7 +9385,7 @@
 			)
 		)
 		(property "Value" "10000 pF"
-			(at 143.51 70.358 0)
+			(at 139.7 70.358 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9321,8 +9395,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "perfect_footprints:C_0402_1005Metric"
-			(at 145.0848 74.93 0)
+		(property "Footprint" "perfect_footprints:C_0201_0603Metric"
+			(at 141.2748 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9333,7 +9407,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 71.12 0)
+			(at 142.24 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9344,7 +9418,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 146.05 71.12 0)
+			(at 142.24 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9355,7 +9429,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 146.05 71.12 0)
+			(at 142.24 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9366,7 +9440,7 @@
 			)
 		)
 		(property "Voltage rating" "16 V"
-			(at 143.256 72.39 0)
+			(at 139.446 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9377,7 +9451,7 @@
 			)
 		)
 		(property "Tolerance" "20 %"
-			(at 143.256 73.406 0)
+			(at 139.446 73.406 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9388,7 +9462,7 @@
 			)
 		)
 		(property "Temperature coefficient" "X5R"
-			(at 143.256 74.422 0)
+			(at 139.446 74.422 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9398,8 +9472,8 @@
 				(justify left)
 			)
 		)
-		(property "Size" "0402"
-			(at 143.256 75.438 0)
+		(property "Size" "0201"
+			(at 139.446 75.438 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9410,7 +9484,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" ""
-			(at 146.05 71.12 0)
+			(at 142.24 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9429,7 +9503,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "C44")
+					(reference "C506")
 					(unit 1)
 				)
 			)
@@ -9447,7 +9521,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22a14456-082f-4901-9c81-805cef10993c")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR0506"
 			(at 107.95 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -9508,7 +9582,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#PWR048")
+					(reference "#PWR0506")
 					(unit 1)
 				)
 			)
@@ -9525,7 +9599,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2394ad6e-8497-4716-9621-ecb456e7b488")
-		(property "Reference" "R77"
+		(property "Reference" "R523"
 			(at 372.11 81.788 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9655,7 +9729,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R77")
+					(reference "R523")
 					(unit 1)
 				)
 			)
@@ -9674,7 +9748,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24edd687-fcb8-43fd-8e85-1cdea4089b38")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR0511"
 			(at 295.91 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -9735,7 +9809,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#PWR052")
+					(reference "#PWR0511")
 					(unit 1)
 				)
 			)
@@ -9752,7 +9826,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2c091b96-6401-44e0-b0c6-494692a0fa97")
-		(property "Reference" "R72"
+		(property "Reference" "R518"
 			(at 327.406 182.626 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9882,7 +9956,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R72")
+					(reference "R518")
 					(unit 1)
 				)
 			)
@@ -9900,7 +9974,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3069f881-8f19-465d-bea2-dbe5befe2fa3")
-		(property "Reference" "C39"
+		(property "Reference" "C501"
 			(at 86.36 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10030,7 +10104,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "C39")
+					(reference "C501")
 					(unit 1)
 				)
 			)
@@ -10039,7 +10113,7 @@
 	(symbol
 		(lib_name "C_1")
 		(lib_id "Device:C")
-		(at 158.75 71.12 0)
+		(at 154.94 71.12 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -10049,8 +10123,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3475fcd9-5190-44c1-8fde-61723f4e0a4b")
-		(property "Reference" "C45"
-			(at 156.21 68.58 0)
+		(property "Reference" "C508"
+			(at 152.4 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10061,7 +10135,7 @@
 			)
 		)
 		(property "Value" "100 pF"
-			(at 156.21 70.358 0)
+			(at 152.4 70.358 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10071,8 +10145,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "perfect_footprints:C_0402_1005Metric"
-			(at 157.7848 74.93 0)
+		(property "Footprint" "perfect_footprints:C_0201_0603Metric"
+			(at 153.9748 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10083,7 +10157,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 71.12 0)
+			(at 154.94 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10094,7 +10168,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 158.75 71.12 0)
+			(at 154.94 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10105,7 +10179,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 158.75 71.12 0)
+			(at 154.94 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10116,7 +10190,7 @@
 			)
 		)
 		(property "Voltage rating" "16 V"
-			(at 155.956 72.39 0)
+			(at 152.146 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10127,7 +10201,7 @@
 			)
 		)
 		(property "Tolerance" "20 %"
-			(at 155.956 73.406 0)
+			(at 152.146 73.406 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10138,7 +10212,7 @@
 			)
 		)
 		(property "Temperature coefficient" "X5R"
-			(at 155.956 74.422 0)
+			(at 152.146 74.422 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10148,8 +10222,8 @@
 				(justify left)
 			)
 		)
-		(property "Size" "0402"
-			(at 155.956 75.438 0)
+		(property "Size" "0201"
+			(at 152.146 75.438 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10160,7 +10234,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" ""
-			(at 158.75 71.12 0)
+			(at 154.94 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10179,7 +10253,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "C45")
+					(reference "C508")
 					(unit 1)
 				)
 			)
@@ -10187,7 +10261,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 68.58 154.94 90)
+		(at 93.98 154.94 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10196,8 +10270,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "382037ac-343c-456e-ab01-a6e4b03b9705")
-		(property "Reference" "R64"
-			(at 65.786 154.686 90)
+		(property "Reference" "R510"
+			(at 91.186 154.686 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10208,7 +10282,7 @@
 			)
 		)
 		(property "Value" "27 Ω"
-			(at 71.374 154.686 90)
+			(at 96.774 154.686 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10219,7 +10293,7 @@
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
-			(at 68.58 156.718 90)
+			(at 93.98 156.718 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10230,7 +10304,7 @@
 			)
 		)
 		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
-			(at 68.58 154.94 0)
+			(at 93.98 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10241,7 +10315,7 @@
 			)
 		)
 		(property "Description" "27 Ohms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Thick Film"
-			(at 68.58 154.94 0)
+			(at 93.98 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10252,7 +10326,7 @@
 			)
 		)
 		(property "MPN" "ERJ-1GNF27R0C"
-			(at 68.58 154.94 0)
+			(at 93.98 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10263,7 +10337,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic Electronic Components"
-			(at 68.58 154.94 0)
+			(at 93.98 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10274,7 +10348,7 @@
 			)
 		)
 		(property "Tolerance" "1 %"
-			(at 77.47 153.67 90)
+			(at 102.87 153.67 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10285,7 +10359,7 @@
 			)
 		)
 		(property "Power rating" "0.05 W"
-			(at 81.28 154.686 90)
+			(at 106.68 154.686 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10296,7 +10370,7 @@
 			)
 		)
 		(property "Size" "0201"
-			(at 77.47 154.686 90)
+			(at 102.87 154.686 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10307,7 +10381,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" "P122894CT-ND"
-			(at 68.58 154.94 90)
+			(at 93.98 154.94 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10326,7 +10400,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R64")
+					(reference "R510")
 					(unit 1)
 				)
 			)
@@ -10344,7 +10418,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "386811cb-6006-4f44-85ac-4741f92861db")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR0502"
 			(at 31.75 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -10405,7 +10479,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#PWR043")
+					(reference "#PWR0502")
 					(unit 1)
 				)
 			)
@@ -10413,7 +10487,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 139.7 152.4 0)
+		(at 165.1 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10422,8 +10496,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3a2a08cf-facb-4a86-bf70-5ead5f1da36e")
-		(property "Reference" "R69"
-			(at 140.97 149.352 0)
+		(property "Reference" "R515"
+			(at 166.37 149.352 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10434,7 +10508,7 @@
 			)
 		)
 		(property "Value" "180 kΩ"
-			(at 140.97 151.13 0)
+			(at 166.37 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10445,7 +10519,7 @@
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
-			(at 137.922 152.4 90)
+			(at 163.322 152.4 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10456,7 +10530,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 152.4 0)
+			(at 165.1 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10467,7 +10541,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 139.7 152.4 0)
+			(at 165.1 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10478,7 +10552,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 139.7 152.4 0)
+			(at 165.1 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10489,7 +10563,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 139.7 152.4 0)
+			(at 165.1 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10500,7 +10574,7 @@
 			)
 		)
 		(property "Tolerance" "1 %"
-			(at 140.97 152.4 0)
+			(at 166.37 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10511,7 +10585,7 @@
 			)
 		)
 		(property "Power rating" "0.1 W"
-			(at 140.97 153.67 0)
+			(at 166.37 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10522,7 +10596,7 @@
 			)
 		)
 		(property "Size" "0201"
-			(at 140.97 154.9401 0)
+			(at 166.37 154.9401 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10541,7 +10615,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R69")
+					(reference "R515")
 					(unit 1)
 				)
 			)
@@ -10549,7 +10623,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 120.65 54.61 0)
+		(at 171.45 54.61 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -10559,8 +10633,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "41bd51e7-c7f9-431e-829b-048a2b92bde6")
-		(property "Reference" "#FLG08"
-			(at 120.65 52.705 0)
+		(property "Reference" "#FLG0501"
+			(at 171.45 52.705 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10571,7 +10645,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 120.65 51.435 0)
+			(at 171.45 51.435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10581,7 +10655,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 54.61 0)
+			(at 171.45 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10592,7 +10666,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 54.61 0)
+			(at 171.45 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10603,7 +10677,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 120.65 54.61 0)
+			(at 171.45 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10619,7 +10693,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#FLG08")
+					(reference "#FLG0501")
 					(unit 1)
 				)
 			)
@@ -10636,7 +10710,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "42f80078-2c34-4a85-8aec-26988905c3d1")
-		(property "Reference" "R78"
+		(property "Reference" "R524"
 			(at 388.62 64.262 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10755,7 +10829,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R78")
+					(reference "R524")
 					(unit 1)
 				)
 			)
@@ -10773,7 +10847,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "430bacec-240b-4425-871b-4d4b8767d6b8")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR0509"
 			(at 222.25 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -10834,7 +10908,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#PWR050")
+					(reference "#PWR0509")
 					(unit 1)
 				)
 			)
@@ -10852,7 +10926,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "43f92d37-713a-4d75-baf5-1872b715c6c4")
-		(property "Reference" "R67"
+		(property "Reference" "R513"
 			(at 106.68 230.632 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10971,7 +11045,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R67")
+					(reference "R513")
 					(unit 1)
 				)
 			)
@@ -10988,7 +11062,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4bf7387a-4781-4eac-955c-b0faebb1febd")
-		(property "Reference" "R74"
+		(property "Reference" "R520"
 			(at 346.71 69.088 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11118,7 +11192,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R74")
+					(reference "R520")
 					(unit 1)
 				)
 			)
@@ -11136,7 +11210,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4cd49757-038d-4860-9bb4-b763725aca46")
-		(property "Reference" "D13"
+		(property "Reference" "D502"
 			(at 389.128 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11255,7 +11329,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "D13")
+					(reference "D502")
 					(unit 1)
 				)
 			)
@@ -11273,7 +11347,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "526c8d03-2279-4e90-83e7-3da60635e637")
-		(property "Reference" "Q7"
+		(property "Reference" "Q503"
 			(at 65.532 227.838 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11395,7 +11469,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "Q7")
+					(reference "Q503")
 					(unit 1)
 				)
 			)
@@ -11412,7 +11486,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5b894029-29da-4911-9eb3-d117c9e005f9")
-		(property "Reference" "FB1"
+		(property "Reference" "FB501"
 			(at 92.456 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11434,7 +11508,7 @@
 				(justify right top)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 95.25 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -11522,7 +11596,7 @@
 				(justify right top)
 			)
 		)
-		(property "Size" "0603"
+		(property "Size" "0805"
 			(at 92.456 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11542,7 +11616,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "FB1")
+					(reference "FB501")
 					(unit 1)
 				)
 			)
@@ -11561,7 +11635,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "63863331-2468-40a1-9a0c-9283127d4eb2")
-		(property "Reference" "C41"
+		(property "Reference" "C504"
 			(at 111.76 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11691,7 +11765,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "C41")
+					(reference "C504")
 					(unit 1)
 				)
 			)
@@ -11699,7 +11773,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 68.58 165.1 90)
+		(at 93.98 165.1 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11708,8 +11782,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6ad12a34-a5b4-42ec-ba6d-f50f9c6c3cd2")
-		(property "Reference" "R66"
-			(at 65.786 164.846 90)
+		(property "Reference" "R512"
+			(at 91.186 164.846 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11720,7 +11794,7 @@
 			)
 		)
 		(property "Value" "27 Ω"
-			(at 71.374 164.846 90)
+			(at 96.774 164.846 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11731,7 +11805,7 @@
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
-			(at 68.58 166.878 90)
+			(at 93.98 166.878 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11742,7 +11816,7 @@
 			)
 		)
 		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
-			(at 68.58 165.1 0)
+			(at 93.98 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11753,7 +11827,7 @@
 			)
 		)
 		(property "Description" "27 Ohms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Thick Film"
-			(at 68.58 165.1 0)
+			(at 93.98 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11764,7 +11838,7 @@
 			)
 		)
 		(property "MPN" "ERJ-1GNF27R0C"
-			(at 68.58 165.1 0)
+			(at 93.98 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11775,7 +11849,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic Electronic Components"
-			(at 68.58 165.1 0)
+			(at 93.98 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11786,7 +11860,7 @@
 			)
 		)
 		(property "Tolerance" "1 %"
-			(at 77.47 163.83 90)
+			(at 102.87 163.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11797,7 +11871,7 @@
 			)
 		)
 		(property "Power rating" "0.05 W"
-			(at 81.28 164.846 90)
+			(at 106.68 164.846 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11808,7 +11882,7 @@
 			)
 		)
 		(property "Size" "0201"
-			(at 77.47 164.846 90)
+			(at 102.87 164.846 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11819,7 +11893,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" "P122894CT-ND"
-			(at 68.58 165.1 90)
+			(at 93.98 165.1 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11838,7 +11912,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R66")
+					(reference "R512")
 					(unit 1)
 				)
 			)
@@ -11847,7 +11921,7 @@
 	(symbol
 		(lib_name "C_1")
 		(lib_id "Device:C")
-		(at 127 138.43 0)
+		(at 152.4 138.43 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11856,8 +11930,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6d46f006-8c13-44ad-b46b-89e3abe3cc02")
-		(property "Reference" "C43"
-			(at 129.54 135.89 0)
+		(property "Reference" "C507"
+			(at 154.94 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11868,7 +11942,7 @@
 			)
 		)
 		(property "Value" "1 µF"
-			(at 129.54 137.668 0)
+			(at 154.94 137.668 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11879,7 +11953,7 @@
 			)
 		)
 		(property "Footprint" "perfect_footprints:C_0201_0603Metric"
-			(at 127.9652 142.24 0)
+			(at 153.3652 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11890,7 +11964,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 138.43 0)
+			(at 152.4 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11901,7 +11975,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 127 138.43 0)
+			(at 152.4 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11912,7 +11986,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 127 138.43 0)
+			(at 152.4 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11923,7 +11997,7 @@
 			)
 		)
 		(property "Voltage rating" "16 V"
-			(at 129.794 139.7 0)
+			(at 155.194 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11934,7 +12008,7 @@
 			)
 		)
 		(property "Tolerance" "20 %"
-			(at 129.794 140.716 0)
+			(at 155.194 140.716 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11945,7 +12019,7 @@
 			)
 		)
 		(property "Temperature coefficient" "X5R"
-			(at 129.794 141.732 0)
+			(at 155.194 141.732 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11956,7 +12030,7 @@
 			)
 		)
 		(property "Size" "0201"
-			(at 129.794 142.748 0)
+			(at 155.194 142.748 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11967,7 +12041,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" ""
-			(at 127 138.43 0)
+			(at 152.4 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11986,7 +12060,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "C43")
+					(reference "C507")
 					(unit 1)
 				)
 			)
@@ -11994,7 +12068,7 @@
 	)
 	(symbol
 		(lib_id "Texas Instruments:TXS0108E")
-		(at 101.6 158.75 0)
+		(at 127 158.75 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -12004,8 +12078,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7100a312-65fd-4b5e-b36e-47477851081e")
-		(property "Reference" "U12"
-			(at 101.6 137.414 0)
+		(property "Reference" "U501"
+			(at 127 137.414 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12016,7 +12090,7 @@
 			)
 		)
 		(property "Value" "TXS0108E"
-			(at 101.6 139.446 0)
+			(at 127 139.446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12027,7 +12101,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:DHVQFN-20-1EP_2.5x4.5mm_P0.5mm_EP1x3mm"
-			(at 101.6 143.51 0)
+			(at 127 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12038,7 +12112,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/txs0108e.pdf"
-			(at 101.6 143.51 0)
+			(at 127 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12049,7 +12123,7 @@
 			)
 		)
 		(property "Description" "8-Bit Bi-Directional, Level-Shifting, Voltage Translator for Open-Drain and Push-Pull Applications"
-			(at 101.6 143.51 0)
+			(at 127 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12125,7 +12199,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "U12")
+					(reference "U501")
 					(unit 1)
 				)
 			)
@@ -12133,7 +12207,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 85.09 181.61 0)
+		(at 110.49 181.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12143,8 +12217,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71f1e1d4-dec1-416f-b826-3aeb0ae37923")
-		(property "Reference" "#PWR047"
-			(at 85.09 187.96 0)
+		(property "Reference" "#PWR0507"
+			(at 110.49 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12155,7 +12229,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 85.09 186.69 0)
+			(at 110.49 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12166,7 +12240,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 181.61 0)
+			(at 110.49 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12177,7 +12251,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 181.61 0)
+			(at 110.49 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12188,7 +12262,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 85.09 181.61 0)
+			(at 110.49 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12204,7 +12278,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#PWR047")
+					(reference "#PWR0507")
 					(unit 1)
 				)
 			)
@@ -12223,7 +12297,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "73f1ffb4-f8f7-408d-aa29-87f9557b7f04")
-		(property "Reference" "C46"
+		(property "Reference" "C509"
 			(at 219.71 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12234,7 +12308,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1 µF"
+		(property "Value" "0.01 µF"
 			(at 219.71 69.088 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12353,7 +12427,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "C46")
+					(reference "C509")
 					(unit 1)
 				)
 			)
@@ -12361,7 +12435,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 76.2 143.51 0)
+		(at 101.6 143.51 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -12372,8 +12446,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76cad4dd-b24b-4cfc-8789-7a872414d488")
-		(property "Reference" "#PWR046"
-			(at 76.2 149.86 0)
+		(property "Reference" "#PWR0505"
+			(at 101.6 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12384,7 +12458,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 76.2 148.59 0)
+			(at 101.6 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12395,7 +12469,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 143.51 0)
+			(at 101.6 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12406,7 +12480,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 143.51 0)
+			(at 101.6 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12417,7 +12491,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 76.2 143.51 0)
+			(at 101.6 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12433,7 +12507,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#PWR046")
+					(reference "#PWR0505")
 					(unit 1)
 				)
 			)
@@ -12452,7 +12526,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77679236-c6e6-485a-b848-1aa6d3a80f59")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR0512"
 			(at 295.91 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -12513,7 +12587,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#PWR053")
+					(reference "#PWR0512")
 					(unit 1)
 				)
 			)
@@ -12530,7 +12604,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "807053e1-d438-449e-a643-0f574de63fba")
-		(property "Reference" "R62"
+		(property "Reference" "R506"
 			(at 48.26 221.488 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12660,7 +12734,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R62")
+					(reference "R506")
 					(unit 1)
 				)
 			)
@@ -12678,7 +12752,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "83f84d28-e5bc-47ec-aa49-69304284bac7")
-		(property "Reference" "D12"
+		(property "Reference" "D501"
 			(at 363.728 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12797,7 +12871,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "D12")
+					(reference "D501")
 					(unit 1)
 				)
 			)
@@ -12815,7 +12889,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8d589140-daff-4594-8377-86338dd85f44")
-		(property "Reference" "Q10"
+		(property "Reference" "Q506"
 			(at 389.382 88.138 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12937,7 +13011,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "Q10")
+					(reference "Q506")
 					(unit 1)
 				)
 			)
@@ -12955,7 +13029,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "91e50ae7-e8a1-46a2-b2cb-1e6ce7912443")
-		(property "Reference" "R58"
+		(property "Reference" "R502"
 			(at 30.48 83.312 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13074,7 +13148,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R58")
+					(reference "R502")
 					(unit 1)
 				)
 			)
@@ -13082,7 +13156,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 76.2 132.08 0)
+		(at 101.6 132.08 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -13092,8 +13166,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "934221dc-d190-4ddf-b058-ad24eb00a0f4")
-		(property "Reference" "#PWR045"
-			(at 76.2 135.89 0)
+		(property "Reference" "#PWR0504"
+			(at 101.6 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13104,7 +13178,7 @@
 			)
 		)
 		(property "Value" "V_3V3"
-			(at 76.2 129.286 0)
+			(at 101.6 129.286 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13115,7 +13189,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 132.08 0)
+			(at 101.6 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13126,7 +13200,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 132.08 0)
+			(at 101.6 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13137,7 +13211,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 76.2 132.08 0)
+			(at 101.6 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13153,7 +13227,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#PWR045")
+					(reference "#PWR0504")
 					(unit 1)
 				)
 			)
@@ -13170,7 +13244,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9b9be7d9-71e3-4b31-8312-3aabc7e09f19")
-		(property "Reference" "R70"
+		(property "Reference" "R516"
 			(at 327.406 177.546 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13300,7 +13374,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R70")
+					(reference "R516")
 					(unit 1)
 				)
 			)
@@ -13318,7 +13392,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9fb29160-2d57-4a81-b661-7dd07692c775")
-		(property "Reference" "R61"
+		(property "Reference" "R505"
 			(at 49.53 68.072 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13437,7 +13511,132 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R61")
+					(reference "R505")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 57.15 165.1 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a2672786-952a-482e-beb9-02942204c150")
+		(property "Reference" "R507"
+			(at 54.61 160.528 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "0 Ω"
+			(at 54.61 162.306 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 57.15 166.878 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 57.15 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 57.15 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Size" "0805"
+			(at 54.61 163.576 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify right top)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 57.15 165.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "806febdf-4432-445b-931d-194f3534c278")
+		)
+		(pin "1"
+			(uuid "6b179035-2d65-4263-a490-4c1fca4e6c78")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
+					(reference "R507")
 					(unit 1)
 				)
 			)
@@ -13455,7 +13654,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2816d90-2e1d-4e99-848c-678daeed6c49")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR0513"
 			(at 342.9 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -13516,7 +13715,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#PWR054")
+					(reference "#PWR0513")
 					(unit 1)
 				)
 			)
@@ -13535,7 +13734,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a34c836b-49de-46bc-94e0-f463f640e842")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR0510"
 			(at 237.49 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -13596,7 +13795,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#PWR051")
+					(reference "#PWR0510")
 					(unit 1)
 				)
 			)
@@ -13613,7 +13812,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a87acd7e-7e7e-41de-8a1f-c17f166a46bf")
-		(property "Reference" "R68"
+		(property "Reference" "R514"
 			(at 111.76 221.488 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13743,7 +13942,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R68")
+					(reference "R514")
 					(unit 1)
 				)
 			)
@@ -13760,7 +13959,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b0251ef1-96c5-4a95-8e60-5f8249dc42a8")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR0501"
 			(at 31.75 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -13821,7 +14020,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#PWR042")
+					(reference "#PWR0501")
 					(unit 1)
 				)
 			)
@@ -13829,7 +14028,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 127 143.51 0)
+		(at 152.4 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13839,8 +14038,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1daace6-643c-4691-8ee4-c301e10b3c20")
-		(property "Reference" "#PWR049"
-			(at 127 149.86 0)
+		(property "Reference" "#PWR0508"
+			(at 152.4 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13851,7 +14050,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 127 148.59 0)
+			(at 152.4 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13862,7 +14061,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 143.51 0)
+			(at 152.4 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13873,7 +14072,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 143.51 0)
+			(at 152.4 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13884,7 +14083,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 127 143.51 0)
+			(at 152.4 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13900,7 +14099,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#PWR049")
+					(reference "#PWR0508")
 					(unit 1)
 				)
 			)
@@ -13917,7 +14116,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba1179ec-cdf1-414f-ad8c-cbcad835cf3f")
-		(property "Reference" "R76"
+		(property "Reference" "R522"
 			(at 369.57 92.202 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14036,7 +14235,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R76")
+					(reference "R522")
 					(unit 1)
 				)
 			)
@@ -14053,7 +14252,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba228772-7e61-46ab-bfe6-16bbc0a48b2c")
-		(property "Reference" "R73"
+		(property "Reference" "R519"
 			(at 344.17 79.502 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14172,7 +14371,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R73")
+					(reference "R519")
 					(unit 1)
 				)
 			)
@@ -14189,7 +14388,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d581dee4-8110-4663-8a58-298d62989af3")
-		(property "Reference" "R59"
+		(property "Reference" "R503"
 			(at 34.29 74.168 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14319,7 +14518,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R59")
+					(reference "R503")
 					(unit 1)
 				)
 			)
@@ -14328,7 +14527,7 @@
 	(symbol
 		(lib_name "C_1")
 		(lib_id "Device:C")
-		(at 76.2 138.43 0)
+		(at 101.6 138.43 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -14338,8 +14537,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dab4c03c-df9c-4822-9748-4a9278b5a8af")
-		(property "Reference" "C38"
-			(at 73.66 135.89 0)
+		(property "Reference" "C503"
+			(at 99.06 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14350,7 +14549,7 @@
 			)
 		)
 		(property "Value" "1 µF"
-			(at 73.66 137.668 0)
+			(at 99.06 137.668 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14361,7 +14560,7 @@
 			)
 		)
 		(property "Footprint" "perfect_footprints:C_0201_0603Metric"
-			(at 75.2348 142.24 0)
+			(at 100.6348 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14372,7 +14571,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 138.43 0)
+			(at 101.6 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14383,7 +14582,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 76.2 138.43 0)
+			(at 101.6 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14394,7 +14593,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 76.2 138.43 0)
+			(at 101.6 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14405,7 +14604,7 @@
 			)
 		)
 		(property "Voltage rating" "16 V"
-			(at 73.406 139.7 0)
+			(at 98.806 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14416,7 +14615,7 @@
 			)
 		)
 		(property "Tolerance" "20 %"
-			(at 73.406 140.716 0)
+			(at 98.806 140.716 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14427,7 +14626,7 @@
 			)
 		)
 		(property "Temperature coefficient" "X5R"
-			(at 73.406 141.732 0)
+			(at 98.806 141.732 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14438,7 +14637,7 @@
 			)
 		)
 		(property "Size" "0201"
-			(at 73.406 142.748 0)
+			(at 98.806 142.748 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14449,7 +14648,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" ""
-			(at 76.2 138.43 0)
+			(at 101.6 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14468,7 +14667,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "C38")
+					(reference "C503")
 					(unit 1)
 				)
 			)
@@ -14476,7 +14675,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 68.58 157.48 90)
+		(at 93.98 157.48 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14485,8 +14684,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dc3824e7-9883-4a1b-9ed6-65006938b4d5")
-		(property "Reference" "R65"
-			(at 65.786 157.226 90)
+		(property "Reference" "R511"
+			(at 91.186 157.226 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14497,7 +14696,7 @@
 			)
 		)
 		(property "Value" "27 Ω"
-			(at 71.374 157.226 90)
+			(at 96.774 157.226 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14508,7 +14707,7 @@
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
-			(at 68.58 159.258 90)
+			(at 93.98 159.258 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14519,7 +14718,7 @@
 			)
 		)
 		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
-			(at 68.58 157.48 0)
+			(at 93.98 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14530,7 +14729,7 @@
 			)
 		)
 		(property "Description" "27 Ohms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Thick Film"
-			(at 68.58 157.48 0)
+			(at 93.98 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14541,7 +14740,7 @@
 			)
 		)
 		(property "MPN" "ERJ-1GNF27R0C"
-			(at 68.58 157.48 0)
+			(at 93.98 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14552,7 +14751,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic Electronic Components"
-			(at 68.58 157.48 0)
+			(at 93.98 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14563,7 +14762,7 @@
 			)
 		)
 		(property "Tolerance" "1 %"
-			(at 77.47 156.21 90)
+			(at 102.87 156.21 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14574,7 +14773,7 @@
 			)
 		)
 		(property "Power rating" "0.05 W"
-			(at 81.28 157.226 90)
+			(at 106.68 157.226 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14585,7 +14784,7 @@
 			)
 		)
 		(property "Size" "0201"
-			(at 77.47 157.226 90)
+			(at 102.87 157.226 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14596,7 +14795,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" "P122894CT-ND"
-			(at 68.58 157.48 90)
+			(at 93.98 157.48 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14615,7 +14814,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R65")
+					(reference "R511")
 					(unit 1)
 				)
 			)
@@ -14623,7 +14822,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 68.58 152.4 90)
+		(at 93.98 152.4 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14632,8 +14831,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "deb868f4-86a2-463b-878a-a1b651c34b31")
-		(property "Reference" "R63"
-			(at 65.786 152.146 90)
+		(property "Reference" "R509"
+			(at 91.186 152.146 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14644,7 +14843,7 @@
 			)
 		)
 		(property "Value" "27 Ω"
-			(at 71.374 152.146 90)
+			(at 96.774 152.146 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14655,7 +14854,7 @@
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
-			(at 68.58 154.178 90)
+			(at 93.98 154.178 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14666,7 +14865,7 @@
 			)
 		)
 		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
-			(at 68.58 152.4 0)
+			(at 93.98 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14677,7 +14876,7 @@
 			)
 		)
 		(property "Description" "27 Ohms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Thick Film"
-			(at 68.58 152.4 0)
+			(at 93.98 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14688,7 +14887,7 @@
 			)
 		)
 		(property "MPN" "ERJ-1GNF27R0C"
-			(at 68.58 152.4 0)
+			(at 93.98 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14699,7 +14898,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic Electronic Components"
-			(at 68.58 152.4 0)
+			(at 93.98 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14710,7 +14909,7 @@
 			)
 		)
 		(property "Tolerance" "1 %"
-			(at 77.47 151.13 90)
+			(at 102.87 151.13 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14721,7 +14920,7 @@
 			)
 		)
 		(property "Power rating" "0.05 W"
-			(at 81.28 152.146 90)
+			(at 106.68 152.146 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14732,7 +14931,7 @@
 			)
 		)
 		(property "Size" "0201"
-			(at 77.47 152.146 90)
+			(at 102.87 152.146 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14743,7 +14942,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" "P122894CT-ND"
-			(at 68.58 152.4 90)
+			(at 93.98 152.4 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14762,7 +14961,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R63")
+					(reference "R509")
 					(unit 1)
 				)
 			)
@@ -14780,7 +14979,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e9930961-031f-4d20-9181-2d32a2d513bd")
-		(property "Reference" "R60"
+		(property "Reference" "R504"
 			(at 43.18 230.632 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14899,7 +15098,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R60")
+					(reference "R504")
 					(unit 1)
 				)
 			)
@@ -14917,7 +15116,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eae361ac-f351-4a21-acd0-78ad37f1800f")
-		(property "Reference" "Q6"
+		(property "Reference" "Q502"
 			(at 50.8 51.562 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15039,7 +15238,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "Q6")
+					(reference "Q502")
 					(unit 1)
 				)
 			)
@@ -15057,7 +15256,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f56d9189-9832-44e4-bd06-bb2bf47b5572")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR0503"
 			(at 44.45 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -15118,7 +15317,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "#PWR044")
+					(reference "#PWR0503")
 					(unit 1)
 				)
 			)
@@ -15137,7 +15336,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f7a8e4c9-9315-4421-b28e-5972dc57748d")
-		(property "Reference" "C40"
+		(property "Reference" "C502"
 			(at 99.06 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15267,7 +15466,133 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "C40")
+					(reference "C502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 57.15 167.64 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f7daeff7-cc4f-47c6-be3d-e9f72a7224f1")
+		(property "Reference" "R508"
+			(at 54.61 169.164 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "0 Ω"
+			(at 54.61 170.942 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 57.15 165.862 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 57.15 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 57.15 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Size" "0805"
+			(at 54.61 172.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify right top)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 57.15 167.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "38c7b0db-f76c-4f17-a52e-fd1b8330af63")
+		)
+		(pin "1"
+			(uuid "3c0378d9-328f-4e18-be8d-d345227c25cb")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
+					(reference "R508")
 					(unit 1)
 				)
 			)
@@ -15284,7 +15609,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f9ab52c1-a18f-4cf2-9b53-f2310b3aca96")
-		(property "Reference" "R71"
+		(property "Reference" "R517"
 			(at 327.406 180.086 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15414,7 +15739,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R71")
+					(reference "R517")
 					(unit 1)
 				)
 			)
@@ -15432,7 +15757,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fbb4e258-5510-49e3-b19b-829d581d964b")
-		(property "Reference" "Q8"
+		(property "Reference" "Q504"
 			(at 129.032 227.838 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15554,7 +15879,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "Q8")
+					(reference "Q504")
 					(unit 1)
 				)
 			)
@@ -15572,7 +15897,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fdbf97bc-e256-4d2f-88a9-0af36adbe8e2")
-		(property "Reference" "R57"
+		(property "Reference" "R501"
 			(at 30.48 57.912 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15691,7 +16016,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R57")
+					(reference "R501")
 					(unit 1)
 				)
 			)
