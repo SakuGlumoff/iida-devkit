@@ -63,7 +63,7 @@
           "min_clearance": 0.15,
           "min_island_area": 10.0,
           "min_thickness": 0.15,
-          "pad_connection": 3,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -76,48 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "courtyards_overlap|145970725|89771182|132b15f5-b130-44b4-b015-ade5a47d1c8f|e916ac22-52fb-4a3d-a86d-a5bbec1577cd",
-          ""
-        ],
-        [
-          "courtyards_overlap|146986725|89771182|3bb932c5-37d0-40a1-bb14-6494dafd860d|ae19058d-2b93-449c-b499-2371e9e23e3f",
-          ""
-        ],
-        [
-          "courtyards_overlap|158670725|106027182|7fe1b411-f6d2-48f4-89ba-a9c26f6c81de|9c92c00d-44d2-45e3-a72c-d9762ae59e35",
-          ""
-        ],
-        [
-          "courtyards_overlap|167138725|71432382|af583a1f-76aa-4b59-9c28-7482cc745481|f52ed23f-863a-42d7-8315-919f73f7c51f",
-          ""
-        ],
-        [
-          "courtyards_overlap|200822831|86104969|09d841b0-f792-4914-b6be-f509402695a7|41f79bb1-abf0-49d5-aff4-5ef570a513fb",
-          ""
-        ],
-        [
-          "courtyards_overlap|90188025|79669982|66c4ceed-39b0-4816-a31a-c11d2418ad09|c027a9a7-e39a-408f-aa99-5fae4e6fdd70",
-          ""
-        ],
-        [
-          "nonmirrored_text_on_back_layer|80253125|120840582|7110cbed-2b19-47d9-ab99-982fc1d70420|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "silk_overlap|167203725|72277382|399b09ff-9834-449d-9f5f-ed4bca9a4e67|6c3b2388-a94f-4e53-b6ab-9eee1282ba63",
-          ""
-        ],
-        [
-          "silk_overlap|202040310|86107900|1bae51be-3e3f-41e7-86a1-b691008ecb75|5a88e41e-0ed5-4629-bde6-dfc809dc35a1",
-          ""
-        ],
-        [
-          "silk_overlap|90253025|80532382|635d2822-5561-4761-9ced-94936899dcd4|f893fba3-a8c8-4be5-bd84-043477dfb3b5",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -188,11 +147,11 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.15,
+        "min_clearance": 0.125,
         "min_connection": 0.15,
         "min_copper_edge_clearance": 0.4,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.2,
+        "min_hole_clearance": 0.15,
         "min_hole_to_hole": 0.3,
         "min_microvia_diameter": 0.0,
         "min_microvia_drill": 0.0,
@@ -201,7 +160,7 @@
         "min_text_height": 1.0,
         "min_text_thickness": 0.15,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.15,
+        "min_track_width": 0.125,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
@@ -552,7 +511,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.3,
+        "clearance": 0.2,
         "diff_pair_gap": 0.3,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.3,
@@ -563,7 +522,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1565,
+        "track_width": 0.0,
         "tuning_profile": "50 Ω",
         "via_diameter": 0.45,
         "via_drill": 0.3,
@@ -571,11 +530,10 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
         "line_style": 0,
         "name": "ANT",
         "pcb_color": "rgb(255, 0, 255)",
-        "priority": 1,
+        "priority": 0,
         "schematic_color": "rgb(255, 0, 255)",
         "tuning_profile": "ANT",
         "wire_width": 6
@@ -585,8 +543,9 @@
         "line_style": 0,
         "name": "CHASSIS",
         "pcb_color": "rgb(0, 194, 0)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgb(0, 194, 0)",
+        "track_width": 0.5,
         "tuning_profile": "",
         "wire_width": 20
       },
@@ -595,7 +554,7 @@
         "line_style": 0,
         "name": "GND",
         "pcb_color": "rgb(0, 0, 0)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgb(0, 0, 0)",
         "tuning_profile": "",
         "wire_width": 20
@@ -605,7 +564,7 @@
         "line_style": 0,
         "name": "PWR",
         "pcb_color": "rgb(255, 0, 0)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgb(255, 0, 0)",
         "tuning_profile": "",
         "wire_width": 20
@@ -615,7 +574,7 @@
         "line_style": 0,
         "name": "SIM",
         "pcb_color": "rgb(255, 153, 0)",
-        "priority": 0,
+        "priority": 2,
         "schematic_color": "rgb(255, 153, 0)",
         "tuning_profile": "",
         "wire_width": 6
@@ -625,7 +584,7 @@
         "line_style": 0,
         "name": "USB",
         "pcb_color": "rgb(0, 0, 255)",
-        "priority": 5,
+        "priority": 1,
         "schematic_color": "rgb(0, 0, 255)",
         "tuning_profile": "USB",
         "wire_width": 6
@@ -665,6 +624,12 @@
       ],
       "/Battery/V_BAT": [
         "Power"
+      ],
+      "/Microcontroller/USB.D+": [
+        "USB"
+      ],
+      "/Microcontroller/USB.D-": [
+        "USB"
       ],
       "/Microcontroller/USB.DM": [
         "USB"
@@ -994,8 +959,8 @@
         "SIM.RST"
       ],
       "USB": [
-        "USB.DM",
-        "USB.DP"
+        "USB.D-",
+        "USB.D+"
       ]
     },
     "connection_grid_size": 50.0,
@@ -1046,7 +1011,7 @@
         "uuid": "b12a6e25-97fb-4aba-bc96-af8db389bb9a"
       }
     ],
-    "used_designators": "",
+    "used_designators": "R101,R201-219,R301-321,R401-416,R501-526,R601-608,#FLG101-102,#FLG201-204,#FLG301,#FLG501,D201-208,D401-403,D501-503,D601,L201,L601-605,AE601,#PWR101-104,#PWR201-207,#PWR301-324,#PWR401-405,#PWR501-516,#PWR601-602,C201-216,C301-315,C401-405,C501-513,C601-605,FB501,F201-202,FID101-103,H101-104,J201-209,J301-306,J501,J601,JP301,Q201-203,Q301,Q501-506,SW301-302,TP201-205,U201-205,U301,U401-405,U501-502,Y301-302",
     "variants": []
   },
   "sheets": [
@@ -1086,11 +1051,11 @@
         "layer_entries": [
           {
             "bottom_reference_layer": "In1.Cu",
-            "delay": 5699700,
-            "diff_pair_gap": 150000,
+            "delay": 5660100,
+            "diff_pair_gap": 125000,
             "signal_layer": "F.Cu",
             "top_reference_layer": "UNDEFINED",
-            "width": 141000
+            "width": 126200
           }
         ],
         "profile_name": "USB",
@@ -1103,12 +1068,12 @@
         "enable_time_domain_tuning": true,
         "layer_entries": [
           {
-            "bottom_reference_layer": "In1.Cu",
-            "delay": 5498700,
+            "bottom_reference_layer": "In3.Cu",
+            "delay": 5902500,
             "diff_pair_gap": 0,
             "signal_layer": "F.Cu",
             "top_reference_layer": "UNDEFINED",
-            "width": 148300
+            "width": 749000
           }
         ],
         "profile_name": "ANT",
@@ -1122,7 +1087,7 @@
         "layer_entries": [
           {
             "bottom_reference_layer": "In1.Cu",
-            "delay": 5584300,
+            "delay": 5520100,
             "diff_pair_gap": 0,
             "signal_layer": "F.Cu",
             "top_reference_layer": "UNDEFINED",
