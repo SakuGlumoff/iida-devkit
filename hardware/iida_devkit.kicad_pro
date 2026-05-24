@@ -16,7 +16,7 @@
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
         "courtyard_line_width": 0.05,
-        "dimension_precision": 4,
+        "dimension_precision": 5,
         "dimension_units": 2,
         "dimensions": {
           "arrow_length": 1270000,
@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.125
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.15,
+          "min_island_area": 10.0,
+          "min_thickness": 0.15,
+          "pad_connection": 3,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -58,11 +74,6 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
-        },
-        {
-          "gap": 0.25,
-          "via_gap": 0.25,
-          "width": 0.26
         }
       ],
       "drc_exclusions": [
@@ -125,7 +136,7 @@
         "extra_footprint": "error",
         "footprint": "error",
         "footprint_filters_mismatch": "error",
-        "footprint_symbol_field_mismatch": "warning",
+        "footprint_symbol_field_mismatch": "error",
         "footprint_symbol_mismatch": "error",
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
@@ -144,11 +155,11 @@
         "mirrored_text_on_front_layer": "error",
         "missing_courtyard": "error",
         "missing_footprint": "error",
-        "missing_tuning_profile": "warning",
+        "missing_tuning_profile": "error",
         "net_conflict": "error",
         "nonmirrored_text_on_back_layer": "error",
         "npth_inside_courtyard": "error",
-        "padstack": "warning",
+        "padstack": "error",
         "pth_inside_courtyard": "error",
         "shorting_items": "error",
         "silk_edge_clearance": "error",
@@ -164,12 +175,12 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "error",
-        "track_not_centered_on_via": "ignore",
+        "track_not_centered_on_via": "error",
         "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
-        "tuning_profile_track_geometries": "ignore",
+        "tuning_profile_track_geometries": "error",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "error",
@@ -177,22 +188,22 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.125,
-        "min_connection": 0.125,
+        "min_clearance": 0.15,
+        "min_connection": 0.15,
         "min_copper_edge_clearance": 0.4,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.19,
+        "min_hole_clearance": 0.2,
         "min_hole_to_hole": 0.3,
         "min_microvia_diameter": 0.0,
         "min_microvia_drill": 0.0,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
+        "min_text_height": 1.0,
         "min_text_thickness": 0.15,
-        "min_through_hole_diameter": 0.25,
-        "min_track_width": 0.125,
-        "min_via_annular_width": 0.125,
-        "min_via_diameter": 0.6,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.15,
+        "min_via_annular_width": 0.15,
+        "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -241,76 +252,38 @@
         }
       ],
       "track_widths": [
-        0.0,
-        0.125,
-        0.15,
-        0.175,
-        0.2,
-        0.25,
-        0.3,
-        0.35,
-        0.4,
-        0.45,
-        0.5,
-        0.55,
-        0.6,
-        0.8,
-        1.0
+        0.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
           "corner_style": 1,
-          "max_amplitude": 2.0,
-          "min_amplitude": 0.15,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
           "single_sided": false,
-          "spacing": 1.08
+          "spacing": 0.6
         },
         "diff_pair_skew_defaults": {
           "corner_radius_percentage": 80,
           "corner_style": 1,
-          "max_amplitude": 2.0,
-          "min_amplitude": 0.15,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
           "single_sided": false,
-          "spacing": 1.08
+          "spacing": 0.3
         },
         "single_track_defaults": {
           "corner_radius_percentage": 80,
           "corner_style": 1,
-          "max_amplitude": 2.0,
-          "min_amplitude": 0.15,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
           "single_sided": false,
-          "spacing": 1.08
+          "spacing": 0.3
         }
       },
       "via_dimensions": [
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 0.6,
-          "drill": 0.25
-        },
-        {
-          "diameter": 0.6,
-          "drill": 0.3
-        },
-        {
-          "diameter": 0.65,
-          "drill": 0.3
-        },
-        {
-          "diameter": 0.7,
-          "drill": 0.4
-        },
-        {
-          "diameter": 0.75,
-          "drill": 0.45
-        },
-        {
-          "diameter": 0.8,
-          "drill": 0.45
         }
       ],
       "zones_allow_external_fillets": false
@@ -579,38 +552,39 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.15,
-        "diff_pair_gap": 0.7,
+        "clearance": 0.3,
+        "diff_pair_gap": 0.3,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.7,
+        "diff_pair_width": 0.3,
         "line_style": 0,
-        "microvia_diameter": 0.6,
-        "microvia_drill": 0.25,
+        "microvia_diameter": 0.45,
+        "microvia_drill": 0.3,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.25,
+        "track_width": 0.1565,
+        "tuning_profile": "50 Ω",
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
         "bus_width": 12,
+        "clearance": 0.2,
         "line_style": 0,
         "name": "ANT",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 0, 255)",
         "priority": 1,
         "schematic_color": "rgb(255, 0, 255)",
-        "tuning_profile": "",
+        "tuning_profile": "ANT",
         "wire_width": 6
       },
       {
         "bus_width": 12,
         "line_style": 0,
         "name": "CHASSIS",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 194, 0)",
         "priority": 2,
         "schematic_color": "rgb(0, 194, 0)",
         "tuning_profile": "",
@@ -620,7 +594,7 @@
         "bus_width": 12,
         "line_style": 0,
         "name": "GND",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 0, 0)",
         "priority": 3,
         "schematic_color": "rgb(0, 0, 0)",
         "tuning_profile": "",
@@ -630,7 +604,7 @@
         "bus_width": 12,
         "line_style": 0,
         "name": "PWR",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 0, 0)",
         "priority": 4,
         "schematic_color": "rgb(255, 0, 0)",
         "tuning_profile": "",
@@ -640,7 +614,7 @@
         "bus_width": 12,
         "line_style": 0,
         "name": "SIM",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 153, 0)",
         "priority": 0,
         "schematic_color": "rgb(255, 153, 0)",
         "tuning_profile": "",
@@ -650,10 +624,10 @@
         "bus_width": 12,
         "line_style": 0,
         "name": "USB",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 0, 255)",
         "priority": 5,
         "schematic_color": "rgb(0, 0, 255)",
-        "tuning_profile": "",
+        "tuning_profile": "USB",
         "wire_width": 6
       }
     ],
@@ -1106,6 +1080,77 @@
     "meta": {
       "version": 0
     },
-    "tuning_profiles_impedance_geometric": []
+    "tuning_profiles_impedance_geometric": [
+      {
+        "enable_time_domain_tuning": true,
+        "layer_entries": [
+          {
+            "bottom_reference_layer": "In1.Cu",
+            "delay": 5699700,
+            "diff_pair_gap": 150000,
+            "signal_layer": "F.Cu",
+            "top_reference_layer": "UNDEFINED",
+            "width": 141000
+          }
+        ],
+        "profile_name": "USB",
+        "target_impedance": 90.0,
+        "type": 1,
+        "via_overrides": [],
+        "via_prop_delay": 4500000
+      },
+      {
+        "enable_time_domain_tuning": true,
+        "layer_entries": [
+          {
+            "bottom_reference_layer": "In1.Cu",
+            "delay": 5498700,
+            "diff_pair_gap": 0,
+            "signal_layer": "F.Cu",
+            "top_reference_layer": "UNDEFINED",
+            "width": 148300
+          }
+        ],
+        "profile_name": "ANT",
+        "target_impedance": 50.0,
+        "type": 0,
+        "via_overrides": [],
+        "via_prop_delay": 4500000
+      },
+      {
+        "enable_time_domain_tuning": true,
+        "layer_entries": [
+          {
+            "bottom_reference_layer": "In1.Cu",
+            "delay": 5584300,
+            "diff_pair_gap": 0,
+            "signal_layer": "F.Cu",
+            "top_reference_layer": "UNDEFINED",
+            "width": 156500
+          },
+          {
+            "bottom_reference_layer": "In3.Cu",
+            "delay": 7116200,
+            "diff_pair_gap": 0,
+            "signal_layer": "In2.Cu",
+            "top_reference_layer": "In1.Cu",
+            "width": 142500
+          },
+          {
+            "bottom_reference_layer": "B.Cu",
+            "delay": 7113200,
+            "diff_pair_gap": 0,
+            "signal_layer": "In4.Cu",
+            "top_reference_layer": "In3.Cu",
+            "width": 131800
+          }
+        ],
+        "profile_name": "50 Ω",
+        "target_impedance": 50.0,
+        "type": 0,
+        "via_overrides": [],
+        "via_prop_delay": 4500000
+      }
+    ]
   }
 }
