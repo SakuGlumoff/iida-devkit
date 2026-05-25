@@ -1,0 +1,9 @@
+(version 1)
+(rule "Diff pair max difference"
+	(constraint diff_pair_gap (max "5mm"))
+	(condition "A.inDiffPair('*') && AB.isCoupledDiffPair()")
+)
+(rule "Diff pair uncoupled too long"
+	(condition "A.inDiffPair('*') && AB.isCoupledDiffPair()")
+	(constraint diff_pair_uncoupled (max "10mm"))
+)
