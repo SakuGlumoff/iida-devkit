@@ -4417,6 +4417,10 @@
 		(uuid "fc510d0e-9fb7-4091-aaa8-4cc51f2ba88a")
 	)
 	(no_connect
+		(at 186.69 147.32)
+		(uuid "27154a22-977b-4c49-8ad9-81cb48d28189")
+	)
+	(no_connect
 		(at 43.18 93.98)
 		(uuid "349ca908-221c-4b92-9618-8426b1820c25")
 	)
@@ -4431,6 +4435,10 @@
 	(no_connect
 		(at 361.95 100.33)
 		(uuid "79264d1e-92a9-4937-9c06-9b87cc2d62d8")
+	)
+	(no_connect
+		(at 219.71 104.14)
+		(uuid "a273ca8f-7143-48d4-9e02-d50e19d267ed")
 	)
 	(no_connect
 		(at 387.35 97.79)
@@ -4796,16 +4804,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 147.32) (xy 187.96 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "191cf839-f71a-496e-8633-cd8363e84c10")
-	)
-	(wire
-		(pts
 			(xy 386.08 72.39) (xy 388.62 72.39)
 		)
 		(stroke
@@ -5013,16 +5011,6 @@
 			(type default)
 		)
 		(uuid "2d8e6719-4c54-4e15-a3e0-adc634ed8145")
-	)
-	(wire
-		(pts
-			(xy 139.7 139.7) (xy 187.96 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2dbcdcc1-4562-4645-af2d-8f05675c97d6")
 	)
 	(wire
 		(pts
@@ -5283,6 +5271,16 @@
 			(type default)
 		)
 		(uuid "4b27d040-b552-4be4-81c9-44718183f1cd")
+	)
+	(wire
+		(pts
+			(xy 139.7 139.7) (xy 166.37 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c1f4379-92c8-40e5-bc26-8927b620d324")
 	)
 	(wire
 		(pts
@@ -6086,16 +6084,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 147.32) (xy 166.37 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4b89edf-0ad9-4ce1-91b5-94f4b78c7934")
-	)
-	(wire
-		(pts
 			(xy 120.65 127) (xy 120.65 132.08)
 		)
 		(stroke
@@ -6113,6 +6101,16 @@
 			(type default)
 		)
 		(uuid "a584fcd3-72f2-4ad8-b456-53901b523c66")
+	)
+	(wire
+		(pts
+			(xy 186.69 147.32) (xy 187.96 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a663025c-eff4-47d7-a15c-8e4530353123")
 	)
 	(wire
 		(pts
@@ -6143,16 +6141,6 @@
 			(type default)
 		)
 		(uuid "aa5ab3d5-2d18-4396-806b-984878237825")
-	)
-	(wire
-		(pts
-			(xy 218.44 104.14) (xy 266.7 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ace96c02-40ce-43ad-a2e7-71e17171a360")
 	)
 	(wire
 		(pts
@@ -6656,6 +6644,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 139.7) (xy 187.96 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e55e42f0-0cd9-44a1-8ed6-5005f64af6f5")
+	)
+	(wire
+		(pts
 			(xy 264.16 177.8) (xy 266.7 177.8)
 		)
 		(stroke
@@ -6843,6 +6841,16 @@
 			(type default)
 		)
 		(uuid "f93bf945-0bbe-4351-868f-58ef3a6217f5")
+	)
+	(wire
+		(pts
+			(xy 218.44 104.14) (xy 219.71 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f953feaf-3992-4aac-869a-d15f65fc62af")
 	)
 	(wire
 		(pts
@@ -7425,16 +7433,16 @@
 		)
 		(uuid "187f9505-aeab-4086-afe7-b1a12635cebd")
 	)
-	(hierarchical_label "MDM_DTR"
+	(hierarchical_label "MDM_PON"
 		(shape output)
-		(at 139.7 147.32 180)
+		(at 139.7 139.7 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "1ac5ef91-3397-448e-954c-14792d72ba5f")
+		(uuid "29a24be6-ab5f-4fa6-8f3b-b7942dd7c8b3")
 	)
 	(hierarchical_label "{USB}"
 		(shape bidirectional)
@@ -7524,17 +7532,6 @@
 		)
 		(uuid "7b70c830-41ce-4bc3-a9a6-60d39b7806a5")
 	)
-	(hierarchical_label "MDM_DCD"
-		(shape input)
-		(at 139.7 139.7 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8192cae3-d1d0-425d-bea5-ce36056709a2")
-	)
 	(hierarchical_label "{I2C}"
 		(shape bidirectional)
 		(at 320.04 67.31 180)
@@ -7556,17 +7553,6 @@
 			(justify right)
 		)
 		(uuid "913ddb82-ecbd-4043-8045-22e1204e96dd")
-	)
-	(hierarchical_label "MDM_RI"
-		(shape input)
-		(at 266.7 104.14 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "91b6009f-7415-4db5-ae63-4266c8c02abc")
 	)
 	(hierarchical_label "MDM_RTS"
 		(shape output)
@@ -8137,120 +8123,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
 					(reference "R317")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 170.18 147.32 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "16b1b8db-6cbb-4f51-989f-d5ea771f9f2d")
-		(property "Reference" "R314"
-			(at 167.386 147.066 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Value" "22 Ω"
-			(at 172.974 147.066 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right top)
-			)
-		)
-		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
-			(at 170.18 149.098 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
-			(at 170.18 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "1 %"
-			(at 179.07 146.05 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.7 0.7)
-				)
-				(justify right top)
-			)
-		)
-		(property "Power rating" "0.05W"
-			(at 182.88 147.066 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.7 0.7)
-				)
-				(justify right top)
-			)
-		)
-		(property "Size" "0201"
-			(at 179.07 147.066 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.7 0.7)
-				)
-				(justify right top)
-			)
-		)
-		(pin "2"
-			(uuid "fd50d125-c6f8-4aeb-ab4c-f0e1c37832e7")
-		)
-		(pin "1"
-			(uuid "1eb2ae06-d912-4002-83ec-7aaf100a6f60")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R314")
 					(unit 1)
 				)
 			)
@@ -9727,7 +9599,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "55203a23-f23b-44e0-84ed-25e0802562d0")
-		(property "Reference" "R313"
+		(property "Reference" "R314"
 			(at 167.386 144.526 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9824,7 +9696,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
-					(reference "R313")
+					(reference "R314")
 					(unit 1)
 				)
 			)
@@ -10652,6 +10524,120 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
 					(reference "#PWR0321")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 170.18 139.7 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6de3ab4b-cd26-45fe-bf62-6920e21c03ea")
+		(property "Reference" "R313"
+			(at 167.386 139.446 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "22 Ω"
+			(at 172.974 139.446 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
+			(at 170.18 141.478 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+			(at 170.18 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1 %"
+			(at 179.07 138.43 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify right top)
+			)
+		)
+		(property "Power rating" "0.05W"
+			(at 182.88 139.446 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify right top)
+			)
+		)
+		(property "Size" "0201"
+			(at 179.07 139.446 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify right top)
+			)
+		)
+		(pin "2"
+			(uuid "5b6e90ca-aa44-433e-a7c6-3bd8e8557f8c")
+		)
+		(pin "1"
+			(uuid "52b71e82-110b-4f56-8864-1cd3186f2b35")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/6dd8d741-3080-458c-a4f5-a05a3905bb8a"
+					(reference "R313")
 					(unit 1)
 				)
 			)

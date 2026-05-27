@@ -1427,16 +1427,6 @@
 	)
 	(wire
 		(pts
-			(xy 292.1 109.22) (xy 304.8 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a371f52-0110-4f33-8c87-a0fd3e4f7073")
-	)
-	(wire
-		(pts
 			(xy 238.76 66.04) (xy 238.76 64.77)
 		)
 		(stroke
@@ -1597,16 +1587,6 @@
 	)
 	(wire
 		(pts
-			(xy 292.1 114.3) (xy 304.8 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99cd6093-1696-4b1f-83f8-856e3187896d")
-	)
-	(wire
-		(pts
 			(xy 292.1 124.46) (xy 304.8 124.46)
 		)
 		(stroke
@@ -1634,16 +1614,6 @@
 			(type default)
 		)
 		(uuid "bdbac034-567d-46cb-a3eb-b2d672dce84c")
-	)
-	(wire
-		(pts
-			(xy 292.1 111.76) (xy 304.8 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfc6e75a-3b19-408d-a1e2-5dabeced25de")
 	)
 	(wire
 		(pts
@@ -1734,6 +1704,16 @@
 			(type default)
 		)
 		(uuid "e621be2a-ca48-4fd3-a800-5e51e1b74094")
+	)
+	(wire
+		(pts
+			(xy 292.1 114.3) (xy 304.8 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e881f113-ae7d-4384-92d8-a397dffdf479")
 	)
 	(wire
 		(pts
@@ -3077,29 +3057,9 @@
 				(justify left)
 			)
 		)
-		(pin "MDM_DCD" output
+		(pin "MDM_PON" input
 			(at 304.8 114.3 180)
-			(uuid "af98cf78-ca14-481e-a9d9-83c85ae27dd2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "MDM_DTR" input
-			(at 304.8 111.76 180)
-			(uuid "d150d1d8-7c8a-4444-bd5d-6c85715fb36b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "MDM_RI" output
-			(at 304.8 109.22 180)
-			(uuid "7fe24a4e-254f-4165-8486-15246098e844")
+			(uuid "a6dc30f4-4310-40cb-92f8-f2787a5e5e2f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3359,29 +3319,9 @@
 				(justify left)
 			)
 		)
-		(pin "MDM_DCD" input
+		(pin "MDM_PON" output
 			(at 292.1 114.3 0)
-			(uuid "e9eb5d2f-3350-403a-ba50-7ab3717a10b6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MDM_DTR" output
-			(at 292.1 111.76 0)
-			(uuid "6c7c35b9-98a7-46e5-9885-cead00f4e965")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MDM_RI" input
-			(at 292.1 109.22 0)
-			(uuid "29a525f6-6b5b-42a7-b0ac-b8ec31df023d")
+			(uuid "2003fcfe-cb17-4e8f-881f-f5fc3ed2751d")
 			(effects
 				(font
 					(size 1.27 1.27)
