@@ -11290,7 +11290,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330 Ω"
+		(property "Value" "30 Ω"
 			(at 87.63 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11301,7 +11301,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 90.678 82.55 90)
 			(hide yes)
 			(show_name no)
@@ -11323,7 +11323,7 @@
 				)
 			)
 		)
-		(property "Description" "330Ω Resistor 1% 0.05W 0201"
+		(property "Description" "30Ω Resistor 1% 0.1W 0603"
 			(at 88.9 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -11345,7 +11345,7 @@
 				(justify left)
 			)
 		)
-		(property "Power rating" "0.05 W"
+		(property "Power rating" "0.1 W"
 			(at 87.63 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11356,7 +11356,7 @@
 				(justify left)
 			)
 		)
-		(property "Size" "0201"
+		(property "Size" "0603"
 			(at 87.63 85.0901 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16457,6 +16457,121 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 88.9 133.35 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "a1a13e42-2821-4da1-a5af-53146862cdac")
+		(property "Reference" "R510"
+			(at 87.63 130.302 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "30 Ω"
+			(at 87.63 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 90.678 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "30Ω Resistor 1% 0.1W 0603"
+			(at 88.9 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1 %"
+			(at 87.63 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Power rating" "0.1 W"
+			(at 87.63 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0603"
+			(at 87.63 135.8901 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "90d2aa5a-81a1-4e1f-9c5d-a200b78ed262")
+		)
+		(pin "1"
+			(uuid "41eaec76-23ed-4dd1-ab34-2ddbe3bef5c5")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
+					(reference "R510")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 50.8 214.63 90)
 		(unit 1)
 		(body_style 1)
@@ -18339,121 +18454,6 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
 					(reference "FB502")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 88.9 133.35 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "de5bfa7c-c4c2-4de4-b4a0-3e73b33b4ca6")
-		(property "Reference" "R510"
-			(at 87.63 130.302 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "330 Ω"
-			(at 87.63 132.08 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
-			(at 90.678 133.35 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "330Ω Resistor 1% 0.05W 0201"
-			(at 88.9 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "1 %"
-			(at 87.63 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.7 0.7)
-				)
-				(justify left)
-			)
-		)
-		(property "Power rating" "0.05 W"
-			(at 87.63 134.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.7 0.7)
-				)
-				(justify left)
-			)
-		)
-		(property "Size" "0201"
-			(at 87.63 135.8901 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.7 0.7)
-				)
-				(justify left)
-			)
-		)
-		(pin "2"
-			(uuid "46449c77-b6fb-4ab8-9d6f-89c8424a08b7")
-		)
-		(pin "1"
-			(uuid "1b999673-91b8-46bf-9b46-0d442cba39a2")
-		)
-		(instances
-			(project "iida_devkit"
-				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/3723475b-e956-4027-ac40-e47346743900"
-					(reference "R510")
 					(unit 1)
 				)
 			)
