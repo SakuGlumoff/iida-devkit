@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.0,
           "min_island_area": 10.0,
           "min_thickness": 0.15,
           "pad_connection": 2,
@@ -78,11 +78,19 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|172925725|82078182|69035b78-a12e-41ba-a88c-725a37845685|157f3375-1510-4f78-bc2e-7a2a1f0593b6",
+          "clearance|172925725|86578182|69035b78-a12e-41ba-a88c-725a37845685|157f3375-1510-4f78-bc2e-7a2a1f0593b6",
           ""
         ],
         [
           "courtyards_overlap|178040814|55746662|4d14c2be-85b7-424a-b24a-309af2a71e02|ac1c5db0-3f25-4b81-ab15-0972f512daf4",
+          ""
+        ],
+        [
+          "silk_over_copper|87335725|42118182|a9454443-46ef-4648-90db-c82ff713e71d|19b5af4a-5bf7-44a0-9738-6be6a5133797",
+          ""
+        ],
+        [
+          "silk_over_copper|96675725|42118182|b98b8bf9-59c9-4dd1-a9e4-166c2f21d484|19b5af4a-5bf7-44a0-9738-6be6a5133797",
           ""
         ],
         [
@@ -101,7 +109,7 @@
         "copper_sliver": "error",
         "courtyards_overlap": "error",
         "creepage": "error",
-        "diff_pair_gap_out_of_range": "ignore",
+        "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "error",
@@ -150,7 +158,7 @@
         "track_not_centered_on_via": "error",
         "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
-        "track_width": "ignore",
+        "track_width": "error",
         "tracks_crossing": "error",
         "tuning_profile_track_geometries": "error",
         "unconnected_items": "error",
@@ -535,8 +543,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.0,
-        "tuning_profile": "50 Ω",
+        "track_width": 0.1565,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
@@ -553,14 +561,13 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.5,
         "line_style": 0,
         "name": "CHASSIS",
         "pcb_color": "rgb(0, 194, 0)",
         "priority": 3,
         "schematic_color": "rgb(0, 194, 0)",
         "track_width": 0.5,
-        "tuning_profile": "",
+        "tuning_profile": "IGNORED",
         "wire_width": 20
       },
       {
@@ -570,7 +577,7 @@
         "pcb_color": "rgb(0, 0, 0)",
         "priority": 4,
         "schematic_color": "rgb(0, 0, 0)",
-        "tuning_profile": "",
+        "tuning_profile": "IGNORED",
         "wire_width": 20
       },
       {
@@ -580,7 +587,7 @@
         "pcb_color": "rgb(255, 0, 0)",
         "priority": 5,
         "schematic_color": "rgb(255, 0, 0)",
-        "tuning_profile": "",
+        "tuning_profile": "IGNORED",
         "wire_width": 20
       },
       {
@@ -590,7 +597,7 @@
         "pcb_color": "rgb(255, 153, 0)",
         "priority": 2,
         "schematic_color": "rgb(255, 153, 0)",
-        "tuning_profile": "",
+        "tuning_profile": "50 Ω",
         "wire_width": 6
       },
       {
@@ -1025,7 +1032,7 @@
         "uuid": "b12a6e25-97fb-4aba-bc96-af8db389bb9a"
       }
     ],
-    "used_designators": "R101,R201-225,R301-322,R401-416,R501-529,R601-608,#FLG101-102,#FLG201-206,#FLG301,#FLG501-502,D201-209,D401-403,D501-504,D601,L201,L601-605,AE601,#PWR101-105,#PWR201-209,#PWR301-324,#PWR401-405,#PWR501-518,#PWR601-602,C201-219,C301-315,C401-405,C501-521,C601-605,FB501-502,F201-202,FID101-103,H101-104,J201-212,J301-306,J501,J601,JP301,Q201-203,Q301,Q501-507,SW301-302,TP201-206,U201-206,U301,U401-405,U501-502,Y301-302",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -1129,6 +1136,15 @@
         "type": 0,
         "via_overrides": [],
         "via_prop_delay": 4500000
+      },
+      {
+        "enable_time_domain_tuning": false,
+        "layer_entries": [],
+        "profile_name": "IGNORED",
+        "target_impedance": 0.0,
+        "type": 0,
+        "via_overrides": [],
+        "via_prop_delay": 0
       }
     ]
   }
