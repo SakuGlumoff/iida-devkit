@@ -78,7 +78,15 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|164925725|168578182|69035b78-a12e-41ba-a88c-725a37845685|157f3375-1510-4f78-bc2e-7a2a1f0593b6",
+          "clearance|172925725|82078182|69035b78-a12e-41ba-a88c-725a37845685|157f3375-1510-4f78-bc2e-7a2a1f0593b6",
+          ""
+        ],
+        [
+          "courtyards_overlap|178040814|55746662|4d14c2be-85b7-424a-b24a-309af2a71e02|ac1c5db0-3f25-4b81-ab15-0972f512daf4",
+          ""
+        ],
+        [
+          "silk_overlap|179221410|55768182|1b5b218f-28f0-406c-9ce7-29d306f36ba3|43ddd3bb-8fc5-4473-9b2d-490dc6b3be39",
           ""
         ]
       ],
@@ -107,8 +115,8 @@
         "hole_near_hole": "error",
         "hole_to_hole": "error",
         "holes_co_located": "error",
-        "invalid_outline": "ignore",
-        "isolated_copper": "ignore",
+        "invalid_outline": "error",
+        "isolated_copper": "error",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
@@ -147,7 +155,7 @@
         "tuning_profile_track_geometries": "error",
         "unconnected_items": "error",
         "unresolved_variable": "error",
-        "via_dangling": "ignore",
+        "via_dangling": "error",
         "zones_intersect": "error"
       },
       "rules": {
@@ -1016,7 +1024,7 @@
         "uuid": "b12a6e25-97fb-4aba-bc96-af8db389bb9a"
       }
     ],
-    "used_designators": "R322",
+    "used_designators": "R101,R201-225,R301-322,R401-416,R501-529,R601-608,#FLG101-102,#FLG201-206,#FLG301,#FLG501-502,D201-209,D401-403,D501-504,D601,L201,L601-605,AE601,#PWR101-105,#PWR201-209,#PWR301-324,#PWR401-405,#PWR501-518,#PWR601-602,C201-219,C301-315,C401-405,C501-521,C601-605,FB501-502,F201-202,FID101-103,H101-104,J201-212,J301-306,J501,J601,JP301,Q201-203,Q301,Q501-507,SW301-302,TP201-206,U201-206,U301,U401-405,U501-502,Y301-302",
     "variants": []
   },
   "sheets": [
