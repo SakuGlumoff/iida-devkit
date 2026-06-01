@@ -6609,7 +6609,7 @@
 	)
 	(text "Monitoring"
 		(exclude_from_sim no)
-		(at 318.77 129.54 0)
+		(at 312.42 129.54 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -6723,8 +6723,8 @@
 	)
 	(text_box "To ensure that a depleted battery won't cause a sudden Brown-Out Reset (BOR), monitor the battery voltage and the State-of-Charge (SOC).\n\nFor ease of use, integrate a battery monitor that communicates with the host microcontroller using I2C."
 		(exclude_from_sim no)
-		(at 318.77 138.43 0)
-		(size 63.5 20.32)
+		(at 313.69 138.43 0)
+		(size 90.17 20.32)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width -0.0001)
@@ -6892,12 +6892,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1394ae93-a98e-4611-824e-3598fb8bff2e")
-	)
-	(junction
-		(at 260.35 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "14963392-b0f9-4d35-9238-6f2ef6853b62")
 	)
 	(junction
 		(at 123.19 118.11)
@@ -7146,6 +7140,12 @@
 		(uuid "6fb04e4e-d1b4-4119-9181-ad1f092233ef")
 	)
 	(junction
+		(at 358.14 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73e4cc2e-00ec-4338-8447-fd0b10c5414e")
+	)
+	(junction
 		(at 306.07 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7186,6 +7186,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8409a4f6-4ed2-423e-b4e0-1c475fb71e53")
+	)
+	(junction
+		(at 261.62 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86822b41-44b7-4b45-9d0d-4fd9606941c3")
 	)
 	(junction
 		(at 123.19 67.31)
@@ -7604,16 +7610,6 @@
 			(type default)
 		)
 		(uuid "01160ec3-4f89-4ccc-a559-15ea4d9478ff")
-	)
-	(wire
-		(pts
-			(xy 260.35 110.49) (xy 260.35 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01b278a0-2753-4aa9-b730-a14d853dcc55")
 	)
 	(wire
 		(pts
@@ -8077,7 +8073,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 118.11) (xy 260.35 118.11)
+			(xy 226.06 118.11) (xy 261.62 118.11)
 		)
 		(stroke
 			(width 0)
@@ -8234,6 +8230,16 @@
 			(type default)
 		)
 		(uuid "25d74694-43ae-45a8-8abb-906ed75b8b8b")
+	)
+	(wire
+		(pts
+			(xy 358.14 165.1) (xy 360.68 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "269241f9-0d28-44f2-8530-59256ccdadd1")
 	)
 	(wire
 		(pts
@@ -8427,7 +8433,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 96.52) (xy 261.62 118.11)
+			(xy 261.62 96.52) (xy 261.62 110.49)
 		)
 		(stroke
 			(width 0)
@@ -8574,6 +8580,16 @@
 			(type default)
 		)
 		(uuid "3c678168-93f7-48c9-9bee-dbd656b8b767")
+	)
+	(wire
+		(pts
+			(xy 261.62 110.49) (xy 261.62 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c6fb8d0-0c13-4256-9c6e-5a0fb8966d04")
 	)
 	(wire
 		(pts
@@ -8794,16 +8810,6 @@
 			(type default)
 		)
 		(uuid "4990a911-db07-4e7d-8dff-51f480b8ba9f")
-	)
-	(wire
-		(pts
-			(xy 260.35 118.11) (xy 261.62 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a7eda31-5c49-44d4-ab56-6cca71305187")
 	)
 	(wire
 		(pts
@@ -9264,6 +9270,16 @@
 			(type default)
 		)
 		(uuid "72c1d205-29b4-4b74-adf1-c29f3944bf45")
+	)
+	(wire
+		(pts
+			(xy 358.14 177.8) (xy 360.68 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73aaaf4a-182c-458d-bf39-d134afdacc50")
 	)
 	(wire
 		(pts
@@ -9787,7 +9803,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 110.49) (xy 259.08 110.49)
+			(xy 259.08 110.49) (xy 261.62 110.49)
 		)
 		(stroke
 			(width 0)
@@ -10017,6 +10033,16 @@
 	)
 	(wire
 		(pts
+			(xy 358.14 175.26) (xy 358.14 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adcc8d29-e61d-4a71-a69d-88e98584e32c")
+	)
+	(wire
+		(pts
 			(xy 95.25 213.36) (xy 102.87 213.36)
 		)
 		(stroke
@@ -10137,7 +10163,7 @@
 	)
 	(wire
 		(pts
-			(xy 359.41 177.8) (xy 360.68 177.8)
+			(xy 355.6 177.8) (xy 358.14 177.8)
 		)
 		(stroke
 			(width 0)
@@ -10857,6 +10883,16 @@
 	)
 	(wire
 		(pts
+			(xy 358.14 167.64) (xy 358.14 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e855efad-b845-453a-bfd2-95ad328a6a20")
+	)
+	(wire
+		(pts
 			(xy 252.73 190.5) (xy 279.4 190.5)
 		)
 		(stroke
@@ -11187,7 +11223,7 @@
 	)
 	(wire
 		(pts
-			(xy 345.44 177.8) (xy 351.79 177.8)
+			(xy 345.44 177.8) (xy 347.98 177.8)
 		)
 		(stroke
 			(width 0)
@@ -12682,6 +12718,17 @@
 	)
 	(hierarchical_label "V_3V3"
 		(shape output)
+		(at 360.68 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9a228181-693b-4656-9dae-3f504d411d78")
+	)
+	(hierarchical_label "V_3V3"
+		(shape output)
 		(at 393.7 64.77 0)
 		(effects
 			(font
@@ -13017,6 +13064,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 292.1 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7b5f8d68-05e6-4f73-b662-46d34e944d53")
 		)
@@ -13131,6 +13189,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 222.25 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ce5da8ee-b8e0-48a4-907c-78c9a056c9d1")
 		)
@@ -13148,7 +13217,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 355.6 177.8 90)
+		(at 351.79 177.8 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13158,7 +13227,7 @@
 		(dnp no)
 		(uuid "090db1a9-b527-4aee-9209-e2efa2597074")
 		(property "Reference" "R222"
-			(at 353.06 170.688 90)
+			(at 349.25 170.688 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13169,7 +13238,7 @@
 			)
 		)
 		(property "Value" "22 Ω"
-			(at 353.06 172.466 90)
+			(at 349.25 172.466 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13180,7 +13249,7 @@
 			)
 		)
 		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
-			(at 355.6 179.578 90)
+			(at 351.79 179.578 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13191,7 +13260,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 355.6 177.8 0)
+			(at 351.79 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13202,7 +13271,7 @@
 			)
 		)
 		(property "Description" "22Ω Resistor 1% 0.05W 0201"
-			(at 355.6 177.8 0)
+			(at 351.79 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13213,7 +13282,7 @@
 			)
 		)
 		(property "Tolerance" "1 %"
-			(at 353.06 173.736 90)
+			(at 349.25 173.736 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13224,7 +13293,7 @@
 			)
 		)
 		(property "Power rating" "0.05W"
-			(at 353.06 175.006 90)
+			(at 349.25 175.006 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13235,7 +13304,7 @@
 			)
 		)
 		(property "Size" "0201"
-			(at 353.06 176.276 90)
+			(at 349.25 176.276 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13243,6 +13312,17 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
+			)
+		)
+		(property "MPN" ""
+			(at 351.79 177.8 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -13370,6 +13450,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 177.8 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9a1aa8a3-974c-4d83-a558-57589ef76340")
 		)
@@ -13495,6 +13586,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 318.77 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "cefda1b4-d076-4385-8ab6-e303625d2e98")
 		)
@@ -13598,6 +13700,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 88.9 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "60b18e2a-4c31-4736-a476-20fb2ba3e05f")
 		)
@@ -13671,6 +13784,17 @@
 		)
 		(property "Description" "test point"
 			(at 146.05 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 146.05 196.85 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13860,6 +13984,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 29.21 207.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "45558e79-7211-46e1-9dff-687ef15d5850")
 		)
@@ -13951,6 +14086,17 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
+			)
+		)
+		(property "MPN" ""
+			(at 300.99 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -14078,6 +14224,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 123.19 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3ef561ea-bc46-4b33-bcd4-445f8a8fa7eb")
 		)
@@ -14170,6 +14327,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 292.1 158.75 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c3628834-60dc-44ab-a3e0-e62d330b93a1")
 		)
@@ -14252,6 +14420,17 @@
 					(size 1.27 1.27)
 				)
 				(justify top)
+			)
+		)
+		(property "MPN" ""
+			(at 341.63 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "4"
@@ -14402,6 +14581,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 215.9 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c1d5a1a7-c70f-4e98-badd-548122580109")
 		)
@@ -14493,6 +14683,17 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 288.29 265.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -14588,6 +14789,17 @@
 				(justify right top)
 			)
 		)
+		(property "MPN" ""
+			(at 196.85 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "79c5cbc0-906d-468c-9413-0930bf198a20")
 		)
@@ -14681,6 +14893,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 203.2 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "93ec7f7f-4676-4b5b-9821-aaaaab528e06")
 		)
@@ -14753,6 +14976,17 @@
 			)
 		)
 		(property "Description" "MCP73833T-FCI/MF"
+			(at 242.57 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
 			(at 242.57 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -14904,6 +15138,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 266.7 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "66b797de-e1d4-43bf-a4d4-ce550f3c7f6a")
 		)
@@ -15016,6 +15261,17 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 261.62 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -15211,6 +15467,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 209.55 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "71672628-508f-4dc8-86bc-b843f0bbf136")
 		)
@@ -15301,6 +15568,17 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
+			)
+		)
+		(property "MPN" ""
+			(at 95.25 67.31 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -15464,6 +15742,17 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 19.05 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6bd6b9db-e3b5-44aa-b22c-39a704d0b068")
 		)
@@ -15556,6 +15845,17 @@
 				(justify right top)
 			)
 		)
+		(property "MPN" ""
+			(at 57.15 193.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1fd7a4a1-ea5a-44da-8244-79507e3bd527")
 		)
@@ -15628,6 +15928,17 @@
 		)
 		(property "Description" "1x2P Through Hole P=2.54mm Pin Headers"
 			(at 384.81 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 384.81 57.15 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15751,6 +16062,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 261.62 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d1f9d3ea-c41a-4a97-9c1f-d280b8c6093e")
 		)
@@ -15866,6 +16188,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 304.8 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7a6983ec-7805-4d63-92fa-bc0af69e959b")
 		)
@@ -15968,6 +16301,17 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 25.4 207.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -16095,6 +16439,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 266.7 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fcc98816-fc44-4f72-ab4b-8dd84cfaa123")
 		)
@@ -16207,6 +16562,17 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 177.8 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -16380,6 +16746,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 266.7 265.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "709fd579-5588-4a8a-a63a-9fde47e2708c")
 		)
@@ -16492,6 +16869,17 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 46.99 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -16621,6 +17009,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 95.25 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e42bd8e8-3008-4d91-8206-be20f045d39a")
 		)
@@ -16631,6 +17030,131 @@
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
 					(reference "C201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 358.14 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5ac8c081-7f44-48f1-8fc0-6df0c04c395f")
+		(property "Reference" "R225"
+			(at 359.41 168.402 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "180 kΩ"
+			(at 359.41 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "perfect_footprints:R_0201_0603Metric"
+			(at 356.362 171.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 358.14 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "180kΩ Resistor 1% 0.05W 0201"
+			(at 358.14 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1 %"
+			(at 359.41 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Power rating" "0.05 W"
+			(at 359.41 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "0201"
+			(at 359.41 173.9901 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 358.14 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7e0dd856-738f-438d-8e47-cdb1ab409849")
+		)
+		(pin "1"
+			(uuid "20490746-61aa-4b69-bf05-1e30b60e466d")
+		)
+		(instances
+			(project "iida_devkit"
+				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
+					(reference "R225")
 					(unit 1)
 				)
 			)
@@ -16747,6 +17271,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 101.6 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1ffb7ea2-e435-4968-a41b-a3703622c74b")
 		)
@@ -16820,6 +17355,17 @@
 		)
 		(property "Description" "test point"
 			(at 209.55 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 209.55 270.51 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16908,6 +17454,17 @@
 					(size 1.27 1.27)
 				)
 				(justify top)
+			)
+		)
+		(property "MPN" ""
+			(at 114.3 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -17014,6 +17571,17 @@
 				(justify right top)
 			)
 		)
+		(property "MPN" ""
+			(at 107.95 67.31 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0b3c11bd-809b-4449-9cad-f8091d18ea06")
 		)
@@ -17086,6 +17654,17 @@
 		)
 		(property "Description" "1x2P Through Hole P=2.54mm Pin Headers"
 			(at 299.72 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 299.72 57.15 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17220,6 +17799,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 294.64 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1aa8a660-1ca5-4044-ae3b-c1e6105fbc28")
 		)
@@ -17247,7 +17837,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "76c95ed8-2fcb-4bce-96e2-3142323355e1")
-		(property "Reference" "R225"
+		(property "Reference" "R226"
 			(at 383.54 66.294 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17313,6 +17903,17 @@
 				(justify right top)
 			)
 		)
+		(property "MPN" ""
+			(at 386.08 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e309b88b-f3ba-4c19-81b2-fdaf663295b1")
 		)
@@ -17322,7 +17923,7 @@
 		(instances
 			(project "iida_devkit"
 				(path "/b12a6e25-97fb-4aba-bc96-af8db389bb9a/5e1bb3da-9ec5-412a-a6e9-5701708c7ef6"
-					(reference "R225")
+					(reference "R226")
 					(unit 1)
 				)
 			)
@@ -17395,6 +17996,17 @@
 					(size 1.27 1.27)
 				)
 				(justify top)
+			)
+		)
+		(property "MPN" ""
+			(at 336.55 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"
@@ -17544,6 +18156,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 203.2 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1ca9d25d-68dc-4c28-843a-94322e95d44b")
 		)
@@ -17657,6 +18280,17 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 279.4 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -17785,6 +18419,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 369.57 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f1c618d0-301e-4d51-a543-bd5ea0806291")
 		)
@@ -17897,6 +18542,17 @@
 					(size 0.7 0.7)
 				)
 				(justify right top)
+			)
+		)
+		(property "MPN" ""
+			(at 82.55 193.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -18060,6 +18716,17 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 69.85 195.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "dfabbd57-d6f3-4baa-9016-d918635583cb")
 		)
@@ -18136,6 +18803,17 @@
 		)
 		(property "Description" "test point"
 			(at 209.55 275.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 209.55 275.59 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18346,6 +19024,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 175.26 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b6ec4475-0890-432a-8bb5-09f7b68bc7fa")
 		)
@@ -18461,6 +19150,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 44.45 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6a70f203-34a0-464b-816d-d53e20accd60")
 		)
@@ -18573,6 +19273,17 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 356.87 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -18698,6 +19409,17 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 271.78 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -18972,6 +19694,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 307.34 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8308ff9c-f4a6-492c-8f16-f91f00a09b4d")
 		)
@@ -19098,6 +19831,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 317.5 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "44a4046d-285d-4292-b854-3fdafc7f8d52")
 		)
@@ -19171,6 +19915,17 @@
 		)
 		(property "Description" "test point"
 			(at 130.81 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 130.81 200.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19291,6 +20046,17 @@
 				(justify right)
 			)
 		)
+		(property "MPN" ""
+			(at 107.95 213.36 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "40808078-0795-4299-955e-b0a1a7401af9")
 		)
@@ -19405,6 +20171,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 158.75 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ebe96fd6-1521-4f66-84e4-815ef789df69")
 		)
@@ -19491,6 +20268,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 144.78 210.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "2b836da3-e271-4ac3-af13-a58e84c71035")
 		)
@@ -19572,6 +20360,17 @@
 			)
 		)
 		(property "Description" "1x1P Through Hole P=2.54mm Pin Headers"
+			(at 237.49 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
 			(at 237.49 261.62 0)
 			(hide yes)
 			(show_name no)
@@ -19704,6 +20503,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 379.73 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "eabda2cc-ba62-43bf-96a4-71e03ca57741")
 		)
@@ -19816,6 +20626,17 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 288.29 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -19978,6 +20799,17 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 237.49 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9301a778-69b1-40e2-9416-4ed4083b6730")
 		)
@@ -20057,6 +20889,17 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 209.55 267.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d91e8729-83b1-4144-98fc-a1bdfb5a6e06")
 		)
@@ -20125,6 +20968,17 @@
 			)
 		)
 		(property "Description" "USB4105-GF-A"
+			(at 25.4 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
 			(at 25.4 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -20305,6 +21159,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 196.85 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8021adfa-2c91-43ec-af89-fdbc2d3dafe2")
 		)
@@ -20467,6 +21332,17 @@
 				(justify top)
 			)
 		)
+		(property "MPN" ""
+			(at 158.75 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "30b1ef98-12f5-4814-8455-c143c41f51f7")
 		)
@@ -20566,6 +21442,17 @@
 					(size 1.27 1.27)
 				)
 				(justify top)
+			)
+		)
+		(property "MPN" ""
+			(at 243.84 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "12"
@@ -20690,6 +21577,17 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 283.21 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "49575c8b-90fb-4fb2-a9ef-a6655506864a")
 		)
@@ -20762,6 +21660,17 @@
 			)
 		)
 		(property "Description" "1x2P Through Hole P=2.54mm Pin Headers"
+			(at 179.07 275.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
 			(at 179.07 275.59 0)
 			(hide yes)
 			(show_name no)
@@ -20865,6 +21774,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 203.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b6639c2b-a437-4e00-a428-c831dc6ff8a3")
 		)
@@ -20937,6 +21857,17 @@
 		)
 		(property "Description" "1x2P Through Hole P=2.54mm Pin Headers"
 			(at 195.58 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 195.58 57.15 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21038,6 +21969,17 @@
 					(size 0.7 0.7)
 				)
 				(justify right)
+			)
+		)
+		(property "MPN" ""
+			(at 69.85 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "4"
@@ -21187,6 +22129,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 114.3 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8085315c-c91f-4ed2-a61a-9e93b48a053e")
 		)
@@ -21273,6 +22226,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 127 210.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "636bd3be-68e8-4217-a349-fd0117e394ca")
 		)
@@ -21355,6 +22319,17 @@
 			)
 		)
 		(property "Description" "1x2P Through Hole P=2.54mm Pin Headers"
+			(at 261.62 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
 			(at 261.62 256.54 0)
 			(hide yes)
 			(show_name no)
@@ -21455,6 +22430,17 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 304.8 158.75 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -21618,6 +22604,17 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 237.49 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2f579f1b-a951-45f7-a339-c84ae47d8d4a")
 		)
@@ -21739,6 +22736,17 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 215.9 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -21866,6 +22874,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 135.89 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a2b60762-aff0-45c5-b77c-ba4996387cba")
 		)
@@ -21939,6 +22958,17 @@
 		)
 		(property "Description" "test point"
 			(at 209.55 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 209.55 273.05 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22059,6 +23089,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 358.14 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d0f4ab5a-a3af-4bde-842b-8c30ac7238b6")
 		)
@@ -22151,6 +23192,17 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 279.4 158.75 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "980c2fd7-1aa6-48d9-9cb8-500f66add05f")
 		)
@@ -22225,6 +23277,17 @@
 		)
 		(property "Description" "1x2P Through Hole P=2.54mm Pin Headers"
 			(at 134.62 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 134.62 228.6 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22347,6 +23410,17 @@
 					(size 0.7 0.7)
 				)
 				(justify left top)
+			)
+		)
+		(property "MPN" ""
+			(at 227.33 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -22630,6 +23704,17 @@
 					(size 0.7 0.7)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 283.21 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
