@@ -20,12 +20,12 @@ jobs:
         run: |
           rm -rf /__w/iida-devkit/iida-devkit/.west /__w/iida-devkit/iida-devkit/*
           export PATH=$PATH:/github/home/.local/bin
-          pip install west==1.4.0
+          pip install west
           west init -m ${{ github.server_url }}/${{ github.repository }}.git --mr ${{ github.ref_name }}
           west update
           pip install -r zephyr/scripts/requirements.txt
           west zephyr-export
-          west build -b iida_devkit application/app -- -DBOARD_ROOT=..
+          west build -b iida_devkit application/app
       - name: Archive firmware
         uses: actions/upload-artifact@v4
         with:
