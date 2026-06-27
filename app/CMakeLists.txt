@@ -7,7 +7,6 @@ project(app
 
 target_sources(app PRIVATE
 	src/main.c
-	src/debug.c
 )
 
 target_include_directories(app PRIVATE

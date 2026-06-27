@@ -1,7 +1,0 @@
-config SHT40
-	bool "SHT40 Humidity sensor"
-	default y
-	select i2c
-	select gpio
-	help
-	  Enable support for the SHT40 humidity sensor.

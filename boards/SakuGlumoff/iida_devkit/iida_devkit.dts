@@ -6,47 +6,6 @@
 / {
 	model = "Iida devkit";
 	compatible = "SakuGlumoff,iida-devkit";
-
-	chosen {
-		zephyr,console = &cdc_acm_uart0;
-		zephyr,sram = &sram0;
-		zephyr,flash = &flash0;
-	};
-
-	hwid: hwid {
-		compatible = "hwid";
-		hwid1: hwid1 {
-			label = "HWID1";
-			gpios = <&gpioa 4 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_HIGH)>;
-		};
-		hwid2: hwid2 {
-			label = "HWID2";
-			gpios = <&gpioa 5 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_HIGH)>;
-		};
-	};
-
-	dbg_gpio: dbg_gpio {
-		compatible = "dummy-gpio";
-		gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
-	};
-
-	aliases {
-		die-temp0 = &die_temp;
-		volt-sensor0 = &vbat;
-	};
-};
-
-&flash0 {
-	partitions {
-		compatible = "fixed-partitions";
-		#address-cells = <1>;
-		#size-cells = <1>;
-
-		app_partition: partition@0 {
-			label = "app";
-			reg = <0x00000000 DT_SIZE_K(512)>;
-		};
-	};
 };
 
 &clk_hsi48 {
