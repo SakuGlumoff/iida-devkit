@@ -1,15 +1,2 @@
 / {
-	chosen {
-		zephyr,sram = &sram0;
-		zephyr,flash = &flash0;
-		zephyr,console = &usart1;
-		zephyr,shell-uart = &usart1;
-	};
-};
-
-&usart1 {
-	status = "okay";
-	pinctrl-0 = <&usart1_tx_pa9 &usart1_rx_pa10>;
-	pinctrl-names = "default";
-	current-speed = <115200>;
 };

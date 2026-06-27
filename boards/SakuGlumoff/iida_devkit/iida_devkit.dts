@@ -3,9 +3,102 @@
 #include <st/l5/stm32l552Xe.dtsi>
 #include <st/l5/stm32l552z(c-e)txq-pinctrl.dtsi>
 
+#include <mem.h>
+#include <freq.h>
+
 / {
 	model = "Iida devkit";
 	compatible = "SakuGlumoff,iida-devkit";
+
+	chosen {
+		zephyr,sram = &sram0;
+		zephyr,flash = &flash0;
+		zephyr,console = &usart1;
+		zephyr,shell-uart = &usart1;
+	};
+
+	leds: leds {
+		compatible = "gpio-leds";
+		led_a: led_a {
+			gpios = <&io_exp0 0 GPIO_ACTIVE_LOW>;
+		};
+		led_b: led_b {
+			gpios = <&io_exp0 1 GPIO_ACTIVE_LOW>;
+		};
+		led_c: led_c {
+			gpios = <&io_exp0 2 GPIO_ACTIVE_LOW>;
+		};
+	};
+
+	en_v_3v8_mdm: en_v_3v8_mdm {
+		compatible = "dummy-gpio";
+		gpios = <&io_exp0 3 GPIO_ACTIVE_HIGH>;
+	};
+
+	mdm_reset: mdm_reset {
+		compatible = "dummy-gpio";
+		gpios = <&io_exp0 4 GPIO_ACTIVE_HIGH>;
+	};
+
+	mdm_pwr_on: mdm_pwr_on {
+		compatible = "dummy-gpio";
+		gpios = <&io_exp0 5 GPIO_ACTIVE_HIGH>;
+	};
+
+	mdm_pon: mdm_pon {
+		compatible = "dummy-gpio";
+		gpios = <&gpiob 12 GPIO_ACTIVE_HIGH>;
+	};
+
+	temp_intn: temp_intn {
+		compatible = "dummy-gpio";
+		gpios = <&io_exp0 6 GPIO_ACTIVE_LOW>;
+	};
+
+	bat_mon_intn: bat_mon_intn {
+		compatible = "dummy-gpio";
+		gpios = <&io_exp0 7 GPIO_ACTIVE_LOW>;
+	};
+
+	usb_det: usb_det {
+		compatible = "dummy-gpio";
+		gpios = <&gpiob 6 GPIO_ACTIVE_HIGH>;
+	};
+
+	pa0: pa0 {
+		compatible = "dummy-gpio";
+		gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
+	};
+
+	pa1: pa1 {
+		compatible = "dummy-gpio";
+		gpios = <&gpioa 1 GPIO_ACTIVE_HIGH>;
+	};
+
+	pa2: pa2 {
+		compatible = "dummy-gpio";
+		gpios = <&gpioa 2 GPIO_ACTIVE_HIGH>;
+	};
+
+	pa15: pa15 {
+		compatible = "dummy-gpio";
+		gpios = <&gpioa 15 GPIO_ACTIVE_LOW>;
+	};
+
+	pb4: pb4 {
+		compatible = "dummy-gpio";
+		gpios = <&gpiob 4 GPIO_ACTIVE_HIGH>;
+	};
+
+	pb5: pb5 {
+		compatible = "dummy-gpio";
+		gpios = <&gpiob 5 GPIO_ACTIVE_HIGH>;
+	};
+
+	aliases {
+		die-temp0 = &die_temp;
+		volt-sensor0 = &vbat;
+	};
 };
 
 &clk_hsi48 {
@@ -22,26 +115,27 @@
 };
 
 &clk_hse {
-	clock-frequency = <DT_FREQ_M(16)>;
 	status = "okay";
+	clock-frequency = <DT_FREQ_M(16)>;
 };
 
 &clk_lse {
-	clock-frequency = <32768>;
 	status = "okay";
+	clock-frequency = <32768>;
 };
 
 &pll {
+	status = "okay";
 	div-m = <2>;
 	mul-n = <25>;
 	div-p = <7>;
 	div-q = <2>;
 	div-r = <2>;
 	clocks = <&clk_hsi>;
-	status = "okay";
 };
 
 &rcc {
+	status = "okay";
 	clocks = <&pll>;
 	clock-frequency = <DT_FREQ_M(100)>;
 	ahb-prescaler = <1>;
@@ -61,10 +155,6 @@
 	status = "okay";
 };
 
-&usb {
-	status = "okay";
-};
-
 &rtc {
 	status = "okay";
 };
@@ -79,4 +169,103 @@
 
 &dmamux1 {
 	status = "okay";
+};
+
+&usart1 {
+	status = "okay";
+
+	pinctrl-0 = <&usart1_tx_pa9 &usart1_rx_pa10>;
+	pinctrl-names = "default";
+	current-speed = <115200>;
+};
+
+&usart3 {
+	status = "okay";
+
+	pinctrl-0 = <
+		&usart3_tx_pb10
+		&usart3_rx_pb11
+		&usart3_cts_pb13
+		&usart3_rts_pb14
+	>;
+	pinctrl-names = "default";
+	current-speed = <9600>;
+
+	modem0: modem {
+		compatible = "quectel,bg95";
+		zephyr,deferred-init;
+		mdm-power-gpios = <&io_exp0 5 GPIO_ACTIVE_HIGH>;
+		mdm-reset-gpios = <&io_exp0 4 GPIO_ACTIVE_HIGH>;
+	};
+};
+
+&octospi1 {
+	status = "okay";
+
+	pinctrl-0 = <
+		&octospi1_clk_pa3
+		&octospi1_ncs_pa4
+		&octospi1_io0_pb1
+		&octospi1_io1_pb0
+		&octospi1_io2_pa7
+		&octospi1_io3_pa6
+	>;
+	pinctrl-names = "default";
+
+	ext_flash: ospi-nor-flash@0 {
+		compatible = "st,stm32-ospi-nor";
+		reg = <0>;
+		size = <DT_SIZE_M(8)>;
+		ospi-max-frequency = <DT_FREQ_M(1)>;
+		spi-bus-width = <OSPI_QUAD_MODE>;
+		data-rate = <OSPI_STR_TRANSFER>;
+		writeoc = "PP_1_1_4";
+	};
+};
+
+&i2c1 {
+	status = "okay";
+
+	pinctrl-0 = <&i2c1_scl_pb8 &i2c1_sda_pb9>;
+	pinctrl-names = "default";
+
+	io_exp0: i2c@20 {
+		compatible = "ti,tca9538";
+		gpio-controller;
+		reg = <0x20>;
+		#gpio-cells = <2>;
+		ngpios = <8>;
+		nint-gpios = <&gpioc 13 GPIO_ACTIVE_LOW>;
+	};
+
+	hum_sens0: i2c@44 {
+		compatible = "sensirion,sht4x";
+		reg = <0x44>;
+		friendly-name = "Humidity sensor";
+		repeatability = <2>;
+	};
+
+	eeprom0: i2c@50 {
+		compatible = "atmel,at24";
+		reg = <0x50>;
+		size = <DT_SIZE_K(32)>;
+		pagesize = <64>;
+		address-width = <16>;
+		timeout = <5>;
+		wp-gpios = <&gpiob 7 GPIO_ACTIVE_LOW>;
+	};
+
+	fuel_gauge0: i2c@36 {
+		compatible = "maxim,max17048";
+		reg = <0x36>;
+	};
+};
+
+&usb {
+	status = "okay";
+
+	zephyr_udc0: usb {
+		pinctrl-0 = <&usb_dm_pa11 &usb_dp_pa12>;
+		pinctrl-names = "default";
+	};
 };
