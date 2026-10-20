@@ -10,7 +10,7 @@
 		(rev "v6.1.0")
 	)
 	(lib_symbols
-		(symbol "C_1"
+		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -99,7 +99,7 @@
 					)
 				)
 			)
-			(symbol "C_1_0_1"
+			(symbol "C_0_1"
 				(polyline
 					(pts
 						(xy -2.032 0.762) (xy 2.032 0.762)
@@ -125,7 +125,7 @@
 					)
 				)
 			)
-			(symbol "C_1_1_1"
+			(symbol "C_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -4540,7 +4540,7 @@
 				)
 			)
 		)
-		(property "Description" "180kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 279.4 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -4633,7 +4633,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 303.53 99.06 0)
 		(unit 1)
@@ -4688,7 +4687,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 303.53 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -4846,7 +4845,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 247.65 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -4993,7 +4992,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 101.6 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -5142,7 +5141,7 @@
 				(justify top)
 			)
 		)
-		(property "Description" "MCP9808T-E/MC"
+		(property "Description" "Temperature Sensor Digital, Local -40°C ~ 125°C 12 b 8-DFN (2x3)"
 			(at 292.1 112.268 0)
 			(hide yes)
 			(show_name no)
@@ -5278,7 +5277,7 @@
 				)
 			)
 		)
-		(property "Description" "180kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 44.45 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5426,7 +5425,7 @@
 				)
 			)
 		)
-		(property "Description" "Red LED 2V 0603 (1608 Metric)"
+		(property "Description" "Light emitting diode"
 			(at 158.75 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -5481,6 +5480,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 158.75 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6c108ab1-3331-4106-bd13-20a9796a80a3")
 		)
@@ -5497,7 +5507,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 127 214.63 0)
 		(unit 1)
@@ -5552,7 +5561,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 127 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -5710,7 +5719,7 @@
 				)
 			)
 		)
-		(property "Description" "Red LED 2V 0603 (1608 Metric)"
+		(property "Description" "Light emitting diode"
 			(at 152.4 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -5756,6 +5765,17 @@
 		)
 		(property "DigiKey Part Number" "732-4978-1-ND"
 			(at 152.4 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 152.4 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5835,7 +5855,7 @@
 				)
 			)
 		)
-		(property "Description" "2.2kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 171.45 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -5984,7 +6004,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "SHT40-AD1B-R2"
+		(property "Description" "Digital Humidity and Temperature Sensor, ±1%RH, ±0.1°C, I2C, 1.08-3.6V, 16bit, DFN-4"
 			(at 365.76 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -6105,7 +6125,7 @@
 				)
 			)
 		)
-		(property "Description" "Red LED 2V 0603 (1608 Metric)"
+		(property "Description" "Light emitting diode"
 			(at 171.45 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6160,6 +6180,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 171.45 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6f1b4ee3-609c-4f53-923b-fda181ada5bc")
 		)
@@ -6176,7 +6207,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 306.07 215.9 0)
 		(unit 1)
@@ -6231,7 +6261,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 306.07 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -6391,7 +6421,7 @@
 				(justify top)
 			)
 		)
-		(property "Description" "AT25SF081B-MAHB-T"
+		(property "Description" "8-Mbit, 2.5V Minimum SPI Serial Flash Memory with Dual-I/O and Quad-I/O Support, SOIC-8"
 			(at 114.3 225.044 0)
 			(hide yes)
 			(show_name no)
@@ -6414,7 +6444,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Renesas Electronics"
+		(property "Manufacturer" "Renesas Electronics Corporation"
 			(at 114.3 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -6528,7 +6558,7 @@
 				)
 			)
 		)
-		(property "Description" "2.2kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 152.4 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -6675,7 +6705,7 @@
 				)
 			)
 		)
-		(property "Description" "TCA9554PW"
+		(property "Description" "8 Bit Port/Expander, I2C SMBUS, Interrupt output, TSSOP-16"
 			(at 81.28 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -6831,7 +6861,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 85.09 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -6978,7 +7008,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 53.34 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -7203,7 +7233,7 @@
 				)
 			)
 		)
-		(property "Description" "2.2kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 158.75 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7350,7 +7380,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 101.6 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -7443,7 +7473,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 377.19 101.6 0)
 		(unit 1)
@@ -7498,7 +7527,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 377.19 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -7657,7 +7686,7 @@
 				)
 			)
 		)
-		(property "Description" "180kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 234.95 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7963,7 +7992,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 85.09 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -8189,7 +8218,7 @@
 				)
 			)
 		)
-		(property "Description" "M24256E-FMN6TP"
+		(property "Description" "128-Kbit serial I²C bus EEPROM"
 			(at 292.1 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -8399,7 +8428,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 85.09 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -8492,7 +8521,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 88.9 82.55 0)
 		(unit 1)
@@ -8547,7 +8575,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 88.9 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -8705,7 +8733,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 101.6 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -8852,7 +8880,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 85.09 219.71 0)
 			(hide yes)
 			(show_name no)

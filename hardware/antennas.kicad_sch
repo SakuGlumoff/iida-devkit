@@ -10,161 +10,6 @@
 		(rev "v6.1.0")
 	)
 	(lib_symbols
-		(symbol "C_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_1_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:Conn_Coaxial"
 			(pin_names
 				(offset 1.016)
@@ -352,6 +197,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "Device:Antenna_Dipole"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -462,6 +310,161 @@
 				(pin input line
 					(at 2.54 -5.08 90)
 					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
 					(name ""
 						(effects
 							(font
@@ -646,6 +649,184 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -769,184 +950,6 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "L_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "L"
-				(at -1.27 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L"
-				(at 1.905 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Inductor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "L_1_0_1"
-				(arc
-					(start 0 2.54)
-					(mid 0.6323 1.905)
-					(end 0 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 -0.635)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -1.905)
-					(end 0 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_1_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2227,7 +2230,7 @@
 			(justify left bottom)
 		)
 		(uuid "0f38f23a-b52b-4c3c-b21b-9fc2fb521cea")
-		(property "Net Class" "ANT"
+		(property "Netclass" "ANT"
 			(at 279.4 150.368 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2261,7 +2264,7 @@
 			(justify left bottom)
 		)
 		(uuid "23680769-4d81-410a-b24d-5d83ea531542")
-		(property "Net Class" "ANT"
+		(property "Netclass" "ANT"
 			(at 127 201.168 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2295,7 +2298,7 @@
 			(justify left bottom)
 		)
 		(uuid "86fd32d3-5f7a-4153-ba0e-6dc6e68de927")
-		(property "Net Class" "ANT"
+		(property "Netclass" "ANT"
 			(at 60.96 170.688 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2329,7 +2332,7 @@
 			(justify left bottom)
 		)
 		(uuid "d373bd34-4461-43e4-94a7-4503eedc06be")
-		(property "Net Class" "ANT"
+		(property "Netclass" "ANT"
 			(at 279.4 201.168 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2353,7 +2356,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 171.45 205.74 90)
 		(unit 1)
@@ -2408,7 +2410,7 @@
 				)
 			)
 		)
-		(property "Description" "0.33 pF 1% 50V MLCC C0G 0402"
+		(property "Description" "Unpolarized capacitor"
 			(at 171.45 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -2566,7 +2568,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0402"
+		(property "Description" "Resistor"
 			(at 292.1 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -2637,7 +2639,6 @@
 		)
 	)
 	(symbol
-		(lib_name "L_1")
 		(lib_id "Device:L")
 		(at 222.25 205.74 270)
 		(mirror x)
@@ -2693,7 +2694,7 @@
 				)
 			)
 		)
-		(property "Description" "36nH 5% inductor 0402"
+		(property "Description" "Inductor"
 			(at 222.25 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -2830,7 +2831,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0402"
+		(property "Description" "Resistor"
 			(at 297.18 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -2955,7 +2956,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0402"
+		(property "Description" "Resistor"
 			(at 292.1 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -3080,7 +3081,7 @@
 				)
 			)
 		)
-		(property "Description" "SMA 132134"
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
 			(at 368.3 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -3140,7 +3141,6 @@
 		)
 	)
 	(symbol
-		(lib_name "L_1")
 		(lib_id "Device:L")
 		(at 165.1 212.09 0)
 		(mirror x)
@@ -3196,7 +3196,7 @@
 				)
 			)
 		)
-		(property "Description" "1nH 5% inductor 0402"
+		(property "Description" "Inductor"
 			(at 165.1 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -3278,7 +3278,6 @@
 		)
 	)
 	(symbol
-		(lib_name "L_1")
 		(lib_id "Device:L")
 		(at 184.15 205.74 270)
 		(mirror x)
@@ -3334,7 +3333,7 @@
 				)
 			)
 		)
-		(property "Description" "110nH 5% inductor 0402"
+		(property "Description" "Inductor"
 			(at 184.15 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -3416,7 +3415,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 190.5 212.09 0)
 		(mirror y)
@@ -3472,7 +3470,7 @@
 				)
 			)
 		)
-		(property "Description" "36 pF 1% 50V MLCC C0G 0402"
+		(property "Description" "Unpolarized capacitor"
 			(at 190.5 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -3655,7 +3653,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 133.35 205.74 90)
 		(unit 1)
@@ -3710,7 +3707,7 @@
 				)
 			)
 		)
-		(property "Description" "1.1 pF 1% 50V MLCC C0G 0402"
+		(property "Description" "Unpolarized capacitor"
 			(at 133.35 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -3869,7 +3866,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0402"
+		(property "Description" "Resistor"
 			(at 287.02 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -4019,7 +4016,6 @@
 		)
 	)
 	(symbol
-		(lib_name "L_1")
 		(lib_id "Device:L")
 		(at 146.05 205.74 270)
 		(mirror x)
@@ -4075,7 +4071,7 @@
 				)
 			)
 		)
-		(property "Description" "36nH 5% inductor 0402"
+		(property "Description" "Inductor"
 			(at 146.05 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -4327,7 +4323,7 @@
 				)
 			)
 		)
-		(property "Description" "DF2B5M4CT"
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 355.6 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -4463,7 +4459,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0402"
+		(property "Description" "Resistor"
 			(at 69.85 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -4534,7 +4530,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 152.4 212.09 0)
 		(mirror y)
@@ -4590,7 +4585,7 @@
 				)
 			)
 		)
-		(property "Description" "36 pF 1% 50V MLCC C0G 0402"
+		(property "Description" "Unpolarized capacitor"
 			(at 152.4 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -4748,7 +4743,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0402"
+		(property "Description" "Resistor"
 			(at 69.85 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -4819,7 +4814,6 @@
 		)
 	)
 	(symbol
-		(lib_name "L_1")
 		(lib_id "Device:L")
 		(at 203.2 212.09 0)
 		(mirror x)
@@ -4875,7 +4869,7 @@
 				)
 			)
 		)
-		(property "Description" "1nH 5% inductor 0402"
+		(property "Description" "Inductor"
 			(at 203.2 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -5012,7 +5006,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0402"
+		(property "Description" "Resistor"
 			(at 297.18 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -5138,7 +5132,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0402"
+		(property "Description" "Resistor"
 			(at 287.02 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -5209,7 +5203,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 209.55 205.74 90)
 		(unit 1)
@@ -5264,7 +5257,7 @@
 				)
 			)
 		)
-		(property "Description" "1.1 pF 1% 50V MLCC C0G 0402"
+		(property "Description" "Unpolarized capacitor"
 			(at 209.55 205.74 0)
 			(hide yes)
 			(show_name no)

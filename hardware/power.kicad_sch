@@ -570,161 +570,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "C_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_1_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -2321,6 +2166,184 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -3030,184 +3053,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "L_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "L"
-				(at -1.27 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L"
-				(at 1.905 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Inductor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "L_1_0_1"
-				(arc
-					(start 0 2.54)
-					(mid 0.6323 1.905)
-					(end 0 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 -0.635)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -1.905)
-					(end 0 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_1_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Power_Protection:D3V3X8U9LP3810"
 			(pin_names
 				(hide yes)
@@ -3831,675 +3676,6 @@
 						)
 					)
 					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Q_Dual_NMOS_S1D12S2G2D12G1_1"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_Dual_NMOS_S1D12S2G2D12G1"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Dual NMOS transistor, 6 pin package"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Package_TO_SOT_SMD:SOT-23-6* Package_TO_SOT_SMD:TSOT-23-6*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Q_Dual_NMOS_S1D12S2G2D12G1_1_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Q_Dual_NMOS_S1D12S2G2D12G1_1_1_1"
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Q_Dual_NMOS_S1D12S2G2D12G1_1_2_1"
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Q_NMOS_GSD_2"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_NMOS_GSD"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, gate/source/drain"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Q_NMOS_GSD_2_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Q_NMOS_GSD_2_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5291,7 +4467,7 @@
 					(justify top)
 				)
 			)
-			(property "Footprint" "Texas Instruments:TPS63021DSJR"
+			(property "Footprint" "Texas Instruments:TPS6302xDSJ"
 				(at 0 -25.908 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5614,6 +4790,307 @@
 						)
 					)
 					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Transistor_FET:Q_NMOS_GSD"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_NMOS_GSD"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "N-MOSFET transistor, gate/source/drain"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Q_NMOS_GSD_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.921 0.381) (xy 3.683 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Q_NMOS_GSD_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -13093,7 +12570,7 @@
 			(justify right bottom)
 		)
 		(uuid "d037a5b2-5946-40bd-8d8b-e862c4c952ca")
-		(property "Net Class" "USB"
+		(property "Netclass" "USB"
 			(at 79.756 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13332,7 +12809,7 @@
 				)
 			)
 		)
-		(property "Description" "2.2kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 304.8 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -13479,7 +12956,7 @@
 				)
 			)
 		)
-		(property "Description" "2.2kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 222.25 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -13626,7 +13103,7 @@
 				)
 			)
 		)
-		(property "Description" "DMN2041UVT-7"
+		(property "Description" "Dual NMOS transistor, 6 pin package"
 			(at 142.24 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -13830,7 +13307,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 359.41 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -13977,7 +13454,7 @@
 				)
 			)
 		)
-		(property "Description" "10 µF 20% 16V MLCC X5R 0603"
+		(property "Description" "Unpolarized capacitor"
 			(at 318.77 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -14135,7 +13612,7 @@
 				)
 			)
 		)
-		(property "Description" "SMAJ5.0A"
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 88.9 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -14463,7 +13940,7 @@
 				)
 			)
 		)
-		(property "Description" "SMAJ5.0A"
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 29.21 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -14600,7 +14077,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0805"
+		(property "Description" "Resistor"
 			(at 300.99 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -14725,7 +14202,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7 µF 20% 16V MLCC X5R 0402"
+		(property "Description" "Unpolarized capacitor"
 			(at 123.19 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -14883,7 +14360,7 @@
 				)
 			)
 		)
-		(property "Description" "Red LED 2V 0603 (1608 Metric)"
+		(property "Description" "Light emitting diode"
 			(at 304.8 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -14929,6 +14406,17 @@
 		)
 		(property "DigiKey Part Number" "732-4978-1-ND"
 			(at 304.8 135.89 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 304.8 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15010,7 +14498,7 @@
 				(justify top)
 			)
 		)
-		(property "Description" "LD39200DPUR"
+		(property "Description" "2 A high PSRR ultra low drop linear regulator with reverse current protection"
 			(at 341.63 85.598 0)
 			(hide yes)
 			(show_name no)
@@ -15092,7 +14580,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 215.9 96.52 0)
 		(mirror y)
@@ -15148,7 +14635,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 215.9 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -15307,7 +14794,7 @@
 				)
 			)
 		)
-		(property "Description" "Red LED 2V 0603 (1608 Metric)"
+		(property "Description" "Light emitting diode"
 			(at 288.29 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -15353,6 +14840,17 @@
 		)
 		(property "DigiKey Part Number" "732-4978-1-ND"
 			(at 288.29 265.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 288.29 265.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15433,7 +14931,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0805"
+		(property "Description" "Resistor"
 			(at 196.85 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -15559,7 +15057,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0201"
+		(property "Description" "Resistor"
 			(at 203.2 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -15663,7 +15161,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.58x2.35mm"
+		(property "Footprint" "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.55x2.48mm"
 			(at 209.55 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -15685,7 +15183,7 @@
 				)
 			)
 		)
-		(property "Description" "MCP73833T-FCI/MF"
+		(property "Description" "Stand-Alone Linear Li-Ion / Li-Polymer Charge Management Controller, DFN-10"
 			(at 242.57 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -15772,7 +15270,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Q_NMOS_GSD_2")
 		(lib_id "Transistor_FET:Q_NMOS_GSD")
 		(at 264.16 154.94 0)
 		(unit 1)
@@ -15827,7 +15324,7 @@
 				)
 			)
 		)
-		(property "Description" "BSS806NH SOT-23"
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
 			(at 264.16 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -15944,7 +15441,7 @@
 				)
 			)
 		)
-		(property "Description" "2.2kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 266.7 274.32 0)
 			(hide yes)
 			(show_name no)
@@ -16037,7 +15534,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 177.8 186.69 0)
 		(unit 1)
@@ -16092,7 +15588,7 @@
 				)
 			)
 		)
-		(property "Description" "47 µF 20% 16V MLCC X6S 1210"
+		(property "Description" "Unpolarized capacitor"
 			(at 177.8 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -16330,7 +15826,7 @@
 				)
 			)
 		)
-		(property "Description" "1.2MΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 261.62 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -16556,7 +16052,7 @@
 				)
 			)
 		)
-		(property "Description" "10kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 209.55 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -16703,7 +16199,7 @@
 				)
 			)
 		)
-		(property "Description" "1.5A resettable fuse 0805 (2012 Metric)"
+		(property "Description" "Fuse"
 			(at 95.25 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -16908,7 +16404,7 @@
 				)
 			)
 		)
-		(property "Description" "B2B-XH-A"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 19.05 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -17023,7 +16519,7 @@
 				)
 			)
 		)
-		(property "Description" "330Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 266.7 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -17171,7 +16667,7 @@
 				)
 			)
 		)
-		(property "Description" "IRLML6401 SOT-23"
+		(property "Description" "P-MOSFET transistor, gate/source/drain"
 			(at 266.7 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -17288,7 +16784,7 @@
 				)
 			)
 		)
-		(property "Description" "1.5A resettable fuse 0805 (2012 Metric)"
+		(property "Description" "Fuse"
 			(at 57.15 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -17413,7 +16909,7 @@
 				)
 			)
 		)
-		(property "Description" "1x2P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 384.81 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -17527,7 +17023,7 @@
 				)
 			)
 		)
-		(property "Description" "180kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 261.62 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -17620,7 +17116,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Q_Dual_NMOS_S1D12S2G2D12G1_1")
 		(lib_id "Diodes Incorporated:Q_Dual_NMOS_S1D12S2G2D12G1")
 		(at 125.73 207.01 270)
 		(unit 1)
@@ -17674,7 +17169,7 @@
 				)
 			)
 		)
-		(property "Description" "DMN2041UVT-7"
+		(property "Description" "Dual NMOS transistor, 6 pin package"
 			(at 125.73 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -17801,7 +17296,7 @@
 				)
 			)
 		)
-		(property "Description" "2.2kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 317.5 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -17949,7 +17444,7 @@
 				)
 			)
 		)
-		(property "Description" "SMAJ5.0A"
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 25.4 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -18085,7 +17580,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7 µF 20% 16V MLCC X5R 0402"
+		(property "Description" "Unpolarized capacitor"
 			(at 266.7 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -18243,7 +17738,7 @@
 				)
 			)
 		)
-		(property "Description" "180kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 177.8 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -18469,7 +17964,7 @@
 				)
 			)
 		)
-		(property "Description" "Red LED 2V 0603 (1608 Metric)"
+		(property "Description" "Light emitting diode"
 			(at 266.7 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -18515,6 +18010,17 @@
 		)
 		(property "DigiKey Part Number" "732-4978-1-ND"
 			(at 266.7 265.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 266.7 265.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18594,7 +18100,7 @@
 				)
 			)
 		)
-		(property "Description" "5.1kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 46.99 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -18687,7 +18193,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 95.25 199.39 0)
 		(mirror y)
@@ -18743,7 +18248,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 95.25 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -18901,7 +18406,7 @@
 				)
 			)
 		)
-		(property "Description" "180kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 365.76 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -19049,7 +18554,7 @@
 				)
 			)
 		)
-		(property "Description" "10 µF 20% 16V MLCC X5R 0603"
+		(property "Description" "Unpolarized capacitor"
 			(at 101.6 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -19321,7 +18826,7 @@
 				(justify top)
 			)
 		)
-		(property "Description" "BQ29728DSER"
+		(property "Description" "Voltage and Current Protection for Single-Cell Li-Ion and Li-Polymer Batteries"
 			(at 114.3 198.628 0)
 			(hide yes)
 			(show_name no)
@@ -19448,7 +18953,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0805"
+		(property "Description" "Resistor"
 			(at 107.95 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -19574,7 +19079,7 @@
 				)
 			)
 		)
-		(property "Description" "180kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 248.92 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -19721,7 +19226,7 @@
 				)
 			)
 		)
-		(property "Description" "1x2P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 299.72 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -19835,7 +19340,7 @@
 				)
 			)
 		)
-		(property "Description" "22 µF 20% 16V MLCC X5R 0603"
+		(property "Description" "Unpolarized capacitor"
 			(at 294.64 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -19994,7 +19499,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0805"
+		(property "Description" "Resistor"
 			(at 386.08 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -20121,7 +19626,7 @@
 				(justify top)
 			)
 		)
-		(property "Description" "MAX17048G+T10"
+		(property "Description" "3μA 1-Cell/2-Cell Fuel Gauge with ModelGauge"
 			(at 344.17 189.738 0)
 			(hide yes)
 			(show_name no)
@@ -20144,7 +19649,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Analog Devices"
+		(property "Manufacturer" "Analog Devices Inc."
 			(at 344.17 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -20258,7 +19763,7 @@
 				)
 			)
 		)
-		(property "Description" "10 µF 20% 16V MLCC X5R 0603"
+		(property "Description" "Unpolarized capacitor"
 			(at 203.2 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -20417,7 +19922,7 @@
 				)
 			)
 		)
-		(property "Description" "2.2kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 292.1 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -20510,7 +20015,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 369.57 69.85 0)
 		(unit 1)
@@ -20565,7 +20069,7 @@
 				)
 			)
 		)
-		(property "Description" "0.1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 369.57 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -20723,7 +20227,7 @@
 				)
 			)
 		)
-		(property "Description" "330Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 82.55 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -20950,7 +20454,7 @@
 				)
 			)
 		)
-		(property "Description" "IRLML6401 SOT-23"
+		(property "Description" "P-MOSFET transistor, gate/source/drain"
 			(at 69.85 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -21203,7 +20707,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 175.26 76.2 0)
 		(unit 1)
@@ -21258,7 +20761,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 175.26 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -21416,7 +20919,7 @@
 				)
 			)
 		)
-		(property "Description" "330Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 254 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -21564,7 +21067,7 @@
 				)
 			)
 		)
-		(property "Description" "5.1kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 44.45 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -21711,7 +21214,7 @@
 				)
 			)
 		)
-		(property "Description" "1.02MΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 356.87 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -21858,7 +21361,7 @@
 				)
 			)
 		)
-		(property "Description" "22 µF 20% 16V MLCC X5R 0603"
+		(property "Description" "Unpolarized capacitor"
 			(at 271.78 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -22174,7 +21677,7 @@
 				)
 			)
 		)
-		(property "Description" "1.2MΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 307.34 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -22267,7 +21770,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 325.12 180.34 0)
 		(unit 1)
@@ -22322,7 +21824,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 325.12 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -22592,7 +22094,7 @@
 				)
 			)
 		)
-		(property "Description" "50mΩ Metal Foil Resistor 1% 1W 1206"
+		(property "Description" "Resistor"
 			(at 107.95 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -22740,7 +22242,7 @@
 				)
 			)
 		)
-		(property "Description" "180kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 260.35 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -22887,7 +22389,7 @@
 				)
 			)
 		)
-		(property "Description" "2.2kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 158.75 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -23035,7 +22537,7 @@
 				)
 			)
 		)
-		(property "Description" "1x1P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 237.49 261.62 0)
 			(hide yes)
 			(show_name no)
@@ -23146,7 +22648,7 @@
 				)
 			)
 		)
-		(property "Description" "10 µF 20% 16V MLCC X5R 0603"
+		(property "Description" "Unpolarized capacitor"
 			(at 379.73 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -23304,7 +22806,7 @@
 				)
 			)
 		)
-		(property "Description" "2.2kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 288.29 274.32 0)
 			(hide yes)
 			(show_name no)
@@ -23530,7 +23032,7 @@
 				)
 			)
 		)
-		(property "Description" "1x1P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 237.49 274.32 0)
 			(hide yes)
 			(show_name no)
@@ -23753,7 +23255,7 @@
 				)
 			)
 		)
-		(property "Description" "USB4105-GF-A"
+		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 			(at 25.4 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -23912,7 +23414,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7 µF 20% 16V MLCC X5R 0402"
+		(property "Description" "Unpolarized capacitor"
 			(at 196.85 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -24150,7 +23652,7 @@
 				(justify top)
 			)
 		)
-		(property "Description" "LM66200DRLR"
+		(property "Description" "OR Controller N+1 ORing Controller N-Channel 2:1 SOT-583"
 			(at 158.75 79.248 0)
 			(hide yes)
 			(show_name no)
@@ -24284,7 +23786,7 @@
 				)
 			)
 		)
-		(property "Description" "TPS63020DSJR"
+		(property "Description" "High Efficiency Single Inductor Buck-Boost Converter with 4A Switch 14-VSON -40 to 85"
 			(at 243.84 113.538 0)
 			(hide yes)
 			(show_name no)
@@ -24440,7 +23942,7 @@
 				)
 			)
 		)
-		(property "Description" "1x2P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 283.21 256.54 0)
 			(hide yes)
 			(show_name no)
@@ -24555,7 +24057,7 @@
 				)
 			)
 		)
-		(property "Description" "1x2P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 179.07 275.59 0)
 			(hide yes)
 			(show_name no)
@@ -24670,7 +24172,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0201"
+		(property "Description" "Resistor"
 			(at 203.2 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -24795,7 +24297,7 @@
 				)
 			)
 		)
-		(property "Description" "1x2P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 195.58 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -24855,7 +24357,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 171.45 186.69 0)
 		(mirror y)
@@ -24911,7 +24412,7 @@
 				)
 			)
 		)
-		(property "Description" "47 µF 20% 16V MLCC X6S 1210"
+		(property "Description" "Unpolarized capacitor"
 			(at 171.45 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -25059,7 +24560,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/D3V3X8U9LP3810.pdf"
 			(at 33.02 111.506 0)
 			(hide yes)
 			(show_name no)
@@ -25070,7 +24571,7 @@
 				)
 			)
 		)
-		(property "Description" "DT1240A-08LP3810-7"
+		(property "Description" "3V3 Reverse Working, 8 channel low capacitance 0.45pF, TVS diode array, 5.5-7V Breakdown, U-DFN3810-9"
 			(at 65.024 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -25218,7 +24719,7 @@
 				)
 			)
 		)
-		(property "Description" "10 µF 20% 16V MLCC X5R 0603"
+		(property "Description" "Unpolarized capacitor"
 			(at 114.3 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -25378,7 +24879,7 @@
 				)
 			)
 		)
-		(property "Description" "1x2P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 261.62 256.54 0)
 			(hide yes)
 			(show_name no)
@@ -25492,7 +24993,7 @@
 				)
 			)
 		)
-		(property "Description" "Red LED 2V 0603 (1608 Metric)"
+		(property "Description" "Light emitting diode"
 			(at 317.5 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -25538,6 +25039,17 @@
 		)
 		(property "DigiKey Part Number" "732-4978-1-ND"
 			(at 317.5 135.89 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 317.5 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25697,7 +25209,7 @@
 				)
 			)
 		)
-		(property "Description" "1x1P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 237.49 267.97 0)
 			(hide yes)
 			(show_name no)
@@ -25809,7 +25321,7 @@
 				)
 			)
 		)
-		(property "Description" "10 µF 20% 16V MLCC X5R 0603"
+		(property "Description" "Unpolarized capacitor"
 			(at 215.9 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -25967,7 +25479,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7 µF 20% 16V MLCC X5R 0402"
+		(property "Description" "Unpolarized capacitor"
 			(at 135.89 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -26237,7 +25749,7 @@
 				)
 			)
 		)
-		(property "Description" "180kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 358.14 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -26384,7 +25896,7 @@
 				)
 			)
 		)
-		(property "Description" "Red LED 2V 0603 (1608 Metric)"
+		(property "Description" "Light emitting diode"
 			(at 292.1 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -26430,6 +25942,17 @@
 		)
 		(property "DigiKey Part Number" "732-4978-1-ND"
 			(at 292.1 135.89 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 292.1 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26511,7 +26034,7 @@
 				)
 			)
 		)
-		(property "Description" "1x2P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 132.08 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -26571,7 +26094,6 @@
 		)
 	)
 	(symbol
-		(lib_name "L_1")
 		(lib_id "Device:L")
 		(at 227.33 80.01 180)
 		(unit 1)
@@ -26626,7 +26148,7 @@
 				)
 			)
 		)
-		(property "Description" "1uH ±20% SMD,4.4x4.2mm Power Inductor"
+		(property "Description" "Inductor"
 			(at 227.33 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -26931,7 +26453,7 @@
 				)
 			)
 		)
-		(property "Description" "22 µF 20% 16V MLCC X5R 0603"
+		(property "Description" "Unpolarized capacitor"
 			(at 283.21 76.2 0)
 			(hide yes)
 			(show_name no)

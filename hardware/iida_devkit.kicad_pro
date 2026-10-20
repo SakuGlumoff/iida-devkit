@@ -78,7 +78,7 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|172925725|86578182|69035b78-a12e-41ba-a88c-725a37845685|157f3375-1510-4f78-bc2e-7a2a1f0593b6",
+          "clearance|173075725|86578182|157f3375-1510-4f78-bc2e-7a2a1f0593b6|69035b78-a12e-41ba-a88c-725a37845685",
           ""
         ],
         [
@@ -200,6 +200,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 1,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -211,6 +212,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -222,6 +224,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -506,6 +509,7 @@
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -614,7 +618,7 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
+    "net_colors": {},
     "netclass_assignments": {
       "/Antennas/ANT": [
         "ANT"
@@ -634,50 +638,14 @@
       "/Antennas/ANT_SMA_MATCHED": [
         "ANT"
       ],
-      "/Battery/BATT+": [
-        "Power"
-      ],
-      "/Battery/BATT-": [
-        "GND"
-      ],
-      "/Battery/V_5V0": [
-        "Power"
-      ],
-      "/Battery/V_BAT": [
-        "Power"
-      ],
       "/Microcontroller/USB.D+": [
         "USB"
       ],
       "/Microcontroller/USB.D-": [
         "USB"
       ],
-      "/Microcontroller/USB.DM": [
-        "USB"
-      ],
-      "/Microcontroller/USB.DP": [
-        "USB"
-      ],
-      "/Microcontroller/USB_DN": [
-        "USB"
-      ],
-      "/Microcontroller/USB_DP": [
-        "USB"
-      ],
-      "/Microcontroller/VDDA": [
-        "Power"
-      ],
       "/Microcontroller/{USB}": [
         "USB"
-      ],
-      "/Modem/SIM.CLK": [
-        "SIM"
-      ],
-      "/Modem/SIM.DATA": [
-        "SIM"
-      ],
-      "/Modem/SIM.RST": [
-        "SIM"
       ],
       "/Modem/SIM_CLK": [
         "SIM"
@@ -687,96 +655,6 @@
       ],
       "/Modem/SIM_RST": [
         "SIM"
-      ],
-      "/Modem/VCC": [
-        "Power"
-      ],
-      "/Modem/VCC_FILTERING": [
-        "Power"
-      ],
-      "/Modem/V_1V8_MDM": [
-        "Power"
-      ],
-      "/Modem/V_1V8_SIM": [
-        "Power"
-      ],
-      "/Modem/{SIM}": [
-        "SIM"
-      ],
-      "/Power input/VINA": [
-        "Power"
-      ],
-      "/Power/USB.DM": [
-        "USB"
-      ],
-      "/Power/USB.DP": [
-        "USB"
-      ],
-      "/Power/VINA": [
-        "Power"
-      ],
-      "/Power/VOUT": [
-        "Power"
-      ],
-      "/Power/V_3V3_OUT": [
-        "Power"
-      ],
-      "/Power/V_3V55": [
-        "Power"
-      ],
-      "/Power/V_3V7": [
-        "Power"
-      ],
-      "/Power/V_SYS": [
-        "Power"
-      ],
-      "/USB/USB_DN_IN": [
-        "USB"
-      ],
-      "/USB/USB_DP_IN": [
-        "USB"
-      ],
-      "/USB/VBUS": [
-        "Power"
-      ],
-      "/USB/VBUS_UNFILTERED": [
-        "Power"
-      ],
-      "GND": [
-        "GND"
-      ],
-      "Net-(C1001-Pad2)": [
-        "Antenna"
-      ],
-      "Net-(C1002-Pad2)": [
-        "Antenna"
-      ],
-      "Net-(C1003-Pad2)": [
-        "Antenna"
-      ],
-      "Net-(C1004-Pad2)": [
-        "Antenna"
-      ],
-      "Net-(C1005-Pad2)": [
-        "Antenna"
-      ],
-      "Net-(C406-Pad1)": [
-        "Power"
-      ],
-      "Net-(C52-Pad2)": [
-        "ANT"
-      ],
-      "Net-(C53-Pad2)": [
-        "ANT"
-      ],
-      "Net-(C54-Pad2)": [
-        "ANT"
-      ],
-      "Net-(C55-Pad2)": [
-        "ANT"
-      ],
-      "Net-(C56-Pad2)": [
-        "ANT"
       ],
       "Net-(C601-Pad2)": [
         "ANT"
@@ -792,9 +670,6 @@
       ],
       "Net-(C605-Pad2)": [
         "ANT"
-      ],
-      "V_3V3": [
-        "Power"
       ]
     },
     "netclass_patterns": [
@@ -1050,7 +925,7 @@
         "uuid": "b12a6e25-97fb-4aba-bc96-af8db389bb9a"
       }
     ],
-    "used_designators": "Q201-204,Q301,Q501-507,R101-104,R201-230,R301-322,R401-415,R501-530,R601-608,#FLG101-102,#FLG201-207,#FLG301,#FLG501-502,D201-209,D401-403,D501-504,D601,L201,L601-605,AE601,#PWR101-107,#PWR201-210,#PWR301-326,#PWR401-405,#PWR501-518,#PWR601-602,C201-220,C301-317,C401-405,C501-524,C601-605,F201-202,FB501-502,FID101-103,H101-104,J201-212,J301-306,J501,J601,JP301,SW301-302,TP201-206,U201-206,U301,U401-405,U501-502,Y301-302",
+    "used_designators": "#FLG101-102,#FLG201-207,#FLG301,#FLG501-502,#PWR101-107,#PWR201-210,#PWR301-326,#PWR401-405,#PWR501-518,#PWR601-602,AE601,C201-220,C301-317,C401-405,C501-524,C601-605,D201-209,D401-403,D501-504,D601,F201-202,FB501-502,FID101-103,H101-104,J201-212,J301-306,J501,J601,JP301,L201,L601-605,Q201-204,Q301,Q501-507,R101-104,R201-230,R301-322,R401-415,R501-530,R601-608,SW301-302,TP201-206,U201-206,U301,U401-405,U501-502,Y301-302",
     "variants": []
   },
   "sheets": [

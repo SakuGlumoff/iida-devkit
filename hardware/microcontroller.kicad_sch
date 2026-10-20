@@ -10,161 +10,6 @@
 		(rev "v6.1.0")
 	)
 	(lib_symbols
-		(symbol "C_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_1_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:TC2050"
 			(exclude_from_sim no)
 			(in_bom no)
@@ -3093,7 +2938,157 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Q_NMOS_GSD_2"
+		(symbol "Switch:SW_SPST"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPST_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Transistor_FET:Q_NMOS_GSD"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -3169,7 +3164,7 @@
 					)
 				)
 			)
-			(symbol "Q_NMOS_GSD_2_0_1"
+			(symbol "Q_NMOS_GSD_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -3336,7 +3331,7 @@
 					)
 				)
 			)
-			(symbol "Q_NMOS_GSD_2_1_1"
+			(symbol "Q_NMOS_GSD_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -3384,156 +3379,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Switch:SW_SPST"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 0 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_SPST"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Single Pole Single Throw (SPST) switch"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "switch lever"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SW_SPST_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0.254) (xy 1.524 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SPST_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8764,7 +8609,7 @@
 				)
 			)
 		)
-		(property "Description" "PTS645SM43SMTR92LFS"
+		(property "Description" "Single Pole Single Throw (SPST) switch"
 			(at 38.1 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -8879,7 +8724,7 @@
 				)
 			)
 		)
-		(property "Description" "1x6P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 368.3 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -9031,7 +8876,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 215.9 69.85 0)
 		(unit 1)
@@ -9086,7 +8930,7 @@
 				)
 			)
 		)
-		(property "Description" "0.1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 215.9 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -9244,7 +9088,7 @@
 				)
 			)
 		)
-		(property "Description" "0Ω Resistor 0805"
+		(property "Description" "Resistor"
 			(at 241.3 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9369,7 +9213,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 228.6 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -9518,7 +9362,7 @@
 				)
 			)
 		)
-		(property "Description" "1x6P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 368.3 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -9723,7 +9567,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 228.6 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -9931,7 +9775,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 38.1 190.5 0)
 		(unit 1)
@@ -9986,7 +9829,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 38.1 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -10144,7 +9987,7 @@
 				)
 			)
 		)
-		(property "Description" "330Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 25.4 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -10371,7 +10214,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 170.18 127 0)
 			(hide yes)
 			(show_name no)
@@ -10518,7 +10361,7 @@
 				)
 			)
 		)
-		(property "Description" "10kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 368.3 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -10611,7 +10454,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 152.4 69.85 0)
 		(mirror y)
@@ -10667,7 +10509,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 152.4 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -10826,7 +10668,7 @@
 				)
 			)
 		)
-		(property "Description" "10kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 118.11 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -10919,7 +10761,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 190.5 69.85 0)
 		(mirror y)
@@ -10975,7 +10816,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 190.5 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -11135,7 +10976,7 @@
 				)
 			)
 		)
-		(property "Description" "STM32L552 LQFP-48(7x7)"
+		(property "Description" "STMicroelectronics Arm Cortex-M33 MCU, 512KB flash, 256KB RAM, 110 MHz, 1.71-3.6V, 38 GPIO, LQFP48"
 			(at 203.2 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -11465,7 +11306,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 170.18 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -11612,7 +11453,7 @@
 				)
 			)
 		)
-		(property "Description" "ECS-160-9-37-CKM-TR3"
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
 			(at 152.4 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -11822,7 +11663,7 @@
 				)
 			)
 		)
-		(property "Description" "2.2kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 120.65 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -12048,7 +11889,7 @@
 				)
 			)
 		)
-		(property "Description" "1x6P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 342.9 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12278,7 +12119,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 146.05 171.45 0)
 		(mirror y)
@@ -12334,7 +12174,7 @@
 				)
 			)
 		)
-		(property "Description" "8 pF 1% 50V MLCC C0G 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 146.05 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -12571,7 +12411,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 170.18 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -12744,7 +12584,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 177.8 69.85 0)
 		(mirror y)
@@ -12800,7 +12639,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 177.8 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12960,7 +12799,7 @@
 				)
 			)
 		)
-		(property "Description" "1x6P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 393.7 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -13032,7 +12871,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 260.35 171.45 0)
 		(unit 1)
@@ -13087,7 +12925,7 @@
 				)
 			)
 		)
-		(property "Description" "8 pF 1% 50V MLCC C0G 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 260.35 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -13245,7 +13083,7 @@
 				)
 			)
 		)
-		(property "Description" "330Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 57.15 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -13370,7 +13208,7 @@
 				(justify top)
 			)
 		)
-		(property "Footprint" "Connector:Tag-Connect_TC2050-IDC-NL_2x05_P1.27mm_Vertical_with_bottom_clip"
+		(property "Footprint" "Connector:Tag-Connect_TC2050-IDC-NL_2x05_P1.27mm_Vertical"
 			(at 50.8 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -13530,7 +13368,7 @@
 				)
 			)
 		)
-		(property "Description" "ABS05-32.768KHZ-9-T"
+		(property "Description" "Two pin crystal"
 			(at 254 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -13655,7 +13493,7 @@
 				)
 			)
 		)
-		(property "Description" "330Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 355.6 127 0)
 			(hide yes)
 			(show_name no)
@@ -13748,7 +13586,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 63.5 190.5 0)
 		(unit 1)
@@ -13803,7 +13640,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 63.5 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -13907,7 +13744,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 158.75 171.45 0)
 		(unit 1)
@@ -13962,7 +13798,7 @@
 				)
 			)
 		)
-		(property "Description" "8 pF 1% 50V MLCC C0G 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 158.75 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -14223,7 +14059,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 228.6 69.85 0)
 		(unit 1)
@@ -14278,7 +14113,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 228.6 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -14673,7 +14508,7 @@
 				)
 			)
 		)
-		(property "Description" "22 µF 20% 16V MLCC X5R 0603"
+		(property "Description" "Unpolarized capacitor"
 			(at 254 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -14831,7 +14666,7 @@
 				)
 			)
 		)
-		(property "Description" "10kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 38.1 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -14978,7 +14813,7 @@
 				)
 			)
 		)
-		(property "Description" "PTS645SM43SMTR92LFS"
+		(property "Description" "Single Pole Single Throw (SPST) switch"
 			(at 368.3 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -15038,7 +14873,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 57.15 125.73 0)
 		(unit 1)
@@ -15093,7 +14927,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 57.15 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -15197,7 +15031,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Q_NMOS_GSD_2")
 		(lib_id "Transistor_FET:Q_NMOS_GSD")
 		(at 35.56 125.73 0)
 		(unit 1)
@@ -15252,7 +15085,7 @@
 				)
 			)
 		)
-		(property "Description" "BSS806NH SOT-23"
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
 			(at 35.56 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -15370,7 +15203,7 @@
 				)
 			)
 		)
-		(property "Description" "180kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 38.1 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -15517,7 +15350,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 63.5 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -15665,7 +15498,7 @@
 				)
 			)
 		)
-		(property "Description" "1x6P Through Hole P=2.54mm Pin Headers"
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 393.7 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -15948,7 +15781,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 170.18 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -16041,7 +15874,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 44.45 158.75 0)
 		(unit 1)
@@ -16096,7 +15928,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 44.45 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -16255,7 +16087,7 @@
 				)
 			)
 		)
-		(property "Description" "2.2kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 118.11 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -16348,7 +16180,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 361.95 133.35 0)
 		(mirror y)
@@ -16404,7 +16235,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 361.95 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -16876,7 +16707,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 345.44 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -17049,7 +16880,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 247.65 171.45 0)
 		(mirror y)
@@ -17105,7 +16935,7 @@
 				)
 			)
 		)
-		(property "Description" "8 pF 1% 50V MLCC C0G 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 247.65 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -17422,7 +17252,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 228.6 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -17515,7 +17345,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_1")
 		(lib_id "Device:C")
 		(at 165.1 69.85 0)
 		(mirror y)
@@ -17571,7 +17400,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF 20% 16V MLCC X5R 0201"
+		(property "Description" "Unpolarized capacitor"
 			(at 165.1 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -17729,7 +17558,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 170.18 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -17877,7 +17706,7 @@
 				)
 			)
 		)
-		(property "Description" "22 µF 20% 16V MLCC X5R 0603"
+		(property "Description" "Unpolarized capacitor"
 			(at 139.7 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -18036,7 +17865,7 @@
 				)
 			)
 		)
-		(property "Description" "10kΩ Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 118.11 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -18422,7 +18251,7 @@
 				)
 			)
 		)
-		(property "Description" "22Ω Resistor 1% 0.05W 0201"
+		(property "Description" "Resistor"
 			(at 170.18 132.08 0)
 			(hide yes)
 			(show_name no)
