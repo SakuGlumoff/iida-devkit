@@ -6,9 +6,10 @@ project(app
 )
 
 target_sources(app PRIVATE
-	src/main.c
+	${CMAKE_CURRENT_SOURCE_DIR}/src/main.c
+	${CMAKE_CURRENT_SOURCE_DIR}/src/usbd_init.c
 )
 
 target_include_directories(app PRIVATE
-	src/include
+	${CMAKE_CURRENT_SOURCE_DIR}/include
 )
