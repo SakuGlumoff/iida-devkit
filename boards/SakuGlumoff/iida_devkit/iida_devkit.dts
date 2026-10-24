@@ -30,9 +30,12 @@
 		};
 	};
 
-	en_v_3v8_mdm: en_v_3v8_mdm {
-		compatible = "dummy-gpio";
-		gpios = <&io_exp0 3 GPIO_ACTIVE_HIGH>;
+	v_3v8_mdm: v_3v8_mdm {
+		compatible = "regulator-fixed";
+		regulator-name = "v_3v8_mdm";
+		enable-gpios = <&io_exp0 3 GPIO_ACTIVE_HIGH>;
+		startup-delay-us = <30000>;
+		regulator-boot-on;
 	};
 
 	mdm_reset: mdm_reset {
@@ -40,12 +43,12 @@
 		gpios = <&io_exp0 4 GPIO_ACTIVE_HIGH>;
 	};
 
-	mdm_pwr_on: mdm_pwr_on {
+	mdm_pwrkey: mdm_pwrkey {
 		compatible = "dummy-gpio";
 		gpios = <&io_exp0 5 GPIO_ACTIVE_HIGH>;
 	};
 
-	mdm_pon: mdm_pon {
+	mdm_pon_trig: mdm_pon_trig {
 		compatible = "dummy-gpio";
 		gpios = <&gpiob 12 GPIO_ACTIVE_HIGH>;
 	};
@@ -98,6 +101,7 @@
 	aliases {
 		die-temp0 = &die_temp;
 		volt-sensor0 = &vbat;
+		modem = &modem0;
 	};
 };
 
@@ -189,11 +193,10 @@
 		&usart3_rts_pb14
 	>;
 	pinctrl-names = "default";
-	current-speed = <9600>;
+	current-speed = <115200>;
 
 	modem0: modem {
 		compatible = "quectel,bg95";
-		zephyr,deferred-init;
 		mdm-power-gpios = <&io_exp0 5 GPIO_ACTIVE_HIGH>;
 		mdm-reset-gpios = <&io_exp0 4 GPIO_ACTIVE_HIGH>;
 	};

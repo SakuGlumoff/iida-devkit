@@ -1,0 +1,26 @@
+diff --git a/drivers/modem/modem_cellular.c b/drivers/modem/modem_cellular.c
+index de2fcf73380..041b39c99b1 100644
+--- a/drivers/modem/modem_cellular.c
++++ b/drivers/modem/modem_cellular.c
+@@ -2386,11 +2386,9 @@ MODEM_CHAT_SCRIPT_CMDS_DEFINE(quectel_bg9x_init_chat_script_cmds,
+ 			      MODEM_CHAT_SCRIPT_CMD_RESP("AT+CFUN=4", ok_match),
+ 			      MODEM_CHAT_SCRIPT_CMD_RESP("AT+CMEE=1", ok_match),
+ 			      MODEM_CHAT_SCRIPT_CMD_RESP("AT+CREG=1", ok_match),
+-			      MODEM_CHAT_SCRIPT_CMD_RESP("AT+CGREG=1", ok_match),
+ 			      MODEM_CHAT_SCRIPT_CMD_RESP("AT+CEREG=1", ok_match),
+ 			      MODEM_CHAT_SCRIPT_CMD_RESP("AT+CREG?", ok_match),
+ 			      MODEM_CHAT_SCRIPT_CMD_RESP("AT+CEREG?", ok_match),
+-			      MODEM_CHAT_SCRIPT_CMD_RESP("AT+CGREG?", ok_match),
+ 			      MODEM_CHAT_SCRIPT_CMD_RESP("AT+CGSN", imei_match),
+ 			      MODEM_CHAT_SCRIPT_CMD_RESP("", ok_match),
+ 			      MODEM_CHAT_SCRIPT_CMD_RESP("AT+CGMM", cgmm_match),
+@@ -2418,8 +2416,7 @@ MODEM_CHAT_SCRIPT_DEFINE(quectel_bg9x_dial_chat_script, quectel_bg9x_dial_chat_s
+ 
+ MODEM_CHAT_SCRIPT_CMDS_DEFINE(quectel_bg9x_periodic_chat_script_cmds,
+ 			      MODEM_CHAT_SCRIPT_CMD_RESP("AT+CREG?", ok_match),
+-			      MODEM_CHAT_SCRIPT_CMD_RESP("AT+CEREG?", ok_match),
+-			      MODEM_CHAT_SCRIPT_CMD_RESP("AT+CGREG?", ok_match));
++			      MODEM_CHAT_SCRIPT_CMD_RESP("AT+CEREG?", ok_match));
+ 
+ MODEM_CHAT_SCRIPT_DEFINE(quectel_bg9x_periodic_chat_script,
+ 			 quectel_bg9x_periodic_chat_script_cmds, abort_matches,
