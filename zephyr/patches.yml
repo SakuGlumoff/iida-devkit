@@ -1,0 +1,11 @@
+patches:
+  - path: zephyr/modem-cellular-bg9x-drop-cgreg.patch
+    sha256sum: fa9d101645f25ea07b8c7e47f06b49d351edbda415e24afb5f497affed7c5ba7
+    module: zephyr
+    author: Saku Glumoff
+    email: saku.glumoff@gmail.com
+    date: 2026-10-24
+    upstreamable: false
+    comments: |
+      The BG95-M4 is LTE-M only and answers AT+CGREG with ERROR, which
+      aborts the quectel,bg95 init script. CEREG covers LTE registration.
